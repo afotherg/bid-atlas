@@ -38,15 +38,9 @@ jobs:
           git push
       - name: Set GitHub Pages paths
         run: |
-          REPOSITORY_NAME="${GITHUB_REPOSITORY#*/}"
-          OWNER_NAME="${GITHUB_REPOSITORY%/*}"
-          if [[ "$REPOSITORY_NAME" == "${OWNER_NAME}.github.io" ]]; then
-            echo "PAGES_BASE_PATH=/" >> "$GITHUB_ENV"
-            echo "PUBLIC_SITE_URL=https://${OWNER_NAME}.github.io" >> "$GITHUB_ENV"
-          else
-            echo "PAGES_BASE_PATH=/${REPOSITORY_NAME}/" >> "$GITHUB_ENV"
-            echo "PUBLIC_SITE_URL=https://${OWNER_NAME}.github.io" >> "$GITHUB_ENV"
-          fi
+          echo "PAGES_BASE_PATH=/" >> "$GITHUB_ENV"
+          echo "PUBLIC_SITE_URL=https://bid-atlas.fothergill.com" >> "$GITHUB_ENV"
+          echo "PAGES_CUSTOM_DOMAIN=bid-atlas.fothergill.com" >> "$GITHUB_ENV"
       - run: npm run build:pages
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

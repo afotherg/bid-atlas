@@ -30,7 +30,7 @@ The included GitHub Actions workflow runs discovery and refresh daily, commits v
 
 The combined GitHub Actions workflow publishes `dist/pages` on every push to `main`, on the daily refresh schedule, and when started manually. Scheduled refresh commits are deployed in the same workflow run; they do not rely on a second workflow being triggered by the Actions bot.
 
-In the GitHub repository, select **Settings → Pages → Build and deployment → Source: GitHub Actions**. The build automatically handles both project sites (`owner.github.io/repository/`) and account sites (`owner.github.io/`). A custom domain can be added later through the Pages settings.
+The workflow publishes to the configured custom domain, `bid-atlas.fothergill.com`, and includes the required `CNAME` artifact. GitHub Pages must use **Settings → Pages → Build and deployment → Source: GitHub Actions**. DNS should expose a CNAME from `bid-atlas.fothergill.com` to `afotherg.github.io`; when Cloudflare is used, set the record to DNS-only until GitHub finishes domain and HTTPS verification.
 
 ## Adding a source
 

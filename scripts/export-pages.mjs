@@ -40,6 +40,9 @@ html = html.replace("__PAGES_BASE__", normalizedBase);
 
 await writeFile(path.join(pagesDir, "index.html"), html);
 await writeFile(path.join(pagesDir, ".nojekyll"), "");
+if (process.env.PAGES_CUSTOM_DOMAIN) {
+  await writeFile(path.join(pagesDir, "CNAME"), `${process.env.PAGES_CUSTOM_DOMAIN}\n`);
+}
 
 const unresolved = [...html.matchAll(/(?:href|src)="\/assets\/|url\(\/assets\//g)];
 if (normalizedBase !== "/" && unresolved.length) {
