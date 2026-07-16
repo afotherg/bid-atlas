@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { DM_Sans, Instrument_Serif } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const sans = DM_Sans({ variable: "--font-sans", subsets: ["latin"] });
@@ -23,5 +24,21 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body className={`${sans.variable} ${serif.variable}`}>{children}</body></html>;
+  return (
+    <html lang="en">
+      <body className={`${sans.variable} ${serif.variable}`}>
+        {children}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-MYDMGJZHT7"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-MYDMGJZHT7');`}
+        </Script>
+      </body>
+    </html>
+  );
 }

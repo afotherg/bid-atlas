@@ -15,5 +15,6 @@ test("server-renders BID Atlas", async () => {
   assert.match(html, /<title>BID Atlas/);
   assert.match(html, /Find the people/);
   assert.match(html, /Interactive map/);
+  assert.match(html, /G-MYDMGJZHT7/);
   assert.doesNotMatch(html, /codex-preview/);
 });
