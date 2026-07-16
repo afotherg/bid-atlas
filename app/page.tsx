@@ -256,7 +256,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><span>BID ATLAS</span><p>Public-interest directory · Source-led and transparent</p><a href="mailto:data@bidatlas.org">Suggest a district</a></footer>
+      <footer><span>BID ATLAS</span><p>Public-interest directory · Source-led and transparent</p><a href="mailto:alan@fothergill.com">Suggest a district</a></footer>
     </main>
   );
 }
