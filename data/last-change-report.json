@@ -1,12 +1,30 @@
 {
-  "checkedAt": "2026-07-16T22:15:20.396Z",
+  "checkedAt": "2026-07-16T22:24:12.360Z",
   "summary": {
     "added": 0,
-    "modified": 0,
+    "modified": 17,
     "removed": 0
   },
   "added": [],
-  "modified": [],
+  "modified": [
+    "ca-san-diego-adams-avenue",
+    "ca-san-diego-city-heights",
+    "ca-san-diego-college-area",
+    "ca-san-diego-diamond",
+    "ca-san-diego-downtown",
+    "ca-san-diego-east-village",
+    "ca-san-diego-el-cajon-boulevard-central",
+    "ca-san-diego-el-cajon-boulevard-gateway",
+    "ca-san-diego-hillcrest",
+    "ca-san-diego-la-jolla",
+    "ca-san-diego-little-italy",
+    "ca-san-diego-mission-hills",
+    "ca-san-diego-north-park",
+    "ca-san-diego-ocean-beach",
+    "ca-san-diego-old-town",
+    "ca-san-diego-pacific-beach",
+    "ca-san-diego-san-ysidro"
+  ],
   "removed": [],
   "sources": [
     {
@@ -14,35 +32,35 @@
       "name": "New York City Business Improvement Districts",
       "status": "ok",
       "records": 76,
-      "checkedAt": "2026-07-16T22:15:20.396Z"
+      "checkedAt": "2026-07-16T22:24:12.360Z"
     },
     {
       "id": "sf-community-benefit-districts",
       "name": "San Francisco Community Benefit Districts",
       "status": "ok",
       "records": 16,
-      "checkedAt": "2026-07-16T22:15:20.396Z"
+      "checkedAt": "2026-07-16T22:24:12.360Z"
     },
     {
       "id": "san-diego-bids",
       "name": "San Diego Business Improvement Districts",
       "status": "ok",
       "records": 18,
-      "checkedAt": "2026-07-16T22:15:20.396Z"
+      "checkedAt": "2026-07-16T22:24:12.360Z"
     },
     {
       "id": "dc-business-improvement-districts",
       "name": "Washington, DC Business Improvement Districts",
       "status": "ok",
       "records": 13,
-      "checkedAt": "2026-07-16T22:15:20.396Z"
+      "checkedAt": "2026-07-16T22:24:12.360Z"
     },
     {
       "id": "hartford-business-improvement-district",
       "name": "Hartford Business Improvement District",
       "status": "ok",
       "records": 60,
-      "checkedAt": "2026-07-16T22:15:20.396Z"
+      "checkedAt": "2026-07-16T22:24:12.360Z"
     }
   ]
 }

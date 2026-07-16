@@ -18,4 +18,5 @@ test("Downtown San Diego resolves to San Diego", () => {
   const [longitude, latitude] = district.properties.center;
   assert.ok(longitude > -118 && longitude < -116);
   assert.ok(latitude > 32 && latitude < 34);
+  assert.equal(district.properties.website, "https://downtownsandiego.org/city-center-district/");
 });

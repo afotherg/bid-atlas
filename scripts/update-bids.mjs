@@ -59,6 +59,7 @@ function normalize(source, feature) {
   const p = feature.properties ?? {};
   const name = source.fixedName ?? valueFor(p, source.fields.name);
   if (!name) return null;
+  const override = source.overrides?.[name] ?? {};
   const geometry = { ...feature.geometry, coordinates: transformCoordinates(feature.geometry.coordinates, source.sourceCrs) };
   const bounds = coordinateBounds(geometry.coordinates);
   if (!bounds.every(Number.isFinite)) return null;
@@ -70,7 +71,7 @@ function normalize(source, feature) {
     city: source.city,
     state: source.state,
     area: valueFor(p, source.fields.area),
-    website: valueFor(p, source.fields.website),
+    website: override.website ?? valueFor(p, source.fields.website),
     established: valueFor(p, source.fields.established),
     expires: valueFor(p, source.fields.expires),
     annualRevenue: valueFor(p, source.fields.annualRevenue),

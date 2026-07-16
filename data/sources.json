@@ -50,6 +50,11 @@
       "name": ["name2", "name"],
       "website": ["link"],
       "status": ["type"]
+    },
+    "overrides": {
+      "Downtown": {
+        "website": "https://downtownsandiego.org/city-center-district/"
+      }
     }
   },
   {
