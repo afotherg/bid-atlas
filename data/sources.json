@@ -45,6 +45,7 @@
     "landingPage": "https://data.sandiego.gov/datasets/gis-business-improvement-districts/",
     "publisher": "City of San Diego / SANDAG",
     "cadence": "Weekly",
+    "sourceCrs": "EPSG:2230",
     "fields": {
       "name": ["name2", "name"],
       "website": ["link"],

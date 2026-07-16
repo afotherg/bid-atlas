@@ -1,27 +1,31 @@
 {
-  "checkedAt": "2026-07-16T19:50:29.511Z",
+  "checkedAt": "2026-07-16T20:08:32.718Z",
   "summary": {
-    "added": 14,
-    "modified": 0,
+    "added": 0,
+    "modified": 18,
     "removed": 0
   },
-  "added": [
-    "dc-washington-adams-morgan-bid",
-    "dc-washington-anacostia-bid",
-    "dc-washington-capitol-hill-bid",
-    "dc-washington-capitol-riverfront-bid",
-    "dc-washington-downtown-bid",
-    "dc-washington-dupont-circle-bid",
-    "dc-washington-friendship-heights-bid",
-    "dc-washington-georgetown-bid",
-    "dc-washington-golden-triangle-bid",
-    "ct-hartford-hartford-business-improvement-district",
-    "dc-washington-mount-vernon-triangle-cid",
-    "dc-washington-noma-bid",
-    "dc-washington-soul-of-the-city-bid",
-    "dc-washington-southwest-bid"
+  "added": [],
+  "modified": [
+    "ca-san-diego-adams-avenue",
+    "ca-san-diego-city-heights",
+    "ca-san-diego-college-area",
+    "ca-san-diego-diamond",
+    "ca-san-diego-downtown",
+    "ca-san-diego-east-village",
+    "ca-san-diego-el-cajon-boulevard-central",
+    "ca-san-diego-el-cajon-boulevard-gateway",
+    "ca-san-diego-gaslamp-quarter",
+    "ca-san-diego-hillcrest",
+    "ca-san-diego-la-jolla",
+    "ca-san-diego-little-italy",
+    "ca-san-diego-mission-hills",
+    "ca-san-diego-north-park",
+    "ca-san-diego-ocean-beach",
+    "ca-san-diego-old-town",
+    "ca-san-diego-pacific-beach",
+    "ca-san-diego-san-ysidro"
   ],
-  "modified": [],
   "removed": [],
   "sources": [
     {
@@ -29,35 +33,35 @@
       "name": "New York City Business Improvement Districts",
       "status": "ok",
       "records": 76,
-      "checkedAt": "2026-07-16T19:50:29.511Z"
+      "checkedAt": "2026-07-16T20:08:32.718Z"
     },
     {
       "id": "sf-community-benefit-districts",
       "name": "San Francisco Community Benefit Districts",
       "status": "ok",
       "records": 16,
-      "checkedAt": "2026-07-16T19:50:29.511Z"
+      "checkedAt": "2026-07-16T20:08:32.718Z"
     },
     {
       "id": "san-diego-bids",
       "name": "San Diego Business Improvement Districts",
       "status": "ok",
       "records": 18,
-      "checkedAt": "2026-07-16T19:50:29.511Z"
+      "checkedAt": "2026-07-16T20:08:32.718Z"
     },
     {
       "id": "dc-business-improvement-districts",
       "name": "Washington, DC Business Improvement Districts",
       "status": "ok",
       "records": 13,
-      "checkedAt": "2026-07-16T19:50:29.511Z"
+      "checkedAt": "2026-07-16T20:08:32.718Z"
     },
     {
       "id": "hartford-business-improvement-district",
       "name": "Hartford Business Improvement District",
       "status": "ok",
       "records": 60,
-      "checkedAt": "2026-07-16T19:50:29.511Z"
+      "checkedAt": "2026-07-16T20:08:32.718Z"
     }
   ]
 }

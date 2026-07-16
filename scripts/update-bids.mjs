@@ -1,6 +1,9 @@
 import { createHash } from "node:crypto";
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import path from "node:path";
+import proj4 from "proj4";
+
+proj4.defs("EPSG:2230", "+proj=lcc +lat_0=32.1666666666667 +lon_0=-116.25 +lat_1=33.8833333333333 +lat_2=32.7833333333333 +x_0=2000000 +y_0=500000 +datum=NAD83 +units=us-ft +no_defs +type=crs");
 
 const root = process.cwd();
 const sourcePath = path.join(root, "data/sources.json");
@@ -39,6 +42,15 @@ const coordinateBounds = (coordinates, bounds = [Infinity, Infinity, -Infinity, 
   return bounds;
 };
 
+const transformCoordinates = (coordinates, sourceCrs) => {
+  if (!sourceCrs || sourceCrs === "EPSG:4326") return coordinates;
+  if (!Array.isArray(coordinates)) return coordinates;
+  if (typeof coordinates[0] === "number" && typeof coordinates[1] === "number") {
+    return proj4(sourceCrs, "EPSG:4326", coordinates);
+  }
+  return coordinates.map((coordinate) => transformCoordinates(coordinate, sourceCrs));
+};
+
 const digest = (value) => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
 const slug = (value) => value.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
@@ -47,7 +59,8 @@ function normalize(source, feature) {
   const p = feature.properties ?? {};
   const name = source.fixedName ?? valueFor(p, source.fields.name);
   if (!name) return null;
-  const bounds = coordinateBounds(feature.geometry.coordinates);
+  const geometry = { ...feature.geometry, coordinates: transformCoordinates(feature.geometry.coordinates, source.sourceCrs) };
+  const bounds = coordinateBounds(geometry.coordinates);
   if (!bounds.every(Number.isFinite)) return null;
   const center = [(bounds[0] + bounds[2]) / 2, (bounds[1] + bounds[3]) / 2];
   const id = `${source.state.toLowerCase()}-${slug(source.city)}-${slug(name)}`;
@@ -70,10 +83,10 @@ function normalize(source, feature) {
     checkedAt,
     center,
     bounds,
-    geometryType: feature.geometry.type,
+    geometryType: geometry.type,
   };
-  properties.recordHash = digest({ geometry: feature.geometry, properties: { ...properties, checkedAt: undefined, recordHash: undefined } });
-  return { type: "Feature", id, properties, geometry: feature.geometry };
+  properties.recordHash = digest({ geometry, properties: { ...properties, checkedAt: undefined, recordHash: undefined } });
+  return { type: "Feature", id, properties, geometry };
 }
 
 const sourceResults = [];
