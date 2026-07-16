@@ -1,0 +1,54 @@
+{
+  "discoveredAt": "2026-07-16T19:49:57.099Z",
+  "reviewRequired": true,
+  "candidates": [
+    {
+      "dataset": "Business Improvement District",
+      "publisher": "City of Hartford",
+      "modified": "2024-09-18T12:44:01.000Z",
+      "landingPage": "https://data.hartford.gov/datasets/hartfordgis::business-improvement-district",
+      "format": "CSV",
+      "url": "https://data.hartford.gov/api/download/v1/items/6a56d47e99be48fe960dc65a6765bc71/csv?layers=1"
+    },
+    {
+      "dataset": "Business Improvement District",
+      "publisher": "City of Hartford",
+      "modified": "2024-09-18T12:44:01.000Z",
+      "landingPage": "https://data.hartford.gov/datasets/hartfordgis::business-improvement-district",
+      "format": "GeoJSON",
+      "url": "https://data.hartford.gov/api/download/v1/items/6a56d47e99be48fe960dc65a6765bc71/geojson?layers=1"
+    },
+    {
+      "dataset": "Business Improvement District",
+      "publisher": "City of Hartford",
+      "modified": "2024-09-18T12:44:01.000Z",
+      "landingPage": "https://data.hartford.gov/datasets/hartfordgis::business-improvement-district",
+      "format": "ArcGIS GeoServices REST API",
+      "url": "https://utility.arcgis.com/usrsvcs/servers/6a56d47e99be48fe960dc65a6765bc71/rest/services/OpenData_Housing_Development/MapServer/1"
+    },
+    {
+      "dataset": "Business Improvement Districts",
+      "publisher": "City of Washington, DC",
+      "modified": "2026-03-27T00:00:00.000Z",
+      "landingPage": "https://opendata.dc.gov/datasets/DCGIS::business-improvement-districts",
+      "format": "ArcGIS GeoServices REST API",
+      "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Betterment_Areas_WebMercator/MapServer/15"
+    },
+    {
+      "dataset": "Business Improvement Districts",
+      "publisher": "City of Washington, DC",
+      "modified": "2026-03-27T00:00:00.000Z",
+      "landingPage": "https://opendata.dc.gov/datasets/DCGIS::business-improvement-districts",
+      "format": "CSV",
+      "url": "https://opendata.dc.gov/api/download/v1/items/20ec5862d8f14bcbb9bf14f79c311406/csv?layers=15"
+    },
+    {
+      "dataset": "Business Improvement Districts",
+      "publisher": "City of Washington, DC",
+      "modified": "2026-03-27T00:00:00.000Z",
+      "landingPage": "https://opendata.dc.gov/datasets/DCGIS::business-improvement-districts",
+      "format": "GeoJSON",
+      "url": "https://opendata.dc.gov/api/download/v1/items/20ec5862d8f14bcbb9bf14f79c311406/geojson?layers=15"
+    }
+  ]
+}

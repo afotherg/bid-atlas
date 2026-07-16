@@ -1,0 +1,85 @@
+[
+  {
+    "id": "nyc-open-data-bids",
+    "name": "New York City Business Improvement Districts",
+    "jurisdiction": "New York City, NY",
+    "state": "NY",
+    "city": "New York",
+    "url": "https://data.cityofnewyork.us/api/v3/views/7jdm-inj8/query.geojson?accessType=DOWNLOAD",
+    "landingPage": "https://data.cityofnewyork.us/d/7jdm-inj8",
+    "publisher": "NYC OpenData",
+    "cadence": "As published",
+    "fields": {
+      "name": ["f_all_bi_2"],
+      "area": ["f_all_bi_1"],
+      "website": ["f_all_bi_4"],
+      "established": ["year_found"]
+    }
+  },
+  {
+    "id": "sf-community-benefit-districts",
+    "name": "San Francisco Community Benefit Districts",
+    "jurisdiction": "San Francisco, CA",
+    "state": "CA",
+    "city": "San Francisco",
+    "url": "https://data.sfgov.org/resource/c28a-f6gs.geojson?$limit=500",
+    "landingPage": "https://data.sfgov.org/d/c28a-f6gs",
+    "publisher": "City and County of San Francisco",
+    "cadence": "Annual / as needed",
+    "fields": {
+      "name": ["community_benefit_district"],
+      "established": ["established"],
+      "expires": ["expiration"],
+      "annualRevenue": ["revenue"],
+      "reportUrl": ["annual_report_url"],
+      "area": ["sup_districts"]
+    }
+  },
+  {
+    "id": "san-diego-bids",
+    "name": "San Diego Business Improvement Districts",
+    "jurisdiction": "San Diego, CA",
+    "state": "CA",
+    "city": "San Diego",
+    "url": "https://geo.sandag.org/server/rest/directories/downloads/Business_Improvement_Districts_SD.geojson",
+    "landingPage": "https://data.sandiego.gov/datasets/gis-business-improvement-districts/",
+    "publisher": "City of San Diego / SANDAG",
+    "cadence": "Weekly",
+    "fields": {
+      "name": ["name2", "name"],
+      "website": ["link"],
+      "status": ["type"]
+    }
+  },
+  {
+    "id": "dc-business-improvement-districts",
+    "name": "Washington, DC Business Improvement Districts",
+    "jurisdiction": "Washington, DC",
+    "state": "DC",
+    "city": "Washington",
+    "url": "https://opendata.dc.gov/api/download/v1/items/20ec5862d8f14bcbb9bf14f79c311406/geojson?layers=15",
+    "landingPage": "https://opendata.dc.gov/datasets/DCGIS::business-improvement-districts",
+    "publisher": "District of Columbia",
+    "cadence": "As published",
+    "fields": {
+      "name": ["NAME"],
+      "website": ["WEB_URL"],
+      "established": ["CREATED"]
+    }
+  },
+  {
+    "id": "hartford-business-improvement-district",
+    "name": "Hartford Business Improvement District",
+    "jurisdiction": "Hartford, CT",
+    "state": "CT",
+    "city": "Hartford",
+    "fixedName": "Hartford Business Improvement District",
+    "url": "https://data.hartford.gov/api/download/v1/items/6a56d47e99be48fe960dc65a6765bc71/geojson?layers=1",
+    "landingPage": "https://data.hartford.gov/datasets/hartfordgis::business-improvement-district",
+    "publisher": "City of Hartford",
+    "cadence": "As published",
+    "fields": {
+      "name": ["Description"]
+    }
+  }
+]

@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-07-16T19:50:29.511Z",
+  "summary": {
+    "added": 14,
+    "modified": 0,
+    "removed": 0
+  },
+  "added": [
+    "dc-washington-adams-morgan-bid",
+    "dc-washington-anacostia-bid",
+    "dc-washington-capitol-hill-bid",
+    "dc-washington-capitol-riverfront-bid",
+    "dc-washington-downtown-bid",
+    "dc-washington-dupont-circle-bid",
+    "dc-washington-friendship-heights-bid",
+    "dc-washington-georgetown-bid",
+    "dc-washington-golden-triangle-bid",
+    "ct-hartford-hartford-business-improvement-district",
+    "dc-washington-mount-vernon-triangle-cid",
+    "dc-washington-noma-bid",
+    "dc-washington-soul-of-the-city-bid",
+    "dc-washington-southwest-bid"
+  ],
+  "modified": [],
+  "removed": [],
+  "sources": [
+    {
+      "id": "nyc-open-data-bids",
+      "name": "New York City Business Improvement Districts",
+      "status": "ok",
+      "records": 76,
+      "checkedAt": "2026-07-16T19:50:29.511Z"
+    },
+    {
+      "id": "sf-community-benefit-districts",
+      "name": "San Francisco Community Benefit Districts",
+      "status": "ok",
+      "records": 16,
+      "checkedAt": "2026-07-16T19:50:29.511Z"
+    },
+    {
+      "id": "san-diego-bids",
+      "name": "San Diego Business Improvement Districts",
+      "status": "ok",
+      "records": 18,
+      "checkedAt": "2026-07-16T19:50:29.511Z"
+    },
+    {
+      "id": "dc-business-improvement-districts",
+      "name": "Washington, DC Business Improvement Districts",
+      "status": "ok",
+      "records": 13,
+      "checkedAt": "2026-07-16T19:50:29.511Z"
+    },
+    {
+      "id": "hartford-business-improvement-district",
+      "name": "Hartford Business Improvement District",
+      "status": "ok",
+      "records": 60,
+      "checkedAt": "2026-07-16T19:50:29.511Z"
+    }
+  ]
+}
