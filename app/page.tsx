@@ -187,9 +187,10 @@ export default function Home() {
   const [listOpen, setListOpen] = useState(true);
 
   useEffect(() => {
+    const dataUrl = (file: string) => new URL(`data/${file}`, document.baseURI).toString();
     Promise.all([
-      fetch("/data/bids.geojson").then((r) => r.json()),
-      fetch("/data/manifest.json").then((r) => r.json()),
+      fetch(dataUrl("bids.geojson")).then((r) => r.json()),
+      fetch(dataUrl("manifest.json")).then((r) => r.json()),
     ]).then(([bids, meta]) => { setCollection(bids); setManifest(meta); });
   }, []);
 

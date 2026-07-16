@@ -26,6 +26,12 @@ If a feed fails, the updater retains that source's last good records and marks t
 
 The included GitHub Actions workflow runs discovery and refresh daily, commits verified changes, and can also be run manually. Add authoritative feeds as they are verified. There is currently no authoritative nationwide U.S. registry, so the UI reports exact covered jurisdictions rather than claiming false completeness.
 
+## GitHub Pages deployment
+
+The combined GitHub Actions workflow publishes `dist/pages` on every push to `main`, on the daily refresh schedule, and when started manually. Scheduled refresh commits are deployed in the same workflow run; they do not rely on a second workflow being triggered by the Actions bot.
+
+In the GitHub repository, select **Settings → Pages → Build and deployment → Source: GitHub Actions**. The build automatically handles both project sites (`owner.github.io/repository/`) and account sites (`owner.github.io/`). A custom domain can be added later through the Pages settings.
+
 ## Adding a source
 
 Add a record to `data/sources.json` with an official GeoJSON URL, publisher, jurisdiction, landing page, and field aliases. Run `npm run admin:update`, inspect `data/last-change-report.json`, then review the affected map boundaries.

@@ -1,0 +1,65 @@
+name: Refresh and deploy BID Atlas
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run admin:discover
+      - run: npm run admin:update
+        continue-on-error: true
+      - name: Commit refreshed directory data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data data/last-change-report.json data/candidate-sources.json
+          git diff --cached --quiet || git commit -m "data: refresh BID directory"
+          git push
+      - name: Set GitHub Pages paths
+        run: |
+          REPOSITORY_NAME="${GITHUB_REPOSITORY#*/}"
+          OWNER_NAME="${GITHUB_REPOSITORY%/*}"
+          if [[ "$REPOSITORY_NAME" == "${OWNER_NAME}.github.io" ]]; then
+            echo "PAGES_BASE_PATH=/" >> "$GITHUB_ENV"
+            echo "PUBLIC_SITE_URL=https://${OWNER_NAME}.github.io" >> "$GITHUB_ENV"
+          else
+            echo "PAGES_BASE_PATH=/${REPOSITORY_NAME}/" >> "$GITHUB_ENV"
+            echo "PUBLIC_SITE_URL=https://${OWNER_NAME}.github.io" >> "$GITHUB_ENV"
+          fi
+      - run: npm run build:pages
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/pages
+
+  deploy:
+    needs: refresh-and-build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
