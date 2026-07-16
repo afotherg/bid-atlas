@@ -185,6 +185,7 @@ export default function Home() {
   const [state, setState] = useState("ALL");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [listOpen, setListOpen] = useState(true);
+  const [mobileView, setMobileView] = useState<"map" | "list">("map");
 
   useEffect(() => {
     const dataUrl = (file: string) => new URL(`data/${file}`, document.baseURI).toString();
@@ -231,13 +232,17 @@ export default function Home() {
           <label className="selectbox">State<select value={state} onChange={(e) => setState(e.target.value)}><option value="ALL">All covered states</option>{manifest?.states.map((code) => <option key={code} value={code}>{code}</option>)}</select></label>
           <button className="list-toggle" onClick={() => setListOpen((value) => !value)}>{listOpen ? "Hide" : "Show"} list</button>
           <span className="result-count">{filtered.length} results</span>
+          <div className="mobile-view-switch" aria-label="Choose map or list view">
+            <button className={mobileView === "map" ? "active" : ""} aria-pressed={mobileView === "map"} onClick={() => setMobileView("map")}>Map</button>
+            <button className={mobileView === "list" ? "active" : ""} aria-pressed={mobileView === "list"} onClick={() => setMobileView("list")}>List <span>{filtered.length}</span></button>
+          </div>
         </div>
-        <div className={`workspace ${listOpen ? "with-list" : ""}`}>
+        <div className={`workspace ${listOpen ? "with-list" : ""} mobile-${mobileView}`}>
           {listOpen && <div className="result-list" aria-label="District results">
             <div className="list-heading"><span>District directory</span><small>Official records</small></div>
             {filtered.slice(0, 250).map((feature) => {
               const p = feature.properties;
-              return <button key={p.id} className={`result-row ${selectedId === p.id ? "active" : ""}`} onClick={() => setSelectedId(p.id)}>
+              return <button key={p.id} className={`result-row ${selectedId === p.id ? "active" : ""}`} onClick={() => { setSelectedId(p.id); setMobileView("map"); }}>
                 <span className="row-pin" /><span><strong>{p.name}</strong><small>{p.city}, {p.state} · {p.geometryType}</small></span><span className="row-arrow">›</span>
               </button>;
             })}
