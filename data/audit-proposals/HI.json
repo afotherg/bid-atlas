@@ -87,6 +87,15 @@
         "confidence": "high"
       },
       {
+        "name": "Waikīkī Transportation Management Special Improvement District (SID No. 4)",
+        "jurisdiction": "City and County of Honolulu / Waikīkī",
+        "url": "https://honolulu.granicus.com/MetaViewer.php?clip_id=531&meta_id=25019&view_id=3",
+        "publisher": "City and County of Honolulu",
+        "source_type": "law",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
         "name": "Kailua Village Business Improvement District (No. 1)",
         "jurisdiction": "County of Hawaiʻi / Kailua-Kona",
         "url": "https://historickailuavillage.com/",
@@ -114,10 +123,10 @@
         "confidence": "medium"
       }
     ],
-    "coverage_status": "partial",
+    "coverage_status": "substantial",
     "confidence": "high",
-    "next_action": "Exhaustively inventory all active SIDs/BIDs via county clerk ordinance lists, Appendix 28-A updates, recent bills, and finance/tax assessment records for Honolulu (confirm only Nos. 1-3), Hawaiʻi (confirm only Kailua Village No. 1; Hilo rejected), Maui (search for any established under Ch. 3.70), and Kauai (confirm none); extract or request parcel-level boundaries/maps/GIS from district associations, county real property tax offices, or open data portals (none found statewide or countywide); recheck DCCA business registry only for management nonprofits and DBEDT/AG for any overlooked registry.",
-    "notes": "Statewide enabling is HRS §46-80.5 (Special improvement district), allowing charter counties to create SIDs by ordinance for supplemental maintenance/security, environmental/natural resource/hazard/climate work, and other services/improvements that restore/promote business activity, via special assessments (flexible methodology), optional bonds, and nonprofit association management (Ch. 414D). These are the legal BID equivalents. Honolulu implements via ROH Ch. 28 (SIDs Nos. 1 Waikiki ~2000, 2 Fort Street Mall expanded 2025 via Bill 51/Ord. 25-47 to Downtown Honolulu BID, 3 Waikiki Beach 2015); Hawaiʻi County via Code Ch. 35 (explicitly BIDs; active Kailua Village No. 1; Downtown Hilo No. 2 proposed but rejected 2023); Maui via Ord. 4382 adding Ch. 3.70 (enabling only; no active districts confirmed); Kauai has not authorized per community plan. Distinguish from traditional improvement districts (HRS 46-80), community facilities districts (HRS 46-80.1 / ROH Ch. 27), tax increment, zoning/design special districts (e.g., Honolulu zoning special districts GIS—different purpose/use), and HCDA districts. No statewide registry, comprehensive official list, or unified GIS of BID/SID boundaries (statewide geoportal and county open data lack them; district sites provide some maps/descriptions). Coverage partial: authority + all county enabling codes + known active districts (Honolulu-centric + one Hawaiʻi) verified with high confidence; full active inventory, status of any Maui districts, and digital boundaries incomplete. Sparse/failed searches (e.g., Kauai active, statewide maps) do not prove absence.",
+    "next_action": "Confirm through Maui and Kauai county clerk, finance, and assessment records that no active districts have been established under their enabling authorities; monitor Honolulu Chapter 28 and Hawaiʻi County Chapter 35 for changes. Five active districts are now mapped: Honolulu SIDs Nos. 1-4 and Kailua Village BID No. 1.",
+    "notes": "Statewide enabling is HRS §46-80.5 (Special improvement district), allowing charter counties to create SIDs by ordinance for supplemental services and improvements funded by special assessments. These are the legal BID equivalents. Honolulu currently implements four districts under ROH Ch. 28: No. 1 Waikīkī Business Improvement District (2000), No. 2 Fort Street Mall expanded and renamed Downtown Honolulu Business Improvement District by Ord. 25-47 (2025), No. 3 Waikīkī Beach Special Improvement District (2015), and No. 4 Waikīkī Transportation Management Special Improvement District (2017). Hawaiʻi County Code Ch. 35 has active Kailua Village BID No. 1; proposed Downtown Hilo BID No. 2 was rejected in 2023. Maui has enabling authority under Ch. 3.70 but no active district has yet been confirmed; Kauai planning material says the county had not authorized one. The atlas now maps all five verified active districts. Downtown Honolulu and Kailua Village boundaries were reconstructed from ordinance assessment parcel lists using current State parcel geometry; the three overlapping Waikīkī boundaries are generalized from official ordinance maps. No statewide registry or unified official GIS exists, so coverage remains substantial rather than comprehensive until negative findings for Maui and Kauai receive direct county confirmation.",
     "evidence_urls": [
       "https://www.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0046/HRS_0046-0080_0005.htm",
       "https://law.justia.com/codes/hawaii/title-6/chapter-46/section-46-80-5/",
@@ -127,6 +136,8 @@
       "https://www.mauicounty.gov/DocumentCenter/View/106635/Ord-4382?bidId=",
       "https://waikikibid.org/",
       "https://www.wbsida.org/overview",
+      "https://honolulu.granicus.com/MetaViewer.php?clip_id=531&meta_id=25019&view_id=3",
+      "https://hnldoc.ehawaii.gov/hnldoc/document-download?id=17516",
       "https://historickailuavillage.com/",
       "https://historickailuavillage.com/wp-content/uploads/2024/01/KVBID-Ordinance.pdf",
       "https://historickailuavillage.com/wp-content/uploads/2024/01/District-Boundary-Map-2018.pdf",

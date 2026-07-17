@@ -228,5 +228,33 @@
       "area": ["area"],
       "status": ["status"]
     }
+  },
+  {
+    "id": "hawaii-verified-business-improvement-districts",
+    "name": "Hawaii Verified Business Improvement Districts",
+    "jurisdiction": "Hawaii",
+    "state": "HI",
+    "file": "data/hawaii-verified-bids.geojson",
+    "landingPage": "https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36151",
+    "publisher": "City and County of Honolulu, County of Hawaii, and district associations",
+    "cadence": "Official ordinances and district maps monitored daily; parcel-derived and generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://files.amlegal.com/pdffiles/Honolulu/ORD25-047.pdf",
+      "https://waikikibid.org/wp-content/uploads/2024/02/WBIDA-Map-10-23-1.pdf",
+      "https://static1.squarespace.com/static/58eec8afc534a5631767d450/t/5ffcfee5fbb01927e42cf4d8/1610415871479/BILL082%2814%29%2C+final-ordinance15-11.PDF",
+      "https://honolulu.granicus.com/MetaViewer.php?clip_id=531&meta_id=25019&view_id=3",
+      "https://hnldoc.ehawaii.gov/hnldoc/document-download?id=17516",
+      "https://historickailuavillage.com/wp-content/uploads/2024/01/KVBID-Ordinance.pdf",
+      "https://historickailuavillage.com/wp-content/uploads/2024/01/District-Boundary-Map-2018.pdf"
+    ],
+    "fields": {
+      "name": ["name"],
+      "city": ["city"],
+      "website": ["website"],
+      "sourceUrl": ["sourceUrl"],
+      "established": ["established"],
+      "area": ["area"],
+      "status": ["status"]
+    }
   }
 ]
