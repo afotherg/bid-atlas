@@ -1,16 +1,12 @@
 {
-  "checkedAt": "2026-07-17T19:15:20.144Z",
+  "checkedAt": "2026-07-17T23:25:41.603Z",
   "summary": {
-    "added": 5,
+    "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "hi-honolulu-downtown-honolulu-business-improvement-district",
-    "hi-kailua-kona-kailua-village-business-improvement-district-no-1",
-    "hi-honolulu-waiki-ki-beach-special-improvement-district",
-    "hi-honolulu-waiki-ki-business-improvement-district",
-    "hi-honolulu-waiki-ki-transportation-management-special-improvement-district"
+    "wa-tacoma-downtown-tacoma-business-improvement-area-bia"
   ],
   "modified": [],
   "removed": [],
@@ -105,6 +101,15 @@
       "records": 5,
       "checkedAt": "2026-07-17T19:15:20.144Z",
       "monitorHash": "04d168a80a7f0637f979b9d37155699d3af9f9d4235e41d5bd56a6190c2b55f4",
+      "legislationChanged": false
+    },
+    {
+      "id": "washington-automated-business-improvement-districts",
+      "name": "Washington Automated Business Improvement District Candidates",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-17T23:25:41.603Z",
+      "monitorHash": "20366678135572ed877fae8f3c035717651ba2396935065af3ed91b8317a48c6",
       "legislationChanged": false
     }
   ]

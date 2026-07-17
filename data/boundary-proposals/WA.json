@@ -1,0 +1,1828 @@
+{
+  "created_at": "2026-07-17T23:25:41.398Z",
+  "review_required": true,
+  "state_code": "WA",
+  "state_name": "Washington",
+  "model": "grok-4.5",
+  "source_audit_proposal": "data/audit-proposals/WA.json",
+  "imported_feature_count": 1,
+  "source_id": "washington-automated-business-improvement-districts",
+  "plan": {
+    "state_code": "WA",
+    "statewide_assessment": "Draft publication proposal (review_required). Enabling authority is RCW 35.87A (Parking and Business Improvement Areas), allowing cities/towns/counties to form special assessment districts (locally termed PBIA/BIA/BID; also covers Tourism Improvement Areas) via petition (~60% assessments) or resolution for economic development, parking, promotion, maintenance, security, etc. No statewide registry or complete inventory located (MRSC provides overview/examples only). Coverage is partial; confirmed multiple active legal BID-equivalents primarily via municipal official lists, codes, boards, GIS, and district sites in major cities (Seattle 11, Tacoma 1, Spokane 2, Everett 2, Richland 2, Olympia, Snohomish, Yakima, Aberdeen, Port Angeles). Distinguish from LIDs (other RCW chapters), PDAs, zoning/redevelopment, and voluntary associations. Boundaries often in municipal GIS (ArcGIS Feature Layers preferred for auto_import), ordinances, or PDFs/images/parcel lists (manual_review). Active status requires current authoritative confirmation (not mere map presence). Auto_import limited to cases with verified active status + directly downloadable GeoJSON/ArcGIS Feature Layer/Web Map polygon. Additional districts may exist (e.g., smaller cities, counties); exhaustive municipal search incomplete. Wenatchee code exists (1973) but no recent activity evidence—treated as unclear/historical. Output remains draft for human review.",
+    "districts": [
+      {
+        "name": "15th Avenue East Business Improvement Area",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "",
+        "established": "2021",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Listed among Seattle's 11 current BIAs on official OED page with ordinances; GIS covers all Seattle BIAs. Programming began 2022. Shared Seattle GIS layer."
+      },
+      {
+        "name": "Ballard Business Improvement Area",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "",
+        "established": "2016",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Listed among Seattle's 11 current BIAs; establishing ordinance 2016; renewed/enhanced recently. Shared Seattle GIS layer."
+      },
+      {
+        "name": "Broadway Business Improvement Area",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "https://www.broadwaybia.org/",
+        "established": "1986",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Listed among Seattle's 11 current BIAs; one of oldest; boundary modifications. Shared Seattle GIS layer."
+      },
+      {
+        "name": "Chinatown-International District Business Improvement Area",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "",
+        "established": "1994",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Listed among Seattle's 11 current BIAs; multiple rate amendments. Shared Seattle GIS layer."
+      },
+      {
+        "name": "Columbia City Business Improvement Area",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "",
+        "established": "2009",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Listed among Seattle's 11 current BIAs. Shared Seattle GIS layer."
+      },
+      {
+        "name": "Metropolitan Improvement District (MID)",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "https://downtownseattle.org/programs-services/metropolitan-improvement-district/",
+        "established": "1999 (renewed 2013/2023)",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Large downtown BIA (~300 blocks); managed by Downtown Seattle Association; renewed for decade in 2023. Explicitly one of 11 BIAs. Shared Seattle GIS layer."
+      },
+      {
+        "name": "Pioneer Square Business Improvement Area",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "",
+        "established": "2013 (oldest roots)",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Listed among Seattle's 11 current BIAs; oldest in city. Shared Seattle GIS layer."
+      },
+      {
+        "name": "Seattle Tourism Improvement Area (STIA)",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "",
+        "established": "2011 (renewed ~2023 for 15 years)",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Listed among Seattle's 11 current BIAs; hotel assessment for tourism marketing (Visit Seattle); uses 35.87A authority; renewed/expanded. Shared Seattle GIS layer (hotel-focused)."
+      },
+      {
+        "name": "SODO Business Improvement Area",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "",
+        "established": "2014/2018",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Listed among Seattle's 11 current BIAs. Shared Seattle GIS layer."
+      },
+      {
+        "name": "University District Business Improvement Area",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "",
+        "established": "2015 (renewed 2020)",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Listed among Seattle's 11 current BIAs. Shared Seattle GIS layer."
+      },
+      {
+        "name": "West Seattle Junction Business Improvement Area",
+        "city": "Seattle",
+        "active_status": "verified_active",
+        "status_url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+        "website": "",
+        "established": "1987",
+        "boundary_source_url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "OED Business Improvement Area (BIA) Boundaries",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Listed among Seattle's 11 current BIAs; multiple amendments. Shared Seattle GIS layer."
+      },
+      {
+        "name": "Downtown Tacoma Business Improvement Area (BIA)",
+        "city": "Tacoma",
+        "active_status": "verified_active",
+        "status_url": "https://data.tacoma.gov/datasets/tacoma::business-improvement-area-tacoma",
+        "website": "https://www.tacomachamber.org/downtown-tacoma-partnership.html",
+        "established": "1988 (boundaries modified 2014; ongoing assessments)",
+        "boundary_source_url": "https://services3.arcgis.com/SCwJH1pD8WSn5T5y/arcgis/rest/services/Business_Improvement_Area_BIA/FeatureServer/0",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "Business Improvement Area (BIA)",
+        "publication_recommendation": "auto_import",
+        "confidence": "high",
+        "notes": "Official GIS Feature Layer (polygon, queryable GeoJSON); description confirms active 84-block district for maintenance/security/streetscape; operated by Downtown Tacoma Partnership; City oversight."
+      },
+      {
+        "name": "Downtown Spokane Parking and Business Improvement Area (Downtown BID)",
+        "city": "Spokane",
+        "active_status": "verified_active",
+        "status_url": "https://my.spokanecity.org/bcc/boards/downtown-business-improvement-district-board/",
+        "website": "https://downtownspokane.org/bid-ratepayers/",
+        "established": "1995 (reestablished 2001)",
+        "boundary_source_url": "https://data-spokane.opendata.arcgis.com/items/6d150d6f1b964a78b933aa4e4aaa038e",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "Business Improvement District",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Active board, annual management plans, assessments via City, managed by Downtown Spokane Partnership (~80 blocks). GIS item exists (Spokane Open Data); also PDF map in code (SMC 4.31 Appendix A). Confirm direct polygon download for auto_import potential."
+      },
+      {
+        "name": "East Sprague Parking and Business Improvement Area (East Sprague BID / Sprague Union District)",
+        "city": "Spokane",
+        "active_status": "verified_active",
+        "status_url": "https://my.spokanecity.org/bcc/boards/east-sprague-business-improvement-district-board/",
+        "website": "https://www.spragueuniondistrict.com/pbia",
+        "established": "2016",
+        "boundary_source_url": "https://data-spokane.opendata.arcgis.com/items/6d150d6f1b964a78b933aa4e4aaa038e",
+        "boundary_source_type": "arcgis_feature_layer",
+        "boundary_title": "Business Improvement District",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Active board with 2024-2026 management plans/agendas; managed by East Spokane Business Association. GIS likely covers both Spokane BIDs; confirm downloadable polygons."
+      },
+      {
+        "name": "Downtown (Parkway) Business Improvement District",
+        "city": "Richland",
+        "active_status": "verified_active",
+        "status_url": "https://www.richlandbusiness.com/programs/business-improvement-districts",
+        "website": "",
+        "established": "",
+        "boundary_source_url": "",
+        "boundary_source_type": "none",
+        "boundary_title": "",
+        "publication_recommendation": "manual_review",
+        "confidence": "medium",
+        "notes": "Official city economic development page confirms two active BIDs formed by petition under 35.87A; assessments collected by City, disbursed to elected boards. No authoritative boundary (GIS/PDF/ordinance map) located; website for district."
+      },
+      {
+        "name": "Uptown Business Improvement District",
+        "city": "Richland",
+        "active_status": "verified_active",
+        "status_url": "https://www.richlandbusiness.com/programs/business-improvement-districts",
+        "website": "",
+        "established": "",
+        "boundary_source_url": "",
+        "boundary_source_type": "none",
+        "boundary_title": "",
+        "publication_recommendation": "manual_review",
+        "confidence": "medium",
+        "notes": "Official city page confirms active; assessments via City. No boundary source located."
+      },
+      {
+        "name": "Parking and Business Improvement Area (Downtown Olympia PBIA)",
+        "city": "Olympia",
+        "active_status": "likely_active",
+        "status_url": "https://www.olympiawa.gov/government/advisory_committees/parking___business_improvement_area_board.php",
+        "website": "https://www.olympiawa.gov/government/advisory_committees/parking___business_improvement_area_board.php",
+        "established": "2005",
+        "boundary_source_url": "https://www.codepublishing.com/WA/Olympia/html/Olympia03/Olympia0362.html",
+        "boundary_source_type": "pdf_map",
+        "boundary_title": "OMC Ch. 3.62 Parking and Business Improvement Area (Zones A/B/C narrative + Exhibit A-1 map)",
+        "publication_recommendation": "manual_review",
+        "confidence": "medium",
+        "notes": "Active advisory board with current members/meeting schedule/work plans; code establishes zones with detailed metes-and-bounds; assessments set to $0 for 2025-2026 (Ord updates) amid evaluation process (2026 council action); still legal district. Boundary via code/PDF map."
+      },
+      {
+        "name": "Parking & Business Improvement Area (Historic Business District PBIA)",
+        "city": "Snohomish",
+        "active_status": "verified_active",
+        "status_url": "https://www.snohomishwa.gov/767/Parking-Business-Improvement-Area-PBIA",
+        "website": "",
+        "established": "2003 (dissolved/re-established 2024-2025 via Ord 2505)",
+        "boundary_source_url": "https://www.snohomishwa.gov/767/Parking-Business-Improvement-Area-PBIA",
+        "boundary_source_type": "image_map",
+        "boundary_title": "Congruous with Historic Business District (interactive zoning map; pale pink parcels)",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Current city page, 2025 MOU with HDSA, flat $150 assessment, Ord 2505 (2024/2025) re-establishes; fees collected by City. Boundary via zoning map/interactive GIS (not direct polygon download confirmed)."
+      },
+      {
+        "name": "Downtown Yakima Business Improvement District (DYBID)",
+        "city": "Yakima",
+        "active_status": "verified_active",
+        "status_url": "https://www.codepublishing.com/WA/Yakima/html/Yakima01/Yakima0133.html",
+        "website": "",
+        "established": "2008/2011",
+        "boundary_source_url": "",
+        "boundary_source_type": "none",
+        "boundary_title": "",
+        "publication_recommendation": "manual_review",
+        "confidence": "medium",
+        "notes": "Municipal code Ch. 1.33 creates advisory board for DYBID (Ord 2011-58); City collects assessments, contracts with Downtown Association of Yakima for services (maintenance/beautification). Current operations confirmed via association/city utility pages. No boundary source located."
+      },
+      {
+        "name": "Downtown Parking and Business Improvement District",
+        "city": "Aberdeen",
+        "active_status": "verified_active",
+        "status_url": "https://aberdeenwa.gov/254/Parking-Business-Improvement",
+        "website": "",
+        "established": "",
+        "boundary_source_url": "https://aberdeen.municipal.codes/AMC/3.100",
+        "boundary_source_type": "none",
+        "boundary_title": "AMC Ch. 3.100 (narrative description)",
+        "publication_recommendation": "manual_review",
+        "confidence": "medium",
+        "notes": "Active city committee with current members/meetings; code Ch. 3.100; purpose matches 35.87A; assessments/purpose for parking/beautification/promotion. Boundary narrative (west of F St etc.); no map/GIS located."
+      },
+      {
+        "name": "Parking and Business Improvement Area (PBIA)",
+        "city": "Port Angeles",
+        "active_status": "verified_active",
+        "status_url": "https://www.portangeleswaterfront.com/pbia",
+        "website": "https://www.portangeleswaterfront.com/pbia",
+        "established": "1985",
+        "boundary_source_url": "",
+        "boundary_source_type": "pdf_map",
+        "boundary_title": "PAMC 3.72 Exhibit A (boundary map); most businesses N of 2nd St between Valley & Lincoln",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Active; quarterly assessments; 2024 contract with Port Angeles Waterfront District for management/programs (Main Street, events, etc.). Fact sheet and code confirm; PDF map/image boundary."
+      },
+      {
+        "name": "Everett Station District Business Improvement Area (BIA)",
+        "city": "Everett",
+        "active_status": "verified_active",
+        "status_url": "https://www.everettstationdistrict.com/bia",
+        "website": "https://www.everettstationdistrict.com/bia",
+        "established": "2022 (Ord 3919-22; term to 2027)",
+        "boundary_source_url": "https://mrsc.org/getmedia/07254e3e-11d0-4acc-8e08-017e44d89098/e9o3919-22.pdf",
+        "boundary_source_type": "pdf_map",
+        "boundary_title": "Everett Station District BIA boundary map + parcel list (in ordinance)",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Active; ratepayer board; assessments (sf + value); ambassadors/services; managed by Stations Unidos; 5-year term unless amended. PDF map/parcel list in ordinance (MRSC)."
+      },
+      {
+        "name": "Downtown Everett Business Improvement Area (Downtown Improvement District / BIA)",
+        "city": "Everett",
+        "active_status": "verified_active",
+        "status_url": "https://downtowneverettwa.org/for-property-owners/",
+        "website": "https://downtowneverettwa.org/",
+        "established": "1990s (renewed periodically; expansion ~2025)",
+        "boundary_source_url": "",
+        "boundary_source_type": "none",
+        "boundary_title": "",
+        "publication_recommendation": "manual_review",
+        "confidence": "medium",
+        "notes": "Active; managed by Downtown Everett Association; recent renewal/expansion (2025 council actions/ordinances for assessments/services); City collects. One of two Everett BIAs. Boundary not located in current research."
+      },
+      {
+        "name": "Wenatchee Parking and Business Improvement Area",
+        "city": "Wenatchee",
+        "active_status": "unclear",
+        "status_url": "https://www.codepublishing.com/WA/Wenatchee/html/Wenatchee05/Wenatchee0598.html",
+        "website": "",
+        "established": "1973",
+        "boundary_source_url": "https://www.codepublishing.com/WA/Wenatchee/html/Wenatchee05/Wenatchee0598.html",
+        "boundary_source_type": "none",
+        "boundary_title": "WCC 5.98.020 (narrative: between Columbia/Chelan Sts, Kittitas St to 2nd Ave)",
+        "publication_recommendation": "exclude",
+        "confidence": "low",
+        "notes": "Code still present (parking validation focus); no evidence of current assessments, board activity, or operations in recent sources (Downtown Association appears voluntary). Exclude as likely historical/inactive unless confirmed."
+      }
+    ],
+    "manual_next_steps": [
+      "Confirm direct downloadable GeoJSON/shapefile or Feature Layer query endpoint for Seattle OED BIA Boundaries hub dataset (item 08107965cf3840668023f710e30796c3) and Spokane BID GIS (item 6d150d6f1b964a78b933aa4e4aaa038e); update to auto_import if polygons available and active confirmed.",
+      "Locate authoritative boundary polygons/maps/parcel lists for Richland BIDs, Yakima DYBID, Aberdeen, Downtown Everett BIA (search city GIS portals, ordinances, assessment rolls).",
+      "Verify Olympia PBIA status post-2025/2026 zero assessments and evaluation RFP; obtain Exhibit A-1 map PDF.",
+      "Search remaining cities/counties (e.g., Bellingham, Vancouver, Bellevue, Kennewick, Pasco, Walla Walla, Pullman, Longview, Centralia, Mount Vernon, Anacortes, Port Townsend, counties) for additional PBIAs/BIAs via municipal codes, clerk sites, GIS open data, and MRSC-style examples.",
+      "Cross-check Seattle STIA and others against current assessment collection pages or recent ordinances for ongoing activity.",
+      "Review/exclude any voluntary Main Street or chamber groups not under 35.87A assessments; confirm no dissolved districts.",
+      "For all manual_review: digitize PDF/image/narrative boundaries or obtain parcel lists; human validation of active status required before publication.",
+      "Seek non-governmental statewide inventory if exists (e.g., associations); update next_review_due after expansion."
+    ]
+  },
+  "decisions": [
+    {
+      "name": "15th Avenue East Business Improvement Area",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "Ballard Business Improvement Area",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "Broadway Business Improvement Area",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "Chinatown-International District Business Improvement Area",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "Columbia City Business Improvement Area",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "Metropolitan Improvement District (MID)",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "Pioneer Square Business Improvement Area",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "Seattle Tourism Improvement Area (STIA)",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "SODO Business Improvement Area",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "University District Business Improvement Area",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "West Seattle Junction Business Improvement Area",
+      "result": "blocked",
+      "reason": "Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON"
+    },
+    {
+      "name": "Downtown Tacoma Business Improvement Area (BIA)",
+      "result": "imported_for_review",
+      "reason": "passed automatic publication gates",
+      "boundaryUrl": "https://services3.arcgis.com/SCwJH1pD8WSn5T5y/arcgis/rest/services/Business_Improvement_Area_BIA/FeatureServer/0",
+      "featureCount": 1
+    },
+    {
+      "name": "Downtown Spokane Parking and Business Improvement Area (Downtown BID)",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "East Sprague Parking and Business Improvement Area (East Sprague BID / Sprague Union District)",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Downtown (Parkway) Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "confidence is medium"
+    },
+    {
+      "name": "Uptown Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "confidence is medium"
+    },
+    {
+      "name": "Parking and Business Improvement Area (Downtown Olympia PBIA)",
+      "result": "manual_or_excluded",
+      "reason": "status is likely_active"
+    },
+    {
+      "name": "Parking & Business Improvement Area (Historic Business District PBIA)",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Downtown Yakima Business Improvement District (DYBID)",
+      "result": "manual_or_excluded",
+      "reason": "confidence is medium"
+    },
+    {
+      "name": "Downtown Parking and Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "confidence is medium"
+    },
+    {
+      "name": "Parking and Business Improvement Area (PBIA)",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Everett Station District Business Improvement Area (BIA)",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Downtown Everett Business Improvement Area (Downtown Improvement District / BIA)",
+      "result": "manual_or_excluded",
+      "reason": "confidence is medium"
+    },
+    {
+      "name": "Wenatchee Parking and Business Improvement Area",
+      "result": "manual_or_excluded",
+      "reason": "status is unclear"
+    }
+  ],
+  "evidence": [
+    {
+      "title": "https://mrsc.org/explore-topics/economic-development/financing/parking-and-business-improvement-areas",
+      "url": "https://mrsc.org/explore-topics/economic-development/financing/parking-and-business-improvement-areas"
+    },
+    {
+      "title": "https://apps.leg.wa.gov/Rcw/default.aspx?cite=35.87A",
+      "url": "https://apps.leg.wa.gov/Rcw/default.aspx?cite=35.87A"
+    },
+    {
+      "title": "https://www.snohomishwa.gov/767/Parking-Business-Improvement-Area-PBIA",
+      "url": "https://www.snohomishwa.gov/767/Parking-Business-Improvement-Area-PBIA"
+    },
+    {
+      "title": "https://www.olympiawa.gov/government/advisory_committees/parking___business_improvement_area_board.php",
+      "url": "https://www.olympiawa.gov/government/advisory_committees/parking___business_improvement_area_board.php"
+    },
+    {
+      "title": "https://my.spokanecity.org/bcc/boards/downtown-business-improvement-district-board/",
+      "url": "https://my.spokanecity.org/bcc/boards/downtown-business-improvement-district-board/"
+    },
+    {
+      "title": "https://clerk.seattle.gov/search/results?s4=&l=200&Sect1=IMAGE&Sect2=THESON&Sect3=PLURON&Sect4=AND&Sect5=CBORY&Sect6=HITOFF&d=ORDF&p=1&u=%2Fsearch%2Fordinances&r=0&f=S&s7=%22BUSINESS-IMPROVEMENT-AREAS%22[INDX]&",
+      "url": "https://clerk.seattle.gov/search/results?s4=&l=200&Sect1=IMAGE&Sect2=THESON&Sect3=PLURON&Sect4=AND&Sect5=CBORY&Sect6=HITOFF&d=ORDF&p=1&u=%2Fsearch%2Fordinances&r=0&f=S&s7=%22BUSINESS-IMPROVEMENT-AREAS%22[INDX]&"
+    },
+    {
+      "title": "https://www.cityofpa.us/DocumentCenter/View/11801/Parking-and-Business-Improvement-Area-PBIA-Fact-Sheet-PDF",
+      "url": "https://www.cityofpa.us/DocumentCenter/View/11801/Parking-and-Business-Improvement-Area-PBIA-Fact-Sheet-PDF"
+    },
+    {
+      "title": "https://www.portangeleswaterfront.com/pbia",
+      "url": "https://www.portangeleswaterfront.com/pbia"
+    },
+    {
+      "title": "https://www.thejoltnews.com/stories/olympia-city-council-advances-pbia-evaluation,28890",
+      "url": "https://www.thejoltnews.com/stories/olympia-city-council-advances-pbia-evaluation,28890"
+    },
+    {
+      "title": "https://bottomline.seattle.gov/2025/11/20/business-improvement-areas-provide-community-driven-approach-to-support-seattles-business-districts/",
+      "url": "https://bottomline.seattle.gov/2025/11/20/business-improvement-areas-provide-community-driven-approach-to-support-seattles-business-districts/"
+    },
+    {
+      "title": "https://rooseveltseattle.org/business-group/business-improvement-area/",
+      "url": "https://rooseveltseattle.org/business-group/business-improvement-area/"
+    },
+    {
+      "title": "https://allianceforpioneersquare.org/business-improvement-area/",
+      "url": "https://allianceforpioneersquare.org/business-improvement-area/"
+    },
+    {
+      "title": "https://downtownseattle.org/programs-services/metropolitan-improvement-district/",
+      "url": "https://downtownseattle.org/programs-services/metropolitan-improvement-district/"
+    },
+    {
+      "title": "https://sodoseattle.org/sodo-bia/",
+      "url": "https://sodoseattle.org/sodo-bia/"
+    },
+    {
+      "title": "https://www.seattle.gov/economic-development/business-districts",
+      "url": "https://www.seattle.gov/economic-development/business-districts"
+    },
+    {
+      "title": "https://www.broadwaybia.org/",
+      "url": "https://www.broadwaybia.org/"
+    },
+    {
+      "title": "https://data-seattlecitygis.opendata.arcgis.com/datasets/mixed-use-and-commercial",
+      "url": "https://data-seattlecitygis.opendata.arcgis.com/datasets/mixed-use-and-commercial"
+    },
+    {
+      "title": "https://www.biafacts.com/",
+      "url": "https://www.biafacts.com/"
+    },
+    {
+      "title": "https://lni.wa.gov/licensing-permits/public-works-projects/strike-and-debar/contractors-not-allowed-to-bid",
+      "url": "https://lni.wa.gov/licensing-permits/public-works-projects/strike-and-debar/contractors-not-allowed-to-bid"
+    },
+    {
+      "title": "https://clark.wa.gov/sites/default/files/2026-06/bid-2833-planholderslist.pdf",
+      "url": "https://clark.wa.gov/sites/default/files/2026-06/bid-2833-planholderslist.pdf"
+    },
+    {
+      "title": "https://wsdot.wa.gov/engineering-standards/design-topics/engineering-applications/unit-bid-analysis",
+      "url": "https://wsdot.wa.gov/engineering-standards/design-topics/engineering-applications/unit-bid-analysis"
+    },
+    {
+      "title": "https://www.atg.wa.gov/ago-opinions/obligation-general-contractor-list-subcontractors-public-works-bid",
+      "url": "https://www.atg.wa.gov/ago-opinions/obligation-general-contractor-list-subcontractors-public-works-bid"
+    },
+    {
+      "title": "https://www.co.chelan.wa.us/files/natural-resources/documents/UpperWenDefSpace_Planholders.pdf",
+      "url": "https://www.co.chelan.wa.us/files/natural-resources/documents/UpperWenDefSpace_Planholders.pdf"
+    },
+    {
+      "title": "https://des.wa.gov/sell/bid-opportunities",
+      "url": "https://des.wa.gov/sell/bid-opportunities"
+    },
+    {
+      "title": "https://www.co.jefferson.wa.us/bids.aspx?bidID=88",
+      "url": "https://www.co.jefferson.wa.us/bids.aspx?bidID=88"
+    },
+    {
+      "title": "https://www.co.cowlitz.wa.us/bids.aspx?bidId=408",
+      "url": "https://www.co.cowlitz.wa.us/bids.aspx?bidId=408"
+    },
+    {
+      "title": "https://www.co.cowlitz.wa.us/bids.aspx?bidID=419",
+      "url": "https://www.co.cowlitz.wa.us/bids.aspx?bidID=419"
+    },
+    {
+      "title": "https://www.co.jefferson.wa.us/bids.aspx?bidID=105",
+      "url": "https://www.co.jefferson.wa.us/bids.aspx?bidID=105"
+    },
+    {
+      "title": "https://council.seattle.gov/2023/05/18/whats-the-mid-seattle-city-council-approves-major-community-led-investments-in-downtown/",
+      "url": "https://council.seattle.gov/2023/05/18/whats-the-mid-seattle-city-council-approves-major-community-led-investments-in-downtown/"
+    },
+    {
+      "title": "https://www.seattle.gov/economic-development/business-districts/business-improvement-areas-",
+      "url": "https://www.seattle.gov/economic-development/business-districts/business-improvement-areas-"
+    },
+    {
+      "title": "https://www.smartcitiesdive.com/ex/sustainablecitiescollective/seattle-s-metropolitan-improvement-district-bringing-people-downtown/211466/",
+      "url": "https://www.smartcitiesdive.com/ex/sustainablecitiescollective/seattle-s-metropolitan-improvement-district-bringing-people-downtown/211466/"
+    },
+    {
+      "title": "https://downtownseattle.org/programs-services/metropolitan-improvement-district/downtown-ambassadors/",
+      "url": "https://downtownseattle.org/programs-services/metropolitan-improvement-district/downtown-ambassadors/"
+    },
+    {
+      "title": "https://algaonline.org/page/2020_Spring_Dunkel",
+      "url": "https://algaonline.org/page/2020_Spring_Dunkel"
+    },
+    {
+      "title": "https://downtownseattle.org/",
+      "url": "https://downtownseattle.org/"
+    },
+    {
+      "title": "https://www.courts.wa.gov/opinions/pdf/1033397.pdf",
+      "url": "https://www.courts.wa.gov/opinions/pdf/1033397.pdf"
+    },
+    {
+      "title": "https://downtownseattle.org/programs-services/metropolitan-improvement-district/services-summary/",
+      "url": "https://downtownseattle.org/programs-services/metropolitan-improvement-district/services-summary/"
+    },
+    {
+      "title": "https://www.seattle.gov/documents/Departments/economicDevelopment/BIA%202019%20Report.pdf",
+      "url": "https://www.seattle.gov/documents/Departments/economicDevelopment/BIA%202019%20Report.pdf"
+    },
+    {
+      "title": "https://data-seattlecitygis.opendata.arcgis.com/maps/seattle-city-limits-2",
+      "url": "https://data-seattlecitygis.opendata.arcgis.com/maps/seattle-city-limits-2"
+    },
+    {
+      "title": "https://experience.arcgis.com/experience/7ca082d53c514e87a1127349bea052d5",
+      "url": "https://experience.arcgis.com/experience/7ca082d53c514e87a1127349bea052d5"
+    },
+    {
+      "title": "https://www.arcgis.com/apps/webappviewer/index.html?id=f822b2c6498c4163b0cf908e2241e9c2",
+      "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=f822b2c6498c4163b0cf908e2241e9c2"
+    },
+    {
+      "title": "https://www.arcgis.com/apps/webappviewer/index.html?id=27bfda03ce4342b3834a27010da857e5",
+      "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=27bfda03ce4342b3834a27010da857e5"
+    },
+    {
+      "title": "https://survey123.arcgis.com/share/2f7ab6066ef449039f8f422e1d197f72",
+      "url": "https://survey123.arcgis.com/share/2f7ab6066ef449039f8f422e1d197f72"
+    },
+    {
+      "title": "https://www.seattle.gov/documents/departments/economicdevelopment/oisi/city%20of%20seattle%20policies%20for%20bias%20adopted%20april%202016.pdf",
+      "url": "https://www.seattle.gov/documents/departments/economicdevelopment/oisi/city%20of%20seattle%20policies%20for%20bias%20adopted%20april%202016.pdf"
+    },
+    {
+      "title": "https://data.tacoma.gov/datasets/tacoma::business-improvement-area-tacoma/about",
+      "url": "https://data.tacoma.gov/datasets/tacoma::business-improvement-area-tacoma/about"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=1d233cde6a5943ad88e5e39c18c7f1a5",
+      "url": "https://www.arcgis.com/home/item.html?id=1d233cde6a5943ad88e5e39c18c7f1a5"
+    },
+    {
+      "title": "https://www.tacomachamber.org/downtown-tacoma-partnership.html",
+      "url": "https://www.tacomachamber.org/downtown-tacoma-partnership.html"
+    },
+    {
+      "title": "https://geo.btaa.org/resources/1d233cde6a5943ad88e5e39c18c7f1a5_0",
+      "url": "https://geo.btaa.org/resources/1d233cde6a5943ad88e5e39c18c7f1a5_0"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=1d233cde6a5943ad88e5e39c18c7f1a5&sublayer=0",
+      "url": "https://www.arcgis.com/home/item.html?id=1d233cde6a5943ad88e5e39c18c7f1a5&sublayer=0"
+    },
+    {
+      "title": "https://data.tacoma.gov/search?layout=grid",
+      "url": "https://data.tacoma.gov/search?layout=grid"
+    },
+    {
+      "title": "https://www.piercecountywa.gov/2281/GIS-Map-Applications",
+      "url": "https://www.piercecountywa.gov/2281/GIS-Map-Applications"
+    },
+    {
+      "title": "https://www.tacomapermits.org/projects/maps",
+      "url": "https://www.tacomapermits.org/projects/maps"
+    },
+    {
+      "title": "https://staffmaps.cityoftacoma.org/portal/home/item.html?id=434d74442ae441379ad878faa156472f",
+      "url": "https://staffmaps.cityoftacoma.org/portal/home/item.html?id=434d74442ae441379ad878faa156472f"
+    },
+    {
+      "title": "https://data-spokane.opendata.arcgis.com/items/6d150d6f1b964a78b933aa4e4aaa038e",
+      "url": "https://data-spokane.opendata.arcgis.com/items/6d150d6f1b964a78b933aa4e4aaa038e"
+    },
+    {
+      "title": "https://www.spragueuniondistrict.com/pbia",
+      "url": "https://www.spragueuniondistrict.com/pbia"
+    },
+    {
+      "title": "https://my.spokanecity.org/bcc/boards/east-sprague-business-improvement-district-board/",
+      "url": "https://my.spokanecity.org/bcc/boards/east-sprague-business-improvement-district-board/"
+    },
+    {
+      "title": "https://hub.arcgis.com/maps/spokane::business-improvement-district-1/about",
+      "url": "https://hub.arcgis.com/maps/spokane::business-improvement-district-1/about"
+    },
+    {
+      "title": "https://downtownspokane.org/bid-ratepayers/",
+      "url": "https://downtownspokane.org/bid-ratepayers/"
+    },
+    {
+      "title": "https://www.spragueuniondistrict.com/about-us",
+      "url": "https://www.spragueuniondistrict.com/about-us"
+    },
+    {
+      "title": "https://spokanevalleywa.gov/267/Maps-GIS",
+      "url": "https://spokanevalleywa.gov/267/Maps-GIS"
+    },
+    {
+      "title": "https://my.spokanecity.org/opendata/gis/",
+      "url": "https://my.spokanecity.org/opendata/gis/"
+    },
+    {
+      "title": "https://www.richlandbusiness.com/programs/business-improvement-districts",
+      "url": "https://www.richlandbusiness.com/programs/business-improvement-districts"
+    },
+    {
+      "title": "https://www.oaklandchamber.com/business-improvement-districts/",
+      "url": "https://www.oaklandchamber.com/business-improvement-districts/"
+    },
+    {
+      "title": "https://www.fhwa.dot.gov/ipd/fact_sheets/value_cap_bid.aspx",
+      "url": "https://www.fhwa.dot.gov/ipd/fact_sheets/value_cap_bid.aspx"
+    },
+    {
+      "title": "https://www.pps.org/article/bid-2",
+      "url": "https://www.pps.org/article/bid-2"
+    },
+    {
+      "title": "https://www.oaklandca.gov/Business/For-Business-Owners/Business-Resources/Business-Improvement-Districts",
+      "url": "https://www.oaklandca.gov/Business/For-Business-Owners/Business-Resources/Business-Improvement-Districts"
+    },
+    {
+      "title": "https://en.wikipedia.org/wiki/Business_improvement_districts_in_the_United_States",
+      "url": "https://en.wikipedia.org/wiki/Business_improvement_districts_in_the_United_States"
+    },
+    {
+      "title": "https://hub.arcgis.com/maps/c69cf0428d7d49599e6a8da8df62dc94",
+      "url": "https://hub.arcgis.com/maps/c69cf0428d7d49599e6a8da8df62dc94"
+    },
+    {
+      "title": "https://oaklandside.org/2021/09/09/business-improvement-districts-oakland/",
+      "url": "https://oaklandside.org/2021/09/09/business-improvement-districts-oakland/"
+    },
+    {
+      "title": "https://oaklandpittsburgh.com/pages/about",
+      "url": "https://oaklandpittsburgh.com/pages/about"
+    },
+    {
+      "title": "https://services6.arcgis.com/LdrCKKkneNr0gXhT/arcgis/rest/services/Business_Resource_Providers/FeatureServer/0",
+      "url": "https://services6.arcgis.com/LdrCKKkneNr0gXhT/arcgis/rest/services/Business_Resource_Providers/FeatureServer/0"
+    },
+    {
+      "title": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html",
+      "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/cartographic-boundary.html"
+    },
+    {
+      "title": "https://www.weather.gov/wrh/hazards",
+      "url": "https://www.weather.gov/wrh/hazards"
+    },
+    {
+      "title": "https://octo.dc.gov/sites/default/files/dc/sites/octo/publication/attachments/GISSC-Presentation-Jul2018.pdf",
+      "url": "https://octo.dc.gov/sites/default/files/dc/sites/octo/publication/attachments/GISSC-Presentation-Jul2018.pdf"
+    },
+    {
+      "title": "https://www.soundtransit.org/sites/default/files/documents/08-WSLE-FinalEIS-Appendices-AthroughF.pdf",
+      "url": "https://www.soundtransit.org/sites/default/files/documents/08-WSLE-FinalEIS-Appendices-AthroughF.pdf"
+    },
+    {
+      "title": "https://www.int-res.com/articles/esr2017/32/n032p533.pdf",
+      "url": "https://www.int-res.com/articles/esr2017/32/n032p533.pdf"
+    },
+    {
+      "title": "https://s3-us-gov-west-1.amazonaws.com/cg-baa85e06-1bdd-4672-9e3a-36333c05c6ce/global__link_requests__last30.2025-12-31.csv",
+      "url": "https://s3-us-gov-west-1.amazonaws.com/cg-baa85e06-1bdd-4672-9e3a-36333c05c6ce/global__link_requests__last30.2025-12-31.csv"
+    },
+    {
+      "title": "https://atcoordinates.info/wp-content/uploads/2025/08/hifld_data_links.xlsx",
+      "url": "https://atcoordinates.info/wp-content/uploads/2025/08/hifld_data_links.xlsx"
+    },
+    {
+      "title": "https://www.mdpi.com/2220-9964/10/3/183",
+      "url": "https://www.mdpi.com/2220-9964/10/3/183"
+    },
+    {
+      "title": "https://gist.github.com/4278655",
+      "url": "https://gist.github.com/4278655"
+    },
+    {
+      "title": "https://data.tacoma.gov/datasets/tacoma::business-improvement-area-tacoma",
+      "url": "https://data.tacoma.gov/datasets/tacoma::business-improvement-area-tacoma"
+    },
+    {
+      "title": "https://services3.arcgis.com/SCwJH1pD8WSn5T5y/arcgis/rest/services/Business_Improvement_Area_BIA/FeatureServer",
+      "url": "https://services3.arcgis.com/SCwJH1pD8WSn5T5y/arcgis/rest/services/Business_Improvement_Area_BIA/FeatureServer"
+    },
+    {
+      "title": "https://digitalcommons.tacoma.uw.edu/cgi/viewcontent.cgi?filename=0&article=1032&context=gis_projects&type=additional",
+      "url": "https://digitalcommons.tacoma.uw.edu/cgi/viewcontent.cgi?filename=0&article=1032&context=gis_projects&type=additional"
+    },
+    {
+      "title": "https://www.tacomadailyindex.com/2014/04/03/tacoma-bia-contract-renewed-boundary-expanded/",
+      "url": "https://www.tacomadailyindex.com/2014/04/03/tacoma-bia-contract-renewed-boundary-expanded/"
+    },
+    {
+      "title": "https://cityoftacoma.legistar.com/View.ashx?M=F&ID=10636177&GUID=EF40C13E-B95F-4087-8BAC-A865C0C8AB73",
+      "url": "https://cityoftacoma.legistar.com/View.ashx?M=F&ID=10636177&GUID=EF40C13E-B95F-4087-8BAC-A865C0C8AB73"
+    },
+    {
+      "title": "https://tacoma.gov/government/departments/community-and-economic-development/",
+      "url": "https://tacoma.gov/government/departments/community-and-economic-development/"
+    },
+    {
+      "title": "https://services3.arcgis.com/SCwJH1pD8WSn5T5y/arcgis/rest/services/Business_Improvement_Area_BIA/FeatureServer/0",
+      "url": "https://services3.arcgis.com/SCwJH1pD8WSn5T5y/arcgis/rest/services/Business_Improvement_Area_BIA/FeatureServer/0"
+    },
+    {
+      "title": "https://www.bia.gov/bia/ois/tgs",
+      "url": "https://www.bia.gov/bia/ois/tgs"
+    },
+    {
+      "title": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+      "url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0"
+    },
+    {
+      "title": "https://storymaps.arcgis.com/stories/bad190fe67814ba6bbe1f547dc303008",
+      "url": "https://storymaps.arcgis.com/stories/bad190fe67814ba6bbe1f547dc303008"
+    },
+    {
+      "title": "https://experience.arcgis.com/experience/9a89ee80c604431e8f8d939a186fbdbb",
+      "url": "https://experience.arcgis.com/experience/9a89ee80c604431e8f8d939a186fbdbb"
+    },
+    {
+      "title": "https://storymaps.arcgis.com/stories/78a577486da4462da5180e98ece84a26",
+      "url": "https://storymaps.arcgis.com/stories/78a577486da4462da5180e98ece84a26"
+    },
+    {
+      "title": "https://storymaps.arcgis.com/stories/52a8c6416afc4c6fa72aa880848d2076",
+      "url": "https://storymaps.arcgis.com/stories/52a8c6416afc4c6fa72aa880848d2076"
+    },
+    {
+      "title": "https://aberdeen.municipal.codes/AMC/15.40.040",
+      "url": "https://aberdeen.municipal.codes/AMC/15.40.040"
+    },
+    {
+      "title": "https://www.aberdeeninspired.com/about/bid-area",
+      "url": "https://www.aberdeeninspired.com/about/bid-area"
+    },
+    {
+      "title": "https://www.atascadero.org/sites/default/files/2023-06/Downtown_Parking_Business_Improvement_Area_Information_Updated_12_2_20.docx.pdf",
+      "url": "https://www.atascadero.org/sites/default/files/2023-06/Downtown_Parking_Business_Improvement_Area_Information_Updated_12_2_20.docx.pdf"
+    },
+    {
+      "title": "https://hubcityradio.com/aberdeen-city-council-address-parking-in-downtown-aberdeen/",
+      "url": "https://hubcityradio.com/aberdeen-city-council-address-parking-in-downtown-aberdeen/"
+    },
+    {
+      "title": "https://aberdeeninsider.com/city-council-tables-possible-bid-tax-increase-until-aug-5/",
+      "url": "https://aberdeeninsider.com/city-council-tables-possible-bid-tax-increase-until-aug-5/"
+    },
+    {
+      "title": "https://www.downtownaberdeen.net/parkingstudy",
+      "url": "https://www.downtownaberdeen.net/parkingstudy"
+    },
+    {
+      "title": "https://www.facebook.com/AberdeenCC/posts/businesses-in-aberdeen-city-centre-will-have-the-chance-to-vote-on-the-future-of/1371512505008894/",
+      "url": "https://www.facebook.com/AberdeenCC/posts/businesses-in-aberdeen-city-centre-will-have-the-chance-to-vote-on-the-future-of/1371512505008894/"
+    },
+    {
+      "title": "https://www.cdfa.net/cdfa/cdfaweb.nsf/ord/931c0965bbdec62288257936005edd8c/$file/business%20improvement%20districts%20and%20urban%20entertainment%20and%E2%80%A6.pdf",
+      "url": "https://www.cdfa.net/cdfa/cdfaweb.nsf/ord/931c0965bbdec62288257936005edd8c/$file/business%20improvement%20districts%20and%20urban%20entertainment%20and%E2%80%A6.pdf"
+    },
+    {
+      "title": "https://repository.library.noaa.gov/view/noaa/56552/noaa_56552_DS1.pdf",
+      "url": "https://repository.library.noaa.gov/view/noaa/56552/noaa_56552_DS1.pdf"
+    },
+    {
+      "title": "https://scag.ca.gov/sites/default/files/2024-05/rc020124fullpacket.pdf",
+      "url": "https://scag.ca.gov/sites/default/files/2024-05/rc020124fullpacket.pdf"
+    },
+    {
+      "title": "https://data.usgs.gov/datacatalog/data/USGS:65c27890d34ef4b119ca6db9",
+      "url": "https://data.usgs.gov/datacatalog/data/USGS:65c27890d34ef4b119ca6db9"
+    },
+    {
+      "title": "https://efsec.wa.gov/sites/default/files/2025-10/06%20-%20References.pdf",
+      "url": "https://efsec.wa.gov/sites/default/files/2025-10/06%20-%20References.pdf"
+    },
+    {
+      "title": "https://www.fws.gov/r7/nwr/Realty/data/LandMappers/Public/Help/PDF/R7-LM-Help.pdf",
+      "url": "https://www.fws.gov/r7/nwr/Realty/data/LandMappers/Public/Help/PDF/R7-LM-Help.pdf"
+    },
+    {
+      "title": "https://s3-us-gov-west-1.amazonaws.com/cg-baa85e06-1bdd-4672-9e3a-36333c05c6ce/doi-gov__link_requests__last30.2026-01-31.csv",
+      "url": "https://s3-us-gov-west-1.amazonaws.com/cg-baa85e06-1bdd-4672-9e3a-36333c05c6ce/doi-gov__link_requests__last30.2026-01-31.csv"
+    },
+    {
+      "title": "https://www.facebook.com/delawarebusinesstimes/posts/activists-and-business-leaders-have-proposed-to-buy-and-renovate-property-for-a-/4144168765634227/",
+      "url": "https://www.facebook.com/delawarebusinesstimes/posts/activists-and-business-leaders-have-proposed-to-buy-and-renovate-property-for-a-/4144168765634227/"
+    },
+    {
+      "title": "https://www.norpc.org/wp-content/uploads/2025/07/5_Draft-Bicycle-and-Pedestrian-Network-Maps.pdf",
+      "url": "https://www.norpc.org/wp-content/uploads/2025/07/5_Draft-Bicycle-and-Pedestrian-Network-Maps.pdf"
+    },
+    {
+      "title": "https://broadbandusa.ntia.gov/sites/default/files/2025-12/EA_NTHE_HB_Middle_Mile_Network.pdf",
+      "url": "https://broadbandusa.ntia.gov/sites/default/files/2025-12/EA_NTHE_HB_Middle_Mile_Network.pdf"
+    },
+    {
+      "title": "https://www.everettstationdistrict.com/bia",
+      "url": "https://www.everettstationdistrict.com/bia"
+    },
+    {
+      "title": "https://mrsc.org/getmedia/07254e3e-11d0-4acc-8e08-017e44d89098/e9o3919-22.pdf",
+      "url": "https://mrsc.org/getmedia/07254e3e-11d0-4acc-8e08-017e44d89098/e9o3919-22.pdf"
+    },
+    {
+      "title": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/14727?fileID=84301",
+      "url": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/14727?fileID=84301"
+    },
+    {
+      "title": "https://www.everettstationdistrict.com/news/2025-annual-report",
+      "url": "https://www.everettstationdistrict.com/news/2025-annual-report"
+    },
+    {
+      "title": "https://myeverettnews.com/2019/11/20/everett-city-council-asked-for-business-improvement-area-around-everett-station/",
+      "url": "https://myeverettnews.com/2019/11/20/everett-city-council-asked-for-business-improvement-area-around-everett-station/"
+    },
+    {
+      "title": "https://www.stationsunidos.org/about",
+      "url": "https://www.stationsunidos.org/about"
+    },
+    {
+      "title": "https://www.facebook.com/EverettStationDistrict/",
+      "url": "https://www.facebook.com/EverettStationDistrict/"
+    },
+    {
+      "title": "https://www.heraldnet.com/2025/12/12/everett-expands-downtown-improvement-district/",
+      "url": "https://www.heraldnet.com/2025/12/12/everett-expands-downtown-improvement-district/"
+    },
+    {
+      "title": "https://downtowneverettwa.org/for-property-owners/",
+      "url": "https://downtowneverettwa.org/for-property-owners/"
+    },
+    {
+      "title": "https://fmsib.wa.gov/sites/default/files/2025-01/Integrating%20Community%20Considerations%20in%20Freight%20Investments%20-%20FINAL%202.pdf",
+      "url": "https://fmsib.wa.gov/sites/default/files/2025-01/Integrating%20Community%20Considerations%20in%20Freight%20Investments%20-%20FINAL%202.pdf"
+    },
+    {
+      "title": "https://www.facebook.com/WCPO9/posts/georgetown-village-council-voted-unanimously-monday-to-forgive-two-months-of-com/1448407240650562/",
+      "url": "https://www.facebook.com/WCPO9/posts/georgetown-village-council-voted-unanimously-monday-to-forgive-two-months-of-com/1448407240650562/"
+    },
+    {
+      "title": "https://fmsib.wa.gov/sites/default/files/2024-11/00%20Board%20Packet%20Nov%2022.pdf",
+      "url": "https://fmsib.wa.gov/sites/default/files/2024-11/00%20Board%20Packet%20Nov%2022.pdf"
+    },
+    {
+      "title": "https://www.facebook.com/WagHeaven/posts/we-have-been-trying-to-boost-this-notice-to-ask-for-all-of-your-help-to-vote-for/706198786906300/",
+      "url": "https://www.facebook.com/WagHeaven/posts/we-have-been-trying-to-boost-this-notice-to-ask-for-all-of-your-help-to-vote-for/706198786906300/"
+    },
+    {
+      "title": "https://www.facebook.com/thehoya/posts/georgetown-students-and-residents-on-the-advisory-neighborhood-commission-voted-/808386241287367/",
+      "url": "https://www.facebook.com/thehoya/posts/georgetown-students-and-residents-on-the-advisory-neighborhood-commission-voted-/808386241287367/"
+    },
+    {
+      "title": "https://apps.ecology.wa.gov/separ/Main/SEPA/Document/DocumentOpenHandler.ashx?DocumentId=184699",
+      "url": "https://apps.ecology.wa.gov/separ/Main/SEPA/Document/DocumentOpenHandler.ashx?DocumentId=184699"
+    },
+    {
+      "title": "https://www.uncommonbridges.com/project/everett-business-improvement-area-renewal-expansion",
+      "url": "https://www.uncommonbridges.com/project/everett-business-improvement-area-renewal-expansion"
+    },
+    {
+      "title": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/11547?fileID=70570",
+      "url": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/11547?fileID=70570"
+    },
+    {
+      "title": "https://everett.granicus.com/MetaViewer.php?view_id=4&clip_id=2840&meta_id=123896",
+      "url": "https://everett.granicus.com/MetaViewer.php?view_id=4&clip_id=2840&meta_id=123896"
+    },
+    {
+      "title": "https://philanthropy.org/990/report/911719487/downtown-everett-association",
+      "url": "https://philanthropy.org/990/report/911719487/downtown-everett-association"
+    },
+    {
+      "title": "https://citizenportal.ai/articles/6712281/washington/snohomish-county/everett/council-sets-nov-19-public-hearing-to-renew-and-modestly-expand-downtown-everett-business-improvement-district",
+      "url": "https://citizenportal.ai/articles/6712281/washington/snohomish-county/everett/council-sets-nov-19-public-hearing-to-renew-and-modestly-expand-downtown-everett-business-improvement-district"
+    },
+    {
+      "title": "https://downtowneverettwa.org/",
+      "url": "https://downtowneverettwa.org/"
+    },
+    {
+      "title": "https://www.spokanejournal.com/articles/6367-downtown-business-improvement-district-attracts-outliers",
+      "url": "https://www.spokanejournal.com/articles/6367-downtown-business-improvement-district-attracts-outliers"
+    },
+    {
+      "title": "https://downtownspokane.org/dsp-members/about-membership/",
+      "url": "https://downtownspokane.org/dsp-members/about-membership/"
+    },
+    {
+      "title": "https://www.alscarchitects.com/news/archived-articles/downtown-spokane-parking-and-business-improvement-district/",
+      "url": "https://www.alscarchitects.com/news/archived-articles/downtown-spokane-parking-and-business-improvement-district/"
+    },
+    {
+      "title": "https://hub.arcgis.com/maps/JohnsCreekGA::business-metrics-revenue-collected-from-home-based-businesses-map/about",
+      "url": "https://hub.arcgis.com/maps/JohnsCreekGA::business-metrics-revenue-collected-from-home-based-businesses-map/about"
+    },
+    {
+      "title": "https://rocketreach.co/downtown-spokane-partnership-dsp-business-improvement-district-bid-email-format_b5d33516f42e45c8",
+      "url": "https://rocketreach.co/downtown-spokane-partnership-dsp-business-improvement-district-bid-email-format_b5d33516f42e45c8"
+    },
+    {
+      "title": "https://library.municode.com/wa/port_angeles/codes/code_of_ordinances?nodeId=TIT3REFI_CH3.72PABUIMARPB_3.72.030SPAS&showChanges=true",
+      "url": "https://library.municode.com/wa/port_angeles/codes/code_of_ordinances?nodeId=TIT3REFI_CH3.72PABUIMARPB_3.72.030SPAS&showChanges=true"
+    },
+    {
+      "title": "https://www.peninsuladailynews.com/2017/03/16/chamber-director-replace-port-angeles-parking-business-improvement-area/",
+      "url": "https://www.peninsuladailynews.com/2017/03/16/chamber-director-replace-port-angeles-parking-business-improvement-area/"
+    },
+    {
+      "title": "https://wa-portangeles.civicplus.com/CivicAlerts.asp?AID=855&ARC=1414",
+      "url": "https://wa-portangeles.civicplus.com/CivicAlerts.asp?AID=855&ARC=1414"
+    },
+    {
+      "title": "https://www.pbia.org/",
+      "url": "https://www.pbia.org/"
+    },
+    {
+      "title": "https://www.portangeleswaterfront.com/wxnw/about",
+      "url": "https://www.portangeleswaterfront.com/wxnw/about"
+    },
+    {
+      "title": "https://www.cityofpa.us/DocumentCenter/View/7590/PBIA-Agreement",
+      "url": "https://www.cityofpa.us/DocumentCenter/View/7590/PBIA-Agreement"
+    },
+    {
+      "title": "https://www.youtube.com/watch?v=lWaAMpyow5s",
+      "url": "https://www.youtube.com/watch?v=lWaAMpyow5s"
+    },
+    {
+      "title": "https://www.book2park.com/airport/palm-beach-pbi-airport-parking?ref=ltp&srsltid=AfmBOorfuON8lR4qS7h0i_gUB56RnLLDBZfEcMlRWTJFu9Z17SCl0cJ9",
+      "url": "https://www.book2park.com/airport/palm-beach-pbi-airport-parking?ref=ltp&srsltid=AfmBOorfuON8lR4qS7h0i_gUB56RnLLDBZfEcMlRWTJFu9Z17SCl0cJ9"
+    },
+    {
+      "title": "https://www.yakimawa.gov/media/news/city-review-expansion-downtown-yakima-business-improvement-district/",
+      "url": "https://www.yakimawa.gov/media/news/city-review-expansion-downtown-yakima-business-improvement-district/"
+    },
+    {
+      "title": "https://downtownyakima.com/business/projects/",
+      "url": "https://downtownyakima.com/business/projects/"
+    },
+    {
+      "title": "https://www.yakimaherald.com/news/local/yakima-city-council-likely-to-discuss-expansion-of-downtown-business-improvement-district/article_1ffedc3a-9b69-11e7-b4b0-a71b68368a8d.html",
+      "url": "https://www.yakimaherald.com/news/local/yakima-city-council-likely-to-discuss-expansion-of-downtown-business-improvement-district/article_1ffedc3a-9b69-11e7-b4b0-a71b68368a8d.html"
+    },
+    {
+      "title": "https://www.novato.gov/business/downtown-business-improvement-district",
+      "url": "https://www.novato.gov/business/downtown-business-improvement-district"
+    },
+    {
+      "title": "https://downtown.org/about-the-industry/",
+      "url": "https://downtown.org/about-the-industry/"
+    },
+    {
+      "title": "https://www.codepublishing.com/WA/Yakima/html/Yakima01/Yakima0133.html",
+      "url": "https://www.codepublishing.com/WA/Yakima/html/Yakima01/Yakima0133.html"
+    },
+    {
+      "title": "https://www.facebook.com/AppleValleyNewsNow/posts/downtown-association-of-yakima-supports-local-businesses-through-community-event/1396526309170919/",
+      "url": "https://www.facebook.com/AppleValleyNewsNow/posts/downtown-association-of-yakima-supports-local-businesses-through-community-event/1396526309170919/"
+    },
+    {
+      "title": "https://www.visityakima.com/listing/downtown-association-yakima",
+      "url": "https://www.visityakima.com/listing/downtown-association-yakima"
+    },
+    {
+      "title": "https://toolkit.downtownyakima.org/",
+      "url": "https://toolkit.downtownyakima.org/"
+    },
+    {
+      "title": "https://www.yakimawa.gov/services/utility-services/dybid-information/",
+      "url": "https://www.yakimawa.gov/services/utility-services/dybid-information/"
+    },
+    {
+      "title": "https://www.facebook.com/cidseattle/posts/monday-night-f%C3%BAtbol-in-the-cid-watch-usa-vs-belgium-with-us-at-hing-hay-park-vid/1430257085794328/",
+      "url": "https://www.facebook.com/cidseattle/posts/monday-night-f%C3%BAtbol-in-the-cid-watch-usa-vs-belgium-with-us-at-hing-hay-park-vid/1430257085794328/"
+    },
+    {
+      "title": "https://urbdp.be.uw.edu/wp-content/uploads/sites/10/2025/08/Northgate-507-Studio-Subarea-Framework.pdf?1781525711",
+      "url": "https://urbdp.be.uw.edu/wp-content/uploads/sites/10/2025/08/Northgate-507-Studio-Subarea-Framework.pdf?1781525711"
+    },
+    {
+      "title": "https://rooseveltseattle.org/volunteer/landuse/land-use-projects/",
+      "url": "https://rooseveltseattle.org/volunteer/landuse/land-use-projects/"
+    },
+    {
+      "title": "https://cos-data.seattle.gov/api/views/mqnm-tr2p/rows.xml?accessType=DOWNLOAD",
+      "url": "https://cos-data.seattle.gov/api/views/mqnm-tr2p/rows.xml?accessType=DOWNLOAD"
+    },
+    {
+      "title": "https://www.aclu-wa.org/app/uploads/2024/03/2025-04-11-Horvath-v.-DBIA-Services-ACLU-WA-Amicus-Brief-SCOWA-Final.pdf",
+      "url": "https://www.aclu-wa.org/app/uploads/2024/03/2025-04-11-Horvath-v.-DBIA-Services-ACLU-WA-Amicus-Brief-SCOWA-Final.pdf"
+    },
+    {
+      "title": "https://s3-us-gov-west-1.amazonaws.com/cg-baa85e06-1bdd-4672-9e3a-36333c05c6ce/global__link_requests__last30.2026-03-31.csv",
+      "url": "https://s3-us-gov-west-1.amazonaws.com/cg-baa85e06-1bdd-4672-9e3a-36333c05c6ce/global__link_requests__last30.2026-03-31.csv"
+    },
+    {
+      "title": "https://www.urban.org/sites/default/files/2022-08/Lessons%20from%20Local%20Leaders.pdf",
+      "url": "https://www.urban.org/sites/default/files/2022-08/Lessons%20from%20Local%20Leaders.pdf"
+    },
+    {
+      "title": "https://x.com/ReadyAI_/status/2011217672818901136",
+      "url": "https://x.com/ReadyAI_/status/2011217672818901136"
+    },
+    {
+      "title": "https://www.facebook.com/flySEAairport/posts/halftime-is-for-recharging-use-the-flysea-app-to-find-food-shops-and-everything-/1414239124081301/",
+      "url": "https://www.facebook.com/flySEAairport/posts/halftime-is-for-recharging-use-the-flysea-app-to-find-food-shops-and-everything-/1414239124081301/"
+    },
+    {
+      "title": "https://www.facebook.com/CityofDuncan/posts/the-city-has-released-two-pre-approved-accessory-dwelling-unit-adu-designs-as-pa/763576202719052/",
+      "url": "https://www.facebook.com/CityofDuncan/posts/the-city-has-released-two-pre-approved-accessory-dwelling-unit-adu-designs-as-pa/763576202719052/"
+    },
+    {
+      "title": "https://static.spokanecity.org/documents/planspokane/housing-needs/racially-disparate-impacts-analysis-2025-11-03.pdf",
+      "url": "https://static.spokanecity.org/documents/planspokane/housing-needs/racially-disparate-impacts-analysis-2025-11-03.pdf"
+    },
+    {
+      "title": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/replicafilescache/FWSInterest_Simplified_Authoritative_6544434982226183472.csv",
+      "url": "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/FWSInterest_Simplified_Authoritative/FeatureServer/replicafilescache/FWSInterest_Simplified_Authoritative_6544434982226183472.csv"
+    },
+    {
+      "title": "https://apps.ecology.wa.gov/separ/Main/SEPA/Document/DocumentOpenHandler.ashx?DocumentId=36558",
+      "url": "https://apps.ecology.wa.gov/separ/Main/SEPA/Document/DocumentOpenHandler.ashx?DocumentId=36558"
+    },
+    {
+      "title": "https://www.soundtransit.org/sites/default/files/documents/TDAI-SEPA-attachments.pdf",
+      "url": "https://www.soundtransit.org/sites/default/files/documents/TDAI-SEPA-attachments.pdf"
+    },
+    {
+      "title": "https://urbdp.be.uw.edu/wp-content/uploads/sites/10/2019/03/North-Beacon-Hill_Final-Report_Final-Draft.pdf",
+      "url": "https://urbdp.be.uw.edu/wp-content/uploads/sites/10/2019/03/North-Beacon-Hill_Final-Report_Final-Draft.pdf"
+    },
+    {
+      "title": "https://www.facebook.com/groups/549289702632893/posts/1850879765807207/",
+      "url": "https://www.facebook.com/groups/549289702632893/posts/1850879765807207/"
+    },
+    {
+      "title": "https://permitbulletin.mercerisland.gov/public/SHL23-045/SUB1/jarpa%20exhibit4.pdf",
+      "url": "https://permitbulletin.mercerisland.gov/public/SHL23-045/SUB1/jarpa%20exhibit4.pdf"
+    },
+    {
+      "title": "https://www.edf.org/sites/default/files/2024-08/082024%20EDF%20LSLR%20Map%20Dataset.xlsx",
+      "url": "https://www.edf.org/sites/default/files/2024-08/082024%20EDF%20LSLR%20Map%20Dataset.xlsx"
+    },
+    {
+      "title": "https://grokipedia.com/page/washington_state_route_231",
+      "url": "https://grokipedia.com/page/washington_state_route_231"
+    },
+    {
+      "title": "https://static.spokanecity.org/documents/bcc/committees/finance-and-administration/agendas/2024/07/finadm-agenda-2024-07-22.pdf",
+      "url": "https://static.spokanecity.org/documents/bcc/committees/finance-and-administration/agendas/2024/07/finadm-agenda-2024-07-22.pdf"
+    },
+    {
+      "title": "https://geo.btaa.org/resources/08107965cf3840668023f710e30796c3_0",
+      "url": "https://geo.btaa.org/resources/08107965cf3840668023f710e30796c3_0"
+    },
+    {
+      "title": "https://hub.arcgis.com/datasets/e46f229101f3438fbe123374e14f98f4_0/about",
+      "url": "https://hub.arcgis.com/datasets/e46f229101f3438fbe123374e14f98f4_0/about"
+    },
+    {
+      "title": "https://aberdeenwa.gov/254/Parking-Business-Improvement",
+      "url": "https://aberdeenwa.gov/254/Parking-Business-Improvement"
+    },
+    {
+      "title": "https://aberdeen.municipal.codes/enactments?impersonate=public&impersonate=public&page=11&status=&type=Ord&year=",
+      "url": "https://aberdeen.municipal.codes/enactments?impersonate=public&impersonate=public&page=11&status=&type=Ord&year="
+    },
+    {
+      "title": "https://www.scribd.com/document/412342200/32",
+      "url": "https://www.scribd.com/document/412342200/32"
+    },
+    {
+      "title": "https://www.facebook.com/LancasterOnline/posts/eight-months-after-opening-its-doors-the-drop-in-centers-future-is-in-doubt-in-m/1479062597583521/",
+      "url": "https://www.facebook.com/LancasterOnline/posts/eight-months-after-opening-its-doors-the-drop-in-centers-future-is-in-doubt-in-m/1479062597583521/"
+    },
+    {
+      "title": "https://aberdeen.municipal.codes/AMC/contents",
+      "url": "https://aberdeen.municipal.codes/AMC/contents"
+    },
+    {
+      "title": "https://jlarc.blob.core.windows.net/lodgingtax/ActivitySpecific.xlsx",
+      "url": "https://jlarc.blob.core.windows.net/lodgingtax/ActivitySpecific.xlsx"
+    },
+    {
+      "title": "https://d3n9y02raazwpg.cloudfront.net/portorchard/1cb88ce3-55cd-11ef-bafe-005056a89546-c851319d-86d0-48ec-98c4-f3ddff87310a-1730221448.pdf",
+      "url": "https://d3n9y02raazwpg.cloudfront.net/portorchard/1cb88ce3-55cd-11ef-bafe-005056a89546-c851319d-86d0-48ec-98c4-f3ddff87310a-1730221448.pdf"
+    },
+    {
+      "title": "https://citizenportal.ai/articles/7328867/committee-approves-rfq-process-to-select-city-hearing-examiner",
+      "url": "https://citizenportal.ai/articles/7328867/committee-approves-rfq-process-to-select-city-hearing-examiner"
+    },
+    {
+      "title": "https://www.facebook.com/HollandKnightLLP/videos/what-does-it-take-to-launch-a-business-improvement-district-landuse-attorney-kyr/2065187234122188/",
+      "url": "https://www.facebook.com/HollandKnightLLP/videos/what-does-it-take-to-launch-a-business-improvement-district-landuse-attorney-kyr/2065187234122188/"
+    },
+    {
+      "title": "https://www.codepublishing.com/WA/Olympia/html/Olympia03/Olympia0362.html",
+      "url": "https://www.codepublishing.com/WA/Olympia/html/Olympia03/Olympia0362.html"
+    },
+    {
+      "title": "https://www.indeed.com/q-business-improvement-district-l-washington-state-jobs.html",
+      "url": "https://www.indeed.com/q-business-improvement-district-l-washington-state-jobs.html"
+    },
+    {
+      "title": "https://www.hklaw.com/en/insights/media-entities/2026/05/06/podcast-soul-of-the-city-how-ward-8-built-washington-dcs-newest-bid",
+      "url": "https://www.hklaw.com/en/insights/media-entities/2026/05/06/podcast-soul-of-the-city-how-ward-8-built-washington-dcs-newest-bid"
+    },
+    {
+      "title": "https://www.facebook.com/groups/161579963922562/posts/6550867868327041/",
+      "url": "https://www.facebook.com/groups/161579963922562/posts/6550867868327041/"
+    },
+    {
+      "title": "https://www.cityofvancouver.us/wp-content/uploads/2026/03/Five-Year-Economic-Development-Strategy_2025.pdf",
+      "url": "https://www.cityofvancouver.us/wp-content/uploads/2026/03/Five-Year-Economic-Development-Strategy_2025.pdf"
+    },
+    {
+      "title": "https://engage.soulofthecity.org/mayor-certifies-soul-of-the-city-business-improvement-district",
+      "url": "https://engage.soulofthecity.org/mayor-certifies-soul-of-the-city-business-improvement-district"
+    },
+    {
+      "title": "https://directory.spatineo.com/service/37442/",
+      "url": "https://directory.spatineo.com/service/37442/"
+    },
+    {
+      "title": "https://www.facebook.com/RichlandWA/posts/project-update-the-downtown-loop-is-continuing-to-move-forwardthe-design-phase-o/1395827775919134/",
+      "url": "https://www.facebook.com/RichlandWA/posts/project-update-the-downtown-loop-is-continuing-to-move-forwardthe-design-phase-o/1395827775919134/"
+    },
+    {
+      "title": "https://www.applevalleynewsnow.com/news/richlands-downtown-loop-project-to-change-two-streets-into-one-ways-by-2027/article_8e78f9b6-593c-4e46-a5d1-fc4d3e4b16af.html",
+      "url": "https://www.applevalleynewsnow.com/news/richlands-downtown-loop-project-to-change-two-streets-into-one-ways-by-2027/article_8e78f9b6-593c-4e46-a5d1-fc4d3e4b16af.html"
+    },
+    {
+      "title": "https://richlandwa.portal.civicclerk.com/event/4758/files/attachment/18991",
+      "url": "https://richlandwa.portal.civicclerk.com/event/4758/files/attachment/18991"
+    },
+    {
+      "title": "https://tricitiesobserver.com/2026/05/01/construction-on-richlands-downtown-one-way-plan-wont-begin-until-2027-due-to-federal-funding-delay/",
+      "url": "https://tricitiesobserver.com/2026/05/01/construction-on-richlands-downtown-one-way-plan-wont-begin-until-2027-due-to-federal-funding-delay/"
+    },
+    {
+      "title": "https://www.richlandwa.gov/Home/Components/News/News/1932/17?arch=1",
+      "url": "https://www.richlandwa.gov/Home/Components/News/News/1932/17?arch=1"
+    },
+    {
+      "title": "https://performance.envisio.com/dashboard/cityofrichland3101/Activity-220726",
+      "url": "https://performance.envisio.com/dashboard/cityofrichland3101/Activity-220726"
+    },
+    {
+      "title": "https://ofm.wa.gov/wp-content/uploads/sites/default/files/public/cats/2021/map/richland_11-21.pdf",
+      "url": "https://ofm.wa.gov/wp-content/uploads/sites/default/files/public/cats/2021/map/richland_11-21.pdf"
+    },
+    {
+      "title": "https://www.tri-cityherald.com/news/politics-government/article312500272.html",
+      "url": "https://www.tri-cityherald.com/news/politics-government/article312500272.html"
+    },
+    {
+      "title": "https://www.tricitiesbusinessnews.com/articles/richland-to-share-updates-on-one-way-street-plan",
+      "url": "https://www.tricitiesbusinessnews.com/articles/richland-to-share-updates-on-one-way-street-plan"
+    },
+    {
+      "title": "https://gisdatacatalog-spokanecounty.opendata.arcgis.com/",
+      "url": "https://gisdatacatalog-spokanecounty.opendata.arcgis.com/"
+    },
+    {
+      "title": "https://my.spokanecity.org/opendata/gis/data/",
+      "url": "https://my.spokanecity.org/opendata/gis/data/"
+    },
+    {
+      "title": "https://data-spokane.opendata.arcgis.com/search?tags=business",
+      "url": "https://data-spokane.opendata.arcgis.com/search?tags=business"
+    },
+    {
+      "title": "https://www.esri.com/en-us/arcgis/products/arcgis-open-data",
+      "url": "https://www.esri.com/en-us/arcgis/products/arcgis-open-data"
+    },
+    {
+      "title": "https://hub.arcgis.com/search",
+      "url": "https://hub.arcgis.com/search"
+    },
+    {
+      "title": "https://data-spokane.opendata.arcgis.com/",
+      "url": "https://data-spokane.opendata.arcgis.com/"
+    },
+    {
+      "title": "https://hub.arcgis.com/",
+      "url": "https://hub.arcgis.com/"
+    },
+    {
+      "title": "https://www.olympiawa.gov/community/maps.php",
+      "url": "https://www.olympiawa.gov/community/maps.php"
+    },
+    {
+      "title": "https://map.co.thurston.wa.us/pdf/OlympiaUgaZoning(44x34).pdf",
+      "url": "https://map.co.thurston.wa.us/pdf/OlympiaUgaZoning(44x34).pdf"
+    },
+    {
+      "title": "https://experience.arcgis.com/experience/8a5226f397d946ce94031a87413a06ad/",
+      "url": "https://experience.arcgis.com/experience/8a5226f397d946ce94031a87413a06ad/"
+    },
+    {
+      "title": "https://geodata.rw/portal/apps/webappviewer/index.html?id=94af55b0f6cf4ece8c679b9f528fd555",
+      "url": "https://geodata.rw/portal/apps/webappviewer/index.html?id=94af55b0f6cf4ece8c679b9f528fd555"
+    },
+    {
+      "title": "https://library.municode.com/PA/kennett_square",
+      "url": "https://library.municode.com/PA/kennett_square"
+    },
+    {
+      "title": "https://www.olympiawa.gov/services/building_permits___land_use_review/land_use_review.php",
+      "url": "https://www.olympiawa.gov/services/building_permits___land_use_review/land_use_review.php"
+    },
+    {
+      "title": "https://library.municode.com/MD/salisbury",
+      "url": "https://library.municode.com/MD/salisbury"
+    },
+    {
+      "title": "https://experience.arcgis.com/experience/dc49639e08ca4632a746acb3f8c55260",
+      "url": "https://experience.arcgis.com/experience/dc49639e08ca4632a746acb3f8c55260"
+    },
+    {
+      "title": "https://www.arcgis.com/apps/webappviewer/index.html?id=425cf408196648db994be8f53206f75c",
+      "url": "https://www.arcgis.com/apps/webappviewer/index.html?id=425cf408196648db994be8f53206f75c"
+    },
+    {
+      "title": "https://data-adcogov.opendata.arcgis.com/datasets/f4060f8fb08742c797a3a2d8d456ca03_0/data",
+      "url": "https://data-adcogov.opendata.arcgis.com/datasets/f4060f8fb08742c797a3a2d8d456ca03_0/data"
+    },
+    {
+      "title": "https://mcgis.mesacounty.us/arcgis/rest/services/maps/Districts/FeatureServer/4",
+      "url": "https://mcgis.mesacounty.us/arcgis/rest/services/maps/Districts/FeatureServer/4"
+    },
+    {
+      "title": "https://my.spokanecity.org/smc/04-031-appendix-a-map.pdf",
+      "url": "https://my.spokanecity.org/smc/04-031-appendix-a-map.pdf"
+    },
+    {
+      "title": "http://downtownspokane.org/wp-content/uploads/2026/02/2026_Downtown-Spokane-BID-Management-Plan.pdf",
+      "url": "http://downtownspokane.org/wp-content/uploads/2026/02/2026_Downtown-Spokane-BID-Management-Plan.pdf"
+    },
+    {
+      "title": "https://downtownspokane.org/bid-ratepayers/bid-assessment-guide/",
+      "url": "https://downtownspokane.org/bid-ratepayers/bid-assessment-guide/"
+    },
+    {
+      "title": "https://downtownspokane.org/partner-services/business-improvement-district-management-plan/",
+      "url": "https://downtownspokane.org/partner-services/business-improvement-district-management-plan/"
+    },
+    {
+      "title": "https://bottomline.seattle.gov/2026/03/17/building-statewide-understanding-of-business-improvement-areas/",
+      "url": "https://bottomline.seattle.gov/2026/03/17/building-statewide-understanding-of-business-improvement-areas/"
+    },
+    {
+      "title": "https://www.facebook.com/groups/spokanebusinessnetwork/posts/26918651371091184/",
+      "url": "https://www.facebook.com/groups/spokanebusinessnetwork/posts/26918651371091184/"
+    },
+    {
+      "title": "https://www.researchgate.net/publication/316315634_Spatial_distribution_and_dive_behavior_of_Gulf_of_Mexico_Bryde's_whales_potential_risk_of_vessel_strikes_and_fisheries_interactions",
+      "url": "https://www.researchgate.net/publication/316315634_Spatial_distribution_and_dive_behavior_of_Gulf_of_Mexico_Bryde's_whales_potential_risk_of_vessel_strikes_and_fisheries_interactions"
+    },
+    {
+      "title": "https://downloads.regulations.gov/MARAD-2019-0093-3061/attachment_4.pdf",
+      "url": "https://downloads.regulations.gov/MARAD-2019-0093-3061/attachment_4.pdf"
+    },
+    {
+      "title": "https://downloads.regulations.gov/MARAD-2022-0076-0038/attachment_6.pdf",
+      "url": "https://downloads.regulations.gov/MARAD-2022-0076-0038/attachment_6.pdf"
+    },
+    {
+      "title": "https://downloads.regulations.gov/MARAD-2019-0094-0921/attachment_12.pdf",
+      "url": "https://downloads.regulations.gov/MARAD-2019-0094-0921/attachment_12.pdf"
+    },
+    {
+      "title": "https://www.facebook.com/downtownrutland/posts/were-looking-for-a-streetscape-coordinator-the-primary-responsibility-of-this-po/3090269287698797/",
+      "url": "https://www.facebook.com/downtownrutland/posts/were-looking-for-a-streetscape-coordinator-the-primary-responsibility-of-this-po/3090269287698797/"
+    },
+    {
+      "title": "https://www.auburnwa.gov/2015_comp_plan",
+      "url": "https://www.auburnwa.gov/2015_comp_plan"
+    },
+    {
+      "title": "https://secure.toronto.ca/council/report.do?meeting=2014.CC48&type=agenda",
+      "url": "https://secure.toronto.ca/council/report.do?meeting=2014.CC48&type=agenda"
+    },
+    {
+      "title": "https://weblink.auburnwa.gov/External/DocView.aspx?id=351660&dbid=0&repo=CityofAuburn",
+      "url": "https://weblink.auburnwa.gov/External/DocView.aspx?id=351660&dbid=0&repo=CityofAuburn"
+    },
+    {
+      "title": "https://weblink.auburnwa.gov/External/DocView.aspx?id=270738&dbid=0&repo=CityofAuburn",
+      "url": "https://weblink.auburnwa.gov/External/DocView.aspx?id=270738&dbid=0&repo=CityofAuburn"
+    },
+    {
+      "title": "https://seattlecitygis.maps.arcgis.com/",
+      "url": "https://seattlecitygis.maps.arcgis.com/"
+    },
+    {
+      "title": "https://onemap-bia-geospatial.hub.arcgis.com/api/download/v1/items/ba0b553f83894a93b227877f8f523634/csv?layers=0",
+      "url": "https://onemap-bia-geospatial.hub.arcgis.com/api/download/v1/items/ba0b553f83894a93b227877f8f523634/csv?layers=0"
+    },
+    {
+      "title": "https://www.esri.com/~/media/files/pdfs/library/ebooks/return-on-investment.pdf",
+      "url": "https://www.esri.com/~/media/files/pdfs/library/ebooks/return-on-investment.pdf"
+    },
+    {
+      "title": "https://www.facebook.com/seattlehousing/posts/the-seattle-housing-authority-wants-your-input-to-help-inform-shas-priorities-fo/1666722568243087/",
+      "url": "https://www.facebook.com/seattlehousing/posts/the-seattle-housing-authority-wants-your-input-to-help-inform-shas-priorities-fo/1666722568243087/"
+    },
+    {
+      "title": "https://www.linkedin.com/in/rodkuhns",
+      "url": "https://www.linkedin.com/in/rodkuhns"
+    },
+    {
+      "title": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/11807?fileID=72421",
+      "url": "https://www.everettwa.gov/AgendaCenter/ViewFile/Item/11807?fileID=72421"
+    },
+    {
+      "title": "https://everett.municipal.codes/enactments/Ord2765-04",
+      "url": "https://everett.municipal.codes/enactments/Ord2765-04"
+    },
+    {
+      "title": "https://www.facebook.com/dteverett/posts/on-december-16-the-everett-city-council-voted-to-approve-the-ordinance-renewing-/1153001958452310/",
+      "url": "https://www.facebook.com/dteverett/posts/on-december-16-the-everett-city-council-voted-to-approve-the-ordinance-renewing-/1153001958452310/"
+    },
+    {
+      "title": "https://everett.granicus.com/MetaViewer.php?view_id=4&clip_id=2346&meta_id=104897",
+      "url": "https://everett.granicus.com/MetaViewer.php?view_id=4&clip_id=2346&meta_id=104897"
+    },
+    {
+      "title": "https://www.everettpost.com/local-news/everett-chamber-returns-hyperlocal-resources-for-businesses/",
+      "url": "https://www.everettpost.com/local-news/everett-chamber-returns-hyperlocal-resources-for-businesses/"
+    },
+    {
+      "title": "https://www.instagram.com/downtowntacomapartnership/?hl=en",
+      "url": "https://www.instagram.com/downtowntacomapartnership/?hl=en"
+    },
+    {
+      "title": "https://www.facebook.com/downtowntacomapartnership/",
+      "url": "https://www.facebook.com/downtowntacomapartnership/"
+    },
+    {
+      "title": "https://cityoftacoma.legistar.com/LegislationDetail.aspx?From=RSS&ID=1675456&GUID=44A7812E-D5D3-4F37-BDA5-21880328814E",
+      "url": "https://cityoftacoma.legistar.com/LegislationDetail.aspx?From=RSS&ID=1675456&GUID=44A7812E-D5D3-4F37-BDA5-21880328814E"
+    },
+    {
+      "title": "https://www.linkedin.com/company/downtown-tacoma-partnership",
+      "url": "https://www.linkedin.com/company/downtown-tacoma-partnership"
+    },
+    {
+      "title": "https://business.tacomachamber.org/list/member/downtown-tacoma-partnership-36921",
+      "url": "https://business.tacomachamber.org/list/member/downtown-tacoma-partnership-36921"
+    },
+    {
+      "title": "https://www.youtube.com/watch?v=x-kpgXumFFk",
+      "url": "https://www.youtube.com/watch?v=x-kpgXumFFk"
+    },
+    {
+      "title": "https://app.leg.wa.gov/rcw/default.aspx?cite=35.87a&full=true",
+      "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=35.87a&full=true"
+    },
+    {
+      "title": "https://www.explorewashingtonga.com/business-improvement-district",
+      "url": "https://www.explorewashingtonga.com/business-improvement-district"
+    },
+    {
+      "title": "https://ecode360.com/12325883",
+      "url": "https://ecode360.com/12325883"
+    },
+    {
+      "title": "https://www.codepublishing.com/WA/Wenatchee/html/Wenatchee05/Wenatchee0598.html",
+      "url": "https://www.codepublishing.com/WA/Wenatchee/html/Wenatchee05/Wenatchee0598.html"
+    },
+    {
+      "title": "https://www.cloth159.org/broadway-washingtonheights-bid",
+      "url": "https://www.cloth159.org/broadway-washingtonheights-bid"
+    },
+    {
+      "title": "https://codelibrary.amlegal.com/codes/newyorkcity/latest/NYCadmin/0-0-0-46378",
+      "url": "https://codelibrary.amlegal.com/codes/newyorkcity/latest/NYCadmin/0-0-0-46378"
+    },
+    {
+      "title": "https://anacostiabid.org/",
+      "url": "https://anacostiabid.org/"
+    },
+    {
+      "title": "https://capitolhillbid.org/about/capitol-hill-bid",
+      "url": "https://capitolhillbid.org/about/capitol-hill-bid"
+    },
+    {
+      "title": "https://www.linkedin.com/posts/gerren-price_power-100-gerren-price-downtowndc-business-activity-7388913009542307840-dUVm",
+      "url": "https://www.linkedin.com/posts/gerren-price_power-100-gerren-price-downtowndc-business-activity-7388913009542307840-dUVm"
+    },
+    {
+      "title": "https://www.vestre.com/us/references/neighborhoods/placemaking-enhancing-downtown-washington-d-c-with-greenery-and-community-spaces",
+      "url": "https://www.vestre.com/us/references/neighborhoods/placemaking-enhancing-downtown-washington-d-c-with-greenery-and-community-spaces"
+    },
+    {
+      "title": "https://www.wenatcheewa.gov/government/police/about-us/parking-enforcement",
+      "url": "https://www.wenatcheewa.gov/government/police/about-us/parking-enforcement"
+    },
+    {
+      "title": "https://www.facebook.com/wenatcheepolicedepartment/posts/spring-is-finally-here-and-business-is-booming-on-the-avenues-we-love-seeing-eve/845043500987013/",
+      "url": "https://www.facebook.com/wenatcheepolicedepartment/posts/spring-is-finally-here-and-business-is-booming-on-the-avenues-we-love-seeing-eve/845043500987013/"
+    },
+    {
+      "title": "https://santabarbaraca.gov/business/business-taxes-assessments/parking-business-improvement-area-pbia-assessment",
+      "url": "https://santabarbaraca.gov/business/business-taxes-assessments/parking-business-improvement-area-pbia-assessment"
+    },
+    {
+      "title": "https://www.olympiawa.gov/bid_detail_T6_R179.php",
+      "url": "https://www.olympiawa.gov/bid_detail_T6_R179.php"
+    },
+    {
+      "title": "https://www.snohomishwa.gov/DocumentCenter/View/9864/Ord-2505---Establish-PBIA-and-Create-Ch-504",
+      "url": "https://www.snohomishwa.gov/DocumentCenter/View/9864/Ord-2505---Establish-PBIA-and-Create-Ch-504"
+    },
+    {
+      "title": "https://www.mwcog.org/purchasing-and-bids/cog-bids-and-rfps/ifb-23-008---eod-bomb-suits/",
+      "url": "https://www.mwcog.org/purchasing-and-bids/cog-bids-and-rfps/ifb-23-008---eod-bomb-suits/"
+    },
+    {
+      "title": "https://townofwashingtongreencounty.com/news-and-notices/notice-for-bids-for-the-town-of-washington-town-facility-2/",
+      "url": "https://townofwashingtongreencounty.com/news-and-notices/notice-for-bids-for-the-town-of-washington-town-facility-2/"
+    },
+    {
+      "title": "https://library.municode.com/wa/port_angeles",
+      "url": "https://library.municode.com/wa/port_angeles"
+    },
+    {
+      "title": "https://www.facebook.com/VillageofMansfield/posts/ordinance-2026-01-and-bid-notice-sale-of-surplus-real-property-at-205-s-mckinley/1200460458938207/",
+      "url": "https://www.facebook.com/VillageofMansfield/posts/ordinance-2026-01-and-bid-notice-sale-of-surplus-real-property-at-205-s-mckinley/1200460458938207/"
+    },
+    {
+      "title": "https://my.spokanecity.org/smc/?Section=07.06.120&Find=ment",
+      "url": "https://my.spokanecity.org/smc/?Section=07.06.120&Find=ment"
+    },
+    {
+      "title": "https://www.washingtonct.org/1214/Ordinances",
+      "url": "https://www.washingtonct.org/1214/Ordinances"
+    },
+    {
+      "title": "https://www.bia.gov/news/indian-affairs-approves-three-tribal-nations-hearth-act-regs",
+      "url": "https://www.bia.gov/news/indian-affairs-approves-three-tribal-nations-hearth-act-regs"
+    },
+    {
+      "title": "https://www.instagram.com/p/DaTTDHJD0BL/",
+      "url": "https://www.instagram.com/p/DaTTDHJD0BL/"
+    },
+    {
+      "title": "https://www.reddit.com/r/mountainview/comments/1oh4ag8/next_mountain_view_city_council_meeting_october/",
+      "url": "https://www.reddit.com/r/mountainview/comments/1oh4ag8/next_mountain_view_city_council_meeting_october/"
+    },
+    {
+      "title": "https://www.instagram.com/p/DZxeE9_GyFD/",
+      "url": "https://www.instagram.com/p/DZxeE9_GyFD/"
+    },
+    {
+      "title": "https://mrsc.org/stay-informed/mrsc-insight/june-2025/vacant-to-vibrant",
+      "url": "https://mrsc.org/stay-informed/mrsc-insight/june-2025/vacant-to-vibrant"
+    },
+    {
+      "title": "https://www.facebook.com/fox13seattle/posts/with-the-fifa-world-cup-approaching-leaders-in-seattles-chinatown-international-/1574923107561543/",
+      "url": "https://www.facebook.com/fox13seattle/posts/with-the-fifa-world-cup-approaching-leaders-in-seattles-chinatown-international-/1574923107561543/"
+    },
+    {
+      "title": "https://www.instagram.com/reel/DXh8rAyErys/",
+      "url": "https://www.instagram.com/reel/DXh8rAyErys/"
+    },
+    {
+      "title": "https://cityofleavenworth.com/wp-content/uploads/2026/03/Attachment-A-2024-Downtown-Strategic-Parking-Management-Action-Plan-Final.pdf",
+      "url": "https://cityofleavenworth.com/wp-content/uploads/2026/03/Attachment-A-2024-Downtown-Strategic-Parking-Management-Action-Plan-Final.pdf"
+    },
+    {
+      "title": "https://www.fhwa.dot.gov/ipd/value_capture/highlights/",
+      "url": "https://www.fhwa.dot.gov/ipd/value_capture/highlights/"
+    },
+    {
+      "title": "https://www.craigslist.org/view/d/wenatchee-2023-chrysler-voyager-lx/shphqUG9d4N1uSRfCnPJyn",
+      "url": "https://www.craigslist.org/view/d/wenatchee-2023-chrysler-voyager-lx/shphqUG9d4N1uSRfCnPJyn"
+    },
+    {
+      "title": "https://dslbd.dc.gov/service/business-improvement-districts-bids",
+      "url": "https://dslbd.dc.gov/service/business-improvement-districts-bids"
+    },
+    {
+      "title": "https://www.mountvernontriangle.org/about/",
+      "url": "https://www.mountvernontriangle.org/about/"
+    },
+    {
+      "title": "https://code.dccouncil.gov/us/dc/council/code/sections/2-1215.04",
+      "url": "https://code.dccouncil.gov/us/dc/council/code/sections/2-1215.04"
+    },
+    {
+      "title": "https://hstalks.com/article/9444/the-evolution-of-business-improvement-districts-fr/",
+      "url": "https://hstalks.com/article/9444/the-evolution-of-business-improvement-districts-fr/"
+    },
+    {
+      "title": "https://www.linkedin.com/company/goldentriangle",
+      "url": "https://www.linkedin.com/company/goldentriangle"
+    },
+    {
+      "title": "https://www.dcbidcouncil.org/",
+      "url": "https://www.dcbidcouncil.org/"
+    },
+    {
+      "title": "https://www.uncommonbridges.com/services/bids",
+      "url": "https://www.uncommonbridges.com/services/bids"
+    },
+    {
+      "title": "https://www.downtowndc.org/wp-content/uploads/2017/06/bid_ar2009.pdf",
+      "url": "https://www.downtowndc.org/wp-content/uploads/2017/06/bid_ar2009.pdf"
+    },
+    {
+      "title": "https://www.instagram.com/reel/DXb7HFBiagn/",
+      "url": "https://www.instagram.com/reel/DXb7HFBiagn/"
+    },
+    {
+      "title": "https://wpbid.com/parking/",
+      "url": "https://wpbid.com/parking/"
+    },
+    {
+      "title": "https://visitseattle.org/about-us/",
+      "url": "https://visitseattle.org/about-us/"
+    },
+    {
+      "title": "https://seattle.legistar.com/LegislationDetail.aspx?ID=6315526&GUID=AF74DC45-9418-4367-BCFD-97E69D3508C1&FullText=1",
+      "url": "https://seattle.legistar.com/LegislationDetail.aspx?ID=6315526&GUID=AF74DC45-9418-4367-BCFD-97E69D3508C1&FullText=1"
+    },
+    {
+      "title": "https://seattlechannel.org/mayor-bruce-harrell-archive-videos?videoid=x151312",
+      "url": "https://seattlechannel.org/mayor-bruce-harrell-archive-videos?videoid=x151312"
+    },
+    {
+      "title": "https://council.seattle.gov/2023/09/19/seattle-city-council-expands-support-for-local-businesses-by-boosting-business-improvement-areas-in-ballard-downtown/",
+      "url": "https://council.seattle.gov/2023/09/19/seattle-city-council-expands-support-for-local-businesses-by-boosting-business-improvement-areas-in-ballard-downtown/"
+    },
+    {
+      "title": "https://uploads.visitseattle.org/2022/05/04121150/2022.04_STIA_FAQ-1.pdf",
+      "url": "https://uploads.visitseattle.org/2022/05/04121150/2022.04_STIA_FAQ-1.pdf"
+    },
+    {
+      "title": "https://seattle.legistar.com/LegislationDetail.aspx?ID=6315526&GUID=AF74DC45-9418-4367-BCFD-97E69D3508C1",
+      "url": "https://seattle.legistar.com/LegislationDetail.aspx?ID=6315526&GUID=AF74DC45-9418-4367-BCFD-97E69D3508C1"
+    },
+    {
+      "title": "https://komonews.com/news/local/seattle-mayor-bruce-harrell-downtown-hotel-tourism-improvement-area-legislation-stia-tax-occupied-room-rate-night-travel-revenue-pike-place-taylor-swift-mariners-toronto-blue-jays-cruise-ship-weekend-visit-convention-center-summit-washington-king-county",
+      "url": "https://komonews.com/news/local/seattle-mayor-bruce-harrell-downtown-hotel-tourism-improvement-area-legislation-stia-tax-occupied-room-rate-night-travel-revenue-pike-place-taylor-swift-mariners-toronto-blue-jays-cruise-ship-weekend-visit-convention-center-summit-washington-king-county"
+    },
+    {
+      "title": "https://uploads.visitseattle.org/2023/11/17102423/2024.01_LetterforGroups_Example.pdf",
+      "url": "https://uploads.visitseattle.org/2023/11/17102423/2024.01_LetterforGroups_Example.pdf"
+    },
+    {
+      "title": "http://clerk.seattle.gov/~ordpics/117258a.pdf",
+      "url": "http://clerk.seattle.gov/~ordpics/117258a.pdf"
+    },
+    {
+      "title": "https://www.aztia.info/",
+      "url": "https://www.aztia.info/"
+    },
+    {
+      "title": "https://softwareengineering.stackexchange.com/questions/445192/why-dont-languages-auto-import-everything",
+      "url": "https://softwareengineering.stackexchange.com/questions/445192/why-dont-languages-auto-import-everything"
+    },
+    {
+      "title": "https://discuss.emberjs.com/t/ember-auto-import-1-0-released/14997",
+      "url": "https://discuss.emberjs.com/t/ember-auto-import-1-0-released/14997"
+    },
+    {
+      "title": "https://stackoverflow.com/questions/7742332/purpose-of-enable-auto-import-warning",
+      "url": "https://stackoverflow.com/questions/7742332/purpose-of-enable-auto-import-warning"
+    },
+    {
+      "title": "https://youtrack.jetbrains.com/projects/CPP/issues/CPP-35360/Missing-C-settings-for-Auto-Import",
+      "url": "https://youtrack.jetbrains.com/projects/CPP/issues/CPP-35360/Missing-C-settings-for-Auto-Import"
+    },
+    {
+      "title": "https://github.com/microsoft/TypeScript/issues/38856",
+      "url": "https://github.com/microsoft/TypeScript/issues/38856"
+    },
+    {
+      "title": "https://forum.dlang.org/thread/tcrdpvqvwxffnewzohuj@forum.dlang.org",
+      "url": "https://forum.dlang.org/thread/tcrdpvqvwxffnewzohuj@forum.dlang.org"
+    },
+    {
+      "title": "https://davestewart.co.uk/blog/nuxt/nuxt-auto-import/",
+      "url": "https://davestewart.co.uk/blog/nuxt/nuxt-auto-import/"
+    },
+    {
+      "title": "https://www.reddit.com/r/Serato/comments/1pg2mm0/auto_import_issue_after_updating_to_401/",
+      "url": "https://www.reddit.com/r/Serato/comments/1pg2mm0/auto_import_issue_after_updating_to_401/"
+    },
+    {
+      "title": "https://yabb.jriver.com/interact/index.php?topic=117947.0",
+      "url": "https://yabb.jriver.com/interact/index.php?topic=117947.0"
+    },
+    {
+      "title": "https://dev.to/shanesc/how-to-get-javascript-auto-import-suggestions-working-in-vs-code-aig",
+      "url": "https://dev.to/shanesc/how-to-get-javascript-auto-import-suggestions-working-in-vs-code-aig"
+    },
+    {
+      "title": "https://www.co.richland.wi.us/pdfs/bids/RFP%20GIS%20Mapping.pdf",
+      "url": "https://www.co.richland.wi.us/pdfs/bids/RFP%20GIS%20Mapping.pdf"
+    },
+    {
+      "title": "https://www.richlandcenterwi.gov/building-zoning/page/zoning-maps",
+      "url": "https://www.richlandcenterwi.gov/building-zoning/page/zoning-maps"
+    },
+    {
+      "title": "https://www.rsd.edu/families/school-boundaries",
+      "url": "https://www.rsd.edu/families/school-boundaries"
+    },
+    {
+      "title": "https://richland-hub---gis-mapping-richlandwa.hub.arcgis.com/",
+      "url": "https://richland-hub---gis-mapping-richlandwa.hub.arcgis.com/"
+    },
+    {
+      "title": "https://gisweb24.ci.richland.wa.us/arcgis24portalext/home/item.html?id=9d8be744959342b0aceee8a0717ca938",
+      "url": "https://gisweb24.ci.richland.wa.us/arcgis24portalext/home/item.html?id=9d8be744959342b0aceee8a0717ca938"
+    },
+    {
+      "title": "https://richlandmaps.com/apps/dataviewer/",
+      "url": "https://richlandmaps.com/apps/dataviewer/"
+    },
+    {
+      "title": "https://www.facebook.com/RichlandBears/posts/we-are-accepting-bids-for-dairy-diesel-fuel-and-pest-control-for-the-2026-2027-d/1467949275344668/",
+      "url": "https://www.facebook.com/RichlandBears/posts/we-are-accepting-bids-for-dairy-diesel-fuel-and-pest-control-for-the-2026-2027-d/1467949275344668/"
+    },
+    {
+      "title": "http://www.richlandms.org/wp-content/uploads/2023/01/2020-6-Subdivision-of-Land.pdf",
+      "url": "http://www.richlandms.org/wp-content/uploads/2023/01/2020-6-Subdivision-of-Land.pdf"
+    },
+    {
+      "title": "https://westrichland.org/283/Current-and-Future-Projects",
+      "url": "https://westrichland.org/283/Current-and-Future-Projects"
+    },
+    {
+      "title": "https://makeittacoma.com/",
+      "url": "https://makeittacoma.com/"
+    },
+    {
+      "title": "https://www.visitpiercecounty.com/regions/tacoma/downtown-tacoma/",
+      "url": "https://www.visitpiercecounty.com/regions/tacoma/downtown-tacoma/"
+    },
+    {
+      "title": "https://www.choosetacomapierce.org/",
+      "url": "https://www.choosetacomapierce.org/"
+    },
+    {
+      "title": "https://www.15thaveeast.com/",
+      "url": "https://www.15thaveeast.com/"
+    },
+    {
+      "title": "https://www.facebook.com/theGSBA.org/posts/15th-ave-east-is-one-of-capitol-hills-best-kept-secrets-a-street-full-of-neighbo/1510433311126374/",
+      "url": "https://www.facebook.com/theGSBA.org/posts/15th-ave-east-is-one-of-capitol-hills-best-kept-secrets-a-street-full-of-neighbo/1510433311126374/"
+    },
+    {
+      "title": "https://www.15thaveeast.com/about",
+      "url": "https://www.15thaveeast.com/about"
+    },
+    {
+      "title": "https://www.capitolhillseattle.com/2021/09/15th-ave-e-business-improvement-area-proposal-cruises-through-committee-vote/",
+      "url": "https://www.capitolhillseattle.com/2021/09/15th-ave-e-business-improvement-area-proposal-cruises-through-committee-vote/"
+    },
+    {
+      "title": "https://www.instagram.com/15thaveeastbia/",
+      "url": "https://www.instagram.com/15thaveeastbia/"
+    },
+    {
+      "title": "https://www.facebook.com/theGSBA.org/videos/15th-ave-east-is-one-of-capitol-hills-best-kept-secrets-a-stroll-down-the-avenue/2507940926315365/",
+      "url": "https://www.facebook.com/theGSBA.org/videos/15th-ave-east-is-one-of-capitol-hills-best-kept-secrets-a-stroll-down-the-avenue/2507940926315365/"
+    },
+    {
+      "title": "https://www.kuow.org/stories/this-seattle-neighborhood-wants-to-tax-itself-into-prosperity",
+      "url": "https://www.kuow.org/stories/this-seattle-neighborhood-wants-to-tax-itself-into-prosperity"
+    },
+    {
+      "title": "https://www.15thaveeast.com/sign-up",
+      "url": "https://www.15thaveeast.com/sign-up"
+    },
+    {
+      "title": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0/about",
+      "url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0/about"
+    },
+    {
+      "title": "https://aberdeen.municipal.codes/AMC/3.100",
+      "url": "https://aberdeen.municipal.codes/AMC/3.100"
+    },
+    {
+      "title": "https://data-spokane.opendata.arcgis.com/datasets/spokane::business-improvement-district-1",
+      "url": "https://data-spokane.opendata.arcgis.com/datasets/spokane::business-improvement-district-1"
+    },
+    {
+      "title": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0/explore",
+      "url": "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0/explore"
+    },
+    {
+      "title": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+      "url": "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-"
+    }
+  ]
+}

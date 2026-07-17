@@ -10,10 +10,18 @@
     "publisher": "NYC OpenData",
     "cadence": "As published",
     "fields": {
-      "name": ["f_all_bi_2"],
-      "area": ["f_all_bi_1"],
-      "website": ["f_all_bi_4"],
-      "established": ["year_found"]
+      "name": [
+        "f_all_bi_2"
+      ],
+      "area": [
+        "f_all_bi_1"
+      ],
+      "website": [
+        "f_all_bi_4"
+      ],
+      "established": [
+        "year_found"
+      ]
     }
   },
   {
@@ -27,12 +35,24 @@
     "publisher": "City and County of San Francisco",
     "cadence": "Annual / as needed",
     "fields": {
-      "name": ["community_benefit_district"],
-      "established": ["established"],
-      "expires": ["expiration"],
-      "annualRevenue": ["revenue"],
-      "reportUrl": ["annual_report_url"],
-      "area": ["sup_districts"]
+      "name": [
+        "community_benefit_district"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expiration"
+      ],
+      "annualRevenue": [
+        "revenue"
+      ],
+      "reportUrl": [
+        "annual_report_url"
+      ],
+      "area": [
+        "sup_districts"
+      ]
     }
   },
   {
@@ -47,9 +67,16 @@
     "cadence": "Weekly",
     "sourceCrs": "EPSG:2230",
     "fields": {
-      "name": ["name2", "name"],
-      "website": ["link"],
-      "status": ["type"]
+      "name": [
+        "name2",
+        "name"
+      ],
+      "website": [
+        "link"
+      ],
+      "status": [
+        "type"
+      ]
     },
     "overrides": {
       "Downtown": {
@@ -69,7 +96,9 @@
     "cadence": "As published",
     "nameTransform": "titleCase",
     "fields": {
-      "name": ["DISTRICT_NAME"]
+      "name": [
+        "DISTRICT_NAME"
+      ]
     },
     "overrides": {
       "RINO BUSINESS IMPROVEMENT DISTRICT": {
@@ -88,9 +117,15 @@
     "publisher": "District of Columbia",
     "cadence": "As published",
     "fields": {
-      "name": ["NAME"],
-      "website": ["WEB_URL"],
-      "established": ["CREATED"]
+      "name": [
+        "NAME"
+      ],
+      "website": [
+        "WEB_URL"
+      ],
+      "established": [
+        "CREATED"
+      ]
     }
   },
   {
@@ -105,7 +140,9 @@
     "publisher": "City of Hartford",
     "cadence": "As published",
     "fields": {
-      "name": ["Description"]
+      "name": [
+        "Description"
+      ]
     }
   },
   {
@@ -119,7 +156,9 @@
     "publisher": "City of Baltimore",
     "cadence": "As published",
     "fields": {
-      "name": ["NAME"]
+      "name": [
+        "NAME"
+      ]
     },
     "overrides": {
       "Midtown": {
@@ -148,7 +187,9 @@
     "publisher": "City of Baltimore",
     "cadence": "As published",
     "fields": {
-      "name": ["AREA_NAME"]
+      "name": [
+        "AREA_NAME"
+      ]
     },
     "overrides": {
       "Downtown Management District": {
@@ -171,10 +212,18 @@
       "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/14/9-2"
     ],
     "fields": {
-      "name": ["name"],
-      "website": ["website"],
-      "area": ["area"],
-      "status": ["status"]
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
     }
   },
   {
@@ -194,14 +243,30 @@
       "https://www.miamibeachfl.gov/wp-content/uploads/2023/05/Exhibit-D-Assessment-Plat.pdf"
     ],
     "fields": {
-      "name": ["name"],
-      "city": ["city"],
-      "website": ["website"],
-      "sourceUrl": ["sourceUrl"],
-      "established": ["established"],
-      "expires": ["expires"],
-      "area": ["area"],
-      "status": ["status"]
+      "name": [
+        "name"
+      ],
+      "city": [
+        "city"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
     }
   },
   {
@@ -219,14 +284,30 @@
       "https://ebidmacon.com/wp-content/uploads/2017/04/MBID-BYLAWS-1-March-13-2017.docx.pdf"
     ],
     "fields": {
-      "name": ["name"],
-      "city": ["city"],
-      "website": ["website"],
-      "sourceUrl": ["sourceUrl"],
-      "established": ["established"],
-      "expires": ["expires"],
-      "area": ["area"],
-      "status": ["status"]
+      "name": [
+        "name"
+      ],
+      "city": [
+        "city"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
     }
   },
   {
@@ -248,13 +329,64 @@
       "https://historickailuavillage.com/wp-content/uploads/2024/01/District-Boundary-Map-2018.pdf"
     ],
     "fields": {
-      "name": ["name"],
-      "city": ["city"],
-      "website": ["website"],
-      "sourceUrl": ["sourceUrl"],
-      "established": ["established"],
-      "area": ["area"],
-      "status": ["status"]
+      "name": [
+        "name"
+      ],
+      "city": [
+        "city"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "washington-automated-business-improvement-districts",
+    "name": "Washington Automated Business Improvement District Candidates",
+    "jurisdiction": "Washington",
+    "state": "WA",
+    "file": "data/wa-automated-bids.geojson",
+    "landingPage": "https://apps.leg.wa.gov/Rcw/default.aspx?cite=35.87A",
+    "publisher": "Washington municipalities and official district sources",
+    "cadence": "Official status and boundary sources monitored daily; all automated imports require human map review",
+    "monitorUrls": [
+      "https://data.tacoma.gov/datasets/tacoma::business-improvement-area-tacoma",
+      "https://services3.arcgis.com/SCwJH1pD8WSn5T5y/arcgis/rest/services/Business_Improvement_Area_BIA/FeatureServer/0"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "city": [
+        "city"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
     }
   }
 ]
