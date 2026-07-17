@@ -44,19 +44,19 @@ Run `npm run admin:audit:sync` after changing map sources or district data to re
 
 ### Intelligent audit assistant
 
-The weekly `state-audit.yml` workflow uses three [Tavily Search API](https://docs.tavily.com/documentation/api-reference/endpoint/search) queries per state and one [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses/create) structured-output call. It searches for enabling law, official registries, and official GIS boundaries. The model may only cite URLs returned by Tavily; the script filters unsupported URLs after generation.
+The weekly `state-audit.yml` workflow uses [grok-4.5 with xAI's native web search](https://docs.x.ai/developers/tools/web-search) and structured output. In one grounded research call per state it searches for enabling law, official registries, and official GIS boundaries. The model may only cite URLs returned by the API's web-search citations; the script filters unsupported URLs after generation.
 
 The assistant is intentionally a researcher rather than a publisher. It writes evidence-rich JSON proposals, applies the proposed findings to a temporary branch, and opens a pull request. A person must check the citations and CSV diff before merging. It never adds a district or boundary to the public map automatically.
 
-Configure repository Actions secrets `TAVILY_API_KEY` and `LLM_API_KEY`. The model and full Responses-compatible endpoint are repository variables:
+Configure repository Actions secret `XAI_KEY`. The model and full Responses-compatible endpoint remain configurable through repository variables:
 
-- `LLM_MODEL` defaults to `gpt-5-mini`;
-- `LLM_API_URL` defaults to `https://api.openai.com/v1/responses`. A full `/responses` URL uses Structured Outputs; an OpenAI-compatible base URL such as `https://integrate.api.nvidia.com/v1` is normalized to `/chat/completions` and its JSON result is validated locally;
-- `LLM_API_KEY` has no default and is always supplied as a secret.
+- `LLM_MODEL` defaults to `grok-4.5`;
+- `LLM_API_URL` defaults to `https://api.x.ai/v1/responses`;
+- `XAI_KEY` has no default and is always supplied as a secret. `XAI_API_KEY`, `LLM_API_KEY`, and `OPENAI_API_KEY` remain supported as fallbacks.
 
 Optional runtime controls are `LLM_MAX_TOKENS` (default `4000`), `LLM_TIMEOUT_MS` (default `300000`), and `LLM_REASONING_EFFORT` (unset by default because provider support varies).
 
-The older `OPENAI_API_KEY`, `OPENAI_API_URL`, and `OPENAI_MODEL` names remain supported as fallbacks. Without the Tavily and LLM keys the weekly job exits successfully with a setup notice. For a local run:
+The older provider-neutral and OpenAI variable names remain supported as fallbacks. Native web search requires a Responses-compatible endpoint. Without a key the weekly job exits successfully with a setup notice. For a local run:
 
 ```bash
 npm run admin:audit:research -- --states=AL,AK --limit=2

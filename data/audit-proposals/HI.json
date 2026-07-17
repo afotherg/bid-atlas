@@ -1,0 +1,211 @@
+{
+  "researched_at": "2026-07-17T16:34:52.514Z",
+  "review_required": true,
+  "model": "grok-4.5",
+  "api_style": "responses",
+  "search_provider": "xai_web_search",
+  "queries": [
+    "Hawaii official state law business improvement district BID enabling statute special services district",
+    "Hawaii official government list business improvement districts downtown improvement districts",
+    "Hawaii city open data GIS business improvement district boundary GeoJSON ArcGIS"
+  ],
+  "finding": {
+    "state_code": "HI",
+    "audit_status": "in_progress",
+    "authority_status": "verified",
+    "local_terms": [
+      "special improvement district",
+      "business improvement district",
+      "SID",
+      "BID"
+    ],
+    "enabling_authority_url": "https://www.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0046/HRS_0046-0080_0005.htm",
+    "statewide_registry_status": "not_located",
+    "statewide_registry_url": "",
+    "candidate_local_sources": [
+      {
+        "name": "HRS §46-80.5 Special improvement district (official text)",
+        "jurisdiction": "State of Hawaii",
+        "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0046/HRS_0046-0080_0005.htm",
+        "publisher": "Hawaii State Legislature",
+        "source_type": "law",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "Revised Ordinances of Honolulu Chapter 28 Special Improvement Districts (incl. Appendix 28-A)",
+        "jurisdiction": "City and County of Honolulu",
+        "url": "https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36151",
+        "publisher": "City and County of Honolulu / American Legal Publishing",
+        "source_type": "law",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "Hawaiʻi County Code Chapter 35 Business Improvement Districts",
+        "jurisdiction": "County of Hawaiʻi",
+        "url": "https://www.hawaiicounty.gov/home/showpublisheddocument/80/637649760877470000",
+        "publisher": "County of Hawaiʻi",
+        "source_type": "law",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "Maui County Ordinance 4382 / Special Improvement Districts (Title 3 / Chapter ~3.70 enabling)",
+        "jurisdiction": "County of Maui",
+        "url": "https://www.mauicounty.gov/DocumentCenter/View/106635/Ord-4382?bidId=",
+        "publisher": "County of Maui",
+        "source_type": "law",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "Waikīkī Business Improvement District (SID No. 1 / BID)",
+        "jurisdiction": "City and County of Honolulu / Waikīkī",
+        "url": "https://waikikibid.org/",
+        "publisher": "Waikīkī Business Improvement District Association",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Downtown Honolulu Business Improvement District (expanded from Fort Street Mall SID No. 2)",
+        "jurisdiction": "City and County of Honolulu / Downtown",
+        "url": "https://www.dohobid.com/",
+        "publisher": "Downtown Honolulu BID / Activate DoHo",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Waikīkī Beach Special Improvement District Association",
+        "jurisdiction": "City and County of Honolulu / Waikīkī Beach",
+        "url": "https://www.wbsida.org/overview",
+        "publisher": "Waikīkī Beach Special Improvement District Association",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Kailua Village Business Improvement District",
+        "jurisdiction": "County of Hawaiʻi / Kailua-Kona",
+        "url": "https://historickailuavillage.com/",
+        "publisher": "Kailua Village Business Improvement District",
+        "source_type": "district_site",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "Fort Street Mall Business Improvement District Association (predecessor/related to Downtown)",
+        "jurisdiction": "City and County of Honolulu",
+        "url": "https://fortstreetmall.org/fort-streets-history/fort-street-mall-bida/",
+        "publisher": "Fort Street Mall BIDA",
+        "source_type": "district_site",
+        "has_boundaries": false,
+        "confidence": "medium"
+      },
+      {
+        "name": "Bill 51 (2025) Downtown Honolulu BID establishing ordinance materials",
+        "jurisdiction": "City and County of Honolulu",
+        "url": "https://hnldoc.ehawaii.gov/hnldoc/measure/3401",
+        "publisher": "Honolulu City Council / eHawaii.gov",
+        "source_type": "official_list",
+        "has_boundaries": true,
+        "confidence": "high"
+      }
+    ],
+    "coverage_status": "partial",
+    "confidence": "high",
+    "next_action": "Compile exhaustive list of active SIDs/BIDs by reviewing county ordinance appendices, clerk records, and recent bills for all four counties (focus Maui/Kauai for any active ones); locate any parcel or boundary GIS layers or maps from district management associations or county finance/tax offices; confirm no statewide registry via DCCA, DBEDT, or AG.",
+    "notes": "Statewide enabling authority is HRS §46-80.5 (Special improvement district), allowing charter counties to enact ordinances creating SIDs for supplemental maintenance/security, environmental work, natural resources/hazards/climate adaptation, and other services/improvements that restore or promote business activity, with special assessments and optional bonds/association management (nonprofit under Ch. 414D). These are the legal equivalent of BIDs; Honolulu ROH Ch. 28 and Hawaii County Code Ch. 35 implement them (explicitly calling some BIDs); Maui Ord. 4382 (2016) adds enabling chapter for SIDs. Known active examples (Honolulu-centric): Waikiki SID/BID No. 1 (est. ~2000), Fort Street Mall SID No. 2 (expanded 2025 via Bill 51/Ord. to Downtown Honolulu BID), Waikiki Beach SID (2015). Hawaii County has Kailua Village BID under Ch. 35. Distinguish from: traditional improvement districts (HRS 46-80), community facilities districts (HRS 46-80.1), tax increment districts, zoning/design special districts (e.g., Honolulu zoning special districts GIS – different purpose), and HCDA improvement districts. No statewide registry, comprehensive official list, or unified GIS of BID/SID boundaries located; districts are local ordinances. Coverage is partial (authoritative enabling + major local codes + known district sites verified; full inventory of all active districts and boundaries incomplete). Failed or sparse searches for Kauai active districts and full statewide maps do not prove absence.",
+    "evidence_urls": [
+      "https://www.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0046/HRS_0046-0080_0005.htm",
+      "https://law.justia.com/codes/hawaii/title-6/chapter-46/section-46-80-5/",
+      "https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36151",
+      "https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36618",
+      "https://www.hawaiicounty.gov/home/showpublisheddocument/80/637649760877470000",
+      "https://www.hawaiicounty.gov/our-county/legislative/office-of-the-county-clerk/county-code",
+      "https://www.mauicounty.gov/DocumentCenter/View/106635/Ord-4382?bidId=",
+      "https://waikikibid.org/",
+      "https://waikikibid.org/about/",
+      "https://www.dohobid.com/",
+      "https://www.wbsida.org/overview",
+      "https://historickailuavillage.com/",
+      "https://fortstreetmall.org/fort-streets-history/fort-street-mall-bida/",
+      "https://hnldoc.ehawaii.gov/hnldoc/measure/3401",
+      "https://www.honolulu.gov/mayor/mayor-blangiardi-signs-bill-51-establishing-downtown-honolulu-business-improvement-district/",
+      "https://honolulu-cchnl.opendata.arcgis.com/datasets/cchnl::zoning-special-district/about",
+      "https://www.waikikiimprovement.com/beach"
+    ]
+  },
+  "evidence": [
+    {
+      "title": "https://www.honolulu.gov/mayor/mayor-blangiardi-signs-bill-51-establishing-downtown-honolulu-business-improvement-district/",
+      "url": "https://www.honolulu.gov/mayor/mayor-blangiardi-signs-bill-51-establishing-downtown-honolulu-business-improvement-district/"
+    },
+    {
+      "title": "https://waikikibid.org/about/",
+      "url": "https://waikikibid.org/about/"
+    },
+    {
+      "title": "https://www.wbsida.org/overview",
+      "url": "https://www.wbsida.org/overview"
+    },
+    {
+      "title": "https://law.justia.com/codes/hawaii/title-6/chapter-46/section-46-80-5/",
+      "url": "https://law.justia.com/codes/hawaii/title-6/chapter-46/section-46-80-5/"
+    },
+    {
+      "title": "https://waikikibid.org/",
+      "url": "https://waikikibid.org/"
+    },
+    {
+      "title": "https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36151",
+      "url": "https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36151"
+    },
+    {
+      "title": "https://www.dohobid.com/",
+      "url": "https://www.dohobid.com/"
+    },
+    {
+      "title": "https://hnldoc.ehawaii.gov/hnldoc/measure/3401",
+      "url": "https://hnldoc.ehawaii.gov/hnldoc/measure/3401"
+    },
+    {
+      "title": "https://www.waikikiimprovement.com/beach",
+      "url": "https://www.waikikiimprovement.com/beach"
+    },
+    {
+      "title": "https://fortstreetmall.org/fort-streets-history/fort-street-mall-bida/",
+      "url": "https://fortstreetmall.org/fort-streets-history/fort-street-mall-bida/"
+    },
+    {
+      "title": "https://www.mauicounty.gov/DocumentCenter/View/106635/Ord-4382?bidId=",
+      "url": "https://www.mauicounty.gov/DocumentCenter/View/106635/Ord-4382?bidId="
+    },
+    {
+      "title": "https://historickailuavillage.com/",
+      "url": "https://historickailuavillage.com/"
+    },
+    {
+      "title": "https://honolulu-cchnl.opendata.arcgis.com/datasets/cchnl::zoning-special-district/about",
+      "url": "https://honolulu-cchnl.opendata.arcgis.com/datasets/cchnl::zoning-special-district/about"
+    },
+    {
+      "title": "https://www.hawaiicounty.gov/our-county/legislative/office-of-the-county-clerk/county-code",
+      "url": "https://www.hawaiicounty.gov/our-county/legislative/office-of-the-county-clerk/county-code"
+    },
+    {
+      "title": "https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36618",
+      "url": "https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36618"
+    },
+    {
+      "title": "https://www.hawaiicounty.gov/home/showpublisheddocument/80/637649760877470000",
+      "url": "https://www.hawaiicounty.gov/home/showpublisheddocument/80/637649760877470000"
+    },
+    {
+      "title": "https://www.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0046/HRS_0046-0080_0005.htm",
+      "url": "https://www.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0046/HRS_0046-0080_0005.htm"
+    }
+  ]
+}

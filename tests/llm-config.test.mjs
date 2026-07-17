@@ -14,6 +14,22 @@ test("LLM settings configure model name, endpoint URL, and key", () => {
   });
 });
 
+test("xAI key and Grok defaults configure native web research", () => {
+  assert.deepEqual(getLlmConfig({ XAI_KEY: "xai-test-key" }), {
+    apiKey: "xai-test-key",
+    apiUrl: "https://api.x.ai/v1/responses",
+    apiStyle: "responses",
+    maxTokens: 4000,
+    model: "grok-4.5",
+    reasoningEffort: "",
+    timeoutMs: 300000,
+  });
+});
+
+test("XAI_KEY takes precedence over fallback keys", () => {
+  assert.equal(getLlmConfig({ XAI_KEY: "preferred", LLM_API_KEY: "fallback", OPENAI_API_KEY: "legacy" }).apiKey, "preferred");
+});
+
 test("legacy OpenAI settings remain supported", () => {
   assert.deepEqual(getLlmConfig({ OPENAI_API_KEY: "legacy-key", OPENAI_API_URL: "https://legacy.example.test/v1/responses", OPENAI_MODEL: "legacy-model" }), {
     apiKey: "legacy-key",

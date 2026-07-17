@@ -36,23 +36,25 @@ jobs:
       - name: Check research credentials
         id: credentials
         env:
-          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          XAI_KEY: ${{ secrets.XAI_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          if [[ -n "$TAVILY_API_KEY" && ( -n "$LLM_API_KEY" || -n "$OPENAI_API_KEY" ) ]]; then
+          if [[ -n "$XAI_KEY" || -n "$XAI_API_KEY" || -n "$LLM_API_KEY" || -n "$OPENAI_API_KEY" ]]; then
             echo "ready=true" >> "$GITHUB_OUTPUT"
           else
             echo "ready=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::State audit skipped. Add TAVILY_API_KEY and LLM_API_KEY as repository Actions secrets."
+            echo "::notice::State audit skipped. Add XAI_KEY as a repository Actions secret."
           fi
-      - name: Research states with Tavily and an LLM
+      - name: Research states with Grok web search
         if: steps.credentials.outputs.ready == 'true'
         env:
-          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          XAI_KEY: ${{ secrets.XAI_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_API_URL: ${{ vars.LLM_API_URL || 'https://api.openai.com/v1/responses' }}
-          LLM_MODEL: ${{ vars.LLM_MODEL || 'gpt-5-mini' }}
+          LLM_API_URL: ${{ vars.LLM_API_URL || 'https://api.x.ai/v1/responses' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'grok-4.5' }}
           LLM_MAX_TOKENS: ${{ vars.LLM_MAX_TOKENS || '4000' }}
           LLM_TIMEOUT_MS: ${{ vars.LLM_TIMEOUT_MS || '300000' }}
           LLM_REASONING_EFFORT: ${{ vars.LLM_REASONING_EFFORT }}
@@ -84,4 +86,4 @@ jobs:
           git diff --cached --quiet && exit 0
           git commit -m "audit: propose state BID research"
           git push --set-upstream origin "$branch"
-          gh pr create --base main --head "$branch" --title "State BID audit research" --body "Automated Tavily + LLM research proposals. Review every cited source and CSV change before merging. No map source is added automatically."
+          gh pr create --base main --head "$branch" --title "State BID audit research" --body "Automated Grok web-search research proposals. Review every cited source and CSV change before merging. No map source is added automatically."

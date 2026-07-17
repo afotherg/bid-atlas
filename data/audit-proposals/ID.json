@@ -1,0 +1,176 @@
+{
+  "researched_at": "2026-07-17T16:36:00.386Z",
+  "review_required": true,
+  "model": "grok-4.5",
+  "api_style": "responses",
+  "search_provider": "xai_web_search",
+  "queries": [
+    "Idaho official state law business improvement district BID enabling statute special services district",
+    "Idaho official government list business improvement districts downtown improvement districts",
+    "Idaho city open data GIS business improvement district boundary GeoJSON ArcGIS"
+  ],
+  "finding": {
+    "state_code": "ID",
+    "audit_status": "in_progress",
+    "authority_status": "verified",
+    "local_terms": [
+      "Business Improvement District",
+      "BID",
+      "Local Business Improvement District"
+    ],
+    "enabling_authority_url": "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/",
+    "statewide_registry_status": "not_located",
+    "statewide_registry_url": "",
+    "candidate_local_sources": [
+      {
+        "name": "Downtown Boise Business Improvement District / Downtown Boise Association",
+        "jurisdiction": "Boise",
+        "url": "https://downtownboise.org/about/business-improvement-district",
+        "publisher": "Downtown Boise Association (authorized by City of Boise)",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Nampa Business Improvement District",
+        "jurisdiction": "Nampa",
+        "url": "https://www.cityofnampa.us/1253/Business-Improvement-District",
+        "publisher": "City of Nampa",
+        "source_type": "official_list",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Downtown Caldwell Business Improvement District / Destination Caldwell",
+        "jurisdiction": "Caldwell",
+        "url": "https://www.cityofcaldwell.org/Business/Business-Improvement-District-Information",
+        "publisher": "City of Caldwell",
+        "source_type": "official_list",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Downtown Idaho Falls Business Improvement District",
+        "jurisdiction": "Idaho Falls",
+        "url": "https://downtownidahofalls.com/about-us/business-improvement-district/",
+        "publisher": "Idaho Falls Downtown Development Corporation",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Coeur d'Alene Downtown Business Improvement District / Downtown Association",
+        "jurisdiction": "Coeur d'Alene",
+        "url": "https://cdadowntown.com/about/",
+        "publisher": "Coeur d'Alene Downtown Association",
+        "source_type": "district_site",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "Downtown Lewiston Business Improvement District",
+        "jurisdiction": "Lewiston",
+        "url": "https://www.cityoflewiston.org/661/Business-Improvement-District",
+        "publisher": "City of Lewiston",
+        "source_type": "official_list",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "Historic Downtown Pocatello Business Improvement District",
+        "jurisdiction": "Pocatello",
+        "url": "https://www.historicdowntownpocatello.com/explore-downtown",
+        "publisher": "Historic Downtown Pocatello",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Idaho Statutes Title 50 Chapter 26 Business Improvement Districts (full chapter)",
+        "jurisdiction": "Statewide",
+        "url": "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/",
+        "publisher": "Idaho State Legislature",
+        "source_type": "law",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "Idaho Code 50-1703A Local Business Improvement Districts",
+        "jurisdiction": "Statewide",
+        "url": "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH17/SECT50-1703A/",
+        "publisher": "Idaho State Legislature",
+        "source_type": "law",
+        "has_boundaries": false,
+        "confidence": "high"
+      }
+    ],
+    "coverage_status": "partial",
+    "confidence": "medium",
+    "next_action": "Expand inventory via additional city municipal codes/ordinances, association directories (e.g., International Downtown Association, Association of Idaho Cities), and municipal GIS/open data portals for remaining cities (e.g., Twin Falls, Meridian status, Sandpoint current status); seek any boundary GeoJSON/shapefiles.",
+    "notes": "Enabling authority verified as Idaho Code Title 50 Chapter 26 (Business Improvement Districts, authorized 1980, purposes include parking, public space improvements, events, transportation, retail promotion; special assessments on businesses/business property; cities may contract for administration). Distinct from broader Local Improvement Districts (LIDs, Title 50 Chapter 17 for capital infrastructure like streets/utilities, financed by assessments/bonds). Separate limited provision at 50-1703A (Local Business Improvement Districts, 1987) for exterior building improvements to match city architectural themes (requires 100% parcel owner consent, assessed as LIDs, max 20% of market value). No statewide registry, inventory, or central GIS of BIDs located after statute, government, and open-data searches (failed search ≠ none exist). Known active BIDs per official/district sources in Boise (est. ~1987), Nampa (~1985), Caldwell, Idaho Falls (~1990s, renewal 2027), Coeur d'Alene (1990), Lewiston (2020), Pocatello (1991); Sandpoint had one historically (dissolution attempt ~2010 failed; current status unclear/possibly inactive per some planning docs). Meridian has discussed/proposed but documents note operating without one. DBA notes 'at least six' in Idaho (likely undercount). Boundaries available as maps/PDFs on several district/city pages but no statewide or easily downloadable GeoJSON/ArcGIS layers confirmed. Distinctions from urban renewal/URDs and other special districts observed. Candidate sources are research leads only.",
+    "evidence_urls": [
+      "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/",
+      "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/SECT50-2601/",
+      "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH17/SECT50-1703A/",
+      "https://downtownboise.org/about/business-improvement-district",
+      "https://www.cityofnampa.us/1253/Business-Improvement-District",
+      "https://www.cityofcaldwell.org/Business/Business-Improvement-District-Information",
+      "https://downtownidahofalls.com/about-us/business-improvement-district/",
+      "https://cdadowntown.com/about/",
+      "https://www.cityoflewiston.org/661/Business-Improvement-District",
+      "https://www.historicdowntownpocatello.com/explore-downtown",
+      "https://law.justia.com/codes/idaho/title-50/chapter-26/section-50-2601/",
+      "https://lhtac.org/wordpress/wp-content/uploads/2013/08/LID-Manual-pdf.pdf"
+    ]
+  },
+  "evidence": [
+    {
+      "title": "https://downtownboise.org/about/business-improvement-district",
+      "url": "https://downtownboise.org/about/business-improvement-district"
+    },
+    {
+      "title": "https://www.cityofnampa.us/1253/Business-Improvement-District",
+      "url": "https://www.cityofnampa.us/1253/Business-Improvement-District"
+    },
+    {
+      "title": "https://www.cityofcaldwell.org/Business/Business-Improvement-District-Information",
+      "url": "https://www.cityofcaldwell.org/Business/Business-Improvement-District-Information"
+    },
+    {
+      "title": "https://lhtac.org/wordpress/wp-content/uploads/2013/08/LID-Manual-pdf.pdf",
+      "url": "https://lhtac.org/wordpress/wp-content/uploads/2013/08/LID-Manual-pdf.pdf"
+    },
+    {
+      "title": "https://law.justia.com/codes/idaho/title-50/chapter-26/section-50-2601/",
+      "url": "https://law.justia.com/codes/idaho/title-50/chapter-26/section-50-2601/"
+    },
+    {
+      "title": "https://downtownidahofalls.com/about-us/business-improvement-district/",
+      "url": "https://downtownidahofalls.com/about-us/business-improvement-district/"
+    },
+    {
+      "title": "https://www.cityoflewiston.org/661/Business-Improvement-District",
+      "url": "https://www.cityoflewiston.org/661/Business-Improvement-District"
+    },
+    {
+      "title": "https://cdadowntown.com/about/",
+      "url": "https://cdadowntown.com/about/"
+    },
+    {
+      "title": "https://www.historicdowntownpocatello.com/explore-downtown",
+      "url": "https://www.historicdowntownpocatello.com/explore-downtown"
+    },
+    {
+      "title": "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH17/SECT50-1703A",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH17/SECT50-1703A"
+    },
+    {
+      "title": "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/SECT50-2601",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/SECT50-2601"
+    },
+    {
+      "title": "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/",
+      "url": "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/"
+    }
+  ]
+}
