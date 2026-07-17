@@ -1,0 +1,79 @@
+name: Research state BID coverage
+
+on:
+  schedule:
+    - cron: "41 14 * * 1"
+  workflow_dispatch:
+    inputs:
+      states:
+        description: "Optional comma-separated state codes such as AL,AK"
+        required: false
+        type: string
+      limit:
+        description: "Maximum states to research"
+        required: false
+        default: "3"
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: state-audit
+  cancel-in-progress: false
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check research credentials
+        id: credentials
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [[ -n "$TAVILY_API_KEY" && -n "$OPENAI_API_KEY" ]]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::State audit skipped. Add TAVILY_API_KEY and OPENAI_API_KEY as repository Actions secrets."
+          fi
+      - name: Research states with Tavily and an LLM
+        if: steps.credentials.outputs.ready == 'true'
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
+          INPUT_STATES: ${{ inputs.states }}
+          INPUT_LIMIT: ${{ inputs.limit }}
+        run: |
+          args=("--limit=${INPUT_LIMIT:-3}")
+          if [[ -n "$INPUT_STATES" ]]; then args+=("--states=$INPUT_STATES"); fi
+          npm run admin:audit:research -- "${args[@]}"
+      - name: Apply findings to the review branch
+        if: steps.credentials.outputs.ready == 'true'
+        run: |
+          states="$(node -e 'const s=require("./data/audit-proposals/_latest-run.json"); process.stdout.write(s.states.join(","))')"
+          npm run admin:audit:apply -- "--state=$states"
+          npm run admin:audit:sync
+      - name: Open a review pull request
+        if: steps.credentials.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="automation/state-audit-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add data/state-audit.csv data/audit-proposals
+          git diff --cached --quiet && exit 0
+          git commit -m "audit: propose state BID research"
+          git push --set-upstream origin "$branch"
+          gh pr create --base main --head "$branch" --title "State BID audit research" --body "Automated Tavily + LLM research proposals. Review every cited source and CSV change before merging. No map source is added automatically."

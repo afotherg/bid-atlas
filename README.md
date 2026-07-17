@@ -28,6 +28,36 @@ For districts whose authoritative boundaries are published only in legislation, 
 
 The included GitHub Actions workflow runs discovery and refresh daily, commits verified changes, and can also be run manually. Add authoritative feeds as they are verified. There is currently no authoritative nationwide U.S. registry, so the UI reports exact covered jurisdictions rather than claiming false completeness.
 
+## State-by-state audit
+
+`data/state-audit.csv` is the national research ledger. It has one row for every state plus the District of Columbia and deliberately separates:
+
+- research status and confidence;
+- verified enabling authority and local terminology;
+- availability of an authoritative statewide registry;
+- current map source and record counts;
+- geographic coverage status and the next research action.
+
+An empty state is recorded as `not_started`, never as proof that no BID exists. The initial audit verifies enabling authority and current partial coverage for California, Connecticut, Maryland, New York, and the District of Columbia. It also records two discrepancies that need review: the D.C. registry says 12 BIDs while its boundary feed produces 13 records, and the May 2026 NYC report says 78 BIDs while the current layer contains 76.
+
+Run `npm run admin:audit:sync` after changing map sources or district data to refresh the two map-count columns.
+
+### Intelligent audit assistant
+
+The weekly `state-audit.yml` workflow uses three [Tavily Search API](https://docs.tavily.com/documentation/api-reference/endpoint/search) queries per state and one [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses/create) structured-output call. It searches for enabling law, official registries, and official GIS boundaries. The model may only cite URLs returned by Tavily; the script filters unsupported URLs after generation.
+
+The assistant is intentionally a researcher rather than a publisher. It writes evidence-rich JSON proposals, applies the proposed findings to a temporary branch, and opens a pull request. A person must check the citations and CSV diff before merging. It never adds a district or boundary to the public map automatically.
+
+Configure repository Actions secrets `TAVILY_API_KEY` and `OPENAI_API_KEY`. Optionally set the repository variable `OPENAI_MODEL`; the default is `gpt-5-mini`. Without both secrets the weekly job exits successfully with a setup notice. For a local run:
+
+```bash
+npm run admin:audit:research -- --states=AL,AK --limit=2
+npm run admin:audit:apply -- --state=AL,AK
+npm run admin:audit:sync
+```
+
+The apply command is explicit so an administrator can inspect `data/audit-proposals/*.json` first. The CSV remains the reviewed source of truth; proposal files are an audit trail.
+
 ## GitHub Pages deployment
 
 The combined GitHub Actions workflow publishes `dist/pages` on every push to `main`, on the daily refresh schedule, and when started manually. Scheduled refresh commits are deployed in the same workflow run; they do not rely on a second workflow being triggered by the Actions bot.

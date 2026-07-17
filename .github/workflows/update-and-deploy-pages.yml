@@ -29,11 +29,12 @@ jobs:
       - run: npm run admin:discover
       - run: npm run admin:update
         continue-on-error: true
+      - run: npm run admin:audit:sync
       - name: Commit refreshed directory data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data data/last-change-report.json data/candidate-sources.json
+          git add public/data data/last-change-report.json data/candidate-sources.json data/state-audit.csv
           git diff --cached --quiet || git commit -m "data: refresh BID directory"
           git push
       - name: Set GitHub Pages paths
