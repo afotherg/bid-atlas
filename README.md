@@ -51,7 +51,7 @@ The assistant is intentionally a researcher rather than a publisher. It writes e
 Configure repository Actions secrets `TAVILY_API_KEY` and `LLM_API_KEY`. The model and full Responses-compatible endpoint are repository variables:
 
 - `LLM_MODEL` defaults to `gpt-5-mini`;
-- `LLM_API_URL` defaults to `https://api.openai.com/v1/responses`;
+- `LLM_API_URL` defaults to `https://api.openai.com/v1/responses`. A full `/responses` URL uses Structured Outputs; an OpenAI-compatible base URL such as `https://integrate.api.nvidia.com/v1` is normalized to `/chat/completions` and its JSON result is validated locally;
 - `LLM_API_KEY` has no default and is always supplied as a secret.
 
 The older `OPENAI_API_KEY`, `OPENAI_API_URL`, and `OPENAI_MODEL` names remain supported as fallbacks. Without the Tavily and LLM keys the weekly job exits successfully with a setup notice. For a local run:

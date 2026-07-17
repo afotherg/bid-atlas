@@ -3,16 +3,20 @@ const defaultModel = "gpt-5-mini";
 
 export function getLlmConfig(environment = process.env) {
   const apiKey = environment.LLM_API_KEY || environment.OPENAI_API_KEY || "";
-  const apiUrl = environment.LLM_API_URL || environment.OPENAI_API_URL || defaultApiUrl;
+  const configuredUrl = environment.LLM_API_URL || environment.OPENAI_API_URL || defaultApiUrl;
   const model = environment.LLM_MODEL || environment.OPENAI_MODEL || defaultModel;
 
   let parsedUrl;
   try {
-    parsedUrl = new URL(apiUrl);
+    parsedUrl = new URL(configuredUrl.replace(/^=+/, ""));
   } catch {
-    throw new Error(`LLM_API_URL must be an absolute URL; received ${apiUrl}`);
+    throw new Error(`LLM_API_URL must be an absolute URL; received ${configuredUrl}`);
   }
   if (!new Set(["http:", "https:"]).has(parsedUrl.protocol)) throw new Error("LLM_API_URL must use HTTP or HTTPS.");
 
-  return { apiKey, apiUrl: parsedUrl.toString(), model };
+  const trimmedPath = parsedUrl.pathname.replace(/\/+$/, "");
+  const apiStyle = trimmedPath.endsWith("/responses") ? "responses" : "chat_completions";
+  if (apiStyle === "chat_completions" && !trimmedPath.endsWith("/chat/completions")) parsedUrl.pathname = `${trimmedPath}/chat/completions`;
+
+  return { apiKey, apiUrl: parsedUrl.toString(), apiStyle, model };
 }
