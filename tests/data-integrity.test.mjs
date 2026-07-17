@@ -20,3 +20,22 @@ test("Downtown San Diego resolves to San Diego", () => {
   assert.ok(latitude > 32 && latitude < 34);
   assert.equal(district.properties.website, "https://downtownsandiego.org/city-center-district/");
 });
+
+test("Baltimore publishes its six neighborhood special benefits districts", () => {
+  const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
+  const names = new Set(baltimore.map((feature) => feature.properties.name));
+  assert.equal(baltimore.length, 6);
+  for (const name of [
+    "Downtown Management District",
+    "Charles Village Community Benefits District",
+    "Midtown Community Benefits District",
+    "Waterfront Management District",
+    "York Corridor Business Improvement District",
+    "Port Covington Community Benefits District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of baltimore) {
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -77 && longitude < -76, `${district.properties.name} is outside Baltimore longitude`);
+    assert.ok(latitude > 39 && latitude < 40, `${district.properties.name} is outside Baltimore latitude`);
+  }
+});

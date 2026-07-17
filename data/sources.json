@@ -87,5 +87,74 @@
     "fields": {
       "name": ["Description"]
     }
+  },
+  {
+    "id": "baltimore-community-benefit-districts",
+    "name": "Baltimore Community Benefits Districts",
+    "jurisdiction": "Baltimore, MD",
+    "state": "MD",
+    "city": "Baltimore",
+    "url": "https://geodata.baltimorecity.gov/egis/rest/services/Housing/dmxBoundaries/MapServer/50/query?where=1%3D1&outFields=NAME&outSR=4326&f=geojson",
+    "landingPage": "https://geodata.baltimorecity.gov/egis/rest/services/Housing/dmxBoundaries/MapServer/50",
+    "publisher": "City of Baltimore",
+    "cadence": "As published",
+    "fields": {
+      "name": ["NAME"]
+    },
+    "overrides": {
+      "Midtown": {
+        "name": "Midtown Community Benefits District",
+        "website": "https://www.midtownbaltimore.org/"
+      },
+      "Charles Village": {
+        "name": "Charles Village Community Benefits District",
+        "website": "https://www.charlesvillage.org/"
+      },
+      "Port Covington": {
+        "name": "Port Covington Community Benefits District",
+        "website": "https://baltimorepeninsulapartnership.org/"
+      }
+    }
+  },
+  {
+    "id": "baltimore-downtown-management-district",
+    "name": "Baltimore Downtown Management District",
+    "jurisdiction": "Baltimore, MD",
+    "state": "MD",
+    "city": "Baltimore",
+    "fixedName": "Downtown Management District",
+    "url": "https://gis.baltimorecity.gov/egis/rest/services/DOT/OpenGOV/FeatureServer/6/query?where=1%3D1&outFields=AREA_NAME&outSR=4326&f=geojson",
+    "landingPage": "https://gis.baltimorecity.gov/egis/rest/services/DOT/OpenGOV/FeatureServer/6",
+    "publisher": "City of Baltimore",
+    "cadence": "As published",
+    "fields": {
+      "name": ["AREA_NAME"]
+    },
+    "overrides": {
+      "Downtown Management District": {
+        "website": "https://godowntownbaltimore.com/who-we-are/dpob/our-work-2/dma/"
+      }
+    }
+  },
+  {
+    "id": "baltimore-legislated-districts",
+    "name": "Baltimore Legislated Special Benefits Districts",
+    "jurisdiction": "Baltimore, MD",
+    "state": "MD",
+    "city": "Baltimore",
+    "file": "data/baltimore-legislated-districts.geojson",
+    "landingPage": "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/14/index.full.html",
+    "publisher": "City of Baltimore",
+    "cadence": "Monitored daily; geometry reviewed when legislation changes",
+    "monitorUrls": [
+      "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/14/8-2",
+      "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/14/9-2"
+    ],
+    "fields": {
+      "name": ["name"],
+      "website": ["website"],
+      "area": ["area"],
+      "status": ["status"]
+    }
   }
 ]

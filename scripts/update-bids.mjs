@@ -18,7 +18,9 @@ const readJson = async (file, fallback) => {
 
 const sources = await readJson(sourcePath, []);
 const previous = await readJson(outputPath, { type: "FeatureCollection", features: [] });
+const previousManifest = await readJson(manifestPath, { sources: [] });
 const previousBySource = Map.groupBy(previous.features ?? [], (f) => f.properties?.sourceId);
+const previousSourceResults = new Map((previousManifest.sources ?? []).map((source) => [source.id, source]));
 
 const valueFor = (properties, keys = []) => {
   for (const key of keys) {
@@ -57,9 +59,10 @@ const slug = (value) => value.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]
 function normalize(source, feature) {
   if (!feature?.geometry) return null;
   const p = feature.properties ?? {};
-  const name = source.fixedName ?? valueFor(p, source.fields.name);
-  if (!name) return null;
-  const override = source.overrides?.[name] ?? {};
+  const sourceName = source.fixedName ?? valueFor(p, source.fields.name);
+  if (!sourceName) return null;
+  const override = source.overrides?.[sourceName] ?? {};
+  const name = override.name ?? sourceName;
   const geometry = { ...feature.geometry, coordinates: transformCoordinates(feature.geometry.coordinates, source.sourceCrs) };
   const bounds = coordinateBounds(geometry.coordinates);
   if (!bounds.every(Number.isFinite)) return null;
@@ -94,13 +97,31 @@ const sourceResults = [];
 const allFeatures = [];
 for (const source of sources) {
   try {
-    const response = await fetch(source.url, { headers: { "user-agent": "BID-Atlas-Updater/1.0" }, signal: AbortSignal.timeout(45_000) });
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
-    const body = await response.json();
+    let body;
+    if (source.file) {
+      body = await readJson(path.join(root, source.file), null);
+      if (!body) throw new Error(`Unable to read ${source.file}`);
+    } else {
+      const response = await fetch(source.url, { headers: { "user-agent": "BID-Atlas-Updater/1.0" }, signal: AbortSignal.timeout(45_000) });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      body = await response.json();
+    }
     const features = (body.features ?? []).map((feature) => normalize(source, feature)).filter(Boolean);
     if (!features.length) throw new Error("No usable geographic features returned");
+    let monitorHash = null;
+    if (source.monitorUrls?.length) {
+      const monitored = [];
+      for (const url of source.monitorUrls) {
+        const response = await fetch(url, { headers: { "user-agent": "BID-Atlas-Updater/1.0" }, signal: AbortSignal.timeout(45_000) });
+        if (!response.ok) throw new Error(`Monitor HTTP ${response.status}: ${url}`);
+        monitored.push(await response.text());
+      }
+      monitorHash = digest(monitored);
+    }
+    const previousMonitorHash = previousSourceResults.get(source.id)?.monitorHash ?? null;
+    const legislationChanged = Boolean(previousMonitorHash && monitorHash && previousMonitorHash !== monitorHash);
     allFeatures.push(...features);
-    sourceResults.push({ id: source.id, name: source.name, status: "ok", records: features.length, checkedAt });
+    sourceResults.push({ id: source.id, name: source.name, status: legislationChanged ? "review" : "ok", records: features.length, checkedAt, ...(monitorHash ? { monitorHash, legislationChanged } : {}) });
   } catch (error) {
     const retained = previousBySource.get(source.id) ?? [];
     allFeatures.push(...retained);

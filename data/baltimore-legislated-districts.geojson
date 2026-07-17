@@ -1,0 +1,76 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waterfront Management District",
+        "website": "https://www.waterfrontpartnership.org/",
+        "area": "Generalized boundary digitized from Baltimore City Code Article 14 §8-2 and Ordinance 17-039",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-76.6137, 39.2867],
+          [-76.6071, 39.2867],
+          [-76.6060, 39.2848],
+          [-76.6009, 39.2848],
+          [-76.6009, 39.2830],
+          [-76.5963, 39.2830],
+          [-76.5963, 39.2810],
+          [-76.5928, 39.2810],
+          [-76.5928, 39.2845],
+          [-76.5883, 39.2845],
+          [-76.5883, 39.2803],
+          [-76.5906, 39.2793],
+          [-76.5935, 39.2790],
+          [-76.5965, 39.2783],
+          [-76.6000, 39.2780],
+          [-76.6032, 39.2772],
+          [-76.6065, 39.2764],
+          [-76.6102, 39.2768],
+          [-76.6134, 39.2800],
+          [-76.6137, 39.2867]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "York Corridor Business Improvement District",
+        "website": "https://yorkroad.org/",
+        "area": "Generalized boundary digitized from the Proposed York Road BID map appended to Ordinance 19-249 and retained by Ordinance 22-177",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-76.6135, 39.3644],
+          [-76.6070, 39.3644],
+          [-76.6070, 39.3615],
+          [-76.6082, 39.3615],
+          [-76.6082, 39.3585],
+          [-76.6069, 39.3570],
+          [-76.6080, 39.3552],
+          [-76.6082, 39.3517],
+          [-76.6078, 39.3488],
+          [-76.6076, 39.3450],
+          [-76.6068, 39.3425],
+          [-76.6082, 39.3400],
+          [-76.6112, 39.3400],
+          [-76.6118, 39.3424],
+          [-76.6113, 39.3450],
+          [-76.6119, 39.3487],
+          [-76.6122, 39.3516],
+          [-76.6128, 39.3540],
+          [-76.6140, 39.3561],
+          [-76.6130, 39.3582],
+          [-76.6150, 39.3604],
+          [-76.6140, 39.3620],
+          [-76.6135, 39.3644]
+        ]]
+      }
+    }
+  ]
+}
