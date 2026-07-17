@@ -95,7 +95,7 @@ jobs:
                 body+=$'\n- [ ] Named districts are active rather than proposed, expired, or historical.'
                 body+=$'\n- [ ] Candidate sources and claimed boundaries match the cited pages.'
                 body+=$'\n- [ ] Coverage, confidence, notes, and next action are appropriately cautious.'
-                body+=$'\n\nMerging this PR updates the research ledger only. No map source or boundary is added automatically.'
+                body+=$'\n\nMerging this PR updates the research ledger and starts the guarded boundary-integration agent. The agent opens a separate draft PR; no map boundary is published until that second PR is reviewed and merged.'
                 gh pr create --base main --head "$branch" --title "[${state}] State BID audit research" --body "$body"
               fi
             )

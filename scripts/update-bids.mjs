@@ -11,6 +11,11 @@ const outputPath = path.join(root, "public/data/bids.geojson");
 const manifestPath = path.join(root, "public/data/manifest.json");
 const reportPath = path.join(root, "data/last-change-report.json");
 const checkedAt = new Date().toISOString();
+const args = Object.fromEntries(process.argv.slice(2).map((argument) => {
+  const [key, ...value] = argument.replace(/^--/, "").split("=");
+  return [key, value.join("=") || true];
+}));
+const requestedSourceIds = new Set(String(args.sources ?? "").split(",").map((id) => id.trim()).filter(Boolean));
 
 const readJson = async (file, fallback) => {
   try { return JSON.parse(await readFile(file, "utf8")); } catch { return fallback; }
@@ -99,6 +104,12 @@ function normalize(source, feature) {
 const sourceResults = [];
 const allFeatures = [];
 for (const source of sources) {
+  if (requestedSourceIds.size && !requestedSourceIds.has(source.id)) {
+    const retained = previousBySource.get(source.id) ?? [];
+    allFeatures.push(...retained);
+    sourceResults.push(previousSourceResults.get(source.id) ?? { id: source.id, name: source.name, status: "not_checked", records: retained.length, checkedAt });
+    continue;
+  }
   try {
     let body;
     if (source.file) {
@@ -173,4 +184,4 @@ await rename(`${outputPath}.tmp`, outputPath);
 await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`);
 await writeFile(reportPath, `${JSON.stringify(report, null, 2)}\n`);
 console.log(`BID Atlas: ${features.length} districts; +${added.length} ~${modified.length} -${removed.length}; ${sourceResults.filter((s) => s.status === "ok").length}/${sources.length} sources healthy.`);
-if (sourceResults.some((source) => source.status === "error")) process.exitCode = 2;
+if (sourceResults.some((source) => source.status === "error" && (!requestedSourceIds.size || requestedSourceIds.has(source.id)))) process.exitCode = 2;
