@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Rome Business Improvement District",
+        "city": "Rome",
+        "website": "https://www.romega.us/203/Business-Improvement-District",
+        "sourceUrl": "https://www.romega.us/DocumentCenter/View/4012/2025-BID-District-Ordinance-with-attachments-Exhibit-A-and-B",
+        "established": "2006; expanded and renewed 2025",
+        "expires": "2035",
+        "area": "Generalized boundary digitized from the 2025 City of Rome ordinance and district plan",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-85.1810, 34.2478], [-85.1660, 34.2478], [-85.1595, 34.2525],
+          [-85.1605, 34.2638], [-85.1690, 34.2660], [-85.1805, 34.2620],
+          [-85.1810, 34.2478]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uptown Columbus Business Improvement District",
+        "city": "Columbus",
+        "website": "https://www.alwaysuptown.com/bid",
+        "sourceUrl": "https://mccmeetingspublic.blob.core.usgovcloudapi.net/columga-meet-b38864d95e834d78b218bf4c15048a10/ITEM-Attachment-001-783219f47ee343838f53884b070611be.pdf",
+        "established": "1999; renewed 2025",
+        "expires": "2034",
+        "area": "Generalized 47-block boundary digitized from the 2025–2034 Columbus management plan",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-85.0000, 32.4548], [-84.9850, 32.4548], [-84.9850, 32.4637],
+          [-84.9870, 32.4637], [-84.9870, 32.4734], [-84.9910, 32.4734],
+          [-84.9910, 32.4690], [-84.9970, 32.4690], [-85.0000, 32.4548]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eisenhower Business Improvement District",
+        "city": "Macon",
+        "website": "https://ebidmacon.com/",
+        "sourceUrl": "https://www.maconbibb.us/wp-content/uploads/2024/05/MBC-Urban-Redevelopment-Plan-2018.pdf",
+        "established": "2015; renewed 2021",
+        "expires": "2027",
+        "area": "Generalized Eisenhower Parkway corridor from I-475 to Oglesby Place",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-83.7350, 32.8050], [-83.7310, 32.8015], [-83.7160, 32.8030],
+          [-83.6990, 32.8070], [-83.6810, 32.8110], [-83.6800, 32.8140],
+          [-83.7000, 32.8105], [-83.7170, 32.8065], [-83.7320, 32.8050],
+          [-83.7350, 32.8050]
+        ]]
+      }
+    }
+  ]
+}

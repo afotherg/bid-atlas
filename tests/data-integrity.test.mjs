@@ -54,3 +54,31 @@ test("Denver publishes its twelve active business improvement districts", () => 
     assert.ok(latitude > 39 && latitude < 41, `${district.properties.name} is outside Denver latitude`);
   }
 });
+
+test("Florida publishes the five active statewide-registry business improvement districts", () => {
+  const florida = collection.features.filter((feature) => feature.properties.state === "FL");
+  const names = new Set(florida.map((feature) => feature.properties.name));
+  assert.equal(florida.length, 5);
+  for (const name of [
+    "Coconut Grove Business Improvement District",
+    "Wynwood Business Improvement District",
+    "Lincoln Road Business Improvement District",
+    "Washington Avenue Business Improvement District",
+    "41st Street Business Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  assert.deepEqual(new Set(florida.map((feature) => feature.properties.city)), new Set(["Miami", "Miami Beach"]));
+  for (const district of florida) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.properties.sourceId, "florida-verified-business-improvement-districts");
+  }
+});
+
+test("Georgia publishes its three verified city business improvement districts", () => {
+  const georgia = collection.features.filter((feature) => feature.properties.state === "GA");
+  assert.equal(georgia.length, 3);
+  assert.deepEqual(new Set(georgia.map((feature) => feature.properties.city)), new Set(["Rome", "Columbus", "Macon"]));
+  for (const district of georgia) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.properties.sourceId, "georgia-verified-business-improvement-districts");
+  }
+});

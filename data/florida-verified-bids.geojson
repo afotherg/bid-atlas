@@ -1,0 +1,106 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coconut Grove Business Improvement District",
+        "city": "Miami",
+        "website": "https://coconutgrove.com/",
+        "sourceUrl": "https://www.miami.gov/Business/Local-Business-Agencies",
+        "established": "2009",
+        "area": "Generalized boundary digitized from the City of Miami 2018 assessment plat",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-80.2495, 25.7250], [-80.2495, 25.7302], [-80.2464, 25.7302],
+          [-80.2464, 25.7322], [-80.2415, 25.7322], [-80.2415, 25.7342],
+          [-80.2374, 25.7342], [-80.2338, 25.7307], [-80.2362, 25.7267],
+          [-80.2392, 25.7238], [-80.2440, 25.7260], [-80.2478, 25.7239],
+          [-80.2495, 25.7250]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wynwood Business Improvement District",
+        "city": "Miami",
+        "website": "https://wynwoodmiami.com/",
+        "sourceUrl": "https://www.miami.gov/My-Government/Departments/City-Clerks-Office/Wynwood-Business-Improvement-District-Re-Establishment",
+        "established": "2013; re-established 2023",
+        "expires": "2033",
+        "area": "Generalized boundary from the City of Miami 2023 re-establishment record",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-80.2056, 25.7950], [-80.1917, 25.7950], [-80.1917, 25.8050],
+          [-80.2056, 25.8050], [-80.2056, 25.7950]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lincoln Road Business Improvement District",
+        "city": "Miami Beach",
+        "website": "https://lincolnroad.com/lrbid/",
+        "sourceUrl": "https://www.miamibeachfl.gov/city-hall/city-clerk/election-information/lrbid-renewalelection/",
+        "established": "2015; renewed 2025",
+        "expires": "2035",
+        "area": "Generalized envelope digitized from the City of Miami Beach 2024 assessment plat",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-80.1424, 25.7894], [-80.1307, 25.7894], [-80.1307, 25.7932],
+          [-80.1418, 25.7932], [-80.1424, 25.7894]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Washington Avenue Business Improvement District",
+        "city": "Miami Beach",
+        "website": "https://www.washavemb.com/",
+        "sourceUrl": "https://www.miamibeachfl.gov/city-hall/city-clerk/election-information/mail-ballot-election-washington-ave-bid/",
+        "established": "2018",
+        "area": "Generalized Washington Avenue corridor from 5th Street to 17th Street, digitized from the official assessment map",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-80.1340, 25.7743], [-80.1300, 25.7743], [-80.1300, 25.7928],
+          [-80.1340, 25.7928], [-80.1340, 25.7743]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "41st Street Business Improvement District",
+        "city": "Miami Beach",
+        "website": "https://www.miamibeachfl.gov/41st-street-business-improvement-district-anniversary-miami-beach/",
+        "sourceUrl": "https://www.miamibeachfl.gov/city-hall/city-clerk/2023-41st-st-business-improvement-district/",
+        "established": "2023",
+        "area": "Generalized 41st Street corridor envelope digitized from the City of Miami Beach 2023 assessment plat",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-80.1425, 25.8108], [-80.1385, 25.8126], [-80.1300, 25.8124],
+          [-80.1230, 25.8131], [-80.1228, 25.8160], [-80.1300, 25.8155],
+          [-80.1385, 25.8157], [-80.1425, 25.8139], [-80.1425, 25.8108]
+        ]]
+      }
+    }
+  ]
+}

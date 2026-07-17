@@ -64,15 +64,17 @@ function normalize(source, feature) {
   if (!sourceName) return null;
   const override = source.overrides?.[sourceName] ?? {};
   const name = override.name ?? (source.nameTransform === "titleCase" ? titleCase(sourceName) : sourceName);
+  const city = source.city ?? valueFor(p, source.fields.city);
+  if (!city) return null;
   const geometry = { ...feature.geometry, coordinates: transformCoordinates(feature.geometry.coordinates, source.sourceCrs) };
   const bounds = coordinateBounds(geometry.coordinates);
   if (!bounds.every(Number.isFinite)) return null;
   const center = [(bounds[0] + bounds[2]) / 2, (bounds[1] + bounds[3]) / 2];
-  const id = `${source.state.toLowerCase()}-${slug(source.city)}-${slug(name)}`;
+  const id = `${source.state.toLowerCase()}-${slug(city)}-${slug(name)}`;
   const properties = {
     id,
     name,
-    city: source.city,
+    city,
     state: source.state,
     area: valueFor(p, source.fields.area),
     website: override.website ?? valueFor(p, source.fields.website),
@@ -83,7 +85,7 @@ function normalize(source, feature) {
     status: valueFor(p, source.fields.status) ?? "Active",
     sourceId: source.id,
     sourceName: source.name,
-    sourceUrl: source.landingPage,
+    sourceUrl: override.sourceUrl ?? valueFor(p, source.fields.sourceUrl) ?? source.landingPage,
     publisher: source.publisher,
     checkedAt,
     center,

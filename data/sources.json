@@ -176,5 +176,57 @@
       "area": ["area"],
       "status": ["status"]
     }
+  },
+  {
+    "id": "florida-verified-business-improvement-districts",
+    "name": "Florida Verified Business Improvement Districts",
+    "jurisdiction": "Florida",
+    "state": "FL",
+    "file": "data/florida-verified-bids.geojson",
+    "landingPage": "https://floridajobs.org/community-development/community-planning/special-districts/special-district-accountability-program/official-list-of-special-districts",
+    "publisher": "FloridaCommerce and municipal governments",
+    "cadence": "Official status pages monitored daily; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.miami.gov/Business/Local-Business-Agencies",
+      "https://www.miami.gov/My-Government/Departments/City-Clerks-Office/Wynwood-Business-Improvement-District-Re-Establishment",
+      "https://www.miamibeachfl.gov/city-hall/city-clerk/election-information/lrbid-renewalelection/",
+      "https://www.miamibeachfl.gov/city-hall/city-clerk/election-information/mail-ballot-election-washington-ave-bid/",
+      "https://www.miamibeachfl.gov/city-hall/city-clerk/2023-41st-st-business-improvement-district/"
+    ],
+    "fields": {
+      "name": ["name"],
+      "city": ["city"],
+      "website": ["website"],
+      "sourceUrl": ["sourceUrl"],
+      "established": ["established"],
+      "expires": ["expires"],
+      "area": ["area"],
+      "status": ["status"]
+    }
+  },
+  {
+    "id": "georgia-verified-business-improvement-districts",
+    "name": "Georgia Verified Business Improvement Districts",
+    "jurisdiction": "Georgia",
+    "state": "GA",
+    "file": "data/georgia-verified-bids.geojson",
+    "landingPage": "https://www.legis.ga.gov/api/document/docs/default-source/house-budget-and-research-office-document-library/newsandhighlights/2020/2020_policy_brief_community_development_tools_series_business_improvement_districts.pdf?sfvrsn=5942aab8_2",
+    "publisher": "Georgia and municipal governments",
+    "cadence": "Official plans and ordinances monitored daily; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.romega.us/DocumentCenter/View/4012/2025-BID-District-Ordinance-with-attachments-Exhibit-A-and-B",
+      "https://mccmeetingspublic.blob.core.usgovcloudapi.net/columga-meet-b38864d95e834d78b218bf4c15048a10/ITEM-Attachment-001-783219f47ee343838f53884b070611be.pdf",
+      "https://www.maconbibb.us/wp-content/uploads/2024/05/MBC-Urban-Redevelopment-Plan-2018.pdf"
+    ],
+    "fields": {
+      "name": ["name"],
+      "city": ["city"],
+      "website": ["website"],
+      "sourceUrl": ["sourceUrl"],
+      "established": ["established"],
+      "expires": ["expires"],
+      "area": ["area"],
+      "status": ["status"]
+    }
   }
 ]
