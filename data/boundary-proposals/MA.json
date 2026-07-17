@@ -1,0 +1,1304 @@
+{
+  "created_at": "2026-07-17T22:12:55.984Z",
+  "review_required": true,
+  "state_code": "MA",
+  "state_name": "Massachusetts",
+  "model": "grok-4.5",
+  "source_audit_proposal": "data/audit-proposals/MA.json",
+  "imported_feature_count": 0,
+  "source_id": "",
+  "plan": {
+    "state_code": "MA",
+    "statewide_assessment": "Massachusetts BIDs are authorized under M.G.L. c. 40O (special assessment districts formed by ≥60% property owners representing ≥51% assessed value, local approval, filing with EOED; reauthorized every 5 years). No public statewide registry, inventory, or GIS layer of established BIDs was located despite official Mass.gov/EOED pages, the 2020 BID Manual, and District Management Toolkit. Official toolkit examples (and contemporaneous sources citing ~10-11 total BIDs statewide, including 3 in Boston) plus district sites, reauthorization notices, 990s, and news confirm the following currently active legal BIDs: Amherst (2011, renewed through 2023+), Downtown Boston Alliance/BID, Greenway BID (Boston, 2018 renewed 2022), Newmarket BID (Boston, 2022), Central Square BID (Cambridge, 2019), Hyannis Main Street BID (Barnstable, 1999), Downtown Hudson BID (2017 renewed ~2022), Springfield BID (~1998), Downtown Worcester BID (2018 renewed 2023), and Taunton BID (~2010). Northampton BID was court-dissolved ~2015 (historical; current downtown org may be voluntary). New Bedford downtown BID petition withdrawn 2024 (failed formation). Edgartown has an ArcGIS BID map item and prior informational sessions but no confirmation of petition approval/establishment/active status (unclear/proposed). Distinguish carefully from Cultural Districts, Vacant Storefront Districts (e.g., Taunton overlaps BID), TDMDs, DIF, Parking Benefit Districts, and voluntary Main Street/downtown associations. No statewide vector boundaries; local sources are primarily PDFs/images/parcel descriptions or outdated Feature Services. Coverage partial; all recommendations remain review_required draft. Prefer ordinances, municipal GIS, assessor parcels, and official district sites for verification.",
+    "districts": [
+      {
+        "name": "Amherst Business Improvement District",
+        "city": "Amherst",
+        "active_status": "verified_active",
+        "status_url": "https://www.amherstdowntown.com/",
+        "website": "https://www.amherstdowntown.com/",
+        "established": "2011",
+        "boundary_source_url": "",
+        "boundary_source_type": "image_map",
+        "boundary_title": "Simplified Amherst Downtown Map (district site)",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Official district site confirms formation under c. 40O as 501(c)(6), renewals 2013/2018/2023 by property owners, ongoing operations/marketing/beautification. Toolkit lists as example. Town GIS/MassGIS has historical BID Feature Service references (ca. 2015-2017 tags) but not confirmed current downloadable polygon; site map is image only. Prefer ordinance/assessor parcels or current municipal GIS for vector. Manual_review required (no auto_import)."
+      },
+      {
+        "name": "Downtown Boston Alliance (Downtown Boston BID)",
+        "city": "Boston",
+        "active_status": "verified_active",
+        "status_url": "https://www.downtownboston.org/",
+        "website": "https://www.downtownboston.org/",
+        "established": "c. 2010s (Boston's first operating BID; exact year secondary)",
+        "boundary_source_url": "",
+        "boundary_source_type": "pdf_map",
+        "boundary_title": "DBA Service Area / Retail Map (district site)",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Active official site for Downtown Boston Alliance (formerly Downtown Boston BID); provides clean/safe/vibrant services via property assessments in ~34-block/100-acre area. Toolkit and multiple sources list as example; Block by Block services ongoing. ArcGIS items referenced for Downtown BID polygon (e.g., BostonMaps) but pages return limited content/not confirmed directly downloadable current Feature Layer. PDF map only. Manual_review (PDF always requires it)."
+      },
+      {
+        "name": "Greenway Business Improvement District",
+        "city": "Boston",
+        "active_status": "verified_active",
+        "status_url": "https://www.abettercity.org/our-work/greenway-bid",
+        "website": "https://www.abettercity.org/our-work/greenway-bid",
+        "established": "2018",
+        "boundary_source_url": "",
+        "boundary_source_type": "pdf_map",
+        "boundary_title": "Greenway BID Map of Properties (A Better City)",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Boston City Council approved 2018; members renewed 5 years in 2022; ongoing board meetings, newsletters, MOU with Conservancy/State/City, funding for Greenway maintenance/programming. Toolkit and sources list as example (7th BID at formation). Boundary is PDF map of properties. No confirmed GeoJSON/Feature Layer. Manual_review required."
+      },
+      {
+        "name": "Newmarket Business Improvement District",
+        "city": "Boston",
+        "active_status": "verified_active",
+        "status_url": "https://newmarketbid.org/",
+        "website": "https://newmarketbid.org/",
+        "established": "2022",
+        "boundary_source_url": "",
+        "boundary_source_type": "image_map",
+        "boundary_title": "Newmarket BID Map (district site)",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Formed January 2022 by property owners (per site history); active programs (Back2Work, events, quality-of-life). Toolkit lists as example; New Bedford sources cite 3 Boston BIDs. Boundary image map only; no confirmed vector download. Manual_review (image always requires it)."
+      },
+      {
+        "name": "Central Square Business Improvement District",
+        "city": "Cambridge",
+        "active_status": "verified_active",
+        "status_url": "https://www.centralsq.org/",
+        "website": "https://www.centralsq.org/",
+        "established": "2019",
+        "boundary_source_url": "",
+        "boundary_source_type": "none",
+        "boundary_title": "",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Established October 2019 as 501(c)(3) under c. 40O (site and case studies); active strategic plan 2024, events, public art, placekeeping in Cultural District. Toolkit lists as example. No authoritative downloadable polygon/map located on official pages (boundary descriptions in formation docs possible via city). Prefer Cambridge GIS/assessor or ordinance. Manual_review; status verified active."
+      },
+      {
+        "name": "Hyannis Main Street Business Improvement District",
+        "city": "Barnstable (Hyannis)",
+        "active_status": "verified_active",
+        "status_url": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/",
+        "website": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/",
+        "established": "1999",
+        "boundary_source_url": "https://www.hyannismainstreet.com/main-street-hyannis-map/",
+        "boundary_source_type": "image_map",
+        "boundary_title": "Main Street Hyannis Map (district site)",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Established 1999; site confirms ongoing clean/safe/fun services, board, budget ~$285k + grants, one of ~11 MA BIDs. Toolkit lists as example; reauthorizations implied by continuity. Maps/parking pages are images/directories. Manual_review required."
+      },
+      {
+        "name": "Downtown Hudson Business Improvement District",
+        "city": "Hudson",
+        "active_status": "verified_active",
+        "status_url": "https://www.discoverhudson.org/about",
+        "website": "",
+        "established": "2017",
+        "boundary_source_url": "https://www.massdevelopment.com/assets/document/business-improvement-district/Case-Study-Town-of-Hudson-2020.pdf",
+        "boundary_source_type": "pdf_map",
+        "boundary_title": "Proposed/Authorized BID Map (MassDevelopment case study; GIS by Hudson)",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Formally authorized 2017; renewed ~2022 per case study; site (Discover Hudson / Hudson BID) confirms role in vitality, events, economic development; contact HudsonMABID@gmail.com. Toolkit lists as example. Boundary map in 2020 PDF (not legal record). Prefer town GIS/assessor parcels. Manual_review."
+      },
+      {
+        "name": "Springfield Business Improvement District",
+        "city": "Springfield",
+        "active_status": "verified_active",
+        "status_url": "https://springfielddowntown.com/",
+        "website": "https://springfielddowntown.com/",
+        "established": "1998",
+        "boundary_source_url": "",
+        "boundary_source_type": "none",
+        "boundary_title": "",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Oldest MA BID per 2012 sources; active site with events, directory, about page for revitalization/promotion via assessments. Toolkit lists as example. Vacant Storefront Districts note Downtown Commercial District. No downloadable polygon located; check city GIS/assessor. Manual_review; status verified."
+      },
+      {
+        "name": "Downtown Worcester Business Improvement District",
+        "city": "Worcester",
+        "active_status": "verified_active",
+        "status_url": "https://www.downtownworcester.org/",
+        "website": "https://www.downtownworcester.org/",
+        "established": "2018",
+        "boundary_source_url": "",
+        "boundary_source_type": "none",
+        "boundary_title": "",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Established 2018; renewed 5 years 2023; site describes ~140 properties/78 acres bounded by Main/Myrtle/etc.; active ambassadors, events, business resources. Toolkit lists as example. Boundary text description only on sites; no confirmed vector. Prefer city GIS/ordinance. Manual_review."
+      },
+      {
+        "name": "Taunton Business Improvement District",
+        "city": "Taunton",
+        "active_status": "verified_active",
+        "status_url": "https://downtowntaunton.org/",
+        "website": "https://downtowntaunton.org/",
+        "established": "2010",
+        "boundary_source_url": "https://www.mass.gov/info-details/approved-vacant-storefront-districts",
+        "boundary_source_type": "none",
+        "boundary_title": "Same boundaries as BID (noted in Vacant Storefront Districts page)",
+        "publication_recommendation": "manual_review",
+        "confidence": "high",
+        "notes": "Established ~2010; active Downtown Taunton Foundation/BID site with events; recent 990 filings confirm nonprofit operations. Toolkit and sources list as example; Vacant Storefront page explicitly notes 'Same boundaries as Business Improvement District (BID)'. No polygon/map download located. Prefer city assessor parcels/ordinance. Manual_review."
+      },
+      {
+        "name": "Edgartown Business Improvement District",
+        "city": "Edgartown",
+        "active_status": "unclear",
+        "status_url": "https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c",
+        "website": "",
+        "established": "",
+        "boundary_source_url": "https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c",
+        "boundary_source_type": "arcgis_web_map",
+        "boundary_title": "Edgartown Business Improvement District Public Map (ArcGIS item)",
+        "publication_recommendation": "exclude",
+        "confidence": "low",
+        "notes": "Public ArcGIS BID map item exists (Town of Edgartown); informational sessions held historically. No confirmation of petition, local approval, EOED filing, assessments, or current active operations as legal c. 40O BID. Never infer active solely from map existence. Exclude pending authoritative status verification; if confirmed active then manual_review boundary (Web Map)."
+      },
+      {
+        "name": "Northampton Business Improvement District (historical)",
+        "city": "Northampton",
+        "active_status": "historical",
+        "status_url": "https://valleyadvocate.com/2015/02/11/out-of-bidness-how-messy-signatures-and-sloppy-administration-sank-northamptons-downtown-improvement-district/",
+        "website": "https://www.northamptondowntown.com/",
+        "established": "c. 2000s-2010s (dissolved ~2015)",
+        "boundary_source_url": "",
+        "boundary_source_type": "image_map",
+        "boundary_title": "Historical BID Boundary Map (legacy site)",
+        "publication_recommendation": "exclude",
+        "confidence": "high",
+        "notes": "Court-ordered dissolution ~2014-2015 after signature/admin issues; refunds issued. Current northamptondowntown.com site uses BID branding and has old bylaws/maps (FY2013 etc.) but appears to be voluntary/legacy downtown org (not listed in official toolkit examples of legal BIDs; no recent reauthorization evidence). Exclude as not current legal BID equivalent."
+      },
+      {
+        "name": "New Bedford Downtown Business Improvement District (proposed)",
+        "city": "New Bedford",
+        "active_status": "proposed",
+        "status_url": "https://newbedfordlight.org/backers-pull-the-plug-on-downtown-business-district/",
+        "website": "",
+        "established": "",
+        "boundary_source_url": "",
+        "boundary_source_type": "none",
+        "boundary_title": "",
+        "publication_recommendation": "exclude",
+        "confidence": "high",
+        "notes": "Petition/plan withdrawn by backers July 2024 amid signature/requirement questions and opposition; never established. Sources note ~10 existing MA BIDs at the time. Exclude (failed formation)."
+      }
+    ],
+    "manual_next_steps": [
+      "Contact EOED BID staff (elizabeth.hahn@mass.gov or 857-268-3855) for any internal inventory of petitions, established BIDs, reauthorizations, or full list (no public registry located).",
+      "Systematically query municipal GIS portals, assessor parcel data, and MassGIS for vector layers or parcel lists for all confirmed BIDs (Amherst historical Feature Service noted but outdated; BostonMaps Downtown BID items exist but need confirmation of downloadability/current status).",
+      "Obtain and review local formation/renewal ordinances, petitions, and improvement plans for each active BID to extract precise current boundaries and confirm reauthorization status post-2023/2024.",
+      "Verify Edgartown status (ArcGIS map + any selectboard/EOED records) and any post-2024 formations or the possible 11th BID referenced by Hyannis site.",
+      "Cross-check remaining Gateway Cities and commercial centers (e.g., Fall River considered 2022, Gloucester feasibility) against ordinances and news for missed districts; exclude non-BID equivalents (Cultural Districts, vacant storefront, voluntary Main Streets).",
+      "For auto_import candidates only if future current authoritative active confirmation + direct GeoJSON/ArcGIS Feature Layer download appears; all current boundaries are PDF/image/parcel/none so manual_review.",
+      "This is a draft publication proposal; all entries remain review_required pending human verification of primary sources."
+    ]
+  },
+  "decisions": [
+    {
+      "name": "Amherst Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Downtown Boston Alliance (Downtown Boston BID)",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Greenway Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Newmarket Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Central Square Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Hyannis Main Street Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Downtown Hudson Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Springfield Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Downtown Worcester Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Taunton Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "recommendation is manual_review"
+    },
+    {
+      "name": "Edgartown Business Improvement District",
+      "result": "manual_or_excluded",
+      "reason": "status is unclear"
+    },
+    {
+      "name": "Northampton Business Improvement District (historical)",
+      "result": "manual_or_excluded",
+      "reason": "status is historical"
+    },
+    {
+      "name": "New Bedford Downtown Business Improvement District (proposed)",
+      "result": "manual_or_excluded",
+      "reason": "status is proposed"
+    }
+  ],
+  "evidence": [
+    {
+      "title": "https://www.mass.gov/info-details/business-improvement-districts-bid",
+      "url": "https://www.mass.gov/info-details/business-improvement-districts-bid"
+    },
+    {
+      "title": "https://www.massdevelopment.com/products-and-services/real-estate/planning/business-improvement-district",
+      "url": "https://www.massdevelopment.com/products-and-services/real-estate/planning/business-improvement-district"
+    },
+    {
+      "title": "https://www.masslive.com/business-news/2012/02/seven_business_improvement_districts_hav.html",
+      "url": "https://www.masslive.com/business-news/2012/02/seven_business_improvement_districts_hav.html"
+    },
+    {
+      "title": "https://www.fhwa.dot.gov/ipd/value_capture/resources/value_capture_resources/special_assessment_resources/business_improvement_districts.aspx",
+      "url": "https://www.fhwa.dot.gov/ipd/value_capture/resources/value_capture_resources/special_assessment_resources/business_improvement_districts.aspx"
+    },
+    {
+      "title": "https://www.abettercity.org/assets/images/2%20page%20version%20of%20BID%20Highlights%204.25.pdf",
+      "url": "https://www.abettercity.org/assets/images/2%20page%20version%20of%20BID%20Highlights%204.25.pdf"
+    },
+    {
+      "title": "https://massinc.org/2021/12/03/building-back-better-on-main-street/",
+      "url": "https://massinc.org/2021/12/03/building-back-better-on-main-street/"
+    },
+    {
+      "title": "https://newmarketbid.org/",
+      "url": "https://newmarketbid.org/"
+    },
+    {
+      "title": "https://www.boston.gov/sites/default/files/file/2021/10/1023.pdf",
+      "url": "https://www.boston.gov/sites/default/files/file/2021/10/1023.pdf"
+    },
+    {
+      "title": "https://shrewsburyma.gov/1327/Business-Improvement-District-Feasibilit",
+      "url": "https://shrewsburyma.gov/1327/Business-Improvement-District-Feasibilit"
+    },
+    {
+      "title": "https://www.bidnetdirect.com/massachusetts/newbedford",
+      "url": "https://www.bidnetdirect.com/massachusetts/newbedford"
+    },
+    {
+      "title": "https://www.newbedford-ma.gov/purchasing/request-proposals-rfps-invitation-bids-ifbs/",
+      "url": "https://www.newbedford-ma.gov/purchasing/request-proposals-rfps-invitation-bids-ifbs/"
+    },
+    {
+      "title": "https://newbedfordlight.org/backers-pull-the-plug-on-downtown-business-district/",
+      "url": "https://newbedfordlight.org/backers-pull-the-plug-on-downtown-business-district/"
+    },
+    {
+      "title": "https://www.commbuys.com/bso/external/bidDetail.sdo?docId=BD-24-1157-00138-COB01-116175",
+      "url": "https://www.commbuys.com/bso/external/bidDetail.sdo?docId=BD-24-1157-00138-COB01-116175"
+    },
+    {
+      "title": "https://www.massport.com/business/bids-and-opportunities/capital-bids",
+      "url": "https://www.massport.com/business/bids-and-opportunities/capital-bids"
+    },
+    {
+      "title": "https://liberationnews.org/no-bid-new-bedford-movement-defeats-downtown-gentrification-proposal/",
+      "url": "https://liberationnews.org/no-bid-new-bedford-movement-defeats-downtown-gentrification-proposal/"
+    },
+    {
+      "title": "https://planhub.com/construction-bids/538389/",
+      "url": "https://planhub.com/construction-bids/538389/"
+    },
+    {
+      "title": "https://actionnetwork.org/petitions/no-bid-new-bedford",
+      "url": "https://actionnetwork.org/petitions/no-bid-new-bedford"
+    },
+    {
+      "title": "https://www.bedfordma.gov/Bids.aspx",
+      "url": "https://www.bedfordma.gov/Bids.aspx"
+    },
+    {
+      "title": "https://www.mass.gov/doc/commbuys-home-page-bid-count/download",
+      "url": "https://www.mass.gov/doc/commbuys-home-page-bid-count/download"
+    },
+    {
+      "title": "https://www.mass.gov/doc/district-management-toolkit/download",
+      "url": "https://www.mass.gov/doc/district-management-toolkit/download"
+    },
+    {
+      "title": "https://www.mass.gov/info-details/advertised-projects-bid-opening-schedule",
+      "url": "https://www.mass.gov/info-details/advertised-projects-bid-opening-schedule"
+    },
+    {
+      "title": "https://www.mass.gov/info-details/approved-vacant-storefront-districts",
+      "url": "https://www.mass.gov/info-details/approved-vacant-storefront-districts"
+    },
+    {
+      "title": "https://www.mass.gov/doc/guidelines-for-the-edip-vacant-storefront-program/download",
+      "url": "https://www.mass.gov/doc/guidelines-for-the-edip-vacant-storefront-program/download"
+    },
+    {
+      "title": "https://www.mass.gov/doc/aip-fy21-12-rfr/download",
+      "url": "https://www.mass.gov/doc/aip-fy21-12-rfr/download"
+    },
+    {
+      "title": "https://www.mass.gov/files/csv/2022-11/FY23%20One%20Stop%20Award%20List%20for%20Website%20Updated%20%28003%29.csv",
+      "url": "https://www.mass.gov/files/csv/2022-11/FY23%20One%20Stop%20Award%20List%20for%20Website%20Updated%20%28003%29.csv"
+    },
+    {
+      "title": "https://www.mass.gov/doc/opmo-fy2024-massdevelopment-report/download",
+      "url": "https://www.mass.gov/doc/opmo-fy2024-massdevelopment-report/download"
+    },
+    {
+      "title": "https://budget.digital.mass.gov/summary/fy26/enacted/education/education-k-12/",
+      "url": "https://budget.digital.mass.gov/summary/fy26/enacted/education/education-k-12/"
+    },
+    {
+      "title": "https://www.northamptondowntown.com/",
+      "url": "https://www.northamptondowntown.com/"
+    },
+    {
+      "title": "https://northamptonma.gov/DocumentCenter/View/4686",
+      "url": "https://northamptonma.gov/DocumentCenter/View/4686"
+    },
+    {
+      "title": "https://www.masslive.com/news/2014/08/fees_for_membership_in_northam.html",
+      "url": "https://www.masslive.com/news/2014/08/fees_for_membership_in_northam.html"
+    },
+    {
+      "title": "https://valleyadvocate.com/2015/02/11/out-of-bidness-how-messy-signatures-and-sloppy-administration-sank-northamptons-downtown-improvement-district/",
+      "url": "https://valleyadvocate.com/2015/02/11/out-of-bidness-how-messy-signatures-and-sloppy-administration-sank-northamptons-downtown-improvement-district/"
+    },
+    {
+      "title": "https://www.amherstdowntown.com/",
+      "url": "https://www.amherstdowntown.com/"
+    },
+    {
+      "title": "https://northamptonma.gov/Bids.aspx",
+      "url": "https://northamptonma.gov/Bids.aspx"
+    },
+    {
+      "title": "https://www.discovernorthampton.co.uk/the-bid/",
+      "url": "https://www.discovernorthampton.co.uk/the-bid/"
+    },
+    {
+      "title": "https://www.centralsq.org/",
+      "url": "https://www.centralsq.org/"
+    },
+    {
+      "title": "https://www.discovercentralma.org/listing/downtown-worcester-business-improvement-district/201/",
+      "url": "https://www.discovercentralma.org/listing/downtown-worcester-business-improvement-district/201/"
+    },
+    {
+      "title": "https://springfielddowntown.com/",
+      "url": "https://springfielddowntown.com/"
+    },
+    {
+      "title": "https://www.backdeckboston.com/?q=content/downtown-boston-business-improvement-district-bid",
+      "url": "https://www.backdeckboston.com/?q=content/downtown-boston-business-improvement-district-bid"
+    },
+    {
+      "title": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/bid-programs/",
+      "url": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/bid-programs/"
+    },
+    {
+      "title": "https://www.youtube.com/watch?v=_1YX5Z8EjyU",
+      "url": "https://www.youtube.com/watch?v=_1YX5Z8EjyU"
+    },
+    {
+      "title": "https://www.edgartown-ma.us/Home/Components/Calendar/Event/6197/100?npage=87&sortn=EDate&sortd=desc",
+      "url": "https://www.edgartown-ma.us/Home/Components/Calendar/Event/6197/100?npage=87&sortn=EDate&sortd=desc"
+    },
+    {
+      "title": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/",
+      "url": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/"
+    },
+    {
+      "title": "https://www.rosekennedygreenway.org/faq-the-greenway-business-improvement-district/",
+      "url": "https://www.rosekennedygreenway.org/faq-the-greenway-business-improvement-district/"
+    },
+    {
+      "title": "https://www.amherstdowntown.com/about-us",
+      "url": "https://www.amherstdowntown.com/about-us"
+    },
+    {
+      "title": "https://northamptonma.gov/Bids.aspx?CatID=showStatus&txtSort=Category&showAllBids=on&Status=open",
+      "url": "https://northamptonma.gov/Bids.aspx?CatID=showStatus&txtSort=Category&showAllBids=on&Status=open"
+    },
+    {
+      "title": "https://www.instantmarkets.com/l/Northampton?sort=im_doc_location.geo_coordinates&ot=Bid%20Notification,Pre-Bid%20Notification&os=Active",
+      "url": "https://www.instantmarkets.com/l/Northampton?sort=im_doc_location.geo_coordinates&ot=Bid%20Notification,Pre-Bid%20Notification&os=Active"
+    },
+    {
+      "title": "https://www.northamptondowntown.com/faq.htm",
+      "url": "https://www.northamptondowntown.com/faq.htm"
+    },
+    {
+      "title": "https://www.masslive.com/topic/Northampton%20BID/index.html",
+      "url": "https://www.masslive.com/topic/Northampton%20BID/index.html"
+    },
+    {
+      "title": "https://ma-northampton.civicplus.com/bids.aspx?bidID=437",
+      "url": "https://ma-northampton.civicplus.com/bids.aspx?bidID=437"
+    },
+    {
+      "title": "https://www.scribd.com/document/248079194/Motion-for-Fees-Northampton-BID-case",
+      "url": "https://www.scribd.com/document/248079194/Motion-for-Fees-Northampton-BID-case"
+    },
+    {
+      "title": "https://www.highergov.com/sl/agency/city-of-northampton-14517/",
+      "url": "https://www.highergov.com/sl/agency/city-of-northampton-14517/"
+    },
+    {
+      "title": "https://www.facebook.com/westernmassnews/posts/mass-secretary-paley-tours-northampton-in-bid-to-promote-local-investments-/1374341364734649/",
+      "url": "https://www.facebook.com/westernmassnews/posts/mass-secretary-paley-tours-northampton-in-bid-to-promote-local-investments-/1374341364734649/"
+    },
+    {
+      "title": "https://bidbanana.thebidlab.com/bid/AlsHWJK0lRSub05CZVrT",
+      "url": "https://bidbanana.thebidlab.com/bid/AlsHWJK0lRSub05CZVrT"
+    },
+    {
+      "title": "https://www.athol-ma.gov/bids.aspx",
+      "url": "https://www.athol-ma.gov/bids.aspx"
+    },
+    {
+      "title": "https://www.commbuys.com/bso/external/bidDetail.sdo?docId=BD-22-1796-ARRSD-ARRSD-76138&external=true&parentUrl=bid",
+      "url": "https://www.commbuys.com/bso/external/bidDetail.sdo?docId=BD-22-1796-ARRSD-ARRSD-76138&external=true&parentUrl=bid"
+    },
+    {
+      "title": "https://planhub.com/construction-bids/566202/",
+      "url": "https://planhub.com/construction-bids/566202/"
+    },
+    {
+      "title": "https://www.massbids.net/government-agencies/worcester/athol-town-of-33720/",
+      "url": "https://www.massbids.net/government-agencies/worcester/athol-town-of-33720/"
+    },
+    {
+      "title": "https://www.bidnetdirect.com/massachusetts/solicitations/open-bids/statewide/NTC-Millers-River-Crescent-St-Extension-Athol-Mass/443270363724",
+      "url": "https://www.bidnetdirect.com/massachusetts/solicitations/open-bids/statewide/NTC-Millers-River-Crescent-St-Extension-Athol-Mass/443270363724"
+    },
+    {
+      "title": "https://www.wright-pierce.com/project/athol-ma-canal-and-lumber-streets-cdbg-project/",
+      "url": "https://www.wright-pierce.com/project/athol-ma-canal-and-lumber-streets-cdbg-project/"
+    },
+    {
+      "title": "https://www.govcb.com/government-bids/SOUTH-STREET-IMPROVEMENT-PROJECT-AND-23734051.htm?cts=e9aab",
+      "url": "https://www.govcb.com/government-bids/SOUTH-STREET-IMPROVEMENT-PROJECT-AND-23734051.htm?cts=e9aab"
+    },
+    {
+      "title": "https://governmentbidders.com/government_bids/detail/NBD16525268299779426.htm",
+      "url": "https://governmentbidders.com/government_bids/detail/NBD16525268299779426.htm"
+    },
+    {
+      "title": "http://www.frec.org/Narrative%20-%2025-26%20-%20Non%20Food%20Supplies.pdf",
+      "url": "http://www.frec.org/Narrative%20-%2025-26%20-%20Non%20Food%20Supplies.pdf"
+    },
+    {
+      "title": "https://atholdailynews.com/2026/02/02/margo-parrot-announces-bid-for-seat-on-athol-selectboard/",
+      "url": "https://atholdailynews.com/2026/02/02/margo-parrot-announces-bid-for-seat-on-athol-selectboard/"
+    },
+    {
+      "title": "https://www.mvtimes.com/2014/01/08/edgartown-selectmen-accept-73-million-bid-new-library-18594/",
+      "url": "https://www.mvtimes.com/2014/01/08/edgartown-selectmen-accept-73-million-bid-new-library-18594/"
+    },
+    {
+      "title": "https://www.vineyardtransit.com/bids",
+      "url": "https://www.vineyardtransit.com/bids"
+    },
+    {
+      "title": "https://www.commbuys.com/bso/external/bidDetail.sdo?docId=BD-25-1265-EDG03-FIRE-117416",
+      "url": "https://www.commbuys.com/bso/external/bidDetail.sdo?docId=BD-25-1265-EDG03-FIRE-117416"
+    },
+    {
+      "title": "https://vineyardgazette.com/news/2013/10/01/edgartown-approves-town-hall-repairs-police-contract",
+      "url": "https://vineyardgazette.com/news/2013/10/01/edgartown-approves-town-hall-repairs-police-contract"
+    },
+    {
+      "title": "https://www.mvlandbank.com/notices/requests-for-proposals",
+      "url": "https://www.mvlandbank.com/notices/requests-for-proposals"
+    },
+    {
+      "title": "https://www.wright-pierce.com/project/edgartown-ma-transfer-station-circulation-improvements/",
+      "url": "https://www.wright-pierce.com/project/edgartown-ma-transfer-station-circulation-improvements/"
+    },
+    {
+      "title": "https://www.highergov.com/sl/contract-opportunity/ma-sel-26-10-edgartown-lighthouse-restorati-58909870/",
+      "url": "https://www.highergov.com/sl/contract-opportunity/ma-sel-26-10-edgartown-lighthouse-restorati-58909870/"
+    },
+    {
+      "title": "https://www.dukescounty.gov/media/news/fy27-bid-documents-.pdf",
+      "url": "https://www.dukescounty.gov/media/news/fy27-bid-documents-.pdf"
+    },
+    {
+      "title": "https://www.chilmarkma.gov/sites/g/files/vyhlif8411/f/agendas/edgartown_meshacket_rfp_final_7_19_2021.pdf",
+      "url": "https://www.chilmarkma.gov/sites/g/files/vyhlif8411/f/agendas/edgartown_meshacket_rfp_final_7_19_2021.pdf"
+    },
+    {
+      "title": "https://www.facebook.com/pointbrealty/posts/-calling-all-animal-lovers-the-annual-animal-shelter-of-marthas-vineyard-garden-/1425256272952601/",
+      "url": "https://www.facebook.com/pointbrealty/posts/-calling-all-animal-lovers-the-annual-animal-shelter-of-marthas-vineyard-garden-/1425256272952601/"
+    },
+    {
+      "title": "https://www.masslive.com/news/2014/11/northampton_business_improveme.html",
+      "url": "https://www.masslive.com/news/2014/11/northampton_business_improveme.html"
+    },
+    {
+      "title": "https://gazettenet.com/2025/02/05/picture-main-street-will-not-start-until-next-year-59288612/",
+      "url": "https://gazettenet.com/2025/02/05/picture-main-street-will-not-start-until-next-year-59288612/"
+    },
+    {
+      "title": "https://citizenportal.ai/articles/7618564/northampton-council-approves-90000-for-downtown-events-and-economic-development",
+      "url": "https://citizenportal.ai/articles/7618564/northampton-council-approves-90000-for-downtown-events-and-economic-development"
+    },
+    {
+      "title": "https://www.northamptonma.gov/bids.aspx?bidID=380&PRINT=YES",
+      "url": "https://www.northamptonma.gov/bids.aspx?bidID=380&PRINT=YES"
+    },
+    {
+      "title": "https://www.facebook.com/northamptondna/posts/-and-onto-the-2026-magic-ice-art-is-returning-to-downtown-northampton-this-year-/1286535716839483/",
+      "url": "https://www.facebook.com/northamptondna/posts/-and-onto-the-2026-magic-ice-art-is-returning-to-downtown-northampton-this-year-/1286535716839483/"
+    },
+    {
+      "title": "https://thereminder.com/local-news/northampton-receives-funding-for-main-street-construction/",
+      "url": "https://thereminder.com/local-news/northampton-receives-funding-for-main-street-construction/"
+    },
+    {
+      "title": "https://aomtheatre.com/about-us/",
+      "url": "https://aomtheatre.com/about-us/"
+    },
+    {
+      "title": "https://visithampshirecounty.com/blog/3-ways-to-keep-hampshire-county-in-your-heart/",
+      "url": "https://visithampshirecounty.com/blog/3-ways-to-keep-hampshire-county-in-your-heart/"
+    },
+    {
+      "title": "https://www.dgrealestategroup.com/search/massachusetts/northampton/na/20a-crafts-ave-bid-60-73548371",
+      "url": "https://www.dgrealestategroup.com/search/massachusetts/northampton/na/20a-crafts-ave-bid-60-73548371"
+    },
+    {
+      "title": "https://www.bidnetdirect.com/massachusetts",
+      "url": "https://www.bidnetdirect.com/massachusetts"
+    },
+    {
+      "title": "https://www.massbids.net/bid_opportunities/",
+      "url": "https://www.massbids.net/bid_opportunities/"
+    },
+    {
+      "title": "https://planhub.com/projects/massachusetts/",
+      "url": "https://planhub.com/projects/massachusetts/"
+    },
+    {
+      "title": "https://www.sec.state.ma.us/divisions/pubs-regs/advertise-goods-services.htm",
+      "url": "https://www.sec.state.ma.us/divisions/pubs-regs/advertise-goods-services.htm"
+    },
+    {
+      "title": "https://www.mass.gov/public-bidding",
+      "url": "https://www.mass.gov/public-bidding"
+    },
+    {
+      "title": "https://www.massport.com/business/bids-and-opportunities",
+      "url": "https://www.massport.com/business/bids-and-opportunities"
+    },
+    {
+      "title": "https://www.mcla.edu/_pdfs/administration/administration-offices/administration-and-finances/procurement_policy_documents/guide_for_drafting_ifb_and_rfp.pdf",
+      "url": "https://www.mcla.edu/_pdfs/administration/administration-offices/administration-and-finances/procurement_policy_documents/guide_for_drafting_ifb_and_rfp.pdf"
+    },
+    {
+      "title": "https://www.bellinghamma.org/Bids.aspx",
+      "url": "https://www.bellinghamma.org/Bids.aspx"
+    },
+    {
+      "title": "https://www.constructionbusinessowner.com/law/public-construction-bidding-public-building",
+      "url": "https://www.constructionbusinessowner.com/law/public-construction-bidding-public-building"
+    },
+    {
+      "title": "https://bc.mbta.com/business_center/bidding_solicitations/current_solicitations/",
+      "url": "https://bc.mbta.com/business_center/bidding_solicitations/current_solicitations/"
+    },
+    {
+      "title": "https://www.town.hull.ma.us/DocumentCenter/View/352/The-Basics-Behind-Business-Improvement-Districts-BIDs-PDF",
+      "url": "https://www.town.hull.ma.us/DocumentCenter/View/352/The-Basics-Behind-Business-Improvement-Districts-BIDs-PDF"
+    },
+    {
+      "title": "https://www.randolph-ma.gov/Bids.aspx",
+      "url": "https://www.randolph-ma.gov/Bids.aspx"
+    },
+    {
+      "title": "https://www.bidnetdirect.com/massachusetts/sersg",
+      "url": "https://www.bidnetdirect.com/massachusetts/sersg"
+    },
+    {
+      "title": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3893317/",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3893317/"
+    },
+    {
+      "title": "https://usaultimate.org/college/rankings/",
+      "url": "https://usaultimate.org/college/rankings/"
+    },
+    {
+      "title": "https://www.barnstablepatriot.com/story/business/2018/02/28/despite-uproar-hyannis-main-street/13989375007/",
+      "url": "https://www.barnstablepatriot.com/story/business/2018/02/28/despite-uproar-hyannis-main-street/13989375007/"
+    },
+    {
+      "title": "https://www.facebook.com/HyannisLonghorns/posts/hyannis-schools-is-accepting-sealed-bids-on-this-irrigation-pipe-if-you-have-que/1708440020948889/",
+      "url": "https://www.facebook.com/HyannisLonghorns/posts/hyannis-schools-is-accepting-sealed-bids-on-this-irrigation-pipe-if-you-have-que/1708440020948889/"
+    },
+    {
+      "title": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/accomplishments/",
+      "url": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/accomplishments/"
+    },
+    {
+      "title": "https://www.ebay.com/itm/257390836774",
+      "url": "https://www.ebay.com/itm/257390836774"
+    },
+    {
+      "title": "https://www.ha.com/c/search/results.zx?si=2&currency_sub_category=2901&archive_state=5327&sold_status=1526&sb=1&mode=archive&page=10~45&layout=list&srsltid=AfmBOoofPXZts232uknYh-FTpLPRVlRf-Lca8fpuf387xrszVen61WMB",
+      "url": "https://www.ha.com/c/search/results.zx?si=2&currency_sub_category=2901&archive_state=5327&sold_status=1526&sb=1&mode=archive&page=10~45&layout=list&srsltid=AfmBOoofPXZts232uknYh-FTpLPRVlRf-Lca8fpuf387xrszVen61WMB"
+    },
+    {
+      "title": "https://artsbarnstable.com/destinations/hyarts-district/",
+      "url": "https://artsbarnstable.com/destinations/hyarts-district/"
+    },
+    {
+      "title": "https://flatheadbeacon.com/2010/10/19/even-in-liberal-bastions-gop-sees-election-chance/",
+      "url": "https://flatheadbeacon.com/2010/10/19/even-in-liberal-bastions-gop-sees-election-chance/"
+    },
+    {
+      "title": "https://www.capecodtimes.com/story/news/2025/01/26/cape-cod-times-top-stories-james-beard-cape-cod-tv-show-discovery-channel-harpoon-mobile-sauna/77926920007/",
+      "url": "https://www.capecodtimes.com/story/news/2025/01/26/cape-cod-times-top-stories-james-beard-cape-cod-tv-show-discovery-channel-harpoon-mobile-sauna/77926920007/"
+    },
+    {
+      "title": "https://apcc.org/wp-content/uploads/2020/05/town-center-revitlization.pdf",
+      "url": "https://apcc.org/wp-content/uploads/2020/05/town-center-revitlization.pdf"
+    },
+    {
+      "title": "https://vineyardgazette.com/classifieds/ads/820",
+      "url": "https://vineyardgazette.com/classifieds/ads/820"
+    },
+    {
+      "title": "https://www.facebook.com/capebigs/posts/we-are-less-than-a-week-away-from-the-14th-annual-blooming-bids-for-kids-event-h/1404355455051483/",
+      "url": "https://www.facebook.com/capebigs/posts/we-are-less-than-a-week-away-from-the-14th-annual-blooming-bids-for-kids-event-h/1404355455051483/"
+    },
+    {
+      "title": "https://mvyairport.com/request-for-bids/",
+      "url": "https://mvyairport.com/request-for-bids/"
+    },
+    {
+      "title": "https://www.instagram.com/p/CyW28COP0NB/",
+      "url": "https://www.instagram.com/p/CyW28COP0NB/"
+    },
+    {
+      "title": "https://www.visitedgartown.org/events",
+      "url": "https://www.visitedgartown.org/events"
+    },
+    {
+      "title": "https://www.airport.guide/kbid/ma/dukes-co/edgartown",
+      "url": "https://www.airport.guide/kbid/ma/dukes-co/edgartown"
+    },
+    {
+      "title": "https://www.massdevelopment.com/assets/document/business-improvement-district/Case-Study-City-of-Cambridge-2020.pdf",
+      "url": "https://www.massdevelopment.com/assets/document/business-improvement-district/Case-Study-City-of-Cambridge-2020.pdf"
+    },
+    {
+      "title": "https://www.linkedin.com/company/centralsqbid",
+      "url": "https://www.linkedin.com/company/centralsqbid"
+    },
+    {
+      "title": "https://www.facebook.com/CentralSquareBID/",
+      "url": "https://www.facebook.com/CentralSquareBID/"
+    },
+    {
+      "title": "https://www.centralsq.org/about",
+      "url": "https://www.centralsq.org/about"
+    },
+    {
+      "title": "https://www.idealist.org/en/nonprofit/50217738ac1e4f9dbbbdaba71cba6e85-central-square-business-improvement-district-cambridge",
+      "url": "https://www.idealist.org/en/nonprofit/50217738ac1e4f9dbbbdaba71cba6e85-central-square-business-improvement-district-cambridge"
+    },
+    {
+      "title": "https://www.instagram.com/centralsqbid/?hl=en",
+      "url": "https://www.instagram.com/centralsqbid/?hl=en"
+    },
+    {
+      "title": "http://rwinters.com/council/042219AP2.pdf",
+      "url": "http://rwinters.com/council/042219AP2.pdf"
+    },
+    {
+      "title": "https://www.apa-ma.org/2026/04/06/deputy-director-chief-operating-officer-central-square-business-improvement-district-cambridge-ma/",
+      "url": "https://www.apa-ma.org/2026/04/06/deputy-director-chief-operating-officer-central-square-business-improvement-district-cambridge-ma/"
+    },
+    {
+      "title": "https://www.downtownworcester.org/",
+      "url": "https://www.downtownworcester.org/"
+    },
+    {
+      "title": "https://www.facebook.com/DowntownWorcesterBID/",
+      "url": "https://www.facebook.com/DowntownWorcesterBID/"
+    },
+    {
+      "title": "https://www.worcestermag.com/story/opinion/columns/2024/10/07/opinionworcesteria-a-closer-look-at-the-downtown-worcester-bid/75520180007/",
+      "url": "https://www.worcestermag.com/story/opinion/columns/2024/10/07/opinionworcesteria-a-closer-look-at-the-downtown-worcester-bid/75520180007/"
+    },
+    {
+      "title": "https://www.linkedin.com/company/downtown-worcester-business-improvement-district",
+      "url": "https://www.linkedin.com/company/downtown-worcester-business-improvement-district"
+    },
+    {
+      "title": "https://www.downtownworcester.org/about-downtown-worcester/",
+      "url": "https://www.downtownworcester.org/about-downtown-worcester/"
+    },
+    {
+      "title": "https://www.instagram.com/downtownworcesterbid/?hl=en",
+      "url": "https://www.instagram.com/downtownworcesterbid/?hl=en"
+    },
+    {
+      "title": "https://myemail-api.constantcontact.com/Press-Release--Downtown-Worcester-BID-Renewed-for-Five-Year-Term.html?soid=1132797133114&aid=Iuq1kX5-AeI",
+      "url": "https://myemail-api.constantcontact.com/Press-Release--Downtown-Worcester-BID-Renewed-for-Five-Year-Term.html?soid=1132797133114&aid=Iuq1kX5-AeI"
+    },
+    {
+      "title": "https://vimeo.com/864068951",
+      "url": "https://vimeo.com/864068951"
+    },
+    {
+      "title": "https://www.taunton-ma.gov/Bids.aspx?CatID=showStatus&txtSort=Category&showAllBids=on&Status=open",
+      "url": "https://www.taunton-ma.gov/Bids.aspx?CatID=showStatus&txtSort=Category&showAllBids=on&Status=open"
+    },
+    {
+      "title": "https://bidbanana.thebidlab.com/bid/hkNedI2qJyZUGl9PnUhq",
+      "url": "https://bidbanana.thebidlab.com/bid/hkNedI2qJyZUGl9PnUhq"
+    },
+    {
+      "title": "https://www.commbuys.com/bso/external/bidDetail.sda?docId=BD-26-1168-MAYOR-121-126729&downloadFileNbr=2202547&mode=download",
+      "url": "https://www.commbuys.com/bso/external/bidDetail.sda?docId=BD-26-1168-MAYOR-121-126729&downloadFileNbr=2202547&mode=download"
+    },
+    {
+      "title": "https://philanthropy.org/990/report/273616747/taunton-business-improvement-district-inc",
+      "url": "https://philanthropy.org/990/report/273616747/taunton-business-improvement-district-inc"
+    },
+    {
+      "title": "https://www.taunton-ma.gov/bids.aspx?bidID=105",
+      "url": "https://www.taunton-ma.gov/bids.aspx?bidID=105"
+    },
+    {
+      "title": "https://www.facebook.com/TauntonToGo/posts/while-we-are-a-big-city-there-is-a-small-town-feel-and-attitude-perception-is-re/10160048510674715/",
+      "url": "https://www.facebook.com/TauntonToGo/posts/while-we-are-a-big-city-there-is-a-small-town-feel-and-attitude-perception-is-re/10160048510674715/"
+    },
+    {
+      "title": "https://starbridge.ai/rfp/sale-of-100-oak-street-bd-26-1168-mayor-121-128115",
+      "url": "https://starbridge.ai/rfp/sale-of-100-oak-street-bd-26-1168-mayor-121-128115"
+    },
+    {
+      "title": "https://www.instagram.com/p/DZDdJ_OgYcv/",
+      "url": "https://www.instagram.com/p/DZDdJ_OgYcv/"
+    },
+    {
+      "title": "https://www.heraldnews.com/story/business/2022/06/10/fall-river-considers-business-improvement-district-downtown/7559754001/",
+      "url": "https://www.heraldnews.com/story/business/2022/06/10/fall-river-considers-business-improvement-district-downtown/7559754001/"
+    },
+    {
+      "title": "https://www.amherstma.gov/400/Amherst-Maps-Property-Info",
+      "url": "https://www.amherstma.gov/400/Amherst-Maps-Property-Info"
+    },
+    {
+      "title": "https://gis.data.mass.gov/search?tags=amherst",
+      "url": "https://gis.data.mass.gov/search?tags=amherst"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=0c75fa97505f4264b0bff6efc00693ed",
+      "url": "https://www.arcgis.com/home/item.html?id=0c75fa97505f4264b0bff6efc00693ed"
+    },
+    {
+      "title": "https://amherstpd.org/propertysearch",
+      "url": "https://amherstpd.org/propertysearch"
+    },
+    {
+      "title": "https://www.amherstnh.gov/assessing/pages/amherst-tax-maps",
+      "url": "https://www.amherstnh.gov/assessing/pages/amherst-tax-maps"
+    },
+    {
+      "title": "https://gis.data.mass.gov/content/988c2fbfc5004ee086fca469ae7743c0",
+      "url": "https://gis.data.mass.gov/content/988c2fbfc5004ee086fca469ae7743c0"
+    },
+    {
+      "title": "https://www.amherstma.gov/476/Zoning-Bylaw-Map",
+      "url": "https://www.amherstma.gov/476/Zoning-Bylaw-Map"
+    },
+    {
+      "title": "https://geodata.rw/portal/apps/webappviewer/index.html?id=94af55b0f6cf4ece8c679b9f528fd555",
+      "url": "https://geodata.rw/portal/apps/webappviewer/index.html?id=94af55b0f6cf4ece8c679b9f528fd555"
+    },
+    {
+      "title": "https://experience.arcgis.com/experience/dc49639e08ca4632a746acb3f8c55260",
+      "url": "https://experience.arcgis.com/experience/dc49639e08ca4632a746acb3f8c55260"
+    },
+    {
+      "title": "https://www.amherstma.gov/gisdata",
+      "url": "https://www.amherstma.gov/gisdata"
+    },
+    {
+      "title": "https://www.downtownboston.org/map-of-downtown/",
+      "url": "https://www.downtownboston.org/map-of-downtown/"
+    },
+    {
+      "title": "https://www.downtownboston.org/wp-content/uploads/2024/11/20626_BID_OrientationBrochure_DIGITALPDF.pdf",
+      "url": "https://www.downtownboston.org/wp-content/uploads/2024/11/20626_BID_OrientationBrochure_DIGITALPDF.pdf"
+    },
+    {
+      "title": "https://www.linkedin.com/company/downtown-boston-alliance",
+      "url": "https://www.linkedin.com/company/downtown-boston-alliance"
+    },
+    {
+      "title": "https://www.downtownboston.org/about/",
+      "url": "https://www.downtownboston.org/about/"
+    },
+    {
+      "title": "https://www.instagram.com/downtownbostonalliance/?hl=en",
+      "url": "https://www.instagram.com/downtownbostonalliance/?hl=en"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=c7f18aafc5fa4dceb802993ee8bc634d&sublayer=0",
+      "url": "https://www.arcgis.com/home/item.html?id=c7f18aafc5fa4dceb802993ee8bc634d&sublayer=0"
+    },
+    {
+      "title": "https://www.meetboston.com/listing/downtown-boston-alliance/11316/",
+      "url": "https://www.meetboston.com/listing/downtown-boston-alliance/11316/"
+    },
+    {
+      "title": "https://www.blockbyblock.com/cities/downtown-boston-bid/",
+      "url": "https://www.blockbyblock.com/cities/downtown-boston-bid/"
+    },
+    {
+      "title": "https://101archstreet.info/main.cfm?sid=neighborhood&pid=bidistrict",
+      "url": "https://101archstreet.info/main.cfm?sid=neighborhood&pid=bidistrict"
+    },
+    {
+      "title": "https://data.boston.gov/dataset/?groups=geospatial&organization=boston-maps&res_format=GeoJSON&sort=views_recent+desc",
+      "url": "https://data.boston.gov/dataset/?groups=geospatial&organization=boston-maps&res_format=GeoJSON&sort=views_recent+desc"
+    },
+    {
+      "title": "https://bostonopendata-boston.opendata.arcgis.com/datasets?sort_by=relevance",
+      "url": "https://bostonopendata-boston.opendata.arcgis.com/datasets?sort_by=relevance"
+    },
+    {
+      "title": "http://www.bostonplans.org/3d-data-maps/resources",
+      "url": "http://www.bostonplans.org/3d-data-maps/resources"
+    },
+    {
+      "title": "https://gis.data.mass.gov/datasets/city-of-boston-ma-gis-homepage",
+      "url": "https://gis.data.mass.gov/datasets/city-of-boston-ma-gis-homepage"
+    },
+    {
+      "title": "https://hub.arcgis.com/maps/ec1b8c2ff7854d34b38695190abdccdd_0/about",
+      "url": "https://hub.arcgis.com/maps/ec1b8c2ff7854d34b38695190abdccdd_0/about"
+    },
+    {
+      "title": "https://www.arcgis.com/apps/Viewer/index.html?appid=30be789caf94499eb526c6b0ded90f6a",
+      "url": "https://www.arcgis.com/apps/Viewer/index.html?appid=30be789caf94499eb526c6b0ded90f6a"
+    },
+    {
+      "title": "https://data.boston.gov/harvest/boston-maps-arcgis-online",
+      "url": "https://data.boston.gov/harvest/boston-maps-arcgis-online"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=248a8f7017ae4b579c9cd4d7cb6e8307",
+      "url": "https://www.arcgis.com/home/item.html?id=248a8f7017ae4b579c9cd4d7cb6e8307"
+    },
+    {
+      "title": "https://www.amherstnh.gov/community-development-office/pages/town-maps",
+      "url": "https://www.amherstnh.gov/community-development-office/pages/town-maps"
+    },
+    {
+      "title": "https://www.amherst.ny.us/content/mapping.php",
+      "url": "https://www.amherst.ny.us/content/mapping.php"
+    },
+    {
+      "title": "https://www.amherstma.gov/3610/Project-Archive",
+      "url": "https://www.amherstma.gov/3610/Project-Archive"
+    },
+    {
+      "title": "https://events.umass.edu/event/gis-day-2025",
+      "url": "https://events.umass.edu/event/gis-day-2025"
+    },
+    {
+      "title": "https://www.joneslibrary.org/382/Amherst-Area",
+      "url": "https://www.joneslibrary.org/382/Amherst-Area"
+    },
+    {
+      "title": "https://www.railroadhobbyshow.com/pdf-maps.php",
+      "url": "https://www.railroadhobbyshow.com/pdf-maps.php"
+    },
+    {
+      "title": "https://amherstva.gov/administration/planning-and-zoning/zoning-map/",
+      "url": "https://amherstva.gov/administration/planning-and-zoning/zoning-map/"
+    },
+    {
+      "title": "https://www.amherst.ca/download-a-map.html",
+      "url": "https://www.amherst.ca/download-a-map.html"
+    },
+    {
+      "title": "https://www.virtualblueridge.com/wp-content/uploads/blue-ridge-parkway-map.pdf",
+      "url": "https://www.virtualblueridge.com/wp-content/uploads/blue-ridge-parkway-map.pdf"
+    },
+    {
+      "title": "https://www.youtube.com/watch?v=vR8_u2nCH1I",
+      "url": "https://www.youtube.com/watch?v=vR8_u2nCH1I"
+    },
+    {
+      "title": "https://newmarketbid.org/about/",
+      "url": "https://newmarketbid.org/about/"
+    },
+    {
+      "title": "https://newmarketboston.org/",
+      "url": "https://newmarketboston.org/"
+    },
+    {
+      "title": "https://wraphome.org/2023/02/17/stop-the-sweeps-stop-the-bid-criminalization-under-the-guise-of-public-health/",
+      "url": "https://wraphome.org/2023/02/17/stop-the-sweeps-stop-the-bid-criminalization-under-the-guise-of-public-health/"
+    },
+    {
+      "title": "https://newmarketbid.org/resources/city-services/",
+      "url": "https://newmarketbid.org/resources/city-services/"
+    },
+    {
+      "title": "https://www.youtube.com/watch?v=3Jlrb2KAfhw",
+      "url": "https://www.youtube.com/watch?v=3Jlrb2KAfhw"
+    },
+    {
+      "title": "http://www.bostonplans.org/planning-zoning/planning-initiatives/plan-newmarket",
+      "url": "http://www.bostonplans.org/planning-zoning/planning-initiatives/plan-newmarket"
+    },
+    {
+      "title": "https://apps.apple.com/us/app/buswhere-for-newmarket-bid/id6443795931",
+      "url": "https://apps.apple.com/us/app/buswhere-for-newmarket-bid/id6443795931"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=799b9ee45a204dea8634ed421ccb3f49",
+      "url": "https://www.arcgis.com/home/item.html?id=799b9ee45a204dea8634ed421ccb3f49"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=5fbeea39d29646959eac8bf8dfe5610a",
+      "url": "https://www.arcgis.com/home/item.html?id=5fbeea39d29646959eac8bf8dfe5610a"
+    },
+    {
+      "title": "https://boston.maps.arcgis.com/home/item.html?id=c6ae81b1b1ab43608a2a47c829ef89d6",
+      "url": "https://boston.maps.arcgis.com/home/item.html?id=c6ae81b1b1ab43608a2a47c829ef89d6"
+    },
+    {
+      "title": "https://storymaps.arcgis.com/stories/0363b3a7251949048b51697133895da4",
+      "url": "https://storymaps.arcgis.com/stories/0363b3a7251949048b51697133895da4"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=b5f19318e90841d4bcf15e97b55851b7",
+      "url": "https://www.arcgis.com/home/item.html?id=b5f19318e90841d4bcf15e97b55851b7"
+    },
+    {
+      "title": "https://bostonopendata-boston.opendata.arcgis.com/datasets/boston-police-stations-bpd-only",
+      "url": "https://bostonopendata-boston.opendata.arcgis.com/datasets/boston-police-stations-bpd-only"
+    },
+    {
+      "title": "https://storymaps.arcgis.com/stories/722561d7c24b40eea30d506f1e2f486d",
+      "url": "https://storymaps.arcgis.com/stories/722561d7c24b40eea30d506f1e2f486d"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=5b39adeecca243cdad33780ca654dc9e",
+      "url": "https://www.arcgis.com/home/item.html?id=5b39adeecca243cdad33780ca654dc9e"
+    },
+    {
+      "title": "https://bostonopendata-boston.opendata.arcgis.com/datasets/boston::boston-police-stations-bpd-only/about",
+      "url": "https://bostonopendata-boston.opendata.arcgis.com/datasets/boston::boston-police-stations-bpd-only/about"
+    },
+    {
+      "title": "https://gis.data.mass.gov/search?layout=grid&tags=amherst",
+      "url": "https://gis.data.mass.gov/search?layout=grid&tags=amherst"
+    },
+    {
+      "title": "https://gis.data.mass.gov/search?collection=dataset&layout=grid&tags=amherst",
+      "url": "https://gis.data.mass.gov/search?collection=dataset&layout=grid&tags=amherst"
+    },
+    {
+      "title": "https://gis.data.mass.gov/search?collection=dataset&layout=grid&tags=zoning",
+      "url": "https://gis.data.mass.gov/search?collection=dataset&layout=grid&tags=zoning"
+    },
+    {
+      "title": "https://hub.arcgis.com/search?tags=georgetown",
+      "url": "https://hub.arcgis.com/search?tags=georgetown"
+    },
+    {
+      "title": "https://www.arcgis.com/home/search.html?q=tags:%22Prime2%22",
+      "url": "https://www.arcgis.com/home/search.html?q=tags:%22Prime2%22"
+    },
+    {
+      "title": "https://papers.ssrn.com/sol3/Delivery.cfm/f13776d7-0969-47d4-86a6-d8d7f2b14252-MECA.pdf?abstractid=4804877",
+      "url": "https://papers.ssrn.com/sol3/Delivery.cfm/f13776d7-0969-47d4-86a6-d8d7f2b14252-MECA.pdf?abstractid=4804877"
+    },
+    {
+      "title": "https://economicdevelopment.extension.wisc.edu/articles/evaluating-retail-service-business-opportunities/",
+      "url": "https://economicdevelopment.extension.wisc.edu/articles/evaluating-retail-service-business-opportunities/"
+    },
+    {
+      "title": "https://journals.sagepub.com/doi/10.1177/0739456X14539015",
+      "url": "https://journals.sagepub.com/doi/10.1177/0739456X14539015"
+    },
+    {
+      "title": "https://dspace.mit.edu/bitstreams/ed7aead9-c63f-47d3-8089-55fde70887c1/download",
+      "url": "https://dspace.mit.edu/bitstreams/ed7aead9-c63f-47d3-8089-55fde70887c1/download"
+    },
+    {
+      "title": "https://www.nber.org/system/files/working_papers/w27545/w27545.pdf",
+      "url": "https://www.nber.org/system/files/working_papers/w27545/w27545.pdf"
+    },
+    {
+      "title": "https://gis.data.mass.gov/search?collection=dataset&tags=zoning",
+      "url": "https://gis.data.mass.gov/search?collection=dataset&tags=zoning"
+    },
+    {
+      "title": "https://www.mass.gov/doc/community-one-stop-for-growth-award-spreadsheet/download",
+      "url": "https://www.mass.gov/doc/community-one-stop-for-growth-award-spreadsheet/download"
+    },
+    {
+      "title": "https://storymaps.arcgis.com/stories/84b538894dbe455b8cdc601642036665",
+      "url": "https://storymaps.arcgis.com/stories/84b538894dbe455b8cdc601642036665"
+    },
+    {
+      "title": "https://www.facebook.com/AmherstDowntown/posts/more-coverage-on-our-revitilization-project-thank-you-scott-merzbach-and-daily-h/3902748673127131/",
+      "url": "https://www.facebook.com/AmherstDowntown/posts/more-coverage-on-our-revitilization-project-thank-you-scott-merzbach-and-daily-h/3902748673127131/"
+    },
+    {
+      "title": "https://www.linkedin.com/in/awurf",
+      "url": "https://www.linkedin.com/in/awurf"
+    },
+    {
+      "title": "https://www.amherstindy.org/wp-content/uploads/2023/06/Amherst-Community-Needs-Assessment-Final-Report.pdf",
+      "url": "https://www.amherstindy.org/wp-content/uploads/2023/06/Amherst-Community-Needs-Assessment-Final-Report.pdf"
+    },
+    {
+      "title": "https://economicdevelopment.extension.wisc.edu/articles/trade-area-analysis/",
+      "url": "https://economicdevelopment.extension.wisc.edu/articles/trade-area-analysis/"
+    },
+    {
+      "title": "https://opendata-geospatialdenver.hub.arcgis.com/datasets/ded4dcdab92643d186e087eb49f82f3d_104/explore?location=39.769058%2C-105.024809%2C13.72",
+      "url": "https://opendata-geospatialdenver.hub.arcgis.com/datasets/ded4dcdab92643d186e087eb49f82f3d_104/explore?location=39.769058%2C-105.024809%2C13.72"
+    },
+    {
+      "title": "https://www.mapc.org/wp-content/uploads/2020/02/Enhancing-Creative-East-Dedham-2014-1.pdf",
+      "url": "https://www.mapc.org/wp-content/uploads/2020/02/Enhancing-Creative-East-Dedham-2014-1.pdf"
+    },
+    {
+      "title": "https://www.facebook.com/WWLP22News/posts/what-would-you-like-to-see-included-in-downtown-amhersts-future-look/10155933107699099/",
+      "url": "https://www.facebook.com/WWLP22News/posts/what-would-you-like-to-see-included-in-downtown-amhersts-future-look/10155933107699099/"
+    },
+    {
+      "title": "https://www.capecodchamber.org/listing/hyannis-main-street-business-improvement-district/3242/",
+      "url": "https://www.capecodchamber.org/listing/hyannis-main-street-business-improvement-district/3242/"
+    },
+    {
+      "title": "https://www.hyannismainstreet.com/main-street-hyannis-map/",
+      "url": "https://www.hyannismainstreet.com/main-street-hyannis-map/"
+    },
+    {
+      "title": "https://businessbarnstable.com/wp-content/uploads/2023/12/BID_RecruitmentBrochureHMS.pdf",
+      "url": "https://businessbarnstable.com/wp-content/uploads/2023/12/BID_RecruitmentBrochureHMS.pdf"
+    },
+    {
+      "title": "https://www.hyannismainstreet.com/contact-us/",
+      "url": "https://www.hyannismainstreet.com/contact-us/"
+    },
+    {
+      "title": "https://ne-mp.com/Text/MainStreetMap.pdf",
+      "url": "https://ne-mp.com/Text/MainStreetMap.pdf"
+    },
+    {
+      "title": "https://www.hyannismainstreet.com/events/annual-bid-meeting/",
+      "url": "https://www.hyannismainstreet.com/events/annual-bid-meeting/"
+    },
+    {
+      "title": "https://townofhudson.org/861/Recreation-Bid-Documents",
+      "url": "https://townofhudson.org/861/Recreation-Bid-Documents"
+    },
+    {
+      "title": "https://www.discoverhudson.org/about",
+      "url": "https://www.discoverhudson.org/about"
+    },
+    {
+      "title": "https://19january2017snapshot.epa.gov/www3/region1/npdes/stormwater/assets/pdfs/ma/Hudson.pdf",
+      "url": "https://19january2017snapshot.epa.gov/www3/region1/npdes/stormwater/assets/pdfs/ma/Hudson.pdf"
+    },
+    {
+      "title": "https://experience.arcgis.com/experience/97012868477b411091ffb0aaf4e64f17",
+      "url": "https://experience.arcgis.com/experience/97012868477b411091ffb0aaf4e64f17"
+    },
+    {
+      "title": "https://www.massdevelopment.com/assets/document/business-improvement-district/Case-Study-Town-of-Hudson-2020.pdf",
+      "url": "https://www.massdevelopment.com/assets/document/business-improvement-district/Case-Study-Town-of-Hudson-2020.pdf"
+    },
+    {
+      "title": "https://maps.apple.com/place?auid=1969763251967941953",
+      "url": "https://maps.apple.com/place?auid=1969763251967941953"
+    },
+    {
+      "title": "https://en.wikipedia.org/wiki/Hudson,_Massachusetts",
+      "url": "https://en.wikipedia.org/wiki/Hudson,_Massachusetts"
+    },
+    {
+      "title": "https://gis.vgsi.com/hudsonma/",
+      "url": "https://gis.vgsi.com/hudsonma/"
+    },
+    {
+      "title": "https://gis.data.mass.gov/datasets/HudsonMA::hudson-property-viewer",
+      "url": "https://gis.data.mass.gov/datasets/HudsonMA::hudson-property-viewer"
+    },
+    {
+      "title": "https://hudsonsquarebid.org/",
+      "url": "https://hudsonsquarebid.org/"
+    },
+    {
+      "title": "https://fallriverma.gov/departments/city_administration/purchasing/bids_and_contracts/index.php",
+      "url": "https://fallriverma.gov/departments/city_administration/purchasing/bids_and_contracts/index.php"
+    },
+    {
+      "title": "https://planhub.com/construction-bids/499996/",
+      "url": "https://planhub.com/construction-bids/499996/"
+    },
+    {
+      "title": "https://fallriverha.org/procurement-and-bid-proposals/",
+      "url": "https://fallriverha.org/procurement-and-bid-proposals/"
+    },
+    {
+      "title": "https://www.facebook.com/cityofgloucester/posts/-city-seeks-sealed-bids-for-fixed-vendor-locations-%EF%B8%8Fthe-city-of-gloucester-is-se/1351619093674226/",
+      "url": "https://www.facebook.com/cityofgloucester/posts/-city-seeks-sealed-bids-for-fixed-vendor-locations-%EF%B8%8Fthe-city-of-gloucester-is-se/1351619093674226/"
+    },
+    {
+      "title": "https://www.commbuys.com/bso/external/bidDetail.sdo?docId=BD-24-2141-DIMAN-DIMAN-91793&external=true&parentUrl=close",
+      "url": "https://www.commbuys.com/bso/external/bidDetail.sdo?docId=BD-24-2141-DIMAN-DIMAN-91793&external=true&parentUrl=close"
+    },
+    {
+      "title": "https://www.fallriverma.gov/departments/city_administration/purchasing/notice_to_bidders.php",
+      "url": "https://www.fallriverma.gov/departments/city_administration/purchasing/notice_to_bidders.php"
+    },
+    {
+      "title": "https://www.bidnetdirect.com/massachusetts/solicitations/open-bids/statewide/Fall-River-DCM-Facility-Improvements-Project-Phase-3/443402939644",
+      "url": "https://www.bidnetdirect.com/massachusetts/solicitations/open-bids/statewide/Fall-River-DCM-Facility-Improvements-Project-Phase-3/443402939644"
+    },
+    {
+      "title": "https://yarmouth.ma.us/bids.aspx?bidID=466",
+      "url": "https://yarmouth.ma.us/bids.aspx?bidID=466"
+    },
+    {
+      "title": "https://www.causeiq.com/organizations/springfield-business-improvement-district,043428312/",
+      "url": "https://www.causeiq.com/organizations/springfield-business-improvement-district,043428312/"
+    },
+    {
+      "title": "https://www.news-leader.com/story/news/local/ozarks/2019/06/18/what-are-downtown-springfield-boundaries-streets-missouri-map/3699139002/",
+      "url": "https://www.news-leader.com/story/news/local/ozarks/2019/06/18/what-are-downtown-springfield-boundaries-streets-missouri-map/3699139002/"
+    },
+    {
+      "title": "https://springfielddowntown.com/about-us/",
+      "url": "https://springfielddowntown.com/about-us/"
+    },
+    {
+      "title": "https://www.springfield-ma.gov/cos/fileadmin/homepage-photos/springfield_guide_2011_final.pdf",
+      "url": "https://www.springfield-ma.gov/cos/fileadmin/homepage-photos/springfield_guide_2011_final.pdf"
+    },
+    {
+      "title": "https://www.facebook.com/groups/408419005987287/posts/1694369967392178/",
+      "url": "https://www.facebook.com/groups/408419005987287/posts/1694369967392178/"
+    },
+    {
+      "title": "https://www.sec.state.ma.us/divisions/mhc/preservation/survey/town-reports/spr.pdf",
+      "url": "https://www.sec.state.ma.us/divisions/mhc/preservation/survey/town-reports/spr.pdf"
+    },
+    {
+      "title": "https://springfieldpreservation.org/wp-content/uploads/2017/01/Guide-to-Researching-Springfields-Buildings.pdf",
+      "url": "https://springfieldpreservation.org/wp-content/uploads/2017/01/Guide-to-Researching-Springfields-Buildings.pdf"
+    },
+    {
+      "title": "https://mostateparks.com/sites/g/files/zuston361/files/media/pdf/2025/01/springfield-public-square-hd-bi.pdf",
+      "url": "https://mostateparks.com/sites/g/files/zuston361/files/media/pdf/2025/01/springfield-public-square-hd-bi.pdf"
+    },
+    {
+      "title": "https://www.facebook.com/HWChronicle/posts/all-11-bids-were-at-or-above-the-asking-price-of-1295-million-the-house-was-only/3356396497912678/",
+      "url": "https://www.facebook.com/HWChronicle/posts/all-11-bids-were-at-or-above-the-asking-price-of-1295-million-the-house-was-only/3356396497912678/"
+    },
+    {
+      "title": "https://www.infrastructureinvestor.com/washington-streetlight-rfq-gets-11-bids/",
+      "url": "https://www.infrastructureinvestor.com/washington-streetlight-rfq-gets-11-bids/"
+    },
+    {
+      "title": "https://www.townofblackstone.org/DocumentCenter/View/1697",
+      "url": "https://www.townofblackstone.org/DocumentCenter/View/1697"
+    },
+    {
+      "title": "https://walden.auctions.networkforgood.com/auctions/the-walden-woods-project-fundraising-auction?q%5Bs%5D=buy_now+asc",
+      "url": "https://walden.auctions.networkforgood.com/auctions/the-walden-woods-project-fundraising-auction?q%5Bs%5D=buy_now+asc"
+    },
+    {
+      "title": "https://cms2.revize.com/revize/fallriver/Document%20Center/Departments/City%20Administration/Purchasing/Current%20Bids/IFB%2025-11%20DCM%20Facility%20Improvements%20Project%20PHASE%201.pdf",
+      "url": "https://cms2.revize.com/revize/fallriver/Document%20Center/Departments/City%20Administration/Purchasing/Current%20Bids/IFB%2025-11%20DCM%20Facility%20Improvements%20Project%20PHASE%201.pdf"
+    },
+    {
+      "title": "https://www.edgartown-ma.us/",
+      "url": "https://www.edgartown-ma.us/"
+    },
+    {
+      "title": "https://www.purplewave.com/inventory/trailers/for-sale/massachusetts",
+      "url": "https://www.purplewave.com/inventory/trailers/for-sale/massachusetts"
+    },
+    {
+      "title": "https://www.bostonglobe.com/business/2017/10/17/amazon-bid-from-mass-misses-one-crucial-request-from-company-selectivity/EcnqhK2W7veJBfOILrZeEI/story.html",
+      "url": "https://www.bostonglobe.com/business/2017/10/17/amazon-bid-from-mass-misses-one-crucial-request-from-company-selectivity/EcnqhK2W7veJBfOILrZeEI/story.html"
+    },
+    {
+      "title": "https://frcog.org/wp-content/uploads/2024/04/H-22-Tree-Work-FY25.pdf",
+      "url": "https://frcog.org/wp-content/uploads/2024/04/H-22-Tree-Work-FY25.pdf"
+    },
+    {
+      "title": "https://mjdtools.nextlot.com/auctions/1417487/lots",
+      "url": "https://mjdtools.nextlot.com/auctions/1417487/lots"
+    },
+    {
+      "title": "https://www.abettercity.org/our-work/greenway-bid",
+      "url": "https://www.abettercity.org/our-work/greenway-bid"
+    },
+    {
+      "title": "https://downtowntaunton.org/",
+      "url": "https://downtowntaunton.org/"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=c7f18aafc5fa4dceb802993ee8bc634d",
+      "url": "https://www.arcgis.com/home/item.html?id=c7f18aafc5fa4dceb802993ee8bc634d"
+    },
+    {
+      "title": "https://www.downtownboston.org/",
+      "url": "https://www.downtownboston.org/"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c",
+      "url": "https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c"
+    }
+  ]
+}
