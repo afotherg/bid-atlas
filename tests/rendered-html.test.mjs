@@ -18,5 +18,8 @@ test("server-renders BID Atlas", async () => {
   assert.match(html, /G-MYDMGJZHT7/);
   assert.match(html, /mailto:alan@fothergill\.com/);
   assert.match(html, /Choose map or list view/);
+  assert.match(html, /not yet a comprehensive list of every U\.S\. BID/);
+  assert.match(html, /Coverage in progress/);
+  assert.match(html, /not researched yet/);
   assert.doesNotMatch(html, /codex-preview/);
 });

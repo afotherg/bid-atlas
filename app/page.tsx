@@ -226,6 +226,15 @@ export default function Home() {
         </div>
       </section>
 
+      <aside className="coverage-notice" aria-label="Current national coverage status">
+        <div className="coverage-label"><span /> Coverage in progress</div>
+        <div>
+          <strong>BID Atlas is not yet a comprehensive list of every U.S. BID.</strong>
+          <p>This release contains {manifest?.records ?? "—"} verified districts from {manifest?.coverage.verifiedJurisdictions ?? "—"} covered jurisdictions. We are expanding state by state—checking enabling laws, local equivalents, official lists, and boundary records. Until that audit is complete, an empty area may mean “not researched yet,” not “no BID.”</p>
+        </div>
+        <a href="#methodology">How coverage is verified ↓</a>
+      </aside>
+
       <section className="explorer" aria-label="BID map explorer">
         <div className="toolbar">
           <label className="searchbox"><span>⌕</span><input value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search district, city, or state" aria-label="Search districts" /></label>
