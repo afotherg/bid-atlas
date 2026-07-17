@@ -133,15 +133,12 @@ This manual bridge is intentional. It prevents an LLM research mistake, an ambig
 
 ### Triggers
 
-The `Refresh and deploy BID Atlas` workflow is defined in `.github/workflows/update-and-deploy-pages.yml`.
+The responsibilities are split between two workflows:
 
-It runs:
+- `Refresh BID Atlas data` in `.github/workflows/refresh-bid-data.yml` runs only on the daily cron schedule at `13:17 UTC`;
+- `Deploy BID Atlas to GitHub Pages` in `.github/workflows/update-and-deploy-pages.yml` runs after every push to `main`, after a successful scheduled refresh, or when started manually.
 
-- daily at `13:17 UTC`;
-- after every push to `main`;
-- when started manually.
-
-The workflow uses a single non-cancelling concurrency group so refresh/deployment runs do not overwrite one another.
+Each workflow uses its own non-cancelling concurrency group so refreshes and deployments do not overwrite another run of the same responsibility.
 
 ### Step 1: discover possible new public datasets
 
@@ -199,14 +196,14 @@ This is the only automatic connection from published data back to the audit ledg
 
 ### Step 6: commit generated data
 
-If any generated files changed, the workflow creates a `data: refresh BID directory` commit and pushes it to `main`. It includes:
+If any generated files changed, the refresh workflow creates a `data: refresh BID directory` commit and pushes it to `main`. It includes:
 
 - public map data and manifest;
 - the change report;
 - Data.gov discovery candidates;
 - synchronized audit counts.
 
-The workflow continues to deployment in the same run, so it does not depend on the bot-authored commit triggering another workflow.
+GitHub does not start a new push workflow for a commit made with the repository's `GITHUB_TOKEN`. Instead, successful completion of the scheduled refresh directly triggers the separate deployment workflow. The deployment therefore runs whether or not the refresh produced a commit.
 
 ### Step 7: build and deploy GitHub Pages
 
@@ -218,7 +215,7 @@ The site is built as a static GitHub Pages artifact. The export process:
 - writes the `CNAME` for `bid-atlas.fothergill.com`;
 - checks for invalid asset paths.
 
-GitHub's Pages deployment action then publishes the artifact. Visitors subsequently load the generated GeoJSON and manifest from the deployed site.
+GitHub's Pages deployment action then publishes the artifact. Ordinary pushes deploy the repository as committed without running discovery or source updates. Visitors subsequently load the generated GeoJSON and manifest from the deployed site.
 
 ## Normal operator commands
 
@@ -244,7 +241,7 @@ npm test
 
 ## Operational checks
 
-After a daily or manual run, verify:
+After a daily refresh or manual deployment, verify:
 
 1. The workflow and GitHub Pages deployment completed.
 2. Every source in `public/data/manifest.json` is `ok`, or an understood `review` state is awaiting action.

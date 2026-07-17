@@ -1,14 +1,15 @@
-name: Refresh and deploy BID Atlas
+name: Deploy BID Atlas to GitHub Pages
 
 on:
   push:
     branches: [main]
-  schedule:
-    - cron: "17 13 * * *"
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Refresh BID Atlas data"]
+    types: [completed]
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -17,7 +18,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  refresh-and-build:
+  build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,17 +28,6 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run admin:discover
-      - run: npm run admin:update
-        continue-on-error: true
-      - run: npm run admin:audit:sync
-      - name: Commit refreshed directory data
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data data/last-change-report.json data/candidate-sources.json data/state-audit.csv
-          git diff --cached --quiet || git commit -m "data: refresh BID directory"
-          git push
       - name: Set GitHub Pages paths
         run: |
           echo "PAGES_BASE_PATH=/" >> "$GITHUB_ENV"
@@ -49,7 +40,7 @@ jobs:
           path: dist/pages
 
   deploy:
-    needs: refresh-and-build
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
