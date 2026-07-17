@@ -1,30 +1,12 @@
 {
-  "checkedAt": "2026-07-17T05:58:39.919Z",
+  "checkedAt": "2026-07-17T06:08:05.477Z",
   "summary": {
     "added": 0,
-    "modified": 17,
+    "modified": 0,
     "removed": 0
   },
   "added": [],
-  "modified": [
-    "ca-san-diego-adams-avenue",
-    "ca-san-diego-city-heights",
-    "ca-san-diego-college-area",
-    "ca-san-diego-diamond",
-    "ca-san-diego-downtown",
-    "ca-san-diego-east-village",
-    "ca-san-diego-el-cajon-boulevard-central",
-    "ca-san-diego-el-cajon-boulevard-gateway",
-    "ca-san-diego-hillcrest",
-    "ca-san-diego-la-jolla",
-    "ca-san-diego-little-italy",
-    "ca-san-diego-mission-hills",
-    "ca-san-diego-north-park",
-    "ca-san-diego-ocean-beach",
-    "ca-san-diego-old-town",
-    "ca-san-diego-pacific-beach",
-    "ca-san-diego-san-ysidro"
-  ],
+  "modified": [],
   "removed": [],
   "sources": [
     {
@@ -32,56 +14,58 @@
       "name": "New York City Business Improvement Districts",
       "status": "ok",
       "records": 76,
-      "checkedAt": "2026-07-17T05:58:39.919Z"
+      "checkedAt": "2026-07-17T06:08:05.477Z"
     },
     {
       "id": "sf-community-benefit-districts",
       "name": "San Francisco Community Benefit Districts",
       "status": "ok",
       "records": 16,
-      "checkedAt": "2026-07-17T05:58:39.919Z"
+      "checkedAt": "2026-07-17T06:08:05.477Z"
     },
     {
       "id": "san-diego-bids",
       "name": "San Diego Business Improvement Districts",
       "status": "ok",
       "records": 18,
-      "checkedAt": "2026-07-17T05:58:39.919Z"
+      "checkedAt": "2026-07-17T06:08:05.477Z"
     },
     {
       "id": "dc-business-improvement-districts",
       "name": "Washington, DC Business Improvement Districts",
-      "status": "ok",
+      "status": "error",
       "records": 13,
-      "checkedAt": "2026-07-17T05:58:39.919Z"
+      "checkedAt": "2026-07-17T06:08:05.477Z",
+      "error": "HTTP 503",
+      "retainedPrevious": true
     },
     {
       "id": "hartford-business-improvement-district",
       "name": "Hartford Business Improvement District",
       "status": "ok",
       "records": 60,
-      "checkedAt": "2026-07-17T05:58:39.919Z"
+      "checkedAt": "2026-07-17T06:08:05.477Z"
     },
     {
       "id": "baltimore-community-benefit-districts",
       "name": "Baltimore Community Benefits Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-07-17T05:58:39.919Z"
+      "checkedAt": "2026-07-17T06:08:05.477Z"
     },
     {
       "id": "baltimore-downtown-management-district",
       "name": "Baltimore Downtown Management District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-07-17T05:58:39.919Z"
+      "checkedAt": "2026-07-17T06:08:05.477Z"
     },
     {
       "id": "baltimore-legislated-districts",
       "name": "Baltimore Legislated Special Benefits Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-07-17T05:58:39.919Z",
+      "checkedAt": "2026-07-17T06:08:05.477Z",
       "monitorHash": "b0984031d414165f8bbdbe90fbdcfc0e5849b10f8b0b565cc85c014a57f9e454",
       "legislationChanged": false
     }
