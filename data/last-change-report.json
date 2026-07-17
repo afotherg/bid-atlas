@@ -1,11 +1,17 @@
 {
-  "checkedAt": "2026-07-17T17:50:02.351Z",
+  "checkedAt": "2026-07-17T19:15:20.144Z",
   "summary": {
-    "added": 0,
+    "added": 5,
     "modified": 0,
     "removed": 0
   },
-  "added": [],
+  "added": [
+    "hi-honolulu-downtown-honolulu-business-improvement-district",
+    "hi-kailua-kona-kailua-village-business-improvement-district-no-1",
+    "hi-honolulu-waiki-ki-beach-special-improvement-district",
+    "hi-honolulu-waiki-ki-business-improvement-district",
+    "hi-honolulu-waiki-ki-transportation-management-special-improvement-district"
+  ],
   "modified": [],
   "removed": [],
   "sources": [
@@ -14,63 +20,63 @@
       "name": "New York City Business Improvement Districts",
       "status": "ok",
       "records": 76,
-      "checkedAt": "2026-07-17T17:50:02.351Z"
+      "checkedAt": "2026-07-17T19:15:20.144Z"
     },
     {
       "id": "sf-community-benefit-districts",
       "name": "San Francisco Community Benefit Districts",
       "status": "ok",
       "records": 16,
-      "checkedAt": "2026-07-17T17:50:02.351Z"
+      "checkedAt": "2026-07-17T19:15:20.144Z"
     },
     {
       "id": "san-diego-bids",
       "name": "San Diego Business Improvement Districts",
       "status": "ok",
       "records": 18,
-      "checkedAt": "2026-07-17T17:50:02.351Z"
+      "checkedAt": "2026-07-17T19:15:20.144Z"
     },
     {
       "id": "denver-business-improvement-districts",
       "name": "Denver Business Improvement Districts",
       "status": "ok",
       "records": 12,
-      "checkedAt": "2026-07-17T17:50:02.351Z"
+      "checkedAt": "2026-07-17T19:15:20.144Z"
     },
     {
       "id": "dc-business-improvement-districts",
       "name": "Washington, DC Business Improvement Districts",
       "status": "ok",
       "records": 13,
-      "checkedAt": "2026-07-17T17:50:02.351Z"
+      "checkedAt": "2026-07-17T19:15:20.144Z"
     },
     {
       "id": "hartford-business-improvement-district",
       "name": "Hartford Business Improvement District",
       "status": "ok",
       "records": 60,
-      "checkedAt": "2026-07-17T17:50:02.351Z"
+      "checkedAt": "2026-07-17T19:15:20.144Z"
     },
     {
       "id": "baltimore-community-benefit-districts",
       "name": "Baltimore Community Benefits Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-07-17T17:50:02.351Z"
+      "checkedAt": "2026-07-17T19:15:20.144Z"
     },
     {
       "id": "baltimore-downtown-management-district",
       "name": "Baltimore Downtown Management District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-07-17T17:50:02.351Z"
+      "checkedAt": "2026-07-17T19:15:20.144Z"
     },
     {
       "id": "baltimore-legislated-districts",
       "name": "Baltimore Legislated Special Benefits Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-07-17T17:50:02.351Z",
+      "checkedAt": "2026-07-17T19:15:20.144Z",
       "monitorHash": "b0984031d414165f8bbdbe90fbdcfc0e5849b10f8b0b565cc85c014a57f9e454",
       "legislationChanged": false
     },
@@ -79,7 +85,7 @@
       "name": "Florida Verified Business Improvement Districts",
       "status": "ok",
       "records": 5,
-      "checkedAt": "2026-07-17T17:50:02.351Z",
+      "checkedAt": "2026-07-17T19:15:20.144Z",
       "monitorHash": "a845207052b00e4c1ce69312685a0c9ca7726331b71a505d94899a3fbf0ab702",
       "legislationChanged": false
     },
@@ -88,8 +94,17 @@
       "name": "Georgia Verified Business Improvement Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-07-17T17:50:02.351Z",
+      "checkedAt": "2026-07-17T19:15:20.144Z",
       "monitorHash": "06b2142bae85363f91b4315cccfe5fc7fd85bc79a6979fc05334d56553a6fa25",
+      "legislationChanged": false
+    },
+    {
+      "id": "hawaii-verified-business-improvement-districts",
+      "name": "Hawaii Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 5,
+      "checkedAt": "2026-07-17T19:15:20.144Z",
+      "monitorHash": "04d168a80a7f0637f979b9d37155699d3af9f9d4235e41d5bd56a6190c2b55f4",
       "legislationChanged": false
     }
   ]
