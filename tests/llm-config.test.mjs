@@ -14,9 +14,9 @@ test("LLM settings configure model name, endpoint URL, and key", () => {
   });
 });
 
-test("xAI key and Grok defaults configure native web research", () => {
-  assert.deepEqual(getLlmConfig({ XAI_KEY: "xai-test-key" }), {
-    apiKey: "xai-test-key",
+test("LLM key and Grok defaults configure native web research", () => {
+  assert.deepEqual(getLlmConfig({ LLM_API_KEY: "llm-test-key" }), {
+    apiKey: "llm-test-key",
     apiUrl: "https://api.x.ai/v1/responses",
     apiStyle: "responses",
     maxTokens: 4000,
@@ -24,26 +24,6 @@ test("xAI key and Grok defaults configure native web research", () => {
     reasoningEffort: "",
     timeoutMs: 300000,
   });
-});
-
-test("XAI_KEY takes precedence over fallback keys", () => {
-  assert.equal(getLlmConfig({ XAI_KEY: "preferred", LLM_API_KEY: "fallback", OPENAI_API_KEY: "legacy" }).apiKey, "preferred");
-});
-
-test("legacy OpenAI settings remain supported", () => {
-  assert.deepEqual(getLlmConfig({ OPENAI_API_KEY: "legacy-key", OPENAI_API_URL: "https://legacy.example.test/v1/responses", OPENAI_MODEL: "legacy-model" }), {
-    apiKey: "legacy-key",
-    apiUrl: "https://legacy.example.test/v1/responses",
-    apiStyle: "responses",
-    maxTokens: 4000,
-    model: "legacy-model",
-    reasoningEffort: "",
-    timeoutMs: 300000,
-  });
-});
-
-test("LLM settings take precedence over legacy OpenAI settings", () => {
-  assert.equal(getLlmConfig({ LLM_MODEL: "preferred", OPENAI_MODEL: "legacy" }).model, "preferred");
 });
 
 test("a chat-completions base URL is normalized and tolerates an accidental leading equals sign", () => {

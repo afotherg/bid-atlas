@@ -48,15 +48,15 @@ The weekly `state-audit.yml` workflow uses [grok-4.5 with xAI's native web searc
 
 The assistant is intentionally a researcher rather than a publisher. It writes evidence-rich JSON proposals, applies the proposed findings to a temporary branch, and opens a pull request. A person must check the citations and CSV diff before merging. It never adds a district or boundary to the public map automatically.
 
-Configure repository Actions secret `XAI_KEY`. The model and full Responses-compatible endpoint remain configurable through repository variables:
+Configure repository Actions secret `LLM_API_KEY`. The model and full Responses-compatible endpoint remain configurable through repository variables:
 
 - `LLM_MODEL` defaults to `grok-4.5`;
 - `LLM_API_URL` defaults to `https://api.x.ai/v1/responses`;
-- `XAI_KEY` has no default and is always supplied as a secret. `XAI_API_KEY`, `LLM_API_KEY`, and `OPENAI_API_KEY` remain supported as fallbacks.
+- `LLM_API_KEY` has no default and is always supplied as a secret.
 
 Optional runtime controls are `LLM_MAX_TOKENS` (default `4000`), `LLM_TIMEOUT_MS` (default `300000`), and `LLM_REASONING_EFFORT` (unset by default because provider support varies).
 
-The older provider-neutral and OpenAI variable names remain supported as fallbacks. Native web search requires a Responses-compatible endpoint. Without a key the weekly job exits successfully with a setup notice. For a local run:
+Native web search requires a Responses-compatible endpoint. Without `LLM_API_KEY` the weekly job exits successfully with a setup notice. For a local run:
 
 ```bash
 npm run admin:audit:research -- --states=AL,AK --limit=2

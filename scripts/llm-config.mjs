@@ -2,9 +2,9 @@ const defaultApiUrl = "https://api.x.ai/v1/responses";
 const defaultModel = "grok-4.5";
 
 export function getLlmConfig(environment = process.env) {
-  const apiKey = environment.XAI_KEY || environment.XAI_API_KEY || environment.LLM_API_KEY || environment.OPENAI_API_KEY || "";
-  const configuredUrl = environment.LLM_API_URL || environment.OPENAI_API_URL || defaultApiUrl;
-  const model = environment.LLM_MODEL || environment.OPENAI_MODEL || defaultModel;
+  const apiKey = environment.LLM_API_KEY || "";
+  const configuredUrl = environment.LLM_API_URL || defaultApiUrl;
+  const model = environment.LLM_MODEL || defaultModel;
   const maxTokens = Math.max(500, Math.min(16_000, Number(environment.LLM_MAX_TOKENS || 4000)));
   const timeoutMs = Math.max(30_000, Math.min(600_000, Number(environment.LLM_TIMEOUT_MS || 300_000)));
   const reasoningEffort = environment.LLM_REASONING_EFFORT || "";

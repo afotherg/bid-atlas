@@ -36,31 +36,23 @@ jobs:
       - name: Check research credentials
         id: credentials
         env:
-          XAI_KEY: ${{ secrets.XAI_KEY }}
-          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          if [[ -n "$XAI_KEY" || -n "$XAI_API_KEY" || -n "$LLM_API_KEY" || -n "$OPENAI_API_KEY" ]]; then
+          if [[ -n "$LLM_API_KEY" ]]; then
             echo "ready=true" >> "$GITHUB_OUTPUT"
           else
             echo "ready=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::State audit skipped. Add XAI_KEY as a repository Actions secret."
+            echo "::notice::State audit skipped. Add LLM_API_KEY as a repository Actions secret."
           fi
       - name: Research states with Grok web search
         if: steps.credentials.outputs.ready == 'true'
         env:
-          XAI_KEY: ${{ secrets.XAI_KEY }}
-          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_API_URL: ${{ vars.LLM_API_URL || 'https://api.x.ai/v1/responses' }}
           LLM_MODEL: ${{ vars.LLM_MODEL || 'grok-4.5' }}
           LLM_MAX_TOKENS: ${{ vars.LLM_MAX_TOKENS || '4000' }}
           LLM_TIMEOUT_MS: ${{ vars.LLM_TIMEOUT_MS || '300000' }}
           LLM_REASONING_EFFORT: ${{ vars.LLM_REASONING_EFFORT }}
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_API_URL: ${{ vars.OPENAI_API_URL }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           INPUT_STATES: ${{ inputs.states }}
           INPUT_LIMIT: ${{ inputs.limit }}
         run: |

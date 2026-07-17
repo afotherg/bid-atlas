@@ -9,7 +9,7 @@ const args = Object.fromEntries(process.argv.slice(2).map((argument) => {
 const limit = Math.max(1, Math.min(10, Number(args.limit ?? 3)));
 const requestedStates = String(args.states ?? "").toUpperCase().split(",").map((state) => state.trim()).filter(Boolean);
 const llm = getLlmConfig();
-if (!llm.apiKey) throw new Error("XAI_KEY is required. XAI_API_KEY, LLM_API_KEY, and OPENAI_API_KEY remain supported as fallbacks.");
+if (!llm.apiKey) throw new Error("LLM_API_KEY is required.");
 if (llm.apiStyle !== "responses") throw new Error("Native web search requires a Responses API endpoint such as https://api.x.ai/v1/responses.");
 
 const rows = await loadAudit();
