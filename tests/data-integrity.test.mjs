@@ -39,3 +39,18 @@ test("Baltimore publishes its six neighborhood special benefits districts", () =
     assert.ok(latitude > 39 && latitude < 40, `${district.properties.name} is outside Baltimore latitude`);
   }
 });
+
+test("Denver publishes its twelve active business improvement districts", () => {
+  const denver = collection.features.filter((feature) => feature.properties.city === "Denver" && feature.properties.state === "CO");
+  const names = new Set(denver.map((feature) => feature.properties.name));
+  assert.equal(denver.length, 12);
+  assert.ok(names.has("Downtown Denver Business Improvement District"));
+  assert.ok(names.has("RiNo Business Improvement District"));
+  for (const district of denver) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.properties.sourceId, "denver-business-improvement-districts");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -106 && longitude < -104, `${district.properties.name} is outside Denver longitude`);
+    assert.ok(latitude > 39 && latitude < 41, `${district.properties.name} is outside Denver latitude`);
+  }
+});

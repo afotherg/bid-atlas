@@ -55,6 +55,7 @@ const transformCoordinates = (coordinates, sourceCrs) => {
 
 const digest = (value) => createHash("sha256").update(typeof value === "string" ? value : JSON.stringify(value)).digest("hex");
 const slug = (value) => value.toLowerCase().normalize("NFKD").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+const titleCase = (value) => value.toLowerCase().replace(/(^|[\s-])([a-z])/g, (_, separator, letter) => `${separator}${letter.toUpperCase()}`);
 
 function normalize(source, feature) {
   if (!feature?.geometry) return null;
@@ -62,7 +63,7 @@ function normalize(source, feature) {
   const sourceName = source.fixedName ?? valueFor(p, source.fields.name);
   if (!sourceName) return null;
   const override = source.overrides?.[sourceName] ?? {};
-  const name = override.name ?? sourceName;
+  const name = override.name ?? (source.nameTransform === "titleCase" ? titleCase(sourceName) : sourceName);
   const geometry = { ...feature.geometry, coordinates: transformCoordinates(feature.geometry.coordinates, source.sourceCrs) };
   const bounds = coordinateBounds(geometry.coordinates);
   if (!bounds.every(Number.isFinite)) return null;

@@ -58,6 +58,26 @@
     }
   },
   {
+    "id": "denver-business-improvement-districts",
+    "name": "Denver Business Improvement Districts",
+    "jurisdiction": "Denver, CO",
+    "state": "CO",
+    "city": "Denver",
+    "url": "https://services1.arcgis.com/zdB7qR0BtYrg0Xpl/ArcGIS/rest/services/ODC_ADMN_BUSINESSIMPROVDIST_A/FeatureServer/1/query?where=ACTIVE_OR_HISTORIC%3D%27ACTIVE%27&outFields=DISTRICT_NAME%2CACTIVE_OR_HISTORIC&outSR=4326&f=geojson",
+    "landingPage": "https://services1.arcgis.com/zdB7qR0BtYrg0Xpl/ArcGIS/rest/services/ODC_ADMN_BUSINESSIMPROVDIST_A/FeatureServer/1",
+    "publisher": "City and County of Denver",
+    "cadence": "As published",
+    "nameTransform": "titleCase",
+    "fields": {
+      "name": ["DISTRICT_NAME"]
+    },
+    "overrides": {
+      "RINO BUSINESS IMPROVEMENT DISTRICT": {
+        "name": "RiNo Business Improvement District"
+      }
+    }
+  },
+  {
     "id": "dc-business-improvement-districts",
     "name": "Washington, DC Business Improvement Districts",
     "jurisdiction": "Washington, DC",
