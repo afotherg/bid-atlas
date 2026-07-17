@@ -2,6 +2,8 @@
 
 A source-led U.S. Business Improvement District directory with interactive boundaries, record drill-down, official provenance, and automated change detection.
 
+For the complete operational workflow—including state research, human review, source promotion, daily refresh, failure handling, and GitHub Pages deployment—see [BID Atlas data operations](docs/data-operations.md).
+
 ## Run locally
 
 ```bash
