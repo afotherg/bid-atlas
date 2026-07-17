@@ -48,7 +48,13 @@ The weekly `state-audit.yml` workflow uses three [Tavily Search API](https://doc
 
 The assistant is intentionally a researcher rather than a publisher. It writes evidence-rich JSON proposals, applies the proposed findings to a temporary branch, and opens a pull request. A person must check the citations and CSV diff before merging. It never adds a district or boundary to the public map automatically.
 
-Configure repository Actions secrets `TAVILY_API_KEY` and `OPENAI_API_KEY`. Optionally set the repository variable `OPENAI_MODEL`; the default is `gpt-5-mini`. Without both secrets the weekly job exits successfully with a setup notice. For a local run:
+Configure repository Actions secrets `TAVILY_API_KEY` and `LLM_API_KEY`. The model and full Responses-compatible endpoint are repository variables:
+
+- `LLM_MODEL` defaults to `gpt-5-mini`;
+- `LLM_API_URL` defaults to `https://api.openai.com/v1/responses`;
+- `LLM_API_KEY` has no default and is always supplied as a secret.
+
+The older `OPENAI_API_KEY`, `OPENAI_API_URL`, and `OPENAI_MODEL` names remain supported as fallbacks. Without the Tavily and LLM keys the weekly job exits successfully with a setup notice. For a local run:
 
 ```bash
 npm run admin:audit:research -- --states=AL,AK --limit=2

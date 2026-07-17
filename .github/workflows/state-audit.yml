@@ -37,20 +37,25 @@ jobs:
         id: credentials
         env:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          if [[ -n "$TAVILY_API_KEY" && -n "$OPENAI_API_KEY" ]]; then
+          if [[ -n "$TAVILY_API_KEY" && ( -n "$LLM_API_KEY" || -n "$OPENAI_API_KEY" ) ]]; then
             echo "ready=true" >> "$GITHUB_OUTPUT"
           else
             echo "ready=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::State audit skipped. Add TAVILY_API_KEY and OPENAI_API_KEY as repository Actions secrets."
+            echo "::notice::State audit skipped. Add TAVILY_API_KEY and LLM_API_KEY as repository Actions secrets."
           fi
       - name: Research states with Tavily and an LLM
         if: steps.credentials.outputs.ready == 'true'
         env:
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_API_URL: ${{ vars.LLM_API_URL || 'https://api.openai.com/v1/responses' }}
+          LLM_MODEL: ${{ vars.LLM_MODEL || 'gpt-5-mini' }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5-mini' }}
+          OPENAI_API_URL: ${{ vars.OPENAI_API_URL }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
           INPUT_STATES: ${{ inputs.states }}
           INPUT_LIMIT: ${{ inputs.limit }}
         run: |
