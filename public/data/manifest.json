@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-17T07:48:12.755Z",
+  "generatedAt": "2026-07-17T07:50:36.801Z",
   "records": 150,
   "states": [
     "CA",
@@ -31,83 +31,81 @@
       "name": "New York City Business Improvement Districts",
       "status": "ok",
       "records": 76,
-      "checkedAt": "2026-07-17T07:48:12.755Z"
+      "checkedAt": "2026-07-17T07:50:36.801Z"
     },
     {
       "id": "sf-community-benefit-districts",
       "name": "San Francisco Community Benefit Districts",
       "status": "ok",
       "records": 16,
-      "checkedAt": "2026-07-17T07:48:12.755Z"
+      "checkedAt": "2026-07-17T07:50:36.801Z"
     },
     {
       "id": "san-diego-bids",
       "name": "San Diego Business Improvement Districts",
       "status": "ok",
       "records": 18,
-      "checkedAt": "2026-07-17T07:48:12.755Z"
+      "checkedAt": "2026-07-17T07:50:36.801Z"
     },
     {
       "id": "denver-business-improvement-districts",
       "name": "Denver Business Improvement Districts",
-      "status": "error",
+      "status": "ok",
       "records": 12,
-      "checkedAt": "2026-07-17T07:48:12.755Z",
-      "error": "fetch failed",
-      "retainedPrevious": true
+      "checkedAt": "2026-07-17T07:50:36.801Z"
     },
     {
       "id": "dc-business-improvement-districts",
       "name": "Washington, DC Business Improvement Districts",
       "status": "ok",
       "records": 13,
-      "checkedAt": "2026-07-17T07:48:12.755Z"
+      "checkedAt": "2026-07-17T07:50:36.801Z"
     },
     {
       "id": "hartford-business-improvement-district",
       "name": "Hartford Business Improvement District",
       "status": "ok",
       "records": 60,
-      "checkedAt": "2026-07-17T07:48:12.755Z"
+      "checkedAt": "2026-07-17T07:50:36.801Z"
     },
     {
       "id": "baltimore-community-benefit-districts",
       "name": "Baltimore Community Benefits Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-07-17T07:48:12.755Z"
+      "checkedAt": "2026-07-17T07:50:36.801Z"
     },
     {
       "id": "baltimore-downtown-management-district",
       "name": "Baltimore Downtown Management District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-07-17T07:48:12.755Z"
+      "checkedAt": "2026-07-17T07:50:36.801Z"
     },
     {
       "id": "baltimore-legislated-districts",
       "name": "Baltimore Legislated Special Benefits Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-07-17T07:48:12.755Z",
+      "checkedAt": "2026-07-17T07:50:36.801Z",
       "monitorHash": "b0984031d414165f8bbdbe90fbdcfc0e5849b10f8b0b565cc85c014a57f9e454",
       "legislationChanged": false
     },
     {
       "id": "florida-verified-business-improvement-districts",
       "name": "Florida Verified Business Improvement Districts",
-      "status": "review",
+      "status": "ok",
       "records": 5,
-      "checkedAt": "2026-07-17T07:48:12.755Z",
-      "monitorHash": "796600c1d89fd125341367eef74a3f6f5519bc9dd056b1e1dc17be26a791cf86",
-      "legislationChanged": true
+      "checkedAt": "2026-07-17T07:50:36.801Z",
+      "monitorHash": "a845207052b00e4c1ce69312685a0c9ca7726331b71a505d94899a3fbf0ab702",
+      "legislationChanged": false
     },
     {
       "id": "georgia-verified-business-improvement-districts",
       "name": "Georgia Verified Business Improvement Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-07-17T07:48:12.755Z",
+      "checkedAt": "2026-07-17T07:50:36.801Z",
       "monitorHash": "97b6f08a1e53fb9243be1277fee11587dbaab62a1bb4a93067a465c1cc030718",
       "legislationChanged": false
     }
@@ -119,7 +117,7 @@
   },
   "changeSummary": {
     "added": 0,
-    "modified": 17,
+    "modified": 0,
     "removed": 0
   }
 }
