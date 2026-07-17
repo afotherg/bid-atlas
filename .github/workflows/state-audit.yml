@@ -59,23 +59,46 @@ jobs:
           args=("--limit=${INPUT_LIMIT:-3}")
           if [[ -n "$INPUT_STATES" ]]; then args+=("--states=$INPUT_STATES"); fi
           npm run admin:audit:research -- "${args[@]}"
-      - name: Apply findings to the review branch
-        if: steps.credentials.outputs.ready == 'true'
-        run: |
-          states="$(node -e 'const s=require("./data/audit-proposals/_latest-run.json"); process.stdout.write(s.states.join(","))')"
-          npm run admin:audit:apply -- "--state=$states"
-          npm run admin:audit:sync
-      - name: Open a review pull request
+      - name: Open one review pull request per state
         if: steps.credentials.outputs.ready == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          branch="automation/state-audit-${GITHUB_RUN_ID}"
+          set -euo pipefail
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$branch"
-          git add data/state-audit.csv data/audit-proposals
-          git diff --cached --quiet && exit 0
-          git commit -m "audit: propose state BID research"
-          git push --set-upstream origin "$branch"
-          gh pr create --base main --head "$branch" --title "State BID audit research" --body "Automated Grok web-search research proposals. Review every cited source and CSV change before merging. No map source is added automatically."
+          mapfile -t states < <(node -e 'const s=require("./data/audit-proposals/_latest-run.json"); console.log(s.states.join("\n"))')
+
+          for state in "${states[@]}"; do
+            state_lower="${state,,}"
+            branch="automation/state-audit-${state_lower}-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+            worktree="${RUNNER_TEMP}/state-audit-${state_lower}"
+
+            git worktree add -b "$branch" "$worktree" "$GITHUB_SHA"
+            mkdir -p "$worktree/data/audit-proposals"
+            cp "data/audit-proposals/${state}.json" "$worktree/data/audit-proposals/${state}.json"
+
+            (
+              cd "$worktree"
+              npm run admin:audit:apply -- "--state=$state"
+              npm run admin:audit:sync
+              git add data/state-audit.csv "data/audit-proposals/${state}.json"
+
+              if git diff --cached --quiet; then
+                echo "No reviewed audit changes for ${state}; skipping pull request."
+              else
+                git commit -m "audit: propose ${state} BID research"
+                git push --set-upstream origin "$branch"
+                body="Automated Grok web-search research proposal for **${state}**."
+                body+=$'\n\nReview checklist:'
+                body+=$'\n- [ ] Enabling authority and legal terminology are correct.'
+                body+=$'\n- [ ] Named districts are active rather than proposed, expired, or historical.'
+                body+=$'\n- [ ] Candidate sources and claimed boundaries match the cited pages.'
+                body+=$'\n- [ ] Coverage, confidence, notes, and next action are appropriately cautious.'
+                body+=$'\n\nMerging this PR updates the research ledger only. No map source or boundary is added automatically.'
+                gh pr create --base main --head "$branch" --title "[${state}] State BID audit research" --body "$body"
+              fi
+            )
+
+            git worktree remove "$worktree"
+          done

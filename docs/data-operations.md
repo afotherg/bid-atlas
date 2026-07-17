@@ -32,7 +32,6 @@ There are three related but distinct activities:
 | --- | --- | --- |
 | `data/state-audit.csv` | One research-status row for every state and the District of Columbia | No |
 | `data/audit-proposals/{STATE}.json` | Cited LLM research proposal requiring review | No |
-| `data/audit-proposals/_latest-run.json` | States included in the most recent research run | No |
 | `data/candidate-sources.json` | Data.gov discovery leads requiring review | No |
 | `data/sources.json` | Approved source configuration used by the updater | **Yes** |
 | `data/*-verified-bids.geojson` | Human-reviewed local geometry for sources without a reliable live GIS feed | **Yes, when referenced by `data/sources.json`** |
@@ -88,12 +87,15 @@ The research output is intentionally conservative:
 
 ### Generated proposal and review branch
 
-Each result is written to `data/audit-proposals/{STATE}.json`. The workflow then runs `admin:audit:apply` on its temporary branch, which copies the proposed findings into the matching rows of `data/state-audit.csv` and sets the next review date 90 days later.
+Each result is written to `data/audit-proposals/{STATE}.json`. A transient `_latest-run.json` tells the running workflow which states completed, but that coordination file is ignored by Git and is not part of a review.
 
-The workflow opens a pull request containing:
+For each completed state, the workflow creates an independent branch, runs `admin:audit:apply` for that state, and opens a separate pull request containing:
 
-- the detailed proposal JSON;
-- the proposed `data/state-audit.csv` changes.
+- that state's detailed proposal JSON;
+- only that state's proposed `data/state-audit.csv` row change;
+- a state-specific human-review checklist.
+
+States from the same research run can therefore be corrected, rejected, or merged independently.
 
 It does **not** modify `data/sources.json`, add geometry, or publish a map record.
 
@@ -108,7 +110,7 @@ Before merging an audit pull request, an administrator should verify:
 5. Candidate boundary links contain the claimed district and are not unrelated GIS layers.
 6. `coverage_status`, `confidence`, `next_action`, and notes accurately describe what remains unknown.
 
-Merging the pull request updates the national research ledger. It still does not add anything to the public map.
+Merging a state pull request updates that state's entry in the national research ledger. It still does not add anything to the public map.
 
 ## How audit output reaches the map
 
