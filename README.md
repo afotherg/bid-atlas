@@ -54,6 +54,8 @@ Configure repository Actions secrets `TAVILY_API_KEY` and `LLM_API_KEY`. The mod
 - `LLM_API_URL` defaults to `https://api.openai.com/v1/responses`. A full `/responses` URL uses Structured Outputs; an OpenAI-compatible base URL such as `https://integrate.api.nvidia.com/v1` is normalized to `/chat/completions` and its JSON result is validated locally;
 - `LLM_API_KEY` has no default and is always supplied as a secret.
 
+Optional runtime controls are `LLM_MAX_TOKENS` (default `4000`), `LLM_TIMEOUT_MS` (default `300000`), and `LLM_REASONING_EFFORT` (unset by default because provider support varies).
+
 The older `OPENAI_API_KEY`, `OPENAI_API_URL`, and `OPENAI_MODEL` names remain supported as fallbacks. Without the Tavily and LLM keys the weekly job exits successfully with a setup notice. For a local run:
 
 ```bash

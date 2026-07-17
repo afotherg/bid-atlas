@@ -53,6 +53,9 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_API_URL: ${{ vars.LLM_API_URL || 'https://api.openai.com/v1/responses' }}
           LLM_MODEL: ${{ vars.LLM_MODEL || 'gpt-5-mini' }}
+          LLM_MAX_TOKENS: ${{ vars.LLM_MAX_TOKENS || '4000' }}
+          LLM_TIMEOUT_MS: ${{ vars.LLM_TIMEOUT_MS || '300000' }}
+          LLM_REASONING_EFFORT: ${{ vars.LLM_REASONING_EFFORT }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_URL: ${{ vars.OPENAI_API_URL }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}

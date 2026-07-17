@@ -107,14 +107,15 @@ async function analyze(row, evidence) {
       { role: "user", content: `Return only one JSON object matching this JSON Schema exactly. Do not use Markdown fences.\n\nJSON Schema:\n${JSON.stringify(schema)}\n\nResearch input:\n${researchInput}` },
     ],
     temperature: 0.1,
-    max_tokens: 6000,
+    max_tokens: llm.maxTokens,
     stream: false,
+    ...(llm.reasoningEffort ? { reasoning_effort: llm.reasoningEffort } : {}),
   };
   const response = await fetch(llm.apiUrl, {
     method: "POST",
     headers: { authorization: `Bearer ${llm.apiKey}`, "content-type": "application/json" },
     body: JSON.stringify(body),
-    signal: AbortSignal.timeout(120_000),
+    signal: AbortSignal.timeout(llm.timeoutMs),
   });
   if (!response.ok) throw new Error(`LLM analysis failed: HTTP ${response.status} ${await response.text()}`);
   return parseFinding(responseText(await response.json()));

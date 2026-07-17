@@ -7,7 +7,10 @@ test("LLM settings configure model name, endpoint URL, and key", () => {
     apiKey: "test-key",
     apiUrl: "https://llm.example.test/responses",
     apiStyle: "responses",
+    maxTokens: 4000,
     model: "research-model",
+    reasoningEffort: "",
+    timeoutMs: 300000,
   });
 });
 
@@ -16,7 +19,10 @@ test("legacy OpenAI settings remain supported", () => {
     apiKey: "legacy-key",
     apiUrl: "https://legacy.example.test/v1/responses",
     apiStyle: "responses",
+    maxTokens: 4000,
     model: "legacy-model",
+    reasoningEffort: "",
+    timeoutMs: 300000,
   });
 });
 
@@ -29,6 +35,16 @@ test("a chat-completions base URL is normalized and tolerates an accidental lead
     apiKey: "",
     apiUrl: "https://integrate.api.nvidia.com/v1/chat/completions",
     apiStyle: "chat_completions",
+    maxTokens: 4000,
     model: "nvidia/model",
+    reasoningEffort: "",
+    timeoutMs: 300000,
   });
+});
+
+test("LLM runtime controls are configurable and bounded", () => {
+  const config = getLlmConfig({ LLM_MAX_TOKENS: "2500", LLM_TIMEOUT_MS: "180000", LLM_REASONING_EFFORT: "none" });
+  assert.equal(config.maxTokens, 2500);
+  assert.equal(config.timeoutMs, 180000);
+  assert.equal(config.reasoningEffort, "none");
 });
