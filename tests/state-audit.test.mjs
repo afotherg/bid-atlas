@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { loadAudit, parseCsv, stringifyCsv } from "../scripts/state-audit-lib.mjs";
+import { loadAudit, parseCsv, stringifyCsv, validateAuditRows } from "../scripts/state-audit-lib.mjs";
 
 const audit = await loadAudit(new URL("../data/state-audit.csv", import.meta.url));
 const sources = JSON.parse(await readFile(new URL("../data/sources.json", import.meta.url), "utf8"));
@@ -22,4 +22,8 @@ test("state audit map counts reconcile with configured sources and published rec
 
 test("state audit preserves quoted fields through a CSV round trip", () => {
   assert.deepEqual(parseCsv(stringifyCsv(audit)), audit);
+});
+
+test("state audit writes reject duplicate jurisdictions", () => {
+  assert.throws(() => validateAuditRows([audit[0], audit[0]]), /duplicate state code/);
 });

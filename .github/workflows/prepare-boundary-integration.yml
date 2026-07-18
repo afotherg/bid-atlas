@@ -67,6 +67,11 @@ jobs:
             echo "LLM_API_KEY is required for boundary integration." >&2
             exit 1
           fi
+      - name: Apply approved audit proposal to the current ledger
+        if: steps.state.outputs.skip != 'true'
+        run: |
+          npm run admin:audit:apply -- "--state=${{ steps.state.outputs.state }}"
+          npm run admin:audit:sync
       - name: Research and prepare safe boundary imports
         if: steps.state.outputs.skip != 'true'
         env:

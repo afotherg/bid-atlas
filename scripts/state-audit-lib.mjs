@@ -67,6 +67,17 @@ export async function loadAudit(file = "data/state-audit.csv") {
   return parseCsv(await readFile(file, "utf8"));
 }
 
+export function validateAuditRows(rows) {
+  const seen = new Set();
+  for (const [index, row] of rows.entries()) {
+    if (!/^[A-Z]{2}$/.test(row.state_code ?? "")) throw new Error(`Audit row ${index + 1} has an invalid state code.`);
+    if (seen.has(row.state_code)) throw new Error(`Audit contains duplicate state code ${row.state_code}.`);
+    seen.add(row.state_code);
+  }
+  return rows;
+}
+
 export async function saveAudit(rows, file = "data/state-audit.csv") {
+  validateAuditRows(rows);
   await writeFile(file, stringifyCsv(rows));
 }
