@@ -1,11 +1,15 @@
 {
-  "checkedAt": "2026-07-18T14:32:04.984Z",
+  "checkedAt": "2026-07-18T15:36:38.792Z",
   "summary": {
-    "added": 0,
+    "added": 3,
     "modified": 0,
     "removed": 0
   },
-  "added": [],
+  "added": [
+    "id-boise-downtown-boise-business-improvement-district",
+    "id-idaho-falls-idaho-falls-downtown-business-improvement-district",
+    "id-nampa-nampa-business-improvement-district-no-2"
+  ],
   "modified": [],
   "removed": [],
   "sources": [
@@ -99,6 +103,15 @@
       "records": 5,
       "checkedAt": "2026-07-18T14:32:04.984Z",
       "monitorHash": "04d168a80a7f0637f979b9d37155699d3af9f9d4235e41d5bd56a6190c2b55f4",
+      "legislationChanged": false
+    },
+    {
+      "id": "idaho-verified-business-improvement-districts",
+      "name": "Idaho Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-18T15:36:38.792Z",
+      "monitorHash": "502a6c6159204c9d652028ab9e1fe9dc3e835fa6ded539aa06a7286032b9949b",
       "legislationChanged": false
     },
     {

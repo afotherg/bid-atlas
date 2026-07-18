@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-18T14:32:04.984Z",
-  "records": 156,
+  "generatedAt": "2026-07-18T15:36:38.792Z",
+  "records": 159,
   "states": [
     "CA",
     "CO",
@@ -9,20 +9,24 @@
     "FL",
     "GA",
     "HI",
+    "ID",
     "MD",
     "NY",
     "WA"
   ],
   "cities": [
     "Baltimore, MD",
+    "Boise, ID",
     "Columbus, GA",
     "Denver, CO",
     "Hartford, CT",
     "Honolulu, HI",
+    "Idaho Falls, ID",
     "Kailua-Kona, HI",
     "Macon, GA",
     "Miami Beach, FL",
     "Miami, FL",
+    "Nampa, ID",
     "New York, NY",
     "Rome, GA",
     "San Diego, CA",
@@ -124,6 +128,15 @@
       "legislationChanged": false
     },
     {
+      "id": "idaho-verified-business-improvement-districts",
+      "name": "Idaho Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-18T15:36:38.792Z",
+      "monitorHash": "502a6c6159204c9d652028ab9e1fe9dc3e835fa6ded539aa06a7286032b9949b",
+      "legislationChanged": false
+    },
+    {
       "id": "washington-automated-business-improvement-districts",
       "name": "Washington Automated Business Improvement District Candidates",
       "status": "review",
@@ -134,12 +147,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 15,
-    "configuredSources": 13,
+    "verifiedJurisdictions": 18,
+    "configuredSources": 14,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 0,
+    "added": 3,
     "modified": 0,
     "removed": 0
   }

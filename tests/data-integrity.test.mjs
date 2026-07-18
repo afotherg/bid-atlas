@@ -103,3 +103,21 @@ test("Hawaii publishes its five verified business improvement districts", () => 
     assert.ok(latitude > 18 && latitude < 22, `${district.properties.name} is outside Hawaii latitude`);
   }
 });
+
+test("Idaho publishes its three verified business improvement districts", () => {
+  const idaho = collection.features.filter((feature) => feature.properties.state === "ID");
+  const names = new Set(idaho.map((feature) => feature.properties.name));
+  assert.equal(idaho.length, 3);
+  for (const name of [
+    "Downtown Boise Business Improvement District",
+    "Nampa Business Improvement District No. 2",
+    "Idaho Falls Downtown Business Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of idaho) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.properties.sourceId, "idaho-verified-business-improvement-districts");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -118 && longitude < -111, `${district.properties.name} is outside Idaho longitude`);
+    assert.ok(latitude > 41 && latitude < 50, `${district.properties.name} is outside Idaho latitude`);
+  }
+});
