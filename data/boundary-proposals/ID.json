@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-07-18T15:03:44.820Z",
+  "review_required": true,
+  "state_code": "ID",
+  "state_name": "Idaho",
+  "model": "grok-4.5",
+  "source_audit_proposal": "data/audit-proposals/ID.json",
+  "imported_feature_count": 0,
+  "source_id": "",
+  "plan": {
+    "state_code": "ID",
+    "statewide_assessment": "Research started from approved audit; enabling statutes confirmed (Title 50 Ch. 26 BIDs; narrow §50-1703A). No statewide registry located. Systematically verifying each candidate district for current activity via official city/district pages/ordinances and searching municipal GIS/ArcGIS/Open Data portals plus broader web for boundaries and any omitted active BIDs (e.g., Twin Falls, Moscow, Meridian, others). Boundaries preferentially validated as current polygon FeatureServer/MapServer or GeoJSON; PDFs/images/parcel lists flagged manual_review. Draft only; all items remain review_required.",
+    "districts": [],
+    "manual_next_steps": [
+      "Begin detailed per-district verification"
+    ]
+  },
+  "decisions": [],
+  "evidence": []
+}
