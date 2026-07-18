@@ -82,3 +82,24 @@ test("Georgia publishes its three verified city business improvement districts",
     assert.equal(district.properties.sourceId, "georgia-verified-business-improvement-districts");
   }
 });
+
+test("Hawaii publishes its five verified business improvement districts", () => {
+  const hawaii = collection.features.filter((feature) => feature.properties.state === "HI");
+  const names = new Set(hawaii.map((feature) => feature.properties.name));
+  assert.equal(hawaii.length, 5);
+  for (const name of [
+    "Waikīkī Business Improvement District",
+    "Downtown Honolulu Business Improvement District",
+    "Waikīkī Beach Special Improvement District",
+    "Waikīkī Transportation Management Special Improvement District",
+    "Kailua Village Business Improvement District No. 1",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  assert.deepEqual(new Set(hawaii.map((feature) => feature.properties.city)), new Set(["Honolulu", "Kailua-Kona"]));
+  for (const district of hawaii) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.properties.sourceId, "hawaii-verified-business-improvement-districts");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -159 && longitude < -155, `${district.properties.name} is outside Hawaii longitude`);
+    assert.ok(latitude > 18 && latitude < 22, `${district.properties.name} is outside Hawaii latitude`);
+  }
+});

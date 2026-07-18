@@ -1,0 +1,287 @@
+{
+  "researched_at": "2026-07-17T21:49:22.135Z",
+  "review_required": true,
+  "model": "grok-4.5",
+  "api_style": "responses",
+  "search_provider": "xai_web_search",
+  "queries": [
+    "Massachusetts official state law business improvement district BID enabling statute special services district",
+    "Massachusetts official government list business improvement districts downtown improvement districts",
+    "Massachusetts city open data GIS business improvement district boundary GeoJSON ArcGIS"
+  ],
+  "finding": {
+    "state_code": "MA",
+    "audit_status": "in_progress",
+    "authority_status": "verified",
+    "local_terms": [
+      "Business Improvement District",
+      "BID"
+    ],
+    "enabling_authority_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40O",
+    "statewide_registry_status": "not_located",
+    "statewide_registry_url": "",
+    "candidate_local_sources": [
+      {
+        "name": "Business Improvement Districts (BID) program page",
+        "jurisdiction": "Statewide (EOED / Mass.gov)",
+        "url": "https://www.mass.gov/info-details/business-improvement-districts-bid",
+        "publisher": "Commonwealth of Massachusetts / Executive Office of Economic Development",
+        "source_type": "official_list",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "2020 Revised Business Improvement District Manual / Guide for Establishing BIDs",
+        "jurisdiction": "Statewide",
+        "url": "https://www.mass.gov/doc/2020-revised-business-improvement-district-manual-0/download",
+        "publisher": "Massachusetts Downtown Initiative / DHCD (now EOED-related)",
+        "source_type": "law",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "District Management Toolkit (examples of BIDs)",
+        "jurisdiction": "Statewide",
+        "url": "https://www.mass.gov/doc/district-management-toolkit/download",
+        "publisher": "Commonwealth of Massachusetts",
+        "source_type": "other",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "Amherst Business Improvement District",
+        "jurisdiction": "Amherst",
+        "url": "https://www.amherstdowntown.com/",
+        "publisher": "Amherst BID",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Amherst Town GIS / BID references",
+        "jurisdiction": "Amherst",
+        "url": "https://gis.data.mass.gov/search?collection=dataset&layout=grid&tags=amherst",
+        "publisher": "Town of Amherst / MassGIS Data Hub",
+        "source_type": "gis",
+        "has_boundaries": true,
+        "confidence": "medium"
+      },
+      {
+        "name": "Downtown Boston Alliance (formerly Downtown Boston BID)",
+        "jurisdiction": "Boston",
+        "url": "https://www.downtownboston.org/",
+        "publisher": "Downtown Boston Alliance",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Greenway Business Improvement District",
+        "jurisdiction": "Boston",
+        "url": "https://www.abettercity.org/our-work/greenway-bid",
+        "publisher": "A Better City / Rose Kennedy Greenway",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Newmarket Business Improvement District",
+        "jurisdiction": "Boston",
+        "url": "https://newmarketbid.org/",
+        "publisher": "Newmarket BID",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Central Square Business Improvement District",
+        "jurisdiction": "Cambridge",
+        "url": "https://www.centralsq.org/",
+        "publisher": "Central Square BID",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Hyannis Main Street Business Improvement District",
+        "jurisdiction": "Barnstable (Hyannis)",
+        "url": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/",
+        "publisher": "Hyannis Main Street BID",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Downtown Hudson Business Improvement District",
+        "jurisdiction": "Hudson",
+        "url": "https://www.discoverhudson.org/about",
+        "publisher": "Hudson BID",
+        "source_type": "district_site",
+        "has_boundaries": false,
+        "confidence": "high"
+      },
+      {
+        "name": "Springfield Business Improvement District",
+        "jurisdiction": "Springfield",
+        "url": "https://springfielddowntown.com/",
+        "publisher": "Springfield BID",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Downtown Worcester Business Improvement District",
+        "jurisdiction": "Worcester",
+        "url": "https://www.discovercentralma.org/listing/downtown-worcester-business-improvement-district/201/",
+        "publisher": "Downtown Worcester BID / Discover Central MA",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Taunton Business Improvement District / Downtown Taunton Foundation",
+        "jurisdiction": "Taunton",
+        "url": "https://downtowntaunton.org/",
+        "publisher": "Downtown Taunton Foundation / Taunton BID",
+        "source_type": "district_site",
+        "has_boundaries": true,
+        "confidence": "high"
+      },
+      {
+        "name": "Edgartown Business Improvement District Public Map",
+        "jurisdiction": "Edgartown",
+        "url": "https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c",
+        "publisher": "Town of Edgartown / ArcGIS",
+        "source_type": "gis",
+        "has_boundaries": true,
+        "confidence": "medium"
+      },
+      {
+        "name": "Approved Vacant Storefront Districts (notes BID boundary overlaps e.g. Taunton)",
+        "jurisdiction": "Statewide",
+        "url": "https://www.mass.gov/info-details/approved-vacant-storefront-districts",
+        "publisher": "Commonwealth of Massachusetts",
+        "source_type": "other",
+        "has_boundaries": false,
+        "confidence": "medium"
+      }
+    ],
+    "coverage_status": "partial",
+    "confidence": "medium",
+    "next_action": "Contact EOED BID staff (elizabeth.hahn@mass.gov) for any internal inventory of petitions/established BIDs; systematically check remaining municipalities and MassGIS/open data portals for additional boundary layers; verify status of Edgartown/Athol and any post-2024 formations; cross-check municipal ordinances and assessor data for complete local coverage.",
+    "notes": "Enabling statute is M.G.L. c. 40O (Business Improvement Districts), enacted ~1994; BIDs are contiguous areas ≥75% commercial/industrial/retail/mixed-use, formed by petition of ≥60% of property owners representing ≥51% assessed valuation, local hearing/approval, and filing with EOED. Official Mass.gov page and manual confirm process and that petitions are forwarded to EOED for technical assistance/compliance, but no public statewide registry, inventory, or GIS layer of all BIDs was located (failed searches are not proof of absence). Local term is consistently 'Business Improvement District' or 'BID'; distinguish carefully from Cultural Districts (Mass Cultural Council), Parking Benefit Districts, Tourism Destination Marketing Districts (TDMDs), District Improvement Financing (DIF), historic districts, and voluntary Main Street-style organizations (toolkit explicitly separates these). Known/operating examples (from official toolkit, case studies, district sites, and secondary confirmations such as ~10-11 total cited in Hyannis/New Bedford sources) include: Downtown Boston (Alliance), Greenway BID (Boston), Newmarket (Boston), Amherst, Central Square (Cambridge), Hyannis Main Street, Hudson, Springfield, Worcester, Taunton; Edgartown has public ArcGIS BID boundary (status may be active/proposed). No statewide map/GeoJSON found; local GIS/boundaries available for several. Secondary analyses (e.g. MassINC) use MassGIS parcels to examine select BIDs. Coverage remains partial pending authoritative full list or exhaustive municipal sweep.",
+    "evidence_urls": [
+      "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40O",
+      "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40O/Section1",
+      "https://www.mass.gov/info-details/business-improvement-districts-bid",
+      "https://www.mass.gov/doc/2020-revised-business-improvement-district-manual-0/download",
+      "https://www.mass.gov/doc/district-management-toolkit/download",
+      "https://www.massdevelopment.com/products-and-services/real-estate/planning/business-improvement-district",
+      "https://www.mass.gov/info-details/approved-vacant-storefront-districts",
+      "https://www.amherstdowntown.com/",
+      "https://www.downtownboston.org/",
+      "https://www.abettercity.org/our-work/greenway-bid",
+      "https://newmarketbid.org/",
+      "https://www.centralsq.org/",
+      "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/",
+      "https://www.discoverhudson.org/about",
+      "https://springfielddowntown.com/",
+      "https://downtowntaunton.org/",
+      "https://gis.data.mass.gov/search?collection=dataset&layout=grid&tags=amherst",
+      "https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c",
+      "https://www.abettercity.org/assets/images/2%20page%20version%20of%20BID%20Highlights%204.25.pdf",
+      "https://newbedfordlight.org/backers-pull-the-plug-on-downtown-business-district/",
+      "https://massinc.org/wp-content/uploads/2024/06/Downtown-Vitality-Report.pdf"
+    ]
+  },
+  "evidence": [
+    {
+      "title": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40O/Section1",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40O/Section1"
+    },
+    {
+      "title": "https://www.mass.gov/info-details/business-improvement-districts-bid",
+      "url": "https://www.mass.gov/info-details/business-improvement-districts-bid"
+    },
+    {
+      "title": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/",
+      "url": "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/"
+    },
+    {
+      "title": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40O",
+      "url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40O"
+    },
+    {
+      "title": "https://www.abettercity.org/assets/images/2%20page%20version%20of%20BID%20Highlights%204.25.pdf",
+      "url": "https://www.abettercity.org/assets/images/2%20page%20version%20of%20BID%20Highlights%204.25.pdf"
+    },
+    {
+      "title": "https://springfielddowntown.com/",
+      "url": "https://springfielddowntown.com/"
+    },
+    {
+      "title": "https://www.massdevelopment.com/products-and-services/real-estate/planning/business-improvement-district",
+      "url": "https://www.massdevelopment.com/products-and-services/real-estate/planning/business-improvement-district"
+    },
+    {
+      "title": "https://www.centralsq.org/",
+      "url": "https://www.centralsq.org/"
+    },
+    {
+      "title": "https://newmarketbid.org/",
+      "url": "https://newmarketbid.org/"
+    },
+    {
+      "title": "https://www.discovercentralma.org/listing/downtown-worcester-business-improvement-district/201/",
+      "url": "https://www.discovercentralma.org/listing/downtown-worcester-business-improvement-district/201/"
+    },
+    {
+      "title": "https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c",
+      "url": "https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c"
+    },
+    {
+      "title": "https://gis.data.mass.gov/search?collection=dataset&layout=grid&tags=amherst",
+      "url": "https://gis.data.mass.gov/search?collection=dataset&layout=grid&tags=amherst"
+    },
+    {
+      "title": "https://massinc.org/wp-content/uploads/2024/06/Downtown-Vitality-Report.pdf",
+      "url": "https://massinc.org/wp-content/uploads/2024/06/Downtown-Vitality-Report.pdf"
+    },
+    {
+      "title": "https://www.mass.gov/doc/district-management-toolkit/download",
+      "url": "https://www.mass.gov/doc/district-management-toolkit/download"
+    },
+    {
+      "title": "https://www.mass.gov/info-details/approved-vacant-storefront-districts",
+      "url": "https://www.mass.gov/info-details/approved-vacant-storefront-districts"
+    },
+    {
+      "title": "https://www.amherstdowntown.com/",
+      "url": "https://www.amherstdowntown.com/"
+    },
+    {
+      "title": "https://www.abettercity.org/our-work/greenway-bid",
+      "url": "https://www.abettercity.org/our-work/greenway-bid"
+    },
+    {
+      "title": "https://www.discoverhudson.org/about",
+      "url": "https://www.discoverhudson.org/about"
+    },
+    {
+      "title": "https://newbedfordlight.org/backers-pull-the-plug-on-downtown-business-district/",
+      "url": "https://newbedfordlight.org/backers-pull-the-plug-on-downtown-business-district/"
+    },
+    {
+      "title": "https://www.downtownboston.org/",
+      "url": "https://www.downtownboston.org/"
+    },
+    {
+      "title": "https://downtowntaunton.org/",
+      "url": "https://downtowntaunton.org/"
+    },
+    {
+      "title": "https://www.mass.gov/doc/2020-revised-business-improvement-district-manual-0/download",
+      "url": "https://www.mass.gov/doc/2020-revised-business-improvement-district-manual-0/download"
+    }
+  ]
+}

@@ -28,7 +28,7 @@ For districts whose authoritative boundaries are published only in legislation, 
 
 `npm run admin:discover` searches the federal Data.gov catalog for candidate BID/CBD resources and writes `data/candidate-sources.json`. Candidates require human verification before they are added to `data/sources.json`; this prevents unrelated special districts from entering the public map.
 
-The included GitHub Actions workflow runs discovery and refresh daily, commits verified changes, and can also be run manually. Add authoritative feeds as they are verified. There is currently no authoritative nationwide U.S. registry, so the UI reports exact covered jurisdictions rather than claiming false completeness.
+The scheduled GitHub Actions workflow runs discovery and refresh daily and commits verified changes. A separate deployment workflow publishes GitHub Pages after pushes to `main`, after the scheduled refresh completes, or when started manually. Add authoritative feeds as they are verified. There is currently no authoritative nationwide U.S. registry, so the UI reports exact covered jurisdictions rather than claiming false completeness.
 
 ## State-by-state audit
 
