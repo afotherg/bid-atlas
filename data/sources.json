@@ -353,6 +353,38 @@
     }
   },
   {
+    "id": "idaho-verified-business-improvement-districts",
+    "name": "Idaho Verified Business Improvement Districts",
+    "jurisdiction": "Idaho",
+    "state": "ID",
+    "file": "data/idaho-verified-bids.geojson",
+    "landingPage": "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/",
+    "publisher": "Idaho municipalities and district associations",
+    "cadence": "Official status pages, maps, ordinances, and GIS monitored daily; map-derived boundaries require human review when source records change",
+    "monitorUrls": [
+      "https://downtownboise.org/about/business-improvement-district",
+      "https://img.ctykit.com/cdn/id-boise/images/dba-and-associate-member-boundary-map-2023-01.png",
+      "https://www.cityofnampa.us/1253/Business-Improvement-District",
+      "https://utility.arcgis.com/usrsvcs/servers/2591f9318efd43789140e257b6444eda/rest/services/Public/NampaOpenData/MapServer/3/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+      "https://downtownidahofalls.com/about-us/business-improvement-district/",
+      "https://downtownidahofalls.com/media/rylma0fg/business-improvement-district-boundary-v2-2.png",
+      "https://downtownidahofalls.com/media/fsanaq02/final-bid-management-agreement_feb-2026.pdf",
+      "https://www.cityofcaldwell.org/Business/Business-Improvement-District-Information",
+      "https://www.cityofcaldwell.org/files/assets/city/v/1/finance/documents/2023-bid-boundary-map.pdf",
+      "https://www.cityoflewiston.org/661/Business-Improvement-District",
+      "https://www.cityoflewiston.org/DocumentCenter/View/2596/Insert-for-BID-Assessment-Notices-1"
+    ],
+    "fields": {
+      "name": ["name"],
+      "city": ["city"],
+      "website": ["website"],
+      "sourceUrl": ["sourceUrl"],
+      "established": ["established"],
+      "area": ["area"],
+      "status": ["status"]
+    }
+  },
+  {
     "id": "washington-automated-business-improvement-districts",
     "name": "Washington Automated Business Improvement District Candidates",
     "jurisdiction": "Washington",

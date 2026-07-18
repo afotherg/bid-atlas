@@ -1,0 +1,92 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Boise Business Improvement District",
+        "city": "Boise",
+        "website": "https://downtownboise.org/about/business-improvement-district",
+        "sourceUrl": "https://img.ctykit.com/cdn/id-boise/images/dba-and-associate-member-boundary-map-2023-01.png",
+        "established": "1987 (current boundary established by Ordinance 6870)",
+        "area": "Generalized from the Downtown Boise Association's current boundary map and street-boundary description; human map review required",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-116.206441, 43.621678],
+          [-116.197017, 43.616891],
+          [-116.201584, 43.612147],
+          [-116.202627, 43.612861],
+          [-116.204069, 43.611374],
+          [-116.211759, 43.616202],
+          [-116.210833, 43.617081],
+          [-116.206441, 43.621678]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nampa Business Improvement District No. 2",
+        "city": "Nampa",
+        "website": "https://www.cityofnampa.us/1253/Business-Improvement-District",
+        "sourceUrl": "https://utility.arcgis.com/usrsvcs/servers/2591f9318efd43789140e257b6444eda/rest/services/Public/NampaOpenData/MapServer/3/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+        "established": "Ordinance 1946",
+        "area": "Exact polygon imported from the City of Nampa's official GIS layer",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-116.56046153502035, 43.5805850056203],
+          [-116.56382375655808, 43.577961436922124],
+          [-116.56379609781229, 43.577942748543968],
+          [-116.56280518406467, 43.577270660081247],
+          [-116.56214257545933, 43.576826113725694],
+          [-116.56065915748952, 43.575816041711157],
+          [-116.56027355300249, 43.575553508385546],
+          [-116.55928765341697, 43.576310629220522],
+          [-116.55907036808766, 43.576162695272068],
+          [-116.55868106955973, 43.575905670720672],
+          [-116.55865300350067, 43.575886608623399],
+          [-116.55728720308672, 43.576940406364592],
+          [-116.55708003002121, 43.577103226133957],
+          [-116.55666306788284, 43.576822040180666],
+          [-116.55586135226777, 43.577451139754366],
+          [-116.56046153502035, 43.5805850056203]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Idaho Falls Downtown Business Improvement District",
+        "city": "Idaho Falls",
+        "website": "https://downtownidahofalls.com/about-us/business-improvement-district/",
+        "sourceUrl": "https://downtownidahofalls.com/media/rylma0fg/business-improvement-district-boundary-v2-2.png",
+        "established": "Ordinance 3125",
+        "area": "Generalized from the district's current published boundary map; human map review required",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-112.040353, 43.497195],
+          [-112.038133, 43.496110],
+          [-112.038786, 43.495246],
+          [-112.037660, 43.494785],
+          [-112.038279, 43.493973],
+          [-112.036878, 43.493236],
+          [-112.037513, 43.492338],
+          [-112.038854, 43.489898],
+          [-112.039207, 43.490166],
+          [-112.042596, 43.492224],
+          [-112.043161, 43.493616],
+          [-112.040353, 43.497195]
+        ]]
+      }
+    }
+  ]
+}
