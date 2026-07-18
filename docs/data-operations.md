@@ -94,11 +94,12 @@ The research output is intentionally conservative:
 
 Each result is written to `data/audit-proposals/{STATE}.json`. A transient `_latest-run.json` tells the running workflow which states completed, but that coordination file is ignored by Git and is not part of a review.
 
-For each completed state, the workflow creates an independent branch, runs `admin:audit:apply` for that state, and opens a separate pull request containing:
+For each completed state, the workflow creates an independent branch and opens a separate pull request containing only:
 
 - that state's detailed proposal JSON;
-- only that state's proposed `data/state-audit.csv` row change;
 - a state-specific human-review checklist.
+
+The audit PR deliberately does not rewrite `data/state-audit.csv`. Multiple state PRs may remain open while `main` changes; carrying a complete CSV from each branch could otherwise revert another state's later work or introduce duplicate rows during conflict resolution.
 
 States from the same research run can therefore be corrected, rejected, or merged independently.
 
@@ -115,7 +116,7 @@ Before merging an audit pull request, an administrator should verify:
 5. Candidate boundary links contain the claimed district and are not unrelated GIS layers.
 6. `coverage_status`, `confidence`, `next_action`, and notes accurately describe what remains unknown.
 
-Merging a state pull request updates that state's entry in the national research ledger. It still does not add anything to the public map.
+Merging a state pull request approves its research proposal. The boundary workflow then checks out current `main`, applies only that proposal to the national research ledger, and synchronizes map counts. It still does not add anything to the public map without the second review.
 
 ## How audit output reaches the map
 
@@ -123,11 +124,11 @@ The `Prepare reviewed state BID boundaries` workflow runs after a pull request c
 
 The boundary agent:
 
-1. Reads the human-approved audit proposal.
+1. Applies the human-approved proposal to the latest `data/state-audit.csv`, rejecting duplicate jurisdiction rows, and synchronizes current map counts.
 2. Uses the configured Responses API model and native web search to assess each named district's current legal status separately from boundary availability.
-3. Classifies the best boundary as ArcGIS Feature Layer, ArcGIS Web Map, GeoJSON, PDF, image, parcel list, or unavailable.
-4. Applies deterministic gates after the LLM finishes. Automatic import requires verified-active status, high confidence, an explicit `auto_import` recommendation, a cited status URL, and a directly downloadable polygon source.
-5. Rejects candidates containing proposed, draft, historical, expired, dissolved, or inactive language. ArcGIS Web Maps are inspected and their BID-named child layers are checked again before querying geometry.
+3. Classifies the best boundary as ArcGIS Feature Layer, ArcGIS Web Map, GeoJSON, PDF, image, parcel list, or unavailable, then performs a targeted web-search repair pass for verified-active districts lacking a high-confidence machine source.
+4. Resolves ArcGIS Hub and item pages to their underlying REST layers, selects the named district from shared layers, and merges multipart features belonging to the same district.
+5. Applies deterministic gates after the LLM finishes. Automatic draft import requires verified-active status, high confidence, cited status and boundary URLs, and a machine-readable polygon source. Proposed, historical, expired, dissolved, or inactive candidates remain excluded.
 6. Validates non-empty polygon geometry and plausible state bounds.
 7. Writes `data/boundary-proposals/{STATE}.json`. If any candidate passed every gate, it also prepares a state GeoJSON file, source configuration, generated map data, and synchronized counts.
 8. Runs the full test suite and opens a **draft** state-boundary pull request.

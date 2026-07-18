@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   applyMachineBoundaryRepairs,
+  arcgisGeojsonQueryUrl,
   arcgisItemId,
   arcgisLayerId,
   automaticCandidateDecision,
@@ -66,6 +67,14 @@ test("ArcGIS Web Map helpers identify BID layers and item IDs", () => {
     { title: "Group", layers: [{ title: "Business Improvement District Boundary", url: "https://example.gov/bid" }] },
   ]);
   assert.deepEqual(layers.map((layer) => layer.url), ["https://example.gov/bid"]);
+});
+
+test("ArcGIS monitoring uses the query endpoint rather than a protected layer page", () => {
+  const query = new URL(arcgisGeojsonQueryUrl("https://utility.arcgis.com/example/MapServer/3"));
+  assert.equal(query.pathname, "/example/MapServer/3/query");
+  assert.equal(query.searchParams.get("where"), "1=1");
+  assert.equal(query.searchParams.get("returnGeometry"), "true");
+  assert.equal(query.searchParams.get("f"), "geojson");
 });
 
 test("ArcGIS Hub datasets resolve through item metadata to a feature layer", async () => {

@@ -256,13 +256,18 @@ export function selectDistrictBoundary(collection, districtName) {
   throw new Error(`Boundary layer has ${collection.features.length} unlabeled features and cannot be assigned safely to "${districtName}".`);
 }
 
-export async function fetchArcgisGeojson(layerUrl, fetcher = fetch) {
+export function arcgisGeojsonQueryUrl(layerUrl) {
   const query = new URL(`${String(layerUrl).replace(/\/+$/, "")}/query`);
   query.searchParams.set("where", "1=1");
   query.searchParams.set("outFields", "*");
   query.searchParams.set("returnGeometry", "true");
   query.searchParams.set("outSR", "4326");
   query.searchParams.set("f", "geojson");
+  return query.toString();
+}
+
+export async function fetchArcgisGeojson(layerUrl, fetcher = fetch) {
+  const query = arcgisGeojsonQueryUrl(layerUrl);
   const response = await fetcher(query, { headers: { "user-agent": "BID-Atlas-Boundary-Agent/1.0" }, signal: AbortSignal.timeout(45_000) });
   if (!response.ok) throw new Error(`ArcGIS layer query returned HTTP ${response.status}.`);
   return validateBoundaryCollection(await response.json());

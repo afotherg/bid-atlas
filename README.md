@@ -48,7 +48,7 @@ Run `npm run admin:audit:sync` after changing map sources or district data to re
 
 The weekly `state-audit.yml` workflow uses [grok-4.5 with xAI's native web search](https://docs.x.ai/developers/tools/web-search) and structured output. In one grounded research call per state it searches for enabling law, official registries, and official GIS boundaries. The model may only cite URLs returned by the API's web-search citations; the script filters unsupported URLs after generation.
 
-The assistant is intentionally a researcher rather than a publisher. It writes evidence-rich JSON proposals and opens one pull request per state, with only that state's proposal and audit-ledger row. A person must check the citations and CSV diff before merging. It never adds a district or boundary to the public map automatically.
+The assistant is intentionally a researcher rather than a publisher. It writes evidence-rich JSON proposals and opens one pull request per state containing only that state's proposal. After approval, the boundary workflow applies the proposal to the latest audit ledger and includes that row change in the separate draft boundary PR. This prevents older state branches from overwriting newer ledger work. A person must check both review stages before any boundary reaches the public map.
 
 Configure repository Actions secret `LLM_API_KEY`. The model and full Responses-compatible endpoint remain configurable through repository variables:
 

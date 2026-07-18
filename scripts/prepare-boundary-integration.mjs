@@ -3,6 +3,7 @@ import { getLlmConfig } from "./llm-config.mjs";
 import { loadAudit } from "./state-audit-lib.mjs";
 import {
   applyMachineBoundaryRepairs,
+  arcgisGeojsonQueryUrl,
   automaticCandidateDecision,
   fetchArcgisGeojson,
   hasBlockingStatusLanguage,
@@ -233,7 +234,10 @@ for (const district of plan.districts) {
         geometry: feature.geometry,
       });
     }
-    importedCandidates.push({ ...district, resolvedBoundaryUrl });
+    const resolvedMonitorUrl = new Set(["arcgis_feature_layer", "arcgis_web_map"]).has(district.boundary_source_type)
+      ? arcgisGeojsonQueryUrl(resolvedBoundaryUrl)
+      : resolvedBoundaryUrl;
+    importedCandidates.push({ ...district, resolvedBoundaryUrl, resolvedMonitorUrl });
     decisions.push({ name: district.name, result: "imported_for_review", reason: decision.reason, boundaryUrl: resolvedBoundaryUrl, featureCount: collection.features.length });
   } catch (error) {
     decisions.push({ name: district.name, result: "blocked", reason: String(error.message ?? error) });
@@ -247,7 +251,7 @@ if (imported.length) {
   await writeFile(geojsonPath, `${JSON.stringify({ type: "FeatureCollection", features: imported }, null, 2)}\n`);
   sourceId = `${auditRow.state_name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-automated-business-improvement-districts`;
   const sources = JSON.parse(await readFile("data/sources.json", "utf8"));
-  const monitorUrls = [...new Set(importedCandidates.flatMap((district) => [district.status_url, district.boundary_source_url, district.resolvedBoundaryUrl]).map(normalizeUrl).filter(Boolean))];
+  const monitorUrls = [...new Set(importedCandidates.flatMap((district) => [district.status_url, district.boundary_source_url, district.resolvedMonitorUrl]).map(normalizeUrl).filter(Boolean))];
   const source = {
     id: sourceId,
     name: `${auditRow.state_name} Automated Business Improvement District Candidates`,
