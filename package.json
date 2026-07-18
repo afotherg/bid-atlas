@@ -12,18 +12,13 @@
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "test": "PAGES_BASE_PATH=/ PUBLIC_SITE_URL=https://bid-atlas.fothergill.com PAGES_CUSTOM_DOMAIN=bid-atlas.fothergill.com npm run build:pages && node --test tests/*.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
-    "db:generate": "drizzle-kit generate",
     "admin:update": "node scripts/update-bids.mjs",
     "admin:discover": "node scripts/discover-sources.mjs",
-    "admin:audit:sync": "node scripts/sync-state-audit.mjs",
-    "admin:audit:research": "node scripts/audit-states.mjs",
-    "admin:audit:apply": "node scripts/apply-state-audit-proposal.mjs",
-    "admin:boundaries:prepare": "node scripts/prepare-boundary-integration.mjs"
+    "admin:audit:sync": "node scripts/sync-state-audit.mjs"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",
     "@types/proj4": "^2.5.6",
-    "drizzle-orm": "0.45.2",
     "leaflet": "^1.9.4",
     "next": "16.2.6",
     "proj4": "^2.20.9",
@@ -38,7 +33,6 @@
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.2",
     "@vitejs/plugin-rsc": "0.5.26",
-    "drizzle-kit": "0.31.10",
     "eslint": "9.39.4",
     "eslint-config-next": "16.2.6",
     "react-server-dom-webpack": "19.2.6",

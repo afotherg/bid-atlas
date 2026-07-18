@@ -1,255 +1,102 @@
 # BID Atlas data operations
 
-This document explains how BID Atlas researches national coverage, promotes verified districts into the map, refreshes published data, and deploys the site.
+This document explains the current production workflow for researching coverage, publishing verified districts, refreshing approved data, and deploying the site.
 
-The system deliberately separates **research** from **publication**. An LLM may identify laws, registries, district websites, and possible boundary sources, but it cannot publish a district by itself. A person must verify and approve every published source through a boundary review pull request.
+The production process is deliberately deterministic. State research and new boundary creation require human review; scheduled jobs only refresh sources that have already been approved.
 
 ## End-to-end flow
 
 ```mermaid
 flowchart LR
-  A["Weekly state audit<br/>Grok + web search"] --> B["Review proposal JSON"]
-  B --> C["State audit CSV<br/>research ledger"]
-  B --> D["Merged audit PR starts<br/>boundary integration agent"]
-  D --> E{"Machine-readable, active,<br/>authoritative boundary?"}
-  E -->|"No"| F["Draft PR documents<br/>manual work or exclusion"]
-  E -->|"Yes"| G["Draft PR with source config<br/>and candidate GeoJSON"]
-  F --> H{"Human boundary review"}
-  G --> H
-  H -->|"Approved and merged"| I["Published source configuration"]
-  I --> J["Daily updater<br/>fetch, normalize, validate, compare"]
-  J --> K["public/data/bids.geojson<br/>public/data/manifest.json"]
-  K --> L["Static site build"]
-  L --> M["GitHub Pages<br/>bid-atlas.fothergill.com"]
-  J --> N["Synchronize map counts<br/>back into state-audit.csv"]
+  A["Manual state research"] --> B["State audit CSV"]
+  A --> C{"Active district and authoritative boundary verified?"}
+  C -->|"No"| D["Record the gap and next action"]
+  C -->|"Yes"| E["Add reviewed source configuration and geometry"]
+  E --> F["Daily updater: fetch, validate, compare"]
+  F --> G["Published GeoJSON and manifest"]
+  G --> H["GitHub Pages build and deployment"]
+  F --> I["Synchronize map counts into the audit"]
 ```
-
-There are three related but distinct activities:
-
-1. **State audit:** finds and documents possible coverage using an LLM and cited web research.
-2. **Source promotion:** an agent prepares candidate sources and boundaries in a draft PR; a human verifies and merges them.
-3. **Daily refresh:** deterministically updates already-approved sources and deploys the site. It does not use an LLM.
 
 ## Systems of record
 
 | File | Purpose | Public map input? |
 | --- | --- | --- |
-| `data/state-audit.csv` | One research-status row for every state and the District of Columbia | No |
-| `data/audit-proposals/{STATE}.json` | Cited LLM research proposal requiring review | No |
-| `data/candidate-sources.json` | Data.gov discovery leads requiring review | No |
+| `data/state-audit.csv` | Research status for every state and the District of Columbia | No |
+| `data/candidate-sources.json` | Data.gov discovery leads requiring human review | No |
 | `data/sources.json` | Approved source configuration used by the updater | **Yes** |
-| `data/boundary-proposals/{STATE}.json` | LLM boundary/status assessment, deterministic gate decisions, and manual follow-up | No |
-| `data/*-verified-bids.geojson`, `data/*-automated-bids.geojson` | Human-reviewed local geometry; automated candidates do not become approved until their draft PR is merged | **Yes, when referenced by `data/sources.json`** |
-| `public/data/bids.geojson` | Generated, normalized map features | **Yes; loaded by the website** |
-| `public/data/manifest.json` | Generated counts, source health, freshness, and change summary | **Yes; loaded by the website** |
-| `data/last-change-report.json` | Generated detailed added/modified/removed record report | Administrative only |
+| `data/*-verified-bids.geojson`, `data/*-automated-bids.geojson` | Reviewed local geometry referenced by an approved source | **Yes** |
+| `public/data/bids.geojson` | Generated normalized district features | **Yes** |
+| `public/data/manifest.json` | Generated counts, source health, freshness, and change summary | **Yes** |
+| `public/coverage.html` | Generated public view of the state audit | **Yes** |
+| `data/last-change-report.json` | Generated additions, removals, and modifications | Administrative only |
 
-The website loads `public/data/bids.geojson` and `public/data/manifest.json`. It does not load audit proposals or `data/state-audit.csv`.
+## Manual state research
 
-## State-audit process
+For each state:
 
-### Schedule and configuration
+1. Verify the enabling statute and locally used terms.
+2. Look for an authoritative statewide registry. A failed search is not evidence that no BID exists.
+3. Identify active districts using current municipal records, assessment records, ordinances, official district pages, and government GIS.
+4. Distinguish BIDs and defensible legal equivalents from unrelated redevelopment, zoning, residential, tourism, and infrastructure districts.
+5. Record known sources, confidence, gaps, and the next action in `data/state-audit.csv`.
+6. Run `npm run admin:audit:sync` after changing published sources or geometry so map counts remain accurate.
 
-The `Research state BID coverage` workflow is defined in `.github/workflows/state-audit.yml`.
+The coverage page is regenerated from the CSV during every build. Known but unmapped districts therefore remain visible without implying that an unverified boundary is publishable.
 
-- Scheduled every Monday at `14:41 UTC`.
-- Can be started manually with an optional comma-separated list of state codes and a maximum-state limit.
-- Defaults to three states per run.
-- Uses the `LLM_API_KEY` GitHub Actions secret.
-- Uses configurable `LLM_API_URL`, `LLM_MODEL`, `LLM_MAX_TOKENS`, `LLM_TIMEOUT_MS`, and `LLM_REASONING_EFFORT` repository variables.
-- The current defaults are the xAI Responses endpoint and `grok-4.5`.
+## Adding a district
 
-If no states are specified, `scripts/audit-states.mjs` selects incomplete audit rows. Unresearched or overdue rows are considered first, followed by the least recently researched rows.
+A district may be added only after a person confirms that it is active and that the proposed geometry represents its legal or officially published boundary.
 
-### What the model researches
+1. Prefer an official GeoJSON or ArcGIS polygon endpoint.
+2. If only an ordinance, PDF, image, or parcel list exists, document how the geometry was derived and label generalized boundaries honestly.
+3. Add the reviewed GeoJSON file when local geometry is required.
+4. Add an entry to `data/sources.json`, including the official landing page, publisher, field mapping, and monitoring URLs.
+5. Run `npm run admin:update` for the new source.
+6. Run `npm run admin:audit:sync`.
+7. Run `npm test` and visually compare the published overlay with the authoritative source before committing to `main`.
 
-For each selected state, the script asks the model to investigate three areas:
+## Daily refresh
 
-1. State enabling law and locally used legal terms.
-2. State or local government lists and registries.
-3. Official GIS, open-data, ordinance, and boundary sources.
+`Refresh BID Atlas data` in `.github/workflows/refresh-bid-data.yml` runs daily at `13:17 UTC`.
 
-The xAI Responses API performs native web searches during the research call. The model returns structured JSON containing:
+The workflow:
 
-- authority and registry status;
-- applicable local terms such as BID, Special Service Area, or Special Improvement District;
-- candidate local sources and whether they appear to contain boundaries;
-- coverage and confidence assessments;
-- recommended next action and research notes;
-- URLs used as evidence.
+1. Runs `npm run admin:discover` to update Data.gov research leads.
+2. Runs `npm run admin:update` to refresh every approved source.
+3. Runs `npm run admin:audit:sync` to synchronize published counts.
+4. Commits generated changes directly to `main`.
 
-### Research guardrails
+The updater fingerprints attributes and geometry. If a source fails, returns no usable features, or has a changed monitoring document, it retains the last good published records and records an `error` or `review` status rather than silently removing the district.
 
-The research output is intentionally conservative:
+## GitHub Pages deployment
 
-- Search results are treated as untrusted content.
-- Government statutes, registries, GIS, ordinances, and official district pages are preferred.
-- A failed search is not treated as proof that no BID exists.
-- Similarly named but legally unrelated districts must be excluded.
-- A state is not marked complete unless authoritative statewide coverage is demonstrated.
-- Every URL retained in a proposal must appear in the API's returned web-search citations. Unsupported URLs and candidate sources are removed.
-- Proposals are always marked `review_required: true`.
+`Deploy BID Atlas to GitHub Pages` in `.github/workflows/update-and-deploy-pages.yml` runs on every push to `main`, after a successful scheduled refresh, or when started manually.
 
-### Generated proposal and review branch
+The build:
 
-Each result is written to `data/audit-proposals/{STATE}.json`. A transient `_latest-run.json` tells the running workflow which states completed, but that coordination file is ignored by Git and is not part of a review.
+- generates `public/coverage.html` from the state audit;
+- renders the application and copies static assets;
+- writes `.nojekyll` and the custom-domain `CNAME`;
+- validates asset paths;
+- deploys `dist/pages` to GitHub Pages.
 
-For each completed state, the workflow creates an independent branch and opens a separate pull request containing only:
-
-- that state's detailed proposal JSON;
-- a state-specific human-review checklist.
-
-The audit PR deliberately does not rewrite `data/state-audit.csv`. Multiple state PRs may remain open while `main` changes; carrying a complete CSV from each branch could otherwise revert another state's later work or introduce duplicate rows during conflict resolution.
-
-States from the same research run can therefore be corrected, rejected, or merged independently.
-
-It does **not** itself modify `data/sources.json`, add geometry, or publish a map record. Merging it starts the separate guarded boundary-integration workflow.
-
-### Human review checklist
-
-Before merging an audit pull request, an administrator should verify:
-
-1. The cited law is current and actually authorizes a BID or a defensible legal equivalent.
-2. Each named district is active, not merely proposed, historical, or expired.
-3. Similarly named redevelopment, zoning, tourism, residential, or infrastructure districts are excluded unless they function as the project's defined BID equivalent.
-4. Registry and district counts are supported by current primary sources.
-5. Candidate boundary links contain the claimed district and are not unrelated GIS layers.
-6. `coverage_status`, `confidence`, `next_action`, and notes accurately describe what remains unknown.
-
-Merging a state pull request approves its research proposal. The boundary workflow then checks out current `main`, applies only that proposal to the national research ledger, and synchronizes map counts. It still does not add anything to the public map without the second review.
-
-## How audit output reaches the map
-
-The `Prepare reviewed state BID boundaries` workflow runs after a pull request containing exactly one `data/audit-proposals/{STATE}.json` file is merged. It can also be started manually for a state already present on `main`.
-
-The boundary agent:
-
-1. Applies the human-approved proposal to the latest `data/state-audit.csv`, rejecting duplicate jurisdiction rows, and synchronizes current map counts.
-2. Uses the configured Responses API model and native web search to assess each named district's current legal status separately from boundary availability.
-3. Classifies the best boundary as ArcGIS Feature Layer, ArcGIS Web Map, GeoJSON, PDF, image, parcel list, or unavailable, then performs a targeted web-search repair pass for verified-active districts lacking a high-confidence machine source.
-4. Resolves ArcGIS Hub and item pages to their underlying REST layers, selects the named district from shared layers, and merges multipart features belonging to the same district.
-5. Applies deterministic gates after the LLM finishes. Automatic draft import requires verified-active status, high confidence, cited status and boundary URLs, and a machine-readable polygon source. Proposed, historical, expired, dissolved, or inactive candidates remain excluded.
-6. Validates non-empty polygon geometry and plausible state bounds.
-7. Writes `data/boundary-proposals/{STATE}.json`. If any candidate passed every gate, it also prepares a state GeoJSON file, source configuration, generated map data, and synchronized counts.
-8. Runs the full test suite and opens a **draft** state-boundary pull request.
-
-PDF maps, images, legal descriptions, and parcel lists are deliberately marked for manual work in the first version. The report still creates a useful draft PR explaining what blocked automatic import and what evidence is needed next.
-
-The administrator reviews the second PR against the official source, checks the district drill-down and map overlay, corrects or removes questionable records, and only then marks the PR ready and merges it. Merging this boundary PR is the publication decision. The daily updater subsequently monitors every approved source.
-
-This guarded bridge prevents an LLM mistake, an ambiguous district name, or an approximate boundary from becoming public data automatically.
-
-## Daily refresh and deployment
-
-### Triggers
-
-The responsibilities are split between two workflows:
-
-- `Refresh BID Atlas data` in `.github/workflows/refresh-bid-data.yml` runs only on the daily cron schedule at `13:17 UTC`;
-- `Deploy BID Atlas to GitHub Pages` in `.github/workflows/update-and-deploy-pages.yml` runs after every push to `main`, after a successful scheduled refresh, or when started manually.
-
-Each workflow uses its own non-cancelling concurrency group so refreshes and deployments do not overwrite another run of the same responsibility.
-
-### Step 1: discover possible new public datasets
-
-`npm run admin:discover` searches the federal Data.gov catalog for BID and community-benefit-district datasets. It writes `data/candidate-sources.json`.
-
-These are only discovery leads. They are not fetched by the map updater until a person verifies them and adds an approved entry to `data/sources.json`.
-
-### Step 2: refresh approved sources
-
-`npm run admin:update` reads every entry in `data/sources.json`.
-
-For a live GIS source, it:
-
-- downloads the official GeoJSON or ArcGIS query result;
-- maps provider-specific fields to the common BID schema;
-- converts configured source coordinate systems to WGS84 longitude/latitude;
-- calculates bounds and a map center;
-- assigns a stable ID based on state, city, and district name;
-- fingerprints attributes and geometry for change detection.
-
-For a reviewed repository GeoJSON, it:
-
-- reads the local geometry;
-- downloads every configured official monitoring document;
-- hashes those documents;
-- marks the source `review` when the documents change, while retaining the last reviewed geometry.
-
-Features with the same stable ID are combined into a multipolygon. The final features are sorted consistently.
-
-### Step 3: handle changes and failures safely
-
-The updater compares new record hashes with the previous published file and reports added, modified, and removed IDs.
-
-If a source cannot be downloaded, returns no usable features, or has a failed monitoring document:
-
-- the source is marked `error` in the manifest;
-- the last successfully published records for that source are retained;
-- an empty or partial response does not silently erase the district from the map.
-
-The updater exits non-zero if any source failed. The workflow deliberately continues so it can publish the retained last-good data and expose the unhealthy source in the manifest. Operators should still investigate every `error` or `review` status.
-
-### Step 4: generate published data
-
-The updater writes:
-
-- `public/data/bids.geojson`: all normalized district records and boundaries;
-- `public/data/manifest.json`: source health, record/state/city counts, generation time, and change summary;
-- `data/last-change-report.json`: detailed added, modified, and removed IDs plus per-source results.
-
-### Step 5: synchronize the audit ledger
-
-`npm run admin:audit:sync` counts configured sources and generated map records by state and writes those numbers into `data/state-audit.csv`.
-
-This is the only automatic connection from published data back to the audit ledger. It updates `map_source_count` and `map_record_count`; it does not change research conclusions or promote candidate sources.
-
-### Step 6: commit generated data
-
-If any generated files changed, the refresh workflow creates a `data: refresh BID directory` commit and pushes it to `main`. It includes:
-
-- public map data and manifest;
-- the change report;
-- Data.gov discovery candidates;
-- synchronized audit counts.
-
-GitHub does not start a new push workflow for a commit made with the repository's `GITHUB_TOKEN`. Instead, successful completion of the scheduled refresh directly triggers the separate deployment workflow. The deployment therefore runs whether or not the refresh produced a commit.
-
-### Step 7: build and deploy GitHub Pages
-
-The site is built as a static GitHub Pages artifact. The export process:
-
-- renders the application;
-- copies browser assets and generated data;
-- writes `.nojekyll`;
-- writes the `CNAME` for `bid-atlas.fothergill.com`;
-- checks for invalid asset paths.
-
-GitHub's Pages deployment action then publishes the artifact. Ordinary pushes deploy the repository as committed without running discovery or source updates. Visitors subsequently load the generated GeoJSON and manifest from the deployed site.
+The custom domain is `bid-atlas.fothergill.com`. GitHub Pages must use **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 
 ## Normal operator commands
 
 ```bash
-# Research specific states locally using .env
-node --env-file=.env scripts/audit-states.mjs --states=IN,IA,KS --limit=3
-
-# After reviewing proposal JSON, apply selected findings to the CSV
-npm run admin:audit:apply -- --state=IN,IA,KS
-
-# Prepare a guarded draft boundary integration using .env
-npm run admin:boundaries:prepare -- --state=MA
-
-# Refresh source and record counts in the CSV
-npm run admin:audit:sync
-
-# Discover Data.gov leads
+# Discover public-data leads
 npm run admin:discover
 
-# Refresh all approved map sources
+# Refresh all approved sources
 npm run admin:update
 
-# Refresh only one newly configured source, retaining all other published records exactly
-npm run admin:update -- --sources=massachusetts-automated-business-improvement-districts
+# Refresh only one approved source
+npm run admin:update -- --sources=idaho-verified-business-improvement-districts
+
+# Synchronize source and record counts in the state audit
+npm run admin:audit:sync
 
 # Build the site and run the complete test suite
 npm test
@@ -257,13 +104,12 @@ npm test
 
 ## Operational checks
 
-After a daily refresh or manual deployment, verify:
+After a refresh or deployment, verify:
 
-1. The workflow and GitHub Pages deployment completed.
+1. The refresh and GitHub Pages workflows completed successfully.
 2. Every source in `public/data/manifest.json` is `ok`, or an understood `review` state is awaiting action.
-3. Any source marked `error` retained its previous records and has an actionable error message.
-4. `data/last-change-report.json` contains plausible additions, modifications, and removals.
-5. Large count changes are reconciled with the publisher before being accepted as real.
-6. Newly integrated boundaries are visually checked on the live map against their official source.
+3. Failed sources retained their previous records and expose an actionable error.
+4. Count changes in `data/last-change-report.json` are plausible and supported by the publisher.
+5. Newly added boundaries match their authoritative source on the live map.
 
-The daily job keeps approved sources fresh. The state audit expands and measures coverage. Human verification is the controlled handoff between those two responsibilities.
+The retired experimental AI state-research and boundary-generation implementation is preserved on the `codex/ai-bid-automation-archive` branch.

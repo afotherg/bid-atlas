@@ -2,7 +2,7 @@
 
 A source-led U.S. Business Improvement District directory with interactive boundaries, record drill-down, official provenance, and automated change detection.
 
-For the complete operational workflow—including state research, human review, source promotion, daily refresh, failure handling, and GitHub Pages deployment—see [BID Atlas data operations](docs/data-operations.md).
+For the complete operational workflow—including manual state research, source promotion, daily refresh, failure handling, and GitHub Pages deployment—see [BID Atlas data operations](docs/data-operations.md).
 
 ## Run locally
 
@@ -44,29 +44,7 @@ An empty state is recorded as `not_started`, never as proof that no BID exists. 
 
 Run `npm run admin:audit:sync` after changing map sources or district data to refresh the two map-count columns.
 
-### Intelligent audit assistant
-
-The weekly `state-audit.yml` workflow uses [grok-4.5 with xAI's native web search](https://docs.x.ai/developers/tools/web-search) and structured output. In one grounded research call per state it searches for enabling law, official registries, and official GIS boundaries. The model may only cite URLs returned by the API's web-search citations; the script filters unsupported URLs after generation.
-
-The assistant is intentionally a researcher rather than a publisher. It writes evidence-rich JSON proposals and opens one pull request per state containing only that state's proposal. After approval, the boundary workflow applies the proposal to the latest audit ledger and includes that row change in the separate draft boundary PR. This prevents older state branches from overwriting newer ledger work. A person must check both review stages before any boundary reaches the public map.
-
-Configure repository Actions secret `LLM_API_KEY`. The model and full Responses-compatible endpoint remain configurable through repository variables:
-
-- `LLM_MODEL` defaults to `grok-4.5`;
-- `LLM_API_URL` defaults to `https://api.x.ai/v1/responses`;
-- `LLM_API_KEY` has no default and is always supplied as a secret.
-
-Optional runtime controls are `LLM_MAX_TOKENS` (default `4000`), `LLM_TIMEOUT_MS` (default `300000`), and `LLM_REASONING_EFFORT` (unset by default because provider support varies).
-
-Native web search requires a Responses-compatible endpoint. Without `LLM_API_KEY` the weekly job exits successfully with a setup notice. For a local run:
-
-```bash
-npm run admin:audit:research -- --states=AL,AK --limit=2
-npm run admin:audit:apply -- --state=AL,AK
-npm run admin:audit:sync
-```
-
-The apply command is explicit so an administrator can inspect `data/audit-proposals/*.json` first. The CSV remains the reviewed source of truth; proposal files are an audit trail.
+State research and boundary creation are currently manual. Record supported findings directly in `data/state-audit.csv`; add a district to the map only after verifying its active status and boundary against authoritative sources. The former experimental AI research and boundary-generation pipeline is preserved on the `codex/ai-bid-automation-archive` branch for possible future work.
 
 ## GitHub Pages deployment
 

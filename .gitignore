@@ -41,5 +41,5 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
-/data/audit-proposals/_latest-run.json
-/data/boundary-proposals/_latest-run.json
+/data/audit-proposals/
+/data/boundary-proposals/
