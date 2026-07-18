@@ -1,0 +1,1127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="State-by-state BID Atlas coverage audit, including mapped districts, known candidates, official sources, and unresolved research.">
+  <title>State Coverage Audit · BID Atlas</title>
+  <style>
+    :root{--ink:#17211c;--paper:#f4f0e7;--cream:#e9e1d2;--orange:#ee5a34;--gold:#e8b543;--green:#29493b;--line:rgba(23,33,28,.18)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,sans-serif}a{color:inherit}.topbar{min-height:66px;padding:0 4vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:rgba(244,240,231,.96);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.brand{text-decoration:none;display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:-.03em}.brand b{color:var(--orange)}.brand-mark{width:28px;height:34px;display:grid;place-items:center;color:var(--paper);background:var(--ink);border-radius:15px 15px 3px 15px;font-family:Georgia,serif;font-size:20px}.back-link{font-size:12px;font-weight:800;text-underline-offset:4px}
+    .hero{padding:64px 7vw 54px;background:var(--green);color:#f6f0e3}.kicker{font-size:11px;letter-spacing:.18em;font-weight:800;color:#d8bc7b;margin:0 0 14px}.hero h1{max-width:900px;margin:0;font-family:Georgia,serif;font-weight:400;font-size:clamp(44px,7vw,82px);line-height:.95;letter-spacing:-.055em}.hero p{max-width:760px;color:#d2d9d4;font-size:16px;line-height:1.65}.summary{display:flex;flex-wrap:wrap;gap:28px;margin-top:34px;padding-top:28px;border-top:1px solid rgba(255,255,255,.2)}.summary div{display:grid;gap:3px}.summary strong{font-family:Georgia,serif;color:#fff;font-size:30px;font-weight:400}.summary span{color:#b9c7bf;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+    .controls{position:sticky;top:66px;z-index:9;display:grid;grid-template-columns:1fr 220px;gap:12px;padding:16px 7vw;background:rgba(244,240,231,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}.controls label{display:grid;gap:5px;color:#68746d;font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}.controls input,.controls select{width:100%;min-height:44px;border:1px solid var(--line);border-radius:8px;background:#fff;padding:0 13px;color:var(--ink);font:inherit}.controls input:focus,.controls select:focus{outline:2px solid var(--orange);outline-offset:1px}.result-note{grid-column:1/-1;margin:0;color:#69756e;font-size:11px}
+    .content{padding:34px 7vw 80px}.intro{max-width:850px;margin:0 0 30px;color:#526059;font-size:14px;line-height:1.65}.state-list{display:grid;gap:18px}.state-card{background:#fffdf8;border:1px solid var(--line);border-radius:12px;padding:24px;box-shadow:0 8px 24px rgba(23,33,28,.04)}.state-card[hidden]{display:none}.state-card>header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:1px solid var(--line)}.state-card>header>div{display:flex;align-items:center;gap:12px}.state-code{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;font-size:11px;font-weight:900;letter-spacing:.08em}.state-card h2{margin:0;font-family:Georgia,serif;font-size:28px;font-weight:400}.status{border:1px solid var(--line);border-radius:20px;padding:6px 9px;font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase}.status-complete{background:#e7f4eb;color:#24633d}.status-in_progress{background:#fff4d8;color:#7a5313}.status-not_started{background:#efeee9;color:#66716b}.metrics{display:grid;grid-template-columns:repeat(4,1fr);margin:18px 0;border:1px solid var(--line)}.metrics div{min-height:72px;padding:12px;border-right:1px solid var(--line)}.metrics div:last-child{border:0}.metrics strong{display:block;font-size:14px;text-transform:capitalize}.metrics span{display:block;margin-top:5px;color:#78847e;font-size:9px;letter-spacing:.07em;text-transform:uppercase}.authority-links{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px}.authority-links a,.authority-links span{border-radius:6px;background:#f3eee3;padding:8px 10px;color:#59665f;font-size:10px;font-weight:700;text-decoration:none}.authority-links a{text-decoration:underline;text-underline-offset:3px}.state-card section{margin-top:20px}.state-card h3{margin:0 0 8px;color:#68746d;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.state-card h3 span{display:inline-grid;place-items:center;min-width:20px;height:20px;margin-left:5px;border-radius:10px;background:var(--cream);color:var(--ink)}.state-card p,.source-list{margin:0;color:#4f5d55;font-size:12px;line-height:1.6}.source-list{padding-left:18px}.source-list li+li{margin-top:7px}.source-list a,.state-card p a{color:#9b421f;overflow-wrap:anywhere;text-underline-offset:3px}.empty{font-style:italic;color:#7a847f!important}.next-step{border-left:3px solid var(--gold);padding:3px 0 3px 14px}.state-card>footer{display:flex;justify-content:space-between;gap:20px;margin-top:22px;padding-top:14px;border-top:1px solid var(--line);color:#78847e;font-size:9px;text-transform:uppercase;letter-spacing:.06em}.page-footer{min-height:90px;padding:25px 7vw;background:#14231c;color:#cbd3ce;display:flex;justify-content:space-between;align-items:center;gap:30px;font-size:11px}.page-footer a{color:#e5b653;text-underline-offset:3px}
+    @media(max-width:700px){.topbar{min-height:58px;padding:0 16px}.hero{padding:42px 20px}.hero h1{font-size:42px}.hero p{font-size:13px}.summary{gap:20px}.summary strong{font-size:24px}.controls{top:58px;grid-template-columns:1fr;padding:12px 16px}.content{padding:24px 16px 60px}.state-card{padding:18px}.state-card>header{align-items:flex-start}.state-card h2{font-size:23px}.metrics{grid-template-columns:1fr 1fr}.metrics div:nth-child(2){border-right:0}.metrics div:nth-child(-n+2){border-bottom:1px solid var(--line)}.state-card>footer,.page-footer{align-items:flex-start;flex-direction:column}.page-footer{gap:8px}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./"><span class="brand-mark">B</span><span>BID <b>ATLAS</b></span></a><a class="back-link" href="./">← Return to map</a></header>
+  <main>
+    <section class="hero">
+      <p class="kicker">NATIONAL COVERAGE AUDIT</p>
+      <h1>What we know—and what remains unresolved.</h1>
+      <p>This page exposes the working state audit behind BID Atlas. Known districts and official local sources are included even when a boundary is not yet reliable enough to publish on the map. A blank state is not evidence that no BID exists.</p>
+      <div class="summary"><div><strong>51</strong><span>states and DC</span></div><div><strong>13</strong><span>research started</span></div><div><strong>11</strong><span>states mapped</span></div><div><strong>159</strong><span>districts mapped</span></div><div><strong>77</strong><span>known source leads</span></div></div>
+    </section>
+    <section class="controls" aria-label="Coverage audit filters">
+      <label>Search states, districts, and notes<input id="coverage-search" type="search" placeholder="Try Idaho, Caldwell, SSA, or statewide registry"></label>
+      <label>Audit status<select id="coverage-status"><option value="ALL">All statuses</option><option value="complete">Complete</option><option value="in_progress">In progress</option><option value="not_started">Not started</option></select></label>
+      <p class="result-note" id="result-note">Showing all 51 jurisdictions.</p>
+    </section>
+    <section class="content">
+      <p class="intro">“Known” means the source has been recorded as a research lead or verified input; it does not automatically mean the district is active or its boundary is publishable. Each state card states the current determination and the next human or automated research step.</p>
+      <div class="state-list" id="state-list"><article class="state-card" data-audit="not_started" data-search="al alabama   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">AL</span><h2>Alabama</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="ak alaska   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">AK</span><h2>Alaska</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="az arizona   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">AZ</span><h2>Arizona</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="ar arkansas   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">AR</span><h2>Arkansas</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="ca california business improvement district; property and business improvement district; community benefit district san francisco cbd gis https://data.sfgov.org/d/c28a-f6gs; san diego bid gis https://data.sandiego.gov/datasets/gis-business-improvement-districts/ state enabling authority is verified. current map coverage is limited to san francisco and san diego. find official lists and boundaries for other california cities.">
+    <header>
+      <div><span class="state-code">CA</span><h2>California</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>34</strong><span>mapped districts</span></div>
+      <div><strong>2</strong><span>mapped sources</span></div>
+      <div><strong>partial</strong><span>coverage</span></div>
+      <div><strong>medium</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&amp;sectionNum=36614.5." target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>Business Improvement District; Property and Business Improvement District; Community Benefit District</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>2</span></h3>
+      <ul class="source-list"><li>San Francisco CBD GIS <a href="https://data.sfgov.org/d/c28a-f6gs" target="_blank" rel="noreferrer">https://data.sfgov.org/d/c28a-f6gs</a></li><li>San Diego BID GIS <a href="https://data.sandiego.gov/datasets/gis-business-improvement-districts/" target="_blank" rel="noreferrer">https://data.sandiego.gov/datasets/gis-business-improvement-districts/</a></li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>State enabling authority is verified. Current map coverage is limited to San Francisco and San Diego.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Find official lists and boundaries for other California cities.</p></section>
+    <footer><span>Last researched: 2026-07-16</span><span>Next review: 2026-08-15</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="co colorado business improvement district denver official bid boundaries https://services1.arcgis.com/zdb7qr0btyrg0xpl/arcgis/rest/services/odc_admn_businessimprovdist_a/featureserver/1 denver has a current official boundary feed for 12 active bids. colorado remains partial and dda gid and special improvement districts are not treated as bid aliases. enumerate active bids outside denver using dola filings and official municipal records.">
+    <header>
+      <div><span class="state-code">CO</span><h2>Colorado</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>12</strong><span>mapped districts</span></div>
+      <div><strong>1</strong><span>mapped sources</span></div>
+      <div><strong>partial</strong><span>coverage</span></div>
+      <div><strong>high</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-31.pdf" target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>Business Improvement District</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>1</span></h3>
+      <ul class="source-list"><li>Denver official BID boundaries <a href="https://services1.arcgis.com/zdB7qR0BtYrg0Xpl/ArcGIS/rest/services/ODC_ADMN_BUSINESSIMPROVDIST_A/FeatureServer/1" target="_blank" rel="noreferrer">https://services1.arcgis.com/zdB7qR0BtYrg0Xpl/ArcGIS/rest/services/ODC_ADMN_BUSINESSIMPROVDIST_A/FeatureServer/1</a></li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>Denver has a current official boundary feed for 12 active BIDs. Colorado remains partial and DDA GID and special improvement districts are not treated as BID aliases.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Enumerate active BIDs outside Denver using DOLA filings and official municipal records.</p></section>
+    <footer><span>Last researched: 2026-07-17</span><span>Next review: 2026-10-15</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="ct connecticut business improvement district; special services district hartford bid gis https://data.hartford.gov/datasets/hartfordgis::business-improvement-district the enabling chapter is verified. the map currently includes only hartford. identify every municipal special services district and locate official boundaries.">
+    <header>
+      <div><span class="state-code">CT</span><h2>Connecticut</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>1</strong><span>mapped districts</span></div>
+      <div><strong>1</strong><span>mapped sources</span></div>
+      <div><strong>partial</strong><span>coverage</span></div>
+      <div><strong>medium</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://www.cga.ct.gov/Current/pub/chap_105a.htm" target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>Business Improvement District; Special Services District</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>1</span></h3>
+      <ul class="source-list"><li>Hartford BID GIS <a href="https://data.hartford.gov/datasets/hartfordgis::business-improvement-district" target="_blank" rel="noreferrer">https://data.hartford.gov/datasets/hartfordgis::business-improvement-district</a></li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>The enabling chapter is verified. The map currently includes only Hartford.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Identify every municipal special services district and locate official boundaries.</p></section>
+    <footer><span>Last researched: 2026-07-16</span><span>Next review: 2026-08-15</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="de delaware   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">DE</span><h2>Delaware</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="dc district of columbia business improvement district; community improvement district dc bid open data https://opendata.dc.gov/datasets/dcgis::business-improvement-districts the official registry currently says 12 bids while the configured boundary layer produces 13 records. reconcile 13 mapped features with the current official list of 12 bids.">
+    <header>
+      <div><span class="state-code">DC</span><h2>District of Columbia</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>13</strong><span>mapped districts</span></div>
+      <div><strong>1</strong><span>mapped sources</span></div>
+      <div><strong>needs review</strong><span>coverage</span></div>
+      <div><strong>high</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://code.dccouncil.gov/us/dc/council/code/sections/2-1215.01" target="_blank" rel="noreferrer">Enabling authority ↗</a><a href="https://dslbd.dc.gov/service/business-improvement-districts-bids" target="_blank" rel="noreferrer">Statewide registry ↗</a></div>
+    <section><h3>Local terms</h3><p>Business Improvement District; Community Improvement District</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>1</span></h3>
+      <ul class="source-list"><li>DC BID open data <a href="https://opendata.dc.gov/datasets/DCGIS::business-improvement-districts" target="_blank" rel="noreferrer">https://opendata.dc.gov/datasets/DCGIS::business-improvement-districts</a></li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>The official registry currently says 12 BIDs while the configured boundary layer produces 13 records.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Reconcile 13 mapped features with the current official list of 12 BIDs.</p></section>
+    <footer><span>Last researched: 2026-07-16</span><span>Next review: 2026-08-15</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="fl florida business improvement district; special assessment district floridacommerce official special district list; city of miami and city of miami beach assessment records floridacommerce reports five active districts with the business improvement purpose and all five are mapped. residential and safety neighborhood districts are excluded. boundaries are generalized from official assessment maps pending parcel-level gis feeds. monitor the statewide registry and municipal assessment records; investigate bid-branded municipal programs outside the chapter 170 registry.">
+    <header>
+      <div><span class="state-code">FL</span><h2>Florida</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>5</strong><span>mapped districts</span></div>
+      <div><strong>1</strong><span>mapped sources</span></div>
+      <div><strong>substantial</strong><span>coverage</span></div>
+      <div><strong>high</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&amp;URL=0100-0199/0170/0170.html" target="_blank" rel="noreferrer">Enabling authority ↗</a><a href="https://floridajobs.org/community-development/community-planning/special-districts/special-district-accountability-program/official-list-of-special-districts" target="_blank" rel="noreferrer">Statewide registry ↗</a></div>
+    <section><h3>Local terms</h3><p>Business Improvement District; Special Assessment District</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>2</span></h3>
+      <ul class="source-list"><li>FloridaCommerce official special district list</li><li>City of Miami and City of Miami Beach assessment records</li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>FloridaCommerce reports five active districts with the Business Improvement purpose and all five are mapped. Residential and safety neighborhood districts are excluded. Boundaries are generalized from official assessment maps pending parcel-level GIS feeds.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Monitor the statewide registry and municipal assessment records; investigate BID-branded municipal programs outside the Chapter 170 registry.</p></section>
+    <footer><span>Last researched: 2026-07-17</span><span>Next review: 2026-10-15</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="ga georgia business improvement district city of rome 2025 bid ordinance; columbus 2025-2034 bid management plan; macon-bibb urban redevelopment plan rome uptown columbus and eisenhower macon-bibb are verified and mapped. georgia community improvement districts are a separate legal category and are excluded. boundaries are generalized from official plans pending parcel-level gis feeds. monitor municipal renewal records and search for any bid created after the statewide policy review.">
+    <header>
+      <div><span class="state-code">GA</span><h2>Georgia</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>3</strong><span>mapped districts</span></div>
+      <div><strong>1</strong><span>mapped sources</span></div>
+      <div><strong>substantial</strong><span>coverage</span></div>
+      <div><strong>high</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://www.legis.ga.gov/api/document/docs/default-source/house-budget-and-research-office-document-library/newsandhighlights/2020/2020_policy_brief_community_development_tools_series_business_improvement_districts.pdf?sfvrsn=5942aab8_2" target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>Business Improvement District</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>3</span></h3>
+      <ul class="source-list"><li>City of Rome 2025 BID ordinance</li><li>Columbus 2025-2034 BID management plan</li><li>Macon-Bibb urban redevelopment plan</li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>Rome Uptown Columbus and Eisenhower Macon-Bibb are verified and mapped. Georgia Community Improvement Districts are a separate legal category and are excluded. Boundaries are generalized from official plans pending parcel-level GIS feeds.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Monitor municipal renewal records and search for any BID created after the statewide policy review.</p></section>
+    <footer><span>Last researched: 2026-07-17</span><span>Next review: 2026-10-15</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="hi hawaii special improvement district; business improvement district; sid; bid hrs §46-80.5 special improvement district (official text) [state of hawaii] https://www.capitol.hawaii.gov/hrscurrent/vol02_ch0046-0115/hrs0046/hrs_0046-0080_0005.htm; revised ordinances of honolulu chapter 28 special improvement districts (incl. appendix 28-a) [city and county of honolulu] https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36151; hawaiʻi county code chapter 35 business improvement districts [county of hawaiʻi] https://www.hawaiicounty.gov/home/showpublisheddocument/80/637649760877470000; maui county ordinance 4382 / special improvement districts (title 3 / chapter ~3.70 enabling) [county of maui] https://www.mauicounty.gov/documentcenter/view/106635/ord-4382?bidid=; waikīkī business improvement district (sid no. 1 / bid) [city and county of honolulu / waikīkī] https://waikikibid.org/; downtown honolulu business improvement district (expanded from fort street mall sid no. 2) [city and county of honolulu / downtown] https://www.dohobid.com/; waikīkī beach special improvement district association [city and county of honolulu / waikīkī beach] https://www.wbsida.org/overview; kailua village business improvement district [county of hawaiʻi / kailua-kona] https://historickailuavillage.com/; fort street mall business improvement district association (predecessor/related to downtown) [city and county of honolulu] https://fortstreetmall.org/fort-streets-history/fort-street-mall-bida/; bill 51 (2025) downtown honolulu bid establishing ordinance materials [city and county of honolulu] https://hnldoc.ehawaii.gov/hnldoc/measure/3401; maui county ordinance 4382 / chapter 3.70 special improvement districts [county of maui] https://www.mauicounty.gov/documentcenter/view/106635/ord-4382?bidid=; downtown honolulu business improvement district (expanded from fort street mall sid no. 2; ord. 25-47 / bill 51) [city and county of honolulu / downtown] https://hnldoc.ehawaii.gov/hnldoc/measure/3401; waikīkī beach special improvement district association (sid no. 3) [city and county of honolulu / waikīkī beach] https://www.wbsida.org/overview; kailua village business improvement district (no. 1) [county of hawaiʻi / kailua-kona] https://historickailuavillage.com/; kailua village bid ordinance and boundary map [county of hawaiʻi / kailua-kona] https://historickailuavillage.com/wp-content/uploads/2024/01/kvbid-ordinance.pdf; kauai county south kauai community plan (notes no bid authorization yet under hrs 46-80.5) [county of kauaʻi] https://www.kauai.gov/files/assets/public/planning-department/documents/skcp_chapter6.pdf; downtown honolulu business improvement district (expanded from fort street mall sid no. 2; ord. 25-47 / bill 51) [city and county of honolulu / downtown] https://hnldoc.ehawaii.gov/hnldoc/measure/3401; waikīkī transportation management special improvement district (sid no. 4) [city and county of honolulu / waikīkī] https://honolulu.granicus.com/metaviewer.php?clip_id=531&amp;meta_id=25019&amp;view_id=3 statewide enabling is hrs §46-80.5 (special improvement district), allowing charter counties to create sids by ordinance for supplemental services and improvements funded by special assessments. these are the legal bid equivalents. honolulu currently implements four districts under roh ch. 28: no. 1 waikīkī business improvement district (2000), no. 2 fort street mall expanded and renamed downtown honolulu business improvement district by ord. 25-47 (2025), no. 3 waikīkī beach special improvement district (2015), and no. 4 waikīkī transportation management special improvement district (2017). hawaiʻi county code ch. 35 has active kailua village bid no. 1; proposed downtown hilo bid no. 2 was rejected in 2023. maui has enabling authority under ch. 3.70 but no active district has yet been confirmed; kauai planning material says the county had not authorized one. the atlas now maps all five verified active districts. downtown honolulu and kailua village boundaries were reconstructed from ordinance assessment parcel lists using current state parcel geometry; the three overlapping waikīkī boundaries are generalized from official ordinance maps. no statewide registry or unified official gis exists, so coverage remains substantial rather than comprehensive until negative findings for maui and kauai receive direct county confirmation. confirm through maui and kauai county clerk, finance, and assessment records that no active districts have been established under their enabling authorities; monitor honolulu chapter 28 and hawaiʻi county chapter 35 for changes. five active districts are now mapped: honolulu sids nos. 1-4 and kailua village bid no. 1.">
+    <header>
+      <div><span class="state-code">HI</span><h2>Hawaii</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>5</strong><span>mapped districts</span></div>
+      <div><strong>1</strong><span>mapped sources</span></div>
+      <div><strong>substantial</strong><span>coverage</span></div>
+      <div><strong>high</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://www.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0046/HRS_0046-0080_0005.htm" target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>special improvement district; business improvement district; SID; BID</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>14</span></h3>
+      <ul class="source-list"><li>HRS §46-80.5 Special improvement district (official text) [State of Hawaii] <a href="https://www.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0046/HRS_0046-0080_0005.htm" target="_blank" rel="noreferrer">https://www.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0046/HRS_0046-0080_0005.htm</a></li><li>Revised Ordinances of Honolulu Chapter 28 Special Improvement Districts (incl. Appendix 28-A) [City and County of Honolulu] <a href="https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36151" target="_blank" rel="noreferrer">https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36151</a></li><li>Hawaiʻi County Code Chapter 35 Business Improvement Districts [County of Hawaiʻi] <a href="https://www.hawaiicounty.gov/home/showpublisheddocument/80/637649760877470000" target="_blank" rel="noreferrer">https://www.hawaiicounty.gov/home/showpublisheddocument/80/637649760877470000</a></li><li>Maui County Ordinance 4382 / Special Improvement Districts (Title 3 / Chapter ~3.70 enabling) [County of Maui] <a href="https://www.mauicounty.gov/DocumentCenter/View/106635/Ord-4382?bidId=" target="_blank" rel="noreferrer">https://www.mauicounty.gov/DocumentCenter/View/106635/Ord-4382?bidId=</a></li><li>Waikīkī Business Improvement District (SID No. 1 / BID) [City and County of Honolulu / Waikīkī] <a href="https://waikikibid.org/" target="_blank" rel="noreferrer">https://waikikibid.org/</a></li><li>Downtown Honolulu Business Improvement District (expanded from Fort Street Mall SID No. 2) [City and County of Honolulu / Downtown] <a href="https://www.dohobid.com/" target="_blank" rel="noreferrer">https://www.dohobid.com/</a></li><li>Waikīkī Beach Special Improvement District Association [City and County of Honolulu / Waikīkī Beach] <a href="https://www.wbsida.org/overview" target="_blank" rel="noreferrer">https://www.wbsida.org/overview</a></li><li>Kailua Village Business Improvement District [County of Hawaiʻi / Kailua-Kona] <a href="https://historickailuavillage.com/" target="_blank" rel="noreferrer">https://historickailuavillage.com/</a></li><li>Fort Street Mall Business Improvement District Association (predecessor/related to Downtown) [City and County of Honolulu] <a href="https://fortstreetmall.org/fort-streets-history/fort-street-mall-bida/" target="_blank" rel="noreferrer">https://fortstreetmall.org/fort-streets-history/fort-street-mall-bida/</a></li><li>Bill 51 (2025) Downtown Honolulu BID establishing ordinance materials [City and County of Honolulu] <a href="https://hnldoc.ehawaii.gov/hnldoc/measure/3401" target="_blank" rel="noreferrer">https://hnldoc.ehawaii.gov/hnldoc/measure/3401</a></li><li>Downtown Honolulu Business Improvement District (expanded from Fort Street Mall SID No. 2</li><li>Kailua Village BID Ordinance and Boundary Map [County of Hawaiʻi / Kailua-Kona] <a href="https://historickailuavillage.com/wp-content/uploads/2024/01/KVBID-Ordinance.pdf" target="_blank" rel="noreferrer">https://historickailuavillage.com/wp-content/uploads/2024/01/KVBID-Ordinance.pdf</a></li><li>Kauai County South Kauai Community Plan (notes no BID authorization yet under HRS 46-80.5) [County of Kauaʻi] <a href="https://www.kauai.gov/files/assets/public/planning-department/documents/skcp_chapter6.pdf" target="_blank" rel="noreferrer">https://www.kauai.gov/files/assets/public/planning-department/documents/skcp_chapter6.pdf</a></li><li>Waikīkī Transportation Management Special Improvement District (SID No. 4) [City and County of Honolulu / Waikīkī] <a href="https://honolulu.granicus.com/MetaViewer.php?clip_id=531&amp;meta_id=25019&amp;view_id=3" target="_blank" rel="noreferrer">https://honolulu.granicus.com/MetaViewer.php?clip_id=531&amp;meta_id=25019&amp;view_id=3</a></li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>Statewide enabling is HRS §46-80.5 (Special improvement district), allowing charter counties to create SIDs by ordinance for supplemental services and improvements funded by special assessments. These are the legal BID equivalents. Honolulu currently implements four districts under ROH Ch. 28: No. 1 Waikīkī Business Improvement District (2000), No. 2 Fort Street Mall expanded and renamed Downtown Honolulu Business Improvement District by Ord. 25-47 (2025), No. 3 Waikīkī Beach Special Improvement District (2015), and No. 4 Waikīkī Transportation Management Special Improvement District (2017). Hawaiʻi County Code Ch. 35 has active Kailua Village BID No. 1; proposed Downtown Hilo BID No. 2 was rejected in 2023. Maui has enabling authority under Ch. 3.70 but no active district has yet been confirmed; Kauai planning material says the county had not authorized one. The atlas now maps all five verified active districts. Downtown Honolulu and Kailua Village boundaries were reconstructed from ordinance assessment parcel lists using current State parcel geometry; the three overlapping Waikīkī boundaries are generalized from official ordinance maps. No statewide registry or unified official GIS exists, so coverage remains substantial rather than comprehensive until negative findings for Maui and Kauai receive direct county confirmation.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Confirm through Maui and Kauai county clerk, finance, and assessment records that no active districts have been established under their enabling authorities; monitor Honolulu Chapter 28 and Hawaiʻi County Chapter 35 for changes. Five active districts are now mapped: Honolulu SIDs Nos. 1-4 and Kailua Village BID No. 1.</p></section>
+    <footer><span>Last researched: 2026-07-17</span><span>Next review: 2026-10-15</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="id idaho business improvement district; bid; local business improvement district; downtown business improvement district downtown boise business improvement district / downtown boise association [boise] https://downtownboise.org/about/business-improvement-district; nampa business improvement district [nampa] https://www.cityofnampa.us/1253/business-improvement-district; downtown caldwell business improvement district / destination caldwell [caldwell] https://www.cityofcaldwell.org/business/business-improvement-district-information; downtown idaho falls business improvement district [idaho falls] https://downtownidahofalls.com/about-us/business-improvement-district/; coeur d&#39;alene downtown business improvement district / downtown association [coeur d&#39;alene] https://cdadowntown.com/about/; downtown lewiston business improvement district [lewiston] https://www.cityoflewiston.org/661/business-improvement-district; historic downtown pocatello business improvement district [pocatello] https://www.historicdowntownpocatello.com/explore-downtown; idaho statutes title 50 chapter 26 business improvement districts (full chapter) [statewide] https://legislature.idaho.gov/statutesrules/idstat/title50/t50ch26/; idaho code 50-1703a local business improvement districts [statewide] https://legislature.idaho.gov/statutesrules/idstat/title50/t50ch17/sect50-1703a/; idaho statutes title 50 chapter 26 business improvement districts [statewide] https://legislature.idaho.gov/statutesrules/idstat/title50/t50ch26/; idaho code § 50-1703a local business improvement districts [statewide] https://legislature.idaho.gov/statutesrules/idstat/title50/t50ch17/sect50-1703a/; nampa business improvement district (incl. #2) [nampa] https://www.cityofnampa.us/1253/business-improvement-district; nampa business improvement district (gis feature service / arcgis hub) [nampa] https://hub.arcgis.com/datasets/nampa::business-improvement-district-1; nampa gis data hub [nampa] https://gisdata-nampa.hub.arcgis.com/; downtown lewiston business improvement district (bid advisory board) [lewiston] https://www.cityoflewiston.org/661/business-improvement-district; sandpoint business improvement district / downtown sandpoint [sandpoint] http://downtownsandpoint.com/ enabling authority verified: idaho code title 50 chapter 26 (business improvement districts; cities authorized to establish bids for purposes including parking, public improvements, promotion, events, transportation; special assessments on businesses/business property; admin via contract). distinct from local improvement districts (lids under title 50 ch. 17 for capital infrastructure). separate narrow tool at §50-1703a (local business improvement districts, 1987) limited to exterior building improvements to match city architectural themes (100% owner consent required; assessed as lids; max 20% market value). no statewide registry, inventory, directory, or central gis/layer of bids found via statute, state agency, open-data, or search (failed search ≠ proof of absence). downtown boise association states &#39;at least six&#39; bids in idaho (appears to undercount or lag; confirmed active examples: boise ~1987, nampa ~1985/#2, caldwell, idaho falls ~1990s renewing ~2027, coeur d&#39;alene 1990, lewiston 2020, pocatello 1991 ord. 2390). sandpoint historical/active per city links and local listings (dissolution attempt ~2010 failed; current status medium-confidence). meridian exploring formation (2026 council presentations/maps of potential district; no ordinance yet). boundaries exist as pdfs/maps/images on multiple city/district pages; nampa has downloadable/feature-service gis layer on arcgis hub. no easily confirmed statewide/downloadable multi-bid geojson/shapefiles. distinguish from urban renewal agencies (uras/urds), pure lids, and chambers. candidate sources are research leads only. confirm current status/activity of sandpoint bid (city still links it; local directories list it; historical dissolution attempts noted); check meridian progress on proposed bid (city council discussions 2026); query additional municipal codes/ordinances and gis portals (boise, idaho falls, caldwell, coeur d&#39;alene, lewiston, pocatello, twin falls, moscow etc.) and inside idaho for any boundary layers; contact association of idaho cities or ida for fuller inventory; download/verify nampa feature service and any other local pdfs/maps as geojson candidates; re-search for any additional small-city bids or uses of 50-1703a.">
+    <header>
+      <div><span class="state-code">ID</span><h2>Idaho</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>3</strong><span>mapped districts</span></div>
+      <div><strong>1</strong><span>mapped sources</span></div>
+      <div><strong>partial</strong><span>coverage</span></div>
+      <div><strong>medium</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/" target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>Business Improvement District; BID; Local Business Improvement District; Downtown Business Improvement District</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>12</span></h3>
+      <ul class="source-list"><li>Downtown Boise Business Improvement District / Downtown Boise Association [Boise] <a href="https://downtownboise.org/about/business-improvement-district" target="_blank" rel="noreferrer">https://downtownboise.org/about/business-improvement-district</a></li><li>Nampa Business Improvement District [Nampa] <a href="https://www.cityofnampa.us/1253/Business-Improvement-District" target="_blank" rel="noreferrer">https://www.cityofnampa.us/1253/Business-Improvement-District</a></li><li>Downtown Caldwell Business Improvement District / Destination Caldwell [Caldwell] <a href="https://www.cityofcaldwell.org/Business/Business-Improvement-District-Information" target="_blank" rel="noreferrer">https://www.cityofcaldwell.org/Business/Business-Improvement-District-Information</a></li><li>Downtown Idaho Falls Business Improvement District [Idaho Falls] <a href="https://downtownidahofalls.com/about-us/business-improvement-district/" target="_blank" rel="noreferrer">https://downtownidahofalls.com/about-us/business-improvement-district/</a></li><li>Coeur d&#39;Alene Downtown Business Improvement District / Downtown Association [Coeur d&#39;Alene] <a href="https://cdadowntown.com/about/" target="_blank" rel="noreferrer">https://cdadowntown.com/about/</a></li><li>Downtown Lewiston Business Improvement District [Lewiston] <a href="https://www.cityoflewiston.org/661/Business-Improvement-District" target="_blank" rel="noreferrer">https://www.cityoflewiston.org/661/Business-Improvement-District</a></li><li>Historic Downtown Pocatello Business Improvement District [Pocatello] <a href="https://www.historicdowntownpocatello.com/explore-downtown" target="_blank" rel="noreferrer">https://www.historicdowntownpocatello.com/explore-downtown</a></li><li>Idaho Statutes Title 50 Chapter 26 Business Improvement Districts (full chapter) [Statewide] <a href="https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/" target="_blank" rel="noreferrer">https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/</a></li><li>Idaho Code 50-1703A Local Business Improvement Districts [Statewide] <a href="https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH17/SECT50-1703A/" target="_blank" rel="noreferrer">https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH17/SECT50-1703A/</a></li><li>Nampa Business Improvement District (GIS Feature Service / ArcGIS Hub) [Nampa] <a href="https://hub.arcgis.com/datasets/Nampa::business-improvement-district-1" target="_blank" rel="noreferrer">https://hub.arcgis.com/datasets/Nampa::business-improvement-district-1</a></li><li>Nampa GIS Data Hub [Nampa] <a href="https://gisdata-nampa.hub.arcgis.com/" target="_blank" rel="noreferrer">https://gisdata-nampa.hub.arcgis.com/</a></li><li>Sandpoint Business Improvement District / Downtown Sandpoint [Sandpoint] <a href="http://downtownsandpoint.com/" target="_blank" rel="noreferrer">http://downtownsandpoint.com/</a></li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>Enabling authority verified: Idaho Code Title 50 Chapter 26 (Business Improvement Districts; cities authorized to establish BIDs for purposes including parking, public improvements, promotion, events, transportation; special assessments on businesses/business property; admin via contract). Distinct from Local Improvement Districts (LIDs under Title 50 Ch. 17 for capital infrastructure). Separate narrow tool at §50-1703A (Local Business Improvement Districts, 1987) limited to exterior building improvements to match city architectural themes (100% owner consent required; assessed as LIDs; max 20% market value). No statewide registry, inventory, directory, or central GIS/layer of BIDs found via statute, state agency, open-data, or search (failed search ≠ proof of absence). Downtown Boise Association states &#39;at least six&#39; BIDs in Idaho (appears to undercount or lag; confirmed active examples: Boise ~1987, Nampa ~1985/#2, Caldwell, Idaho Falls ~1990s renewing ~2027, Coeur d&#39;Alene 1990, Lewiston 2020, Pocatello 1991 Ord. 2390). Sandpoint historical/active per city links and local listings (dissolution attempt ~2010 failed; current status medium-confidence). Meridian exploring formation (2026 council presentations/maps of potential district; no ordinance yet). Boundaries exist as PDFs/maps/images on multiple city/district pages; Nampa has downloadable/feature-service GIS layer on ArcGIS Hub. No easily confirmed statewide/downloadable multi-BID GeoJSON/shapefiles. Distinguish from urban renewal agencies (URAs/URDs), pure LIDs, and chambers. Candidate sources are research leads only.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Confirm current status/activity of Sandpoint BID (city still links it; local directories list it; historical dissolution attempts noted); check Meridian progress on proposed BID (city council discussions 2026); query additional municipal codes/ordinances and GIS portals (Boise, Idaho Falls, Caldwell, Coeur d&#39;Alene, Lewiston, Pocatello, Twin Falls, Moscow etc.) and Inside Idaho for any boundary layers; contact Association of Idaho Cities or IDA for fuller inventory; download/verify Nampa feature service and any other local PDFs/maps as GeoJSON candidates; re-search for any additional small-city BIDs or uses of 50-1703A.</p></section>
+    <footer><span>Last researched: 2026-07-17</span><span>Next review: 2026-10-15</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="il illinois business improvement district; bid; special service area; ssa business improvement districts (bid) and special service areas (ssa) program + provider list [city of chicago] https://www.chicago.gov/city/en/depts/dcd/supp_info/special_service_areassaprogram.html; special service area (ssa) provider list with maps [city of chicago] https://www.chicago.gov/city/en/depts/dcd/supp_info/special_service_areasandproviderlist.html; boundaries - special service areas (gis/open data) [city of chicago] https://data.cityofchicago.org/community-economic-development/boundaries-special-service-areas/cmr6-dn8c; ssa map / related ssa datasets [city of chicago] https://data.cityofchicago.org/community-economic-development/ssa-map/2k7v-9xvk; special service areas [city of peoria] https://www.peoriagov.org/1023/special-service-areas; special service area districts (gis) [peoria county] https://data-peoriacountygis.opendata.arcgis.com/datasets/special-service-area-districts/explore; special service area tax district - historical (gis open data) [cook county] https://hub-cookcountyil.opendata.arcgis.com/datasets/special-service-area-tax-district-historical-2023/about; business improvement districts (bid) and special service areas (ssa) program [city of chicago] https://www.chicago.gov/city/en/depts/dcd/supp_info/special_service_areassaprogram.html; boundaries - special service areas (gis/open data) [city of chicago] https://data.cityofchicago.org/d/kjav-iyuj; special service areas and tax increment finance areas (gis) [lake county] https://data-lakecountyil.opendata.arcgis.com/datasets/special-service-areas-and-tax-increment-finance-areas/about; special service areas (taxing units) gis layer [kendall county] https://maps.co.kendall.il.us/portal/home/item.html?id=7906b769181f412db9960cce7e82e9ef; special service area 5 (bass street landing) [city of moline] https://www.moline.il.us/1419/special-service-area-5 illinois authorizes classic bids under business improvement district law (65 ilcs 125/, p.a. 103-646, eff. 7-1-24), limited to municipalities &gt;500,000 population (chicago only). chicago dpd accepts feasibility applications for bids (deadline nov 1, 2026 for 2027 start); none active as of research (law recent; bids cannot overlap ssas). longstanding statewide equivalent is special service areas under special service area tax law (35 ilcs 200/27-5 et seq. / article 27 of property tax code), available to municipalities and counties for special services/improvements (including downtown/business corridor marketing, security, cleaning, beautification) funded by property tax levies solely on the ssa. creation via local ordinance after notice, hearing, petition/objection process; maps/ordinances filed with county clerks/recorders. chicago has ~58 active ssas with authoritative provider lists, citywide maps, and downloadable gis boundaries. examples confirmed elsewhere (peoria, lake/cook/peoria/kendall counties gis, moline, highland park business ssas, aurora, oak park, evanston, yorkville, etc.). no central public statewide registry or inventory of all ssas/bids located (idor has historically tracked 600+ for tax extension/property tax purposes as of ~2011, generating tens of millions annually, but no public list/gis). distinguish from unrelated &#39;business districts&#39; under illinois municipal code 65 ilcs 5/11-74.3 (sales-tax increment redevelopment of blighted areas). coverage authoritative/complete for chicago; partial for rest of state via scattered county gis and municipal pages. failed searches do not prove absence. enabling urls: bid https://www.ilga.gov/legislation/ilcs/articles?actid=4518&amp;chapterid=14 ; ssa article/sections via https://www.ilga.gov/legislation/ilcs/details?majortopic=&amp;chapter=&amp;actname=property%20tax%20code.&amp;actid=596&amp;chapterid=8&amp;chapact=35+ilcs+200%2f&amp;seqstart=86400000&amp;seqend=89400000 and https://ilga.gov/documents/legislation/ilcs/documents/003502000k27-5.htm . continue systematic review of additional large/medium municipalities and remaining counties (e.g., dupage, kane, will, winnebago/rockford, sangamon/springfield, mclean) via city/county gis portals, clerk tax extension reports, assessor maps, and ordinance searches for ssas; monitor chicago bid designations post-2026 applications; check idor or comptroller for any non-public inventory references that could become public; distinguish pure residential/stormwater ssas if needed but retain bid-equivalent business corridor uses.">
+    <header>
+      <div><span class="state-code">IL</span><h2>Illinois</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>partial</strong><span>coverage</span></div>
+      <div><strong>medium</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://www.ilga.gov/Legislation/ILCS/Articles?ActID=4518&amp;ChapterID=14" target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>Business Improvement District; BID; Special Service Area; SSA</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>11</span></h3>
+      <ul class="source-list"><li>Business Improvement Districts (BID) and Special Service Areas (SSA) Program + Provider List [City of Chicago] <a href="https://www.chicago.gov/city/en/depts/dcd/supp_info/special_service_areassaprogram.html" target="_blank" rel="noreferrer">https://www.chicago.gov/city/en/depts/dcd/supp_info/special_service_areassaprogram.html</a></li><li>Special Service Area (SSA) Provider List with maps [City of Chicago] <a href="https://www.chicago.gov/city/en/depts/dcd/supp_info/special_service_areasandproviderlist.html" target="_blank" rel="noreferrer">https://www.chicago.gov/city/en/depts/dcd/supp_info/special_service_areasandproviderlist.html</a></li><li>Boundaries - Special Service Areas (GIS/open data) [City of Chicago] <a href="https://data.cityofchicago.org/Community-Economic-Development/Boundaries-Special-Service-Areas/cmr6-dn8c" target="_blank" rel="noreferrer">https://data.cityofchicago.org/Community-Economic-Development/Boundaries-Special-Service-Areas/cmr6-dn8c</a></li><li>SSA map / related SSA datasets [City of Chicago] <a href="https://data.cityofchicago.org/Community-Economic-Development/SSA-map/2k7v-9xvk" target="_blank" rel="noreferrer">https://data.cityofchicago.org/Community-Economic-Development/SSA-map/2k7v-9xvk</a></li><li>Special Service Areas [City of Peoria] <a href="https://www.peoriagov.org/1023/Special-Service-Areas" target="_blank" rel="noreferrer">https://www.peoriagov.org/1023/Special-Service-Areas</a></li><li>Special Service Area Districts (GIS) [Peoria County] <a href="https://data-peoriacountygis.opendata.arcgis.com/datasets/special-service-area-districts/explore" target="_blank" rel="noreferrer">https://data-peoriacountygis.opendata.arcgis.com/datasets/special-service-area-districts/explore</a></li><li>Special Service Area Tax District - Historical (GIS open data) [Cook County] <a href="https://hub-cookcountyil.opendata.arcgis.com/datasets/special-service-area-tax-district-historical-2023/about" target="_blank" rel="noreferrer">https://hub-cookcountyil.opendata.arcgis.com/datasets/special-service-area-tax-district-historical-2023/about</a></li><li>Boundaries - Special Service Areas (GIS/open data) [City of Chicago] <a href="https://data.cityofchicago.org/d/kjav-iyuj" target="_blank" rel="noreferrer">https://data.cityofchicago.org/d/kjav-iyuj</a></li><li>Special Service Areas and Tax Increment Finance Areas (GIS) [Lake County] <a href="https://data-lakecountyil.opendata.arcgis.com/datasets/special-service-areas-and-tax-increment-finance-areas/about" target="_blank" rel="noreferrer">https://data-lakecountyil.opendata.arcgis.com/datasets/special-service-areas-and-tax-increment-finance-areas/about</a></li><li>Special Service Areas (Taxing Units) GIS layer [Kendall County] <a href="https://maps.co.kendall.il.us/portal/home/item.html?id=7906b769181f412db9960cce7e82e9ef" target="_blank" rel="noreferrer">https://maps.co.kendall.il.us/portal/home/item.html?id=7906b769181f412db9960cce7e82e9ef</a></li><li>Special Service Area 5 (Bass Street Landing) [City of Moline] <a href="https://www.moline.il.us/1419/Special-Service-Area-5" target="_blank" rel="noreferrer">https://www.moline.il.us/1419/Special-Service-Area-5</a></li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>Illinois authorizes classic BIDs under Business Improvement District Law (65 ILCS 125/, P.A. 103-646, eff. 7-1-24), limited to municipalities &gt;500,000 population (Chicago only). Chicago DPD accepts feasibility applications for BIDs (deadline Nov 1, 2026 for 2027 start); none active as of research (law recent; BIDs cannot overlap SSAs). Longstanding statewide equivalent is Special Service Areas under Special Service Area Tax Law (35 ILCS 200/27-5 et seq. / Article 27 of Property Tax Code), available to municipalities and counties for special services/improvements (including downtown/business corridor marketing, security, cleaning, beautification) funded by property tax levies solely on the SSA. Creation via local ordinance after notice, hearing, petition/objection process; maps/ordinances filed with county clerks/recorders. Chicago has ~58 active SSAs with authoritative provider lists, citywide maps, and downloadable GIS boundaries. Examples confirmed elsewhere (Peoria, Lake/Cook/Peoria/Kendall Counties GIS, Moline, Highland Park business SSAs, Aurora, Oak Park, Evanston, Yorkville, etc.). No central public statewide registry or inventory of all SSAs/BIDs located (IDOR has historically tracked 600+ for tax extension/property tax purposes as of ~2011, generating tens of millions annually, but no public list/GIS). Distinguish from unrelated &#39;Business Districts&#39; under Illinois Municipal Code 65 ILCS 5/11-74.3 (sales-tax increment redevelopment of blighted areas). Coverage authoritative/complete for Chicago; partial for rest of state via scattered county GIS and municipal pages. Failed searches do not prove absence. Enabling URLs: BID <a href="https://www.ilga.gov/Legislation/ILCS/Articles?ActID=4518&amp;ChapterID=14" target="_blank" rel="noreferrer">https://www.ilga.gov/Legislation/ILCS/Articles?ActID=4518&amp;ChapterID=14</a> ; SSA article/sections via <a href="https://www.ilga.gov/legislation/ILCS/details?MajorTopic=&amp;Chapter=&amp;ActName=Property%20Tax%20Code.&amp;ActID=596&amp;ChapterID=8&amp;ChapAct=35+ILCS+200%2F&amp;SeqStart=86400000&amp;SeqEnd=89400000" target="_blank" rel="noreferrer">https://www.ilga.gov/legislation/ILCS/details?MajorTopic=&amp;Chapter=&amp;ActName=Property%20Tax%20Code.&amp;ActID=596&amp;ChapterID=8&amp;ChapAct=35+ILCS+200%2F&amp;SeqStart=86400000&amp;SeqEnd=89400000</a> and <a href="https://ilga.gov/documents/legislation/ilcs/documents/003502000K27-5.htm" target="_blank" rel="noreferrer">https://ilga.gov/documents/legislation/ilcs/documents/003502000K27-5.htm</a> .</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Continue systematic review of additional large/medium municipalities and remaining counties (e.g., DuPage, Kane, Will, Winnebago/Rockford, Sangamon/Springfield, McLean) via city/county GIS portals, clerk tax extension reports, assessor maps, and ordinance searches for SSAs; monitor Chicago BID designations post-2026 applications; check IDOR or Comptroller for any non-public inventory references that could become public; distinguish pure residential/stormwater SSAs if needed but retain BID-equivalent business corridor uses.</p></section>
+    <footer><span>Last researched: 2026-07-17</span><span>Next review: 2026-10-15</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="in indiana   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">IN</span><h2>Indiana</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="ia iowa   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">IA</span><h2>Iowa</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="ks kansas   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">KS</span><h2>Kansas</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="ky kentucky   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">KY</span><h2>Kentucky</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="la louisiana   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">LA</span><h2>Louisiana</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="me maine   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">ME</span><h2>Maine</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="md maryland business improvement district; special benefits district; community benefits district baltimore city special benefits law https://codes.baltimorecity.gov/us/md/cities/baltimore/code/14; baltimore gis sources in data/sources.json state enabling legislation and baltimore local authority are verified. current geometry covers six baltimore districts only. find bids outside baltimore and verify current statewide codification.">
+    <header>
+      <div><span class="state-code">MD</span><h2>Maryland</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>6</strong><span>mapped districts</span></div>
+      <div><strong>3</strong><span>mapped sources</span></div>
+      <div><strong>partial</strong><span>coverage</span></div>
+      <div><strong>high</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://mgaleg.maryland.gov/2010rs/chapters_noln/ch_461_hb1182t.pdf" target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>Business Improvement District; Special Benefits District; Community Benefits District</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>2</span></h3>
+      <ul class="source-list"><li>Baltimore City special benefits law <a href="https://codes.baltimorecity.gov/us/md/cities/baltimore/code/14" target="_blank" rel="noreferrer">https://codes.baltimorecity.gov/us/md/cities/baltimore/code/14</a></li><li>Baltimore GIS sources in data/sources.json</li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>State enabling legislation and Baltimore local authority are verified. Current geometry covers six Baltimore districts only.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Find BIDs outside Baltimore and verify current statewide codification.</p></section>
+    <footer><span>Last researched: 2026-07-16</span><span>Next review: 2026-08-15</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="ma massachusetts business improvement district; bid business improvement districts (bid) program page [statewide (eoed / mass.gov)] https://www.mass.gov/info-details/business-improvement-districts-bid; 2020 revised business improvement district manual / guide for establishing bids [statewide] https://www.mass.gov/doc/2020-revised-business-improvement-district-manual-0/download; district management toolkit (examples of bids) [statewide] https://www.mass.gov/doc/district-management-toolkit/download; amherst business improvement district [amherst] https://www.amherstdowntown.com/; amherst town gis / bid references [amherst] https://gis.data.mass.gov/search?collection=dataset&amp;layout=grid&amp;tags=amherst; downtown boston alliance (formerly downtown boston bid) [boston] https://www.downtownboston.org/; greenway business improvement district [boston] https://www.abettercity.org/our-work/greenway-bid; newmarket business improvement district [boston] https://newmarketbid.org/; central square business improvement district [cambridge] https://www.centralsq.org/; hyannis main street business improvement district [barnstable (hyannis)] https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/; downtown hudson business improvement district [hudson] https://www.discoverhudson.org/about; springfield business improvement district [springfield] https://springfielddowntown.com/; downtown worcester business improvement district [worcester] https://www.discovercentralma.org/listing/downtown-worcester-business-improvement-district/201/; taunton business improvement district / downtown taunton foundation [taunton] https://downtowntaunton.org/; edgartown business improvement district public map [edgartown] https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c; approved vacant storefront districts (notes bid boundary overlaps e.g. taunton) [statewide] https://www.mass.gov/info-details/approved-vacant-storefront-districts enabling statute is m.g.l. c. 40o (business improvement districts), enacted ~1994; bids are contiguous areas ≥75% commercial/industrial/retail/mixed-use, formed by petition of ≥60% of property owners representing ≥51% assessed valuation, local hearing/approval, and filing with eoed. official mass.gov page and manual confirm process and that petitions are forwarded to eoed for technical assistance/compliance, but no public statewide registry, inventory, or gis layer of all bids was located (failed searches are not proof of absence). local term is consistently &#39;business improvement district&#39; or &#39;bid&#39;; distinguish carefully from cultural districts (mass cultural council), parking benefit districts, tourism destination marketing districts (tdmds), district improvement financing (dif), historic districts, and voluntary main street-style organizations (toolkit explicitly separates these). known/operating examples (from official toolkit, case studies, district sites, and secondary confirmations such as ~10-11 total cited in hyannis/new bedford sources) include: downtown boston (alliance), greenway bid (boston), newmarket (boston), amherst, central square (cambridge), hyannis main street, hudson, springfield, worcester, taunton; edgartown has public arcgis bid boundary (status may be active/proposed). no statewide map/geojson found; local gis/boundaries available for several. secondary analyses (e.g. massinc) use massgis parcels to examine select bids. coverage remains partial pending authoritative full list or exhaustive municipal sweep. contact eoed bid staff (elizabeth.hahn@mass.gov) for any internal inventory of petitions/established bids; systematically check remaining municipalities and massgis/open data portals for additional boundary layers; verify status of edgartown/athol and any post-2024 formations; cross-check municipal ordinances and assessor data for complete local coverage.">
+    <header>
+      <div><span class="state-code">MA</span><h2>Massachusetts</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>partial</strong><span>coverage</span></div>
+      <div><strong>medium</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40O" target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>Business Improvement District; BID</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>16</span></h3>
+      <ul class="source-list"><li>Business Improvement Districts (BID) program page [Statewide (EOED / Mass.gov)] <a href="https://www.mass.gov/info-details/business-improvement-districts-bid" target="_blank" rel="noreferrer">https://www.mass.gov/info-details/business-improvement-districts-bid</a></li><li>2020 Revised Business Improvement District Manual / Guide for Establishing BIDs [Statewide] <a href="https://www.mass.gov/doc/2020-revised-business-improvement-district-manual-0/download" target="_blank" rel="noreferrer">https://www.mass.gov/doc/2020-revised-business-improvement-district-manual-0/download</a></li><li>District Management Toolkit (examples of BIDs) [Statewide] <a href="https://www.mass.gov/doc/district-management-toolkit/download" target="_blank" rel="noreferrer">https://www.mass.gov/doc/district-management-toolkit/download</a></li><li>Amherst Business Improvement District [Amherst] <a href="https://www.amherstdowntown.com/" target="_blank" rel="noreferrer">https://www.amherstdowntown.com/</a></li><li>Amherst Town GIS / BID references [Amherst] <a href="https://gis.data.mass.gov/search?collection=dataset&amp;layout=grid&amp;tags=amherst" target="_blank" rel="noreferrer">https://gis.data.mass.gov/search?collection=dataset&amp;layout=grid&amp;tags=amherst</a></li><li>Downtown Boston Alliance (formerly Downtown Boston BID) [Boston] <a href="https://www.downtownboston.org/" target="_blank" rel="noreferrer">https://www.downtownboston.org/</a></li><li>Greenway Business Improvement District [Boston] <a href="https://www.abettercity.org/our-work/greenway-bid" target="_blank" rel="noreferrer">https://www.abettercity.org/our-work/greenway-bid</a></li><li>Newmarket Business Improvement District [Boston] <a href="https://newmarketbid.org/" target="_blank" rel="noreferrer">https://newmarketbid.org/</a></li><li>Central Square Business Improvement District [Cambridge] <a href="https://www.centralsq.org/" target="_blank" rel="noreferrer">https://www.centralsq.org/</a></li><li>Hyannis Main Street Business Improvement District [Barnstable (Hyannis)] <a href="https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/" target="_blank" rel="noreferrer">https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/</a></li><li>Downtown Hudson Business Improvement District [Hudson] <a href="https://www.discoverhudson.org/about" target="_blank" rel="noreferrer">https://www.discoverhudson.org/about</a></li><li>Springfield Business Improvement District [Springfield] <a href="https://springfielddowntown.com/" target="_blank" rel="noreferrer">https://springfielddowntown.com/</a></li><li>Downtown Worcester Business Improvement District [Worcester] <a href="https://www.discovercentralma.org/listing/downtown-worcester-business-improvement-district/201/" target="_blank" rel="noreferrer">https://www.discovercentralma.org/listing/downtown-worcester-business-improvement-district/201/</a></li><li>Taunton Business Improvement District / Downtown Taunton Foundation [Taunton] <a href="https://downtowntaunton.org/" target="_blank" rel="noreferrer">https://downtowntaunton.org/</a></li><li>Edgartown Business Improvement District Public Map [Edgartown] <a href="https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c" target="_blank" rel="noreferrer">https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c</a></li><li>Approved Vacant Storefront Districts (notes BID boundary overlaps e.g. Taunton) [Statewide] <a href="https://www.mass.gov/info-details/approved-vacant-storefront-districts" target="_blank" rel="noreferrer">https://www.mass.gov/info-details/approved-vacant-storefront-districts</a></li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>Enabling statute is M.G.L. c. 40O (Business Improvement Districts), enacted ~1994; BIDs are contiguous areas ≥75% commercial/industrial/retail/mixed-use, formed by petition of ≥60% of property owners representing ≥51% assessed valuation, local hearing/approval, and filing with EOED. Official Mass.gov page and manual confirm process and that petitions are forwarded to EOED for technical assistance/compliance, but no public statewide registry, inventory, or GIS layer of all BIDs was located (failed searches are not proof of absence). Local term is consistently &#39;Business Improvement District&#39; or &#39;BID&#39;; distinguish carefully from Cultural Districts (Mass Cultural Council), Parking Benefit Districts, Tourism Destination Marketing Districts (TDMDs), District Improvement Financing (DIF), historic districts, and voluntary Main Street-style organizations (toolkit explicitly separates these). Known/operating examples (from official toolkit, case studies, district sites, and secondary confirmations such as ~10-11 total cited in Hyannis/New Bedford sources) include: Downtown Boston (Alliance), Greenway BID (Boston), Newmarket (Boston), Amherst, Central Square (Cambridge), Hyannis Main Street, Hudson, Springfield, Worcester, Taunton; Edgartown has public ArcGIS BID boundary (status may be active/proposed). No statewide map/GeoJSON found; local GIS/boundaries available for several. Secondary analyses (e.g. MassINC) use MassGIS parcels to examine select BIDs. Coverage remains partial pending authoritative full list or exhaustive municipal sweep.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Contact EOED BID staff (elizabeth.hahn@mass.gov) for any internal inventory of petitions/established BIDs; systematically check remaining municipalities and MassGIS/open data portals for additional boundary layers; verify status of Edgartown/Athol and any post-2024 formations; cross-check municipal ordinances and assessor data for complete local coverage.</p></section>
+    <footer><span>Last researched: 2026-07-17</span><span>Next review: 2026-10-15</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="mi michigan   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">MI</span><h2>Michigan</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="mn minnesota   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">MN</span><h2>Minnesota</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="ms mississippi   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">MS</span><h2>Mississippi</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="mo missouri   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">MO</span><h2>Missouri</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="mt montana   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">MT</span><h2>Montana</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="ne nebraska   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">NE</span><h2>Nebraska</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="nv nevada   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">NV</span><h2>Nevada</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="nh new hampshire   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">NH</span><h2>New Hampshire</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="nj new jersey   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">NJ</span><h2>New Jersey</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="nm new mexico   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">NM</span><h2>New Mexico</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="ny new york business improvement district nyc bid open data https://data.cityofnewyork.us/d/7jdm-inj8; nyc fy25 trends report https://www.nyc.gov/assets/sbs/downloads/pdf/neighborhoods/fy25-bid-trends-report.pdf new york law is verified. the may 2026 nyc report says 78 bids while the current map contains 76 nyc records. add the two nyc bids missing from the current layer and research the rest of new york state.">
+    <header>
+      <div><span class="state-code">NY</span><h2>New York</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>76</strong><span>mapped districts</span></div>
+      <div><strong>1</strong><span>mapped sources</span></div>
+      <div><strong>needs review</strong><span>coverage</span></div>
+      <div><strong>high</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://www.nysenate.gov/legislation/laws/GMU/A19-A" target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>Business Improvement District</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>2</span></h3>
+      <ul class="source-list"><li>NYC BID open data <a href="https://data.cityofnewyork.us/d/7jdm-inj8" target="_blank" rel="noreferrer">https://data.cityofnewyork.us/d/7jdm-inj8</a></li><li>NYC FY25 trends report <a href="https://www.nyc.gov/assets/sbs/downloads/pdf/neighborhoods/fy25-bid-trends-report.pdf" target="_blank" rel="noreferrer">https://www.nyc.gov/assets/sbs/downloads/pdf/neighborhoods/fy25-bid-trends-report.pdf</a></li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>New York law is verified. The May 2026 NYC report says 78 BIDs while the current map contains 76 NYC records.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Add the two NYC BIDs missing from the current layer and research the rest of New York State.</p></section>
+    <footer><span>Last researched: 2026-07-16</span><span>Next review: 2026-08-15</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="nc north carolina   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">NC</span><h2>North Carolina</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="nd north dakota   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">ND</span><h2>North Dakota</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="oh ohio   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">OH</span><h2>Ohio</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="ok oklahoma   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">OK</span><h2>Oklahoma</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="or oregon   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">OR</span><h2>Oregon</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="pa pennsylvania   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">PA</span><h2>Pennsylvania</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="ri rhode island   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">RI</span><h2>Rhode Island</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="sc south carolina   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">SC</span><h2>South Carolina</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="sd south dakota   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">SD</span><h2>South Dakota</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="tn tennessee   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">TN</span><h2>Tennessee</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="tx texas   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">TX</span><h2>Texas</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="ut utah   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">UT</span><h2>Utah</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="vt vermont   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">VT</span><h2>Vermont</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="va virginia   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">VA</span><h2>Virginia</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="in_progress" data-search="wa washington parking and business improvement area; pbia; business improvement area; bia; business improvement district; bid; tourism improvement area; tourism business improvement area seattle business improvement areas (list, ordinances, policies) [seattle] https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-; oed business improvement area (bia) boundaries [seattle] https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0; business improvement area (tacoma) [tacoma] https://data.tacoma.gov/datasets/tacoma::business-improvement-area-tacoma; downtown parking and business improvement area / bid board [spokane] https://my.spokanecity.org/bcc/boards/downtown-business-improvement-district-board/; business improvement district (gis feature) [spokane] https://data-spokane.opendata.arcgis.com/items/6d150d6f1b964a78b933aa4e4aaa038e; parking and business improvement areas (overview, formation, examples) [washington state] https://mrsc.org/explore-topics/economic-development/financing/parking-and-business-improvement-areas; business improvement districts (downtown/parkway and uptown) [richland] https://www.richlandbusiness.com/programs/business-improvement-districts; parking &amp; business improvement area board / municipal code ch. 3.62 [olympia] https://www.olympiawa.gov/government/advisory_committees/parking___business_improvement_area_board.php; parking &amp; business improvement area (pbia) [snohomish] https://www.snohomishwa.gov/767/parking-business-improvement-area-pbia; downtown yakima business improvement district advisory board (municipal code ch. 1.33) [yakima] https://www.codepublishing.com/wa/yakima/html/yakima01/yakima0133.html enabling statute is chapter 35.87a rcw (parking and business improvement areas), authorizing cities/towns/counties to form special assessment districts for economic development, parking, promotion, maintenance, security, etc., via petition (typically ~60% of assessments) or resolution. locally termed pbias/bias/bids; tourism improvement areas (e.g., seattle stia) also use this authority. authoritative statewide registry or complete inventory not located (mrsc provides examples only). distinguish carefully from unrelated local improvement districts (lids under other rcw chapters, e.g., capital infrastructure assessments) and public development authorities. multiple active districts confirmed in seattle (11+ including metropolitan improvement district/mid and others), tacoma (downtown bia with gis), spokane (downtown and east sprague), richland (2), olympia, snohomish, everett, yakima, aberdeen, etc. municipal gis available for major cities; many boundaries also in ordinances or pdf maps. no proof of absence elsewhere—coverage incomplete without exhaustive municipal search. expand municipal coverage by verifying additional city gis layers/official lists (everett station/downtown bias, east sprague spokane, aberdeen, port angeles, others); confirm downloadable boundary data where available; search for any non-governmental statewide association directory or inventory; note any county-level pbias.">
+    <header>
+      <div><span class="state-code">WA</span><h2>Washington</h2></div>
+      <span class="status status-in_progress">in progress</span>
+    </header>
+    <div class="metrics">
+      <div><strong>1</strong><span>mapped districts</span></div>
+      <div><strong>1</strong><span>mapped sources</span></div>
+      <div><strong>partial</strong><span>coverage</span></div>
+      <div><strong>high</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><a href="https://apps.leg.wa.gov/Rcw/default.aspx?cite=35.87A" target="_blank" rel="noreferrer">Enabling authority ↗</a><span>Statewide registry: not located</span></div>
+    <section><h3>Local terms</h3><p>Parking and Business Improvement Area; PBIA; Business Improvement Area; BIA; Business Improvement District; BID; Tourism Improvement Area; Tourism Business Improvement Area</p></section>
+    <section>
+      <h3>Known districts and official local sources <span>10</span></h3>
+      <ul class="source-list"><li>Seattle Business Improvement Areas (list, ordinances, policies) [Seattle] <a href="https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-" target="_blank" rel="noreferrer">https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-</a></li><li>OED Business Improvement Area (BIA) Boundaries [Seattle] <a href="https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0" target="_blank" rel="noreferrer">https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0</a></li><li>Business Improvement Area (Tacoma) [Tacoma] <a href="https://data.tacoma.gov/datasets/tacoma::business-improvement-area-tacoma" target="_blank" rel="noreferrer">https://data.tacoma.gov/datasets/tacoma::business-improvement-area-tacoma</a></li><li>Downtown Parking and Business Improvement Area / BID Board [Spokane] <a href="https://my.spokanecity.org/bcc/boards/downtown-business-improvement-district-board/" target="_blank" rel="noreferrer">https://my.spokanecity.org/bcc/boards/downtown-business-improvement-district-board/</a></li><li>Business Improvement District (GIS feature) [Spokane] <a href="https://data-spokane.opendata.arcgis.com/items/6d150d6f1b964a78b933aa4e4aaa038e" target="_blank" rel="noreferrer">https://data-spokane.opendata.arcgis.com/items/6d150d6f1b964a78b933aa4e4aaa038e</a></li><li>Parking and Business Improvement Areas (overview, formation, examples) [Washington State] <a href="https://mrsc.org/explore-topics/economic-development/financing/parking-and-business-improvement-areas" target="_blank" rel="noreferrer">https://mrsc.org/explore-topics/economic-development/financing/parking-and-business-improvement-areas</a></li><li>Business Improvement Districts (Downtown/Parkway and Uptown) [Richland] <a href="https://www.richlandbusiness.com/programs/business-improvement-districts" target="_blank" rel="noreferrer">https://www.richlandbusiness.com/programs/business-improvement-districts</a></li><li>Parking &amp; Business Improvement Area Board / Municipal Code Ch. 3.62 [Olympia] <a href="https://www.olympiawa.gov/government/advisory_committees/parking___business_improvement_area_board.php" target="_blank" rel="noreferrer">https://www.olympiawa.gov/government/advisory_committees/parking___business_improvement_area_board.php</a></li><li>Parking &amp; Business Improvement Area (PBIA) [Snohomish] <a href="https://www.snohomishwa.gov/767/Parking-Business-Improvement-Area-PBIA" target="_blank" rel="noreferrer">https://www.snohomishwa.gov/767/Parking-Business-Improvement-Area-PBIA</a></li><li>Downtown Yakima Business Improvement District Advisory Board (Municipal Code Ch. 1.33) [Yakima] <a href="https://www.codepublishing.com/WA/Yakima/html/Yakima01/Yakima0133.html" target="_blank" rel="noreferrer">https://www.codepublishing.com/WA/Yakima/html/Yakima01/Yakima0133.html</a></li></ul>
+    </section>
+    <section><h3>Current determination</h3><p>Enabling statute is Chapter 35.87A RCW (Parking and Business Improvement Areas), authorizing cities/towns/counties to form special assessment districts for economic development, parking, promotion, maintenance, security, etc., via petition (typically ~60% of assessments) or resolution. Locally termed PBIAs/BIAs/BIDs; Tourism Improvement Areas (e.g., Seattle STIA) also use this authority. Authoritative statewide registry or complete inventory not located (MRSC provides examples only). Distinguish carefully from unrelated Local Improvement Districts (LIDs under other RCW chapters, e.g., capital infrastructure assessments) and Public Development Authorities. Multiple active districts confirmed in Seattle (11+ including Metropolitan Improvement District/MID and others), Tacoma (Downtown BIA with GIS), Spokane (Downtown and East Sprague), Richland (2), Olympia, Snohomish, Everett, Yakima, Aberdeen, etc. Municipal GIS available for major cities; many boundaries also in ordinances or PDF maps. No proof of absence elsewhere—coverage incomplete without exhaustive municipal search.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Expand municipal coverage by verifying additional city GIS layers/official lists (Everett Station/Downtown BIAs, East Sprague Spokane, Aberdeen, Port Angeles, others); confirm downloadable boundary data where available; search for any non-governmental statewide association directory or inventory; note any county-level PBIAs.</p></section>
+    <footer><span>Last researched: 2026-07-17</span><span>Next review: 2026-10-15</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="wv west virginia   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">WV</span><h2>West Virginia</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="wi wisconsin   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">WI</span><h2>Wisconsin</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article>
+<article class="state-card" data-audit="not_started" data-search="wy wyoming   no determination has been made yet. research enabling authority and official local registries.">
+    <header>
+      <div><span class="state-code">WY</span><h2>Wyoming</h2></div>
+      <span class="status status-not_started">not started</span>
+    </header>
+    <div class="metrics">
+      <div><strong>0</strong><span>mapped districts</span></div>
+      <div><strong>0</strong><span>mapped sources</span></div>
+      <div><strong>not started</strong><span>coverage</span></div>
+      <div><strong>low</strong><span>confidence</span></div>
+    </div>
+    <div class="authority-links"><span>Authority not yet assessed</span><span>Statewide registry: not assessed</span></div>
+
+    <section>
+      <h3>Known districts and official local sources <span>0</span></h3>
+      <p class="empty">No cases have been recorded yet. This may mean the state has not been researched.</p>
+    </section>
+    <section><h3>Current determination</h3><p>No determination has been made yet.</p></section>
+    <section class="next-step"><h3>Next action</h3><p>Research enabling authority and official local registries.</p></section>
+    <footer><span>Last researched: Not yet researched</span><span>Next review: Not scheduled</span></footer>
+  </article></div>
+    </section>
+  </main>
+  <footer class="page-footer"><strong>BID ATLAS</strong><span>State audit · Source-led and transparent</span><a href="mailto:alan@fothergill.com">Suggest a district</a></footer>
+  <script>
+    const search = document.querySelector('#coverage-search');
+    const status = document.querySelector('#coverage-status');
+    const cards = [...document.querySelectorAll('.state-card')];
+    const note = document.querySelector('#result-note');
+    function filterCards(){
+      const query = search.value.trim().toLowerCase();
+      const audit = status.value;
+      let visible = 0;
+      for(const card of cards){
+        const show = (!query || card.dataset.search.includes(query)) && (audit === 'ALL' || card.dataset.audit === audit);
+        card.hidden = !show;
+        if(show) visible += 1;
+      }
+      note.textContent = 'Showing ' + visible + ' of ' + cards.length + ' jurisdictions.';
+    }
+    search.addEventListener('input', filterCards);
+    status.addEventListener('change', filterCards);
+  </script>
+</body>
+</html>

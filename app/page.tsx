@@ -232,7 +232,7 @@ export default function Home() {
           <strong>BID Atlas is not yet a comprehensive list of every U.S. BID.</strong>
           <p>This release contains {manifest?.records ?? "—"} verified districts from {manifest?.coverage.verifiedJurisdictions ?? "—"} covered jurisdictions. We are expanding state by state—checking enabling laws, local equivalents, official lists, and boundary records. Until that audit is complete, an empty area may mean “not researched yet,” not “no BID.”</p>
         </div>
-        <a href="#methodology">How coverage is verified ↓</a>
+        <a href="coverage.html">View every state audit case →</a>
       </aside>
 
       <section className="explorer" aria-label="BID map explorer">

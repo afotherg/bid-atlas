@@ -21,5 +21,6 @@ test("server-renders BID Atlas", async () => {
   assert.match(html, /not yet a comprehensive list of every U\.S\. BID/);
   assert.match(html, /Coverage in progress/);
   assert.match(html, /not researched yet/);
+  assert.match(html, /href="coverage\.html"/);
   assert.doesNotMatch(html, /codex-preview/);
 });
