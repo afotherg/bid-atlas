@@ -138,6 +138,98 @@
     }
   },
   {
+    "id": "oakland-business-improvement-districts",
+    "name": "Oakland Business Improvement Districts",
+    "jurisdiction": "Oakland, CA",
+    "state": "CA",
+    "city": "Oakland",
+    "url": "https://gismaps.oaklandca.gov/server/rest/services/Planning_and_Zoning_Controls/MapServer/53/query?where=1%3D1&outFields=BID%2CYEAR_EST&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.oaklandca.gov/Business/For-Business-Owners/Business-Resources/Business-Improvement-Districts",
+    "publisher": "City of Oakland",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "BID"
+      ],
+      "established": [
+        "YEAR_EST"
+      ]
+    },
+    "overrides": {
+      "Downtown": {
+        "name": "Downtown Oakland Community Benefit District",
+        "website": "https://www.downtownoakland.org/"
+      },
+      "Jack London": {
+        "name": "Jack London Improvement District",
+        "website": "https://jacklondonoakland.org/"
+      },
+      "Lake Merritt": {
+        "name": "Lake Merritt-Uptown Community Benefit District",
+        "website": "https://www.downtownoakland.org/"
+      }
+    }
+  },
+  {
+    "id": "san-jose-business-improvement-districts",
+    "name": "San Jose Business and Community Benefit Districts",
+    "jurisdiction": "San Jose, CA",
+    "state": "CA",
+    "city": "San Jose",
+    "url": "https://geodev.sanjoseca.gov/server/rest/services/PLN/PLN_Geocortex_Public_DEV/MapServer/149/query?where=STATUS%3D%27Active%27%20AND%20TYPE%3C%3E%27PBID%27&outFields=NAME%2CTYPE%2CSTATUS%2CZONE&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://geodev.sanjoseca.gov/server/rest/services/PLN/PLN_Geocortex_Public_DEV/MapServer/149",
+    "publisher": "City of San Jose",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "NAME"
+      ],
+      "status": [
+        "STATUS"
+      ]
+    },
+    "overrides": {
+      "Alum Rock Santa Clara St BID": {
+        "name": "Alum Rock-Santa Clara Street Business Improvement District"
+      },
+      "Japantown Bus Improv District": {
+        "name": "Japantown Business Improvement District"
+      },
+      "Monterey Corridor Bus Improv Dist": {
+        "name": "Monterey Corridor Business Improvement District"
+      },
+      "Story Road Bus Improv Dist": {
+        "name": "Story Road Business Improvement District"
+      },
+      "The Alameda Business Assn BID": {
+        "name": "The Alameda Business Improvement District"
+      },
+      "The Alameda Business Assn CBID": {
+        "name": "The Alameda Community Benefit Improvement District"
+      },
+      "Tully Rd Bus Improv Dist": {
+        "name": "Tully Road Business Improvement District"
+      }
+    }
+  },
+  {
+    "id": "san-jose-downtown-property-based-improvement-district",
+    "name": "San Jose Downtown Property-Based Improvement District",
+    "jurisdiction": "San Jose, CA",
+    "state": "CA",
+    "city": "San Jose",
+    "fixedName": "Downtown San Jose Property-Based Improvement District",
+    "url": "https://geodev.sanjoseca.gov/server/rest/services/PLN/PLN_Geocortex_Public_DEV/MapServer/149/query?where=STATUS%3D%27Active%27%20AND%20TYPE%3D%27PBID%27&outFields=NAME%2CTYPE%2CSTATUS%2CZONE&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://geodev.sanjoseca.gov/server/rest/services/PLN/PLN_Geocortex_Public_DEV/MapServer/149",
+    "publisher": "City of San Jose",
+    "cadence": "As published",
+    "fields": {
+      "status": [
+        "STATUS"
+      ]
+    }
+  },
+  {
     "id": "denver-business-improvement-districts",
     "name": "Denver Business Improvement Districts",
     "jurisdiction": "Denver, CO",

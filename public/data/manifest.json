@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T01:26:45.407Z",
-  "records": 203,
+  "generatedAt": "2026-07-19T03:20:21.083Z",
+  "records": 224,
   "states": [
     "CA",
     "CO",
@@ -30,10 +30,12 @@
     "Miami, FL",
     "Nampa, ID",
     "New York, NY",
+    "Oakland, CA",
     "Reno, NV",
     "Rome, GA",
     "San Diego, CA",
     "San Francisco, CA",
+    "San Jose, CA",
     "Santa Monica, CA",
     "Tacoma, WA",
     "Washington, DC"
@@ -73,6 +75,27 @@
       "status": "ok",
       "records": 5,
       "checkedAt": "2026-07-19T01:26:45.407Z"
+    },
+    {
+      "id": "oakland-business-improvement-districts",
+      "name": "Oakland Business Improvement Districts",
+      "status": "ok",
+      "records": 10,
+      "checkedAt": "2026-07-19T03:20:21.083Z"
+    },
+    {
+      "id": "san-jose-business-improvement-districts",
+      "name": "San Jose Business and Community Benefit Districts",
+      "status": "ok",
+      "records": 13,
+      "checkedAt": "2026-07-19T03:20:21.083Z"
+    },
+    {
+      "id": "san-jose-downtown-property-based-improvement-district",
+      "name": "San Jose Downtown Property-Based Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T03:20:21.083Z"
     },
     {
       "id": "denver-business-improvement-districts",
@@ -172,12 +195,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 21,
-    "configuredSources": 17,
+    "verifiedJurisdictions": 23,
+    "configuredSources": 20,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 5,
+    "added": 21,
     "modified": 0,
     "removed": 0
   }

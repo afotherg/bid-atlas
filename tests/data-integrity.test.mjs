@@ -48,6 +48,43 @@ test("Santa Monica publishes its five official operational BID boundaries", () =
   }
 });
 
+test("Oakland publishes its ten current business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 10);
+  for (const name of [
+    "Chinatown",
+    "Downtown Oakland Community Benefit District",
+    "Jack London Improvement District",
+    "Lake Merritt-Uptown Community Benefit District",
+    "Montclair",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of districts) {
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -123 && longitude < -121, `${district.properties.name} is outside Oakland longitude`);
+    assert.ok(latitude > 37 && latitude < 39, `${district.properties.name} is outside Oakland latitude`);
+  }
+});
+
+test("San Jose publishes eleven distinct active improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "San Jose" && feature.properties.state === "CA");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 11);
+  for (const name of [
+    "Downtown San Jose Property-Based Improvement District",
+    "Japantown Business Improvement District",
+    "Monterey Corridor Business Improvement District",
+    "The Alameda Community Benefit Improvement District",
+    "Tully Road Business Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of districts) {
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -123 && longitude < -121, `${district.properties.name} is outside San Jose longitude`);
+    assert.ok(latitude > 36 && latitude < 38, `${district.properties.name} is outside San Jose latitude`);
+  }
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));

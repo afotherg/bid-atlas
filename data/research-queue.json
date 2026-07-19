@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T03:10:36.424Z",
+  "updated_at": "2026-07-19T03:22:59.810Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 0,
+      "attempts": 1,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:22:59.809Z",
       "lease": null,
       "checkpoint": {
-        "phase": "resume_existing_audit",
-        "summary": "State enabling authority is verified. The atlas maps San Francisco San Diego 38 current City of Los Angeles BIDs and five operational assessment districts from Santa Monica's official GIS. Santa Monica's mapped districts are Main Street Montana Avenue Pico Boulevard Central Business District and Downtown Mall Operations and Maintenance. The current city budget also verifies Downtown PBAD Colorado Avenue overlay and Lincoln Boulevard PBAD assessment accounts but the public GIS does not provide distinct current polygons for those overlapping assessments. Los Angeles County's other independent cities remain separate jurisdictions requiring their own audits.",
-        "next_action": "Locate separate current polygons for Santa Monica's Downtown PBAD Colorado Avenue overlay and Lincoln Boulevard PBAD; audit Long Beach West Hollywood Oakland Sacramento San Jose and Berkeley.",
+        "phase": "jurisdiction_inventory_and_source_integration",
+        "summary": "Integrated official Oakland and San Jose polygon services. Oakland's official GIS returns ten districts and the city's FY2025-27 budget corroborates a current total of ten. San Jose's official improvement-district layer returns fourteen active polygons representing eleven distinct districts after multi-zone records are merged. California now has 98 mapped districts from seven configured sources. Long Beach's current page says nine districts but lists ten rows while its January 2025 map shows eight identifiers and therefore remains unresolved.",
+        "next_action": "Reconcile Long Beach's current registry and map; locate official boundaries for West Hollywood Sacramento and Berkeley; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -28,13 +28,23 @@
           "https://clerk.lacity.gov/business-improvement-districts",
           "https://maps.lacity.org/arcgis/rest/services/Mapping/NavigateLA/MapServer/63",
           "https://gis.santamonica.gov/server/rest/services/Business_Improvement_Districts/MapServer/0",
-          "https://www.santamonica.gov/media/Finance/Budgets%20%26%20Reports/2026/2025-27%20Operating%20Budget%20Line%20Item.pdf"
+          "https://www.santamonica.gov/media/Finance/Budgets%20%26%20Reports/2026/2025-27%20Operating%20Budget%20Line%20Item.pdf",
+          "https://gismaps.oaklandca.gov/server/rest/services/Planning_and_Zoning_Controls/MapServer/53",
+          "https://www.oaklandca.gov/Business/For-Business-Owners/Business-Resources/Business-Improvement-Districts",
+          "https://www.oaklandca.gov/files/assets/city/v/1/finance/documents/fiscal-years/2025-2027-budget/fy25-27-errata-budget-book-final-6.3.25-reduced-size.pdf",
+          "https://geodev.sanjoseca.gov/server/rest/services/PLN/PLN_Geocortex_Public_DEV/MapServer/149",
+          "https://www.sanjoseca.gov/Home/Components/News/News/6468/4765",
+          "https://www.longbeach.gov/edo/business-support/business-improvement-districts/",
+          "https://www.longbeach.gov/globalassets/edo/business-support/bid-council-map-2025"
         ],
         "artifact_paths": [
-          "data/state-audit.csv"
+          "data/state-audit.csv",
+          "data/sources.json",
+          "public/data/bids.geojson",
+          "tests/data-integrity.test.mjs"
         ],
-        "updated_at": "2026-07-19T03:08:20.879Z",
-        "stop_reason": ""
+        "updated_at": "2026-07-19T03:22:59.809Z",
+        "stop_reason": "checkpoint_complete"
       },
       "result": null,
       "blocked_reason": ""
@@ -485,6 +495,142 @@
         ],
         "updated_at": "2026-07-19T03:08:20.879Z",
         "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "boundary_research:CA:santa-monica",
+      "kind": "boundary_research",
+      "title": "Research Santa Monica",
+      "state_code": "CA",
+      "jurisdiction": "Santa Monica",
+      "parent_id": "state:CA",
+      "priority": 150,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:22:51.514Z",
+      "updated_at": "2026-07-19T03:22:51.514Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "discovery",
+        "summary": "",
+        "next_action": "Locate separate current polygons or parcel descriptions for the Downtown Colorado Avenue overlay and Lincoln Boulevard PBAD.",
+        "stop_reason": "",
+        "evidence_urls": [
+          "https://gis.santamonica.gov/server/rest/services/Business_Improvement_Districts/MapServer/0"
+        ],
+        "artifact_paths": [],
+        "updated_at": "2026-07-19T03:22:51.514Z"
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "jurisdiction_audit:CA:berkeley",
+      "kind": "jurisdiction_audit",
+      "title": "Research Berkeley",
+      "state_code": "CA",
+      "jurisdiction": "Berkeley",
+      "parent_id": "state:CA",
+      "priority": 150,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:22:51.276Z",
+      "updated_at": "2026-07-19T03:22:51.276Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "discovery",
+        "summary": "",
+        "next_action": "Enumerate current business and property-based districts from FY2027 assessment records and locate official boundaries.",
+        "stop_reason": "",
+        "evidence_urls": [
+          "https://berkeleyca.gov/city-council-regular-meeting-eagenda-june-9-2026"
+        ],
+        "artifact_paths": [],
+        "updated_at": "2026-07-19T03:22:51.276Z"
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "jurisdiction_audit:CA:long-beach",
+      "kind": "jurisdiction_audit",
+      "title": "Research Long Beach",
+      "state_code": "CA",
+      "jurisdiction": "Long Beach",
+      "parent_id": "state:CA",
+      "priority": 150,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:22:50.554Z",
+      "updated_at": "2026-07-19T03:22:50.554Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "discovery",
+        "summary": "",
+        "next_action": "Reconcile the official current BID page with the January 2025 map and obtain authoritative boundaries for every active district.",
+        "stop_reason": "",
+        "evidence_urls": [
+          "https://www.longbeach.gov/edo/business-support/business-improvement-districts/",
+          "https://www.longbeach.gov/globalassets/edo/business-support/bid-council-map-2025"
+        ],
+        "artifact_paths": [],
+        "updated_at": "2026-07-19T03:22:50.554Z"
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "jurisdiction_audit:CA:sacramento",
+      "kind": "jurisdiction_audit",
+      "title": "Research Sacramento",
+      "state_code": "CA",
+      "jurisdiction": "Sacramento",
+      "parent_id": "state:CA",
+      "priority": 150,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:22:51.026Z",
+      "updated_at": "2026-07-19T03:22:51.026Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "discovery",
+        "summary": "",
+        "next_action": "Enumerate current PBIDs from city assessment records and locate official boundary maps or GIS.",
+        "stop_reason": "",
+        "evidence_urls": [
+          "https://www.cityofsacramento.gov/finance/infrastructure-finance/special-districts/annual-service-districts"
+        ],
+        "artifact_paths": [],
+        "updated_at": "2026-07-19T03:22:51.026Z"
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "jurisdiction_audit:CA:west-hollywood",
+      "kind": "jurisdiction_audit",
+      "title": "Research West Hollywood",
+      "state_code": "CA",
+      "jurisdiction": "West Hollywood",
+      "parent_id": "state:CA",
+      "priority": 150,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:22:50.791Z",
+      "updated_at": "2026-07-19T03:22:50.791Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "discovery",
+        "summary": "",
+        "next_action": "Verify every current BID and locate official district boundary maps or parcel descriptions.",
+        "stop_reason": "",
+        "evidence_urls": [
+          "https://www.weho.org/business/business-organizations/business-improvement-districts"
+        ],
+        "artifact_paths": [],
+        "updated_at": "2026-07-19T03:22:50.791Z"
       },
       "result": null,
       "blocked_reason": ""
