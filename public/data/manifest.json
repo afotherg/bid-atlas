@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T01:13:59.828Z",
-  "records": 197,
+  "generatedAt": "2026-07-19T01:20:51.104Z",
+  "records": 198,
   "states": [
     "CA",
     "CO",
@@ -11,6 +11,7 @@
     "HI",
     "ID",
     "MD",
+    "NV",
     "NY",
     "WA"
   ],
@@ -29,6 +30,7 @@
     "Miami, FL",
     "Nampa, ID",
     "New York, NY",
+    "Reno, NV",
     "Rome, GA",
     "San Diego, CA",
     "San Francisco, CA",
@@ -70,6 +72,13 @@
       "status": "ok",
       "records": 12,
       "checkedAt": "2026-07-18T14:32:04.984Z"
+    },
+    {
+      "id": "downtown-reno-bid",
+      "name": "Downtown Reno Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T01:20:51.104Z"
     },
     {
       "id": "dc-business-improvement-districts",
@@ -155,12 +164,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 19,
-    "configuredSources": 15,
+    "verifiedJurisdictions": 20,
+    "configuredSources": 16,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 38,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }

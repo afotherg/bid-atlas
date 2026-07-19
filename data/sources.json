@@ -135,6 +135,24 @@
     }
   },
   {
+    "id": "downtown-reno-bid",
+    "name": "Downtown Reno Business Improvement District",
+    "jurisdiction": "Reno, NV",
+    "state": "NV",
+    "city": "Reno",
+    "url": "https://citymaps.reno.gov/server/rest/services/AdminAreas/BID_FY24/MapServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.reno.gov/government/departments/economic-development-redevelopment-agency/business-improvement-district",
+    "publisher": "City of Reno",
+    "cadence": "As published",
+    "fixedName": "Downtown Reno Business Improvement District",
+    "fields": {},
+    "overrides": {
+      "Downtown Reno Business Improvement District": {
+        "website": "https://downtownreno.org/"
+      }
+    }
+  },
+  {
     "id": "dc-business-improvement-districts",
     "name": "Washington, DC Business Improvement Districts",
     "jurisdiction": "Washington, DC",

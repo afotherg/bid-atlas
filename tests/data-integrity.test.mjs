@@ -64,6 +64,16 @@ test("Denver publishes its twelve active business improvement districts", () => 
   }
 });
 
+test("Nevada publishes the verified Downtown Reno BID", () => {
+  const districts = collection.features.filter((feature) => feature.properties.state === "NV");
+  assert.equal(districts.length, 1);
+  assert.equal(districts[0].properties.name, "Downtown Reno Business Improvement District");
+  assert.equal(districts[0].properties.city, "Reno");
+  const [longitude, latitude] = districts[0].properties.center;
+  assert.ok(longitude > -120 && longitude < -119);
+  assert.ok(latitude > 39 && latitude < 40);
+});
+
 test("Florida publishes the five active statewide-registry business improvement districts", () => {
   const florida = collection.features.filter((feature) => feature.properties.state === "FL");
   const names = new Set(florida.map((feature) => feature.properties.name));
