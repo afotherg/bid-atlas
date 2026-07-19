@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T18:26:50.457Z",
+  "updated_at": "2026-07-19T18:30:50.539Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 9,
+      "attempts": 10,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T18:26:50.456Z",
+      "updated_at": "2026-07-19T18:30:50.538Z",
       "lease": null,
       "checkpoint": {
-        "phase": "anaheim_source_integration",
-        "summary": "Integrated Anaheim's one current Tourism Improvement District from the city's December 2025 amended management plan and adopted January 2026 boundary map. The vector-derived boundary is georeferenced against Anaheim's official Resort Area GIS polygon and covers the two mapped components in The Anaheim Resort and Platinum Triangle. California now has 143 mapped districts from twenty-one configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Garden Grove and other independent California cities.",
+        "phase": "garden_grove_source_integration",
+        "summary": "Integrated Garden Grove's one current Tourism Improvement District from the FY 2026-27 annual report and current city operations record. The generalized Harbor Boulevard hotel-corridor boundary preserves the official north/south extent and Tier I/Tier II split described by the city; the precise Ordinance No. 2782 map remains on file with the City Clerk and is not published as GIS. California now has 144 mapped districts from twenty-two configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Costa Mesa and other independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -67,7 +67,10 @@
           "https://www.anaheim.net/565/Anaheim-Tourism-Improvement-District-ATI",
           "https://www.anaheim.net/DocumentCenter/View/68170/First-Amended-and-Restated-ATID-Management-Plan",
           "https://www.anaheim.net/DocumentCenter/View/68263/ATID-Expansion--Updated-to-Reflect-Adoption",
-          "https://gis.anaheim.net/map/rest/services/OpenData2/FeatureServer/19"
+          "https://gis.anaheim.net/map/rest/services/OpenData2/FeatureServer/19",
+          "https://agendasuite.org/iip/gardengrove/file/getfile/19174",
+          "https://ggcity.org/news/GDT",
+          "https://ecode360.com/42537369"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -77,9 +80,10 @@
           "data/sources/west-hollywood-business-improvement-districts.geojson",
           "data/sources/berkeley-business-improvement-districts.geojson",
           "data/sources/pasadena-property-business-improvement-districts.geojson",
-          "data/sources/anaheim-tourism-improvement-district.geojson"
+          "data/sources/anaheim-tourism-improvement-district.geojson",
+          "data/sources/garden-grove-tourism-improvement-district.geojson"
         ],
-        "updated_at": "2026-07-19T18:26:50.456Z",
+        "updated_at": "2026-07-19T18:30:50.538Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

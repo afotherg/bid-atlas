@@ -1,0 +1,32 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garden Grove Tourism Improvement District",
+        "status": "Active",
+        "established": "2010",
+        "area": "Harbor Boulevard hotel corridor, including Tier I north of Lampson Avenue and Tier II south of Lampson Avenue",
+        "sourceUrl": "https://agendasuite.org/iip/gardengrove/file/getfile/19174",
+        "boundaryMethod": "Generalized from the City of Garden Grove FY 2026-27 annual report and Ordinance No. 2782 boundary description; the precise adopted map is on file with the City Clerk but is not published as GIS"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-117.922, 33.7896],
+            [-117.9087, 33.7896],
+            [-117.9087, 33.7812],
+            [-117.9127, 33.7812],
+            [-117.9127, 33.7742],
+            [-117.9208, 33.7742],
+            [-117.9208, 33.7812],
+            [-117.922, 33.7812],
+            [-117.922, 33.7896]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -335,6 +335,43 @@
     }
   },
   {
+    "id": "garden-grove-tourism-improvement-district",
+    "name": "Garden Grove Tourism Improvement District",
+    "jurisdiction": "Garden Grove, CA",
+    "state": "CA",
+    "city": "Garden Grove",
+    "file": "data/sources/garden-grove-tourism-improvement-district.geojson",
+    "landingPage": "https://ggcity.org/docs/GGTID",
+    "publisher": "City of Garden Grove",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://agendasuite.org/iip/gardengrove/file/getfile/19174",
+      "https://ggcity.org/news/GDT"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "status": [
+        "status"
+      ],
+      "established": [
+        "established"
+      ],
+      "area": [
+        "area"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ]
+    },
+    "overrides": {
+      "Garden Grove Tourism Improvement District": {
+        "website": "https://visitgardengrove.com/"
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",
