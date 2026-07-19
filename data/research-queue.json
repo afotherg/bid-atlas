@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T18:55:24.889Z",
+  "updated_at": "2026-07-19T18:58:18.905Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 18,
+      "attempts": 19,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T18:55:24.888Z",
+      "updated_at": "2026-07-19T18:58:18.904Z",
       "lease": null,
       "checkpoint": {
-        "phase": "san_mateo_source_integration",
-        "summary": "Added the active Downtown San Mateo Business Improvement Area, established in 1986 and expanded to its current two-zone parcel boundary in 2008. Ordinance 2022-14 retained that boundary and updated the assessment schedule effective July 2023. The atlas geometry is a generalized envelope of the official adopted parcel map. California now has 154 mapped districts from thirty configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit San Carlos, Redwood City, and other independent California cities.",
+        "phase": "redwood_city_source_integration",
+        "summary": "Added the Downtown Redwood City Community Benefit Improvement District, formed for a fifteen-year term from January 2015 through December 2029. The City's current registry identifies 222 assessed parcels, and its June 2025 annual-report action confirms ongoing operations. The atlas geometry is generalized from the adopted Brewster, Veterans, Maple, and Pennsylvania/El Camino Real limits. California now has 155 mapped districts from thirty-one configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit San Carlos, South San Francisco, and other independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -96,7 +96,10 @@
           "https://ecode360.com/44509387",
           "https://www.cityofsanmateo.org/2579/Business-Associations",
           "https://www.cityofsanmateo.org/DocumentCenter/View/2695/ORDINANCE-NO-2008-07?bidId=",
-          "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/ordinances/2022/14"
+          "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/ordinances/2022/14",
+          "https://www.redwoodcity.org/business/economic-development/community-benefit-improvement-district",
+          "https://www.redwoodcity.org/home/showpublisheddocument/1058/635773328377830000",
+          "https://meetings.redwoodcity.org/AgendaOnline/Documents/ViewDocument/6.D.%20STAFF%20REPORT.DOC.pdf?documentType=Agenda&isSection=false&itemId=12824&meetingId=2597&publishId=20231"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -111,9 +114,10 @@
           "data/sources/costa-mesa-tourism-promotion-business-improvement-area.geojson",
           "data/sources/manhattan-beach-business-improvement-districts.geojson",
           "data/sources/burlingame-business-improvement-districts.geojson",
-          "data/sources/san-mateo-downtown-business-improvement-area.geojson"
+          "data/sources/san-mateo-downtown-business-improvement-area.geojson",
+          "data/sources/redwood-city-community-benefit-improvement-district.geojson"
         ],
-        "updated_at": "2026-07-19T18:55:24.888Z",
+        "updated_at": "2026-07-19T18:58:18.904Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

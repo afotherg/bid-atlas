@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Redwood City Community Benefit Improvement District"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.2370, 37.4868],
+          [-122.2320, 37.4918],
+          [-122.2240, 37.4900],
+          [-122.2218, 37.4865],
+          [-122.2240, 37.4805],
+          [-122.2292, 37.4790],
+          [-122.2370, 37.4868]
+        ]]
+      }
+    }
+  ]
+}

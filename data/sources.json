@@ -606,6 +606,37 @@
     }
   },
   {
+    "id": "redwood-city-community-benefit-improvement-district",
+    "name": "Downtown Redwood City Community Benefit Improvement District",
+    "jurisdiction": "Redwood City, CA",
+    "state": "CA",
+    "city": "Redwood City",
+    "file": "data/sources/redwood-city-community-benefit-improvement-district.geojson",
+    "landingPage": "https://www.redwoodcity.org/business/economic-development/community-benefit-improvement-district",
+    "publisher": "City of Redwood City",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.redwoodcity.org/business/economic-development/community-benefit-improvement-district",
+      "https://meetings.redwoodcity.org/AgendaOnline/Documents/ViewDocument/6.D.%20STAFF%20REPORT.DOC.pdf?documentType=Agenda&isSection=false&itemId=12824&meetingId=2597&publishId=20231"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown Redwood City Community Benefit Improvement District": {
+        "website": "https://visitrwc.org/",
+        "established": "2015",
+        "expires": "2029-12-31",
+        "annualRevenue": "$930,820 (FY2022-23 budget)",
+        "area": "Generalized from the official Brewster, Veterans, Maple, and Pennsylvania/El Camino Real boundary",
+        "sourceUrl": "https://www.redwoodcity.org/home/showpublisheddocument/1058/635773328377830000",
+        "reportUrl": "https://meetings.redwoodcity.org/AgendaOnline/Documents/ViewDocument/6.D.%20STAFF%20REPORT.DOC.pdf?documentType=Agenda&isSection=false&itemId=12824&meetingId=2597&publishId=20231"
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",
