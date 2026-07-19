@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T21:24:25.389Z",
+  "updated_at": "2026-07-19T21:31:36.220Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 21,
+      "attempts": 22,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T21:24:25.388Z",
+      "updated_at": "2026-07-19T21:31:36.219Z",
       "lease": null,
       "checkpoint": {
-        "phase": "downtown_santa_cruz_source_integration",
-        "summary": "Added Santa Cruz’s two established downtown assessment districts. The FY2027 council record confirms renewal of the 1990 Parking and Business Improvement Area and 1994 Cooperative Retail Management Business Real Property Improvement District; the CRM polygon reflects the adopted 2023 expansion map. California now has 158 mapped districts from thirty-three configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; continue auditing independent California cities.",
+        "phase": "santa_monica_property_district_integration",
+        "summary": "Added Santa Monica’s three active property-based assessment components: the 2008 Downtown PBAD, 2015 Colorado Avenue Overlay Zone, and 2015 Lincoln Boulevard PBAD, all documented through 2028. The unformed 2019 South Lincoln proposal remains excluded. California now has 161 mapped districts from thirty-four configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; continue auditing independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -106,7 +106,9 @@
           "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeetingAgenda?meetingId=2766&type=AGENDATYPEVALUE",
           "https://www.codepublishing.com/CA/SantaCruz/html/SantaCruz05/SantaCruz0505.html",
           "https://www.codepublishing.com/CA/SantaCruz/html/SantaCruz05/SantaCruz0506.html",
-          "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Documents/ViewDocument/City_Council_Regular_Meeting_2123_Agenda_Packet_6_13_2023_10_00_00_AM.pdf?documentType=AgendaPacket&isSection=false&itemId=0&meetingId=2123&publishId=0"
+          "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Documents/ViewDocument/City_Council_Regular_Meeting_2123_Agenda_Packet_6_13_2023_10_00_00_AM.pdf?documentType=AgendaPacket&isSection=false&itemId=0&meetingId=2123&publishId=0",
+          "https://publicdocs.smgov.net/WebLink/edoc/2355158/SR-03-06-2018-3G.pdf?dbid=0&repo=SMGOV",
+          "https://publicdocs.smgov.net/WebLink/edoc/3527960/SR%2007-25-2023%2011A.pdf?dbid=0&repo=SMGOV"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -124,9 +126,10 @@
           "data/sources/san-mateo-downtown-business-improvement-area.geojson",
           "data/sources/redwood-city-community-benefit-improvement-district.geojson",
           "data/sources/midtown-santa-cruz-business-improvement-district.geojson",
-          "data/sources/downtown-santa-cruz-improvement-districts.geojson"
+          "data/sources/downtown-santa-cruz-improvement-districts.geojson",
+          "data/sources/santa-monica-property-based-assessment-districts.geojson"
         ],
-        "updated_at": "2026-07-19T21:24:25.388Z",
+        "updated_at": "2026-07-19T21:31:36.219Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

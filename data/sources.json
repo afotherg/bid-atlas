@@ -113,6 +113,52 @@
     }
   },
   {
+    "id": "santa-monica-property-based-assessment-districts",
+    "name": "Santa Monica Property-Based Assessment Districts",
+    "jurisdiction": "Santa Monica, CA",
+    "state": "CA",
+    "city": "Santa Monica",
+    "file": "data/sources/santa-monica-property-based-assessment-districts.geojson",
+    "landingPage": "https://www.downtownsm.com/about-us",
+    "publisher": "City of Santa Monica and Downtown Santa Monica, Inc.",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.downtownsm.com/about-us",
+      "https://publicdocs.smgov.net/WebLink/edoc/3527960/SR%2007-25-2023%2011A.pdf?dbid=0&repo=SMGOV"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown Santa Monica Property-Based Assessment District": {
+        "website": "https://www.downtownsm.com/",
+        "established": "2008",
+        "expires": "2028",
+        "area": "Generalized from the official benefit-zone map; core district roughly bounded by Ocean Avenue, Wilshire Boulevard, 7th Street, and Interstate 10",
+        "sourceUrl": "https://publicdocs.smgov.net/WebLink/edoc/2355158/SR-03-06-2018-3G.pdf?dbid=0&repo=SMGOV",
+        "reportUrl": "https://publicdocs.smgov.net/WebLink/edoc/3527960/SR%2007-25-2023%2011A.pdf?dbid=0&repo=SMGOV"
+      },
+      "Colorado Avenue Overlay Zone": {
+        "website": "https://www.downtownsm.com/",
+        "established": "2015",
+        "expires": "2028",
+        "area": "Generalized from the official Downtown Santa Monica benefit-zone map",
+        "sourceUrl": "https://publicdocs.smgov.net/WebLink/edoc/2355158/SR-03-06-2018-3G.pdf?dbid=0&repo=SMGOV",
+        "reportUrl": "https://publicdocs.smgov.net/WebLink/edoc/3527960/SR%2007-25-2023%2011A.pdf?dbid=0&repo=SMGOV"
+      },
+      "Lincoln Boulevard Property-Based Assessment District": {
+        "website": "https://www.downtownsm.com/",
+        "established": "2015",
+        "expires": "2028",
+        "area": "Generalized from Zone L on the official Downtown Santa Monica benefit-zone map; distinct from the unformed 2019 South Lincoln proposal",
+        "sourceUrl": "https://publicdocs.smgov.net/WebLink/edoc/2355158/SR-03-06-2018-3G.pdf?dbid=0&repo=SMGOV",
+        "reportUrl": "https://publicdocs.smgov.net/WebLink/edoc/3527960/SR%2007-25-2023%2011A.pdf?dbid=0&repo=SMGOV"
+      }
+    }
+  },
+  {
     "id": "santa-monica-business-improvement-districts",
     "name": "Santa Monica Business Improvement Districts",
     "jurisdiction": "Santa Monica, CA",

@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Santa Monica Property-Based Assessment District"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.5014, 34.0218],
+          [-118.4898, 34.0194],
+          [-118.4893, 34.0120],
+          [-118.4934, 34.0113],
+          [-118.4976, 34.0124],
+          [-118.5016, 34.0130],
+          [-118.5014, 34.0218]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Colorado Avenue Overlay Zone"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.5014, 34.0144],
+          [-118.4896, 34.0123],
+          [-118.4893, 34.0108],
+          [-118.4933, 34.0102],
+          [-118.4975, 34.0114],
+          [-118.5016, 34.0124],
+          [-118.5014, 34.0144]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lincoln Boulevard Property-Based Assessment District"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.4902, 34.0196],
+          [-118.4868, 34.0190],
+          [-118.4866, 34.0107],
+          [-118.4897, 34.0112],
+          [-118.4902, 34.0196]
+        ]]
+      }
+    }
+  ]
+}

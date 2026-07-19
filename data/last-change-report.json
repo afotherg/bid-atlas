@@ -1,13 +1,14 @@
 {
-  "checkedAt": "2026-07-19T21:23:44.713Z",
+  "checkedAt": "2026-07-19T21:31:08.061Z",
   "summary": {
-    "added": 2,
+    "added": 3,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-santa-cruz-cooperative-retail-management-business-real-property-improvement-district",
-    "ca-santa-cruz-downtown-santa-cruz-parking-and-business-improvement-area"
+    "ca-santa-monica-colorado-avenue-overlay-zone",
+    "ca-santa-monica-downtown-santa-monica-property-based-assessment-district",
+    "ca-santa-monica-lincoln-boulevard-property-based-assessment-district"
   ],
   "modified": [],
   "removed": [],
@@ -39,6 +40,15 @@
       "status": "ok",
       "records": 38,
       "checkedAt": "2026-07-19T19:44:32.531Z"
+    },
+    {
+      "id": "santa-monica-property-based-assessment-districts",
+      "name": "Santa Monica Property-Based Assessment Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-19T21:31:08.061Z",
+      "monitorHash": "55100d529004857e2909c4715e6494e2a754994be856cbac4a4ae62a067f877d",
+      "legislationChanged": false
     },
     {
       "id": "santa-monica-business-improvement-districts",

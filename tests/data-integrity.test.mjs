@@ -30,7 +30,7 @@ test("Los Angeles publishes its 38 current business improvement districts", () =
   assert.ok(!districts.some((feature) => feature.properties.name.includes("Central Avenue")));
 });
 
-test("Santa Monica publishes its five official operational BID boundaries", () => {
+test("Santa Monica publishes its eight operational business and property assessment districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "santa-monica-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));
   assert.equal(districts.length, 5);
@@ -42,6 +42,21 @@ test("Santa Monica publishes its five official operational BID boundaries", () =
     "Downtown Santa Monica Mall Operations & Maintenance District",
   ]) assert.ok(names.has(name), `missing ${name}`);
   for (const district of districts) {
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -118, `${district.properties.name} is outside Santa Monica longitude`);
+    assert.ok(latitude > 33 && latitude < 35, `${district.properties.name} is outside Santa Monica latitude`);
+  }
+  const propertyDistricts = collection.features.filter((feature) => feature.properties.sourceId === "santa-monica-property-based-assessment-districts");
+  const propertyNames = new Set(propertyDistricts.map((feature) => feature.properties.name));
+  assert.equal(propertyDistricts.length, 3);
+  for (const name of [
+    "Downtown Santa Monica Property-Based Assessment District",
+    "Colorado Avenue Overlay Zone",
+    "Lincoln Boulevard Property-Based Assessment District",
+  ]) assert.ok(propertyNames.has(name), `missing ${name}`);
+  for (const district of propertyDistricts) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.properties.expires, "2028");
     const [longitude, latitude] = district.properties.center;
     assert.ok(longitude > -119 && longitude < -118, `${district.properties.name} is outside Santa Monica longitude`);
     assert.ok(latitude > 33 && latitude < 35, `${district.properties.name} is outside Santa Monica latitude`);
