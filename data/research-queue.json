@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T18:39:25.691Z",
+  "updated_at": "2026-07-19T18:42:26.042Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 13,
+      "attempts": 14,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T18:39:25.690Z",
+      "updated_at": "2026-07-19T18:42:26.041Z",
       "lease": null,
       "checkpoint": {
-        "phase": "dana_point_source_integration",
-        "summary": "Added Dana Point's current Tourism Business Improvement District using the official County of Orange city-boundary polygon. The City Council renewed the district on May 6, 2025 for July 1, 2025 through June 30, 2030; its benefit zone is citywide lodging businesses with at least 20 rooms. California now has 146 mapped districts from twenty-four configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Huntington Beach and other independent California cities.",
+        "phase": "huntington_beach_source_integration",
+        "summary": "Added Huntington Beach's two current districts. The Downtown Business Improvement District uses all nine polygons in the city's official BID Zones layer and its FY2025-26 assessment was approved October 7, 2025. The Tourism Business Improvement District covers lodging businesses and short-term rentals citywide, uses the official County of Orange city boundary, and remains authorized through June 30, 2028. California now has 148 mapped districts from twenty-six configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Laguna Beach and other independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -79,7 +79,10 @@
           "https://www.newportbeachca.gov/i-am-a/business/economic-development/business-improvement-districts-bids/restaurant-association-bid",
           "https://www.danapoint.org/City-Government/City-Council/Meetings-Agendas-Minutes/Minutes-and-Agenda/2025/May-6-2025",
           "https://www.danapoint.org/City-Government/City-Clerk",
-          "https://services.arcgis.com/UXmFoWC7yDHcDN5Q/ArcGIS/rest/services/City_Boundaries1/FeatureServer/0"
+          "https://services.arcgis.com/UXmFoWC7yDHcDN5Q/ArcGIS/rest/services/City_Boundaries1/FeatureServer/0",
+          "https://gis.huntingtonbeachca.gov/arcgis/rest/services/Business/MapServer/0",
+          "https://huntingtonbeach.legistar.com/MeetingDetail.aspx?GUID=02F23DB1-2467-45D6-B902-B535CD9FE41D&ID=1250999&Options=&Search=",
+          "https://huntingtonbeach.legistar.com/LegislationDetail.aspx?GUID=FA3797CC-6B09-4ECB-9305-E452002EE3F7&ID=7655971&Options=&Search="
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -93,7 +96,7 @@
           "data/sources/garden-grove-tourism-improvement-district.geojson",
           "data/sources/costa-mesa-tourism-promotion-business-improvement-area.geojson"
         ],
-        "updated_at": "2026-07-19T18:39:25.690Z",
+        "updated_at": "2026-07-19T18:42:26.041Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

@@ -434,6 +434,57 @@
     }
   },
   {
+    "id": "huntington-beach-downtown-business-improvement-district",
+    "name": "Huntington Beach Downtown Business Improvement District",
+    "jurisdiction": "Huntington Beach, CA",
+    "state": "CA",
+    "city": "Huntington Beach",
+    "fixedName": "Huntington Beach Downtown Business Improvement District",
+    "url": "https://gis.huntingtonbeachca.gov/arcgis/rest/services/Business/MapServer/0/query?where=1%3D1&outFields=BIDZone&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://huntingtonbeach.legistar.com/MeetingDetail.aspx?GUID=02F23DB1-2467-45D6-B902-B535CD9FE41D&ID=1250999&Options=&Search=",
+    "publisher": "City of Huntington Beach",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://gis.huntingtonbeachca.gov/arcgis/rest/services/Business/MapServer/0",
+      "https://huntingtonbeach.legistar.com/MeetingDetail.aspx?GUID=02F23DB1-2467-45D6-B902-B535CD9FE41D&ID=1250999&Options=&Search="
+    ],
+    "fields": {},
+    "overrides": {
+      "Huntington Beach Downtown Business Improvement District": {
+        "website": "https://www.hbdowntown.com/",
+        "established": "2004",
+        "area": "Downtown assessment zones 1 and 2",
+        "sourceUrl": "https://huntingtonbeach.legistar.com/MeetingDetail.aspx?GUID=02F23DB1-2467-45D6-B902-B535CD9FE41D&ID=1250999&Options=&Search="
+      }
+    }
+  },
+  {
+    "id": "huntington-beach-tourism-business-improvement-district",
+    "name": "Huntington Beach Tourism Business Improvement District",
+    "jurisdiction": "Huntington Beach, CA",
+    "state": "CA",
+    "city": "Huntington Beach",
+    "fixedName": "Huntington Beach Tourism Business Improvement District",
+    "url": "https://services.arcgis.com/UXmFoWC7yDHcDN5Q/ArcGIS/rest/services/City_Boundaries1/FeatureServer/0/query?where=JURISDICTI%3D%27HUNTINGTON%20BEACH%27&outFields=JURISDICTI&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://huntingtonbeach.legistar.com/LegislationDetail.aspx?GUID=FA3797CC-6B09-4ECB-9305-E452002EE3F7&ID=7655971&Options=&Search=",
+    "publisher": "City of Huntington Beach / County of Orange",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://huntingtonbeach.legistar.com/LegislationDetail.aspx?GUID=FA3797CC-6B09-4ECB-9305-E452002EE3F7&ID=7655971&Options=&Search=",
+      "https://gis.huntingtonbeachca.gov/arcgis/rest/services/Business/MapServer"
+    ],
+    "fields": {},
+    "overrides": {
+      "Huntington Beach Tourism Business Improvement District": {
+        "website": "https://www.surfcityusa.com/",
+        "established": "2014",
+        "expires": "2028-06-30",
+        "area": "Citywide lodging businesses and short-term rentals",
+        "sourceUrl": "https://huntingtonbeach.legistar.com/LegislationDetail.aspx?GUID=FA3797CC-6B09-4ECB-9305-E452002EE3F7&ID=7655971&Options=&Search="
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",

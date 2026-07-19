@@ -254,6 +254,21 @@ test("Dana Point publishes its current citywide tourism business improvement dis
   assert.ok(district.properties.bounds[1] > 33 && district.properties.bounds[3] < 34);
 });
 
+test("Huntington Beach publishes its downtown and tourism business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Huntington Beach" && feature.properties.state === "CA");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 2);
+  assert.ok(names.has("Huntington Beach Downtown Business Improvement District"));
+  assert.ok(names.has("Huntington Beach Tourism Business Improvement District"));
+  const downtown = districts.find((feature) => feature.properties.sourceId === "huntington-beach-downtown-business-improvement-district");
+  assert.equal(downtown.geometry.type, "MultiPolygon");
+  assert.equal(downtown.geometry.coordinates.length, 9);
+  const tourism = districts.find((feature) => feature.properties.sourceId === "huntington-beach-tourism-business-improvement-district");
+  assert.equal(tourism.properties.established, "2014");
+  assert.equal(tourism.properties.expires, "2028-06-30");
+  assert.ok(tourism.properties.bounds[2] - tourism.properties.bounds[0] > 0.14);
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
