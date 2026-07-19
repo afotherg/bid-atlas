@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T22:56:10.956Z",
+  "updated_at": "2026-07-19T22:58:23.154Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T22:56:10.954Z",
+      "updated_at": "2026-07-19T22:58:23.148Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T02:56:10.954Z"
+        "expires_at": "2026-07-20T02:58:23.148Z"
       },
       "checkpoint": {
-        "phase": "riverside_bid_integration",
-        "summary": "Added Riverside’s three active business improvement districts: Downtown (1985), Arlington (2002; expanded 2025), and Auto Center (2011). California now has 168 mapped districts from thirty-nine configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Bakersfield, Stockton, and San Bernardino.",
+        "phase": "bakersfield_negative_audit",
+        "summary": "Audited Bakersfield and found no active BID or PBID. The downtown association is voluntary, the station-area plan describes a BID only as a possible future tool, and the current city budget has no business-improvement assessment fund.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Stockton and San Bernardino.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -127,7 +127,10 @@
           "https://services.arcgis.com/f48yV21HSEYeCYMI/arcgis/rest/services/City_of_PS_Boundary/FeatureServer/0",
           "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=9FA4DFBA-71BA-40C2-9F00-5E0B3EC26650&ID=7759651&Options=&Search=",
           "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=F7E367B7-2F4D-47B5-B7C3-FAE6DABB719C&ID=7649191&Options=&Search=",
-          "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=F3E45088-B0B8-4E5F-9E53-F510C71183E8&ID=7456257&Options=&Search="
+          "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=F3E45088-B0B8-4E5F-9E53-F510C71183E8&ID=7456257&Options=&Search=",
+          "https://content.civicplus.com/api/assets/9962541d-f68c-434a-a60d-652441a46d55?scope=all",
+          "https://bakersfielddba.com/",
+          "https://www.kerncog.org/wp-content/uploads/2025/05/Bakersfield_HSR_StnAreaVision_Appdx-2018.pdf"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -153,7 +156,7 @@
           "data/sources/palm-springs-small-hotel-tourism-business-improvement-district.geojson",
           "data/sources/riverside-business-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-19T22:56:10.954Z",
+        "updated_at": "2026-07-19T22:58:23.148Z",
         "stop_reason": "manual_pause"
       },
       "result": null,
