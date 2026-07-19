@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Midtown Santa Cruz Business Improvement District"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.0138, 36.9840],
+          [-121.9940, 36.9847],
+          [-121.9935, 36.9804],
+          [-122.0070, 36.9775],
+          [-122.0072, 36.9700],
+          [-122.0105, 36.9695],
+          [-122.0115, 36.9775],
+          [-122.0138, 36.9840]
+        ]]
+      }
+    }
+  ]
+}

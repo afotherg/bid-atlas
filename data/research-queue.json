@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T18:58:18.905Z",
+  "updated_at": "2026-07-19T19:02:11.729Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 19,
+      "attempts": 20,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T18:58:18.904Z",
+      "updated_at": "2026-07-19T19:02:11.729Z",
       "lease": null,
       "checkpoint": {
-        "phase": "redwood_city_source_integration",
-        "summary": "Added the Downtown Redwood City Community Benefit Improvement District, formed for a fifteen-year term from January 2015 through December 2029. The City's current registry identifies 222 assessed parcels, and its June 2025 annual-report action confirms ongoing operations. The atlas geometry is generalized from the adopted Brewster, Veterans, Maple, and Pennsylvania/El Camino Real limits. California now has 155 mapped districts from thirty-one configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit San Carlos, South San Francisco, and other independent California cities.",
+        "phase": "midtown_santa_cruz_source_integration",
+        "summary": "Added the Midtown Santa Cruz Business Improvement District established for calendar 2026. The merchant district includes 112 businesses and follows the Soquel Avenue, Water Street, Seabright Avenue, and Morrissey Boulevard commercial corridors. South San Francisco's October 2025 record still describes its Downtown PBID as in formation, so it remains unmapped. California now has 156 mapped districts from thirty-two configured sources.",
+        "next_action": "Map Santa Cruz's current Downtown Parking and Business Improvement Area and Cooperative Retail Management Business Real Property Improvement District; continue auditing independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -99,7 +99,10 @@
           "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/ordinances/2022/14",
           "https://www.redwoodcity.org/business/economic-development/community-benefit-improvement-district",
           "https://www.redwoodcity.org/home/showpublisheddocument/1058/635773328377830000",
-          "https://meetings.redwoodcity.org/AgendaOnline/Documents/ViewDocument/6.D.%20STAFF%20REPORT.DOC.pdf?documentType=Agenda&isSection=false&itemId=12824&meetingId=2597&publishId=20231"
+          "https://meetings.redwoodcity.org/AgendaOnline/Documents/ViewDocument/6.D.%20STAFF%20REPORT.DOC.pdf?documentType=Agenda&isSection=false&itemId=12824&meetingId=2597&publishId=20231",
+          "https://www.ssf.net/files/assets/public/v/1/economic-amp-community-development/documents/anti-displacement-cac-meetings/anti-displacement-cac-packet-for-102725.pdf",
+          "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Documents/ViewDocument/Summary%20Sheet%20for%20-%20Resolution%20of%20Intention%20to%20Form%20Midtown%20Santa%20Cruz%20Busin.pdf?documentType=Agenda&isSection=false&itemId=49225&meetingId=2539&publishId=81141",
+          "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeetingAgenda?meetingId=2557&type=AGENDATYPEVALUE"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -115,9 +118,10 @@
           "data/sources/manhattan-beach-business-improvement-districts.geojson",
           "data/sources/burlingame-business-improvement-districts.geojson",
           "data/sources/san-mateo-downtown-business-improvement-area.geojson",
-          "data/sources/redwood-city-community-benefit-improvement-district.geojson"
+          "data/sources/redwood-city-community-benefit-improvement-district.geojson",
+          "data/sources/midtown-santa-cruz-business-improvement-district.geojson"
         ],
-        "updated_at": "2026-07-19T18:58:18.904Z",
+        "updated_at": "2026-07-19T19:02:11.729Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

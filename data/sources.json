@@ -637,6 +637,34 @@
     }
   },
   {
+    "id": "midtown-santa-cruz-business-improvement-district",
+    "name": "Midtown Santa Cruz Business Improvement District",
+    "jurisdiction": "Santa Cruz, CA",
+    "state": "CA",
+    "city": "Santa Cruz",
+    "file": "data/sources/midtown-santa-cruz-business-improvement-district.geojson",
+    "landingPage": "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeetingAgenda?meetingId=2557&type=AGENDATYPEVALUE",
+    "publisher": "City of Santa Cruz",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeetingAgenda?meetingId=2557&type=AGENDATYPEVALUE",
+      "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Documents/ViewDocument/Summary%20Sheet%20for%20-%20Resolution%20of%20Intention%20to%20Form%20Midtown%20Santa%20Cruz%20Busin.pdf?documentType=Agenda&isSection=false&itemId=49225&meetingId=2539&publishId=81141"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Midtown Santa Cruz Business Improvement District": {
+        "established": "2026",
+        "area": "Generalized from the official Soquel Avenue, Water Street, Seabright Avenue, and Morrissey Boulevard limits",
+        "sourceUrl": "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Documents/ViewDocument/Summary%20Sheet%20for%20-%20Resolution%20of%20Intention%20to%20Form%20Midtown%20Santa%20Cruz%20Busin.pdf?documentType=Agenda&isSection=false&itemId=49225&meetingId=2539&publishId=81141",
+        "reportUrl": "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeetingAgenda?meetingId=2557&type=AGENDATYPEVALUE"
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",

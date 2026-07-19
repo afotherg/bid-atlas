@@ -339,6 +339,18 @@ test("Redwood City publishes its current downtown community benefit district", (
   assert.ok(latitude > 37 && latitude < 38, "Redwood City district has an unexpected latitude");
 });
 
+test("Santa Cruz publishes its new Midtown business improvement district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Santa Cruz" && feature.properties.state === "CA");
+  assert.ok(districts.length >= 1);
+  const district = districts.find((feature) => feature.properties.name === "Midtown Santa Cruz Business Improvement District");
+  assert.ok(district, "missing Midtown Santa Cruz BID");
+  assert.equal(district.properties.established, "2026");
+  assert.equal(district.properties.status, "Active");
+  const [longitude, latitude] = district.properties.center;
+  assert.ok(longitude > -123 && longitude < -121, "Santa Cruz district has an unexpected longitude");
+  assert.ok(latitude > 36 && latitude < 38, "Santa Cruz district has an unexpected latitude");
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
