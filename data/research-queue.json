@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T21:44:20.747Z",
+  "updated_at": "2026-07-19T21:46:10.695Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 25,
+      "attempts": 26,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T21:44:20.746Z",
+      "updated_at": "2026-07-19T21:46:10.694Z",
       "lease": null,
       "checkpoint": {
-        "phase": "downtown_merced_source_integration",
-        "summary": "Added the active Downtown Merced Property-Based Improvement District, formed in 2023 for an initial January 2024 through December 2028 term. Its generalized boundary follows the adopted parcel map and official street limits. California now has 164 mapped districts from thirty-seven configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Palm Springs and other independent California cities.",
+        "phase": "palm_springs_small_hotel_tbid_integration",
+        "summary": "Added the active Palm Springs Small Hotel Tourism Business Improvement District, established in 2016 and undergoing its FY2026-27 annual levy. Its citywide benefit zone uses the exact official Palm Springs boundary. California now has 165 mapped districts from thirty-eight configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Riverside and other independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -117,7 +117,10 @@
           "https://gis.cityofnapa.org/arcgis/rest/services/TapMap/Reference_AGO/MapServer/1",
           "https://cityofmerced.legistar.com/MeetingDetail.aspx?GUID=2DB23D7A-DB16-4810-BF1F-5D1D61862A3B&ID=1059850&Options=info%7C&Search=",
           "https://cityofmerced.legistar.com/View.ashx?GUID=CFBCEA37-B911-4B65-8151-83CCB5E88D98&ID=13513481&M=F",
-          "https://cityofmerced.legistar.com/LegislationDetail.aspx?From=RSS&GUID=9F6C471B-402A-4F4D-B32F-E2D1408775D1&ID=7005587"
+          "https://cityofmerced.legistar.com/LegislationDetail.aspx?From=RSS&GUID=9F6C471B-402A-4F4D-B32F-E2D1408775D1&ID=7005587",
+          "https://www.palmspringsca.gov/government/departments/finance-treasury/tourism-business-improvement-district",
+          "https://www.palmspringsca.gov/Home/Components/News/News/8806/23",
+          "https://services.arcgis.com/f48yV21HSEYeCYMI/arcgis/rest/services/City_of_PS_Boundary/FeatureServer/0"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -139,9 +142,10 @@
           "data/sources/santa-monica-property-based-assessment-districts.geojson",
           "data/sources/downtown-fresno-property-business-improvement-district.geojson",
           "data/sources/downtown-napa-property-business-improvement-district.geojson",
-          "data/sources/downtown-merced-property-based-improvement-district.geojson"
+          "data/sources/downtown-merced-property-based-improvement-district.geojson",
+          "data/sources/palm-springs-small-hotel-tourism-business-improvement-district.geojson"
         ],
-        "updated_at": "2026-07-19T21:44:20.746Z",
+        "updated_at": "2026-07-19T21:46:10.694Z",
         "stop_reason": "manual_pause"
       },
       "result": null,

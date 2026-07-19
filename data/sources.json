@@ -113,6 +113,30 @@
     }
   },
   {
+    "id": "palm-springs-small-hotel-tourism-business-improvement-district",
+    "name": "Palm Springs Small Hotel Tourism Business Improvement District",
+    "jurisdiction": "Palm Springs, CA",
+    "state": "CA",
+    "city": "Palm Springs",
+    "file": "data/sources/palm-springs-small-hotel-tourism-business-improvement-district.geojson",
+    "landingPage": "https://www.palmspringsca.gov/government/departments/finance-treasury/tourism-business-improvement-district",
+    "publisher": "City of Palm Springs",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.palmspringsca.gov/government/departments/finance-treasury/tourism-business-improvement-district",
+      "https://www.palmspringsca.gov/government/city-clerk/boards-and-commissions/small-hotel-tourism-business-improvement-district"
+    ],
+    "fields": { "name": ["name"] },
+    "overrides": {
+      "Palm Springs Small Hotel Tourism Business Improvement District": {
+        "established": "2016",
+        "area": "Citywide benefit zone for assessed small hotels with 49 rooms or fewer; exact official Palm Springs city boundary",
+        "sourceUrl": "https://services.arcgis.com/f48yV21HSEYeCYMI/arcgis/rest/services/City_of_PS_Boundary/FeatureServer/0",
+        "reportUrl": "https://www.palmspringsca.gov/Home/Components/News/News/8806/23"
+      }
+    }
+  },
+  {
     "id": "downtown-merced-property-based-improvement-district",
     "name": "Downtown Merced Property-Based Improvement District",
     "jurisdiction": "Merced, CA",

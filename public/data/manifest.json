@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T21:44:00.815Z",
-  "records": 290,
+  "generatedAt": "2026-07-19T21:45:54.750Z",
+  "records": 291,
   "states": [
     "CA",
     "CO",
@@ -44,6 +44,7 @@
     "Napa, CA",
     "New York, NY",
     "Oakland, CA",
+    "Palm Springs, CA",
     "Pasadena, CA",
     "Redwood City, CA",
     "Reno, NV",
@@ -87,6 +88,15 @@
       "status": "ok",
       "records": 38,
       "checkedAt": "2026-07-19T19:44:32.531Z"
+    },
+    {
+      "id": "palm-springs-small-hotel-tourism-business-improvement-district",
+      "name": "Palm Springs Small Hotel Tourism Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T21:45:54.750Z",
+      "monitorHash": "9012454919a8b025fbccda4dc37e03fe959bf8e94683fa021d635f1e86eb7889",
+      "legislationChanged": false
     },
     {
       "id": "downtown-merced-property-based-improvement-district",
@@ -458,8 +468,8 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 42,
-    "configuredSources": 50,
+    "verifiedJurisdictions": 43,
+    "configuredSources": 51,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
