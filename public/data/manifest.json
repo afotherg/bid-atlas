@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T21:40:04.574Z",
-  "records": 289,
+  "generatedAt": "2026-07-19T21:44:00.815Z",
+  "records": 290,
   "states": [
     "CA",
     "CO",
@@ -37,6 +37,7 @@
     "Los Angeles, CA",
     "Macon, GA",
     "Manhattan Beach, CA",
+    "Merced, CA",
     "Miami Beach, FL",
     "Miami, FL",
     "Nampa, ID",
@@ -86,6 +87,15 @@
       "status": "ok",
       "records": 38,
       "checkedAt": "2026-07-19T19:44:32.531Z"
+    },
+    {
+      "id": "downtown-merced-property-based-improvement-district",
+      "name": "Downtown Merced Property-Based Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T21:44:00.815Z",
+      "monitorHash": "32d80a3a9fbead1609566cba93edd85dde804cef3219bc273e5ce9c06b866dea",
+      "legislationChanged": false
     },
     {
       "id": "downtown-napa-property-business-improvement-district",
@@ -448,8 +458,8 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 41,
-    "configuredSources": 49,
+    "verifiedJurisdictions": 42,
+    "configuredSources": 50,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

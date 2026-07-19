@@ -113,6 +113,36 @@
     }
   },
   {
+    "id": "downtown-merced-property-based-improvement-district",
+    "name": "Downtown Merced Property-Based Improvement District",
+    "jurisdiction": "Merced, CA",
+    "state": "CA",
+    "city": "Merced",
+    "file": "data/sources/downtown-merced-property-based-improvement-district.geojson",
+    "landingPage": "https://cityofmerced.legistar.com/LegislationDetail.aspx?From=RSS&GUID=9F6C471B-402A-4F4D-B32F-E2D1408775D1&ID=7005587",
+    "publisher": "City of Merced and Downtown Merced Partnership",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://cityofmerced.legistar.com/LegislationDetail.aspx?From=RSS&GUID=9F6C471B-402A-4F4D-B32F-E2D1408775D1&ID=7005587",
+      "https://www.downtownmerced.org/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown Merced Property-Based Improvement District": {
+        "website": "https://www.downtownmerced.org/",
+        "established": "2023",
+        "expires": "2028",
+        "area": "Generalized from the official parcel and benefit-zone map; roughly bounded by 16th Street, R Street, 18th and 19th Streets, and G Street",
+        "sourceUrl": "https://cityofmerced.legistar.com/View.ashx?GUID=CFBCEA37-B911-4B65-8151-83CCB5E88D98&ID=13513481&M=F",
+        "reportUrl": "https://cityofmerced.legistar.com/LegislationDetail.aspx?From=RSS&GUID=9F6C471B-402A-4F4D-B32F-E2D1408775D1&ID=7005587"
+      }
+    }
+  },
+  {
     "id": "downtown-napa-property-business-improvement-district",
     "name": "Downtown Napa Property and Business Improvement District",
     "jurisdiction": "Napa, CA",

@@ -89,6 +89,19 @@ test("Downtown Napa publishes its renewed property and business improvement dist
   assert.ok(latitude > 37 && latitude < 39, "district is outside Napa latitude");
 });
 
+test("Downtown Merced publishes its active property-based improvement district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "downtown-merced-property-based-improvement-district");
+  assert.equal(districts.length, 1);
+  const [district] = districts;
+  assert.equal(district.properties.name, "Downtown Merced Property-Based Improvement District");
+  assert.equal(district.properties.established, "2023");
+  assert.equal(district.properties.expires, "2028");
+  assert.equal(district.properties.status, "Active");
+  const [longitude, latitude] = district.properties.center;
+  assert.ok(longitude > -122 && longitude < -119, "district is outside Merced longitude");
+  assert.ok(latitude > 36 && latitude < 38, "district is outside Merced latitude");
+});
+
 test("Oakland publishes its ten current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

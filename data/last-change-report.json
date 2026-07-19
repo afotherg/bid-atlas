@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-19T21:40:04.574Z",
+  "checkedAt": "2026-07-19T21:44:00.815Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-napa-downtown-napa-property-and-business-improvement-district"
+    "ca-merced-downtown-merced-property-based-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -38,6 +38,15 @@
       "status": "ok",
       "records": 38,
       "checkedAt": "2026-07-19T19:44:32.531Z"
+    },
+    {
+      "id": "downtown-merced-property-based-improvement-district",
+      "name": "Downtown Merced Property-Based Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T21:44:00.815Z",
+      "monitorHash": "32d80a3a9fbead1609566cba93edd85dde804cef3219bc273e5ce9c06b866dea",
+      "legislationChanged": false
     },
     {
       "id": "downtown-napa-property-business-improvement-district",
