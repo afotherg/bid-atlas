@@ -576,6 +576,36 @@
     }
   },
   {
+    "id": "san-mateo-downtown-business-improvement-area",
+    "name": "Downtown San Mateo Business Improvement Area",
+    "jurisdiction": "San Mateo, CA",
+    "state": "CA",
+    "city": "San Mateo",
+    "file": "data/sources/san-mateo-downtown-business-improvement-area.geojson",
+    "landingPage": "https://www.cityofsanmateo.org/2579/Business-Associations",
+    "publisher": "City of San Mateo",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.cityofsanmateo.org/2579/Business-Associations",
+      "https://www.cityofsanmateo.org/DocumentCenter/View/2695/ORDINANCE-NO-2008-07?bidId=",
+      "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/ordinances/2022/14"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown San Mateo Business Improvement Area": {
+        "website": "https://downtownsanmateo.org/",
+        "established": "1986",
+        "area": "Generalized envelope of the two benefit zones shown on the official 2008 parcel map",
+        "sourceUrl": "https://www.cityofsanmateo.org/DocumentCenter/View/2695/ORDINANCE-NO-2008-07?bidId=",
+        "reportUrl": "https://law.cityofsanmateo.org/us/ca/cities/san-mateo/ordinances/2022/14"
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",

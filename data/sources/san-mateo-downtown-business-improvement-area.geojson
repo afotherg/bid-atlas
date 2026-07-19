@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown San Mateo Business Improvement Area"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.3310, 37.5674],
+          [-122.3260, 37.5710],
+          [-122.3215, 37.5688],
+          [-122.3179, 37.5667],
+          [-122.3157, 37.5628],
+          [-122.3198, 37.5606],
+          [-122.3240, 37.5617],
+          [-122.3288, 37.5642],
+          [-122.3310, 37.5674]
+        ]]
+      }
+    }
+  ]
+}

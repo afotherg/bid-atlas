@@ -310,6 +310,20 @@ test("Burlingame publishes its two current business improvement districts", () =
   }
 });
 
+test("San Mateo publishes its current downtown business improvement area", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "San Mateo" && feature.properties.state === "CA");
+  assert.equal(districts.length, 1);
+  const [district] = districts;
+  assert.equal(district.properties.name, "Downtown San Mateo Business Improvement Area");
+  assert.equal(district.properties.established, "1986");
+  assert.equal(district.properties.status, "Active");
+  assert.equal(district.geometry.type, "Polygon");
+  assert.ok(district.properties.bounds[2] - district.properties.bounds[0] > 0.01);
+  const [longitude, latitude] = district.properties.center;
+  assert.ok(longitude > -123 && longitude < -122, "San Mateo district has an unexpected longitude");
+  assert.ok(latitude > 37 && latitude < 38, "San Mateo district has an unexpected latitude");
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
