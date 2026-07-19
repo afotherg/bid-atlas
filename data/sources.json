@@ -113,6 +113,72 @@
     }
   },
   {
+    "id": "stockton-downtown-and-miracle-mile-districts",
+    "name": "Stockton Downtown and Miracle Mile Improvement Districts",
+    "jurisdiction": "Stockton, CA",
+    "state": "CA",
+    "city": "Stockton",
+    "file": "data/sources/stockton-downtown-and-miracle-mile-districts.geojson",
+    "landingPage": "https://stockton.legistar.com/LegislationDetail.aspx?G=5C2AEB70-56EE-42A1-8FBC-AA8A0588C1C7&GUID=BCDC1A98-0F6F-4F85-B6FF-79C083AE6062&ID=7931562&Options=&Search=",
+    "publisher": "City of Stockton",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://stockton.legistar.com/LegislationDetail.aspx?G=5C2AEB70-56EE-42A1-8FBC-AA8A0588C1C7&GUID=BCDC1A98-0F6F-4F85-B6FF-79C083AE6062&ID=7931562&Options=&Search=",
+      "https://stockton.legistar.com/LegislationDetail.aspx?GUID=630AB1E7-9117-4935-8194-C81654EF1ADD&ID=7974468&Options=&Search="
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown Stockton Property and Business Improvement District": {
+        "website": "https://www.downtownstockton.org/",
+        "established": "1997",
+        "expires": "2026",
+        "area": "Generalized from the adopted 2017 three-zone parcel map and legal street-boundary description; a successor Community Improvement District begins January 1, 2027",
+        "sourceUrl": "https://www.downtownstockton.org/wp-content/uploads/2022/04/stockton_downtown_management_plan_2017.pdf",
+        "reportUrl": "https://stockton.legistar.com/LegislationDetail.aspx?G=5C2AEB70-56EE-42A1-8FBC-AA8A0588C1C7&GUID=BCDC1A98-0F6F-4F85-B6FF-79C083AE6062&ID=7931562&Options=&Search="
+      },
+      "Miracle Mile Community Improvement District": {
+        "website": "https://stocktonmiraclemile.com/merchants-owners/",
+        "established": "2023",
+        "expires": "2042",
+        "area": "Generalized from the official four-zone parcel map; primarily the Pacific Avenue corridor from Alpine Avenue to Harding Way and Harding Way from El Dorado Street to Lincoln Street",
+        "sourceUrl": "https://stockton.legistar.com/View.ashx?GUID=8BD748E9-A242-44AF-8719-0974A255C6D2&ID=13978654&M=F",
+        "reportUrl": "https://stockton.legistar.com/LegislationDetail.aspx?GUID=630AB1E7-9117-4935-8194-C81654EF1ADD&ID=7974468&Options=&Search="
+      }
+    }
+  },
+  {
+    "id": "stockton-tourism-business-improvement-district",
+    "name": "Stockton Tourism Business Improvement District",
+    "jurisdiction": "Stockton, CA",
+    "state": "CA",
+    "city": "Stockton",
+    "url": "https://data.stocktonca.gov/resource/8drp-mhba.geojson?%24where=name%3D%27STOCKTON%27%20AND%20inout%3D%27IN%27&%24limit=50000",
+    "landingPage": "https://stockton.legistar.com/LegislationDetail.aspx?GUID=716CE659-C63A-4BE1-925E-9F42965FD589&ID=7977286&Options=&Search=",
+    "publisher": "City of Stockton",
+    "cadence": "Annual",
+    "fixedName": "Stockton Tourism Business Improvement District",
+    "monitorUrls": [
+      "https://stockton.legistar.com/LegislationDetail.aspx?GUID=716CE659-C63A-4BE1-925E-9F42965FD589&ID=7977286&Options=&Search="
+    ],
+    "fields": {
+      "name": []
+    },
+    "overrides": {
+      "Stockton Tourism Business Improvement District": {
+        "website": "https://www.visitstockton.org/",
+        "established": "2010",
+        "expires": "2035",
+        "area": "Exact official Stockton city boundary; the district assesses all current and future lodging businesses available for public occupancy citywide",
+        "sourceUrl": "https://data.stocktonca.gov/dataset/City-Limits/8drp-mhba",
+        "reportUrl": "https://stockton.legistar.com/LegislationDetail.aspx?GUID=716CE659-C63A-4BE1-925E-9F42965FD589&ID=7977286&Options=&Search="
+      }
+    }
+  },
+  {
     "id": "riverside-business-improvement-districts",
     "name": "Riverside Business Improvement Districts",
     "jurisdiction": "Riverside, CA",

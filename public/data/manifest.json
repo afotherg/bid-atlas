@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T22:54:15.704Z",
-  "records": 294,
+  "generatedAt": "2026-07-19T23:04:56.851Z",
+  "records": 297,
   "states": [
     "CA",
     "CO",
@@ -57,6 +57,7 @@
     "San Mateo, CA",
     "Santa Cruz, CA",
     "Santa Monica, CA",
+    "Stockton, CA",
     "Tacoma, WA",
     "Washington, DC",
     "West Hollywood, CA"
@@ -89,6 +90,24 @@
       "status": "ok",
       "records": 38,
       "checkedAt": "2026-07-19T22:54:15.704Z"
+    },
+    {
+      "id": "stockton-downtown-and-miracle-mile-districts",
+      "name": "Stockton Downtown and Miracle Mile Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-19T23:03:48.058Z",
+      "monitorHash": "07165ebffb1f48c3f1f677175ed620d34730b16f2cfee4d813b033d111a5e3d5",
+      "legislationChanged": false
+    },
+    {
+      "id": "stockton-tourism-business-improvement-district",
+      "name": "Stockton Tourism Business Improvement District",
+      "status": "review",
+      "records": 1,
+      "checkedAt": "2026-07-19T23:04:56.851Z",
+      "monitorHash": "72ae0b13dd59b0c6c3b24599f41cb098b5755ff998fc35a9b345862e756510c4",
+      "legislationChanged": true
     },
     {
       "id": "riverside-business-improvement-districts",
@@ -478,13 +497,13 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 44,
-    "configuredSources": 52,
+    "verifiedJurisdictions": 45,
+    "configuredSources": 54,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 3,
-    "modified": 0,
+    "added": 0,
+    "modified": 1,
     "removed": 0
   }
 }

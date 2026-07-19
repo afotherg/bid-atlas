@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T22:58:23.154Z",
+  "updated_at": "2026-07-19T23:05:24.950Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T22:58:23.148Z",
+      "updated_at": "2026-07-19T23:05:24.949Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T02:58:23.148Z"
+        "expires_at": "2026-07-20T03:05:24.949Z"
       },
       "checkpoint": {
-        "phase": "bakersfield_negative_audit",
-        "summary": "Audited Bakersfield and found no active BID or PBID. The downtown association is voluntary, the station-area plan describes a BID only as a possible future tool, and the current city budget has no business-improvement assessment fund.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Stockton and San Bernardino.",
+        "phase": "stockton_district_integration",
+        "summary": "Added Stockton’s three active assessment districts: Downtown PBID, Miracle Mile CID, and the citywide Tourism BID. California now has 171 mapped districts from forty-one configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active and proposed districts in San Bernardino.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -130,7 +130,10 @@
           "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=F3E45088-B0B8-4E5F-9E53-F510C71183E8&ID=7456257&Options=&Search=",
           "https://content.civicplus.com/api/assets/9962541d-f68c-434a-a60d-652441a46d55?scope=all",
           "https://bakersfielddba.com/",
-          "https://www.kerncog.org/wp-content/uploads/2025/05/Bakersfield_HSR_StnAreaVision_Appdx-2018.pdf"
+          "https://www.kerncog.org/wp-content/uploads/2025/05/Bakersfield_HSR_StnAreaVision_Appdx-2018.pdf",
+          "https://stockton.legistar.com/LegislationDetail.aspx?G=5C2AEB70-56EE-42A1-8FBC-AA8A0588C1C7&GUID=BCDC1A98-0F6F-4F85-B6FF-79C083AE6062&ID=7931562&Options=&Search=",
+          "https://stockton.legistar.com/LegislationDetail.aspx?GUID=630AB1E7-9117-4935-8194-C81654EF1ADD&ID=7974468&Options=&Search=",
+          "https://stockton.legistar.com/LegislationDetail.aspx?GUID=716CE659-C63A-4BE1-925E-9F42965FD589&ID=7977286&Options=&Search="
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -154,9 +157,10 @@
           "data/sources/downtown-napa-property-business-improvement-district.geojson",
           "data/sources/downtown-merced-property-based-improvement-district.geojson",
           "data/sources/palm-springs-small-hotel-tourism-business-improvement-district.geojson",
-          "data/sources/riverside-business-improvement-districts.geojson"
+          "data/sources/riverside-business-improvement-districts.geojson",
+          "data/sources/stockton-downtown-and-miracle-mile-districts.geojson"
         ],
-        "updated_at": "2026-07-19T22:58:23.148Z",
+        "updated_at": "2026-07-19T23:05:24.949Z",
         "stop_reason": "manual_pause"
       },
       "result": null,

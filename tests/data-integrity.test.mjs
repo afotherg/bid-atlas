@@ -132,6 +132,26 @@ test("Riverside publishes its three active business improvement districts", () =
   }
 });
 
+test("Stockton publishes its three current improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Stockton" && feature.properties.state === "CA");
+  const expected = new Map([
+    ["Downtown Stockton Property and Business Improvement District", ["1997", "2026"]],
+    ["Miracle Mile Community Improvement District", ["2023", "2042"]],
+    ["Stockton Tourism Business Improvement District", ["2010", "2035"]],
+  ]);
+  assert.equal(districts.length, 3);
+  for (const district of districts) {
+    const term = expected.get(district.properties.name);
+    assert.ok(term, `unexpected Stockton district ${district.properties.name}`);
+    assert.equal(district.properties.established, term[0]);
+    assert.equal(district.properties.expires, term[1]);
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -123 && longitude < -120, `${district.properties.name} is outside Stockton longitude`);
+    assert.ok(latitude > 37 && latitude < 39, `${district.properties.name} is outside Stockton latitude`);
+  }
+});
+
 test("Oakland publishes its ten current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));
