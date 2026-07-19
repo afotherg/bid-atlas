@@ -485,6 +485,33 @@
     }
   },
   {
+    "id": "laguna-beach-tourism-marketing-district",
+    "name": "Laguna Beach Tourism Marketing District",
+    "jurisdiction": "Laguna Beach, CA",
+    "state": "CA",
+    "city": "Laguna Beach",
+    "fixedName": "Laguna Beach Tourism Marketing District",
+    "url": "https://services.arcgis.com/UXmFoWC7yDHcDN5Q/ArcGIS/rest/services/City_Boundaries1/FeatureServer/0/query?where=JURISDICTI%3D%27LAGUNA%20BEACH%27&outFields=JURISDICTI&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://lagunabeachcity.granicus.com/GeneratedAgendaViewer.php?event_id=3124&view_id=3",
+    "publisher": "City of Laguna Beach / County of Orange",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.lagunabeachcity.net/government/departments/cultural-arts/grant-opportunities",
+      "https://www.lagunabeachcity.net/government/departments/community-development/planning-zoning/current-projects/short-term-lodging",
+      "https://lagunabeachcity.granicus.com/GeneratedAgendaViewer.php?event_id=3124&view_id=3"
+    ],
+    "fields": {},
+    "overrides": {
+      "Laguna Beach Tourism Marketing District": {
+        "website": "https://www.visitlagunabeach.com/",
+        "established": "2001",
+        "expires": "2035-06-30",
+        "area": "Citywide lodging businesses, including hotels and vacation rentals",
+        "sourceUrl": "https://lagunabeachcity.granicus.com/GeneratedAgendaViewer.php?event_id=3124&view_id=3"
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",

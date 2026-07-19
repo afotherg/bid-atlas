@@ -269,6 +269,18 @@ test("Huntington Beach publishes its downtown and tourism business improvement d
   assert.ok(tourism.properties.bounds[2] - tourism.properties.bounds[0] > 0.14);
 });
 
+test("Laguna Beach publishes its renewed citywide tourism marketing district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Laguna Beach" && feature.properties.state === "CA");
+  assert.equal(districts.length, 1);
+  const [district] = districts;
+  assert.equal(district.properties.name, "Laguna Beach Tourism Marketing District");
+  assert.equal(district.properties.established, "2001");
+  assert.equal(district.properties.expires, "2035-06-30");
+  assert.equal(district.properties.area, "Citywide lodging businesses, including hotels and vacation rentals");
+  assert.ok(district.properties.bounds[2] - district.properties.bounds[0] > 0.07);
+  assert.ok(district.properties.bounds[1] > 33 && district.properties.bounds[3] < 34);
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
