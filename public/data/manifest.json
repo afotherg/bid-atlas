@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T23:18:29.717Z",
-  "records": 301,
+  "generatedAt": "2026-07-19T23:21:06.429Z",
+  "records": 302,
   "states": [
     "CA",
     "CO",
@@ -50,6 +50,7 @@
     "Ontario, CA",
     "Palm Springs, CA",
     "Pasadena, CA",
+    "Pomona, CA",
     "Redwood City, CA",
     "Reno, NV",
     "Riverside, CA",
@@ -491,6 +492,15 @@
       "legislationChanged": true
     },
     {
+      "id": "downtown-pomona-property-business-improvement-district",
+      "name": "Downtown Pomona Property and Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T23:21:06.429Z",
+      "monitorHash": "85460d4ef4a20d1716ccfb6248c228dd333ceb922e4f308e639b311cd0ceeaf3",
+      "legislationChanged": false
+    },
+    {
       "id": "glendora-village-business-improvement-district",
       "name": "Glendora Village Business Improvement District",
       "status": "ok",
@@ -537,8 +547,8 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 49,
-    "configuredSources": 58,
+    "verifiedJurisdictions": 50,
+    "configuredSources": 59,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

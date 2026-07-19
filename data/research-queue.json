@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T23:18:51.654Z",
+  "updated_at": "2026-07-19T23:21:28.647Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T23:18:51.653Z",
+      "updated_at": "2026-07-19T23:21:28.647Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
         "expires_at": "2026-07-20T03:18:51.653Z"
       },
       "checkpoint": {
-        "phase": "glendora_district_integration",
-        "summary": "Integrated the active Glendora Village Business Improvement District, established in 2009, using the unchanged FY2026-27 official map and municipal-code boundary description.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Pomona and Culver City.",
+        "phase": "pomona_district_integration",
+        "summary": "Integrated the active Downtown Pomona PBID, formed in 2004 and renewed through 2028, using a generalized version of the official parcel map.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Culver City and Monrovia.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -148,7 +148,9 @@
           "https://avvillage.org/village-specific-plan/",
           "https://www.cityofglendora.gov/files/assets/city/v/2/city-clerk/documents/bid-annual-report-2026-2027.pdf",
           "https://ecode360.com/43761131",
-          "https://glendoravillage.com/bid-meetings-and-agendas-1"
+          "https://glendoravillage.com/bid-meetings-and-agendas-1",
+          "https://pomona.legistar.com/LegislationDetail.aspx?From=RSS&GUID=5F9F7394-F2D8-448E-9637-30B8D16C1B04&ID=7487993",
+          "https://pomona.legistar.com/View.ashx?GUID=4300AD45-E4A6-42B4-9041-7D8D3D949BFE&ID=14531522&M=F"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -176,9 +178,10 @@
           "data/sources/stockton-downtown-and-miracle-mile-districts.geojson",
           "data/sources/ontario-downtown-community-benefit-district.geojson",
           "data/sources/apple-valley-village-property-business-improvement-district.geojson",
-          "data/sources/glendora-village-business-improvement-district.geojson"
+          "data/sources/glendora-village-business-improvement-district.geojson",
+          "data/sources/downtown-pomona-property-business-improvement-district.geojson"
         ],
-        "updated_at": "2026-07-19T23:18:51.653Z",
+        "updated_at": "2026-07-19T23:21:28.647Z",
         "stop_reason": "continuous_research"
       },
       "result": null,

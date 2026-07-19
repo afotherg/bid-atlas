@@ -1540,6 +1540,20 @@
     }
   },
   {
+    "id": "downtown-pomona-property-business-improvement-district",
+    "name": "Downtown Pomona Property and Business Improvement District",
+    "jurisdiction": "Pomona, CA",
+    "state": "CA",
+    "city": "Pomona",
+    "file": "data/sources/downtown-pomona-property-business-improvement-district.geojson",
+    "landingPage": "https://pomona.legistar.com/LegislationDetail.aspx?From=RSS&GUID=5F9F7394-F2D8-448E-9637-30B8D16C1B04&ID=7487993",
+    "publisher": "City of Pomona",
+    "cadence": "Annual",
+    "monitorUrls": ["https://pomona.legistar.com/LegislationDetail.aspx?From=RSS&GUID=5F9F7394-F2D8-448E-9637-30B8D16C1B04&ID=7487993","https://www.downtownpomona.org/"],
+    "fields": {"name":["name"]},
+    "overrides": {"Downtown Pomona Property and Business Improvement District":{"website":"https://www.downtownpomona.org/","established":"2004","expires":"2028","area":"Generalized from the official 2019 parcel map retained with the FY2025-26 levy; the core extends from First Street to Mission Boulevard between White Avenue and Eleanor Street, with eastern and northern extensions","sourceUrl":"https://pomona.legistar.com/View.ashx?GUID=4300AD45-E4A6-42B4-9041-7D8D3D949BFE&ID=14531522&M=F","reportUrl":"https://pomona.legistar.com/LegislationDetail.aspx?From=RSS&GUID=5F9F7394-F2D8-448E-9637-30B8D16C1B04&ID=7487993"}}
+  },
+  {
     "id": "glendora-village-business-improvement-district",
     "name": "Glendora Village Business Improvement District",
     "jurisdiction": "Glendora, CA",

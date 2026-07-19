@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-19T23:18:29.717Z",
+  "checkedAt": "2026-07-19T23:21:06.429Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-glendora-glendora-village-business-improvement-district"
+    "ca-pomona-downtown-pomona-property-and-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -433,6 +433,15 @@
       "checkedAt": "2026-07-19T23:11:39.300Z",
       "monitorHash": "12518b9d4fe109db6d46a101162616a3671c3b13b80842b6dd45b02bda25172b",
       "legislationChanged": true
+    },
+    {
+      "id": "downtown-pomona-property-business-improvement-district",
+      "name": "Downtown Pomona Property and Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T23:21:06.429Z",
+      "monitorHash": "85460d4ef4a20d1716ccfb6248c228dd333ceb922e4f308e639b311cd0ceeaf3",
+      "legislationChanged": false
     },
     {
       "id": "glendora-village-business-improvement-district",
