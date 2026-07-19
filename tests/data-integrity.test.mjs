@@ -85,6 +85,28 @@ test("San Jose publishes eleven distinct active improvement districts", () => {
   }
 });
 
+test("Long Beach publishes eight current non-tourism BID boundaries", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Long Beach" && feature.properties.state === "CA");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 8);
+  for (const name of [
+    "Belmont Shore Parking and Business Improvement Area",
+    "Bixby Knolls Parking and Business Improvement Area",
+    "Downtown Long Beach Parking and Business Improvement Area",
+    "Downtown Long Beach Property-Based Improvement District",
+    "Fourth Street Parking and Business Improvement Area",
+    "Midtown Property and Business Improvement District",
+    "Uptown Property and Business Improvement District",
+    "Zaferia Parking and Business Improvement Area",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  assert.ok(!districts.some((feature) => feature.properties.name.includes("Magnolia")));
+  for (const district of districts) {
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -117, `${district.properties.name} is outside Long Beach longitude`);
+    assert.ok(latitude > 33 && latitude < 35, `${district.properties.name} is outside Long Beach latitude`);
+  }
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));

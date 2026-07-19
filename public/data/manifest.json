@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T03:20:21.083Z",
-  "records": 224,
+  "generatedAt": "2026-07-19T03:33:28.548Z",
+  "records": 232,
   "states": [
     "CA",
     "CO",
@@ -24,6 +24,7 @@
     "Honolulu, HI",
     "Idaho Falls, ID",
     "Kailua-Kona, HI",
+    "Long Beach, CA",
     "Los Angeles, CA",
     "Macon, GA",
     "Miami Beach, FL",
@@ -96,6 +97,20 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-19T03:20:21.083Z"
+    },
+    {
+      "id": "long-beach-merchant-business-improvement-districts",
+      "name": "Long Beach Merchant Business Improvement Districts",
+      "status": "ok",
+      "records": 5,
+      "checkedAt": "2026-07-19T03:33:28.548Z"
+    },
+    {
+      "id": "long-beach-property-business-improvement-districts",
+      "name": "Long Beach Property Business Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-19T03:33:28.548Z"
     },
     {
       "id": "denver-business-improvement-districts",
@@ -195,12 +210,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 23,
-    "configuredSources": 20,
+    "verifiedJurisdictions": 24,
+    "configuredSources": 22,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 21,
+    "added": 8,
     "modified": 0,
     "removed": 0
   }

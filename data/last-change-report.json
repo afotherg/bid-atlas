@@ -1,32 +1,19 @@
 {
-  "checkedAt": "2026-07-19T03:20:21.083Z",
+  "checkedAt": "2026-07-19T03:33:28.548Z",
   "summary": {
-    "added": 21,
+    "added": 8,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-san-jose-alum-rock-santa-clara-street-business-improvement-district",
-    "ca-oakland-chinatown",
-    "ca-san-jose-downtown-improvement-district",
-    "ca-oakland-downtown-oakland-community-benefit-district",
-    "ca-san-jose-downtown-san-jose-property-based-improvement-district",
-    "ca-san-jose-east-village-bid",
-    "ca-oakland-jack-london-improvement-district",
-    "ca-san-jose-japantown-business-improvement-district",
-    "ca-oakland-koreatown-northgate",
-    "ca-oakland-lake-merritt-uptown-community-benefit-district",
-    "ca-oakland-lakeshore",
-    "ca-oakland-laurel",
-    "ca-oakland-montclair",
-    "ca-san-jose-monterey-corridor-business-improvement-district",
-    "ca-oakland-rockridge",
-    "ca-san-jose-story-road-business-improvement-district",
-    "ca-oakland-temescal-telegraph",
-    "ca-san-jose-the-alameda-business-improvement-district",
-    "ca-san-jose-the-alameda-community-benefit-improvement-district",
-    "ca-san-jose-tully-road-business-improvement-district",
-    "ca-san-jose-willow-glen-improvement-district"
+    "ca-long-beach-belmont-shore-parking-and-business-improvement-area",
+    "ca-long-beach-bixby-knolls-parking-and-business-improvement-area",
+    "ca-long-beach-downtown-long-beach-parking-and-business-improvement-area",
+    "ca-long-beach-downtown-long-beach-property-based-improvement-district",
+    "ca-long-beach-fourth-street-parking-and-business-improvement-area",
+    "ca-long-beach-midtown-property-and-business-improvement-district",
+    "ca-long-beach-uptown-property-and-business-improvement-district",
+    "ca-long-beach-zaferia-parking-and-business-improvement-area"
   ],
   "modified": [],
   "removed": [],
@@ -86,6 +73,20 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-19T03:20:21.083Z"
+    },
+    {
+      "id": "long-beach-merchant-business-improvement-districts",
+      "name": "Long Beach Merchant Business Improvement Districts",
+      "status": "ok",
+      "records": 5,
+      "checkedAt": "2026-07-19T03:33:28.548Z"
+    },
+    {
+      "id": "long-beach-property-business-improvement-districts",
+      "name": "Long Beach Property Business Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-19T03:33:28.548Z"
     },
     {
       "id": "denver-business-improvement-districts",

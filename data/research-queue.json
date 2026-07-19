@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T03:22:59.810Z",
+  "updated_at": "2026-07-19T03:38:53.586Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 1,
+      "attempts": 3,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T03:22:59.809Z",
+      "updated_at": "2026-07-19T03:38:53.585Z",
       "lease": null,
       "checkpoint": {
-        "phase": "jurisdiction_inventory_and_source_integration",
-        "summary": "Integrated official Oakland and San Jose polygon services. Oakland's official GIS returns ten districts and the city's FY2025-27 budget corroborates a current total of ten. San Jose's official improvement-district layer returns fourteen active polygons representing eleven distinct districts after multi-zone records are merged. California now has 98 mapped districts from seven configured sources. Long Beach's current page says nine districts but lists ten rows while its January 2025 map shows eight identifiers and therefore remains unresolved.",
-        "next_action": "Reconcile Long Beach's current registry and map; locate official boundaries for West Hollywood Sacramento and Berkeley; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons.",
+        "phase": "long_beach_source_integration",
+        "summary": "Reconciled Long Beach's registry: the city counts nine legal BIDs while its table has ten boundary rows because the single Tourism BIA has Downtown and Airport zones. Integrated five current merchant-district polygons and three current property-district polygons from the city's embedded mapping datasets. Excluded the obsolete Magnolia Industrial Group feature because it is absent from the current registry. California now has 106 mapped districts from nine configured sources. The Tourism BIA remains the only verified Long Beach BID without an integrated boundary.",
+        "next_action": "Reconstruct the two Long Beach Tourism BIA zones from official maps; locate official boundaries for West Hollywood Sacramento and Berkeley; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -35,7 +35,13 @@
           "https://geodev.sanjoseca.gov/server/rest/services/PLN/PLN_Geocortex_Public_DEV/MapServer/149",
           "https://www.sanjoseca.gov/Home/Components/News/News/6468/4765",
           "https://www.longbeach.gov/edo/business-support/business-improvement-districts/",
-          "https://www.longbeach.gov/globalassets/edo/business-support/bid-council-map-2025"
+          "https://www.longbeach.gov/globalassets/edo/business-support/bid-council-map-2025",
+          "https://www.longbeach.gov/edo/real-estate/vacancy-to-vibrancy/",
+          "https://swc28.carto.com/api/v2/sql?format=GeoJSON&q=SELECT%20the_geom%2Cbid_name%20FROM%20merchant_bid",
+          "https://swc28.carto.com/api/v2/sql?format=GeoJSON&q=SELECT%20the_geom%2Cbid_name%20FROM%20property_bid%20WHERE%20bid_code%3C%3E%27MAGINDGRP%27",
+          "https://www.arcgis.com/home/item.html?id=db1abc250c584afab20e39e5bd354fa2",
+          "https://www.longbeach.gov/globalassets/edo/media-library/documents/bids/fees/lbtbia-map--1-",
+          "https://www.longbeach.gov/finance/media-library/documents/business-info/business-licenses/bids/bid_district_tourism_airport/"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -43,7 +49,7 @@
           "public/data/bids.geojson",
           "tests/data-integrity.test.mjs"
         ],
-        "updated_at": "2026-07-19T03:22:59.809Z",
+        "updated_at": "2026-07-19T03:38:53.585Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,
@@ -535,20 +541,20 @@
       "parent_id": "state:CA",
       "priority": 150,
       "status": "queued",
-      "attempts": 0,
+      "attempts": 1,
       "created_at": "2026-07-19T03:22:51.276Z",
-      "updated_at": "2026-07-19T03:22:51.276Z",
+      "updated_at": "2026-07-19T03:35:33.767Z",
       "lease": null,
       "checkpoint": {
         "phase": "discovery",
         "summary": "",
         "next_action": "Enumerate current business and property-based districts from FY2027 assessment records and locate official boundaries.",
-        "stop_reason": "",
+        "stop_reason": "claimed_out_of_order",
         "evidence_urls": [
           "https://berkeleyca.gov/city-council-regular-meeting-eagenda-june-9-2026"
         ],
         "artifact_paths": [],
-        "updated_at": "2026-07-19T03:22:51.276Z"
+        "updated_at": "2026-07-19T03:35:33.767Z"
       },
       "result": null,
       "blocked_reason": ""

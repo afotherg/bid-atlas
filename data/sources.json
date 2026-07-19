@@ -230,6 +230,76 @@
     }
   },
   {
+    "id": "long-beach-merchant-business-improvement-districts",
+    "name": "Long Beach Merchant Business Improvement Districts",
+    "jurisdiction": "Long Beach, CA",
+    "state": "CA",
+    "city": "Long Beach",
+    "url": "https://swc28.carto.com/api/v2/sql?format=GeoJSON&q=SELECT%20the_geom%2Cbid_name%20FROM%20merchant_bid",
+    "landingPage": "https://www.longbeach.gov/edo/business-support/business-improvement-districts/",
+    "publisher": "City of Long Beach / Ginkgo",
+    "cadence": "As published",
+    "nameTransform": "titleCase",
+    "fields": {
+      "name": [
+        "bid_name"
+      ]
+    },
+    "overrides": {
+      "BELMONT SHORE": {
+        "name": "Belmont Shore Parking and Business Improvement Area",
+        "website": "https://www.belmontshore.org/"
+      },
+      "BIXBY KNOLLS": {
+        "name": "Bixby Knolls Parking and Business Improvement Area",
+        "website": "https://bixbyknollsinfo.com/"
+      },
+      "DOWNTOWN": {
+        "name": "Downtown Long Beach Parking and Business Improvement Area",
+        "website": "https://downtownlongbeach.org/"
+      },
+      "FOURTH STREET": {
+        "name": "Fourth Street Parking and Business Improvement Area",
+        "website": "https://4thstreetlongbeach.com/"
+      },
+      "ZAFERIA": {
+        "name": "Zaferia Parking and Business Improvement Area",
+        "website": "https://zaferia.org/"
+      }
+    }
+  },
+  {
+    "id": "long-beach-property-business-improvement-districts",
+    "name": "Long Beach Property Business Improvement Districts",
+    "jurisdiction": "Long Beach, CA",
+    "state": "CA",
+    "city": "Long Beach",
+    "url": "https://swc28.carto.com/api/v2/sql?format=GeoJSON&q=SELECT%20the_geom%2Cbid_name%20FROM%20property_bid%20WHERE%20bid_code%3C%3E%27MAGINDGRP%27",
+    "landingPage": "https://www.longbeach.gov/edo/business-support/business-improvement-districts/",
+    "publisher": "City of Long Beach / Ginkgo",
+    "cadence": "As published",
+    "nameTransform": "titleCase",
+    "fields": {
+      "name": [
+        "bid_name"
+      ]
+    },
+    "overrides": {
+      "DOWNTOWN LONG BEACH": {
+        "name": "Downtown Long Beach Property-Based Improvement District",
+        "website": "https://downtownlongbeach.org/"
+      },
+      "MIDTOWN": {
+        "name": "Midtown Property and Business Improvement District",
+        "website": "https://mbidlb.com/"
+      },
+      "UPTOWN": {
+        "name": "Uptown Property and Business Improvement District",
+        "website": "https://www.uptownlongbeach.com/"
+      }
+    }
+  },
+  {
     "id": "denver-business-improvement-districts",
     "name": "Denver Business Improvement Districts",
     "jurisdiction": "Denver, CO",
