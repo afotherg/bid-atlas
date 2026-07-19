@@ -85,6 +85,34 @@
     }
   },
   {
+    "id": "los-angeles-bids",
+    "name": "Los Angeles Business Improvement Districts",
+    "jurisdiction": "Los Angeles, CA",
+    "state": "CA",
+    "city": "Los Angeles",
+    "url": "https://maps.lacity.org/arcgis/rest/services/Mapping/NavigateLA/MapServer/63/query?where=PROG_NAME%20NOT%20IN%20(%27BRENTWOOD%20VILLAGE%27%2C%27CENTRAL%20AVENUE%27)&outFields=PROG_NAME&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://clerk.lacity.gov/business-improvement-districts",
+    "publisher": "City of Los Angeles",
+    "cadence": "As published",
+    "nameTransform": "titleCase",
+    "fields": {
+      "name": [
+        "PROG_NAME"
+      ]
+    },
+    "overrides": {
+      "ARTS DISTRICT LOS ANGELES": { "name": "Arts District Los Angeles" },
+      "BYZANTINE LATINO QUARTER - PICO BOULEVARD": { "name": "BLQ-Pico Boulevard" },
+      "GATEWAY TO LOS ANGELES": { "name": "Gateway to Los Angeles" },
+      "GREATER LEIMERT PARK VILLAGE/CRENSHAW CORRIDOR": { "name": "Greater Leimert Park Village / Crenshaw Corridor" },
+      "HISTORIC CORE": { "name": "Historic Downtown" },
+      "LINCOLN HEIGHTS BUSINESS AND COMMUNITY BENEFIT": { "name": "Greater Lincoln Heights" },
+      "NORTH HOLLYWOOD TRANSIT": { "name": "North Hollywood" },
+      "SOUTH LOS ANGELES INDUSTRIAL TRACT (GOODYEAR)": { "name": "South Los Angeles Industrial Tract" },
+      "THE VILLAGE AT SHERMAN OAKS": { "name": "Sherman Oaks" }
+    }
+  },
+  {
     "id": "denver-business-improvement-districts",
     "name": "Denver Business Improvement Districts",
     "jurisdiction": "Denver, CO",

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-18T15:36:38.792Z",
-  "records": 159,
+  "generatedAt": "2026-07-19T01:13:59.828Z",
+  "records": 197,
   "states": [
     "CA",
     "CO",
@@ -23,6 +23,7 @@
     "Honolulu, HI",
     "Idaho Falls, ID",
     "Kailua-Kona, HI",
+    "Los Angeles, CA",
     "Macon, GA",
     "Miami Beach, FL",
     "Miami, FL",
@@ -55,6 +56,13 @@
       "status": "ok",
       "records": 18,
       "checkedAt": "2026-07-18T14:32:04.984Z"
+    },
+    {
+      "id": "los-angeles-bids",
+      "name": "Los Angeles Business Improvement Districts",
+      "status": "ok",
+      "records": 38,
+      "checkedAt": "2026-07-19T01:13:59.828Z"
     },
     {
       "id": "denver-business-improvement-districts",
@@ -147,12 +155,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 18,
-    "configuredSources": 14,
+    "verifiedJurisdictions": 19,
+    "configuredSources": 15,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 3,
+    "added": 38,
     "modified": 0,
     "removed": 0
   }

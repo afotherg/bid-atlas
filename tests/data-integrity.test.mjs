@@ -21,6 +21,15 @@ test("Downtown San Diego resolves to San Diego", () => {
   assert.equal(district.properties.website, "https://downtownsandiego.org/city-center-district/");
 });
 
+test("Los Angeles publishes its 38 current business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "los-angeles-bids");
+  assert.equal(districts.length, 38);
+  assert.ok(districts.some((feature) => feature.properties.name === "Arts District Los Angeles"));
+  assert.ok(districts.some((feature) => feature.properties.name === "Historic Downtown"));
+  assert.ok(!districts.some((feature) => feature.properties.name.includes("Brentwood Village")));
+  assert.ok(!districts.some((feature) => feature.properties.name.includes("Central Avenue")));
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
