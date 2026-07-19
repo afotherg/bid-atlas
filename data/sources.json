@@ -1540,6 +1540,34 @@
     }
   },
   {
+    "id": "apple-valley-village-property-business-improvement-district",
+    "name": "Apple Valley Village Property and Business Improvement District",
+    "jurisdiction": "Apple Valley, CA",
+    "state": "CA",
+    "city": "Apple Valley",
+    "file": "data/sources/apple-valley-village-property-business-improvement-district.geojson",
+    "landingPage": "https://avvillage.org/pbid-board/",
+    "publisher": "Apple Valley Village Property and Business Improvement District",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://avvillage.org/pbid-board/",
+      "https://pub-applevalley.escribemeetings.com/Meeting.aspx?Agenda=Agenda&Id=5933700c-3fb4-447b-829a-d0e22241b67b&Item=35&Tab=attachments&lang=English"
+    ],
+    "fields": {
+      "name": ["name"]
+    },
+    "overrides": {
+      "Apple Valley Village Property and Business Improvement District": {
+        "website": "https://avvillage.org/",
+        "established": "2007",
+        "expires": "2032",
+        "area": "Generalized from the renewed district's official street limits; centered on Highway 18 from Navajo Road to Tenaya/Central Road, generally between Esaws Avenue and Ottawa Road",
+        "sourceUrl": "https://avvillage.org/village-specific-plan/",
+        "reportUrl": "https://pub-applevalley.escribemeetings.com/Meeting.aspx?Agenda=Agenda&Id=5933700c-3fb4-447b-829a-d0e22241b67b&Item=35&Tab=attachments&lang=English"
+      }
+    }
+  },
+  {
     "id": "ontario-downtown-community-benefit-district",
     "name": "Downtown Ontario Community Benefit District",
     "jurisdiction": "Ontario, CA",

@@ -170,6 +170,19 @@ test("Ontario publishes its downtown and regional tourism improvement districts"
   }
 });
 
+test("Apple Valley publishes its renewed Village property and business improvement district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "apple-valley-village-property-business-improvement-district");
+  assert.equal(districts.length, 1);
+  const [district] = districts;
+  assert.equal(district.properties.name, "Apple Valley Village Property and Business Improvement District");
+  assert.equal(district.properties.established, "2007");
+  assert.equal(district.properties.expires, "2032");
+  assert.equal(district.properties.status, "Active");
+  const [longitude, latitude] = district.properties.center;
+  assert.ok(longitude > -119 && longitude < -116, "district is outside Apple Valley longitude");
+  assert.ok(latitude > 33 && latitude < 36, "district is outside Apple Valley latitude");
+});
+
 test("Oakland publishes its ten current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

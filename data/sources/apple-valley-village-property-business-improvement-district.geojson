@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Apple Valley Village Property and Business Improvement District"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-117.186330, 34.508025],
+          [-117.172819, 34.507915],
+          [-117.172690, 34.493401],
+          [-117.190218, 34.493268],
+          [-117.186330, 34.508025]
+        ]]
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T23:11:39.300Z",
-  "records": 299,
+  "generatedAt": "2026-07-19T23:15:37.492Z",
+  "records": 300,
   "states": [
     "CA",
     "CO",
@@ -17,6 +17,7 @@
   ],
   "cities": [
     "Anaheim, CA",
+    "Apple Valley, CA",
     "Baltimore, MD",
     "Berkeley, CA",
     "Boise, ID",
@@ -489,6 +490,15 @@
       "legislationChanged": true
     },
     {
+      "id": "apple-valley-village-property-business-improvement-district",
+      "name": "Apple Valley Village Property and Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T23:15:37.492Z",
+      "monitorHash": "9d09daa1f3cf3b774bd955c5556986bb93ff9412ed4dd9ca7fb67a7d094dc283",
+      "legislationChanged": false
+    },
+    {
       "id": "ontario-downtown-community-benefit-district",
       "name": "Downtown Ontario Community Benefit District",
       "status": "ok",
@@ -517,12 +527,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 47,
-    "configuredSources": 56,
+    "verifiedJurisdictions": 48,
+    "configuredSources": 57,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }

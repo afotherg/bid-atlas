@@ -1,13 +1,12 @@
 {
-  "checkedAt": "2026-07-19T23:11:39.300Z",
+  "checkedAt": "2026-07-19T23:15:37.492Z",
   "summary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-ontario-downtown-ontario-community-benefit-district",
-    "ca-ontario-rancho-cucamonga-greater-ontario-tourism-marketing-district"
+    "ca-apple-valley-apple-valley-village-property-and-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -434,6 +433,15 @@
       "checkedAt": "2026-07-19T23:11:39.300Z",
       "monitorHash": "12518b9d4fe109db6d46a101162616a3671c3b13b80842b6dd45b02bda25172b",
       "legislationChanged": true
+    },
+    {
+      "id": "apple-valley-village-property-business-improvement-district",
+      "name": "Apple Valley Village Property and Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T23:15:37.492Z",
+      "monitorHash": "9d09daa1f3cf3b774bd955c5556986bb93ff9412ed4dd9ca7fb67a7d094dc283",
+      "legislationChanged": false
     },
     {
       "id": "ontario-downtown-community-benefit-district",
