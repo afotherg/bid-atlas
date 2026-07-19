@@ -225,6 +225,18 @@ test("Garden Grove publishes its current tourism improvement district", () => {
   assert.ok(district.properties.bounds[1] > 33 && district.properties.bounds[3] < 34);
 });
 
+test("Costa Mesa publishes its current citywide tourism business improvement area", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Costa Mesa" && feature.properties.state === "CA");
+  assert.equal(districts.length, 1);
+  const [district] = districts;
+  assert.equal(district.properties.name, "Costa Mesa Tourism and Promotion Business Improvement Area");
+  assert.equal(district.properties.status, "Active");
+  assert.equal(district.properties.established, "1995");
+  assert.equal(district.properties.area, "Citywide");
+  assert.ok(district.properties.bounds[2] - district.properties.bounds[0] > 0.08);
+  assert.ok(district.properties.bounds[1] > 33 && district.properties.bounds[3] < 34);
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));

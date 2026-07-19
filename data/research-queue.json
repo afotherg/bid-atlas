@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T18:30:50.539Z",
+  "updated_at": "2026-07-19T18:33:19.321Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 10,
+      "attempts": 11,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T18:30:50.538Z",
+      "updated_at": "2026-07-19T18:33:19.320Z",
       "lease": null,
       "checkpoint": {
-        "phase": "garden_grove_source_integration",
-        "summary": "Integrated Garden Grove's one current Tourism Improvement District from the FY 2026-27 annual report and current city operations record. The generalized Harbor Boulevard hotel-corridor boundary preserves the official north/south extent and Tier I/Tier II split described by the city; the precise Ordinance No. 2782 map remains on file with the City Clerk and is not published as GIS. California now has 144 mapped districts from twenty-two configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Costa Mesa and other independent California cities.",
+        "phase": "costa_mesa_source_integration",
+        "summary": "Integrated Costa Mesa's one current Tourism and Promotion Business Improvement Area from its FY 2026-27 renewal. The founding ordinance and renewal materials define the benefit zone as citywide, so the feature uses the exact official Costa Mesa GIS boundary. California now has 145 mapped districts from twenty-three configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Newport Beach and other independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -70,7 +70,9 @@
           "https://gis.anaheim.net/map/rest/services/OpenData2/FeatureServer/19",
           "https://agendasuite.org/iip/gardengrove/file/getfile/19174",
           "https://ggcity.org/news/GDT",
-          "https://ecode360.com/42537369"
+          "https://ecode360.com/42537369",
+          "https://www.costamesaca.gov/home/showpublisheddocument/63364/639148642856930000",
+          "https://apps.costamesaca.gov/arcgis/rest/services/CostaMesa/MapServer/3"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -81,9 +83,10 @@
           "data/sources/berkeley-business-improvement-districts.geojson",
           "data/sources/pasadena-property-business-improvement-districts.geojson",
           "data/sources/anaheim-tourism-improvement-district.geojson",
-          "data/sources/garden-grove-tourism-improvement-district.geojson"
+          "data/sources/garden-grove-tourism-improvement-district.geojson",
+          "data/sources/costa-mesa-tourism-promotion-business-improvement-area.geojson"
         ],
-        "updated_at": "2026-07-19T18:30:50.538Z",
+        "updated_at": "2026-07-19T18:33:19.320Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

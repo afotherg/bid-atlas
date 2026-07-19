@@ -372,6 +372,43 @@
     }
   },
   {
+    "id": "costa-mesa-tourism-promotion-business-improvement-area",
+    "name": "Costa Mesa Tourism and Promotion Business Improvement Area",
+    "jurisdiction": "Costa Mesa, CA",
+    "state": "CA",
+    "city": "Costa Mesa",
+    "file": "data/sources/costa-mesa-tourism-promotion-business-improvement-area.geojson",
+    "landingPage": "https://www.costamesaca.gov/government/mayor-city-council/public-notices",
+    "publisher": "City of Costa Mesa",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.costamesaca.gov/home/showpublisheddocument/63364/639148642856930000",
+      "https://apps.costamesaca.gov/arcgis/rest/services/CostaMesa/MapServer/3"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "status": [
+        "status"
+      ],
+      "established": [
+        "established"
+      ],
+      "area": [
+        "area"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ]
+    },
+    "overrides": {
+      "Costa Mesa Tourism and Promotion Business Improvement Area": {
+        "website": "https://www.travelcostamesa.com/"
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",
