@@ -153,6 +153,31 @@ test("Sacramento publishes its 23 official PBID, BID, and BIA boundaries", () =>
   assert.equal(districts.find((feature) => feature.properties.name === "Sacramento Tourism Marketing District No. 2024-01").geometry.type, "MultiPolygon");
 });
 
+test("Berkeley publishes its six current business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Berkeley" && feature.properties.state === "CA");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 6);
+  for (const name of [
+    "Berkeley Tourism Business Improvement District",
+    "Downtown Berkeley Property-Based Business Improvement District",
+    "Elmwood Business Improvement District",
+    "North Shattuck Property-Based Business Improvement District",
+    "Solano Avenue Business Improvement District",
+    "Telegraph Property-Based Business Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of districts) {
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -123 && longitude < -122, `${district.properties.name} is outside Berkeley longitude`);
+    assert.ok(latitude > 37 && latitude < 38, `${district.properties.name} is outside Berkeley latitude`);
+  }
+  const tourism = districts.find((feature) => feature.properties.sourceId === "berkeley-tourism-business-improvement-district");
+  assert.ok(tourism, "missing citywide tourism district");
+  assert.ok(tourism.properties.bounds[0] < -122.36);
+  assert.ok(tourism.properties.bounds[2] > -122.24);
+  assert.equal(districts.find((feature) => feature.properties.name === "Solano Avenue Business Improvement District").geometry.type, "MultiPolygon");
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));

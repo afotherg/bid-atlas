@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Berkeley Property-Based Business Improvement District",
+        "status": "Active",
+        "area": "Generalized from the adopted 2026-2036 management district plan boundary map"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[
+            [-122.276, 37.8702],
+            [-122.276, 37.8726],
+            [-122.2694, 37.873],
+            [-122.2694, 37.8752],
+            [-122.2672, 37.8753],
+            [-122.267, 37.8745],
+            [-122.2657, 37.8746],
+            [-122.2655, 37.8728],
+            [-122.265, 37.8655],
+            [-122.268, 37.8653],
+            [-122.2683, 37.8662],
+            [-122.2734, 37.8662],
+            [-122.2733, 37.8684],
+            [-122.2744, 37.8683],
+            [-122.2742, 37.8702],
+            [-122.276, 37.8702]
+          ]],
+          [[
+            [-122.2684, 37.8661],
+            [-122.2669, 37.866],
+            [-122.2663, 37.8609],
+            [-122.2678, 37.8608],
+            [-122.2684, 37.8661]
+          ]]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North Shattuck Property-Based Business Improvement District",
+        "status": "Active",
+        "area": "Generalized from the official Delaware-to-Rose and Shattuck-to-Walnut street limits"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.2702, 37.8737],
+          [-122.2703, 37.8824],
+          [-122.2689, 37.8825],
+          [-122.2687, 37.8807],
+          [-122.2677, 37.8807],
+          [-122.2676, 37.8799],
+          [-122.2688, 37.8798],
+          [-122.2681, 37.8739],
+          [-122.2702, 37.8737]
+        ]]
+      }
+    }
+  ]
+}

@@ -357,6 +357,100 @@
     }
   },
   {
+    "id": "berkeley-downtown-north-shattuck-business-improvement-districts",
+    "name": "Berkeley Downtown and North Shattuck Business Improvement Districts",
+    "jurisdiction": "Berkeley, CA",
+    "state": "CA",
+    "city": "Berkeley",
+    "file": "data/sources/berkeley-business-improvement-districts.geojson",
+    "landingPage": "https://berkeleyca.gov/city-services/report-pay/property-taxes",
+    "publisher": "City of Berkeley",
+    "cadence": "Annual",
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "status": [
+        "status"
+      ],
+      "area": [
+        "area"
+      ]
+    },
+    "overrides": {
+      "Downtown Berkeley Property-Based Business Improvement District": {
+        "website": "https://www.downtownberkeley.com/",
+        "sourceUrl": "https://berkeleyca.gov/sites/default/files/2026-05/2026-05-19%20Item%2020%20Re-Establishment%20of%20the%20Downtown.pdf"
+      },
+      "North Shattuck Property-Based Business Improvement District": {
+        "website": "https://www.northshattuck.org/",
+        "sourceUrl": "https://berkeleyca.gov/sites/default/files/documents/2025-06-17%20Item%2002%20Assessments%20North%20Shattuck.pdf"
+      }
+    }
+  },
+  {
+    "id": "berkeley-elmwood-business-improvement-district",
+    "name": "Elmwood Business Improvement District",
+    "jurisdiction": "Berkeley, CA",
+    "state": "CA",
+    "city": "Berkeley",
+    "fixedName": "Elmwood Business Improvement District",
+    "url": "https://services1.arcgis.com/IYiCpZoSIq9lAxi8/arcgis/rest/services/BID_Elmwood/FeatureServer/0/query?where=1%3D1&outFields=BID&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://berkeleyca.gov/your-government/boards-commissions/elmwood-business-improvement-district-advisory-board",
+    "publisher": "City of Berkeley",
+    "cadence": "Annual",
+    "fields": {}
+  },
+  {
+    "id": "berkeley-solano-avenue-business-improvement-district",
+    "name": "Solano Avenue Business Improvement District",
+    "jurisdiction": "Berkeley, CA",
+    "state": "CA",
+    "city": "Berkeley",
+    "fixedName": "Solano Avenue Business Improvement District",
+    "url": "https://services1.arcgis.com/IYiCpZoSIq9lAxi8/arcgis/rest/services/BID_Solano/FeatureServer/0/query?where=1%3D1&outFields=BID%2CZone&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://berkeleyca.gov/your-government/boards-commissions/solano-avenue-business-improvement-district-advisory-board",
+    "publisher": "City of Berkeley",
+    "cadence": "Annual",
+    "fields": {}
+  },
+  {
+    "id": "berkeley-telegraph-property-based-business-improvement-district",
+    "name": "Telegraph Property-Based Business Improvement District",
+    "jurisdiction": "Berkeley, CA",
+    "state": "CA",
+    "city": "Berkeley",
+    "fixedName": "Telegraph Property-Based Business Improvement District",
+    "url": "https://services3.arcgis.com/A1mc9jYGh92BooOr/arcgis/rest/services/Berkeley_Telegraph_PBID_February_19th_2026_Sara_Mares/FeatureServer/0/query?where=1%3D1&outFields=NAME&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://berkeleyca.gov/city-council-regular-meeting-eagenda-june-9-2026",
+    "publisher": "NBS for City of Berkeley",
+    "cadence": "Annual",
+    "fields": {},
+    "overrides": {
+      "Telegraph Property-Based Business Improvement District": {
+        "website": "https://www.telegraphberkeley.org/"
+      }
+    }
+  },
+  {
+    "id": "berkeley-tourism-business-improvement-district",
+    "name": "Berkeley Tourism Business Improvement District",
+    "jurisdiction": "Berkeley, CA",
+    "state": "CA",
+    "city": "Berkeley",
+    "fixedName": "Berkeley Tourism Business Improvement District",
+    "url": "https://services1.arcgis.com/IYiCpZoSIq9lAxi8/arcgis/rest/services/City_of_Berkeley_Boundary/FeatureServer/0/query?where=1%3D1&outFields=NAME&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://berkeleyca.gov/sites/default/files/2026-05/2026-06-09%20Item%2005%20Assessments%20%20Berkeley%20Tourism.pdf",
+    "publisher": "City of Berkeley",
+    "cadence": "Annual",
+    "fields": {},
+    "overrides": {
+      "Berkeley Tourism Business Improvement District": {
+        "website": "https://www.visitberkeley.com/"
+      }
+    }
+  },
+  {
     "id": "west-hollywood-business-improvement-districts",
     "name": "West Hollywood Business Improvement Districts",
     "jurisdiction": "West Hollywood, CA",

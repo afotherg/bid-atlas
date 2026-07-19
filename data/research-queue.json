@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T16:48:15.673Z",
+  "updated_at": "2026-07-19T16:58:17.642Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 5,
+      "attempts": 6,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T16:48:15.672Z",
+      "updated_at": "2026-07-19T16:58:17.641Z",
       "lease": null,
       "checkpoint": {
-        "phase": "sacramento_source_integration",
-        "summary": "Integrated Sacramento's two official polygon services. They publish 13 distinct PBIDs and ten distinct BIDs or BIAs after zone features are merged by district name, including non-city-administered PBIDs and the current tourism marketing and infrastructure districts. California now has 132 mapped districts from thirteen configured sources. Long Beach remains at eight of nine current BIDs because its public BizMap references a Tourism BIA feature layer that requires an ArcGIS token and exposes no public export.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate official boundaries for Berkeley; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons.",
+        "phase": "berkeley_source_integration",
+        "summary": "Integrated all six current Berkeley districts verified by the city's FY2026 and FY2027 assessment records: Downtown, North Shattuck, Telegraph, Elmwood, Solano Avenue, and Tourism. Elmwood, Solano, Telegraph, and Tourism use exact polygon services; Downtown and North Shattuck are generalized from official adopted plans and street limits. California now has 138 mapped districts from eighteen configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Pasadena, Anaheim, and other independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -50,16 +50,25 @@
           "https://www.cityofsacramento.gov/finance/infrastructure-finance/special-districts/annual-service-districts",
           "https://www.cityofsacramento.gov/finance/infrastructure-finance/documents",
           "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/PBIDs/FeatureServer/0",
-          "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/BIDs_BIAs/FeatureServer/0"
+          "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/BIDs_BIAs/FeatureServer/0",
+          "https://berkeleyca.gov/city-services/report-pay/property-taxes",
+          "https://berkeleyca.gov/city-council-regular-meeting-eagenda-june-9-2026",
+          "https://berkeleyca.gov/city-council-regular-meeting-eagenda-december-2-2025",
+          "https://berkeleyca.gov/sites/default/files/2026-05/2026-05-19%20Item%2020%20Re-Establishment%20of%20the%20Downtown.pdf",
+          "https://services1.arcgis.com/IYiCpZoSIq9lAxi8/arcgis/rest/services/BID_Elmwood/FeatureServer/0",
+          "https://services1.arcgis.com/IYiCpZoSIq9lAxi8/arcgis/rest/services/BID_Solano/FeatureServer/0",
+          "https://services3.arcgis.com/A1mc9jYGh92BooOr/arcgis/rest/services/Berkeley_Telegraph_PBID_February_19th_2026_Sara_Mares/FeatureServer/0",
+          "https://services1.arcgis.com/IYiCpZoSIq9lAxi8/arcgis/rest/services/City_of_Berkeley_Boundary/FeatureServer/0"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
           "data/sources.json",
           "public/data/bids.geojson",
           "tests/data-integrity.test.mjs",
-          "data/sources/west-hollywood-business-improvement-districts.geojson"
+          "data/sources/west-hollywood-business-improvement-districts.geojson",
+          "data/sources/berkeley-business-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-19T16:48:15.672Z",
+        "updated_at": "2026-07-19T16:58:17.641Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,
