@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T18:34:50.793Z",
+  "updated_at": "2026-07-19T18:39:25.691Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 12,
+      "attempts": 13,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T18:34:50.791Z",
+      "updated_at": "2026-07-19T18:39:25.690Z",
       "lease": null,
       "checkpoint": {
-        "phase": "newport_beach_zero_verification",
-        "summary": "Verified that Newport Beach has no current business improvement district. The city's official records show the Corona del Mar BID was disestablished June 22, 2021, the Restaurant Association BID became inactive July 1, 2021, and the Tourism BID expired January 31, 2024. Added a regression assertion to keep all three obsolete districts excluded. California remains at 145 mapped districts from twenty-three configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Dana Point and other independent California cities.",
+        "phase": "dana_point_source_integration",
+        "summary": "Added Dana Point's current Tourism Business Improvement District using the official County of Orange city-boundary polygon. The City Council renewed the district on May 6, 2025 for July 1, 2025 through June 30, 2030; its benefit zone is citywide lodging businesses with at least 20 rooms. California now has 146 mapped districts from twenty-four configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Huntington Beach and other independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -76,7 +76,10 @@
           "https://www.newportbeachca.gov/i-am-a/business/economic-development/business-improvement-districts-bids",
           "https://www.newportbeachca.gov/government/departments/city-manager-s-office/economic-development/business-improvement-districts-bids/tourism-bid",
           "https://www.newportbeachca.gov/i-am-a/business/economic-development/business-improvement-districts-bids/corona-del-mar-bid",
-          "https://www.newportbeachca.gov/i-am-a/business/economic-development/business-improvement-districts-bids/restaurant-association-bid"
+          "https://www.newportbeachca.gov/i-am-a/business/economic-development/business-improvement-districts-bids/restaurant-association-bid",
+          "https://www.danapoint.org/City-Government/City-Council/Meetings-Agendas-Minutes/Minutes-and-Agenda/2025/May-6-2025",
+          "https://www.danapoint.org/City-Government/City-Clerk",
+          "https://services.arcgis.com/UXmFoWC7yDHcDN5Q/ArcGIS/rest/services/City_Boundaries1/FeatureServer/0"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -90,7 +93,7 @@
           "data/sources/garden-grove-tourism-improvement-district.geojson",
           "data/sources/costa-mesa-tourism-promotion-business-improvement-area.geojson"
         ],
-        "updated_at": "2026-07-19T18:34:50.791Z",
+        "updated_at": "2026-07-19T18:39:25.690Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

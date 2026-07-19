@@ -409,6 +409,31 @@
     }
   },
   {
+    "id": "dana-point-tourism-business-improvement-district",
+    "name": "Dana Point Tourism Business Improvement District",
+    "jurisdiction": "Dana Point, CA",
+    "state": "CA",
+    "city": "Dana Point",
+    "fixedName": "Dana Point Tourism Business Improvement District",
+    "url": "https://services.arcgis.com/UXmFoWC7yDHcDN5Q/ArcGIS/rest/services/City_Boundaries1/FeatureServer/0/query?where=JURISDICTI%3D%27DANA%20POINT%27&outFields=JURISDICTI&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.danapoint.org/City-Government/City-Council/Meetings-Agendas-Minutes/Minutes-and-Agenda/2025/May-6-2025",
+    "publisher": "City of Dana Point / County of Orange",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.danapoint.org/City-Government/City-Clerk",
+      "https://www.danapoint.org/City-Government/City-Council/Meetings-Agendas-Minutes/Minutes-and-Agenda/2025/May-6-2025"
+    ],
+    "fields": {},
+    "overrides": {
+      "Dana Point Tourism Business Improvement District": {
+        "website": "https://visitdanapoint.com/",
+        "established": "2009",
+        "area": "Citywide lodging businesses with 20 or more rooms",
+        "sourceUrl": "https://www.danapoint.org/City-Government/City-Council/Meetings-Agendas-Minutes/Minutes-and-Agenda/2025/May-6-2025"
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",

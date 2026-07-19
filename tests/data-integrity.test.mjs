@@ -242,6 +242,18 @@ test("Newport Beach excludes its expired and disestablished business improvement
   assert.equal(districts.length, 0);
 });
 
+test("Dana Point publishes its current citywide tourism business improvement district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Dana Point" && feature.properties.state === "CA");
+  assert.equal(districts.length, 1);
+  const [district] = districts;
+  assert.equal(district.properties.name, "Dana Point Tourism Business Improvement District");
+  assert.equal(district.properties.status, "Active");
+  assert.equal(district.properties.established, "2009");
+  assert.equal(district.properties.area, "Citywide lodging businesses with 20 or more rooms");
+  assert.ok(district.properties.bounds[2] - district.properties.bounds[0] > 0.08);
+  assert.ok(district.properties.bounds[1] > 33 && district.properties.bounds[3] < 34);
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
