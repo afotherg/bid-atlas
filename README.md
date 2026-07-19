@@ -44,7 +44,9 @@ An empty state is recorded as `not_started`, never as proof that no BID exists. 
 
 Run `npm run admin:audit:sync` after changing map sources or district data to refresh the two map-count columns.
 
-State research and boundary creation are currently manual. Record supported findings directly in `data/state-audit.csv`; add a district to the map only after verifying its active status and boundary against authoritative sources. The former experimental AI research and boundary-generation pipeline is preserved on the `codex/ai-bid-automation-archive` branch for possible future work.
+State research and boundary creation are performed by Codex against authoritative evidence, without an external LLM API. Record supported findings directly in `data/state-audit.csv`; add a district to the map only after verifying its active status and boundary. The former experimental API-driven research and boundary-generation pipeline is preserved on the `codex/ai-bid-automation-archive` branch for possible future work.
+
+Research execution is coordinated through `data/research-queue.json`. This durable queue records the exact phase, evidence, artifacts, next action, lease, and retry state for every unit of work. It allows Codex to checkpoint and release an unfinished task before its context or usage budget ends, then resume it in a later task without relying on chat history. See the queue runbook in [BID Atlas data operations](docs/data-operations.md#resumable-codex-research-queue).
 
 ## GitHub Pages deployment
 

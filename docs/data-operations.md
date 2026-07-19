@@ -8,7 +8,7 @@ The production process is deliberately deterministic. State research and new bou
 
 ```mermaid
 flowchart LR
-  A["Manual state research"] --> B["State audit CSV"]
+  A["Queued Codex state research"] --> B["State audit CSV"]
   A --> C{"Active district and authoritative boundary verified?"}
   C -->|"No"| D["Record the gap and next action"]
   C -->|"Yes"| E["Add reviewed source configuration and geometry"]
@@ -23,6 +23,7 @@ flowchart LR
 | File | Purpose | Public map input? |
 | --- | --- | --- |
 | `data/state-audit.csv` | Research status for every state and the District of Columbia | No |
+| `data/research-queue.json` | Resumable Codex work queue, leases, evidence, and checkpoints | No |
 | `data/candidate-sources.json` | Data.gov discovery leads requiring human review | No |
 | `data/sources.json` | Approved source configuration used by the updater | **Yes** |
 | `data/*-verified-bids.geojson`, `data/*-automated-bids.geojson` | Reviewed local geometry referenced by an approved source | **Yes** |
@@ -31,7 +32,7 @@ flowchart LR
 | `public/coverage.html` | Generated public view of the state audit | **Yes** |
 | `data/last-change-report.json` | Generated additions, removals, and modifications | Administrative only |
 
-## Manual state research
+## Codex-led state research
 
 For each state:
 
@@ -43,6 +44,85 @@ For each state:
 6. Run `npm run admin:audit:sync` after changing published sources or geometry so map counts remain accurate.
 
 The coverage page is regenerated from the CSV during every build. Known but unmapped districts therefore remain visible without implying that an unverified boundary is publishable.
+
+## Resumable Codex research queue
+
+`data/research-queue.json` is the operational ledger for national research. It does not call an external model and does not read `LLM_API_KEY`, `LLM_BASE_URL`, or `LLM_MODEL`. Codex performs the research; the queue only makes that work durable.
+
+Supported work types are `state_audit`, `jurisdiction_audit`, `district_verification`, `boundary_research`, `source_integration`, and `review`. Each item records its parent task, priority, status, attempts, lease, current phase, accumulated evidence URLs, artifact paths, summary, and exact next action.
+
+At the start of a Codex research task:
+
+```bash
+# See national progress and the next deterministic item
+npm run admin:queue -- status
+
+# Inspect a specific checkpoint without changing it
+npm run admin:queue -- show --id=state:AL
+
+# Claim one item for four hours
+npm run admin:queue -- claim --worker=codex --lease-minutes=240
+```
+
+After a meaningful research step, save a checkpoint. A JSON patch file is recommended for summaries that contain punctuation or multiple URLs:
+
+```bash
+npm run admin:queue -- checkpoint \
+  --id=state:AL \
+  --worker=codex \
+  --file=/tmp/alabama-checkpoint.json
+```
+
+The patch file may contain:
+
+```json
+{
+  "phase": "jurisdiction_inventory",
+  "summary": "Verified the enabling statute and checked the state registry.",
+  "next_action": "Enumerate municipal BID records.",
+  "evidence_urls": ["https://example.gov/official-record"],
+  "artifact_paths": ["data/state-audit.csv"]
+}
+```
+
+Before stopping because of context, usage limits, or any other non-blocking boundary, checkpoint and release the item:
+
+```bash
+npm run admin:queue -- pause \
+  --id=state:AL \
+  --worker=codex \
+  --reason=usage_limit \
+  --file=/tmp/alabama-checkpoint.json
+```
+
+`pause` returns the item to `queued` without erasing its phase or evidence. If a task ends unexpectedly while an item remains `in_progress`, another worker may reclaim it automatically after the lease expires. An unexpired lease cannot be overwritten by another worker.
+
+Calling `claim` again with the same worker name immediately resumes and renews that worker's existing lease. This supports a fresh Codex session continuing before the original lease expires.
+
+When research creates a more specific unit of work, enqueue it under its parent:
+
+```bash
+npm run admin:queue -- add \
+  --kind=jurisdiction_audit \
+  --state=CA \
+  --jurisdiction="Long Beach" \
+  --parent=state:CA \
+  --next-action="Locate the official BID registry and current boundaries."
+```
+
+Finish an item only after its stated objective is complete:
+
+```bash
+npm run admin:queue -- complete --id=state:AL --worker=codex \
+  --summary="State framework and jurisdiction inventory completed." \
+  --artifact-path=data/state-audit.csv
+```
+
+Use `block` only for a genuine external dependency and `exclude` when research proves a candidate is outside the atlas definition. `requeue` returns a terminal item to active work if new evidence appears. `validate` checks the complete queue for duplicate IDs, missing parents, invalid states, malformed evidence URLs, and inconsistent leases.
+
+Queue mutations are written through a temporary file and atomic rename. Commit `data/research-queue.json` with every completed item and before ending a budget-limited research session. The committed checkpoint—not conversation history—is the restart point for the next Codex task.
+
+Tests and maintenance tools may point the CLI at isolated files with `RESEARCH_QUEUE_FILE` and `STATE_AUDIT_FILE`; production defaults remain `data/research-queue.json` and `data/state-audit.csv`.
 
 ## Adding a district
 

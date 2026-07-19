@@ -1,0 +1,1492 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-07-19T03:10:36.424Z",
+  "sequence": 0,
+  "last_completed_id": null,
+  "items": [
+    {
+      "id": "state:CA",
+      "kind": "state_audit",
+      "title": "Audit California",
+      "state_code": "CA",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "State enabling authority is verified. The atlas maps San Francisco San Diego 38 current City of Los Angeles BIDs and five operational assessment districts from Santa Monica's official GIS. Santa Monica's mapped districts are Main Street Montana Avenue Pico Boulevard Central Business District and Downtown Mall Operations and Maintenance. The current city budget also verifies Downtown PBAD Colorado Avenue overlay and Lincoln Boulevard PBAD assessment accounts but the public GIS does not provide distinct current polygons for those overlapping assessments. Los Angeles County's other independent cities remain separate jurisdictions requiring their own audits.",
+        "next_action": "Locate separate current polygons for Santa Monica's Downtown PBAD Colorado Avenue overlay and Lincoln Boulevard PBAD; audit Long Beach West Hollywood Oakland Sacramento San Jose and Berkeley.",
+        "evidence_urls": [
+          "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
+          "https://data.sfgov.org/d/c28a-f6gs",
+          "https://data.sandiego.gov/datasets/gis-business-improvement-districts/",
+          "https://clerk.lacity.gov/business-improvement-districts",
+          "https://maps.lacity.org/arcgis/rest/services/Mapping/NavigateLA/MapServer/63",
+          "https://gis.santamonica.gov/server/rest/services/Business_Improvement_Districts/MapServer/0",
+          "https://www.santamonica.gov/media/Finance/Budgets%20%26%20Reports/2026/2025-27%20Operating%20Budget%20Line%20Item.pdf"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:CO",
+      "kind": "state_audit",
+      "title": "Audit Colorado",
+      "state_code": "CO",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "Denver has a current official boundary feed for 12 active BIDs. Colorado remains partial and DDA GID and special improvement districts are not treated as BID aliases.",
+        "next_action": "Enumerate active BIDs outside Denver using DOLA filings and official municipal records.",
+        "evidence_urls": [
+          "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-31.pdf",
+          "https://services1.arcgis.com/zdB7qR0BtYrg0Xpl/ArcGIS/rest/services/ODC_ADMN_BUSINESSIMPROVDIST_A/FeatureServer/1"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:CT",
+      "kind": "state_audit",
+      "title": "Audit Connecticut",
+      "state_code": "CT",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "The enabling chapter is verified. The map currently includes only Hartford.",
+        "next_action": "Identify every municipal special services district and locate official boundaries.",
+        "evidence_urls": [
+          "https://www.cga.ct.gov/Current/pub/chap_105a.htm",
+          "https://data.hartford.gov/datasets/hartfordgis::business-improvement-district"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:DC",
+      "kind": "state_audit",
+      "title": "Audit District of Columbia",
+      "state_code": "DC",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "The official registry currently says 12 BIDs while the configured boundary layer produces 13 records.",
+        "next_action": "Reconcile 13 mapped features with the current official list of 12 BIDs.",
+        "evidence_urls": [
+          "https://code.dccouncil.gov/us/dc/council/code/sections/2-1215.01",
+          "https://dslbd.dc.gov/service/business-improvement-districts-bids",
+          "https://opendata.dc.gov/datasets/DCGIS::business-improvement-districts"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:FL",
+      "kind": "state_audit",
+      "title": "Audit Florida",
+      "state_code": "FL",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "FloridaCommerce reports five active districts with the Business Improvement purpose and all five are mapped. Residential and safety neighborhood districts are excluded. Boundaries are generalized from official assessment maps pending parcel-level GIS feeds.",
+        "next_action": "Monitor the statewide registry and municipal assessment records; investigate BID-branded municipal programs outside the Chapter 170 registry.",
+        "evidence_urls": [
+          "https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute&URL=0100-0199/0170/0170.html",
+          "https://floridajobs.org/community-development/community-planning/special-districts/special-district-accountability-program/official-list-of-special-districts"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:GA",
+      "kind": "state_audit",
+      "title": "Audit Georgia",
+      "state_code": "GA",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "Rome Uptown Columbus and Eisenhower Macon-Bibb are verified and mapped. Georgia Community Improvement Districts are a separate legal category and are excluded. Boundaries are generalized from official plans pending parcel-level GIS feeds.",
+        "next_action": "Monitor municipal renewal records and search for any BID created after the statewide policy review.",
+        "evidence_urls": [
+          "https://www.legis.ga.gov/api/document/docs/default-source/house-budget-and-research-office-document-library/newsandhighlights/2020/2020_policy_brief_community_development_tools_series_business_improvement_districts.pdf?sfvrsn=5942aab8_2"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:HI",
+      "kind": "state_audit",
+      "title": "Audit Hawaii",
+      "state_code": "HI",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "Statewide enabling is HRS §46-80.5 (Special improvement district), allowing charter counties to create SIDs by ordinance for supplemental services and improvements funded by special assessments. These are the legal BID equivalents. Honolulu currently implements four districts under ROH Ch. 28: No. 1 Waikīkī Business Improvement District (2000), No. 2 Fort Street Mall expanded and renamed Downtown Honolulu Business Improvement District by Ord. 25-47 (2025), No. 3 Waikīkī Beach Special Improvement District (2015), and No. 4 Waikīkī Transportation Management Special Improvement District (2017). Hawaiʻi County Code Ch. 35 has active Kailua Village BID No. 1; proposed Downtown Hilo BID No. 2 was rejected in 2023. Maui has enabling authority under Ch. 3.70 but no active district has yet been confirmed; Kauai planning material says the county had not authorized one. The atlas now maps all five verified active districts. Downtown Honolulu and Kailua Village boundaries were reconstructed from ordinance assessment parcel lists using current State parcel geometry; the three overlapping Waikīkī boundaries are generalized from official ordinance maps. No statewide registry or unified official GIS exists, so coverage remains substantial rather than comprehensive until negative findings for Maui and Kauai receive direct county confirmation.",
+        "next_action": "Confirm through Maui and Kauai county clerk, finance, and assessment records that no active districts have been established under their enabling authorities; monitor Honolulu Chapter 28 and Hawaiʻi County Chapter 35 for changes. Five active districts are now mapped: Honolulu SIDs Nos. 1-4 and Kailua Village BID No. 1.",
+        "evidence_urls": [
+          "https://www.capitol.hawaii.gov/hrscurrent/Vol02_Ch0046-0115/HRS0046/HRS_0046-0080_0005.htm",
+          "https://codelibrary.amlegal.com/codes/honolulu/latest/honolulu/0-0-0-36151",
+          "https://www.hawaiicounty.gov/home/showpublisheddocument/80/637649760877470000",
+          "https://www.mauicounty.gov/DocumentCenter/View/106635/Ord-4382?bidId=",
+          "https://waikikibid.org/",
+          "https://www.dohobid.com/",
+          "https://www.wbsida.org/overview",
+          "https://historickailuavillage.com/",
+          "https://fortstreetmall.org/fort-streets-history/fort-street-mall-bida/",
+          "https://hnldoc.ehawaii.gov/hnldoc/measure/3401",
+          "https://historickailuavillage.com/wp-content/uploads/2024/01/KVBID-Ordinance.pdf",
+          "https://www.kauai.gov/files/assets/public/planning-department/documents/skcp_chapter6.pdf",
+          "https://honolulu.granicus.com/MetaViewer.php?clip_id=531&meta_id=25019&view_id=3"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:ID",
+      "kind": "state_audit",
+      "title": "Audit Idaho",
+      "state_code": "ID",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "Enabling authority verified: Idaho Code Title 50 Chapter 26 (Business Improvement Districts; cities authorized to establish BIDs for purposes including parking, public improvements, promotion, events, transportation; special assessments on businesses/business property; admin via contract). Distinct from Local Improvement Districts (LIDs under Title 50 Ch. 17 for capital infrastructure). Separate narrow tool at §50-1703A (Local Business Improvement Districts, 1987) limited to exterior building improvements to match city architectural themes (100% owner consent required; assessed as LIDs; max 20% market value). No statewide registry, inventory, directory, or central GIS/layer of BIDs found via statute, state agency, open-data, or search (failed search ≠ proof of absence). Downtown Boise Association states 'at least six' BIDs in Idaho (appears to undercount or lag; confirmed active examples: Boise ~1987, Nampa ~1985/#2, Caldwell, Idaho Falls ~1990s renewing ~2027, Coeur d'Alene 1990, Lewiston 2020, Pocatello 1991 Ord. 2390). Sandpoint historical/active per city links and local listings (dissolution attempt ~2010 failed; current status medium-confidence). Meridian exploring formation (2026 council presentations/maps of potential district; no ordinance yet). Boundaries exist as PDFs/maps/images on multiple city/district pages; Nampa has downloadable/feature-service GIS layer on ArcGIS Hub. No easily confirmed statewide/downloadable multi-BID GeoJSON/shapefiles. Distinguish from urban renewal agencies (URAs/URDs), pure LIDs, and chambers. Candidate sources are research leads only.",
+        "next_action": "Confirm current status/activity of Sandpoint BID (city still links it; local directories list it; historical dissolution attempts noted); check Meridian progress on proposed BID (city council discussions 2026); query additional municipal codes/ordinances and GIS portals (Boise, Idaho Falls, Caldwell, Coeur d'Alene, Lewiston, Pocatello, Twin Falls, Moscow etc.) and Inside Idaho for any boundary layers; contact Association of Idaho Cities or IDA for fuller inventory; download/verify Nampa feature service and any other local PDFs/maps as GeoJSON candidates; re-search for any additional small-city BIDs or uses of 50-1703A.",
+        "evidence_urls": [
+          "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH26/",
+          "https://downtownboise.org/about/business-improvement-district",
+          "https://www.cityofnampa.us/1253/Business-Improvement-District",
+          "https://www.cityofcaldwell.org/Business/Business-Improvement-District-Information",
+          "https://downtownidahofalls.com/about-us/business-improvement-district/",
+          "https://cdadowntown.com/about/",
+          "https://www.cityoflewiston.org/661/Business-Improvement-District",
+          "https://www.historicdowntownpocatello.com/explore-downtown",
+          "https://legislature.idaho.gov/statutesrules/idstat/Title50/T50CH17/SECT50-1703A/",
+          "https://hub.arcgis.com/datasets/Nampa::business-improvement-district-1",
+          "https://gisdata-nampa.hub.arcgis.com/",
+          "http://downtownsandpoint.com/"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:IL",
+      "kind": "state_audit",
+      "title": "Audit Illinois",
+      "state_code": "IL",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "Illinois authorizes classic BIDs under Business Improvement District Law (65 ILCS 125/, P.A. 103-646, eff. 7-1-24), limited to municipalities >500,000 population (Chicago only). Chicago DPD accepts feasibility applications for BIDs (deadline Nov 1, 2026 for 2027 start); none active as of research (law recent; BIDs cannot overlap SSAs). Longstanding statewide equivalent is Special Service Areas under Special Service Area Tax Law (35 ILCS 200/27-5 et seq. / Article 27 of Property Tax Code), available to municipalities and counties for special services/improvements (including downtown/business corridor marketing, security, cleaning, beautification) funded by property tax levies solely on the SSA. Creation via local ordinance after notice, hearing, petition/objection process; maps/ordinances filed with county clerks/recorders. Chicago has ~58 active SSAs with authoritative provider lists, citywide maps, and downloadable GIS boundaries. Examples confirmed elsewhere (Peoria, Lake/Cook/Peoria/Kendall Counties GIS, Moline, Highland Park business SSAs, Aurora, Oak Park, Evanston, Yorkville, etc.). No central public statewide registry or inventory of all SSAs/BIDs located (IDOR has historically tracked 600+ for tax extension/property tax purposes as of ~2011, generating tens of millions annually, but no public list/GIS). Distinguish from unrelated 'Business Districts' under Illinois Municipal Code 65 ILCS 5/11-74.3 (sales-tax increment redevelopment of blighted areas). Coverage authoritative/complete for Chicago; partial for rest of state via scattered county GIS and municipal pages. Failed searches do not prove absence. Enabling URLs: BID https://www.ilga.gov/Legislation/ILCS/Articles?ActID=4518&ChapterID=14 ; SSA article/sections via https://www.ilga.gov/legislation/ILCS/details?MajorTopic=&Chapter=&ActName=Property%20Tax%20Code.&ActID=596&ChapterID=8&ChapAct=35+ILCS+200%2F&SeqStart=86400000&SeqEnd=89400000 and https://ilga.gov/documents/legislation/ilcs/documents/003502000K27-5.htm .",
+        "next_action": "Continue systematic review of additional large/medium municipalities and remaining counties (e.g., DuPage, Kane, Will, Winnebago/Rockford, Sangamon/Springfield, McLean) via city/county GIS portals, clerk tax extension reports, assessor maps, and ordinance searches for SSAs; monitor Chicago BID designations post-2026 applications; check IDOR or Comptroller for any non-public inventory references that could become public; distinguish pure residential/stormwater SSAs if needed but retain BID-equivalent business corridor uses.",
+        "evidence_urls": [
+          "https://www.ilga.gov/Legislation/ILCS/Articles?ActID=4518&ChapterID=14",
+          "https://www.chicago.gov/city/en/depts/dcd/supp_info/special_service_areassaprogram.html",
+          "https://www.chicago.gov/city/en/depts/dcd/supp_info/special_service_areasandproviderlist.html",
+          "https://data.cityofchicago.org/Community-Economic-Development/Boundaries-Special-Service-Areas/cmr6-dn8c",
+          "https://data.cityofchicago.org/Community-Economic-Development/SSA-map/2k7v-9xvk",
+          "https://www.peoriagov.org/1023/Special-Service-Areas",
+          "https://data-peoriacountygis.opendata.arcgis.com/datasets/special-service-area-districts/explore",
+          "https://hub-cookcountyil.opendata.arcgis.com/datasets/special-service-area-tax-district-historical-2023/about",
+          "https://data.cityofchicago.org/d/kjav-iyuj",
+          "https://data-lakecountyil.opendata.arcgis.com/datasets/special-service-areas-and-tax-increment-finance-areas/about",
+          "https://maps.co.kendall.il.us/portal/home/item.html?id=7906b769181f412db9960cce7e82e9ef",
+          "https://www.moline.il.us/1419/Special-Service-Area-5"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:MA",
+      "kind": "state_audit",
+      "title": "Audit Massachusetts",
+      "state_code": "MA",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "Enabling statute is M.G.L. c. 40O (Business Improvement Districts), enacted ~1994; BIDs are contiguous areas ≥75% commercial/industrial/retail/mixed-use, formed by petition of ≥60% of property owners representing ≥51% assessed valuation, local hearing/approval, and filing with EOED. Official Mass.gov page and manual confirm process and that petitions are forwarded to EOED for technical assistance/compliance, but no public statewide registry, inventory, or GIS layer of all BIDs was located (failed searches are not proof of absence). Local term is consistently 'Business Improvement District' or 'BID'; distinguish carefully from Cultural Districts (Mass Cultural Council), Parking Benefit Districts, Tourism Destination Marketing Districts (TDMDs), District Improvement Financing (DIF), historic districts, and voluntary Main Street-style organizations (toolkit explicitly separates these). Known/operating examples (from official toolkit, case studies, district sites, and secondary confirmations such as ~10-11 total cited in Hyannis/New Bedford sources) include: Downtown Boston (Alliance), Greenway BID (Boston), Newmarket (Boston), Amherst, Central Square (Cambridge), Hyannis Main Street, Hudson, Springfield, Worcester, Taunton; Edgartown has public ArcGIS BID boundary (status may be active/proposed). No statewide map/GeoJSON found; local GIS/boundaries available for several. Secondary analyses (e.g. MassINC) use MassGIS parcels to examine select BIDs. Coverage remains partial pending authoritative full list or exhaustive municipal sweep.",
+        "next_action": "Contact EOED BID staff (elizabeth.hahn@mass.gov) for any internal inventory of petitions/established BIDs; systematically check remaining municipalities and MassGIS/open data portals for additional boundary layers; verify status of Edgartown/Athol and any post-2024 formations; cross-check municipal ordinances and assessor data for complete local coverage.",
+        "evidence_urls": [
+          "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleVII/Chapter40O",
+          "https://www.mass.gov/info-details/business-improvement-districts-bid",
+          "https://www.mass.gov/doc/2020-revised-business-improvement-district-manual-0/download",
+          "https://www.mass.gov/doc/district-management-toolkit/download",
+          "https://www.amherstdowntown.com/",
+          "https://gis.data.mass.gov/search?collection=dataset&layout=grid&tags=amherst",
+          "https://www.downtownboston.org/",
+          "https://www.abettercity.org/our-work/greenway-bid",
+          "https://newmarketbid.org/",
+          "https://www.centralsq.org/",
+          "https://www.hyannismainstreet.com/hyannis-main-street-business-improvement-district/",
+          "https://www.discoverhudson.org/about",
+          "https://springfielddowntown.com/",
+          "https://www.discovercentralma.org/listing/downtown-worcester-business-improvement-district/201/",
+          "https://downtowntaunton.org/",
+          "https://www.arcgis.com/home/item.html?id=fe3d74f158e6495c9e201d1ca330a30c",
+          "https://www.mass.gov/info-details/approved-vacant-storefront-districts"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:MD",
+      "kind": "state_audit",
+      "title": "Audit Maryland",
+      "state_code": "MD",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "State enabling legislation and Baltimore local authority are verified. Current geometry covers six Baltimore districts only.",
+        "next_action": "Find BIDs outside Baltimore and verify current statewide codification.",
+        "evidence_urls": [
+          "https://mgaleg.maryland.gov/2010rs/chapters_noln/ch_461_hb1182t.pdf",
+          "https://codes.baltimorecity.gov/us/md/cities/baltimore/code/14"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:NV",
+      "kind": "state_audit",
+      "title": "Audit Nevada",
+      "state_code": "NV",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "Nevada authorizes BID-equivalent supplemental services through NRS Chapter 271 neighborhood improvement projects including tourism promotion marketing and economic development security sanitation graffiti removal and street and sidewalk cleaning. Downtown Reno is the only active BID verified in this audit and is current through the City's FY2027 operating-plan review. The atlas now maps Reno's exact official one-feature ArcGIS polygon. The Las Vegas Arts District page says a steering committee is exploring formation so it is not active and must not be mapped. Henderson North Las Vegas and Carson City records located during the audit describe proposed or future BIDs rather than established districts. SB420 in 2025 would have created a separate Tahoe-region Business Improvement District Law but did not pass. Tourism improvement districts redevelopment areas general improvement districts and infrastructure-only local or special improvement districts are excluded. No statewide BID registry was located so the statewide result remains partial and failed searches are not proof that no other district exists.",
+        "next_action": "Confirm whether any additional districts have been established under NRS Chapter 271; monitor the proposed Las Vegas Arts District BID and any renewed Tahoe-region legislation.",
+        "evidence_urls": [
+          "https://www.leg.state.nv.us/nrs/nrs-271.html#NRS271Sec147",
+          "https://www.reno.gov/government/departments/economic-development-redevelopment-agency/business-improvement-district",
+          "https://citymaps.reno.gov/server/rest/services/AdminAreas/BID_FY24/MapServer/0",
+          "https://www.reno.gov/Home/Components/News/News/21714/",
+          "https://www.lasvegasnevada.gov/Government/Initiatives/Arts-District-Plan",
+          "https://www.leg.state.nv.us/App/NELIS/REL/83rd2025/Bill/12765/Overview"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:NY",
+      "kind": "state_audit",
+      "title": "Audit New York",
+      "state_code": "NY",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "New York law is verified. The May 2026 NYC report says 78 BIDs while the current map contains 76 NYC records.",
+        "next_action": "Add the two NYC BIDs missing from the current layer and research the rest of New York State.",
+        "evidence_urls": [
+          "https://www.nysenate.gov/legislation/laws/GMU/A19-A",
+          "https://data.cityofnewyork.us/d/7jdm-inj8",
+          "https://www.nyc.gov/assets/sbs/downloads/pdf/neighborhoods/fy25-bid-trends-report.pdf"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:WA",
+      "kind": "state_audit",
+      "title": "Audit Washington",
+      "state_code": "WA",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 100,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "resume_existing_audit",
+        "summary": "Enabling statute is Chapter 35.87A RCW (Parking and Business Improvement Areas), authorizing cities/towns/counties to form special assessment districts for economic development, parking, promotion, maintenance, security, etc., via petition (typically ~60% of assessments) or resolution. Locally termed PBIAs/BIAs/BIDs; Tourism Improvement Areas (e.g., Seattle STIA) also use this authority. Authoritative statewide registry or complete inventory not located (MRSC provides examples only). Distinguish carefully from unrelated Local Improvement Districts (LIDs under other RCW chapters, e.g., capital infrastructure assessments) and Public Development Authorities. Multiple active districts confirmed in Seattle (11+ including Metropolitan Improvement District/MID and others), Tacoma (Downtown BIA with GIS), Spokane (Downtown and East Sprague), Richland (2), Olympia, Snohomish, Everett, Yakima, Aberdeen, etc. Municipal GIS available for major cities; many boundaries also in ordinances or PDF maps. No proof of absence elsewhere—coverage incomplete without exhaustive municipal search.",
+        "next_action": "Expand municipal coverage by verifying additional city GIS layers/official lists (Everett Station/Downtown BIAs, East Sprague Spokane, Aberdeen, Port Angeles, others); confirm downloadable boundary data where available; search for any non-governmental statewide association directory or inventory; note any county-level PBIAs.",
+        "evidence_urls": [
+          "https://apps.leg.wa.gov/Rcw/default.aspx?cite=35.87A",
+          "https://www.seattle.gov/office-of-economic-development/business-districts/business-improvement-areas-",
+          "https://hub.arcgis.com/datasets/08107965cf3840668023f710e30796c3_0",
+          "https://data.tacoma.gov/datasets/tacoma::business-improvement-area-tacoma",
+          "https://my.spokanecity.org/bcc/boards/downtown-business-improvement-district-board/",
+          "https://data-spokane.opendata.arcgis.com/items/6d150d6f1b964a78b933aa4e4aaa038e",
+          "https://mrsc.org/explore-topics/economic-development/financing/parking-and-business-improvement-areas",
+          "https://www.richlandbusiness.com/programs/business-improvement-districts",
+          "https://www.olympiawa.gov/government/advisory_committees/parking___business_improvement_area_board.php",
+          "https://www.snohomishwa.gov/767/Parking-Business-Improvement-Area-PBIA",
+          "https://www.codepublishing.com/WA/Yakima/html/Yakima01/Yakima0133.html"
+        ],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:AK",
+      "kind": "state_audit",
+      "title": "Audit Alaska",
+      "state_code": "AK",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:AL",
+      "kind": "state_audit",
+      "title": "Audit Alabama",
+      "state_code": "AL",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:AR",
+      "kind": "state_audit",
+      "title": "Audit Arkansas",
+      "state_code": "AR",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:AZ",
+      "kind": "state_audit",
+      "title": "Audit Arizona",
+      "state_code": "AZ",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:DE",
+      "kind": "state_audit",
+      "title": "Audit Delaware",
+      "state_code": "DE",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:IA",
+      "kind": "state_audit",
+      "title": "Audit Iowa",
+      "state_code": "IA",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:IN",
+      "kind": "state_audit",
+      "title": "Audit Indiana",
+      "state_code": "IN",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:KS",
+      "kind": "state_audit",
+      "title": "Audit Kansas",
+      "state_code": "KS",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:KY",
+      "kind": "state_audit",
+      "title": "Audit Kentucky",
+      "state_code": "KY",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:LA",
+      "kind": "state_audit",
+      "title": "Audit Louisiana",
+      "state_code": "LA",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:ME",
+      "kind": "state_audit",
+      "title": "Audit Maine",
+      "state_code": "ME",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:MI",
+      "kind": "state_audit",
+      "title": "Audit Michigan",
+      "state_code": "MI",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:MN",
+      "kind": "state_audit",
+      "title": "Audit Minnesota",
+      "state_code": "MN",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:MO",
+      "kind": "state_audit",
+      "title": "Audit Missouri",
+      "state_code": "MO",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:MS",
+      "kind": "state_audit",
+      "title": "Audit Mississippi",
+      "state_code": "MS",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:MT",
+      "kind": "state_audit",
+      "title": "Audit Montana",
+      "state_code": "MT",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:NC",
+      "kind": "state_audit",
+      "title": "Audit North Carolina",
+      "state_code": "NC",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:ND",
+      "kind": "state_audit",
+      "title": "Audit North Dakota",
+      "state_code": "ND",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:NE",
+      "kind": "state_audit",
+      "title": "Audit Nebraska",
+      "state_code": "NE",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:NH",
+      "kind": "state_audit",
+      "title": "Audit New Hampshire",
+      "state_code": "NH",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:NJ",
+      "kind": "state_audit",
+      "title": "Audit New Jersey",
+      "state_code": "NJ",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:NM",
+      "kind": "state_audit",
+      "title": "Audit New Mexico",
+      "state_code": "NM",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:OH",
+      "kind": "state_audit",
+      "title": "Audit Ohio",
+      "state_code": "OH",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:OK",
+      "kind": "state_audit",
+      "title": "Audit Oklahoma",
+      "state_code": "OK",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:OR",
+      "kind": "state_audit",
+      "title": "Audit Oregon",
+      "state_code": "OR",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:PA",
+      "kind": "state_audit",
+      "title": "Audit Pennsylvania",
+      "state_code": "PA",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:RI",
+      "kind": "state_audit",
+      "title": "Audit Rhode Island",
+      "state_code": "RI",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:SC",
+      "kind": "state_audit",
+      "title": "Audit South Carolina",
+      "state_code": "SC",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:SD",
+      "kind": "state_audit",
+      "title": "Audit South Dakota",
+      "state_code": "SD",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:TN",
+      "kind": "state_audit",
+      "title": "Audit Tennessee",
+      "state_code": "TN",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:TX",
+      "kind": "state_audit",
+      "title": "Audit Texas",
+      "state_code": "TX",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:UT",
+      "kind": "state_audit",
+      "title": "Audit Utah",
+      "state_code": "UT",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:VA",
+      "kind": "state_audit",
+      "title": "Audit Virginia",
+      "state_code": "VA",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:VT",
+      "kind": "state_audit",
+      "title": "Audit Vermont",
+      "state_code": "VT",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:WI",
+      "kind": "state_audit",
+      "title": "Audit Wisconsin",
+      "state_code": "WI",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:WV",
+      "kind": "state_audit",
+      "title": "Audit West Virginia",
+      "state_code": "WV",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    },
+    {
+      "id": "state:WY",
+      "kind": "state_audit",
+      "title": "Audit Wyoming",
+      "state_code": "WY",
+      "jurisdiction": "",
+      "parent_id": "",
+      "priority": 200,
+      "status": "queued",
+      "attempts": 0,
+      "created_at": "2026-07-19T03:08:20.879Z",
+      "updated_at": "2026-07-19T03:08:20.879Z",
+      "lease": null,
+      "checkpoint": {
+        "phase": "authority",
+        "summary": "No determination has been made yet.",
+        "next_action": "Research enabling authority and official local registries.",
+        "evidence_urls": [],
+        "artifact_paths": [
+          "data/state-audit.csv"
+        ],
+        "updated_at": "2026-07-19T03:08:20.879Z",
+        "stop_reason": ""
+      },
+      "result": null,
+      "blocked_reason": ""
+    }
+  ]
+}
