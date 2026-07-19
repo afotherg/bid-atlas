@@ -113,6 +113,25 @@ test("Palm Springs publishes its active small-hotel tourism business improvement
   assert.ok(latitude > 32 && latitude < 35, "district is outside Palm Springs latitude");
 });
 
+test("Riverside publishes its three active business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "riverside-business-improvement-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 3);
+  for (const [name, established] of [
+    ["Downtown Parking and Business Improvement Area", "1985"],
+    ["Arlington Business Improvement District", "2002"],
+    ["Auto Center Business Improvement District", "2011"],
+  ]) {
+    assert.ok(names.has(name), `missing ${name}`);
+    const district = districts.find((feature) => feature.properties.name === name);
+    assert.equal(district.properties.established, established);
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -116, `${name} is outside Riverside longitude`);
+    assert.ok(latitude > 33 && latitude < 35, `${name} is outside Riverside latitude`);
+  }
+});
+
 test("Oakland publishes its ten current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T21:46:10.695Z",
+  "updated_at": "2026-07-19T22:56:10.956Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -12,15 +12,19 @@
       "jurisdiction": "",
       "parent_id": "",
       "priority": 100,
-      "status": "queued",
-      "attempts": 26,
+      "status": "in_progress",
+      "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T21:46:10.694Z",
-      "lease": null,
+      "updated_at": "2026-07-19T22:56:10.954Z",
+      "lease": {
+        "worker": "codex-main",
+        "claimed_at": "2026-07-19T22:50:10.958Z",
+        "expires_at": "2026-07-20T02:56:10.954Z"
+      },
       "checkpoint": {
-        "phase": "palm_springs_small_hotel_tbid_integration",
-        "summary": "Added the active Palm Springs Small Hotel Tourism Business Improvement District, established in 2016 and undergoing its FY2026-27 annual levy. Its citywide benefit zone uses the exact official Palm Springs boundary. California now has 165 mapped districts from thirty-eight configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Riverside and other independent California cities.",
+        "phase": "riverside_bid_integration",
+        "summary": "Added Riverside’s three active business improvement districts: Downtown (1985), Arlington (2002; expanded 2025), and Auto Center (2011). California now has 168 mapped districts from thirty-nine configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Bakersfield, Stockton, and San Bernardino.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -120,7 +124,10 @@
           "https://cityofmerced.legistar.com/LegislationDetail.aspx?From=RSS&GUID=9F6C471B-402A-4F4D-B32F-E2D1408775D1&ID=7005587",
           "https://www.palmspringsca.gov/government/departments/finance-treasury/tourism-business-improvement-district",
           "https://www.palmspringsca.gov/Home/Components/News/News/8806/23",
-          "https://services.arcgis.com/f48yV21HSEYeCYMI/arcgis/rest/services/City_of_PS_Boundary/FeatureServer/0"
+          "https://services.arcgis.com/f48yV21HSEYeCYMI/arcgis/rest/services/City_of_PS_Boundary/FeatureServer/0",
+          "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=9FA4DFBA-71BA-40C2-9F00-5E0B3EC26650&ID=7759651&Options=&Search=",
+          "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=F7E367B7-2F4D-47B5-B7C3-FAE6DABB719C&ID=7649191&Options=&Search=",
+          "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=F3E45088-B0B8-4E5F-9E53-F510C71183E8&ID=7456257&Options=&Search="
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -143,9 +150,10 @@
           "data/sources/downtown-fresno-property-business-improvement-district.geojson",
           "data/sources/downtown-napa-property-business-improvement-district.geojson",
           "data/sources/downtown-merced-property-based-improvement-district.geojson",
-          "data/sources/palm-springs-small-hotel-tourism-business-improvement-district.geojson"
+          "data/sources/palm-springs-small-hotel-tourism-business-improvement-district.geojson",
+          "data/sources/riverside-business-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-19T21:46:10.694Z",
+        "updated_at": "2026-07-19T22:56:10.954Z",
         "stop_reason": "manual_pause"
       },
       "result": null,

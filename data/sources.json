@@ -113,6 +113,49 @@
     }
   },
   {
+    "id": "riverside-business-improvement-districts",
+    "name": "Riverside Business Improvement Districts",
+    "jurisdiction": "Riverside, CA",
+    "state": "CA",
+    "city": "Riverside",
+    "file": "data/sources/riverside-business-improvement-districts.geojson",
+    "landingPage": "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=016CD826-642B-434E-B311-CD0ECD04D10B&ID=6568049&Options=&Search=",
+    "publisher": "City of Riverside",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=9FA4DFBA-71BA-40C2-9F00-5E0B3EC26650&ID=7759651&Options=&Search=",
+      "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=F7E367B7-2F4D-47B5-B7C3-FAE6DABB719C&ID=7649191&Options=&Search=",
+      "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=F3E45088-B0B8-4E5F-9E53-F510C71183E8&ID=7456257&Options=&Search="
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown Parking and Business Improvement Area": {
+        "website": "https://www.riversidedowntown.org/",
+        "established": "1985",
+        "area": "Generalized from the official district map; the assessed downtown area extends from the SR-60/Market Street area through the First-to-Fourteenth Street grid and adjoining parcels",
+        "sourceUrl": "https://riversideca.legistar.com/View.ashx?GUID=00A3E544-7FCE-4BFF-B1F3-A2317E33BDFE&ID=14975855&M=F",
+        "reportUrl": "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=9FA4DFBA-71BA-40C2-9F00-5E0B3EC26650&ID=7759651&Options=&Search="
+      },
+      "Arlington Business Improvement District": {
+        "website": "https://www.riversideabp.com/",
+        "established": "2002",
+        "area": "Generalized from the official 2025 expanded boundary map; assessed commercial corridors follow Magnolia Avenue, Van Buren Boulevard, and Indiana Avenue",
+        "sourceUrl": "https://riversideca.legistar.com/View.ashx?GUID=FDBD4AB7-C93A-47B4-A21D-9DE708BC6639&ID=14755401&M=F",
+        "reportUrl": "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=F7E367B7-2F4D-47B5-B7C3-FAE6DABB719C&ID=7649191&Options=&Search="
+      },
+      "Auto Center Business Improvement District": {
+        "established": "2011",
+        "area": "Generalized from the current municipal-code limits along Indiana Avenue, Adams Street, Auto Center Drive, and Jefferson Street between SR-91 and Lincoln Avenue",
+        "sourceUrl": "https://library.municode.com/ca/riverside/codes/code_of_ordinances?nodeId=PTIICOOR_TIT3REFI_CH3.49AUCEBUIMDI_3.49.010PU",
+        "reportUrl": "https://riversideca.legistar.com/LegislationDetail.aspx?GUID=F3E45088-B0B8-4E5F-9E53-F510C71183E8&ID=7456257&Options=&Search="
+      }
+    }
+  },
+  {
     "id": "palm-springs-small-hotel-tourism-business-improvement-district",
     "name": "Palm Springs Small Hotel Tourism Business Improvement District",
     "jurisdiction": "Palm Springs, CA",
