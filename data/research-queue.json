@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T23:16:47.157Z",
+  "updated_at": "2026-07-19T23:18:51.654Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T23:16:47.157Z",
+      "updated_at": "2026-07-19T23:18:51.653Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T03:16:47.157Z"
+        "expires_at": "2026-07-20T03:18:51.653Z"
       },
       "checkpoint": {
-        "phase": "apple_valley_district_integration",
-        "summary": "Integrated the active Apple Valley Village Property and Business Improvement District, established in 2007 and renewed in 2022 for ten years, using a generalized official street-limit boundary.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Glendora and Pomona.",
+        "phase": "glendora_district_integration",
+        "summary": "Integrated the active Glendora Village Business Improvement District, established in 2009, using the unchanged FY2026-27 official map and municipal-code boundary description.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Pomona and Culver City.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -145,7 +145,10 @@
           "https://gis.data.ca.gov/datasets/CDTFA::california-city-boundaries-and-identifiers/about",
           "https://pub-applevalley.escribemeetings.com/Meeting.aspx?Agenda=Agenda&Id=5933700c-3fb4-447b-829a-d0e22241b67b&Item=35&Tab=attachments&lang=English",
           "https://avvillage.org/pbid-board/",
-          "https://avvillage.org/village-specific-plan/"
+          "https://avvillage.org/village-specific-plan/",
+          "https://www.cityofglendora.gov/files/assets/city/v/2/city-clerk/documents/bid-annual-report-2026-2027.pdf",
+          "https://ecode360.com/43761131",
+          "https://glendoravillage.com/bid-meetings-and-agendas-1"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -172,9 +175,10 @@
           "data/sources/riverside-business-improvement-districts.geojson",
           "data/sources/stockton-downtown-and-miracle-mile-districts.geojson",
           "data/sources/ontario-downtown-community-benefit-district.geojson",
-          "data/sources/apple-valley-village-property-business-improvement-district.geojson"
+          "data/sources/apple-valley-village-property-business-improvement-district.geojson",
+          "data/sources/glendora-village-business-improvement-district.geojson"
         ],
-        "updated_at": "2026-07-19T23:16:47.157Z",
+        "updated_at": "2026-07-19T23:18:51.653Z",
         "stop_reason": "continuous_research"
       },
       "result": null,

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T23:15:37.492Z",
-  "records": 300,
+  "generatedAt": "2026-07-19T23:18:29.717Z",
+  "records": 301,
   "states": [
     "CA",
     "CO",
@@ -28,6 +28,7 @@
     "Denver, CO",
     "Fresno, CA",
     "Garden Grove, CA",
+    "Glendora, CA",
     "Hartford, CT",
     "Honolulu, HI",
     "Huntington Beach, CA",
@@ -490,6 +491,15 @@
       "legislationChanged": true
     },
     {
+      "id": "glendora-village-business-improvement-district",
+      "name": "Glendora Village Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T23:18:29.717Z",
+      "monitorHash": "ba704420bb7355a0280efa149101e128ab6ea061f6f77ba720a27edfb6407e16",
+      "legislationChanged": false
+    },
+    {
       "id": "apple-valley-village-property-business-improvement-district",
       "name": "Apple Valley Village Property and Business Improvement District",
       "status": "ok",
@@ -527,8 +537,8 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 48,
-    "configuredSources": 57,
+    "verifiedJurisdictions": 49,
+    "configuredSources": 58,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

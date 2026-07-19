@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-19T23:15:37.492Z",
+  "checkedAt": "2026-07-19T23:18:29.717Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-apple-valley-apple-valley-village-property-and-business-improvement-district"
+    "ca-glendora-glendora-village-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -433,6 +433,15 @@
       "checkedAt": "2026-07-19T23:11:39.300Z",
       "monitorHash": "12518b9d4fe109db6d46a101162616a3671c3b13b80842b6dd45b02bda25172b",
       "legislationChanged": true
+    },
+    {
+      "id": "glendora-village-business-improvement-district",
+      "name": "Glendora Village Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T23:18:29.717Z",
+      "monitorHash": "ba704420bb7355a0280efa149101e128ab6ea061f6f77ba720a27edfb6407e16",
+      "legislationChanged": false
     },
     {
       "id": "apple-valley-village-property-business-improvement-district",

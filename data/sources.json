@@ -1540,6 +1540,33 @@
     }
   },
   {
+    "id": "glendora-village-business-improvement-district",
+    "name": "Glendora Village Business Improvement District",
+    "jurisdiction": "Glendora, CA",
+    "state": "CA",
+    "city": "Glendora",
+    "file": "data/sources/glendora-village-business-improvement-district.geojson",
+    "landingPage": "https://www.cityofglendora.gov/files/assets/city/v/2/city-clerk/documents/bid-annual-report-2026-2027.pdf",
+    "publisher": "City of Glendora",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.cityofglendora.gov/files/assets/city/v/2/city-clerk/documents/bid-annual-report-2026-2027.pdf",
+      "https://glendoravillage.com/bid-meetings-and-agendas-1"
+    ],
+    "fields": {
+      "name": ["name"]
+    },
+    "overrides": {
+      "Glendora Village Business Improvement District": {
+        "website": "https://glendoravillage.com/",
+        "established": "2009",
+        "area": "Generalized from the unchanged official FY2026-27 boundary map and municipal-code description; Bennett Avenue from Vermont Avenue to Vista Bonita Avenue, south to Foothill Boulevard, plus the prescribed southwest extension",
+        "sourceUrl": "https://ecode360.com/43761131",
+        "reportUrl": "https://www.cityofglendora.gov/files/assets/city/v/2/city-clerk/documents/bid-annual-report-2026-2027.pdf"
+      }
+    }
+  },
+  {
     "id": "apple-valley-village-property-business-improvement-district",
     "name": "Apple Valley Village Property and Business Improvement District",
     "jurisdiction": "Apple Valley, CA",
