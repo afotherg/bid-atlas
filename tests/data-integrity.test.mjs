@@ -107,6 +107,27 @@ test("Long Beach publishes eight current non-tourism BID boundaries", () => {
   }
 });
 
+test("West Hollywood publishes its three current business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "West Hollywood" && feature.properties.state === "CA");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 3);
+  for (const name of [
+    "Sunset Strip Business Improvement District",
+    "West Hollywood Design District Business Improvement District",
+    "West Hollywood Tourism Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of districts) {
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -118, `${district.properties.name} is outside West Hollywood longitude`);
+    assert.ok(latitude > 34 && latitude < 35, `${district.properties.name} is outside West Hollywood latitude`);
+  }
+  const tourism = districts.find((feature) => feature.properties.sourceId === "west-hollywood-tourism-improvement-district");
+  assert.ok(tourism, "missing citywide tourism district");
+  assert.ok(tourism.properties.bounds[0] < -118.39);
+  assert.ok(tourism.properties.bounds[2] > -118.35);
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T03:38:53.586Z",
+  "updated_at": "2026-07-19T16:38:38.601Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 3,
+      "attempts": 4,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T03:38:53.585Z",
+      "updated_at": "2026-07-19T16:38:38.600Z",
       "lease": null,
       "checkpoint": {
-        "phase": "long_beach_source_integration",
-        "summary": "Reconciled Long Beach's registry: the city counts nine legal BIDs while its table has ten boundary rows because the single Tourism BIA has Downtown and Airport zones. Integrated five current merchant-district polygons and three current property-district polygons from the city's embedded mapping datasets. Excluded the obsolete Magnolia Industrial Group feature because it is absent from the current registry. California now has 106 mapped districts from nine configured sources. The Tourism BIA remains the only verified Long Beach BID without an integrated boundary.",
-        "next_action": "Reconstruct the two Long Beach Tourism BIA zones from official maps; locate official boundaries for West Hollywood Sacramento and Berkeley; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons.",
+        "phase": "west_hollywood_source_integration",
+        "summary": "Integrated all three current West Hollywood districts. The Tourism Improvement District uses the city's exact municipal boundary; the Sunset Strip and Design District boundaries are generalized from the city's official street-limit descriptions. California now has 109 mapped districts from eleven configured sources. Long Beach remains at eight of nine current BIDs because its public BizMap references a Tourism BIA feature layer that requires an ArcGIS token and exposes no public export.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate official boundaries for Sacramento and Berkeley; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -41,15 +41,21 @@
           "https://swc28.carto.com/api/v2/sql?format=GeoJSON&q=SELECT%20the_geom%2Cbid_name%20FROM%20property_bid%20WHERE%20bid_code%3C%3E%27MAGINDGRP%27",
           "https://www.arcgis.com/home/item.html?id=db1abc250c584afab20e39e5bd354fa2",
           "https://www.longbeach.gov/globalassets/edo/media-library/documents/bids/fees/lbtbia-map--1-",
-          "https://www.longbeach.gov/finance/media-library/documents/business-info/business-licenses/bids/bid_district_tourism_airport/"
+          "https://www.longbeach.gov/finance/media-library/documents/business-info/business-licenses/bids/bid_district_tourism_airport/",
+          "https://www.weho.org/business/business-organizations/business-improvement-districts",
+          "https://gis.weho.org/arcgis/rest/services/General/WeHo_City_Boundary/MapServer/0",
+          "https://www.weho.org/home/showpublisheddocument/62076/638841124789230000",
+          "https://www.weho.org/home/showpublisheddocument/62077/638841125814430000",
+          "https://www.weho.org/home/showpublisheddocument/64664/639076158853630000"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
           "data/sources.json",
           "public/data/bids.geojson",
-          "tests/data-integrity.test.mjs"
+          "tests/data-integrity.test.mjs",
+          "data/sources/west-hollywood-business-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-19T03:38:53.585Z",
+        "updated_at": "2026-07-19T16:38:38.600Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

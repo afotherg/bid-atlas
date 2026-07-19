@@ -1,0 +1,45 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sunset Strip Business Improvement District",
+        "status": "Active",
+        "area": "Generalized from the official Sunset Boulevard street-range definition"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.3922, 34.0899],
+          [-118.3856, 34.0899],
+          [-118.3766, 34.0936],
+          [-118.3678, 34.0972],
+          [-118.3678, 34.0986],
+          [-118.3762, 34.0951],
+          [-118.3855, 34.0914],
+          [-118.3918, 34.0913],
+          [-118.3922, 34.0899]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Hollywood Design District Business Improvement District",
+        "status": "Active",
+        "area": "Generalized from the official Doheny Drive Santa Monica Boulevard La Cienega Boulevard and Beverly Boulevard limits"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.389773, 34.081105],
+          [-118.376358, 34.089374],
+          [-118.376579, 34.076034],
+          [-118.389724, 34.077186],
+          [-118.389773, 34.081105]
+        ]]
+      }
+    }
+  ]
+}

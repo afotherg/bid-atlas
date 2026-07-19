@@ -300,6 +300,54 @@
     }
   },
   {
+    "id": "west-hollywood-business-improvement-districts",
+    "name": "West Hollywood Business Improvement Districts",
+    "jurisdiction": "West Hollywood, CA",
+    "state": "CA",
+    "city": "West Hollywood",
+    "file": "data/sources/west-hollywood-business-improvement-districts.geojson",
+    "landingPage": "https://www.weho.org/business/business-organizations/business-improvement-districts",
+    "publisher": "City of West Hollywood",
+    "cadence": "Annual",
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "status": [
+        "status"
+      ],
+      "area": [
+        "area"
+      ]
+    },
+    "overrides": {
+      "Sunset Strip Business Improvement District": {
+        "website": "https://www.thesunsetstrip.com/"
+      },
+      "West Hollywood Design District Business Improvement District": {
+        "website": "https://www.westhollywooddesigndistrict.com/"
+      }
+    }
+  },
+  {
+    "id": "west-hollywood-tourism-improvement-district",
+    "name": "West Hollywood Tourism Improvement District",
+    "jurisdiction": "West Hollywood, CA",
+    "state": "CA",
+    "city": "West Hollywood",
+    "fixedName": "West Hollywood Tourism Improvement District",
+    "url": "https://gis.weho.org/arcgis/rest/services/General/WeHo_City_Boundary/MapServer/0/query?where=1%3D1&outFields=CITY_NAME&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.weho.org/business/business-organizations/business-improvement-districts",
+    "publisher": "City of West Hollywood",
+    "cadence": "As published",
+    "fields": {},
+    "overrides": {
+      "West Hollywood Tourism Improvement District": {
+        "website": "https://www.visitwesthollywood.com/"
+      }
+    }
+  },
+  {
     "id": "denver-business-improvement-districts",
     "name": "Denver Business Improvement Districts",
     "jurisdiction": "Denver, CO",
