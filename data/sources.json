@@ -300,6 +300,41 @@
     }
   },
   {
+    "id": "anaheim-tourism-improvement-district",
+    "name": "Anaheim Tourism Improvement District",
+    "jurisdiction": "Anaheim, CA",
+    "state": "CA",
+    "city": "Anaheim",
+    "file": "data/sources/anaheim-tourism-improvement-district.geojson",
+    "landingPage": "https://www.anaheim.net/565/Anaheim-Tourism-Improvement-District-ATI",
+    "publisher": "City of Anaheim",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.anaheim.net/DocumentCenter/View/68170/First-Amended-and-Restated-ATID-Management-Plan",
+      "https://www.anaheim.net/DocumentCenter/View/68263/ATID-Expansion--Updated-to-Reflect-Adoption",
+      "https://www.anaheim.net/DocumentCenter/View/68264/ATID-ExpansionArea-Updated-to-Reflect-Adoption"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "status": [
+        "status"
+      ],
+      "area": [
+        "area"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ]
+    },
+    "overrides": {
+      "Anaheim Tourism Improvement District": {
+        "website": "https://www.visitanaheim.org/"
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",

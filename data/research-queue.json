@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T18:20:29.987Z",
+  "updated_at": "2026-07-19T18:26:50.457Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 7,
+      "attempts": 9,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T18:20:29.986Z",
+      "updated_at": "2026-07-19T18:26:50.456Z",
       "lease": null,
       "checkpoint": {
-        "phase": "pasadena_source_integration",
-        "summary": "Integrated all four current Pasadena districts verified by the city's official registry and management plans: Old Pasadena, Playhouse Village, South Lake Avenue, and Tourism. The tourism district uses the exact official city boundary; the other three are generalized from adopted management plans and official street limits. California now has 142 mapped districts from twenty configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Anaheim and other independent California cities.",
+        "phase": "anaheim_source_integration",
+        "summary": "Integrated Anaheim's one current Tourism Improvement District from the city's December 2025 amended management plan and adopted January 2026 boundary map. The vector-derived boundary is georeferenced against Anaheim's official Resort Area GIS polygon and covers the two mapped components in The Anaheim Resort and Platinum Triangle. California now has 143 mapped districts from twenty-one configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Garden Grove and other independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -63,7 +63,11 @@
           "https://ww2.cityofpasadena.net/2025%20Agendas/May_19_25/AR%209%20Attachment%20A.pdf",
           "https://ww2.cityofpasadena.net/2021%20Agendas/May_24_21/AR%208%20ATTACHMENT%201.pdf",
           "https://ww2.cityofpasadena.net/2022%20Agendas/Apr_25_22/AR%2015.pdf",
-          "https://services2.arcgis.com/zNjnZafDYCAJAbN0/arcgis/rest/services/City_Boundary/FeatureServer/0"
+          "https://services2.arcgis.com/zNjnZafDYCAJAbN0/arcgis/rest/services/City_Boundary/FeatureServer/0",
+          "https://www.anaheim.net/565/Anaheim-Tourism-Improvement-District-ATI",
+          "https://www.anaheim.net/DocumentCenter/View/68170/First-Amended-and-Restated-ATID-Management-Plan",
+          "https://www.anaheim.net/DocumentCenter/View/68263/ATID-Expansion--Updated-to-Reflect-Adoption",
+          "https://gis.anaheim.net/map/rest/services/OpenData2/FeatureServer/19"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -72,9 +76,10 @@
           "tests/data-integrity.test.mjs",
           "data/sources/west-hollywood-business-improvement-districts.geojson",
           "data/sources/berkeley-business-improvement-districts.geojson",
-          "data/sources/pasadena-property-business-improvement-districts.geojson"
+          "data/sources/pasadena-property-business-improvement-districts.geojson",
+          "data/sources/anaheim-tourism-improvement-district.geojson"
         ],
-        "updated_at": "2026-07-19T18:20:29.986Z",
+        "updated_at": "2026-07-19T18:26:50.456Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

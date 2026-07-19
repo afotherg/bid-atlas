@@ -199,6 +199,19 @@ test("Pasadena publishes its four current business improvement districts", () =>
   assert.ok(tourism.properties.bounds[2] - tourism.properties.bounds[0] > 0.1);
 });
 
+test("Anaheim publishes its current tourism improvement district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Anaheim" && feature.properties.state === "CA");
+  assert.equal(districts.length, 1);
+  const [district] = districts;
+  assert.equal(district.properties.name, "Anaheim Tourism Improvement District");
+  assert.equal(district.properties.status, "Active");
+  assert.equal(district.geometry.type, "MultiPolygon");
+  assert.equal(district.geometry.coordinates.length, 2);
+  assert.ok(district.properties.bounds[0] < -117.92);
+  assert.ok(district.properties.bounds[2] > -117.88);
+  assert.ok(district.properties.bounds[1] > 33 && district.properties.bounds[3] < 34);
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
