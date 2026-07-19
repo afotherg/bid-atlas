@@ -512,6 +512,38 @@
     }
   },
   {
+    "id": "manhattan-beach-business-improvement-districts",
+    "name": "Manhattan Beach Business Improvement Districts",
+    "jurisdiction": "Manhattan Beach, CA",
+    "state": "CA",
+    "city": "Manhattan Beach",
+    "file": "data/sources/manhattan-beach-business-improvement-districts.geojson",
+    "landingPage": "https://www.manhattanbeach.gov/departments/finance/revenue-services",
+    "publisher": "City of Manhattan Beach",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.manhattanbeach.gov/departments/finance/revenue-services",
+      "https://www.manhattanbeach.gov/home/showpublisheddocument/58991/639147931292230000"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown Manhattan Beach Business Improvement District": {
+        "established": "1998",
+        "area": "Generalized from the official 8th Street, 15th Street, Ocean Drive, and Valley Drive boundary",
+        "sourceUrl": "https://www.manhattanbeach.gov/home/showpublisheddocument/59121/639167154516300000"
+      },
+      "North Manhattan Beach Business Improvement District": {
+        "established": "2005",
+        "area": "Generalized from the official 32nd Place, 45th Street, Highland Avenue, and 500 block of Rosecrans Avenue boundary",
+        "sourceUrl": "https://www.manhattanbeach.gov/home/showpublisheddocument/55486/638660626548300000"
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",

@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Manhattan Beach Business Improvement District"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.4138, 33.8889],
+          [-118.4081, 33.8893],
+          [-118.4065, 33.8827],
+          [-118.4120, 33.8820],
+          [-118.4138, 33.8889]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North Manhattan Beach Business Improvement District"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.4203, 33.9044],
+          [-118.4149, 33.9047],
+          [-118.4092, 33.9010],
+          [-118.4136, 33.8961],
+          [-118.4182, 33.8959],
+          [-118.4203, 33.9044]
+        ]]
+      }
+    }
+  ]
+}

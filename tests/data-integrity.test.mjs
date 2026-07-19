@@ -281,6 +281,21 @@ test("Laguna Beach publishes its renewed citywide tourism marketing district", (
   assert.ok(district.properties.bounds[1] > 33 && district.properties.bounds[3] < 34);
 });
 
+test("Manhattan Beach publishes its two current business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Manhattan Beach" && feature.properties.state === "CA");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 2);
+  assert.ok(names.has("Downtown Manhattan Beach Business Improvement District"));
+  assert.ok(names.has("North Manhattan Beach Business Improvement District"));
+  for (const district of districts) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.geometry.type, "Polygon");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -118, `${district.properties.name} is outside Manhattan Beach longitude`);
+    assert.ok(latitude > 33 && latitude < 34, `${district.properties.name} is outside Manhattan Beach latitude`);
+  }
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
