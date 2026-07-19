@@ -152,6 +152,24 @@ test("Stockton publishes its three current improvement districts", () => {
   }
 });
 
+test("Ontario publishes its downtown and regional tourism improvement districts", () => {
+  const expected = new Map([
+    ["Downtown Ontario Community Benefit District", ["2019", "2034"]],
+    ["Greater Ontario Tourism Marketing District", ["2013", "2028"]],
+  ]);
+  const districts = collection.features.filter((feature) => expected.has(feature.properties.name));
+  assert.equal(districts.length, 2);
+  for (const district of districts) {
+    const term = expected.get(district.properties.name);
+    assert.equal(district.properties.established, term[0]);
+    assert.equal(district.properties.expires, term[1]);
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -116, `${district.properties.name} is outside Ontario-area longitude`);
+    assert.ok(latitude > 33 && latitude < 35, `${district.properties.name} is outside Ontario-area latitude`);
+  }
+});
+
 test("Oakland publishes its ten current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

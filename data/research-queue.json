@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T23:06:53.581Z",
+  "updated_at": "2026-07-19T23:13:35.257Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T23:06:53.576Z",
+      "updated_at": "2026-07-19T23:13:35.256Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T03:06:53.576Z"
+        "expires_at": "2026-07-20T03:13:35.256Z"
       },
       "checkpoint": {
-        "phase": "san_bernardino_negative_audit",
-        "summary": "Audited San Bernardino and found no active BID or PBID. The city’s active assessment districts are infrastructure and maintenance districts; the downtown PBID remains a formation proposal as of July 2026.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Ontario and Apple Valley.",
+        "phase": "ontario_district_integration",
+        "summary": "Integrated the renewed Downtown Ontario Community Benefit District and the Greater Ontario Tourism Marketing District. Downtown uses a generalized official parcel-map boundary; tourism uses official Ontario and Rancho Cucamonga city limits.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Apple Valley and Glendora.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -137,7 +137,12 @@
           "https://www.sanbernardino.gov/635/Assessment-Districts",
           "https://www.sanbernardino.gov/DocumentCenter/View/11772/City-Managers-Proposed-FY-2026-27-Operating-Budget-and-CIP-2027-2031---English",
           "https://ci.san-bernardino.ca.us/news/whats_new/city_planning_downtown_revitalization",
-          "https://iecn.com/san-bernardino-pbid-raises-concerns/"
+          "https://iecn.com/san-bernardino-pbid-raises-concerns/",
+          "https://www.ontarioca.gov/news/downtown-ontario-improvement-association-and-city-ontario-museum-arts-culture-department",
+          "https://d2kbkoa27fdvtw.cloudfront.net/ontarioca/817b864f24d4ff4b33a54636f99db5b20.pdf",
+          "https://www.ontarioca.gov/government/financial-services/revenues-taxes-fees",
+          "https://go-cal.org/tourism-marketing-district/",
+          "https://gis.data.ca.gov/datasets/CDTFA::california-city-boundaries-and-identifiers/about"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -162,10 +167,11 @@
           "data/sources/downtown-merced-property-based-improvement-district.geojson",
           "data/sources/palm-springs-small-hotel-tourism-business-improvement-district.geojson",
           "data/sources/riverside-business-improvement-districts.geojson",
-          "data/sources/stockton-downtown-and-miracle-mile-districts.geojson"
+          "data/sources/stockton-downtown-and-miracle-mile-districts.geojson",
+          "data/sources/ontario-downtown-community-benefit-district.geojson"
         ],
-        "updated_at": "2026-07-19T23:06:53.576Z",
-        "stop_reason": "manual_pause"
+        "updated_at": "2026-07-19T23:13:35.256Z",
+        "stop_reason": "continuous_research"
       },
       "result": null,
       "blocked_reason": ""

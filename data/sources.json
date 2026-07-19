@@ -1540,6 +1540,63 @@
     }
   },
   {
+    "id": "ontario-downtown-community-benefit-district",
+    "name": "Downtown Ontario Community Benefit District",
+    "jurisdiction": "Ontario, CA",
+    "state": "CA",
+    "city": "Ontario",
+    "file": "data/sources/ontario-downtown-community-benefit-district.geojson",
+    "landingPage": "https://www.ontarioca.gov/news/downtown-ontario-improvement-association-and-city-ontario-museum-arts-culture-department",
+    "publisher": "City of Ontario",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.ontarioca.gov/news/downtown-ontario-improvement-association-and-city-ontario-museum-arts-culture-department",
+      "https://downtownontario.org/"
+    ],
+    "fields": {
+      "name": ["name"]
+    },
+    "overrides": {
+      "Downtown Ontario Community Benefit District": {
+        "website": "https://downtownontario.org/",
+        "established": "2019",
+        "expires": "2034",
+        "area": "Generalized from the official parcel map; primarily both sides of Euclid Avenue from G Street to the rail corridor south of Emporia Street, with an eastern extension along Holt Boulevard",
+        "sourceUrl": "https://downtownontario.org/wp-content/uploads/2020/10/Downtown-Ontario_Banner-Map-copy.jpg",
+        "reportUrl": "https://d3n9y02raazwpg.cloudfront.net/ontarioca/77cc0ad1-eeef-11ef-a9e2-005056a89546-a9ebbe74-0dec-4e85-9f38-fd8cdaebab2f-1740787573.pdf"
+      }
+    }
+  },
+  {
+    "id": "greater-ontario-tourism-marketing-district",
+    "name": "Greater Ontario Tourism Marketing District",
+    "jurisdiction": "Ontario and Rancho Cucamonga, CA",
+    "state": "CA",
+    "city": "Ontario / Rancho Cucamonga",
+    "url": "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_Cities_and_Identifiers_Blue_Version_view/FeatureServer/2/query?where=CDTFA_CITY%20IN%20(%27Ontario%27%2C%27Rancho%20Cucamonga%27)&outFields=CDTFA_CITY&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://go-cal.org/tourism-marketing-district/",
+    "publisher": "California Department of Tax and Fee Administration",
+    "cadence": "Annual",
+    "fixedName": "Greater Ontario Tourism Marketing District",
+    "monitorUrls": [
+      "https://www.ontarioca.gov/government/financial-services/revenues-taxes-fees",
+      "https://go-cal.org/tourism-marketing-district/"
+    ],
+    "fields": {
+      "name": []
+    },
+    "overrides": {
+      "Greater Ontario Tourism Marketing District": {
+        "website": "https://go-cal.org/",
+        "established": "2013",
+        "expires": "2028",
+        "area": "Official Ontario and Rancho Cucamonga city boundaries; the district assesses lodging businesses with 50 or more rooms and short-term rentals in both cities",
+        "sourceUrl": "https://gis.data.ca.gov/datasets/CDTFA::california-city-boundaries-and-identifiers/about",
+        "reportUrl": "https://www.ontarioca.gov/government/financial-services/revenues-taxes-fees"
+      }
+    }
+  },
+  {
     "id": "washington-automated-business-improvement-districts",
     "name": "Washington Automated Business Improvement District Candidates",
     "jurisdiction": "Washington",
