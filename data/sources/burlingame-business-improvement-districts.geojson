@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Broadway Area Business Improvement District"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.3672, 37.5860],
+          [-122.3648, 37.5881],
+          [-122.3577, 37.5840],
+          [-122.3602, 37.5819],
+          [-122.3672, 37.5860]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Burlingame Avenue Area Business Improvement District"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.3522, 37.5792],
+          [-122.3499, 37.5812],
+          [-122.3434, 37.5774],
+          [-122.3458, 37.5754],
+          [-122.3522, 37.5792]
+        ]]
+      }
+    }
+  ]
+}

@@ -544,6 +544,38 @@
     }
   },
   {
+    "id": "burlingame-business-improvement-districts",
+    "name": "Burlingame Business Improvement Districts",
+    "jurisdiction": "Burlingame, CA",
+    "state": "CA",
+    "city": "Burlingame",
+    "file": "data/sources/burlingame-business-improvement-districts.geojson",
+    "landingPage": "https://www.burlingame.org/278/Economic-Development",
+    "publisher": "City of Burlingame",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.burlingame.org/278/Economic-Development",
+      "https://www.burlingame.org/DocumentCenter/View/9001/May-18-Regular-Agenda-Packet?bidId="
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Broadway Area Business Improvement District": {
+        "established": "1992",
+        "area": "Generalized from the official Broadway commercial-district boundary",
+        "sourceUrl": "https://ecode360.com/44509333"
+      },
+      "Burlingame Avenue Area Business Improvement District": {
+        "established": "2004; reinstated 2010",
+        "area": "Generalized from the official downtown Burlingame Avenue district boundary",
+        "sourceUrl": "https://ecode360.com/44509387"
+      }
+    }
+  },
+  {
     "id": "pasadena-property-business-improvement-districts",
     "name": "Pasadena Property-Based Improvement Districts",
     "jurisdiction": "Pasadena, CA",

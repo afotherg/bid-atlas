@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T18:48:26.164Z",
+  "updated_at": "2026-07-19T18:50:59.800Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 16,
+      "attempts": 17,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T18:48:26.163Z",
+      "updated_at": "2026-07-19T18:50:59.799Z",
       "lease": null,
       "checkpoint": {
-        "phase": "manhattan_beach_source_integration",
-        "summary": "Added Manhattan Beach's two current merchant-funded districts. The Downtown BID was established in 1998 and the North Manhattan Beach BID in 2005. Both remain funded in the FY2026 budget; their generalized polygons follow the city's official street-boundary descriptions. California now has 151 mapped districts from twenty-eight configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Burlingame and other independent California cities.",
+        "phase": "burlingame_source_integration",
+        "summary": "Added Burlingame's two current merchant-funded districts. The Broadway Area BID dates to 1992 and the Burlingame Avenue Area BID to 2004, with the latter reinstated in 2010. The City Council approved both FY2026-27 assessments in May 2026; their generalized polygons follow official commercial-area exhibits. California now has 153 mapped districts from twenty-nine configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit San Mateo and other independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -89,7 +89,11 @@
           "https://www.manhattanbeach.gov/departments/finance/revenue-services",
           "https://www.manhattanbeach.gov/home/showpublisheddocument/58991/639147931292230000",
           "https://www.manhattanbeach.gov/home/showpublisheddocument/59121/639167154516300000",
-          "https://www.manhattanbeach.gov/home/showpublisheddocument/55486/638660626548300000"
+          "https://www.manhattanbeach.gov/home/showpublisheddocument/55486/638660626548300000",
+          "https://www.burlingame.org/278/Economic-Development",
+          "https://www.burlingame.org/DocumentCenter/View/9001/May-18-Regular-Agenda-Packet?bidId=",
+          "https://ecode360.com/44509333",
+          "https://ecode360.com/44509387"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -102,9 +106,10 @@
           "data/sources/anaheim-tourism-improvement-district.geojson",
           "data/sources/garden-grove-tourism-improvement-district.geojson",
           "data/sources/costa-mesa-tourism-promotion-business-improvement-area.geojson",
-          "data/sources/manhattan-beach-business-improvement-districts.geojson"
+          "data/sources/manhattan-beach-business-improvement-districts.geojson",
+          "data/sources/burlingame-business-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-19T18:48:26.163Z",
+        "updated_at": "2026-07-19T18:50:59.799Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

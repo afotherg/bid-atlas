@@ -296,6 +296,20 @@ test("Manhattan Beach publishes its two current business improvement districts",
   }
 });
 
+test("Burlingame publishes its two current business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Burlingame" && feature.properties.state === "CA");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 2);
+  assert.ok(names.has("Broadway Area Business Improvement District"));
+  assert.ok(names.has("Burlingame Avenue Area Business Improvement District"));
+  for (const district of districts) {
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -123 && longitude < -122, `${district.properties.name} is outside Burlingame longitude`);
+    assert.ok(latitude > 37 && latitude < 38, `${district.properties.name} is outside Burlingame latitude`);
+  }
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
