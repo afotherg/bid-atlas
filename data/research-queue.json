@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T23:05:24.950Z",
+  "updated_at": "2026-07-19T23:06:53.581Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T23:05:24.949Z",
+      "updated_at": "2026-07-19T23:06:53.576Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T03:05:24.949Z"
+        "expires_at": "2026-07-20T03:06:53.576Z"
       },
       "checkpoint": {
-        "phase": "stockton_district_integration",
-        "summary": "Added Stockton’s three active assessment districts: Downtown PBID, Miracle Mile CID, and the citywide Tourism BID. California now has 171 mapped districts from forty-one configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active and proposed districts in San Bernardino.",
+        "phase": "san_bernardino_negative_audit",
+        "summary": "Audited San Bernardino and found no active BID or PBID. The city’s active assessment districts are infrastructure and maintenance districts; the downtown PBID remains a formation proposal as of July 2026.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Ontario and Apple Valley.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -133,7 +133,11 @@
           "https://www.kerncog.org/wp-content/uploads/2025/05/Bakersfield_HSR_StnAreaVision_Appdx-2018.pdf",
           "https://stockton.legistar.com/LegislationDetail.aspx?G=5C2AEB70-56EE-42A1-8FBC-AA8A0588C1C7&GUID=BCDC1A98-0F6F-4F85-B6FF-79C083AE6062&ID=7931562&Options=&Search=",
           "https://stockton.legistar.com/LegislationDetail.aspx?GUID=630AB1E7-9117-4935-8194-C81654EF1ADD&ID=7974468&Options=&Search=",
-          "https://stockton.legistar.com/LegislationDetail.aspx?GUID=716CE659-C63A-4BE1-925E-9F42965FD589&ID=7977286&Options=&Search="
+          "https://stockton.legistar.com/LegislationDetail.aspx?GUID=716CE659-C63A-4BE1-925E-9F42965FD589&ID=7977286&Options=&Search=",
+          "https://www.sanbernardino.gov/635/Assessment-Districts",
+          "https://www.sanbernardino.gov/DocumentCenter/View/11772/City-Managers-Proposed-FY-2026-27-Operating-Budget-and-CIP-2027-2031---English",
+          "https://ci.san-bernardino.ca.us/news/whats_new/city_planning_downtown_revitalization",
+          "https://iecn.com/san-bernardino-pbid-raises-concerns/"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -160,7 +164,7 @@
           "data/sources/riverside-business-improvement-districts.geojson",
           "data/sources/stockton-downtown-and-miracle-mile-districts.geojson"
         ],
-        "updated_at": "2026-07-19T23:05:24.949Z",
+        "updated_at": "2026-07-19T23:06:53.576Z",
         "stop_reason": "manual_pause"
       },
       "result": null,
