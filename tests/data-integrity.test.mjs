@@ -237,6 +237,11 @@ test("Costa Mesa publishes its current citywide tourism business improvement are
   assert.ok(district.properties.bounds[1] > 33 && district.properties.bounds[3] < 34);
 });
 
+test("Newport Beach excludes its expired and disestablished business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Newport Beach" && feature.properties.state === "CA");
+  assert.equal(districts.length, 0);
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
