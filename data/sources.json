@@ -300,6 +300,60 @@
     }
   },
   {
+    "id": "pasadena-property-business-improvement-districts",
+    "name": "Pasadena Property-Based Improvement Districts",
+    "jurisdiction": "Pasadena, CA",
+    "state": "CA",
+    "city": "Pasadena",
+    "file": "data/sources/pasadena-property-business-improvement-districts.geojson",
+    "landingPage": "https://www.cityofpasadena.net/economicdevelopment/explore-the-city/property-based-improvement-districts/",
+    "publisher": "City of Pasadena",
+    "cadence": "Annual",
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "status": [
+        "status"
+      ],
+      "area": [
+        "area"
+      ]
+    },
+    "overrides": {
+      "Old Pasadena Management District Property-Based Business Improvement District": {
+        "website": "https://www.oldpasadena.org/",
+        "sourceUrl": "https://ww2.cityofpasadena.net/2025%20Agendas/May_19_25/AR%209%20Attachment%20A.pdf"
+      },
+      "Playhouse Village Property and Business Improvement District": {
+        "website": "https://playhousevillage.org/",
+        "sourceUrl": "https://ww2.cityofpasadena.net/2021%20Agendas/May_24_21/AR%208%20ATTACHMENT%201.pdf"
+      },
+      "South Lake Avenue Property and Business Improvement District": {
+        "website": "https://www.southlakeavenue.org/",
+        "sourceUrl": "https://ww2.cityofpasadena.net/2022%20Agendas/Apr_25_22/AR%2015.pdf"
+      }
+    }
+  },
+  {
+    "id": "pasadena-tourism-business-improvement-district",
+    "name": "Pasadena Tourism Business Improvement District",
+    "jurisdiction": "Pasadena, CA",
+    "state": "CA",
+    "city": "Pasadena",
+    "fixedName": "Pasadena Tourism Business Improvement District",
+    "url": "https://services2.arcgis.com/zNjnZafDYCAJAbN0/arcgis/rest/services/City_Boundary/FeatureServer/0/query?where=1%3D1&outFields=POPULATION&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.cityofpasadena.net/planning/short-term-rental-regulations/",
+    "publisher": "City of Pasadena",
+    "cadence": "Annual",
+    "fields": {},
+    "overrides": {
+      "Pasadena Tourism Business Improvement District": {
+        "website": "https://www.visitpasadena.com/"
+      }
+    }
+  },
+  {
     "id": "sacramento-property-business-improvement-districts",
     "name": "Sacramento Property and Business Improvement Districts",
     "jurisdiction": "Sacramento, CA",

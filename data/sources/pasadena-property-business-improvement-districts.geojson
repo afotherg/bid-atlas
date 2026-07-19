@@ -1,0 +1,60 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Old Pasadena Management District Property-Based Business Improvement District",
+        "status": "Active",
+        "area": "Generalized from the official Pasadena Avenue, Walnut Street, Arroyo Parkway, and Del Mar Boulevard limits"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.155, 34.1499],
+          [-118.1472, 34.1499],
+          [-118.1473, 34.1404],
+          [-118.1543, 34.1404],
+          [-118.155, 34.1499]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Playhouse Village Property and Business Improvement District",
+        "status": "Active",
+        "area": "Generalized from the adopted 2021 management district plan"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.1418, 34.15],
+          [-118.1306, 34.15],
+          [-118.1291, 34.1459],
+          [-118.1305, 34.1442],
+          [-118.1417, 34.1433],
+          [-118.1418, 34.15]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South Lake Avenue Property and Business Improvement District",
+        "status": "Active",
+        "area": "Generalized from the official Colorado Boulevard, Mentor Avenue, California Boulevard, and Hudson Avenue limits"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.1341, 34.1461],
+          [-118.1306, 34.1461],
+          [-118.1307, 34.1352],
+          [-118.134, 34.1352],
+          [-118.1341, 34.1461]
+        ]]
+      }
+    }
+  ]
+}

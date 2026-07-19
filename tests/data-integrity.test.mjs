@@ -178,6 +178,27 @@ test("Berkeley publishes its six current business improvement districts", () => 
   assert.equal(districts.find((feature) => feature.properties.name === "Solano Avenue Business Improvement District").geometry.type, "MultiPolygon");
 });
 
+test("Pasadena publishes its four current business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.city === "Pasadena" && feature.properties.state === "CA");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 4);
+  for (const name of [
+    "Old Pasadena Management District Property-Based Business Improvement District",
+    "Pasadena Tourism Business Improvement District",
+    "Playhouse Village Property and Business Improvement District",
+    "South Lake Avenue Property and Business Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of districts) {
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -117, `${district.properties.name} is outside Pasadena longitude`);
+    assert.ok(latitude > 33 && latitude < 35, `${district.properties.name} is outside Pasadena latitude`);
+  }
+  const tourism = districts.find((feature) => feature.properties.sourceId === "pasadena-tourism-business-improvement-district");
+  assert.ok(tourism, "missing citywide tourism district");
+  assert.ok(tourism.properties.bounds[2] - tourism.properties.bounds[0] > 0.1);
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));

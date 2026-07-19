@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T16:58:17.642Z",
+  "updated_at": "2026-07-19T18:20:29.987Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 6,
+      "attempts": 7,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T16:58:17.641Z",
+      "updated_at": "2026-07-19T18:20:29.986Z",
       "lease": null,
       "checkpoint": {
-        "phase": "berkeley_source_integration",
-        "summary": "Integrated all six current Berkeley districts verified by the city's FY2026 and FY2027 assessment records: Downtown, North Shattuck, Telegraph, Elmwood, Solano Avenue, and Tourism. Elmwood, Solano, Telegraph, and Tourism use exact polygon services; Downtown and North Shattuck are generalized from official adopted plans and street limits. California now has 138 mapped districts from eighteen configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Pasadena, Anaheim, and other independent California cities.",
+        "phase": "pasadena_source_integration",
+        "summary": "Integrated all four current Pasadena districts verified by the city's official registry and management plans: Old Pasadena, Playhouse Village, South Lake Avenue, and Tourism. The tourism district uses the exact official city boundary; the other three are generalized from adopted management plans and official street limits. California now has 142 mapped districts from twenty configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons; audit Anaheim and other independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -58,7 +58,12 @@
           "https://services1.arcgis.com/IYiCpZoSIq9lAxi8/arcgis/rest/services/BID_Elmwood/FeatureServer/0",
           "https://services1.arcgis.com/IYiCpZoSIq9lAxi8/arcgis/rest/services/BID_Solano/FeatureServer/0",
           "https://services3.arcgis.com/A1mc9jYGh92BooOr/arcgis/rest/services/Berkeley_Telegraph_PBID_February_19th_2026_Sara_Mares/FeatureServer/0",
-          "https://services1.arcgis.com/IYiCpZoSIq9lAxi8/arcgis/rest/services/City_of_Berkeley_Boundary/FeatureServer/0"
+          "https://services1.arcgis.com/IYiCpZoSIq9lAxi8/arcgis/rest/services/City_of_Berkeley_Boundary/FeatureServer/0",
+          "https://www.cityofpasadena.net/economicdevelopment/explore-the-city/property-based-improvement-districts/",
+          "https://ww2.cityofpasadena.net/2025%20Agendas/May_19_25/AR%209%20Attachment%20A.pdf",
+          "https://ww2.cityofpasadena.net/2021%20Agendas/May_24_21/AR%208%20ATTACHMENT%201.pdf",
+          "https://ww2.cityofpasadena.net/2022%20Agendas/Apr_25_22/AR%2015.pdf",
+          "https://services2.arcgis.com/zNjnZafDYCAJAbN0/arcgis/rest/services/City_Boundary/FeatureServer/0"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -66,9 +71,10 @@
           "public/data/bids.geojson",
           "tests/data-integrity.test.mjs",
           "data/sources/west-hollywood-business-improvement-districts.geojson",
-          "data/sources/berkeley-business-improvement-districts.geojson"
+          "data/sources/berkeley-business-improvement-districts.geojson",
+          "data/sources/pasadena-property-business-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-19T16:58:17.641Z",
+        "updated_at": "2026-07-19T18:20:29.986Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,
