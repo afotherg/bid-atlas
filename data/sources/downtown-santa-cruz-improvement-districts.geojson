@@ -1,0 +1,40 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Santa Cruz Parking and Business Improvement Area"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.0287, 36.9762],
+          [-122.0282, 36.9774],
+          [-122.0254, 36.9790],
+          [-122.0232, 36.9780],
+          [-122.0227, 36.9690],
+          [-122.0271, 36.9685],
+          [-122.0287, 36.9762]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cooperative Retail Management Business Real Property Improvement District"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-122.0289, 36.9766],
+          [-122.0275, 36.9776],
+          [-122.0244, 36.9785],
+          [-122.0229, 36.9690],
+          [-122.0272, 36.9684],
+          [-122.0289, 36.9766]
+        ]]
+      }
+    }
+  ]
+}

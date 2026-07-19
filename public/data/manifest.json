@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T19:44:32.531Z",
-  "records": 282,
+  "generatedAt": "2026-07-19T21:23:44.713Z",
+  "records": 284,
   "states": [
     "CA",
     "CO",
@@ -227,6 +227,15 @@
       "legislationChanged": false
     },
     {
+      "id": "downtown-santa-cruz-improvement-districts",
+      "name": "Downtown Santa Cruz Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-19T21:23:44.713Z",
+      "monitorHash": "eb2287bce4301dec3348a7d608244c962ae95232edddc8d1a60b9fb3186c9cb1",
+      "legislationChanged": false
+    },
+    {
       "id": "midtown-santa-cruz-business-improvement-district",
       "name": "Midtown Santa Cruz Business Improvement District",
       "status": "ok",
@@ -411,12 +420,12 @@
   ],
   "coverage": {
     "verifiedJurisdictions": 39,
-    "configuredSources": 45,
+    "configuredSources": 46,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 50,
-    "modified": 17,
+    "added": 2,
+    "modified": 0,
     "removed": 0
   }
 }

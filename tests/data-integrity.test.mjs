@@ -339,16 +339,25 @@ test("Redwood City publishes its current downtown community benefit district", (
   assert.ok(latitude > 37 && latitude < 38, "Redwood City district has an unexpected latitude");
 });
 
-test("Santa Cruz publishes its new Midtown business improvement district", () => {
+test("Santa Cruz publishes its three current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.city === "Santa Cruz" && feature.properties.state === "CA");
-  assert.ok(districts.length >= 1);
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 3);
+  for (const name of [
+    "Downtown Santa Cruz Parking and Business Improvement Area",
+    "Cooperative Retail Management Business Real Property Improvement District",
+    "Midtown Santa Cruz Business Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
   const district = districts.find((feature) => feature.properties.name === "Midtown Santa Cruz Business Improvement District");
-  assert.ok(district, "missing Midtown Santa Cruz BID");
   assert.equal(district.properties.established, "2026");
-  assert.equal(district.properties.status, "Active");
-  const [longitude, latitude] = district.properties.center;
-  assert.ok(longitude > -123 && longitude < -121, "Santa Cruz district has an unexpected longitude");
-  assert.ok(latitude > 36 && latitude < 38, "Santa Cruz district has an unexpected latitude");
+  assert.equal(districts.find((feature) => feature.properties.name.startsWith("Downtown Santa Cruz")).properties.established, "1990");
+  assert.equal(districts.find((feature) => feature.properties.name.startsWith("Cooperative Retail")).properties.established, "1994");
+  for (const current of districts) {
+    assert.equal(current.properties.status, "Active");
+    const [longitude, latitude] = current.properties.center;
+    assert.ok(longitude > -123 && longitude < -121, `${current.properties.name} has an unexpected longitude`);
+    assert.ok(latitude > 36 && latitude < 38, `${current.properties.name} has an unexpected latitude`);
+  }
 });
 
 test("Baltimore publishes its six neighborhood special benefits districts", () => {

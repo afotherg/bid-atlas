@@ -637,6 +637,41 @@
     }
   },
   {
+    "id": "downtown-santa-cruz-improvement-districts",
+    "name": "Downtown Santa Cruz Improvement Districts",
+    "jurisdiction": "Santa Cruz, CA",
+    "state": "CA",
+    "city": "Santa Cruz",
+    "file": "data/sources/downtown-santa-cruz-improvement-districts.geojson",
+    "landingPage": "https://www.santacruzca.gov/Business-Development/Business/Downtown-Management-Corporation",
+    "publisher": "City of Santa Cruz",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeetingAgenda?meetingId=2766&type=AGENDATYPEVALUE"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown Santa Cruz Parking and Business Improvement Area": {
+        "website": "https://downtownsantacruz.com/",
+        "established": "1990",
+        "area": "Generalized from the official Cedar Street, Laurel Street, San Lorenzo River, River Street, North Pacific Avenue, and Water Street limits",
+        "sourceUrl": "https://www.codepublishing.com/CA/SantaCruz/html/SantaCruz05/SantaCruz0505.html",
+        "reportUrl": "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeetingAgenda?meetingId=2766&type=AGENDATYPEVALUE"
+      },
+      "Cooperative Retail Management Business Real Property Improvement District": {
+        "website": "https://www.santacruzca.gov/Business-Development/Business/Downtown-Management-Corporation",
+        "established": "1994",
+        "area": "Generalized envelope of assessed parcels shown on the official 2023 expanded district map",
+        "sourceUrl": "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Documents/ViewDocument/City_Council_Regular_Meeting_2123_Agenda_Packet_6_13_2023_10_00_00_AM.pdf?documentType=AgendaPacket&isSection=false&itemId=0&meetingId=2123&publishId=0",
+        "reportUrl": "https://ecm.cityofsantacruz.com/OnBaseAgendaOnline/Meetings/ViewMeetingAgenda?meetingId=2766&type=AGENDATYPEVALUE"
+      }
+    }
+  },
+  {
     "id": "midtown-santa-cruz-business-improvement-district",
     "name": "Midtown Santa Cruz Business Improvement District",
     "jurisdiction": "Santa Cruz, CA",
