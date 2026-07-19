@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T21:36:07.490Z",
+  "updated_at": "2026-07-19T21:40:30.947Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 23,
+      "attempts": 24,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T21:36:07.489Z",
+      "updated_at": "2026-07-19T21:40:30.946Z",
       "lease": null,
       "checkpoint": {
-        "phase": "downtown_fresno_source_integration",
-        "summary": "Added the active Downtown Fresno Property and Business Improvement District, organized in 2010 and renewed through 2032. Its generalized boundary follows the 352 assessed parcels on the official renewal map. California now has 162 mapped districts from thirty-five configured sources.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit Downtown Napa and other independent California cities.",
+        "phase": "downtown_napa_source_integration",
+        "summary": "Added the active Downtown Napa Property and Business Improvement District, established in 2005 and renewed through 2032. The boundary uses exact current city parcel geometry for 272 of the 273 assessed parcels in the adopted plan; one plan-era APN is absent from the live parcel layer. California now has 163 mapped districts from thirty-six configured sources.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; verify the status of the proposed Downtown Merced PBID and continue auditing independent California cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -111,7 +111,10 @@
           "https://publicdocs.smgov.net/WebLink/edoc/3527960/SR%2007-25-2023%2011A.pdf?dbid=0&repo=SMGOV",
           "https://www.downtownfresno.org/about",
           "https://ctycms.com/ca-fresno/docs/dfpbid-management-plan-2023.pdf",
-          "https://fresno.legistar.com/LegislationDetail.aspx?GUID=017C3E46-1DC6-40C4-AE54-CD64186D325E&ID=5658912&Options=&Search="
+          "https://fresno.legistar.com/LegislationDetail.aspx?GUID=017C3E46-1DC6-40C4-AE54-CD64186D325E&ID=5658912&Options=&Search=",
+          "https://napacity.legistar.com/MeetingDetail.aspx?GUID=6D42A564-A5E8-420B-9E8C-7BD3D55333BB&ID=1273009&Search=",
+          "https://donapa.com/wp-content/uploads/2025/04/Final-Napa-PBID-Renewal-MDP-V3.0-4-17-25.pdf",
+          "https://gis.cityofnapa.org/arcgis/rest/services/TapMap/Reference_AGO/MapServer/1"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -131,9 +134,10 @@
           "data/sources/midtown-santa-cruz-business-improvement-district.geojson",
           "data/sources/downtown-santa-cruz-improvement-districts.geojson",
           "data/sources/santa-monica-property-based-assessment-districts.geojson",
-          "data/sources/downtown-fresno-property-business-improvement-district.geojson"
+          "data/sources/downtown-fresno-property-business-improvement-district.geojson",
+          "data/sources/downtown-napa-property-business-improvement-district.geojson"
         ],
-        "updated_at": "2026-07-19T21:36:07.489Z",
+        "updated_at": "2026-07-19T21:40:30.946Z",
         "stop_reason": "manual_pause"
       },
       "result": null,

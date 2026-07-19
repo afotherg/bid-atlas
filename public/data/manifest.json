@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T21:35:44.032Z",
-  "records": 288,
+  "generatedAt": "2026-07-19T21:40:04.574Z",
+  "records": 289,
   "states": [
     "CA",
     "CO",
@@ -40,6 +40,7 @@
     "Miami Beach, FL",
     "Miami, FL",
     "Nampa, ID",
+    "Napa, CA",
     "New York, NY",
     "Oakland, CA",
     "Pasadena, CA",
@@ -85,6 +86,15 @@
       "status": "ok",
       "records": 38,
       "checkedAt": "2026-07-19T19:44:32.531Z"
+    },
+    {
+      "id": "downtown-napa-property-business-improvement-district",
+      "name": "Downtown Napa Property and Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T21:40:04.574Z",
+      "monitorHash": "116a0503c7fc1fc056919b307cf834b99bdd0824f2b08d092eb8fb0e3dfbad26",
+      "legislationChanged": false
     },
     {
       "id": "downtown-fresno-property-business-improvement-district",
@@ -438,8 +448,8 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 40,
-    "configuredSources": 48,
+    "verifiedJurisdictions": 41,
+    "configuredSources": 49,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

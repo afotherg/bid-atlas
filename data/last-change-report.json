@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-19T21:35:44.032Z",
+  "checkedAt": "2026-07-19T21:40:04.574Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-fresno-downtown-fresno-property-and-business-improvement-district"
+    "ca-napa-downtown-napa-property-and-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -38,6 +38,15 @@
       "status": "ok",
       "records": 38,
       "checkedAt": "2026-07-19T19:44:32.531Z"
+    },
+    {
+      "id": "downtown-napa-property-business-improvement-district",
+      "name": "Downtown Napa Property and Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T21:40:04.574Z",
+      "monitorHash": "116a0503c7fc1fc056919b307cf834b99bdd0824f2b08d092eb8fb0e3dfbad26",
+      "legislationChanged": false
     },
     {
       "id": "downtown-fresno-property-business-improvement-district",

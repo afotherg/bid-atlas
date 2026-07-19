@@ -113,6 +113,36 @@
     }
   },
   {
+    "id": "downtown-napa-property-business-improvement-district",
+    "name": "Downtown Napa Property and Business Improvement District",
+    "jurisdiction": "Napa, CA",
+    "state": "CA",
+    "city": "Napa",
+    "file": "data/sources/downtown-napa-property-business-improvement-district.geojson",
+    "landingPage": "https://napacity.legistar.com/MeetingDetail.aspx?GUID=6D42A564-A5E8-420B-9E8C-7BD3D55333BB&ID=1273009&Search=",
+    "publisher": "City of Napa and Napa Downtown Association",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://napacity.legistar.com/MeetingDetail.aspx?GUID=6D42A564-A5E8-420B-9E8C-7BD3D55333BB&ID=1273009&Search=",
+      "https://donapa.com/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown Napa Property and Business Improvement District": {
+        "website": "https://donapa.com/",
+        "established": "2005",
+        "expires": "2032",
+        "area": "Exact current parcel geometry for 272 of the 273 assessed parcels listed in the adopted 2026-2032 management plan; one plan-era parcel is absent from the live city parcel layer",
+        "sourceUrl": "https://donapa.com/wp-content/uploads/2025/04/Final-Napa-PBID-Renewal-MDP-V3.0-4-17-25.pdf",
+        "reportUrl": "https://napacity.legistar.com/MeetingDetail.aspx?GUID=6D42A564-A5E8-420B-9E8C-7BD3D55333BB&ID=1273009&Search="
+      }
+    }
+  },
+  {
     "id": "downtown-fresno-property-business-improvement-district",
     "name": "Downtown Fresno Property and Business Improvement District",
     "jurisdiction": "Fresno, CA",
