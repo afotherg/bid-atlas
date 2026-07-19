@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T21:31:08.061Z",
-  "records": 287,
+  "generatedAt": "2026-07-19T21:35:44.032Z",
+  "records": 288,
   "states": [
     "CA",
     "CO",
@@ -25,6 +25,7 @@
     "Costa Mesa, CA",
     "Dana Point, CA",
     "Denver, CO",
+    "Fresno, CA",
     "Garden Grove, CA",
     "Hartford, CT",
     "Honolulu, HI",
@@ -84,6 +85,15 @@
       "status": "ok",
       "records": 38,
       "checkedAt": "2026-07-19T19:44:32.531Z"
+    },
+    {
+      "id": "downtown-fresno-property-business-improvement-district",
+      "name": "Downtown Fresno Property and Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-19T21:35:44.032Z",
+      "monitorHash": "e395fe901069a281efebdfe6a5ba3282647fb0668c8f77e456a6733ce2f6ed03",
+      "legislationChanged": false
     },
     {
       "id": "santa-monica-property-based-assessment-districts",
@@ -428,12 +438,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 39,
-    "configuredSources": 47,
+    "verifiedJurisdictions": 40,
+    "configuredSources": 48,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 3,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }

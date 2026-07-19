@@ -113,6 +113,36 @@
     }
   },
   {
+    "id": "downtown-fresno-property-business-improvement-district",
+    "name": "Downtown Fresno Property and Business Improvement District",
+    "jurisdiction": "Fresno, CA",
+    "state": "CA",
+    "city": "Fresno",
+    "file": "data/sources/downtown-fresno-property-business-improvement-district.geojson",
+    "landingPage": "https://www.downtownfresno.org/about",
+    "publisher": "City of Fresno and Downtown Fresno Partnership",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.downtownfresno.org/about",
+      "https://fresno.legistar.com/LegislationDetail.aspx?GUID=017C3E46-1DC6-40C4-AE54-CD64186D325E&ID=5658912&Options=&Search="
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown Fresno Property and Business Improvement District": {
+        "website": "https://www.downtownfresno.org/",
+        "established": "2010",
+        "expires": "2032",
+        "area": "Generalized envelope of the 352 assessed parcels shown on the official 2022 renewal map",
+        "sourceUrl": "https://ctycms.com/ca-fresno/docs/dfpbid-management-plan-2023.pdf",
+        "reportUrl": "https://fresno.legistar.com/LegislationDetail.aspx?GUID=017C3E46-1DC6-40C4-AE54-CD64186D325E&ID=5658912&Options=&Search="
+      }
+    }
+  },
+  {
     "id": "santa-monica-property-based-assessment-districts",
     "name": "Santa Monica Property-Based Assessment Districts",
     "jurisdiction": "Santa Monica, CA",
