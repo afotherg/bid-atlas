@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T16:38:38.601Z",
+  "updated_at": "2026-07-19T16:48:15.673Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -13,14 +13,14 @@
       "parent_id": "",
       "priority": 100,
       "status": "queued",
-      "attempts": 4,
+      "attempts": 5,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T16:38:38.600Z",
+      "updated_at": "2026-07-19T16:48:15.672Z",
       "lease": null,
       "checkpoint": {
-        "phase": "west_hollywood_source_integration",
-        "summary": "Integrated all three current West Hollywood districts. The Tourism Improvement District uses the city's exact municipal boundary; the Sunset Strip and Design District boundaries are generalized from the city's official street-limit descriptions. California now has 109 mapped districts from eleven configured sources. Long Beach remains at eight of nine current BIDs because its public BizMap references a Tourism BIA feature layer that requires an ArcGIS token and exposes no public export.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate official boundaries for Sacramento and Berkeley; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons.",
+        "phase": "sacramento_source_integration",
+        "summary": "Integrated Sacramento's two official polygon services. They publish 13 distinct PBIDs and ten distinct BIDs or BIAs after zone features are merged by district name, including non-city-administered PBIDs and the current tourism marketing and infrastructure districts. California now has 132 mapped districts from thirteen configured sources. Long Beach remains at eight of nine current BIDs because its public BizMap references a Tourism BIA feature layer that requires an ArcGIS token and exposes no public export.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; locate official boundaries for Berkeley; locate separate Santa Monica Downtown Colorado Avenue and Lincoln Boulevard PBAD polygons.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -46,7 +46,11 @@
           "https://gis.weho.org/arcgis/rest/services/General/WeHo_City_Boundary/MapServer/0",
           "https://www.weho.org/home/showpublisheddocument/62076/638841124789230000",
           "https://www.weho.org/home/showpublisheddocument/62077/638841125814430000",
-          "https://www.weho.org/home/showpublisheddocument/64664/639076158853630000"
+          "https://www.weho.org/home/showpublisheddocument/64664/639076158853630000",
+          "https://www.cityofsacramento.gov/finance/infrastructure-finance/special-districts/annual-service-districts",
+          "https://www.cityofsacramento.gov/finance/infrastructure-finance/documents",
+          "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/PBIDs/FeatureServer/0",
+          "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/BIDs_BIAs/FeatureServer/0"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -55,7 +59,7 @@
           "tests/data-integrity.test.mjs",
           "data/sources/west-hollywood-business-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-19T16:38:38.600Z",
+        "updated_at": "2026-07-19T16:48:15.672Z",
         "stop_reason": "checkpoint_complete"
       },
       "result": null,

@@ -300,6 +300,63 @@
     }
   },
   {
+    "id": "sacramento-property-business-improvement-districts",
+    "name": "Sacramento Property and Business Improvement Districts",
+    "jurisdiction": "Sacramento, CA",
+    "state": "CA",
+    "city": "Sacramento",
+    "url": "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/PBIDs/FeatureServer/0/query?where=1%3D1&outFields=DIST_TITLE%2CSUB_TITLE%2CDIST_TYPE%2CDESCRIPT%2CDISTID%2CRESOLUTION&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.cityofsacramento.gov/finance/infrastructure-finance/special-districts/annual-service-districts",
+    "publisher": "City of Sacramento",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "DIST_TITLE"
+      ],
+      "area": [
+        "SUB_TITLE"
+      ]
+    },
+    "overrides": {
+      "Downtown Sacramento Management District PBID": {
+        "website": "https://www.downtownsac.org/"
+      },
+      "Midtown Sacramento PBID": {
+        "website": "https://exploremidtown.org/"
+      },
+      "River District PBID": {
+        "website": "https://riverdistrict.net/"
+      }
+    }
+  },
+  {
+    "id": "sacramento-business-improvement-districts-areas",
+    "name": "Sacramento Business Improvement Districts and Areas",
+    "jurisdiction": "Sacramento, CA",
+    "state": "CA",
+    "city": "Sacramento",
+    "url": "https://services5.arcgis.com/54falWtcpty3V47Z/arcgis/rest/services/BIDs_BIAs/FeatureServer/0/query?where=1%3D1&outFields=DIST_NAME%2CDIST_TYPE%2CDESCRIPTION%2CBOT_TITLE%2CRESOLUTION&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.cityofsacramento.gov/finance/infrastructure-finance/documents",
+    "publisher": "City of Sacramento",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "DIST_NAME"
+      ],
+      "area": [
+        "DESCRIPTION"
+      ]
+    },
+    "overrides": {
+      "Sacramento Tourism Marketing District No. 2024-01": {
+        "website": "https://www.visitsacramento.com/"
+      },
+      "Sacramento Tourism Infrastructure District 2018-04": {
+        "website": "https://www.visitsacramento.com/"
+      }
+    }
+  },
+  {
     "id": "west-hollywood-business-improvement-districts",
     "name": "West Hollywood Business Improvement Districts",
     "jurisdiction": "West Hollywood, CA",
