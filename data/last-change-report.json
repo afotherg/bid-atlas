@@ -1,12 +1,16 @@
 {
-  "checkedAt": "2026-07-19T01:20:51.104Z",
+  "checkedAt": "2026-07-19T01:26:45.407Z",
   "summary": {
-    "added": 1,
+    "added": 5,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "nv-reno-downtown-reno-business-improvement-district"
+    "ca-santa-monica-central-business-district",
+    "ca-santa-monica-downtown-santa-monica-mall-operations-maintenance-district",
+    "ca-santa-monica-main-street",
+    "ca-santa-monica-montana-avenue",
+    "ca-santa-monica-pico-boulevard"
   ],
   "modified": [],
   "removed": [],
@@ -38,6 +42,13 @@
       "status": "ok",
       "records": 38,
       "checkedAt": "2026-07-19T01:13:59.828Z"
+    },
+    {
+      "id": "santa-monica-business-improvement-districts",
+      "name": "Santa Monica Business Improvement Districts",
+      "status": "ok",
+      "records": 5,
+      "checkedAt": "2026-07-19T01:26:45.407Z"
     },
     {
       "id": "denver-business-improvement-districts",

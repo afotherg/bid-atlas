@@ -113,6 +113,31 @@
     }
   },
   {
+    "id": "santa-monica-business-improvement-districts",
+    "name": "Santa Monica Business Improvement Districts",
+    "jurisdiction": "Santa Monica, CA",
+    "state": "CA",
+    "city": "Santa Monica",
+    "url": "https://gis.santamonica.gov/server/rest/services/Business_Improvement_Districts/MapServer/0/query?where=bid%20IN%20(%27Montana%20Avenue%27%2C%27Pico%20Boulevard%27%2C%27Main%20Street%27%2C%27Central%20Business%20District%27%2C%27Downtown%20Santa%20Monica%20-%20Mall%20Ops%20%26%20Maintenance%27)&outFields=bid%2Cwebsite&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.arcgis.com/home/item.html?id=a9f2764e8f6942ff84b27975e75d323f",
+    "publisher": "City of Santa Monica",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "bid"
+      ],
+      "website": [
+        "website"
+      ]
+    },
+    "overrides": {
+      "Downtown Santa Monica - Mall Ops & Maintenance": {
+        "name": "Downtown Santa Monica Mall Operations & Maintenance District",
+        "website": "https://www.downtownsm.com/"
+      }
+    }
+  },
+  {
     "id": "denver-business-improvement-districts",
     "name": "Denver Business Improvement Districts",
     "jurisdiction": "Denver, CO",

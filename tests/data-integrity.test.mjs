@@ -30,6 +30,24 @@ test("Los Angeles publishes its 38 current business improvement districts", () =
   assert.ok(!districts.some((feature) => feature.properties.name.includes("Central Avenue")));
 });
 
+test("Santa Monica publishes its five official operational BID boundaries", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "santa-monica-business-improvement-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 5);
+  for (const name of [
+    "Main Street",
+    "Montana Avenue",
+    "Pico Boulevard",
+    "Central Business District",
+    "Downtown Santa Monica Mall Operations & Maintenance District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of districts) {
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -118, `${district.properties.name} is outside Santa Monica longitude`);
+    assert.ok(latitude > 33 && latitude < 35, `${district.properties.name} is outside Santa Monica latitude`);
+  }
+});
+
 test("Baltimore publishes its six neighborhood special benefits districts", () => {
   const baltimore = collection.features.filter((feature) => feature.properties.city === "Baltimore" && feature.properties.state === "MD");
   const names = new Set(baltimore.map((feature) => feature.properties.name));
