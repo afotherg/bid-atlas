@@ -164,6 +164,23 @@
         "https://www.charlottenc.gov/files/sharedassets/city/v/1/city-government/departments/documents/clerks-office/ordinances/2020-2024/2022/march-28-2022.pdf"
       ],
       "production_next_action": "Obtain authoritative GIS or ordinance-map boundaries for all six MSDs, preserve the three Center City tax zones as distinct geometries, and document each service provider before ingestion."
+    },
+    {
+      "rank": 10,
+      "city": "Columbus",
+      "state": "OH",
+      "population_2025": 938396,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Special Improvement District",
+      "summary": "Columbus's current GIS layer maps six SID boundaries. Recent City Council legislation confirms current special-assessment operation for at least the University District SID, reauthorized for 2026-2030, and East Main Street SID, authorized through 2027. Former downtown SID services transitioned to a different City-funded operator in 2025-2026 and are not counted as confirmed current assessment districts.",
+      "official_sources": [
+        "https://gis.columbus.gov/arcgis/rest/services/Schemas/Development/MapServer/11",
+        "https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2025/bulletin20250607.pdf",
+        "https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2023/bulletin20231014.pdf",
+        "https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2025/bulletin20251129.pdf"
+      ],
+      "production_next_action": "Export the six official GIS polygons, verify current assessment terms for Franklinton, Morse Road, Short North, and 5th Avenue/4th Street, and exclude superseded downtown SID boundaries unless current assessment authority is found."
     }
   ]
 }
