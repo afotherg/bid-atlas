@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T03:50:34.058Z",
-  "records": 307,
+  "generatedAt": "2026-07-20T03:59:37.260Z",
+  "records": 309,
   "states": [
     "CA",
     "CO",
@@ -21,6 +21,7 @@
     "Baltimore, MD",
     "Berkeley, CA",
     "Boise, ID",
+    "Burbank, CA",
     "Burlingame, CA",
     "Columbus, GA",
     "Costa Mesa, CA",
@@ -504,6 +505,15 @@
       "legislationChanged": false
     },
     {
+      "id": "burbank-business-improvement-districts",
+      "name": "Burbank Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-20T03:59:37.260Z",
+      "monitorHash": "9acad08d40c1fb61a72903fb47a56360e4725e59fb3c575f550fef9ac6e19d06",
+      "legislationChanged": false
+    },
+    {
       "id": "monrovia-old-town-business-improvement-district",
       "name": "Monrovia Old Town Business Improvement District",
       "status": "review",
@@ -577,8 +587,8 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 53,
-    "configuredSources": 62,
+    "verifiedJurisdictions": 54,
+    "configuredSources": 63,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

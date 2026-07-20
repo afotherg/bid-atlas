@@ -250,6 +250,25 @@ test("Whittier publishes its two active Uptown improvement districts", () => {
   }
 });
 
+test("Burbank publishes its two active business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "burbank-business-improvement-districts");
+  const expected = new Map([
+    ["Downtown Burbank Property and Business Improvement District", ["2003", "2028-12-31"]],
+    ["Burbank Tourism Business Improvement District", ["2011", "2036-06-30"]],
+  ]);
+  assert.equal(districts.length, 2);
+  for (const district of districts) {
+    const term = expected.get(district.properties.name);
+    assert.ok(term, `unexpected Burbank district ${district.properties.name}`);
+    assert.equal(district.properties.established, term[0]);
+    assert.equal(district.properties.expires, term[1]);
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -117);
+    assert.ok(latitude > 33 && latitude < 35);
+  }
+});
+
 test("Oakland publishes its ten current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

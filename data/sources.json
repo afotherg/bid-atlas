@@ -1576,6 +1576,42 @@
     }
   },
   {
+    "id": "burbank-business-improvement-districts",
+    "name": "Burbank Business Improvement Districts",
+    "jurisdiction": "Burbank, CA",
+    "state": "CA",
+    "city": "Burbank",
+    "file": "data/sources/burbank-business-improvement-districts.geojson",
+    "landingPage": "https://www.burbankca.gov/web/community-development/economic-development",
+    "publisher": "City of Burbank",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://burbank.granicus.com/MetaViewer.php?meta_id=341174",
+      "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_Cities_and_Identifiers_Blue_Version_view/FeatureServer/2"
+    ],
+    "fields": {
+      "name": ["name"]
+    },
+    "overrides": {
+      "Downtown Burbank Property and Business Improvement District": {
+        "website": "https://downtownburbank.com/",
+        "established": "2003",
+        "expires": "2028-12-31",
+        "area": "Generalized from the official 2019-2028 parcel map; roughly Burbank Boulevard and Glenoaks Boulevard on the north, Alameda Avenue on the southeast, and Interstate 5 and Front Street on the southwest, including the Downtown Burbank Metrolink station",
+        "sourceUrl": "https://burbank.granicus.com/MetaViewer.php?meta_id=341174",
+        "reportUrl": "https://www.burbankca.gov/documents/d/community-development/economic-development-24-25-annual-report-final-web-version-edit-pdf?download=true"
+      },
+      "Burbank Tourism Business Improvement District": {
+        "website": "https://visitburbank.com/",
+        "established": "2011",
+        "expires": "2036-06-30",
+        "area": "Exact official California municipal boundary for the citywide benefit zone; the renewed district assesses current and future Burbank lodging businesses with 25 or more rooms",
+        "sourceUrl": "https://gis.data.ca.gov/datasets/CDTFA::california-city-boundaries-and-identifiers/about",
+        "reportUrl": "https://www.burbankca.gov/documents/d/city-clerks-office/att3-management-district-plan"
+      }
+    }
+  },
+  {
     "id": "monrovia-old-town-business-improvement-district",
     "name": "Monrovia Old Town Business Improvement District",
     "jurisdiction": "Monrovia, CA",
