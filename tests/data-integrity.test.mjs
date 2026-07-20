@@ -207,6 +207,22 @@ test("Pomona publishes its current downtown property and business improvement di
   assert.ok(latitude > 33 && latitude < 35);
 });
 
+test("Culver City publishes its two current business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "culver-city-business-improvement-districts");
+  const expected = new Map([
+    ["Downtown Culver City Business Improvement District", "1998"],
+    ["Culver City Arts District Business Improvement District", "2016"],
+  ]);
+  assert.equal(districts.length, 2);
+  for (const district of districts) {
+    assert.equal(district.properties.established, expected.get(district.properties.name));
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -117);
+    assert.ok(latitude > 33 && latitude < 35);
+  }
+});
+
 test("Oakland publishes its ten current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

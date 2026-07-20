@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-19T23:21:06.429Z",
-  "records": 302,
+  "generatedAt": "2026-07-20T03:33:56.715Z",
+  "records": 304,
   "states": [
     "CA",
     "CO",
@@ -24,6 +24,7 @@
     "Burlingame, CA",
     "Columbus, GA",
     "Costa Mesa, CA",
+    "Culver City, CA",
     "Dana Point, CA",
     "Denver, CO",
     "Fresno, CA",
@@ -492,6 +493,15 @@
       "legislationChanged": true
     },
     {
+      "id": "culver-city-business-improvement-districts",
+      "name": "Culver City Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-20T03:33:56.715Z",
+      "monitorHash": "821049670495b3ba90019de41cb2de0a3deeb43ab9b4f4295d32924f0fdbeea2",
+      "legislationChanged": false
+    },
+    {
       "id": "downtown-pomona-property-business-improvement-district",
       "name": "Downtown Pomona Property and Business Improvement District",
       "status": "ok",
@@ -547,12 +557,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 50,
-    "configuredSources": 59,
+    "verifiedJurisdictions": 51,
+    "configuredSources": 60,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }

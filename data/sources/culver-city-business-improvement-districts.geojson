@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name": "Downtown Culver City Business Improvement District"},
+      "geometry": {"type": "Polygon", "coordinates": [[
+        [-118.399000, 34.020300], [-118.398100, 34.019500],
+        [-118.391900, 34.024600], [-118.389900, 34.025200],
+        [-118.390600, 34.026100], [-118.393200, 34.026400],
+        [-118.399000, 34.020300]
+      ]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "Culver City Arts District Business Improvement District"},
+      "geometry": {"type": "Polygon", "coordinates": [[
+        [-118.387200, 34.027600], [-118.386100, 34.028700],
+        [-118.369300, 34.034800], [-118.369600, 34.033900],
+        [-118.370761, 34.032445], [-118.372046, 34.030370],
+        [-118.374000, 34.030100], [-118.387200, 34.027600]
+      ]]}
+    }
+  ]
+}

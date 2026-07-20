@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-19T23:21:28.647Z",
+  "updated_at": "2026-07-20T03:34:42.262Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-19T23:21:28.647Z",
+      "updated_at": "2026-07-20T03:34:42.261Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T03:18:51.653Z"
+        "expires_at": "2026-07-20T07:34:42.261Z"
       },
       "checkpoint": {
-        "phase": "pomona_district_integration",
-        "summary": "Integrated the active Downtown Pomona PBID, formed in 2004 and renewed through 2028, using a generalized version of the official parcel map.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Culver City and Monrovia.",
+        "phase": "culver_city_district_integration",
+        "summary": "Integrated Culver City’s two active calendar-2026 merchant BIDs: Downtown and the Arts District, using generalized current official boundary exhibits.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Monrovia and Huntington Park.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -150,7 +150,11 @@
           "https://ecode360.com/43761131",
           "https://glendoravillage.com/bid-meetings-and-agendas-1",
           "https://pomona.legistar.com/LegislationDetail.aspx?From=RSS&GUID=5F9F7394-F2D8-448E-9637-30B8D16C1B04&ID=7487993",
-          "https://pomona.legistar.com/View.ashx?GUID=4300AD45-E4A6-42B4-9041-7D8D3D949BFE&ID=14531522&M=F"
+          "https://pomona.legistar.com/View.ashx?GUID=4300AD45-E4A6-42B4-9041-7D8D3D949BFE&ID=14531522&M=F",
+          "https://culver-city.legistar.com/LegislationDetail.aspx?GUID=9254F831-8991-45EB-9780-8A821438C90E&ID=7710709&Options=&Search=",
+          "https://culver-city.legistar.com/View.ashx?GUID=8FEC5F80-FDC8-4751-8A6A-1E41334B1D0B&ID=14843082&M=F",
+          "https://culver-city.legistar.com/LegislationDetail.aspx?GUID=4E837036-8F4A-4B5B-AE1C-F187A12512DA&ID=7710824&Options=&Search=",
+          "https://culver-city.legistar.com/View.ashx?GUID=6B8AEDEF-19E0-48A0-9124-8EB0A0A1342F&ID=14843081&M=F"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -179,9 +183,10 @@
           "data/sources/ontario-downtown-community-benefit-district.geojson",
           "data/sources/apple-valley-village-property-business-improvement-district.geojson",
           "data/sources/glendora-village-business-improvement-district.geojson",
-          "data/sources/downtown-pomona-property-business-improvement-district.geojson"
+          "data/sources/downtown-pomona-property-business-improvement-district.geojson",
+          "data/sources/culver-city-business-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-19T23:21:28.647Z",
+        "updated_at": "2026-07-20T03:34:42.261Z",
         "stop_reason": "continuous_research"
       },
       "result": null,

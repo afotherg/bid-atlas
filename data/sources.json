@@ -1540,6 +1540,38 @@
     }
   },
   {
+    "id": "culver-city-business-improvement-districts",
+    "name": "Culver City Business Improvement Districts",
+    "jurisdiction": "Culver City, CA",
+    "state": "CA",
+    "city": "Culver City",
+    "file": "data/sources/culver-city-business-improvement-districts.geojson",
+    "landingPage": "https://www.culvercity.org/Services/Building-Development/Business-Districts",
+    "publisher": "City of Culver City",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://culver-city.legistar.com/LegislationDetail.aspx?GUID=9254F831-8991-45EB-9780-8A821438C90E&ID=7710709&Options=&Search=",
+      "https://culver-city.legistar.com/LegislationDetail.aspx?GUID=4E837036-8F4A-4B5B-AE1C-F187A12512DA&ID=7710824&Options=&Search="
+    ],
+    "fields": {"name": ["name"]},
+    "overrides": {
+      "Downtown Culver City Business Improvement District": {
+        "website": "https://downtownculvercity.com/",
+        "established": "1998",
+        "area": "Generalized from the official 2026 map and assessed address ranges along Culver and Washington Boulevards and the Cardiff, Main, Hughes, Watseka, Irving, Delmas, and Van Buren side streets",
+        "sourceUrl": "https://culver-city.legistar.com/View.ashx?GUID=8FEC5F80-FDC8-4751-8A6A-1E41334B1D0B&ID=14843082&M=F",
+        "reportUrl": "https://culver-city.legistar.com/LegislationDetail.aspx?GUID=9254F831-8991-45EB-9780-8A821438C90E&ID=7710709&Options=&Search="
+      },
+      "Culver City Arts District Business Improvement District": {
+        "website": "https://culvercityartsdistrict.com/",
+        "established": "2016",
+        "area": "Generalized from the official 2026 boundary description covering Washington Boulevard from the Metro E Line to Fairfax Avenue and adjoining National, Wesley, Helms, La Cienega, Adams, Perry, Smiley, Blackwelder, and Hines corridors",
+        "sourceUrl": "https://culver-city.legistar.com/View.ashx?GUID=6B8AEDEF-19E0-48A0-9124-8EB0A0A1342F&ID=14843081&M=F",
+        "reportUrl": "https://culver-city.legistar.com/LegislationDetail.aspx?GUID=4E837036-8F4A-4B5B-AE1C-F187A12512DA&ID=7710824&Options=&Search="
+      }
+    }
+  },
+  {
     "id": "downtown-pomona-property-business-improvement-district",
     "name": "Downtown Pomona Property and Business Improvement District",
     "jurisdiction": "Pomona, CA",

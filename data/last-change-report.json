@@ -1,12 +1,13 @@
 {
-  "checkedAt": "2026-07-19T23:21:06.429Z",
+  "checkedAt": "2026-07-20T03:33:56.715Z",
   "summary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-pomona-downtown-pomona-property-and-business-improvement-district"
+    "ca-culver-city-culver-city-arts-district-business-improvement-district",
+    "ca-culver-city-downtown-culver-city-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -433,6 +434,15 @@
       "checkedAt": "2026-07-19T23:11:39.300Z",
       "monitorHash": "12518b9d4fe109db6d46a101162616a3671c3b13b80842b6dd45b02bda25172b",
       "legislationChanged": true
+    },
+    {
+      "id": "culver-city-business-improvement-districts",
+      "name": "Culver City Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-20T03:33:56.715Z",
+      "monitorHash": "821049670495b3ba90019de41cb2de0a3deeb43ab9b4f4295d32924f0fdbeea2",
+      "legislationChanged": false
     },
     {
       "id": "downtown-pomona-property-business-improvement-district",
