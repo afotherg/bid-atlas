@@ -83,6 +83,22 @@
         "https://www.sa.gov/files/assets/main/v/1/ccdo/documents/fy2026-centro-pid-service-assessment-plan.pdf"
       ],
       "production_next_action": "Extract the Downtown PID boundary from Exhibit A of the official FY2026 plan or obtain the corresponding City GIS layer, then ingest it with the current assessment metadata."
+    },
+    {
+      "rank": 5,
+      "city": "Dallas",
+      "state": "TX",
+      "population_2025": 1329491,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Public Improvement District",
+      "summary": "The Dallas Office of Economic Development reports 15 active assessment-funded PIDs. City Council approved 2026 service plans, assessment rates, and assessment rolls for all 15 in August 2025, and the City publishes both a current roster and a citywide boundary map.",
+      "official_sources": [
+        "https://www.dallasecodev.org/245/Public-Improvement-Districts",
+        "https://dallascityhall.com/government/citymanager/Documents/FY24-25%20Memos/Upcoming%20Public%20Improvement%20District%20%28PID%29%20Agenda%20Itemson%20August%2013%2C%202025%20Call%20for%20Public%20Hearing%20for%20PIDs%20to%20Set%20Annual%20Assessment%20Rates%20for%202025%20and%20Adopt%202026%20Service%20Plan.pdf",
+        "https://www.dallasecodev.org/DocumentCenter/View/2046/City-of-Dallas-Public-Improvement-Districts-Map-PDF"
+      ],
+      "production_next_action": "Locate the GIS service behind the City's interactive PID map or extract the authoritative boundaries for the 15 active districts, then attach the adopted 2026 assessment metadata."
     }
   ]
 }
