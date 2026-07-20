@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "method": {
+    "population_source": "U.S. Census Bureau Vintage 2025 incorporated-place estimates",
+    "selection": "Ten largest incorporated U.S. cities above 100,000 population not already substantively researched by BID Atlas",
+    "ordered_cities": [
+      "Houston, TX",
+      "Phoenix, AZ",
+      "Philadelphia, PA",
+      "San Antonio, TX",
+      "Dallas, TX",
+      "Fort Worth, TX",
+      "Jacksonville, FL",
+      "Austin, TX",
+      "Charlotte, NC",
+      "Columbus, OH"
+    ],
+    "active_hit_definition": "At least one currently operating assessment-funded BID or locally named legal equivalent supported by an official source",
+    "notes": "Candidate discovery is recorded separately from production boundary verification and ingestion."
+  },
+  "records": [
+    {
+      "rank": 1,
+      "city": "Houston",
+      "state": "TX",
+      "population_2025": 2397315,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Management District",
+      "summary": "Houston has numerous assessment-capable management districts that supplement municipal services and qualify as BID equivalents. The official GIS layer currently returns 75 boundary features, including annexation tracts, proposed areas, and multipart districts that require filtering before atlas ingestion.",
+      "official_sources": [
+        "https://www.houstontx.gov/ecodev/management_districts.html",
+        "https://mycity2.houstontx.gov/pubgis02/rest/services/HoustonMap/Administrative_Boundary/MapServer/4",
+        "https://www.houstontx.gov/planning/Demographics/2024-council-districts/jurisdiction-tables/Council-District-by-Management-Districts.pdf"
+      ],
+      "production_next_action": "Classify active versus proposed districts, dissolve repeated tracts by district identity, verify assessment operation, and ingest the official boundaries."
+    }
+  ]
+}
