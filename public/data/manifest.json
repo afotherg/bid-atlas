@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T19:11:20.028Z",
-  "records": 314,
+  "generatedAt": "2026-07-20T22:47:09.194Z",
+  "records": 316,
   "states": [
     "CA",
     "CO",
@@ -13,6 +13,7 @@
     "MD",
     "NV",
     "NY",
+    "OH",
     "WA"
   ],
   "cities": [
@@ -24,6 +25,7 @@
     "Burbank, CA",
     "Burlingame, CA",
     "Columbus, GA",
+    "Columbus, OH",
     "Costa Mesa, CA",
     "Culver City, CA",
     "Dana Point, CA",
@@ -624,15 +626,24 @@
       "checkedAt": "2026-07-20T19:11:20.028Z",
       "monitorHash": "f3875be0c62f5beaf853d2ae0c9ca9ab6778de03f04c686f5e4a5456740410ad",
       "legislationChanged": true
+    },
+    {
+      "id": "columbus-verified-special-improvement-districts",
+      "name": "Columbus Verified Special Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-20T22:47:09.194Z",
+      "monitorHash": "adae8f3976061728b53c00119a4c6a95af246411888a73383569adb8228b39ec",
+      "legislationChanged": false
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 58,
-    "configuredSources": 67,
+    "verifiedJurisdictions": 59,
+    "configuredSources": 68,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }

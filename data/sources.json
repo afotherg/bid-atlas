@@ -1929,5 +1929,39 @@
         "status"
       ]
     }
+  },
+  {
+    "id": "columbus-verified-special-improvement-districts",
+    "name": "Columbus Verified Special Improvement Districts",
+    "jurisdiction": "Columbus, OH",
+    "state": "OH",
+    "city": "Columbus",
+    "url": "https://gis.columbus.gov/arcgis/rest/services/Schemas/Development/MapServer/11/query?where=NAME%20IN%20(%27University%20District%20Special%20Improvement%20District%27%2C%27East%20Main%20Street%20Special%20Improvement%20District%27)&outFields=NAME%2CURL%2CLAST_EDIT_DATE&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://gis.columbus.gov/arcgis/rest/services/Schemas/Development/MapServer/11",
+    "publisher": "City of Columbus",
+    "cadence": "As published; assessment terms reviewed annually",
+    "monitorUrls": [
+      "https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2025/bulletin20250607.pdf",
+      "https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2023/bulletin20231014.pdf"
+    ],
+    "fields": {
+      "name": [
+        "NAME"
+      ]
+    },
+    "overrides": {
+      "East Main Street Special Improvement District": {
+        "established": "2018",
+        "expires": "2027",
+        "sourceUrl": "https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2023/bulletin20231014.pdf",
+        "reportUrl": "https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2026/bulletin20260307.pdf"
+      },
+      "University District Special Improvement District": {
+        "established": "2015",
+        "expires": "2030",
+        "sourceUrl": "https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2025/bulletin20250607.pdf",
+        "reportUrl": "https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2025/bulletin20250607.pdf"
+      }
+    }
   }
 ]

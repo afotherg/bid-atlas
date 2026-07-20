@@ -746,3 +746,24 @@ test("Idaho publishes its three verified business improvement districts", () => 
     assert.ok(latitude > 41 && latitude < 50, `${district.properties.name} is outside Idaho latitude`);
   }
 });
+
+test("Columbus publishes its two currently verified special improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "columbus-verified-special-improvement-districts");
+  const expected = new Map([
+    ["East Main Street Special Improvement District", ["2018", "2027"]],
+    ["University District Special Improvement District", ["2015", "2030"]],
+  ]);
+  assert.equal(districts.length, 2);
+  for (const district of districts) {
+    const term = expected.get(district.properties.name);
+    assert.ok(term, `unexpected Columbus district ${district.properties.name}`);
+    assert.equal(district.properties.city, "Columbus");
+    assert.equal(district.properties.state, "OH");
+    assert.equal(district.properties.established, term[0]);
+    assert.equal(district.properties.expires, term[1]);
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -84 && longitude < -82, `${district.properties.name} is outside Columbus longitude`);
+    assert.ok(latitude > 39 && latitude < 41, `${district.properties.name} is outside Columbus latitude`);
+  }
+});
