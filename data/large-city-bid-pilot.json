@@ -131,6 +131,23 @@
         "https://dia.jacksonville.gov/news"
       ],
       "production_next_action": "Retrieve the current legal boundary adopted under Ordinance 1999-1175-E, check for subsequent amendments, and obtain or digitize its geometry for production ingestion."
+    },
+    {
+      "rank": 8,
+      "city": "Austin",
+      "state": "TX",
+      "population_2025": 1002632,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Public Improvement District",
+      "summary": "Austin has two active BID-style operating PIDs: the Austin Downtown PID and East Sixth Street PID. Both are funded primarily by property assessments, have current FY2026-2027 service and assessment plans and rolls, and publish official boundary maps; Downtown is authorized through 2032 and East Sixth Street through 2029.",
+      "official_sources": [
+        "https://www.austintexas.gov/financial-services/public-improvement-districts",
+        "https://www.austintexas.gov/financial-services/austin-downtown-public-improvement-district",
+        "https://www.austintexas.gov/financial-services/east-sixth-street-public-improvement-district",
+        "https://services.austintexas.gov/edims/document.cfm?id=455961"
+      ],
+      "production_next_action": "Download the two official boundary maps or locate their source GIS layers, verify the April 2026 Downtown expansion parcel, and ingest both districts with their current authorization and assessment metadata."
     }
   ]
 }
