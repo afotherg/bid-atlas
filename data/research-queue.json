@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-20T03:40:35.306Z",
+  "updated_at": "2026-07-20T03:52:12.298Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T03:40:35.305Z",
+      "updated_at": "2026-07-20T03:52:12.297Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T07:40:35.305Z"
+        "expires_at": "2026-07-20T07:52:12.297Z"
       },
       "checkpoint": {
-        "phase": "bellflower_negative_audit",
-        "summary": "Audited Bellflower and found its two 2019 Bellflower Boulevard PBIDs remained potential formation efforts in FY2020-21. The FY2025-27 budget has no PBID assessment fund or program, so no district is mapped.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Whittier and Burbank.",
+        "phase": "whittier_district_integration",
+        "summary": "Integrated Whittier's two active Uptown districts from exact official GIS: the property-based Community Benefit District formed in 2017 and the older merchant Business Improvement Area with a calendar-2026 levy.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Burbank and Pico Rivera.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -164,7 +164,11 @@
           "https://www.hpca.gov/m/newsflash/Home/Detail/555",
           "https://cms5.revize.com/revize/bellflowerca/Document%20Center/Department/Economic%20Development/Property-Based%20Improvement%20Districts/Bellflower%20Boulevard%20Property%20Based%20Improvement%20District%20FAQs.pdf",
           "https://cms5.revize.com/revize/bellflowerca/Document%20Center/Department/Finance/Financial%20Reports/2020-21%20City%20of%20Bellflower%20ACFR%20%28For%20Distribution%29%20-%2012-28-22.pdf",
-          "https://cms5.revize.com/revize/bellflowerca/ADOPTED%20BUDGET%202025-27%20%28for%20Distribution%29.pdf"
+          "https://cms5.revize.com/revize/bellflowerca/ADOPTED%20BUDGET%202025-27%20%28for%20Distribution%29.pdf",
+          "https://services6.arcgis.com/ep2P4aOWGVVBct0i/arcgis/rest/services/UptownWhittier/FeatureServer",
+          "https://online.cityofwhittier.org/OnBaseAgendaOnline/Meetings/ViewMeeting?doctype=1&id=4766",
+          "https://www.cityofwhittier.org/government/finance",
+          "https://www.cityofwhittier.org/home/showpublisheddocument/12652/638412769513300000"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -195,9 +199,10 @@
           "data/sources/glendora-village-business-improvement-district.geojson",
           "data/sources/downtown-pomona-property-business-improvement-district.geojson",
           "data/sources/culver-city-business-improvement-districts.geojson",
-          "data/sources/monrovia-old-town-business-improvement-district.geojson"
+          "data/sources/monrovia-old-town-business-improvement-district.geojson",
+          "data/sources/whittier-uptown-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-20T03:40:35.305Z",
+        "updated_at": "2026-07-20T03:52:12.297Z",
         "stop_reason": "continuous_research"
       },
       "result": null,

@@ -1540,6 +1540,42 @@
     }
   },
   {
+    "id": "whittier-uptown-improvement-districts",
+    "name": "Whittier Uptown Improvement Districts",
+    "jurisdiction": "Whittier, CA",
+    "state": "CA",
+    "city": "Whittier",
+    "file": "data/sources/whittier-uptown-improvement-districts.geojson",
+    "landingPage": "https://services6.arcgis.com/ep2P4aOWGVVBct0i/arcgis/rest/services/UptownWhittier/FeatureServer",
+    "publisher": "City of Whittier",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://online.cityofwhittier.org/OnBaseAgendaOnline/Meetings/ViewMeeting?doctype=1&id=4766",
+      "https://www.cityofwhittier.org/government/finance"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Uptown Whittier Community Benefit District": {
+        "website": "https://www.uwia.org/",
+        "established": "2017",
+        "area": "Exact official City of Whittier GIS boundary for the property-assessment district formed in July 2017",
+        "sourceUrl": "https://services6.arcgis.com/ep2P4aOWGVVBct0i/arcgis/rest/services/UptownWhittier/FeatureServer/0",
+        "reportUrl": "https://www.cityofwhittier.org/home/showpublisheddocument/12652/638412769513300000"
+      },
+      "Uptown Whittier Business Improvement Area": {
+        "website": "https://whittieruptown.org/",
+        "established": "Before 1993",
+        "area": "Exact official City of Whittier GIS boundary for the merchant assessment area; the current assessment structure and benefit zones were adopted in 1993",
+        "sourceUrl": "https://services6.arcgis.com/ep2P4aOWGVVBct0i/arcgis/rest/services/UptownWhittier/FeatureServer/6",
+        "reportUrl": "https://online.cityofwhittier.org/OnBaseAgendaOnline/Meetings/ViewMeeting?doctype=1&id=4766"
+      }
+    }
+  },
+  {
     "id": "monrovia-old-town-business-improvement-district",
     "name": "Monrovia Old Town Business Improvement District",
     "jurisdiction": "Monrovia, CA",

@@ -234,6 +234,22 @@ test("Monrovia publishes its current Old Town business improvement district", ()
   assert.ok(latitude > 33 && latitude < 35);
 });
 
+test("Whittier publishes its two active Uptown improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "whittier-uptown-improvement-districts");
+  const expected = new Map([
+    ["Uptown Whittier Community Benefit District", "2017"],
+    ["Uptown Whittier Business Improvement Area", "Before 1993"],
+  ]);
+  assert.equal(districts.length, 2);
+  for (const district of districts) {
+    assert.equal(district.properties.established, expected.get(district.properties.name));
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -117);
+    assert.ok(latitude > 33 && latitude < 35);
+  }
+});
+
 test("Oakland publishes its ten current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));
