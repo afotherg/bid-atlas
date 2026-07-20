@@ -148,6 +148,22 @@
         "https://services.austintexas.gov/edims/document.cfm?id=455961"
       ],
       "production_next_action": "Download the two official boundary maps or locate their source GIS layers, verify the April 2026 Downtown expansion parcel, and ingest both districts with their current authorization and assessment metadata."
+    },
+    {
+      "rank": 9,
+      "city": "Charlotte",
+      "state": "NC",
+      "population_2025": 964784,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Municipal Service District",
+      "summary": "Charlotte's FY2026 budget levies dedicated property taxes in six Municipal Service Districts that fund enhanced district services: three Center City zones, South End, University City, and SouthPark. These special-tax urban service districts are the local legal equivalent of assessment-funded BIDs.",
+      "official_sources": [
+        "https://www.charlottenc.gov/files/sharedassets/city/v/3/city-government/departments/documents/budget/fy2026/adopted-fy2026-budget.pdf",
+        "https://www.charlottenc.gov/files/sharedassets/city/v/1/city-government/departments/documents/clerks-office/ordinances/2025-2029/2025/june-9-2025.pdf",
+        "https://www.charlottenc.gov/files/sharedassets/city/v/1/city-government/departments/documents/clerks-office/ordinances/2020-2024/2022/march-28-2022.pdf"
+      ],
+      "production_next_action": "Obtain authoritative GIS or ordinance-map boundaries for all six MSDs, preserve the three Center City tax zones as distinct geometries, and document each service provider before ingestion."
     }
   ]
 }
