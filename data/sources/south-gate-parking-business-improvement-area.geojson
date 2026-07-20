@@ -1,0 +1,21 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tweedy Mile Parking and Business Improvement Area"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.21698, 33.94776],
+          [-118.19217, 33.94497],
+          [-118.19304, 33.94015],
+          [-118.21537, 33.94266],
+          [-118.21698, 33.94776]
+        ]]
+      }
+    }
+  ]
+}

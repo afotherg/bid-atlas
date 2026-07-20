@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T04:13:00.000Z",
+      "updated_at": "2026-07-20T04:18:00.000Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T08:13:00.000Z"
+        "expires_at": "2026-07-20T08:18:00.000Z"
       },
       "checkpoint": {
-        "phase": "glendale_district_integration",
-        "summary": "Integrated Glendale's two active assessment districts: the 2018 Greater Downtown Community Benefit District and the longstanding Montrose merchant BID; excluded Adams Square because the City disestablished it in 2019.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in South Gate and nearby Los Angeles County cities.",
+        "phase": "south_gate_district_integration",
+        "summary": "Integrated South Gate's active Tweedy Mile Parking and Business Improvement Area, established in 1970 and still assessed through the current business-license process.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Compton and nearby Los Angeles County cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -180,7 +180,10 @@
           "https://www.glendaleca.gov/home/showpublisheddocument/45439/638518988668370000",
           "https://www.glendaleca.gov/government/departments/finance/revenue/montrose-business-improvement-district",
           "https://www.glendaleca.gov/home/showpublisheddocument/81176/639016639282330000",
-          "https://www.ci.glendale.ca.us/government/agenda_minutes/4A201904093.pdf"
+          "https://www.ci.glendale.ca.us/government/agenda_minutes/4A201904093.pdf",
+          "https://www.cityofsouthgate.org/Business/Your-Business/Permits-Licenses/Business-Licenses/Parking-and-Business-Improvement-Area",
+          "https://ecode360.com/48127581",
+          "https://www.cityofsouthgate.org/files/sharedassets/public/v/1/business-amp-development/documents/parking-and-business-improvement-map_final.pdf"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -214,9 +217,10 @@
           "data/sources/monrovia-old-town-business-improvement-district.geojson",
           "data/sources/whittier-uptown-improvement-districts.geojson",
           "data/sources/burbank-business-improvement-districts.geojson",
-          "data/sources/glendale-business-improvement-districts.geojson"
+          "data/sources/glendale-business-improvement-districts.geojson",
+          "data/sources/south-gate-parking-business-improvement-area.geojson"
         ],
-        "updated_at": "2026-07-20T04:13:00.000Z",
+        "updated_at": "2026-07-20T04:18:00.000Z",
         "stop_reason": "continuous_research"
       },
       "result": null,

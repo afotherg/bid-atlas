@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T04:04:19.285Z",
-  "records": 311,
+  "generatedAt": "2026-07-20T04:06:42.749Z",
+  "records": 312,
   "states": [
     "CA",
     "CO",
@@ -66,6 +66,7 @@
     "San Mateo, CA",
     "Santa Cruz, CA",
     "Santa Monica, CA",
+    "South Gate, CA",
     "Stockton, CA",
     "Tacoma, WA",
     "Washington, DC",
@@ -524,6 +525,15 @@
       "legislationChanged": false
     },
     {
+      "id": "south-gate-parking-business-improvement-area",
+      "name": "South Gate Parking and Business Improvement Area",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-20T04:06:42.749Z",
+      "monitorHash": "30e2f10feafefa14aef94a4851feee2869545ad5dc0850dabc7379a54fbc33f9",
+      "legislationChanged": false
+    },
+    {
       "id": "monrovia-old-town-business-improvement-district",
       "name": "Monrovia Old Town Business Improvement District",
       "status": "review",
@@ -597,12 +607,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 55,
-    "configuredSources": 64,
+    "verifiedJurisdictions": 56,
+    "configuredSources": 65,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }

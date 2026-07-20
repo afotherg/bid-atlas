@@ -1647,6 +1647,32 @@
     }
   },
   {
+    "id": "south-gate-parking-business-improvement-area",
+    "name": "South Gate Parking and Business Improvement Area",
+    "jurisdiction": "South Gate, CA",
+    "state": "CA",
+    "city": "South Gate",
+    "file": "data/sources/south-gate-parking-business-improvement-area.geojson",
+    "landingPage": "https://www.cityofsouthgate.org/Business/Your-Business/Permits-Licenses/Business-Licenses/Parking-and-Business-Improvement-Area",
+    "publisher": "City of South Gate",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.cityofsouthgate.org/Business/Your-Business/Permits-Licenses/Business-Licenses/Parking-and-Business-Improvement-Area"
+    ],
+    "fields": {
+      "name": ["name"]
+    },
+    "overrides": {
+      "Tweedy Mile Parking and Business Improvement Area": {
+        "website": "https://tmasg.org/",
+        "established": "1970",
+        "area": "Generalized from the current official parcel map and address ranges; commercial properties along Tweedy Boulevard from Long Beach Boulevard to Hunt Avenue, including specified blocks of California Avenue, Otis Street, San Gabriel Avenue, San Juan Avenue, and State Street",
+        "sourceUrl": "https://www.cityofsouthgate.org/files/sharedassets/public/v/1/business-amp-development/documents/parking-and-business-improvement-map_final.pdf",
+        "reportUrl": "https://www.cityofsouthgate.org/Business/Your-Business/Permits-Licenses/Business-Licenses/Parking-and-Business-Improvement-Area"
+      }
+    }
+  },
+  {
     "id": "monrovia-old-town-business-improvement-district",
     "name": "Monrovia Old Town Business Improvement District",
     "jurisdiction": "Monrovia, CA",
