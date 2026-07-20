@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T17:20:00.000Z",
+      "updated_at": "2026-07-20T17:30:00.000Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T21:20:00.000Z"
+        "expires_at": "2026-07-20T21:30:00.000Z"
       },
       "checkpoint": {
-        "phase": "santa_fe_springs_negative_audit",
-        "summary": "Confirmed no verified operating BID in Santa Fe Springs; current records cover direct business assistance and infrastructure-financing districts instead.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in La Mirada and Cerritos, California.",
+        "phase": "la_mirada_negative_audit",
+        "summary": "Confirmed no verified operating BID in La Mirada; a 2012 shopping-center BID suggestion has no located formation or current levy record.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Cerritos and Artesia, California.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -219,7 +219,12 @@
           "https://www.santafesprings.gov/214/Local-Business-Assistance-Resources",
           "https://www.santafesprings.gov/304/City-Budget-Fee-Schedule",
           "https://www.santafesprings.gov/ArchiveCenter/ViewFile/Item/93",
-          "https://www.santafesprings.gov/ArchiveCenter/ViewFile/Item/61"
+          "https://www.santafesprings.gov/ArchiveCenter/ViewFile/Item/61",
+          "https://www.cityoflamirada.org/home/showpublisheddocument/18368/639088239992500000",
+          "https://www.cityoflamirada.org/home/showpublisheddocument/18550",
+          "https://www.cityoflamirada.org/business/la-mirada-business-news",
+          "https://www.cityoflamirada.org/home/showpublisheddocument/3141/635804281735200000",
+          "https://www.cityoflamirada.org/departments/administrative-services-human-resources/budget-and-financial-reports-/city-and-successor-agency-to-the-redevelopment-agency-rops-reports-a"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -258,7 +263,7 @@
           "data/sources/downtown-downey-community-benefit-district.geojson",
           "data/sources.json"
         ],
-        "updated_at": "2026-07-20T17:20:00.000Z",
+        "updated_at": "2026-07-20T17:30:00.000Z",
         "stop_reason": "continuous_research"
       },
       "result": null,
