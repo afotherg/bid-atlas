@@ -101,6 +101,34 @@
           [-80.1385, 25.8157], [-80.1425, 25.8139], [-80.1425, 25.8108]
         ]]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Jacksonville Business Improvement District",
+        "city": "Jacksonville",
+        "website": "https://dtjax.com/about-dvi/",
+        "sourceUrl": "https://dtjax.com/about-dvi/",
+        "established": "2000; expanded 2021",
+        "area": "Generalized two-part boundary digitized from Downtown Vision's official 2026 map and published street limits",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[
+            [-81.6768, 30.3348], [-81.6428, 30.3348], [-81.6402, 30.3327],
+            [-81.6394, 30.3262], [-81.6370, 30.3232], [-81.6440, 30.3190],
+            [-81.6545, 30.3198], [-81.6657, 30.3215], [-81.6715, 30.3260],
+            [-81.6715, 30.3332], [-81.6768, 30.3348]
+          ]],
+          [[
+            [-81.6720, 30.3140], [-81.6630, 30.3157], [-81.6520, 30.3160],
+            [-81.6430, 30.3150], [-81.6375, 30.3050], [-81.6465, 30.2998],
+            [-81.6585, 30.2992], [-81.6690, 30.3040], [-81.6720, 30.3140]
+          ]]
+        ]
+      }
     }
   ]
 }

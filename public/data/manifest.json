@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T22:56:07.480Z",
-  "records": 349,
+  "generatedAt": "2026-07-20T22:59:16.024Z",
+  "records": 350,
   "states": [
     "CA",
     "CO",
@@ -44,6 +44,7 @@
     "Honolulu, HI",
     "Huntington Beach, CA",
     "Idaho Falls, ID",
+    "Jacksonville, FL",
     "Kailua-Kona, HI",
     "Laguna Beach, CA",
     "Long Beach, CA",
@@ -474,8 +475,8 @@
       "id": "florida-verified-business-improvement-districts",
       "name": "Florida Verified Business Improvement Districts",
       "status": "ok",
-      "records": 5,
-      "checkedAt": "2026-07-20T19:11:20.028Z",
+      "records": 6,
+      "checkedAt": "2026-07-20T22:59:16.024Z",
       "monitorHash": "a845207052b00e4c1ce69312685a0c9ca7726331b71a505d94899a3fbf0ab702",
       "legislationChanged": false
     },
@@ -664,12 +665,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 62,
+    "verifiedJurisdictions": 63,
     "configuredSources": 71,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 6,
+    "added": 0,
     "modified": 0,
     "removed": 0
   }

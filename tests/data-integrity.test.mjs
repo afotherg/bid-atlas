@@ -680,18 +680,20 @@ test("Nevada publishes the verified Downtown Reno BID", () => {
   assert.ok(latitude > 39 && latitude < 40);
 });
 
-test("Florida publishes the five active statewide-registry business improvement districts", () => {
+test("Florida publishes five statewide-registry districts and Jacksonville's verified BID", () => {
   const florida = collection.features.filter((feature) => feature.properties.state === "FL");
   const names = new Set(florida.map((feature) => feature.properties.name));
-  assert.equal(florida.length, 5);
+  assert.equal(florida.length, 6);
   for (const name of [
     "Coconut Grove Business Improvement District",
     "Wynwood Business Improvement District",
     "Lincoln Road Business Improvement District",
     "Washington Avenue Business Improvement District",
     "41st Street Business Improvement District",
+    "Downtown Jacksonville Business Improvement District",
   ]) assert.ok(names.has(name), `missing ${name}`);
-  assert.deepEqual(new Set(florida.map((feature) => feature.properties.city)), new Set(["Miami", "Miami Beach"]));
+  assert.deepEqual(new Set(florida.map((feature) => feature.properties.city)), new Set(["Miami", "Miami Beach", "Jacksonville"]));
+  assert.equal(florida.find((feature) => feature.properties.city === "Jacksonville")?.geometry.type, "MultiPolygon");
   for (const district of florida) {
     assert.equal(district.properties.status, "Active");
     assert.equal(district.properties.sourceId, "florida-verified-business-improvement-districts");
