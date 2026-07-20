@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-20T03:38:02.229Z",
+  "updated_at": "2026-07-20T03:40:35.306Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T03:38:02.228Z",
+      "updated_at": "2026-07-20T03:40:35.305Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T07:38:02.228Z"
+        "expires_at": "2026-07-20T07:40:35.305Z"
       },
       "checkpoint": {
-        "phase": "huntington_park_negative_audit",
-        "summary": "Audited Huntington Park and found only legacy BID records: 1995 ordinances and a 2005-08 plan. The FY2026-27 budget has no BID assessment fund or revenue, so no current district is mapped.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Bellflower and Whittier.",
+        "phase": "bellflower_negative_audit",
+        "summary": "Audited Bellflower and found its two 2019 Bellflower Boulevard PBIDs remained potential formation efforts in FY2020-21. The FY2025-27 budget has no PBID assessment fund or program, so no district is mapped.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Whittier and Burbank.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -161,7 +161,10 @@
           "https://ecode360.com/44540059",
           "https://www.hpca.gov/DocumentCenter/View/3/Strategic-Plan-for-Downtown-Management-",
           "https://www.hpca.gov/DocumentCenter/View/12364/Adopted-FY-2027-Main-City-Budget?bidId=",
-          "https://www.hpca.gov/m/newsflash/Home/Detail/555"
+          "https://www.hpca.gov/m/newsflash/Home/Detail/555",
+          "https://cms5.revize.com/revize/bellflowerca/Document%20Center/Department/Economic%20Development/Property-Based%20Improvement%20Districts/Bellflower%20Boulevard%20Property%20Based%20Improvement%20District%20FAQs.pdf",
+          "https://cms5.revize.com/revize/bellflowerca/Document%20Center/Department/Finance/Financial%20Reports/2020-21%20City%20of%20Bellflower%20ACFR%20%28For%20Distribution%29%20-%2012-28-22.pdf",
+          "https://cms5.revize.com/revize/bellflowerca/ADOPTED%20BUDGET%202025-27%20%28for%20Distribution%29.pdf"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -194,7 +197,7 @@
           "data/sources/culver-city-business-improvement-districts.geojson",
           "data/sources/monrovia-old-town-business-improvement-district.geojson"
         ],
-        "updated_at": "2026-07-20T03:38:02.228Z",
+        "updated_at": "2026-07-20T03:40:35.305Z",
         "stop_reason": "continuous_research"
       },
       "result": null,
