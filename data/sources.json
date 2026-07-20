@@ -2047,5 +2047,81 @@
         "expires": "2026"
       }
     }
+  },
+  {
+    "id": "fort-worth-public-improvement-districts",
+    "name": "Fort Worth Public Improvement Districts",
+    "jurisdiction": "Fort Worth, TX",
+    "state": "TX",
+    "city": "Fort Worth",
+    "url": "https://mapitwest.fortworthtexas.gov/ags/rest/services/FWGISData/FW_GIS_DATA/MapServer/32/query?where=1%3D1&outFields=PID_ID%2CName%2CEstablished%2CTerm%2CDissolve%2CNotes&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.fortworthtexas.gov/departments/the-fwlab/pid",
+    "publisher": "City of Fort Worth",
+    "cadence": "Annual / as published",
+    "fields": {
+      "name": [
+        "Name"
+      ]
+    },
+    "overrides": {
+      "Downtown": {
+        "name": "Downtown Fort Worth Public Improvement District",
+        "established": "1986",
+        "expires": "2029"
+      },
+      "Park Glen": {
+        "name": "Park Glen Public Improvement District",
+        "established": "1998"
+      },
+      "Heritage": {
+        "name": "Heritage Public Improvement District",
+        "established": "2000"
+      },
+      "Stockyards": {
+        "name": "Stockyards Public Improvement District",
+        "established": "2003"
+      },
+      "Chapel Hill": {
+        "name": "Chapel Hill Public Improvement District",
+        "established": "2004"
+      },
+      "Trinity Bluff": {
+        "name": "Trinity Bluff Public Improvement District",
+        "established": "2009",
+        "expires": "2029"
+      },
+      "Sun Valley": {
+        "name": "Sun Valley Public Improvement District",
+        "established": "2012",
+        "expires": "2032"
+      },
+      "Walsh Ranch/Quail Valley": {
+        "name": "Walsh Ranch / Quail Valley Public Improvement District",
+        "established": "2016"
+      },
+      "Rock Creek Ranch": {
+        "name": "Rock Creek Ranch Public Improvement District",
+        "established": "2016",
+        "expires": "2027"
+      },
+      "Historic Camp Bowie": {
+        "name": "Historic Camp Bowie Public Improvement District",
+        "established": "2018",
+        "expires": "2028"
+      },
+      "Fort Worth PID 20 - East Lancaster Avenue": {
+        "name": "East Lancaster Avenue Public Improvement District",
+        "established": "2019",
+        "expires": "2029"
+      },
+      "Las Vegas Trail": {
+        "name": "Las Vegas Trail Public Improvement District",
+        "established": "2021"
+      },
+      "Veale Ranch": {
+        "name": "Veale Ranch Public Improvement District",
+        "established": "2023"
+      }
+    }
   }
 ]

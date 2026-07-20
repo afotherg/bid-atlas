@@ -793,3 +793,27 @@ test("Dallas publishes its fourteen mapped active public improvement districts",
     assert.ok(latitude > 32 && latitude < 34, `${district.properties.name} is outside Dallas latitude`);
   }
 });
+
+test("Fort Worth publishes its thirteen mapped active public improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "fort-worth-public-improvement-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 13);
+  for (const name of [
+    "Downtown Fort Worth Public Improvement District",
+    "Park Glen Public Improvement District",
+    "Stockyards Public Improvement District",
+    "Historic Camp Bowie Public Improvement District",
+    "East Lancaster Avenue Public Improvement District",
+    "Las Vegas Trail Public Improvement District",
+    "Veale Ranch Public Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  assert.ok(!names.has("Tourism Public Improvement District"));
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Fort Worth");
+    assert.equal(district.properties.state, "TX");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -98 && longitude < -97, `${district.properties.name} is outside Fort Worth longitude`);
+    assert.ok(latitude > 32 && latitude < 33.5, `${district.properties.name} is outside Fort Worth latitude`);
+  }
+});

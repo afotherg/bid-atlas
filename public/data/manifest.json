@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T22:51:46.062Z",
-  "records": 330,
+  "generatedAt": "2026-07-20T22:54:09.389Z",
+  "records": 343,
   "states": [
     "CA",
     "CO",
@@ -33,6 +33,7 @@
     "Dana Point, CA",
     "Denver, CO",
     "Downey, CA",
+    "Fort Worth, TX",
     "Fresno, CA",
     "Garden Grove, CA",
     "Glendale, CA",
@@ -644,15 +645,22 @@
       "status": "ok",
       "records": 16,
       "checkedAt": "2026-07-20T22:51:46.062Z"
+    },
+    {
+      "id": "fort-worth-public-improvement-districts",
+      "name": "Fort Worth Public Improvement Districts",
+      "status": "ok",
+      "records": 13,
+      "checkedAt": "2026-07-20T22:54:09.389Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 60,
-    "configuredSources": 69,
+    "verifiedJurisdictions": 61,
+    "configuredSources": 70,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 14,
+    "added": 13,
     "modified": 0,
     "removed": 0
   }
