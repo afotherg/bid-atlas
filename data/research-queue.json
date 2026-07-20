@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T17:50:00.000Z",
+      "updated_at": "2026-07-20T18:00:00.000Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T21:50:00.000Z"
+        "expires_at": "2026-07-20T22:00:00.000Z"
       },
       "checkpoint": {
-        "phase": "artesia_bid_formation_pending",
-        "summary": "Confirmed Artesia's Downtown BID remains a formation effort with no adopted assessment structure, final boundary, or current levy.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; monitor Artesia BID formation and audit active districts in Hawaiian Gardens and Buena Park, California.",
+        "phase": "hawaiian_gardens_negative_audit",
+        "summary": "Confirmed no verified operating BID in Hawaiian Gardens; current commercial aid is General Fund-funded and its assessment district covers landscaping and lighting.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; monitor Artesia BID formation and audit active districts in Buena Park and La Palma, California.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -233,7 +233,11 @@
           "https://www.cityofartesia.us/DocumentCenter/View/8544/CITY-OF-ARTESIA-RESPONSE-TO-QUESTIONS-NO-1",
           "https://www.cityofartesia.us/DocumentCenter/View/8548",
           "https://www.cityofartesia.us/DocumentCenter/View/8848/April-13-2026-City-Council-Meeting-Summary",
-          "https://www.cityofartesia.us/387/Economic-Development"
+          "https://www.cityofartesia.us/387/Economic-Development",
+          "https://www.hgcity.org/government/departments/economic-development",
+          "https://www.hgcity.org/business/business-revitalization-program",
+          "https://www.hgcity.org/government/public-notices",
+          "https://www.hgcity.org/government/departments/finance/annual-budget-and-financial-report"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -272,7 +276,7 @@
           "data/sources/downtown-downey-community-benefit-district.geojson",
           "data/sources.json"
         ],
-        "updated_at": "2026-07-20T17:50:00.000Z",
+        "updated_at": "2026-07-20T18:00:00.000Z",
         "stop_reason": "continuous_research"
       },
       "result": null,
