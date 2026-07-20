@@ -857,3 +857,18 @@ test("Phoenix publishes its active downtown enhanced municipal services district
   assert.ok(longitude > -112.2 && longitude < -112, "Phoenix EMSD is outside Phoenix longitude");
   assert.ok(latitude > 33.4 && latitude < 33.6, "Phoenix EMSD is outside Phoenix latitude");
 });
+
+test("San Antonio publishes its reauthorized downtown public improvement district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "san-antonio-downtown-public-improvement-district");
+  assert.equal(districts.length, 1);
+  assert.equal(districts[0].properties.name, "San Antonio Downtown Public Improvement District");
+  assert.equal(districts[0].properties.city, "San Antonio");
+  assert.equal(districts[0].properties.state, "TX");
+  assert.equal(districts[0].properties.established, "1999; reauthorized 2023");
+  assert.equal(districts[0].properties.expires, "2033");
+  assert.equal(districts[0].properties.status, "Active");
+  assert.match(districts[0].properties.area, /Generalized boundary/);
+  const [longitude, latitude] = districts[0].properties.center;
+  assert.ok(longitude > -98.6 && longitude < -98.4, "San Antonio PID is outside San Antonio longitude");
+  assert.ok(latitude > 29.3 && latitude < 29.5, "San Antonio PID is outside San Antonio latitude");
+});

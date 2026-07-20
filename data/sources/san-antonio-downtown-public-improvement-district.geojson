@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "San Antonio Downtown Public Improvement District",
+        "website": "https://centrosanantonio.org/",
+        "sourceUrl": "https://www.sa.gov/files/assets/main/v/1/ccdo/documents/fy2026-centro-pid-service-assessment-plan.pdf",
+        "established": "1999; reauthorized 2023",
+        "expires": "2033",
+        "area": "Generalized boundary digitized from Exhibit A of the City of San Antonio FY2026 Service and Assessment Plan",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-98.5108, 29.4272], [-98.5002, 29.4265], [-98.4987, 29.4316],
+          [-98.4987, 29.4371], [-98.4950, 29.4400], [-98.4907, 29.4401],
+          [-98.4863, 29.4430], [-98.4811, 29.4352], [-98.4760, 29.4383],
+          [-98.4688, 29.4314], [-98.4746, 29.4256], [-98.4684, 29.4198],
+          [-98.4681, 29.4148], [-98.4766, 29.4163], [-98.4780, 29.4115],
+          [-98.4828, 29.4101], [-98.4834, 29.4055], [-98.4925, 29.4048],
+          [-98.4937, 29.4128], [-98.5010, 29.4162], [-98.5123, 29.4172],
+          [-98.5108, 29.4272]
+        ]]
+      }
+    }
+  ]
+}

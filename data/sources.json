@@ -2199,5 +2199,42 @@
         "status"
       ]
     }
+  },
+  {
+    "id": "san-antonio-downtown-public-improvement-district",
+    "name": "San Antonio Downtown Public Improvement District",
+    "jurisdiction": "San Antonio, TX",
+    "state": "TX",
+    "city": "San Antonio",
+    "file": "data/sources/san-antonio-downtown-public-improvement-district.geojson",
+    "landingPage": "https://www.sa.gov/Directory/Departments/CCDO/Resources",
+    "publisher": "City of San Antonio",
+    "cadence": "Annual; generalized boundary reviewed with each service and assessment plan",
+    "monitorUrls": [
+      "https://www.sa.gov/files/assets/main/v/1/ccdo/documents/fy2026-centro-pid-service-assessment-plan.pdf"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
   }
 ]

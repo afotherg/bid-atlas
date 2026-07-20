@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T23:01:20.689Z",
-  "records": 351,
+  "generatedAt": "2026-07-20T23:03:46.115Z",
+  "records": 352,
   "states": [
     "AZ",
     "CA",
@@ -72,6 +72,7 @@
     "Riverside, CA",
     "Rome, GA",
     "Sacramento, CA",
+    "San Antonio, TX",
     "San Diego, CA",
     "San Francisco, CA",
     "San Jose, CA",
@@ -673,11 +674,20 @@
       "checkedAt": "2026-07-20T23:01:20.689Z",
       "monitorHash": "7a02051ea346c0ede687b298e276154d939596e8c361d19c95ccd3eced5f71e1",
       "legislationChanged": false
+    },
+    {
+      "id": "san-antonio-downtown-public-improvement-district",
+      "name": "San Antonio Downtown Public Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-20T23:03:46.115Z",
+      "monitorHash": "2261f0995441fa05a15e8294e808fb55b7c9b6c5444768b904f1be9a202283ea",
+      "legislationChanged": false
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 64,
-    "configuredSources": 72,
+    "verifiedJurisdictions": 65,
+    "configuredSources": 73,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
