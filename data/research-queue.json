@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-07-20T03:36:26.331Z",
+  "updated_at": "2026-07-20T03:38:02.229Z",
   "sequence": 0,
   "last_completed_id": null,
   "items": [
@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T03:36:26.330Z",
+      "updated_at": "2026-07-20T03:38:02.228Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T07:36:26.330Z"
+        "expires_at": "2026-07-20T07:38:02.228Z"
       },
       "checkpoint": {
-        "phase": "monrovia_district_integration",
-        "summary": "Integrated Monrovia’s active Old Town merchant BID, formed in 1968, using the current official Foothill/Olive/Primrose/Ivy street limits.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Huntington Park and Bellflower.",
+        "phase": "huntington_park_negative_audit",
+        "summary": "Audited Huntington Park and found only legacy BID records: 1995 ordinances and a 2005-08 plan. The FY2026-27 budget has no BID assessment fund or revenue, so no current district is mapped.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Bellflower and Whittier.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -157,7 +157,11 @@
           "https://culver-city.legistar.com/View.ashx?GUID=6B8AEDEF-19E0-48A0-9124-8EB0A0A1342F&ID=14843081&M=F",
           "https://www.monroviaca.gov/your-government/community-development/neighborhood-business-services/business-license",
           "https://www.monroviaca.gov/doing-business-here/filming",
-          "https://www.monroviaca.gov/home/showpublisheddocument/37516/638845604604130000"
+          "https://www.monroviaca.gov/home/showpublisheddocument/37516/638845604604130000",
+          "https://ecode360.com/44540059",
+          "https://www.hpca.gov/DocumentCenter/View/3/Strategic-Plan-for-Downtown-Management-",
+          "https://www.hpca.gov/DocumentCenter/View/12364/Adopted-FY-2027-Main-City-Budget?bidId=",
+          "https://www.hpca.gov/m/newsflash/Home/Detail/555"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -190,7 +194,7 @@
           "data/sources/culver-city-business-improvement-districts.geojson",
           "data/sources/monrovia-old-town-business-improvement-district.geojson"
         ],
-        "updated_at": "2026-07-20T03:36:26.330Z",
+        "updated_at": "2026-07-20T03:38:02.228Z",
         "stop_reason": "continuous_research"
       },
       "result": null,
