@@ -1,7 +1,8 @@
 {
-  "generatedAt": "2026-07-20T22:59:16.024Z",
-  "records": 350,
+  "generatedAt": "2026-07-20T23:01:20.689Z",
+  "records": 351,
   "states": [
+    "AZ",
     "CA",
     "CO",
     "CT",
@@ -64,6 +65,7 @@
     "Ontario, CA",
     "Palm Springs, CA",
     "Pasadena, CA",
+    "Phoenix, AZ",
     "Pomona, CA",
     "Redwood City, CA",
     "Reno, NV",
@@ -662,15 +664,24 @@
       "status": "ok",
       "records": 9,
       "checkedAt": "2026-07-20T22:56:07.480Z"
+    },
+    {
+      "id": "phoenix-downtown-enhanced-municipal-services-district",
+      "name": "Phoenix Downtown Enhanced Municipal Services District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-20T23:01:20.689Z",
+      "monitorHash": "7a02051ea346c0ede687b298e276154d939596e8c361d19c95ccd3eced5f71e1",
+      "legislationChanged": false
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 63,
-    "configuredSources": 71,
+    "verifiedJurisdictions": 64,
+    "configuredSources": 72,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 0,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }

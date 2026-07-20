@@ -2165,5 +2165,39 @@
         "established": "2022"
       }
     }
+  },
+  {
+    "id": "phoenix-downtown-enhanced-municipal-services-district",
+    "name": "Phoenix Downtown Enhanced Municipal Services District",
+    "jurisdiction": "Phoenix, AZ",
+    "state": "AZ",
+    "city": "Phoenix",
+    "file": "data/sources/phoenix-downtown-enhanced-municipal-services-district.geojson",
+    "landingPage": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2025/250910001.pdf",
+    "publisher": "City of Phoenix",
+    "cadence": "Annual; generalized boundary reviewed with each assessment diagram",
+    "monitorUrls": [
+      "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2025/250910001.pdf"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
   }
 ]

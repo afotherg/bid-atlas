@@ -843,3 +843,17 @@ test("Charlotte publishes its six active municipal service districts", () => {
     assert.ok(latitude > 35 && latitude < 35.5, `${district.properties.name} is outside Charlotte latitude`);
   }
 });
+
+test("Phoenix publishes its active downtown enhanced municipal services district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "phoenix-downtown-enhanced-municipal-services-district");
+  assert.equal(districts.length, 1);
+  assert.equal(districts[0].properties.name, "Downtown Phoenix Enhanced Municipal Services District");
+  assert.equal(districts[0].properties.city, "Phoenix");
+  assert.equal(districts[0].properties.state, "AZ");
+  assert.equal(districts[0].properties.established, "1990");
+  assert.equal(districts[0].properties.status, "Active");
+  assert.match(districts[0].properties.area, /Generalized outer boundary/);
+  const [longitude, latitude] = districts[0].properties.center;
+  assert.ok(longitude > -112.2 && longitude < -112, "Phoenix EMSD is outside Phoenix longitude");
+  assert.ok(latitude > 33.4 && latitude < 33.6, "Phoenix EMSD is outside Phoenix latitude");
+});

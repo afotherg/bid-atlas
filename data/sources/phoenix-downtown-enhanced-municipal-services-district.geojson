@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Phoenix Enhanced Municipal Services District",
+        "website": "https://dtphx.org/",
+        "sourceUrl": "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2025/250910001.pdf",
+        "established": "1990",
+        "area": "Generalized outer boundary from the City of Phoenix 2026 work plan; individual residential and non-benefited parcels are excluded from the official assessment diagram",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-112.0782, 33.4436],
+          [-112.0655, 33.4436],
+          [-112.0655, 33.4548],
+          [-112.0700, 33.4548],
+          [-112.0700, 33.4572],
+          [-112.0782, 33.4572],
+          [-112.0782, 33.4436]
+        ]]
+      }
+    }
+  ]
+}
