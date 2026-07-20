@@ -1710,6 +1710,32 @@
     "overrides": {"Monrovia Old Town Business Improvement District":{"website":"https://www.monroviaoldtown.org/","established":"1968","area":"Generalized from the current official street-boundary description; south of Foothill Boulevard, north of Olive Avenue, east of Primrose Avenue, and west of Ivy Avenue","sourceUrl":"https://www.monroviaca.gov/doing-business-here/filming","reportUrl":"https://www.monroviaca.gov/home/showpublisheddocument/37516/638845604604130000"}}
   },
   {
+    "id": "downtown-downey-community-benefit-district",
+    "name": "Downtown Downey Community Benefit District",
+    "jurisdiction": "Downey, CA",
+    "state": "CA",
+    "city": "Downey",
+    "file": "data/sources/downtown-downey-community-benefit-district.geojson",
+    "landingPage": "https://www.downeyca.org/our-city/departments/community-development/downtown-community-benefit-district",
+    "publisher": "City of Downey / Los Angeles County Office of the Assessor",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.downeyca.org/our-city/departments/community-development/downtown-community-benefit-district",
+      "https://www.downtowndowney.org/about"
+    ],
+    "fields": {"name": ["name"]},
+    "overrides": {
+      "Downtown Downey Community Benefit District": {
+        "website": "https://www.downtowndowney.org/",
+        "established": "2018",
+        "expires": "2033-11-30",
+        "area": "Exact current Los Angeles County parcel geometry for 112 of the 113 APNs in the adopted assessment roll; plan-era APN 6254-019-904 is absent from the live parcel layer",
+        "sourceUrl": "https://www.downeyca.org/home/showpublisheddocument/24/636976337137770000",
+        "reportUrl": "https://www.downeyca.org/our-city/departments/community-development/downtown-community-benefit-district"
+      }
+    }
+  },
+  {
     "id": "culver-city-business-improvement-districts",
     "name": "Culver City Business Improvement Districts",
     "jurisdiction": "Culver City, CA",

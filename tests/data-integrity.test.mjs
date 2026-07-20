@@ -234,6 +234,19 @@ test("Monrovia publishes its current Old Town business improvement district", ()
   assert.ok(latitude > 33 && latitude < 35);
 });
 
+test("Downey publishes its current downtown community benefit district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "downtown-downey-community-benefit-district");
+  assert.equal(districts.length, 1);
+  const [district] = districts;
+  assert.equal(district.properties.name, "Downtown Downey Community Benefit District");
+  assert.equal(district.properties.established, "2018");
+  assert.equal(district.properties.expires, "2033-11-30");
+  assert.equal(district.properties.status, "Active");
+  const [longitude, latitude] = district.properties.center;
+  assert.ok(longitude > -119 && longitude < -117, "district is outside Downey longitude");
+  assert.ok(latitude > 33 && latitude < 35, "district is outside Downey latitude");
+});
+
 test("Whittier publishes its two active Uptown improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "whittier-uptown-improvement-districts");
   const expected = new Map([

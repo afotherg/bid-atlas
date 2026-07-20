@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T16:50:00.000Z",
+      "updated_at": "2026-07-20T17:00:00.000Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T20:50:00.000Z"
+        "expires_at": "2026-07-20T21:00:00.000Z"
       },
       "checkpoint": {
-        "phase": "maywood_negative_audit",
-        "summary": "Confirmed no operating BID in Maywood; current assessments cover pension, sewer, and street lighting rather than business improvement.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Downey and Norwalk, California.",
+        "phase": "downey_cbd_added",
+        "summary": "Added the active Downtown Downey Community Benefit District with current parcel geometry for 112 of 113 adopted APNs.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Norwalk and Santa Fe Springs, California.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -204,7 +204,12 @@
           "https://www.cityofcudahyca.gov/466/Business-Assistance",
           "https://www.cityofmaywood.com/DocumentCenter/View/3645/Budget-FY2026-2027",
           "https://www.cityofmaywood.com/172/Assessments-Levies",
-          "https://www.cityofmaywood.com/495/Economic-Development"
+          "https://www.cityofmaywood.com/495/Economic-Development",
+          "https://www.downeyca.org/our-city/departments/community-development/downtown-community-benefit-district",
+          "https://www.downtowndowney.org/about",
+          "https://www.downeyca.org/home/showpublisheddocument/22/636976337135570000",
+          "https://www.downeyca.org/home/showpublisheddocument/24/636976337137770000",
+          "https://services3.arcgis.com/GVgbJbqm8hXASVYi/arcgis/rest/services/LA_County_Parcels/FeatureServer/0"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -240,9 +245,10 @@
           "data/sources/burbank-business-improvement-districts.geojson",
           "data/sources/glendale-business-improvement-districts.geojson",
           "data/sources/south-gate-parking-business-improvement-area.geojson",
+          "data/sources/downtown-downey-community-benefit-district.geojson",
           "data/sources.json"
         ],
-        "updated_at": "2026-07-20T16:50:00.000Z",
+        "updated_at": "2026-07-20T17:00:00.000Z",
         "stop_reason": "continuous_research"
       },
       "result": null,
