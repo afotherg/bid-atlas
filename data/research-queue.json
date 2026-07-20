@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T04:03:00.000Z",
+      "updated_at": "2026-07-20T04:08:00.000Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T08:03:00.000Z"
+        "expires_at": "2026-07-20T08:08:00.000Z"
       },
       "checkpoint": {
-        "phase": "burbank_district_integration",
-        "summary": "Integrated Burbank's two active districts: the Downtown PBID for its 2019-2028 term and the citywide Tourism BID renewed for July 2026 through June 2036; excluded the expired Magnolia Park district and its exploratory successor effort.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Pico Rivera and Glendale.",
+        "phase": "pico_rivera_negative_audit",
+        "summary": "Confirmed that Pico Rivera's proposed Whittier Boulevard BID is not yet operating: current city material still describes formation work, and the adopted April 2024 corridor plan schedules BID development as a five-plus-year Phase 3 project.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Glendale and nearby Los Angeles County cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -172,7 +172,10 @@
           "https://burbank.granicus.com/MetaViewer.php?meta_id=341174",
           "https://www.burbankca.gov/documents/d/city-clerks-office/att3-management-district-plan",
           "https://www.burbankca.gov/newsroom/-/newsdetail/20124/november-18-2025-public-hearing-adoption-of-a-resolution-declaring-results-of-majority-protest-proceedings-and-to-renew-the-burbank-tourism-business-improvement-district",
-          "https://gis.data.ca.gov/datasets/CDTFA::california-city-boundaries-and-identifiers/about"
+          "https://gis.data.ca.gov/datasets/CDTFA::california-city-boundaries-and-identifiers/about",
+          "https://www.pico-rivera.org/business-improvement-district/",
+          "https://www.pico-rivera.org/wp-content/uploads/2024/04/HWB_Multimodal-Plan_ExSum_FINAL-lowres.pdf",
+          "https://www.pico-rivera.org/wp-content/uploads/2025/01/Year-End-Accomplishment-2025-WEB-2.pdf"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -207,7 +210,7 @@
           "data/sources/whittier-uptown-improvement-districts.geojson",
           "data/sources/burbank-business-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-20T04:03:00.000Z",
+        "updated_at": "2026-07-20T04:08:00.000Z",
         "stop_reason": "continuous_research"
       },
       "result": null,
