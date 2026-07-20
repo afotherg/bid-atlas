@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T23:07:06.876Z",
-  "records": 367,
+  "generatedAt": "2026-07-20T23:08:50.901Z",
+  "records": 412,
   "states": [
     "AZ",
     "CA",
@@ -44,6 +44,7 @@
     "Glendora, CA",
     "Hartford, CT",
     "Honolulu, HI",
+    "Houston, TX",
     "Huntington Beach, CA",
     "Idaho Falls, ID",
     "Jacksonville, FL",
@@ -692,15 +693,22 @@
       "status": "ok",
       "records": 15,
       "checkedAt": "2026-07-20T23:07:06.876Z"
+    },
+    {
+      "id": "houston-management-improvement-districts",
+      "name": "Houston Management and Improvement Districts",
+      "status": "ok",
+      "records": 62,
+      "checkedAt": "2026-07-20T23:08:50.901Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 66,
-    "configuredSources": 74,
+    "verifiedJurisdictions": 67,
+    "configuredSources": 75,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 15,
+    "added": 45,
     "modified": 0,
     "removed": 0
   }

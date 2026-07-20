@@ -900,3 +900,38 @@ test("Philadelphia publishes its fifteen mandatory business improvement district
     assert.ok(latitude > 39.8 && latitude < 40.2, `${district.properties.name} is outside Philadelphia latitude`);
   }
 });
+
+test("Houston publishes forty-five normalized management and improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "houston-management-improvement-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 45);
+  for (const name of [
+    "Houston Downtown",
+    "East Downtown MD",
+    "East End MD",
+    "Midtown MD",
+    "Uptown Houston District",
+    "Westchase MD",
+    "Aldine Management District",
+    "Fort Bend County Management District No. 1",
+    "Valley Ranch Medical Center Management District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const excluded of [
+    "Montrose Management District",
+    "Proposed Memorial City",
+    "Propose Memorial Management District",
+    "FBC MUD 185 ANNEXATION",
+    "Bridgeland MUD Tract 1",
+    "Binford Houston LD",
+  ]) assert.ok(!names.has(excluded), `unexpected ${excluded}`);
+  assert.equal(districts.filter((feature) => feature.properties.name === "Uptown Houston District").length, 1);
+  assert.equal(districts.find((feature) => feature.properties.name === "Uptown Houston District")?.geometry.type, "MultiPolygon");
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Houston");
+    assert.equal(district.properties.state, "TX");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -96.5 && longitude < -94.5, `${district.properties.name} is outside the Houston region longitude`);
+    assert.ok(latitude > 28.5 && latitude < 31, `${district.properties.name} is outside the Houston region latitude`);
+  }
+});

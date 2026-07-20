@@ -2320,5 +2320,77 @@
         "expires": "2027"
       }
     }
+  },
+  {
+    "id": "houston-management-improvement-districts",
+    "name": "Houston Management and Improvement Districts",
+    "jurisdiction": "Houston, TX",
+    "state": "TX",
+    "city": "Houston",
+    "url": "https://mycity2.houstontx.gov/pubgis02/rest/services/HoustonMap/Administrative_Boundary/MapServer/4/query?where=NAME%20NOT%20LIKE%20%27Propos%25%27%20AND%20NAME%20NOT%20LIKE%20%27%25MUD%25%27%20AND%20NAME%20NOT%20LIKE%20%27%25ANNEXATION%25%27%20AND%20NAME%20%3C%3E%20%27Montrose%20Management%20District%27%20AND%20NAME%20NOT%20LIKE%20%27%25%20LD%27&outFields=NAME&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.houstontx.gov/ecodev/management_districts.html",
+    "publisher": "City of Houston",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "NAME"
+      ]
+    },
+    "overrides": {
+      "Aldine PID": {
+        "name": "Aldine Management District"
+      },
+      "Aldine North Expansion Tract1": {
+        "name": "Aldine Management District"
+      },
+      "Aldin North Expansion Tract2": {
+        "name": "Aldine Management District"
+      },
+      "Aldine North Expansion Tract3": {
+        "name": "Aldine Management District"
+      },
+      "VALLEY RANCH MEDICAL CENTER MGNT 18.437": {
+        "name": "Valley Ranch Medical Center Management District"
+      },
+      "VALLEY RANCH MEDICAL CENTER MGNT 9.895": {
+        "name": "Valley Ranch Medical Center Management District"
+      },
+      "VALLEY RANCH MEDICAL CENTER MGNT 48.344": {
+        "name": "Valley Ranch Medical Center Management District"
+      },
+      "VALLEY RANCH MEDICAL CENTER MGNT 46.796": {
+        "name": "Valley Ranch Medical Center Management District"
+      },
+      "VALLEY RANCH TOWN CENTER MANAGEMENT DIST": {
+        "name": "Valley Ranch Town Center Management District"
+      },
+      "Valley Ranch MMD Addition": {
+        "name": "Valley Ranch Town Center Management District"
+      },
+      "UPTOWN MD HCID #1": {
+        "name": "Uptown Houston District"
+      },
+      "HCID #14 TRACT 1": {
+        "name": "Harris County Improvement District No. 14"
+      },
+      "HCID #14 TRACT 2": {
+        "name": "Harris County Improvement District No. 14"
+      },
+      "East Lake Houston MD Tract 1: Lone Wolf": {
+        "name": "East Lake Houston Management District"
+      },
+      "East Lake Houston MD Tract 2: Red Wolf": {
+        "name": "East Lake Houston Management District"
+      },
+      "FB COUNTY MGMT DIST1 TRACT1": {
+        "name": "Fort Bend County Management District No. 1"
+      },
+      "FB COUNTY MGMT DIST1 TRACT2": {
+        "name": "Fort Bend County Management District No. 1"
+      },
+      "Fort Bend MMD No. 1 Addition": {
+        "name": "Fort Bend County Management District No. 1"
+      }
+    }
   }
 ]
