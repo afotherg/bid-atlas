@@ -1612,6 +1612,41 @@
     }
   },
   {
+    "id": "glendale-business-improvement-districts",
+    "name": "Glendale Business Improvement Districts",
+    "jurisdiction": "Glendale, CA",
+    "state": "CA",
+    "city": "Glendale",
+    "file": "data/sources/glendale-business-improvement-districts.geojson",
+    "landingPage": "https://www.glendaleca.gov/business/associations-chambers-of-commerce",
+    "publisher": "City of Glendale",
+    "cadence": "Annual",
+    "monitorUrls": [
+      "https://www.glendaleca.gov/business/associations-chambers-of-commerce",
+      "https://www.glendaleca.gov/government/departments/finance/revenue/montrose-business-improvement-district"
+    ],
+    "fields": {
+      "name": ["name"]
+    },
+    "overrides": {
+      "Greater Downtown Glendale Community Benefit District": {
+        "website": "https://downtownglendale.com/",
+        "established": "2018",
+        "expires": "2038",
+        "area": "Generalized from the adopted 2018 parcel map and legal description; approximately 35 downtown blocks from Colorado Street north along Brand Boulevard to Stocker Street, with wider portions between Columbus, Central, and Maryland avenues",
+        "sourceUrl": "https://www.glendaleca.gov/home/showpublisheddocument/45439/638518988668370000",
+        "reportUrl": "https://www.glendaleca.gov/business/associations-chambers-of-commerce"
+      },
+      "Montrose Business Improvement District": {
+        "website": "https://shopmontrose.com/",
+        "established": "Before 2004",
+        "area": "Generalized from the codified Montrose Shopping Park limits along Honolulu Avenue, from Sunset Avenue and 2462 Honolulu Avenue east to Verdugo Road and Montrose Avenue",
+        "sourceUrl": "https://ecode360.com/43342888",
+        "reportUrl": "https://www.glendaleca.gov/home/showpublisheddocument/81176/639016639282330000"
+      }
+    }
+  },
+  {
     "id": "monrovia-old-town-business-improvement-district",
     "name": "Monrovia Old Town Business Improvement District",
     "jurisdiction": "Monrovia, CA",

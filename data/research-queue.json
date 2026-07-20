@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T04:08:00.000Z",
+      "updated_at": "2026-07-20T04:13:00.000Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T08:08:00.000Z"
+        "expires_at": "2026-07-20T08:13:00.000Z"
       },
       "checkpoint": {
-        "phase": "pico_rivera_negative_audit",
-        "summary": "Confirmed that Pico Rivera's proposed Whittier Boulevard BID is not yet operating: current city material still describes formation work, and the adopted April 2024 corridor plan schedules BID development as a five-plus-year Phase 3 project.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Glendale and nearby Los Angeles County cities.",
+        "phase": "glendale_district_integration",
+        "summary": "Integrated Glendale's two active assessment districts: the 2018 Greater Downtown Community Benefit District and the longstanding Montrose merchant BID; excluded Adams Square because the City disestablished it in 2019.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in South Gate and nearby Los Angeles County cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -175,7 +175,12 @@
           "https://gis.data.ca.gov/datasets/CDTFA::california-city-boundaries-and-identifiers/about",
           "https://www.pico-rivera.org/business-improvement-district/",
           "https://www.pico-rivera.org/wp-content/uploads/2024/04/HWB_Multimodal-Plan_ExSum_FINAL-lowres.pdf",
-          "https://www.pico-rivera.org/wp-content/uploads/2025/01/Year-End-Accomplishment-2025-WEB-2.pdf"
+          "https://www.pico-rivera.org/wp-content/uploads/2025/01/Year-End-Accomplishment-2025-WEB-2.pdf",
+          "https://www.glendaleca.gov/business/associations-chambers-of-commerce",
+          "https://www.glendaleca.gov/home/showpublisheddocument/45439/638518988668370000",
+          "https://www.glendaleca.gov/government/departments/finance/revenue/montrose-business-improvement-district",
+          "https://www.glendaleca.gov/home/showpublisheddocument/81176/639016639282330000",
+          "https://www.ci.glendale.ca.us/government/agenda_minutes/4A201904093.pdf"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -208,9 +213,10 @@
           "data/sources/culver-city-business-improvement-districts.geojson",
           "data/sources/monrovia-old-town-business-improvement-district.geojson",
           "data/sources/whittier-uptown-improvement-districts.geojson",
-          "data/sources/burbank-business-improvement-districts.geojson"
+          "data/sources/burbank-business-improvement-districts.geojson",
+          "data/sources/glendale-business-improvement-districts.geojson"
         ],
-        "updated_at": "2026-07-20T04:08:00.000Z",
+        "updated_at": "2026-07-20T04:13:00.000Z",
         "stop_reason": "continuous_research"
       },
       "result": null,

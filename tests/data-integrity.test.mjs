@@ -269,6 +269,25 @@ test("Burbank publishes its two active business improvement districts", () => {
   }
 });
 
+test("Glendale publishes its two active business and community benefit districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "glendale-business-improvement-districts");
+  const expected = new Map([
+    ["Greater Downtown Glendale Community Benefit District", ["2018", "2038"]],
+    ["Montrose Business Improvement District", ["Before 2004", null]],
+  ]);
+  assert.equal(districts.length, 2);
+  for (const district of districts) {
+    const term = expected.get(district.properties.name);
+    assert.ok(term, `unexpected Glendale district ${district.properties.name}`);
+    assert.equal(district.properties.established, term[0]);
+    assert.equal(district.properties.expires ?? null, term[1]);
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -119 && longitude < -117);
+    assert.ok(latitude > 33 && latitude < 35);
+  }
+});
+
 test("Oakland publishes its ten current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));
