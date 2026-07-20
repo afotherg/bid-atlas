@@ -18,6 +18,15 @@
     "active_hit_definition": "At least one currently operating assessment-funded BID or locally named legal equivalent supported by an official source",
     "notes": "Candidate discovery is recorded separately from production boundary verification and ingestion."
   },
+  "pilot_summary": {
+    "cities_researched": 10,
+    "active_hits": 10,
+    "misses": 0,
+    "active_hit_rate_percent": 100,
+    "result": "Every city in the pilot had at least one officially supported active BID or local legal equivalent.",
+    "interpretation": "Population-ranked city research produced a much higher discovery yield than the earlier small-city geographic sweep and is a strong candidate-generation strategy.",
+    "limitations": "This is a deliberately targeted, non-random sample that excludes several large cities already researched by BID Atlas. The 100% hit rate should not be interpreted as the prevalence of BIDs among all U.S. cities above 100,000 population, and candidate discovery does not complete boundary verification or production ingestion."
+  },
   "records": [
     {
       "rank": 1,
