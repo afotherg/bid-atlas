@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T22:54:09.389Z",
-  "records": 343,
+  "generatedAt": "2026-07-20T22:56:07.480Z",
+  "records": 349,
   "states": [
     "CA",
     "CO",
@@ -11,6 +11,7 @@
     "HI",
     "ID",
     "MD",
+    "NC",
     "NV",
     "NY",
     "OH",
@@ -25,6 +26,7 @@
     "Boise, ID",
     "Burbank, CA",
     "Burlingame, CA",
+    "Charlotte, NC",
     "Columbus, GA",
     "Columbus, OH",
     "Costa Mesa, CA",
@@ -652,15 +654,22 @@
       "status": "ok",
       "records": 13,
       "checkedAt": "2026-07-20T22:54:09.389Z"
+    },
+    {
+      "id": "charlotte-municipal-service-districts",
+      "name": "Charlotte Municipal Service Districts",
+      "status": "ok",
+      "records": 9,
+      "checkedAt": "2026-07-20T22:56:07.480Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 61,
-    "configuredSources": 70,
+    "verifiedJurisdictions": 62,
+    "configuredSources": 71,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 13,
+    "added": 6,
     "modified": 0,
     "removed": 0
   }

@@ -817,3 +817,27 @@ test("Fort Worth publishes its thirteen mapped active public improvement distric
     assert.ok(latitude > 32 && latitude < 33.5, `${district.properties.name} is outside Fort Worth latitude`);
   }
 });
+
+test("Charlotte publishes its six active municipal service districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "charlotte-municipal-service-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 6);
+  for (const name of [
+    "Uptown Municipal Service District 1",
+    "Uptown Municipal Service District 2",
+    "Uptown Municipal Service District 3",
+    "South End Municipal Service District",
+    "University City Municipal Service District",
+    "SouthPark Municipal Service District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  assert.equal(districts.find((feature) => feature.properties.name === "Uptown Municipal Service District 1")?.geometry.type, "MultiPolygon");
+  assert.equal(districts.find((feature) => feature.properties.name === "Uptown Municipal Service District 2")?.geometry.type, "MultiPolygon");
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Charlotte");
+    assert.equal(district.properties.state, "NC");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -81 && longitude < -80.5, `${district.properties.name} is outside Charlotte longitude`);
+    assert.ok(latitude > 35 && latitude < 35.5, `${district.properties.name} is outside Charlotte latitude`);
+  }
+});

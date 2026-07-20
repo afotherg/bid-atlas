@@ -1,24 +1,17 @@
 {
-  "checkedAt": "2026-07-20T22:54:09.389Z",
+  "checkedAt": "2026-07-20T22:56:07.480Z",
   "summary": {
-    "added": 13,
+    "added": 6,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "tx-fort-worth-chapel-hill-public-improvement-district",
-    "tx-fort-worth-downtown-fort-worth-public-improvement-district",
-    "tx-fort-worth-east-lancaster-avenue-public-improvement-district",
-    "tx-fort-worth-heritage-public-improvement-district",
-    "tx-fort-worth-historic-camp-bowie-public-improvement-district",
-    "tx-fort-worth-las-vegas-trail-public-improvement-district",
-    "tx-fort-worth-park-glen-public-improvement-district",
-    "tx-fort-worth-rock-creek-ranch-public-improvement-district",
-    "tx-fort-worth-stockyards-public-improvement-district",
-    "tx-fort-worth-sun-valley-public-improvement-district",
-    "tx-fort-worth-trinity-bluff-public-improvement-district",
-    "tx-fort-worth-veale-ranch-public-improvement-district",
-    "tx-fort-worth-walsh-ranch-quail-valley-public-improvement-district"
+    "nc-charlotte-south-end-municipal-service-district",
+    "nc-charlotte-southpark-municipal-service-district",
+    "nc-charlotte-university-city-municipal-service-district",
+    "nc-charlotte-uptown-municipal-service-district-1",
+    "nc-charlotte-uptown-municipal-service-district-2",
+    "nc-charlotte-uptown-municipal-service-district-3"
   ],
   "modified": [],
   "removed": [],
@@ -594,6 +587,13 @@
       "status": "ok",
       "records": 13,
       "checkedAt": "2026-07-20T22:54:09.389Z"
+    },
+    {
+      "id": "charlotte-municipal-service-districts",
+      "name": "Charlotte Municipal Service Districts",
+      "status": "ok",
+      "records": 9,
+      "checkedAt": "2026-07-20T22:56:07.480Z"
     }
   ]
 }

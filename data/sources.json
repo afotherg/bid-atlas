@@ -2123,5 +2123,47 @@
         "established": "2023"
       }
     }
+  },
+  {
+    "id": "charlotte-municipal-service-districts",
+    "name": "Charlotte Municipal Service Districts",
+    "jurisdiction": "Charlotte, NC",
+    "state": "NC",
+    "city": "Charlotte",
+    "url": "https://meckgis.mecklenburgcountync.gov/server/rest/services/MunicipalServiceDistricts/FeatureServer/0/query?where=1%3D1&outFields=munservice&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://meckgis.mecklenburgcountync.gov/server/rest/services/MunicipalServiceDistricts/FeatureServer/0",
+    "publisher": "Mecklenburg County GIS",
+    "cadence": "As published; City budget reviewed annually",
+    "fields": {
+      "name": [
+        "munservice"
+      ]
+    },
+    "overrides": {
+      "1": {
+        "name": "Uptown Municipal Service District 1",
+        "established": "1978"
+      },
+      "2": {
+        "name": "Uptown Municipal Service District 2",
+        "established": "1984"
+      },
+      "3": {
+        "name": "Uptown Municipal Service District 3",
+        "established": "1984"
+      },
+      "4": {
+        "name": "South End Municipal Service District",
+        "established": "2000"
+      },
+      "5": {
+        "name": "University City Municipal Service District",
+        "established": "2003"
+      },
+      "6": {
+        "name": "SouthPark Municipal Service District",
+        "established": "2022"
+      }
+    }
   }
 ]
