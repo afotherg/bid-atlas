@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T17:30:00.000Z",
+      "updated_at": "2026-07-20T17:40:00.000Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T21:30:00.000Z"
+        "expires_at": "2026-07-20T21:40:00.000Z"
       },
       "checkpoint": {
-        "phase": "la_mirada_negative_audit",
-        "summary": "Confirmed no verified operating BID in La Mirada; a 2012 shopping-center BID suggestion has no located formation or current levy record.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Cerritos and Artesia, California.",
+        "phase": "cerritos_negative_audit",
+        "summary": "Confirmed no verified operating BID in Cerritos; its named commercial centers are economic and planning districts rather than assessment districts.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Artesia and Hawaiian Gardens, California.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -224,7 +224,11 @@
           "https://www.cityoflamirada.org/home/showpublisheddocument/18550",
           "https://www.cityoflamirada.org/business/la-mirada-business-news",
           "https://www.cityoflamirada.org/home/showpublisheddocument/3141/635804281735200000",
-          "https://www.cityoflamirada.org/departments/administrative-services-human-resources/budget-and-financial-reports-/city-and-successor-agency-to-the-redevelopment-agency-rops-reports-a"
+          "https://www.cityoflamirada.org/departments/administrative-services-human-resources/budget-and-financial-reports-/city-and-successor-agency-to-the-redevelopment-agency-rops-reports-a",
+          "https://www.cerritos.gov/business-development/business-support-and-perks/",
+          "https://www.cerritos.gov/business-development/business-support-and-perks/business-retention-and-expansion/",
+          "https://www.cerritos.gov/city-government/budget-and-finances/fiscal-transparency-and-sustainability/",
+          "https://www.cerritos.gov/news/posts/cerritos-city-council-adopts-fiscal-year-2026-2027-budget/"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -263,7 +267,7 @@
           "data/sources/downtown-downey-community-benefit-district.geojson",
           "data/sources.json"
         ],
-        "updated_at": "2026-07-20T17:30:00.000Z",
+        "updated_at": "2026-07-20T17:40:00.000Z",
         "stop_reason": "continuous_research"
       },
       "result": null,
