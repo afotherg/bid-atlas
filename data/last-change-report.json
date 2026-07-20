@@ -1,13 +1,12 @@
 {
-  "checkedAt": "2026-07-20T03:33:56.715Z",
+  "checkedAt": "2026-07-20T03:36:00.461Z",
   "summary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-culver-city-culver-city-arts-district-business-improvement-district",
-    "ca-culver-city-downtown-culver-city-business-improvement-district"
+    "ca-monrovia-monrovia-old-town-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -434,6 +433,15 @@
       "checkedAt": "2026-07-19T23:11:39.300Z",
       "monitorHash": "12518b9d4fe109db6d46a101162616a3671c3b13b80842b6dd45b02bda25172b",
       "legislationChanged": true
+    },
+    {
+      "id": "monrovia-old-town-business-improvement-district",
+      "name": "Monrovia Old Town Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-20T03:36:00.461Z",
+      "monitorHash": "5bc82ec5442ebbff41912a2a1b1f91d24c840d834fdb06211fc62ceb907b8259",
+      "legislationChanged": false
     },
     {
       "id": "culver-city-business-improvement-districts",

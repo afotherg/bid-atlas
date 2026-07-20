@@ -1540,6 +1540,20 @@
     }
   },
   {
+    "id": "monrovia-old-town-business-improvement-district",
+    "name": "Monrovia Old Town Business Improvement District",
+    "jurisdiction": "Monrovia, CA",
+    "state": "CA",
+    "city": "Monrovia",
+    "file": "data/sources/monrovia-old-town-business-improvement-district.geojson",
+    "landingPage": "https://www.monroviaca.gov/your-government/community-development/neighborhood-business-services/business-license",
+    "publisher": "City of Monrovia",
+    "cadence": "Annual",
+    "monitorUrls": ["https://www.monroviaca.gov/your-government/community-development/neighborhood-business-services/business-license","https://www.monroviaca.gov/your-government/boards-and-commissions/monrovia-old-town-advisory-board"],
+    "fields": {"name":["name"]},
+    "overrides": {"Monrovia Old Town Business Improvement District":{"website":"https://www.monroviaoldtown.org/","established":"1968","area":"Generalized from the current official street-boundary description; south of Foothill Boulevard, north of Olive Avenue, east of Primrose Avenue, and west of Ivy Avenue","sourceUrl":"https://www.monroviaca.gov/doing-business-here/filming","reportUrl":"https://www.monroviaca.gov/home/showpublisheddocument/37516/638845604604130000"}}
+  },
+  {
     "id": "culver-city-business-improvement-districts",
     "name": "Culver City Business Improvement Districts",
     "jurisdiction": "Culver City, CA",

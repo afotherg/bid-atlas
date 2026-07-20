@@ -223,6 +223,17 @@ test("Culver City publishes its two current business improvement districts", () 
   }
 });
 
+test("Monrovia publishes its current Old Town business improvement district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "monrovia-old-town-business-improvement-district");
+  assert.equal(districts.length, 1);
+  const [district] = districts;
+  assert.equal(district.properties.established, "1968");
+  assert.equal(district.properties.status, "Active");
+  const [longitude, latitude] = district.properties.center;
+  assert.ok(longitude > -119 && longitude < -117);
+  assert.ok(latitude > 33 && latitude < 35);
+});
+
 test("Oakland publishes its ten current business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "oakland-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

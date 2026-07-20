@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T03:33:56.715Z",
-  "records": 304,
+  "generatedAt": "2026-07-20T03:36:00.461Z",
+  "records": 305,
   "states": [
     "CA",
     "CO",
@@ -43,6 +43,7 @@
     "Merced, CA",
     "Miami Beach, FL",
     "Miami, FL",
+    "Monrovia, CA",
     "Nampa, ID",
     "Napa, CA",
     "New York, NY",
@@ -493,6 +494,15 @@
       "legislationChanged": true
     },
     {
+      "id": "monrovia-old-town-business-improvement-district",
+      "name": "Monrovia Old Town Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-20T03:36:00.461Z",
+      "monitorHash": "5bc82ec5442ebbff41912a2a1b1f91d24c840d834fdb06211fc62ceb907b8259",
+      "legislationChanged": false
+    },
+    {
       "id": "culver-city-business-improvement-districts",
       "name": "Culver City Business Improvement Districts",
       "status": "ok",
@@ -557,12 +567,12 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 51,
-    "configuredSources": 60,
+    "verifiedJurisdictions": 52,
+    "configuredSources": 61,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }
