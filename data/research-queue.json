@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T17:40:00.000Z",
+      "updated_at": "2026-07-20T17:50:00.000Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T21:40:00.000Z"
+        "expires_at": "2026-07-20T21:50:00.000Z"
       },
       "checkpoint": {
-        "phase": "cerritos_negative_audit",
-        "summary": "Confirmed no verified operating BID in Cerritos; its named commercial centers are economic and planning districts rather than assessment districts.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Artesia and Hawaiian Gardens, California.",
+        "phase": "artesia_bid_formation_pending",
+        "summary": "Confirmed Artesia's Downtown BID remains a formation effort with no adopted assessment structure, final boundary, or current levy.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; monitor Artesia BID formation and audit active districts in Hawaiian Gardens and Buena Park, California.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -228,7 +228,12 @@
           "https://www.cerritos.gov/business-development/business-support-and-perks/",
           "https://www.cerritos.gov/business-development/business-support-and-perks/business-retention-and-expansion/",
           "https://www.cerritos.gov/city-government/budget-and-finances/fiscal-transparency-and-sustainability/",
-          "https://www.cerritos.gov/news/posts/cerritos-city-council-adopts-fiscal-year-2026-2027-budget/"
+          "https://www.cerritos.gov/news/posts/cerritos-city-council-adopts-fiscal-year-2026-2027-budget/",
+          "https://www.cityofartesia.us/bids.aspx?bidID=46",
+          "https://www.cityofartesia.us/DocumentCenter/View/8544/CITY-OF-ARTESIA-RESPONSE-TO-QUESTIONS-NO-1",
+          "https://www.cityofartesia.us/DocumentCenter/View/8548",
+          "https://www.cityofartesia.us/DocumentCenter/View/8848/April-13-2026-City-Council-Meeting-Summary",
+          "https://www.cityofartesia.us/387/Economic-Development"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -267,7 +272,7 @@
           "data/sources/downtown-downey-community-benefit-district.geojson",
           "data/sources.json"
         ],
-        "updated_at": "2026-07-20T17:40:00.000Z",
+        "updated_at": "2026-07-20T17:50:00.000Z",
         "stop_reason": "continuous_research"
       },
       "result": null,
