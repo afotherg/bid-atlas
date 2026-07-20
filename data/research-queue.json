@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T16:00:00.000Z",
+      "updated_at": "2026-07-20T16:10:00.000Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T20:00:00.000Z"
+        "expires_at": "2026-07-20T20:10:00.000Z"
       },
       "checkpoint": {
-        "phase": "paramount_negative_audit",
-        "summary": "Confirmed Paramount's BID remains in formation planning: current budgets fund creation work and the adopted North Paramount plan still calls for determining business interest.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Lakewood and nearby Los Angeles County cities.",
+        "phase": "lakewood_negative_audit",
+        "summary": "Confirmed no operating BID in Lakewood, California; similarly named Alameda Corridor and West Colfax districts belong to Lakewood, Colorado.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Bell Gardens and nearby Los Angeles County cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -190,7 +190,9 @@
           "https://lynwoodca.gov/AgendaCenter/ViewFile/Agenda/_10212025-366",
           "https://www.paramountcity.gov/wp-content/uploads/2024/10/FY-2025-Adopted-Budget-Fi_compressed.pdf",
           "https://www.paramountcity.gov/wp-content/uploads/2025/06/FY2025-26-Adopted-Budget-v4-FINAL-website.pdf",
-          "https://www.paramountcity.gov/wp-content/uploads/2024/09/NorthParamountGatewaySpeci.pdf"
+          "https://www.paramountcity.gov/wp-content/uploads/2024/09/NorthParamountGatewaySpeci.pdf",
+          "https://www.lakewoodca.gov/Business",
+          "https://www.lakewoodcity.org/files/assets/public/v/4/government/citydocs/budget/lakewood-budget-fy-2024-2026.pdf"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -228,7 +230,7 @@
           "data/sources/south-gate-parking-business-improvement-area.geojson",
           "data/sources.json"
         ],
-        "updated_at": "2026-07-20T16:00:00.000Z",
+        "updated_at": "2026-07-20T16:10:00.000Z",
         "stop_reason": "continuous_research"
       },
       "result": null,
