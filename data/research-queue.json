@@ -22,9 +22,9 @@
         "expires_at": "2026-07-20T08:23:00.000Z"
       },
       "checkpoint": {
-        "phase": "compton_negative_audit",
-        "summary": "Confirmed no operating Compton BID: the municipal code supplies a formation procedure, while the current Downtown specific plan describes a PBID only as a future implementation strategy.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Lynwood and nearby Los Angeles County cities.",
+        "phase": "lynwood_district_integration",
+        "summary": "Integrated Lynwood's citywide Parking and Business Improvement District, established in 1985 and renewed through the FY2025-27 assessment spending plan.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Paramount and nearby Los Angeles County cities.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -186,7 +186,8 @@
           "https://www.cityofsouthgate.org/files/sharedassets/public/v/1/business-amp-development/documents/parking-and-business-improvement-map_final.pdf",
           "https://ecode360.com/35621248",
           "https://www.comptoncity.org/home/showpublisheddocument/12764/638905835910230000",
-          "https://www.comptoncity.org/departments/community-development/economic-services"
+          "https://www.comptoncity.org/departments/community-development/economic-services",
+          "https://lynwoodca.gov/AgendaCenter/ViewFile/Agenda/_10212025-366"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -221,7 +222,8 @@
           "data/sources/whittier-uptown-improvement-districts.geojson",
           "data/sources/burbank-business-improvement-districts.geojson",
           "data/sources/glendale-business-improvement-districts.geojson",
-          "data/sources/south-gate-parking-business-improvement-area.geojson"
+          "data/sources/south-gate-parking-business-improvement-area.geojson",
+          "data/sources.json"
         ],
         "updated_at": "2026-07-20T04:23:00.000Z",
         "stop_reason": "continuous_research"

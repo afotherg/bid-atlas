@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-20T04:06:42.749Z",
+  "checkedAt": "2026-07-20T04:08:50.676Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-south-gate-tweedy-mile-parking-and-business-improvement-area"
+    "ca-lynwood-lynwood-parking-and-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -468,6 +468,15 @@
       "records": 1,
       "checkedAt": "2026-07-20T04:06:42.749Z",
       "monitorHash": "30e2f10feafefa14aef94a4851feee2869545ad5dc0850dabc7379a54fbc33f9",
+      "legislationChanged": false
+    },
+    {
+      "id": "lynwood-parking-business-improvement-district",
+      "name": "Lynwood Parking and Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-20T04:08:50.676Z",
+      "monitorHash": "3674c90aa0128acd7dd9893e37e9c843f7ade6d0a23200757516c1be4d38a27a",
       "legislationChanged": false
     },
     {

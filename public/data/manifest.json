@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T04:06:42.749Z",
-  "records": 312,
+  "generatedAt": "2026-07-20T04:08:50.676Z",
+  "records": 313,
   "states": [
     "CA",
     "CO",
@@ -40,6 +40,7 @@
     "Laguna Beach, CA",
     "Long Beach, CA",
     "Los Angeles, CA",
+    "Lynwood, CA",
     "Macon, GA",
     "Manhattan Beach, CA",
     "Merced, CA",
@@ -534,6 +535,15 @@
       "legislationChanged": false
     },
     {
+      "id": "lynwood-parking-business-improvement-district",
+      "name": "Lynwood Parking and Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-20T04:08:50.676Z",
+      "monitorHash": "3674c90aa0128acd7dd9893e37e9c843f7ade6d0a23200757516c1be4d38a27a",
+      "legislationChanged": false
+    },
+    {
       "id": "monrovia-old-town-business-improvement-district",
       "name": "Monrovia Old Town Business Improvement District",
       "status": "review",
@@ -607,8 +617,8 @@
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 56,
-    "configuredSources": 65,
+    "verifiedJurisdictions": 57,
+    "configuredSources": 66,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

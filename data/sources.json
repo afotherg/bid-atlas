@@ -1673,6 +1673,29 @@
     }
   },
   {
+    "id": "lynwood-parking-business-improvement-district",
+    "name": "Lynwood Parking and Business Improvement District",
+    "jurisdiction": "Lynwood, CA",
+    "state": "CA",
+    "city": "Lynwood",
+    "url": "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_Cities_and_Identifiers_Blue_Version_view/FeatureServer/2/query?where=CDTFA_CITY%3D%27Lynwood%27&outFields=CDTFA_CITY&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://lynwoodca.gov/AgendaCenter/ViewFile/Agenda/_10212025-366",
+    "publisher": "California Department of Tax and Fee Administration",
+    "cadence": "Annual",
+    "fixedName": "Lynwood Parking and Business Improvement District",
+    "monitorUrls": ["https://lynwoodca.gov/AgendaCenter/ViewFile/Agenda/_10212025-366"],
+    "fields": {"name": []},
+    "overrides": {
+      "Lynwood Parking and Business Improvement District": {
+        "website": "https://www.lynwoodca.gov/172/Economic-Development",
+        "established": "1985",
+        "area": "Exact official California municipal boundary; Ordinance 1262 defines the assessment area as all territory within the City of Lynwood",
+        "sourceUrl": "https://gis.data.ca.gov/datasets/CDTFA::california-city-boundaries-and-identifiers/about",
+        "reportUrl": "https://lynwoodca.gov/AgendaCenter/ViewFile/Agenda/_10212025-366"
+      }
+    }
+  },
+  {
     "id": "monrovia-old-town-business-improvement-district",
     "name": "Monrovia Old Town Business Improvement District",
     "jurisdiction": "Monrovia, CA",
