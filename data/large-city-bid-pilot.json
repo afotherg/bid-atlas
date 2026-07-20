@@ -50,6 +50,22 @@
         "https://www.phoenix.gov/content/dam/phoenix/cityclerksite/city-council-meeting-files/2025/11-5-25%20Formal%20Results-FINAL.pdf"
       ],
       "production_next_action": "Obtain the adopted 2026 assessment diagram as GIS or digitize its official boundary for production ingestion."
+    },
+    {
+      "rank": 3,
+      "city": "Philadelphia",
+      "state": "PA",
+      "population_2025": 1574281,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Business Improvement District / Neighborhood Improvement District / Special Services District",
+      "summary": "Philadelphia's official March 2025 BID guide identifies 15 current districts funded by mandatory property assessments. Two voluntary service districts listed separately in the guide are not counted as BIDs, and two disbanded special services districts are excluded.",
+      "official_sources": [
+        "https://www.phila.gov/documents/how-to-start-a-business-improvement-district-in-philadelphia-guide/",
+        "https://www.phila.gov/media/20250321135001/How-To-Start-a-Business-Improvement-District-in-Philadelphia-Second-Edition.pdf",
+        "https://www.phila.gov/departments/department-of-commerce/for-community-organizations/community-organization-support/"
+      ],
+      "production_next_action": "Extract or obtain authoritative boundaries for the 15 current mandatory-assessment districts and verify each district's current authorization term before ingestion."
     }
   ]
 }
