@@ -2392,5 +2392,44 @@
         "name": "Fort Bend County Management District No. 1"
       }
     }
+  },
+  {
+    "id": "austin-maintenance-operations-public-improvement-districts",
+    "name": "Austin Maintenance and Operations Public Improvement Districts",
+    "jurisdiction": "Austin, TX",
+    "state": "TX",
+    "city": "Austin",
+    "file": "data/sources/austin-maintenance-operations-public-improvement-districts.geojson",
+    "landingPage": "https://www.austintexas.gov/financial-services/public-improvement-districts",
+    "publisher": "City of Austin",
+    "cadence": "Annual; generalized boundaries reviewed with each service and assessment plan",
+    "monitorUrls": [
+      "https://www.austintexas.gov/financial-services/austin-downtown-public-improvement-district",
+      "https://www.austintexas.gov/financial-services/east-sixth-street-public-improvement-district",
+      "https://www.austintexas.gov/economic-development/south-congress-public-improvement-district"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
   }
 ]

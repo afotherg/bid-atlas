@@ -1,0 +1,70 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Austin Downtown Public Improvement District",
+        "website": "https://downtownaustin.com/",
+        "sourceUrl": "https://www.austintexas.gov/financial-services/austin-downtown-public-improvement-district",
+        "established": "1993; reauthorized 2022",
+        "expires": "2032",
+        "area": "Generalized boundary digitized from the City of Austin DPID boundary map; includes the April 2026 expansion parcel",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-97.7456, 30.2792], [-97.7274, 30.2751], [-97.7290, 30.2692],
+          [-97.7316, 30.2631], [-97.7349, 30.2566], [-97.7371, 30.2576],
+          [-97.7384, 30.2540], [-97.7401, 30.2554], [-97.7424, 30.2519],
+          [-97.7465, 30.2557], [-97.7502, 30.2587], [-97.7535, 30.2575],
+          [-97.7555, 30.2609], [-97.7529, 30.2630], [-97.7532, 30.2652],
+          [-97.7506, 30.2657], [-97.7494, 30.2698], [-97.7475, 30.2694],
+          [-97.7456, 30.2792]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "East 6th Street Public Improvement District",
+        "website": "https://6street.com/",
+        "sourceUrl": "https://www.austintexas.gov/financial-services/east-sixth-street-public-improvement-district",
+        "established": "2004; reauthorized 2024",
+        "expires": "2029",
+        "area": "Generalized boundary digitized from the City of Austin East 6th Street PID map; Congress Avenue to I-35, roughly 5th Street to 7th Street",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-97.7430, 30.2665], [-97.7356, 30.2638], [-97.7343, 30.2668],
+          [-97.7418, 30.2696], [-97.7430, 30.2665]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South Congress Preservation and Improvement District",
+        "website": "https://www.southcongress.org/",
+        "sourceUrl": "https://www.austintexas.gov/economic-development/south-congress-public-improvement-district",
+        "established": "2014; reauthorized 2024",
+        "expires": "2029",
+        "area": "Generalized boundary digitized from the City of Austin South Congress PID map; South Congress Avenue corridor from Nellie Street to Annie Street",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-97.7516, 30.2521], [-97.7488, 30.2515], [-97.7496, 30.2490],
+          [-97.7501, 30.2473], [-97.7517, 30.2475], [-97.7523, 30.2450],
+          [-97.7536, 30.2452], [-97.7540, 30.2420], [-97.7565, 30.2425],
+          [-97.7557, 30.2460], [-97.7546, 30.2492], [-97.7528, 30.2515],
+          [-97.7516, 30.2521]
+        ]]
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T23:08:50.901Z",
-  "records": 412,
+  "generatedAt": "2026-07-20T23:12:13.990Z",
+  "records": 415,
   "states": [
     "AZ",
     "CA",
@@ -23,6 +23,7 @@
   "cities": [
     "Anaheim, CA",
     "Apple Valley, CA",
+    "Austin, TX",
     "Baltimore, MD",
     "Berkeley, CA",
     "Boise, ID",
@@ -700,15 +701,24 @@
       "status": "ok",
       "records": 62,
       "checkedAt": "2026-07-20T23:08:50.901Z"
+    },
+    {
+      "id": "austin-maintenance-operations-public-improvement-districts",
+      "name": "Austin Maintenance and Operations Public Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-20T23:12:13.990Z",
+      "monitorHash": "14065099f0a4b4e8384b44dff983ced903faa230b070ee11b724a85c54ef5bde",
+      "legislationChanged": false
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 67,
-    "configuredSources": 75,
+    "verifiedJurisdictions": 68,
+    "configuredSources": 76,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 45,
+    "added": 3,
     "modified": 0,
     "removed": 0
   }
