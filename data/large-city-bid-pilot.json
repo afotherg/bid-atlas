@@ -99,6 +99,22 @@
         "https://www.dallasecodev.org/DocumentCenter/View/2046/City-of-Dallas-Public-Improvement-Districts-Map-PDF"
       ],
       "production_next_action": "Locate the GIS service behind the City's interactive PID map or extract the authoritative boundaries for the 15 active districts, then attach the adopted 2026 assessment metadata."
+    },
+    {
+      "rank": 6,
+      "city": "Fort Worth",
+      "state": "TX",
+      "population_2025": 1028117,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Public Improvement District",
+      "summary": "Fort Worth's official program page lists 14 current assessment-funded PIDs. The roster includes BID-style operating districts such as Downtown, Stockyards, Historic Camp Bowie, and East Lancaster as well as tourism, residential-service, and capital-infrastructure districts; the Downtown PID currently funds enhanced maintenance, ambassadors, safety, planning, and marketing.",
+      "official_sources": [
+        "https://www.fortworthtexas.gov/departments/the-fwlab/pid",
+        "https://www.fortworthtexas.gov/departments/the-fwlab/pid/PID-1-Downtown",
+        "https://gisapps.fortworthtexas.gov/Geocortex/Essentials/REST/sites/FW_GIS_Data/map"
+      ],
+      "production_next_action": "Query the City's PID Boundaries GIS layer, reconcile its features to the 14-district current roster, and classify operating-service districts separately from capital and tourism PIDs before ingestion."
     }
   ]
 }
