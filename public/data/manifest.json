@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T23:03:46.115Z",
-  "records": 352,
+  "generatedAt": "2026-07-20T23:07:06.876Z",
+  "records": 367,
   "states": [
     "AZ",
     "CA",
@@ -16,6 +16,7 @@
     "NV",
     "NY",
     "OH",
+    "PA",
     "TX",
     "WA"
   ],
@@ -65,6 +66,7 @@
     "Ontario, CA",
     "Palm Springs, CA",
     "Pasadena, CA",
+    "Philadelphia, PA",
     "Phoenix, AZ",
     "Pomona, CA",
     "Redwood City, CA",
@@ -683,15 +685,22 @@
       "checkedAt": "2026-07-20T23:03:46.115Z",
       "monitorHash": "2261f0995441fa05a15e8294e808fb55b7c9b6c5444768b904f1be9a202283ea",
       "legislationChanged": false
+    },
+    {
+      "id": "philadelphia-business-improvement-districts",
+      "name": "Philadelphia Business Improvement Districts",
+      "status": "ok",
+      "records": 15,
+      "checkedAt": "2026-07-20T23:07:06.876Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 65,
-    "configuredSources": 73,
+    "verifiedJurisdictions": 66,
+    "configuredSources": 74,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 15,
     "modified": 0,
     "removed": 0
   }

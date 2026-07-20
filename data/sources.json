@@ -2236,5 +2236,89 @@
         "status"
       ]
     }
+  },
+  {
+    "id": "philadelphia-business-improvement-districts",
+    "name": "Philadelphia Business Improvement Districts",
+    "jurisdiction": "Philadelphia, PA",
+    "state": "PA",
+    "city": "Philadelphia",
+    "url": "https://services.arcgis.com/fLeGjb7u4uXqeF9q/arcgis/rest/services/business_improvement_districts/FeatureServer/0/query?where=bill_number%20IS%20NOT%20NULL&outFields=organization%2Cbill_number%2Cexpiration_date%2Cordination&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://opendataphilly.org/datasets/business-improvement-districts/",
+    "publisher": "City of Philadelphia Department of Commerce",
+    "cadence": "As published; renewal legislation reviewed annually",
+    "fields": {
+      "name": [
+        "organization"
+      ],
+      "sourceUrl": [
+        "ordination"
+      ]
+    },
+    "overrides": {
+      "ARAMINGO SHOPPING DISTRICT": {
+        "name": "Aramingo Shopping District",
+        "expires": "2028"
+      },
+      "CENTER CITY DISTRICT": {
+        "name": "Center City District",
+        "expires": "2027"
+      },
+      "CHESTNUT HILL BUSINESS IMPROVEMENT DISTRICT": {
+        "name": "Chestnut Hill Business Improvement District",
+        "expires": "2034"
+      },
+      "CITY AVENUE SPECIAL SERVICES DISTRICT": {
+        "name": "City Avenue Special Services District",
+        "expires": "2033"
+      },
+      "EAST PASSYUNK BUSINESS IMPROVEMENT DISTRICT": {
+        "name": "East Passyunk Avenue Business Improvement District",
+        "expires": "2029",
+        "sourceUrl": "https://phila.legistar.com/LegislationDetail.aspx?GUID=870E0C3A-7018-4F1D-A5A3-D8BCB31AA437&ID=6658961"
+      },
+      "FISHTOWN KENSINGTON AREA BUSINESS IMPROVEMENT DISTRICT": {
+        "name": "Fishtown Kensington Area Business Improvement District",
+        "expires": "2029",
+        "sourceUrl": "https://phila.legistar.com/LegislationDetail.aspx?GUID=5CA98499-8197-4AC9-BD2B-7D4BFE365F76&ID=6726630"
+      },
+      "MANAYUNK SPECIAL SERVICES DISTRICT": {
+        "name": "Manayunk Special Services District",
+        "expires": "2032"
+      },
+      "MAYFAIR BUSINESS IMPROVEMENT DISTRICT": {
+        "name": "Mayfair Business Improvement District",
+        "expires": "2035",
+        "sourceUrl": "https://phila.legistar.com/LegislationDetail.aspx?GUID=4D49C9A9-8532-4B24-9903-FE0E2BDF5B0B&ID=7402033"
+      },
+      "MT. AIRY BUSINESS IMPROVEMENT DISTRICT": {
+        "name": "Mt. Airy Business Improvement District",
+        "expires": "2027"
+      },
+      "NORTH BROAD BUSINESS IMPROVEMENT DISTRICT": {
+        "name": "North Broad Business Improvement District",
+        "expires": "2028"
+      },
+      "NORTHERN LIBERTIES BUSINESS IMPROVEMENTDISTRICT": {
+        "name": "Northern Liberties Business Improvement District",
+        "expires": "2028"
+      },
+      "OLD CITY DISTRICT": {
+        "name": "Old City District",
+        "expires": "2028"
+      },
+      "PORT RICHMOND INDUSTRIAL DEVELOPMENT ENTERPRISE": {
+        "name": "Port Richmond Industrial Development Enterprise",
+        "expires": "2027"
+      },
+      "ROXBOROUGH DEVELOPMENT CORPORATION": {
+        "name": "Roxborough Development Corporation",
+        "expires": "2033"
+      },
+      "SOUTH ST/HEADHOUSE DISTRICT": {
+        "name": "South Street Headhouse District",
+        "expires": "2027"
+      }
+    }
   }
 ]

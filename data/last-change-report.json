@@ -1,12 +1,26 @@
 {
-  "checkedAt": "2026-07-20T23:03:46.115Z",
+  "checkedAt": "2026-07-20T23:07:06.876Z",
   "summary": {
-    "added": 1,
+    "added": 15,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "tx-san-antonio-san-antonio-downtown-public-improvement-district"
+    "pa-philadelphia-aramingo-shopping-district",
+    "pa-philadelphia-center-city-district",
+    "pa-philadelphia-chestnut-hill-business-improvement-district",
+    "pa-philadelphia-city-avenue-special-services-district",
+    "pa-philadelphia-east-passyunk-avenue-business-improvement-district",
+    "pa-philadelphia-fishtown-kensington-area-business-improvement-district",
+    "pa-philadelphia-manayunk-special-services-district",
+    "pa-philadelphia-mayfair-business-improvement-district",
+    "pa-philadelphia-mt-airy-business-improvement-district",
+    "pa-philadelphia-north-broad-business-improvement-district",
+    "pa-philadelphia-northern-liberties-business-improvement-district",
+    "pa-philadelphia-old-city-district",
+    "pa-philadelphia-port-richmond-industrial-development-enterprise",
+    "pa-philadelphia-roxborough-development-corporation",
+    "pa-philadelphia-south-street-headhouse-district"
   ],
   "modified": [],
   "removed": [],
@@ -607,6 +621,13 @@
       "checkedAt": "2026-07-20T23:03:46.115Z",
       "monitorHash": "2261f0995441fa05a15e8294e808fb55b7c9b6c5444768b904f1be9a202283ea",
       "legislationChanged": false
+    },
+    {
+      "id": "philadelphia-business-improvement-districts",
+      "name": "Philadelphia Business Improvement Districts",
+      "status": "ok",
+      "records": 15,
+      "checkedAt": "2026-07-20T23:07:06.876Z"
     }
   ]
 }

@@ -872,3 +872,31 @@ test("San Antonio publishes its reauthorized downtown public improvement distric
   assert.ok(longitude > -98.6 && longitude < -98.4, "San Antonio PID is outside San Antonio longitude");
   assert.ok(latitude > 29.3 && latitude < 29.5, "San Antonio PID is outside San Antonio latitude");
 });
+
+test("Philadelphia publishes its fifteen mandatory business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "philadelphia-business-improvement-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 15);
+  for (const name of [
+    "Center City District",
+    "East Passyunk Avenue Business Improvement District",
+    "Fishtown Kensington Area Business Improvement District",
+    "Mayfair Business Improvement District",
+    "North Broad Business Improvement District",
+    "Northern Liberties Business Improvement District",
+    "South Street Headhouse District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  assert.ok(!names.has("University City District"));
+  assert.ok(!names.has("Sports Complex Special Services District"));
+  assert.equal(districts.find((feature) => feature.properties.name === "East Passyunk Avenue Business Improvement District")?.properties.expires, "2029");
+  assert.equal(districts.find((feature) => feature.properties.name === "Fishtown Kensington Area Business Improvement District")?.properties.expires, "2029");
+  assert.equal(districts.find((feature) => feature.properties.name === "Mayfair Business Improvement District")?.properties.expires, "2035");
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Philadelphia");
+    assert.equal(district.properties.state, "PA");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -75.4 && longitude < -74.9, `${district.properties.name} is outside Philadelphia longitude`);
+    assert.ok(latitude > 39.8 && latitude < 40.2, `${district.properties.name} is outside Philadelphia latitude`);
+  }
+});
