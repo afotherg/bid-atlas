@@ -115,6 +115,22 @@
         "https://gisapps.fortworthtexas.gov/Geocortex/Essentials/REST/sites/FW_GIS_Data/map"
       ],
       "production_next_action": "Query the City's PID Boundaries GIS layer, reconcile its features to the 14-district current roster, and classify operating-service districts separately from capital and tourism PIDs before ingestion."
+    },
+    {
+      "rank": 7,
+      "city": "Jacksonville",
+      "state": "FL",
+      "population_2025": 1017689,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Business Improvement District",
+      "summary": "Downtown Vision administers Jacksonville's 1.3-square-mile Downtown BID. The Downtown Investment Authority's approved FY2025-2026 budget documents a 1.1-mill assessment on non-exempt commercial and residential property, producing approximately $2.116 million for clean-and-safe, marketing, placemaking, and stakeholder services.",
+      "official_sources": [
+        "https://dia.jacksonville.gov/cms/getattachment/f06685e1-fe8d-4104-8b22-62c750021fc7/RESOLUTION-2025-04-15_DVI-BUDGET",
+        "https://dia.jacksonville.gov/cms/getattachment/a86c7476-6565-4ad6-b413-3c33402dab83/20250411_DIA-Finance-Budget-Committee-Meeting-Agen",
+        "https://dia.jacksonville.gov/news"
+      ],
+      "production_next_action": "Retrieve the current legal boundary adopted under Ordinance 1999-1175-E, check for subsequent amendments, and obtain or digitize its geometry for production ingestion."
     }
   ]
 }
