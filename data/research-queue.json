@@ -15,16 +15,16 @@
       "status": "in_progress",
       "attempts": 27,
       "created_at": "2026-07-19T03:08:20.879Z",
-      "updated_at": "2026-07-20T16:30:00.000Z",
+      "updated_at": "2026-07-20T16:40:00.000Z",
       "lease": {
         "worker": "codex-main",
         "claimed_at": "2026-07-19T22:50:10.958Z",
-        "expires_at": "2026-07-20T20:30:00.000Z"
+        "expires_at": "2026-07-20T20:40:00.000Z"
       },
       "checkpoint": {
-        "phase": "bell_negative_audit",
-        "summary": "Confirmed no operating BID in Bell; the Cheli benefit assessment district remains a General Plan consideration rather than a formed district.",
-        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Cudahy and Maywood, California.",
+        "phase": "cudahy_negative_audit",
+        "summary": "Confirmed no operating BID in Cudahy; current programs are direct assistance, zoning, licensing, and chamber coordination rather than an assessment district.",
+        "next_action": "Request a public export of the Long Beach Tourism BIA layer; audit active districts in Maywood and Downey, California.",
         "evidence_urls": [
           "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=SHC&sectionNum=36614.5",
           "https://data.sfgov.org/d/c28a-f6gs",
@@ -198,7 +198,10 @@
           "https://www.bellgardens.org/home/showpublisheddocument/11365/639172096311970000",
           "https://www.cityofbell.gov/City-Hall/Community-Development/Economic-Development",
           "https://www.cityofbell.gov/files/assets/city/v/2/june-25-adopted_budget-book-st-10.06.25.pdf",
-          "https://www.cityofbell.gov/files/assets/city/v/1/community-development/documents/planning/adopted-general-plan-2030.pdf"
+          "https://www.cityofbell.gov/files/assets/city/v/1/community-development/documents/planning/adopted-general-plan-2030.pdf",
+          "https://www.cityofcudahyca.gov/DocumentCenter/View/2468",
+          "https://www.cityofcudahyca.gov/465/Economic-Development",
+          "https://www.cityofcudahyca.gov/466/Business-Assistance"
         ],
         "artifact_paths": [
           "data/state-audit.csv",
@@ -236,7 +239,7 @@
           "data/sources/south-gate-parking-business-improvement-area.geojson",
           "data/sources.json"
         ],
-        "updated_at": "2026-07-20T16:30:00.000Z",
+        "updated_at": "2026-07-20T16:40:00.000Z",
         "stop_reason": "continuous_research"
       },
       "result": null,
