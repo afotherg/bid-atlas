@@ -767,3 +767,29 @@ test("Columbus publishes its two currently verified special improvement district
     assert.ok(latitude > 39 && latitude < 41, `${district.properties.name} is outside Columbus latitude`);
   }
 });
+
+test("Dallas publishes its fourteen mapped active public improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "dallas-public-improvement-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 14);
+  for (const name of [
+    "Dallas Downtown Improvement District",
+    "Deep Ellum Public Improvement District",
+    "Far East Dallas Public Improvement District",
+    "Klyde Warren Park / Dallas Arts District Public Improvement District",
+    "Midtown Improvement District",
+    "South Side Public Improvement District",
+    "Uptown Public Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  assert.ok(!names.has("South Dallas-Fair Park (Expired 12/2023)"));
+  assert.equal(districts.filter((feature) => feature.properties.name === "Midtown Improvement District").length, 1);
+  assert.equal(districts.filter((feature) => feature.properties.name === "South Side Public Improvement District").length, 1);
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Dallas");
+    assert.equal(district.properties.state, "TX");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -97 && longitude < -96, `${district.properties.name} is outside Dallas longitude`);
+    assert.ok(latitude > 32 && latitude < 34, `${district.properties.name} is outside Dallas latitude`);
+  }
+});

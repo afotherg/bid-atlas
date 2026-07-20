@@ -1963,5 +1963,89 @@
         "reportUrl": "https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2025/bulletin20250607.pdf"
       }
     }
+  },
+  {
+    "id": "dallas-public-improvement-districts",
+    "name": "Dallas Public Improvement Districts",
+    "jurisdiction": "Dallas, TX",
+    "state": "TX",
+    "city": "Dallas",
+    "url": "https://services2.arcgis.com/rwnOSbfKSwyTBcwN/arcgis/rest/services/EconomicDevelopment/FeatureServer/2/query?where=Name%20%3C%3E%20%27South%20Dallas-Fair%20Park%20(Expired%2012%2F2023)%27&outFields=Name%2CDate_Exp%2CAcres&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.dallasecodev.org/245/Public-Improvement-Districts",
+    "publisher": "City of Dallas Office of Economic Development",
+    "cadence": "Annual / as published",
+    "fields": {
+      "name": [
+        "Name"
+      ]
+    },
+    "overrides": {
+      "Dallas DID": {
+        "name": "Dallas Downtown Improvement District",
+        "expires": "2027"
+      },
+      "Deep Ellum": {
+        "name": "Deep Ellum Public Improvement District",
+        "expires": "2035"
+      },
+      "Far East Dallas PID": {
+        "name": "Far East Dallas Public Improvement District",
+        "established": "2025",
+        "expires": "2032"
+      },
+      "Klyde Warren/DAD PID": {
+        "name": "Klyde Warren Park / Dallas Arts District Public Improvement District",
+        "expires": "2035"
+      },
+      "Knox Street": {
+        "name": "Knox Street Public Improvement District",
+        "expires": "2032"
+      },
+      "Lake Highlands PID": {
+        "name": "Lake Highlands Public Improvement District",
+        "expires": "2032"
+      },
+      "Midtown PID-Premium": {
+        "name": "Midtown Improvement District",
+        "expires": "2032"
+      },
+      "Midtown PID-Standard": {
+        "name": "Midtown Improvement District",
+        "expires": "2032"
+      },
+      "North Lake Highlands": {
+        "name": "North Lake Highlands Public Improvement District",
+        "expires": "2034"
+      },
+      "Oak Lawn-Hi Line PID": {
+        "name": "Oak Lawn-Hi Line Public Improvement District",
+        "expires": "2033"
+      },
+      "Prestonwood PID": {
+        "name": "Prestonwood Public Improvement District",
+        "expires": "2034"
+      },
+      "RedBird PID": {
+        "name": "RedBird Public Improvement District",
+        "established": "2025",
+        "expires": "2035"
+      },
+      "South Side PID - Premium": {
+        "name": "South Side Public Improvement District",
+        "expires": "2026"
+      },
+      "South Side PID - Standard": {
+        "name": "South Side Public Improvement District",
+        "expires": "2026"
+      },
+      "University Crossing PID": {
+        "name": "University Crossing Public Improvement District",
+        "expires": "2027"
+      },
+      "Uptown PID": {
+        "name": "Uptown Public Improvement District",
+        "expires": "2026"
+      }
+    }
   }
 ]

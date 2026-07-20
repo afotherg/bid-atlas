@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-20T22:47:09.194Z",
-  "records": 316,
+  "generatedAt": "2026-07-20T22:51:46.062Z",
+  "records": 330,
   "states": [
     "CA",
     "CO",
@@ -14,6 +14,7 @@
     "NV",
     "NY",
     "OH",
+    "TX",
     "WA"
   ],
   "cities": [
@@ -28,6 +29,7 @@
     "Columbus, OH",
     "Costa Mesa, CA",
     "Culver City, CA",
+    "Dallas, TX",
     "Dana Point, CA",
     "Denver, CO",
     "Downey, CA",
@@ -635,15 +637,22 @@
       "checkedAt": "2026-07-20T22:47:09.194Z",
       "monitorHash": "adae8f3976061728b53c00119a4c6a95af246411888a73383569adb8228b39ec",
       "legislationChanged": false
+    },
+    {
+      "id": "dallas-public-improvement-districts",
+      "name": "Dallas Public Improvement Districts",
+      "status": "ok",
+      "records": 16,
+      "checkedAt": "2026-07-20T22:51:46.062Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 59,
-    "configuredSources": 68,
+    "verifiedJurisdictions": 60,
+    "configuredSources": 69,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 14,
     "modified": 0,
     "removed": 0
   }

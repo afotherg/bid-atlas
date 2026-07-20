@@ -1,13 +1,25 @@
 {
-  "checkedAt": "2026-07-20T22:47:09.194Z",
+  "checkedAt": "2026-07-20T22:51:46.062Z",
   "summary": {
-    "added": 2,
+    "added": 14,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "oh-columbus-east-main-street-special-improvement-district",
-    "oh-columbus-university-district-special-improvement-district"
+    "tx-dallas-dallas-downtown-improvement-district",
+    "tx-dallas-deep-ellum-public-improvement-district",
+    "tx-dallas-far-east-dallas-public-improvement-district",
+    "tx-dallas-klyde-warren-park-dallas-arts-district-public-improvement-district",
+    "tx-dallas-knox-street-public-improvement-district",
+    "tx-dallas-lake-highlands-public-improvement-district",
+    "tx-dallas-midtown-improvement-district",
+    "tx-dallas-north-lake-highlands-public-improvement-district",
+    "tx-dallas-oak-lawn-hi-line-public-improvement-district",
+    "tx-dallas-prestonwood-public-improvement-district",
+    "tx-dallas-redbird-public-improvement-district",
+    "tx-dallas-south-side-public-improvement-district",
+    "tx-dallas-university-crossing-public-improvement-district",
+    "tx-dallas-uptown-public-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -569,6 +581,13 @@
       "checkedAt": "2026-07-20T22:47:09.194Z",
       "monitorHash": "adae8f3976061728b53c00119a4c6a95af246411888a73383569adb8228b39ec",
       "legislationChanged": false
+    },
+    {
+      "id": "dallas-public-improvement-districts",
+      "name": "Dallas Public Improvement Districts",
+      "status": "ok",
+      "records": 16,
+      "checkedAt": "2026-07-20T22:51:46.062Z"
     }
   ]
 }
