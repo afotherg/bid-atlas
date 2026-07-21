@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:17:51.852Z",
-  "records": 588,
+  "generatedAt": "2026-07-21T20:18:49.779Z",
+  "records": 589,
   "states": [
     "AK",
     "AL",
@@ -163,6 +163,7 @@
     "Santa Monica, CA",
     "Santa Rosa, CA",
     "Seattle, WA",
+    "Shreveport, LA",
     "Sioux Falls, SD",
     "South Gate, CA",
     "Spokane, WA",
@@ -1376,15 +1377,22 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T20:17:51.852Z"
+    },
+    {
+      "id": "shreveport-downtown-development-district",
+      "name": "Shreveport Downtown Development District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:18:49.779Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 137,
-    "configuredSources": 150,
+    "verifiedJurisdictions": 138,
+    "configuredSources": 151,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }
