@@ -24,10 +24,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
   },
   "batch_summary": {
-    "cities_researched": 5,
+    "cities_researched": 6,
     "active_hits": 3,
-    "misses": 2,
-    "active_hit_rate_percent": 60,
+    "misses": 3,
+    "active_hit_rate_percent": 50,
     "result": "In progress."
   },
   "records": [
@@ -115,6 +115,23 @@
         "https://santaclarita.gov/specialdistricts/landscape-maintenance-districts/engineer-s-reports/"
       ],
       "production_next_action": "Production-ingested with a generalized citywide benefit-zone outline."
+    },
+    {
+      "rank": 6,
+      "census_rank": 106,
+      "city": "Fremont",
+      "state": "CA",
+      "population_2025": 226442,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Proposed BID/PBID (not formed)",
+      "summary": "No operating assessment-funded BID was verified in Fremont. The current City Center Community Plan presents a BID or PBID as a future implementation tool requiring a long-term owner-led formation effort, while the FY2025-26 adopted and FY2026-27 proposed budgets describe direct City support for downtown and neighborhood business districts without a BID assessment or operating fund.",
+      "official_sources": [
+        "https://www.fremont.gov/home/showpublisheddocument/13869/638288190167700000",
+        "https://www.fremont.gov/home/showpublisheddocument/18666/638907560065970000",
+        "https://www.fremont.gov/home/showdocument?id=20482&t=639138482060323640"
+      ],
+      "production_next_action": "Monitor City Center implementation for a formation resolution and levy."
     }
   ]
 }
