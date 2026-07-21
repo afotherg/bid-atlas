@@ -1,11 +1,13 @@
 {
-  "generatedAt": "2026-07-21T19:16:01.449Z",
-  "records": 1,
+  "generatedAt": "2026-07-21T19:17:05.827Z",
+  "records": 2,
   "states": [
+    "MA",
     "UT"
   ],
   "cities": [
-    "Salt Lake City, UT"
+    "Salt Lake City, UT",
+    "Worcester, MA"
   ],
   "sources": [
     {
@@ -903,11 +905,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:16:01.449Z"
+    },
+    {
+      "id": "worcester-downtown-business-improvement-district",
+      "name": "Downtown Worcester Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:17:05.827Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 1,
-    "configuredSources": 128,
+    "verifiedJurisdictions": 2,
+    "configuredSources": 129,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

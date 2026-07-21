@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-21T19:16:01.449Z",
+  "checkedAt": "2026-07-21T19:17:05.827Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ut-salt-lake-city-salt-lake-city-central-business-improvement-area"
+    "ma-worcester-downtown-worcester-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -906,6 +906,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:16:01.449Z"
+    },
+    {
+      "id": "worcester-downtown-business-improvement-district",
+      "name": "Downtown Worcester Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:17:05.827Z"
     }
   ]
 }
