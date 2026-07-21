@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T17:13:43.152Z",
-  "records": 552,
+  "generatedAt": "2026-07-21T19:09:23.061Z",
+  "records": 553,
   "states": [
     "AK",
     "AZ",
@@ -105,6 +105,7 @@
     "New Orleans, LA",
     "New York, NY",
     "Newark, NJ",
+    "Norfolk, VA",
     "Oakland, CA",
     "Oklahoma City, OK",
     "Omaha, NE",
@@ -1145,11 +1146,18 @@
       "checkedAt": "2026-07-21T17:13:27.486Z",
       "monitorHash": "d43d02c232c04c44dbc950d2237f176bc1a4cffe8e9611bd376891ee032ae8ec",
       "legislationChanged": false
+    },
+    {
+      "id": "norfolk-downtown-improvement-district",
+      "name": "Norfolk Downtown Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:09:23.061Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 109,
-    "configuredSources": 122,
+    "verifiedJurisdictions": 110,
+    "configuredSources": 123,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

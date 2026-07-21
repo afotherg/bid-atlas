@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-21T17:13:43.152Z",
+  "checkedAt": "2026-07-21T19:09:23.061Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "az-mesa-mesa-town-center-improvement-district-no-228"
+    "va-norfolk-norfolk-downtown-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1008,6 +1008,13 @@
       "checkedAt": "2026-07-21T17:13:27.486Z",
       "monitorHash": "d43d02c232c04c44dbc950d2237f176bc1a4cffe8e9611bd376891ee032ae8ec",
       "legislationChanged": false
+    },
+    {
+      "id": "norfolk-downtown-improvement-district",
+      "name": "Norfolk Downtown Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:09:23.061Z"
     }
   ]
 }

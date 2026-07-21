@@ -4071,5 +4071,24 @@
         "status"
       ]
     }
+  },
+  {
+    "id": "norfolk-downtown-improvement-district",
+    "name": "Norfolk Downtown Improvement District",
+    "jurisdiction": "Norfolk, VA",
+    "state": "VA",
+    "city": "Norfolk",
+    "file": "data/sources/norfolk-downtown-improvement-district.geojson",
+    "landingPage": "https://www.downtownnorfolk.org/downtown/downtown-improvement-district",
+    "publisher": "City of Norfolk / Downtown Norfolk Council",
+    "cadence": "Annual; generalized boundary reviewed against current City Code",
+    "fields": {
+      "name": ["name"],
+      "website": ["website"],
+      "sourceUrl": ["sourceUrl"],
+      "established": ["established"],
+      "area": ["area"],
+      "status": ["status"]
+    }
   }
 ]

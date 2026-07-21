@@ -1194,6 +1194,19 @@ test("Portland publishes its three operating enhanced services districts", () =>
   }
 });
 
+test("Norfolk publishes its renewed downtown improvement district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "norfolk-downtown-improvement-district");
+  assert.equal(districts.length, 1);
+  assert.equal(districts[0].properties.name, "Norfolk Downtown Improvement District");
+  assert.equal(districts[0].properties.city, "Norfolk");
+  assert.equal(districts[0].properties.state, "VA");
+  assert.equal(districts[0].properties.status, "Active");
+  assert.match(districts[0].properties.established, /renewed 2026/);
+  const [longitude, latitude] = districts[0].properties.center;
+  assert.ok(longitude > -76.4 && longitude < -76.2);
+  assert.ok(latitude > 36.7 && latitude < 37);
+});
+
 test("Philadelphia publishes its fifteen mandatory business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "philadelphia-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

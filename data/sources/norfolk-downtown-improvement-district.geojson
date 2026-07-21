@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Norfolk Downtown Improvement District",
+        "website": "https://www.downtownnorfolk.org/downtown/downtown-improvement-district",
+        "sourceUrl": "https://www.norfolk.gov/DocumentCenter/View/113023/06092026_PH2",
+        "established": "1999; renewed 2026",
+        "area": "Generalized from the current City Code street and waterfront boundary adopted by Ordinance 50,383",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-76.2925, 36.8489], [-76.2945, 36.8491], [-76.2921, 36.8568],
+          [-76.2869, 36.8580], [-76.2858, 36.8530], [-76.2876, 36.8440],
+          [-76.2840, 36.8420], [-76.2910, 36.8430], [-76.2960, 36.8460],
+          [-76.2939, 36.8468], [-76.2925, 36.8489]
+        ]]
+      }
+    }
+  ]
+}

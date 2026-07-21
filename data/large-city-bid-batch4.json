@@ -24,10 +24,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
   },
   "batch_summary": {
-    "cities_researched": 1,
-    "active_hits": 0,
+    "cities_researched": 2,
+    "active_hits": 1,
     "misses": 1,
-    "active_hit_rate_percent": 0,
+    "active_hit_rate_percent": 50,
     "result": "In progress."
   },
   "records": [
@@ -47,6 +47,23 @@
         "https://www.huntsvilleal.gov/business/"
       ],
       "production_next_action": "Monitor for a property-owner assessment district; do not map TIF 9 as a BID."
+    },
+    {
+      "rank": 2,
+      "census_rank": 101,
+      "city": "Norfolk",
+      "state": "VA",
+      "population_2025": 231013,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Downtown Improvement District / Downtown Service District",
+      "summary": "Norfolk's Downtown Improvement District is an assessment-funded special services district created in 1999. In June 2026 the City adopted Ordinance 50,383, revised the geographic boundary, and continued the additional real-property tax; the FY2027 budget projects about $2.2 million in district revenue. The atlas uses a generalized polygon following the ordinance's Boush, Duke, Virginia Beach Boulevard, Monticello, St. Paul's, Waterside, and Elizabeth River limits.",
+      "official_sources": [
+        "https://www.norfolk.gov/DocumentCenter/View/113023/06092026_PH2",
+        "https://www.norfolk.gov/DocumentCenter/View/109868/04-General-Fund-Revenues",
+        "https://www.downtownnorfolk.org/downtown/downtown-improvement-district"
+      ],
+      "production_next_action": "Production-ingested with a generalized current ordinance boundary."
     }
   ]
 }
