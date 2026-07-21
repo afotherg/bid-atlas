@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T01:14:53.946Z",
-  "records": 440,
+  "generatedAt": "2026-07-21T01:21:01.271Z",
+  "records": 443,
   "states": [
     "AZ",
     "CA",
@@ -12,6 +12,7 @@
     "HI",
     "ID",
     "IN",
+    "MA",
     "MD",
     "NC",
     "NV",
@@ -30,6 +31,7 @@
     "Baltimore, MD",
     "Berkeley, CA",
     "Boise, ID",
+    "Boston, MA",
     "Burbank, CA",
     "Burlingame, CA",
     "Charlotte, NC",
@@ -764,15 +766,36 @@
       "checkedAt": "2026-07-21T01:14:53.946Z",
       "monitorHash": "081b509bd2b40e1aa94da77f592b19ffac5e1868dda6a7e48d9bc94e38dd2100",
       "legislationChanged": false
+    },
+    {
+      "id": "boston-downtown-business-improvement-district",
+      "name": "Downtown Boston Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:21:01.271Z"
+    },
+    {
+      "id": "boston-greenway-business-improvement-district",
+      "name": "Greenway Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:21:01.271Z"
+    },
+    {
+      "id": "boston-newmarket-business-improvement-district",
+      "name": "Newmarket Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:21:01.271Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 73,
-    "configuredSources": 82,
+    "verifiedJurisdictions": 74,
+    "configuredSources": 85,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }

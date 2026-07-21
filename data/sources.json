@@ -2571,5 +2571,50 @@
       "area": ["area"],
       "status": ["status"]
     }
+  },
+  {
+    "id": "boston-downtown-business-improvement-district",
+    "name": "Downtown Boston Business Improvement District",
+    "jurisdiction": "Boston, MA",
+    "state": "MA",
+    "city": "Boston",
+    "url": "https://services.arcgis.com/sFnw0xNflSi8J0uh/arcgis/rest/services/BID_Downtown/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.downtownboston.org/about/",
+    "publisher": "Boston Planning and Development Agency",
+    "cadence": "As published",
+    "fixedName": "Downtown Boston Business Improvement District",
+    "fields": {}
+  },
+  {
+    "id": "boston-greenway-business-improvement-district",
+    "name": "Greenway Business Improvement District",
+    "jurisdiction": "Boston, MA",
+    "state": "MA",
+    "city": "Boston",
+    "url": "https://services.arcgis.com/sFnw0xNflSi8J0uh/arcgis/rest/services/Greenway_BID_BoundaryFNL/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.abettercity.org/our-work/greenway-bid",
+    "publisher": "Boston Planning and Development Agency",
+    "cadence": "As published",
+    "fixedName": "Greenway Business Improvement District",
+    "fields": {}
+  },
+  {
+    "id": "boston-newmarket-business-improvement-district",
+    "name": "Newmarket Business Improvement District",
+    "jurisdiction": "Boston, MA",
+    "state": "MA",
+    "city": "Boston",
+    "file": "data/sources/boston-newmarket-business-improvement-district.geojson",
+    "landingPage": "https://newmarketbid.org/about/",
+    "publisher": "Newmarket Business Improvement District / Boston Planning and Development Agency",
+    "cadence": "Annual; generalized boundary reviewed against official map",
+    "fields": {
+      "name": ["name"],
+      "website": ["website"],
+      "sourceUrl": ["sourceUrl"],
+      "established": ["established"],
+      "area": ["area"],
+      "status": ["status"]
+    }
   }
 ]

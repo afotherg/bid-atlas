@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Newmarket Business Improvement District",
+        "website": "https://newmarketbid.org/",
+        "sourceUrl": "https://newmarketbid.org/about/",
+        "established": "2022",
+        "area": "Generalized outer boundary digitized from the official BPDA Newmarket BID map",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-71.0790, 42.3415], [-71.0670, 42.3420], [-71.0600, 42.3370],
+          [-71.0540, 42.3330], [-71.0520, 42.3210], [-71.0580, 42.3155],
+          [-71.0690, 42.3180], [-71.0750, 42.3240], [-71.0830, 42.3310],
+          [-71.0790, 42.3415]
+        ]]
+      }
+    }
+  ]
+}

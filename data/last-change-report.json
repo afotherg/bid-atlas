@@ -1,12 +1,13 @@
 {
-  "checkedAt": "2026-07-21T01:14:53.946Z",
+  "checkedAt": "2026-07-21T01:21:01.271Z",
   "summary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "tx-el-paso-el-paso-downtown-management-district"
+    "ma-boston-downtown-boston-business-improvement-district",
+    "ma-boston-greenway-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -676,6 +677,27 @@
       "checkedAt": "2026-07-21T01:14:53.946Z",
       "monitorHash": "081b509bd2b40e1aa94da77f592b19ffac5e1868dda6a7e48d9bc94e38dd2100",
       "legislationChanged": false
+    },
+    {
+      "id": "boston-downtown-business-improvement-district",
+      "name": "Downtown Boston Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:21:01.271Z"
+    },
+    {
+      "id": "boston-greenway-business-improvement-district",
+      "name": "Greenway Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:21:01.271Z"
+    },
+    {
+      "id": "boston-newmarket-business-improvement-district",
+      "name": "Newmarket Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:21:01.271Z"
     }
   ]
 }
