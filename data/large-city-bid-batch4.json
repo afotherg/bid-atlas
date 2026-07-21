@@ -24,10 +24,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
   },
   "batch_summary": {
-    "cities_researched": 2,
+    "cities_researched": 3,
     "active_hits": 1,
-    "misses": 1,
-    "active_hit_rate_percent": 50,
+    "misses": 2,
+    "active_hit_rate_percent": 33.3,
     "result": "In progress."
   },
   "records": [
@@ -64,6 +64,23 @@
         "https://www.downtownnorfolk.org/downtown/downtown-improvement-district"
       ],
       "production_next_action": "Production-ingested with a generalized current ordinance boundary."
+    },
+    {
+      "rank": 3,
+      "census_rank": 102,
+      "city": "Hialeah",
+      "state": "FL",
+      "population_2025": 230968,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "None verified",
+      "summary": "No operating assessment-funded BID or legal equivalent was verified in Hialeah. The City's current business and community-development portals provide licensing, planning, zoning, CDBG, and direct micro-enterprise assistance. Its named business, central-business, and downtown districts are zoning classifications, while its special-assessment ordinance and recorded assessment areas fund capital improvements such as road construction rather than supplemental place-management services.",
+      "official_sources": [
+        "https://www.hialeahfl.gov/35/Doing-Business",
+        "https://www.hialeahfl.gov/1028/Community-Development",
+        "https://www.hialeahfl.gov/DocumentCenter/View/175/Ordinance-2018-019-PDF"
+      ],
+      "production_next_action": "Do not map zoning districts or capital-improvement assessment areas as BIDs; monitor for a Chapter 170 operating-services district."
     }
   ]
 }
