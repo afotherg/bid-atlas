@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:13:07.353Z",
-  "records": 583,
+  "generatedAt": "2026-07-21T20:16:31.381Z",
+  "records": 584,
   "states": [
     "AK",
     "AL",
@@ -15,6 +15,7 @@
     "HI",
     "IA",
     "ID",
+    "IL",
     "IN",
     "KS",
     "KY",
@@ -50,6 +51,7 @@
     "Arlington, TX",
     "Atlanta, GA",
     "Augusta, GA",
+    "Aurora, IL",
     "Austin, TX",
     "Baltimore, MD",
     "Baton Rouge, LA",
@@ -1351,11 +1353,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:13:07.353Z"
+    },
+    {
+      "id": "aurora-il-downtown-special-service-area",
+      "name": "Aurora Downtown Special Service Area One",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:16:31.381Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 134,
-    "configuredSources": 147,
+    "verifiedJurisdictions": 135,
+    "configuredSources": 148,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
