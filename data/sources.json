@@ -4117,5 +4117,20 @@
     "fields": {
       "name": ["Name"]
     }
+  },
+  {
+    "id": "santa-clarita-tourism-marketing-district",
+    "name": "Santa Clarita Tourism Marketing District",
+    "jurisdiction": "Santa Clarita, CA",
+    "state": "CA",
+    "city": "Santa Clarita",
+    "file": "data/sources/santa-clarita-tourism-marketing-district.geojson",
+    "landingPage": "https://santaclarita.gov/specialdistricts/landscape-maintenance-districts/engineer-s-reports/",
+    "publisher": "City of Santa Clarita",
+    "cadence": "Annual; generalized lodging benefit zone",
+    "fields": {
+      "name": ["name"], "website": ["website"], "sourceUrl": ["sourceUrl"],
+      "established": ["established"], "area": ["area"], "status": ["status"]
+    }
   }
 ]

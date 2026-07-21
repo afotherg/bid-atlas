@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:10:39.410Z",
-  "records": 555,
+  "generatedAt": "2026-07-21T19:13:11.433Z",
+  "records": 556,
   "states": [
     "AK",
     "AZ",
@@ -131,6 +131,7 @@
     "San Francisco, CA",
     "San Jose, CA",
     "San Mateo, CA",
+    "Santa Clarita, CA",
     "Santa Cruz, CA",
     "Santa Monica, CA",
     "Seattle, WA",
@@ -1161,15 +1162,22 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T19:10:39.410Z"
+    },
+    {
+      "id": "santa-clarita-tourism-marketing-district",
+      "name": "Santa Clarita Tourism Marketing District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:13:11.433Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 111,
-    "configuredSources": 124,
+    "verifiedJurisdictions": 112,
+    "configuredSources": 125,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }

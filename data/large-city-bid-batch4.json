@@ -24,10 +24,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
   },
   "batch_summary": {
-    "cities_researched": 4,
-    "active_hits": 2,
+    "cities_researched": 5,
+    "active_hits": 3,
     "misses": 2,
-    "active_hit_rate_percent": 50,
+    "active_hit_rate_percent": 60,
     "result": "In progress."
   },
   "records": [
@@ -99,6 +99,22 @@
         "https://my.spokanecity.org/citycouncil/meetings/2025/12/01/legislative-meeting/"
       ],
       "production_next_action": "Production-ingested from exact City GIS polygons."
+    },
+    {
+      "rank": 5,
+      "census_rank": 105,
+      "city": "Santa Clarita",
+      "state": "CA",
+      "population_2025": 228430,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Tourism Marketing District",
+      "summary": "Santa Clarita operates a lodging-assessment-funded Tourism Marketing District. The City's FY2025-26 annual report documents the current assessment, initiatives, and budget, and the current special-district registry continues to publish the district's annual engineer report. The atlas uses a generalized municipal benefit-zone outline because assessed lodging businesses are distributed citywide.",
+      "official_sources": [
+        "https://santaclarita.gov/specialdistricts/wp-content/uploads/sites/9/2025/08/TMD-Annual-Report-2025_FINAL-5-13-2025.pdf",
+        "https://santaclarita.gov/specialdistricts/landscape-maintenance-districts/engineer-s-reports/"
+      ],
+      "production_next_action": "Production-ingested with a generalized citywide benefit-zone outline."
     }
   ]
 }
