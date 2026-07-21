@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:34:06.097Z",
-  "records": 572,
+  "generatedAt": "2026-07-21T19:34:43.571Z",
+  "records": 573,
   "states": [
     "AK",
     "AR",
@@ -88,6 +88,7 @@
     "Jersey City, NJ",
     "Kailua-Kona, HI",
     "Kansas City, MO",
+    "Knoxville, TN",
     "Laguna Beach, CA",
     "Laredo, TX",
     "Lexington, KY",
@@ -1269,11 +1270,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:34:06.097Z"
+    },
+    {
+      "id": "knoxville-central-business-improvement-district",
+      "name": "Knoxville Central Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:34:43.571Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 124,
-    "configuredSources": 137,
+    "verifiedJurisdictions": 125,
+    "configuredSources": 138,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
