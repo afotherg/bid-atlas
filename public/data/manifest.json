@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:24:39.476Z",
-  "records": 593,
+  "generatedAt": "2026-07-21T20:25:30.867Z",
+  "records": 595,
   "states": [
     "AK",
     "AL",
@@ -101,6 +101,7 @@
     "Kansas City, MO",
     "Knoxville, TN",
     "Laguna Beach, CA",
+    "Lancaster, CA",
     "Laredo, TX",
     "Lexington, KY",
     "Little Rock, AR",
@@ -1400,11 +1401,18 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T20:24:39.476Z"
+    },
+    {
+      "id": "lancaster-ca-improvement-districts",
+      "name": "Lancaster California Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T20:25:30.867Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 140,
-    "configuredSources": 153,
+    "verifiedJurisdictions": 141,
+    "configuredSources": 154,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
