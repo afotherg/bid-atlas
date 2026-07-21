@@ -1,14 +1,12 @@
 {
-  "checkedAt": "2026-07-21T19:32:24.741Z",
+  "checkedAt": "2026-07-21T19:33:18.112Z",
   "summary": {
-    "added": 3,
+    "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ny-rochester-east-avenue-alexander-street-entertainment-district",
-    "ny-rochester-high-falls-business-improvement-district",
-    "ny-rochester-rochester-downtown-enhancement-district"
+    "fl-tallahassee-tallahassee-downtown-improvement-authority"
   ],
   "modified": [],
   "removed": [],
@@ -1101,6 +1099,13 @@
       "status": "ok",
       "records": 3,
       "checkedAt": "2026-07-21T19:32:24.741Z"
+    },
+    {
+      "id": "tallahassee-downtown-improvement-authority",
+      "name": "Tallahassee Downtown Improvement Authority",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:33:18.112Z"
     }
   ]
 }

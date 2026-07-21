@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:32:24.741Z",
-  "records": 570,
+  "generatedAt": "2026-07-21T19:33:18.112Z",
+  "records": 571,
   "states": [
     "AK",
     "AR",
@@ -152,6 +152,7 @@
     "St. Louis, MO",
     "Stockton, CA",
     "Tacoma, WA",
+    "Tallahassee, FL",
     "Tampa, FL",
     "Toledo, OH",
     "Tucson, AZ",
@@ -1253,15 +1254,22 @@
       "status": "ok",
       "records": 3,
       "checkedAt": "2026-07-21T19:32:24.741Z"
+    },
+    {
+      "id": "tallahassee-downtown-improvement-authority",
+      "name": "Tallahassee Downtown Improvement Authority",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:33:18.112Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 122,
-    "configuredSources": 135,
+    "verifiedJurisdictions": 123,
+    "configuredSources": 136,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 3,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }
