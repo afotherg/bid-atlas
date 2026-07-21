@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:20:17.984Z",
-  "records": 591,
+  "generatedAt": "2026-07-21T20:24:39.476Z",
+  "records": 593,
   "states": [
     "AK",
     "AL",
@@ -130,6 +130,7 @@
     "Newark, NJ",
     "Norfolk, VA",
     "Oakland, CA",
+    "Oceanside, CA",
     "Oklahoma City, OK",
     "Omaha, NE",
     "Ontario / Rancho Cucamonga, CA",
@@ -1392,11 +1393,18 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T20:20:17.984Z"
+    },
+    {
+      "id": "oceanside-improvement-districts",
+      "name": "Oceanside Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T20:24:39.476Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 139,
-    "configuredSources": 152,
+    "verifiedJurisdictions": 140,
+    "configuredSources": 153,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
