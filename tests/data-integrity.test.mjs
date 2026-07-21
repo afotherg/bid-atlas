@@ -687,7 +687,7 @@ test("Florida publishes statewide-registry districts, Jacksonville, and Tampa", 
   const names = new Set(florida.map((feature) => feature.properties.name));
   assert.equal(registry.length, 6);
   assert.equal(tampa.length, 1);
-  assert.equal(florida.length, 7);
+  assert.equal(florida.length, 8);
   for (const name of [
     "Coconut Grove Business Improvement District",
     "Wynwood Business Improvement District",
@@ -696,10 +696,11 @@ test("Florida publishes statewide-registry districts, Jacksonville, and Tampa", 
     "41st Street Business Improvement District",
     "Downtown Jacksonville Business Improvement District",
     "Downtown Tampa Special Services District",
+    "Tallahassee Downtown Improvement Authority",
   ]) assert.ok(names.has(name), `missing ${name}`);
   assert.deepEqual(
     new Set(florida.map((feature) => feature.properties.city)),
-    new Set(["Miami", "Miami Beach", "Jacksonville", "Tampa"]),
+    new Set(["Miami", "Miami Beach", "Jacksonville", "Tampa", "Tallahassee"]),
   );
   assert.equal(florida.find((feature) => feature.properties.city === "Jacksonville")?.geometry.type, "MultiPolygon");
   for (const district of florida) {
@@ -713,7 +714,7 @@ test("Georgia publishes classic verified BIDs and Atlanta community improvement 
   const atlanta = georgia.filter((feature) => feature.properties.sourceId === "atlanta-community-improvement-districts");
   assert.equal(classic.length, 3);
   assert.equal(atlanta.length, 8);
-  assert.equal(georgia.length, 11);
+  assert.equal(georgia.length, 12);
   assert.deepEqual(new Set(classic.map((feature) => feature.properties.city)), new Set(["Rome", "Columbus", "Macon"]));
   assert.deepEqual(new Set(atlanta.map((feature) => feature.properties.city)), new Set(["Atlanta"]));
   const atlantaNames = new Set(atlanta.map((feature) => feature.properties.name));

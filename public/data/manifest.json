@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:36:59.895Z",
-  "records": 576,
+  "generatedAt": "2026-07-21T19:37:58.083Z",
+  "records": 577,
   "states": [
     "AK",
     "AL",
@@ -126,6 +126,7 @@
     "Ontario / Rancho Cucamonga, CA",
     "Ontario, CA",
     "Overland Park, KS",
+    "Oxnard, CA",
     "Palm Springs, CA",
     "Pasadena, CA",
     "Philadelphia, PA",
@@ -1302,11 +1303,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:36:59.895Z"
+    },
+    {
+      "id": "oxnard-downtown-improvement-district",
+      "name": "Oxnard Downtown Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:37:58.083Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 128,
-    "configuredSources": 141,
+    "verifiedJurisdictions": 129,
+    "configuredSources": 142,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
