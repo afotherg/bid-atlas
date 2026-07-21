@@ -2525,5 +2525,28 @@
         "OrdinanceDate"
       ]
     }
+  },
+  {
+    "id": "oklahoma-city-business-improvement-districts",
+    "name": "Oklahoma City Business Improvement Districts",
+    "jurisdiction": "Oklahoma City, OK",
+    "state": "OK",
+    "city": "Oklahoma City",
+    "file": "data/sources/oklahoma-city-business-improvement-districts.geojson",
+    "landingPage": "https://www.okc.gov/Infrastructure-Development/Development-Planning/Housing-Neighborhood-Programs/Business-Improvement-Districts",
+    "publisher": "City of Oklahoma City",
+    "cadence": "Annual; generalized boundaries reviewed against official plans and district maps",
+    "monitorUrls": [
+      "https://www.okc.gov/Infrastructure-Development/Development-Planning/Housing-Neighborhood-Programs/Business-Improvement-Districts",
+      "https://www.okc.gov/files/assets/city/v/1/finance/documents/afrs/acfr-2024-final-web.pdf"
+    ],
+    "fields": {
+      "name": ["name"],
+      "website": ["website"],
+      "sourceUrl": ["sourceUrl"],
+      "established": ["established"],
+      "area": ["area"],
+      "status": ["status"]
+    }
   }
 ]

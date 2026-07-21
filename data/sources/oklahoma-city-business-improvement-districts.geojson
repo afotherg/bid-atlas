@@ -1,0 +1,73 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Oklahoma City Business Improvement District",
+        "website": "https://downtownokc.com/bid/",
+        "sourceUrl": "https://www.okc.gov/Infrastructure-Development/Development-Planning/Housing-Neighborhood-Programs/Business-Improvement-Districts",
+        "established": "2001; renewed 2020",
+        "area": "Generalized outer service area from the current Downtown OKC BID map and operating plan",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-97.5310,35.4785],[-97.4995,35.4785],[-97.4970,35.4550],[-97.5320,35.4550],[-97.5310,35.4785]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "OKC Adventure District Business Improvement District",
+        "website": "https://www.okcadventure.com/",
+        "sourceUrl": "https://www.okc.gov/Infrastructure-Development/Development-Planning/Housing-Neighborhood-Programs/Business-Improvement-Districts",
+        "established": "2015",
+        "area": "Generalized outer service area from the district manager's map, centered on the I-35 and I-44 attraction district",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-97.4990,35.5010],[-97.4410,35.5010],[-97.4390,35.5430],[-97.4960,35.5430],[-97.4990,35.5010]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stockyards City Business Improvement District",
+        "website": "https://stockyardscity.org/",
+        "sourceUrl": "https://www.okc.gov/Infrastructure-Development/Development-Planning/Housing-Neighborhood-Programs/Business-Improvement-Districts",
+        "area": "Generalized outer service area around the South Agnew Avenue and Exchange Avenue commercial district",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-97.5750,35.4670],[-97.5480,35.4670],[-97.5480,35.4440],[-97.5740,35.4430],[-97.5750,35.4670]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Capitol Hill Business Improvement District",
+        "website": "https://historiccapitolhill.com/",
+        "sourceUrl": "https://www.okc.gov/Infrastructure-Development/Development-Planning/Housing-Neighborhood-Programs/Business-Improvement-Districts",
+        "area": "Generalized outer service area around the SW 25th Street commercial corridor",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-97.5260,35.4470],[-97.5120,35.4470],[-97.5120,35.4340],[-97.5260,35.4340],[-97.5260,35.4470]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uptown 23rd Business Improvement District",
+        "website": "https://uptown23rd.com/",
+        "sourceUrl": "https://www.okc.gov/Infrastructure-Development/Development-Planning/Housing-Neighborhood-Programs/Business-Improvement-Districts",
+        "area": "Generalized outer service area along NW 23rd Street from Pennsylvania Avenue to I-235",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-97.5500,35.4960],[-97.4990,35.4960],[-97.4990,35.4900],[-97.5500,35.4900],[-97.5500,35.4960]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Western Avenue Business Improvement District",
+        "website": "https://visitwesternavenue.com/",
+        "sourceUrl": "https://www.okc.gov/Infrastructure-Development/Development-Planning/Housing-Neighborhood-Programs/Business-Improvement-Districts",
+        "area": "Generalized outer service area along Western Avenue from NW 30th Street toward Wilshire Boulevard",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-97.5360,35.5000],[-97.5260,35.5000],[-97.5260,35.5530],[-97.5360,35.5530],[-97.5360,35.5000]]]}
+    }
+  ]
+}

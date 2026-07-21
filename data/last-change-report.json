@@ -1,15 +1,17 @@
 {
-  "checkedAt": "2026-07-21T01:08:07.506Z",
+  "checkedAt": "2026-07-21T01:10:39.066Z",
   "summary": {
-    "added": 4,
+    "added": 6,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "tn-nashville-central-business-improvement-district",
-    "tn-nashville-gulch-business-improvement-district",
-    "tn-nashville-midtown-business-improvement-district",
-    "tn-nashville-south-nashville-business-improvement-district"
+    "ok-oklahoma-city-capitol-hill-business-improvement-district",
+    "ok-oklahoma-city-downtown-oklahoma-city-business-improvement-district",
+    "ok-oklahoma-city-okc-adventure-district-business-improvement-district",
+    "ok-oklahoma-city-stockyards-city-business-improvement-district",
+    "ok-oklahoma-city-uptown-23rd-business-improvement-district",
+    "ok-oklahoma-city-western-avenue-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -661,6 +663,15 @@
       "status": "ok",
       "records": 4,
       "checkedAt": "2026-07-21T01:08:07.506Z"
+    },
+    {
+      "id": "oklahoma-city-business-improvement-districts",
+      "name": "Oklahoma City Business Improvement Districts",
+      "status": "ok",
+      "records": 6,
+      "checkedAt": "2026-07-21T01:10:39.066Z",
+      "monitorHash": "c36398156a4f62ed94b88ad1d6c9352394e51b9b67fde9f2fbbb93b1d84aa497",
+      "legislationChanged": false
     }
   ]
 }

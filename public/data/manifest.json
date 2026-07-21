@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T01:08:07.506Z",
-  "records": 433,
+  "generatedAt": "2026-07-21T01:10:39.066Z",
+  "records": 439,
   "states": [
     "AZ",
     "CA",
@@ -17,6 +17,7 @@
     "NV",
     "NY",
     "OH",
+    "OK",
     "PA",
     "TN",
     "TX",
@@ -68,6 +69,7 @@
     "Nashville, TN",
     "New York, NY",
     "Oakland, CA",
+    "Oklahoma City, OK",
     "Ontario / Rancho Cucamonga, CA",
     "Ontario, CA",
     "Palm Springs, CA",
@@ -743,15 +745,24 @@
       "status": "ok",
       "records": 4,
       "checkedAt": "2026-07-21T01:08:07.506Z"
+    },
+    {
+      "id": "oklahoma-city-business-improvement-districts",
+      "name": "Oklahoma City Business Improvement Districts",
+      "status": "ok",
+      "records": 6,
+      "checkedAt": "2026-07-21T01:10:39.066Z",
+      "monitorHash": "c36398156a4f62ed94b88ad1d6c9352394e51b9b67fde9f2fbbb93b1d84aa497",
+      "legislationChanged": false
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 71,
-    "configuredSources": 80,
+    "verifiedJurisdictions": 72,
+    "configuredSources": 81,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 4,
+    "added": 6,
     "modified": 0,
     "removed": 0
   }
