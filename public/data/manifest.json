@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-07-21T19:35:49.886Z",
-  "records": 575,
+  "generatedAt": "2026-07-21T19:36:59.895Z",
+  "records": 576,
   "states": [
     "AK",
+    "AL",
     "AR",
     "AZ",
     "CA",
@@ -109,6 +110,7 @@
     "Miami, FL",
     "Milwaukee, WI",
     "Minneapolis, MN",
+    "Mobile, AL",
     "Modesto, CA",
     "Monrovia, CA",
     "Nampa, ID",
@@ -1293,11 +1295,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:35:49.886Z"
+    },
+    {
+      "id": "mobile-downtown-bid",
+      "name": "Downtown Mobile Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:36:59.895Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 127,
-    "configuredSources": 140,
+    "verifiedJurisdictions": 128,
+    "configuredSources": 141,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
