@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:18:49.779Z",
-  "records": 589,
+  "generatedAt": "2026-07-21T20:20:17.984Z",
+  "records": 591,
   "states": [
     "AK",
     "AL",
@@ -80,6 +80,7 @@
     "El Paso, TX",
     "Eugene, OR",
     "Fayetteville, NC",
+    "Fort Collins, CO",
     "Fort Lauderdale, FL",
     "Fort Worth, TX",
     "Fresno, CA",
@@ -1384,15 +1385,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:18:49.779Z"
+    },
+    {
+      "id": "fort-collins-downtown-taxing-districts",
+      "name": "Fort Collins Downtown Taxing Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T20:20:17.984Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 138,
-    "configuredSources": 151,
+    "verifiedJurisdictions": 139,
+    "configuredSources": 152,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }
