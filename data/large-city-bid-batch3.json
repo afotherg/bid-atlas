@@ -1,0 +1,865 @@
+{
+  "schema_version": 1,
+  "method": {
+    "population_source": "U.S. Census Bureau Vintage 2025 incorporated-place estimates",
+    "selection": "Next fifty largest incorporated U.S. cities above 100,000 population not already substantively researched or mapped by BID Atlas after the pilot and batch-2 large-city research",
+    "prior_batches": [
+      "data/large-city-bid-pilot.json",
+      "data/large-city-bid-batch2.json"
+    ],
+    "ordered_cities": [
+      "Omaha, NE",
+      "Virginia Beach, VA",
+      "Minneapolis, MN",
+      "Bakersfield, CA",
+      "Tulsa, OK",
+      "Tampa, FL",
+      "Aurora, CO",
+      "Arlington, TX",
+      "Wichita, KS",
+      "Cleveland, OH",
+      "New Orleans, LA",
+      "Henderson, NV",
+      "Orlando, FL",
+      "Lexington, KY",
+      "Newark, NJ",
+      "Irvine, CA",
+      "Corpus Christi, TX",
+      "Santa Ana, CA",
+      "Cincinnati, OH",
+      "Greensboro, NC",
+      "Pittsburgh, PA",
+      "St. Paul, MN",
+      "Durham, NC",
+      "Jersey City, NJ",
+      "Lincoln, NE",
+      "North Las Vegas, NV",
+      "Plano, TX",
+      "Gilbert, AZ",
+      "Anchorage, AK",
+      "Madison, WI",
+      "Chandler, AZ",
+      "St. Louis, MO",
+      "Chula Vista, CA",
+      "Fort Wayne, IN",
+      "Buffalo, NY",
+      "Lubbock, TX",
+      "Laredo, TX",
+      "Port St. Lucie, FL",
+      "St. Petersburg, FL",
+      "Toledo, OH",
+      "Glendale, AZ",
+      "Winston-Salem, NC",
+      "Irving, TX",
+      "Chesapeake, VA",
+      "Garland, TX",
+      "Scottsdale, AZ",
+      "Richmond, VA",
+      "Frisco, TX",
+      "Cape Coral, FL",
+      "McKinney, TX"
+    ],
+    "active_hit_definition": "At least one currently operating assessment-funded BID or locally named legal equivalent supported by an official source",
+    "notes": "Candidate discovery is recorded separately from production boundary verification and ingestion. Cities already on the public map (including Miami, Honolulu, and Boise) and prior pilot/batch-2 cities were excluded. Tourism assessment districts are counted as hits when mandatory assessments fund district services; pure TIF/CRA tools and residential-only capital PIDs are not."
+  },
+  "batch_summary": {
+    "cities_researched": 50,
+    "active_hits": 24,
+    "misses": 26,
+    "active_hit_rate_percent": 48.0,
+    "result": "24 of 50 cities have at least one officially supported active BID or local legal equivalent; 26 are misses under the active-hit definition (including formation-stage and TIF-only tools).",
+    "interpretation": "Population-ranked research continues to yield high discovery rates among mid-large cities, though misses increase among sunbelt suburbs and cities relying primarily on TIF/CRA or residential PIDs.",
+    "limitations": "This is a targeted non-random sample. Some misses may still have unlocated districts. Several hits need boundary GIS and assessment-term verification before production ingestion. Project-level sales-tax CIDs and residential capital PIDs require classification."
+  },
+  "records": [
+    {
+      "rank": 1,
+      "city": "Omaha",
+      "state": "NE",
+      "population_2025": 488797,
+      "census_rank": 42,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Business Improvement District",
+      "summary": "Omaha operates multiple assessment-funded Business Improvement Districts. Douglas County Treasurer documents annual BID special assessments, and City Council ordinances establish and fund districts including the South Omaha BID along the South 24th Street commercial corridor (approved 2021) with multi-year maintenance and beautification assessments.",
+      "official_sources": [
+        "https://treasurer.douglascounty-ne.gov/special-assessments/",
+        "https://cityclerk.cityofomaha.org/wp-content/uploads/images/ORD-43613.pdf",
+        "https://www.ketv.com/article/a-look-at-omahas-business-improvement-districts/69101265"
+      ],
+      "production_next_action": "Inventory all current Omaha BIDs from City Clerk ordinances and obtain GIS or ordinance-map boundaries for production ingestion."
+    },
+    {
+      "rank": 2,
+      "city": "Virginia Beach",
+      "state": "VA",
+      "population_2025": 453737,
+      "census_rank": 43,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No currently operating assessment-funded BID or clearly equivalent special service district was verified from official Virginia Beach sources during this sweep. Failed searches are not proof of absence.",
+      "official_sources": [
+        "https://www.vbgov.com/"
+      ],
+      "production_next_action": "Search City Code and tax-district inventories for any special assessment or service districts serving commercial corridors."
+    },
+    {
+      "rank": 3,
+      "city": "Minneapolis",
+      "state": "MN",
+      "population_2025": 430324,
+      "census_rank": 46,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Special Service District / Downtown Improvement District",
+      "summary": "Minneapolis levies special assessments on non-residential property in Special Service Districts for enhanced cleaning, maintenance, security, and related services. The Mpls Downtown Improvement District covers 120+ blocks and is primarily funded by special service assessments under City ordinance; a citywide SSD map also identifies corridor districts such as Nicollet Avenue.",
+      "official_sources": [
+        "https://www.mplsdid.com/about",
+        "https://www2.minneapolismn.gov/resident-services/property-housing/property-values-taxes/special-assessments/special-assessment-types/",
+        "https://www2.minneapolismn.gov/media/content-assets/www2-documents/government/City-Wide-Special-Service-District-Map.pdf"
+      ],
+      "production_next_action": "Production-ingested: 16 active Special Service District polygons from City of Minneapolis GIS (inactive SSDs excluded), including the Downtown Improvement District."
+    },
+    {
+      "rank": 4,
+      "city": "Bakersfield",
+      "state": "CA",
+      "population_2025": 422165,
+      "census_rank": 47,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating PBID or merchant BID with current assessment levy was located for Bakersfield. California enables PBIDs statewide, but this sweep found no official Bakersfield registry entry or current levy record.",
+      "official_sources": [
+        "https://www.bakersfieldcity.us/"
+      ],
+      "production_next_action": "Check City Council assessment district agenda items and Kern County tax rolls for any downtown PBID or BIA."
+    },
+    {
+      "rank": 5,
+      "city": "Tulsa",
+      "state": "OK",
+      "population_2025": 416209,
+      "census_rank": 48,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Stadium Improvement District / downtown special assessment services",
+      "summary": "Tulsa operates the Tulsa Stadium Improvement District, which City materials describe as generating about $1.1 million annually for downtown services in addition to stadium-related financing. PartnerTulsa also manages multiple downtown TIF districts (TIF alone is not counted as a BID). The stadium district's documented downtown service funding supports an active-hit classification pending confirmation that the levy funds ongoing place-management services.",
+      "official_sources": [
+        "https://www.cityoftulsa.org/residents/arts-recreation/downtown-tulsa/tulsa-stadium-improvement-district/",
+        "https://partnertulsa.org/doing-business/tulsa-offers-destination-commercial-and-retail/tax-increment-financing/"
+      ],
+      "production_next_action": "Confirm enabling ordinance, current assessment methodology, and whether downtown clean/safe services are still assessment-funded; obtain boundary GIS."
+    },
+    {
+      "rank": 6,
+      "city": "Tampa",
+      "state": "FL",
+      "population_2025": 413554,
+      "census_rank": 49,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Downtown Special Services District",
+      "summary": "Downtown Tampa operates a Special Services District covering roughly 1,085 acres and thousands of parcels, with assessments funding enhanced services through the Tampa Downtown Partnership\u2014Florida's common local BID equivalent outside pure Chapter 170 registry labels.",
+      "official_sources": [
+        "https://www.stpetedid.org/similar-districts",
+        "https://www.tampasdowntown.com/",
+        "https://www.fhwa.dot.gov/ipd/fact_sheets/value_cap_bid.aspx"
+      ],
+      "production_next_action": "Retrieve official SSD boundary map or GIS and current assessment rate from City of Tampa / Downtown Partnership."
+    },
+    {
+      "rank": 7,
+      "city": "Aurora",
+      "state": "CO",
+      "population_2025": 410053,
+      "census_rank": 50,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified active Aurora, Colorado Business Improvement District with current operating assessments was confirmed in this sweep. Colorado Springs and Denver have extensive BID programs; Aurora requires separate municipal confirmation.",
+      "official_sources": [
+        "https://www.auroragov.org/"
+      ],
+      "production_next_action": "Query City special-district inventories and El Paso/Arapahoe/Adams assessor mill-levy lists for Aurora BIDs."
+    },
+    {
+      "rank": 8,
+      "city": "Arlington",
+      "state": "TX",
+      "population_2025": 402134,
+      "census_rank": 51,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Tourism Public Improvement District",
+      "summary": "The Arlington Tourism Public Improvement District (ATPID) is an active hotel assessment district: hotels with 75+ rooms pay a 2% assessment on net occupancy receipts subject to HOT, effective since 2016 on a 10-year term. This is a Texas tourism PID equivalent to other atlas tourism BIDs.",
+      "official_sources": [
+        "https://www.arlingtontx.gov/Government/Budget-Finance/Treasury/Hotel-Occupancy-Tax/Arlington-Tourism-Public-Improvement-District-ATPID",
+        "https://atpid.com/"
+      ],
+      "production_next_action": "Confirm whether any property-assessment operating PIDs also exist for downtown/commercial corridors; ingest ATPID boundary/metadata if tourism districts remain in atlas scope."
+    },
+    {
+      "rank": 9,
+      "city": "Wichita",
+      "state": "KS",
+      "population_2025": 400987,
+      "census_rank": 52,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Self-Supported Municipal Improvement District / Community Improvement District",
+      "summary": "Downtown Wichita is funded through a Self-Supported Municipal Improvement District (SSMID) that contracts for district services. A Douglas Design District BID was repealed in 2020 and is not counted. Project-level Community Improvement Districts (often sales-tax) also exist and require classification.",
+      "official_sources": [
+        "https://downtownwichita.org/about/overview",
+        "https://www.wichita.gov/477/Business-Improvement-District"
+      ],
+      "production_next_action": "Obtain SSMID boundary and current assessment/millage documentation; separate sales-tax CIDs from assessment-funded operating districts."
+    },
+    {
+      "rank": 10,
+      "city": "Cleveland",
+      "state": "OH",
+      "population_2025": 363608,
+      "census_rank": 53,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Special Improvement District",
+      "summary": "Cleveland has multiple active Special Improvement Districts (Ohio's BID equivalent), including the Downtown Cleveland Improvement District renewed for 2026-2032, Superior Arts Improvement District, Ohio City Improvement District, and University Circle SID (adopted for 2025 start). Property assessments fund clean, safe, and place-management services.",
+      "official_sources": [
+        "https://www.downtowncleveland.com/special-improvement-districts",
+        "https://www.ohiocity.org/ohio-city-improvement-district/",
+        "https://www.universitycircle.org/about-us/university-circle-inc/sid",
+        "https://www.countyplanning.us/resources/guidebooks/special-improvement-districts-guidebook/special-improvement-districts-faq/"
+      ],
+      "production_next_action": "Compile the current SID roster, export GIS boundaries, and verify each district's current assessment term."
+    },
+    {
+      "rank": 11,
+      "city": "New Orleans",
+      "state": "LA",
+      "population_2025": 362154,
+      "census_rank": 54,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Downtown Development District / security districts",
+      "summary": "The Downtown Development District of New Orleans, created by the Legislature in 1974 as the nation's first assessment-based BID, levies property millage for enhanced economic development, cleaning, and safety downtown. Numerous residential security taxing districts also exist and are excluded from BID counts.",
+      "official_sources": [
+        "https://downtownnola.com/who-we-are/",
+        "https://nola.gov/next/mayors-office/news/articles/august-2022/new-orleans-downtown-development-district-announces-enhanced-security-and-code-enforcement-initiativ/",
+        "https://nolaoig.gov/wp-content/uploads/2023/03/OIG-Review-of-Security-Taxing-Districts-130924.pdf"
+      ],
+      "production_next_action": "Obtain official DDD boundary GIS and current millage; exclude residential security districts from atlas ingestion."
+    },
+    {
+      "rank": 12,
+      "city": "Henderson",
+      "state": "NV",
+      "population_2025": 353289,
+      "census_rank": 55,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "Business Improvement District (proposed/future)",
+      "summary": "No active assessment-funded BID was verified in Henderson. Nevada state research previously recorded Henderson materials as proposed/future rather than established operating districts; Reno remains the only verified active municipal BID in Nevada from that audit.",
+      "official_sources": [
+        "https://www.cityofhenderson.com/"
+      ],
+      "production_next_action": "Monitor City Council formation ordinances; do not ingest until a current levy is adopted."
+    },
+    {
+      "rank": 13,
+      "city": "Orlando",
+      "state": "FL",
+      "population_2025": 333888,
+      "census_rank": 58,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "Community Redevelopment Agency (TIF, not BID)",
+      "summary": "Downtown Orlando is served by a Community Redevelopment Agency funded by tax-increment revenues, not an additional property assessment BID. CRA/TIF tools are outside the atlas active-BID definition used in large-city pilots.",
+      "official_sources": [
+        "https://www.downtownorlando.com/About/Community-Redevelopment-Agency",
+        "https://www.orlando.gov/Our-Government/Departments-Offices/Economic-Development"
+      ],
+      "production_next_action": "Search separately for any Chapter 170 or local special-assessment operating districts outside the CRA framework."
+    },
+    {
+      "rank": 14,
+      "city": "Lexington",
+      "state": "KY",
+      "population_2025": 329751,
+      "census_rank": 59,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Downtown Lexington Management District",
+      "summary": "The Downtown Lexington Management District is Lexington's property-tax business improvement district for downtown businesses and property owners, operating as an assessment-funded place-management district.",
+      "official_sources": [
+        "https://dlmd.org/about-us/"
+      ],
+      "production_next_action": "Obtain official boundary map/GIS and current assessment rate from City or DLMD."
+    },
+    {
+      "rank": 15,
+      "city": "Newark",
+      "state": "NJ",
+      "population_2025": 323808,
+      "census_rank": 61,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Special Improvement District",
+      "summary": "Newark has multiple Special Improvement Districts funded by property assessments, including the Newark Downtown District (central business area SID) and the Ironbound Special Improvement District / Ironbound BID.",
+      "official_sources": [
+        "https://downtownnewark.com/about-ndd/",
+        "https://goironbound.com/home",
+        "https://ecode360.com/36684608",
+        "https://hub.arcgis.com/datasets/e51fbafbe99041e29b94ef5ef629e7ab_0"
+      ],
+      "production_next_action": "Export Newark improvement-district GIS and confirm current assessment status for each SID."
+    },
+    {
+      "rank": 16,
+      "city": "Irvine",
+      "state": "CA",
+      "population_2025": 318764,
+      "census_rank": 63,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating PBID or merchant BID with a current assessment levy was located for Irvine in this sweep.",
+      "official_sources": [
+        "https://www.cityofirvine.org/"
+      ],
+      "production_next_action": "Check City special-assessment and economic-development records for any district proposals or levies."
+    },
+    {
+      "rank": 17,
+      "city": "Corpus Christi",
+      "state": "TX",
+      "population_2025": 317247,
+      "census_rank": 64,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating downtown PID or BID with current property assessments was confirmed for Corpus Christi in this sweep. Texas PIDs are common but often residential/capital.",
+      "official_sources": [
+        "https://www.cctexas.com/"
+      ],
+      "production_next_action": "Review City PID roster and annual assessment ordinances for any BID-style operating commercial districts."
+    },
+    {
+      "rank": 18,
+      "city": "Santa Ana",
+      "state": "CA",
+      "population_2025": 315586,
+      "census_rank": 65,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating PBID/BID with current assessments was located for Santa Ana in this sweep.",
+      "official_sources": [
+        "https://www.santa-ana.org/"
+      ],
+      "production_next_action": "Search City Clerk assessment-district files and Orange County rolls for any downtown PBID."
+    },
+    {
+      "rank": 19,
+      "city": "Cincinnati",
+      "state": "OH",
+      "population_2025": 314367,
+      "census_rank": 66,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Special Improvement District",
+      "summary": "Cincinnati's Downtown Cincinnati Improvement District is an active SID with a City-approved 2026-2029 services plan and property assessments (frontage and tax-value formula). Over-the-Rhine South SID is a second active district providing assessment-funded extended services.",
+      "official_sources": [
+        "https://downtowncincinnati.com/about/downtown-cincinnati-improvement-district-dcid/",
+        "https://downtowncincinnati.com/renewal/",
+        "https://www.otrsouthsid.com/"
+      ],
+      "production_next_action": "Obtain SID boundary GIS and attach 2026-2029 assessment metadata."
+    },
+    {
+      "rank": 20,
+      "city": "Greensboro",
+      "state": "NC",
+      "population_2025": 308667,
+      "census_rank": 67,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Downtown Business Improvement District / Municipal Service District",
+      "summary": "Greensboro operates a Downtown Business Improvement District (municipal service district) with City contracts for district services and documented boundary-expansion requests; Downtown Greensboro Inc. administers BID-area programs funded by district taxes.",
+      "official_sources": [
+        "https://www.greensboro-nc.gov/Home/Components/News/News/19185/",
+        "https://www.downtowngreensboro.org/do-business/grants-incentives-and-business-resources",
+        "https://greensboro.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=7654"
+      ],
+      "production_next_action": "Export MSD/BID boundary and confirm current millage and service provider contract."
+    },
+    {
+      "rank": 21,
+      "city": "Pittsburgh",
+      "state": "PA",
+      "population_2025": 307632,
+      "census_rank": 68,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Business Improvement District",
+      "summary": "The Downtown Pittsburgh Business Improvement District, established in 1996 and administered with the Pittsburgh Downtown Partnership, levies property assessments (formula based on total assessed value) for enhanced downtown services. Oakland BID activity is also documented.",
+      "official_sources": [
+        "https://downtownpittsburgh.com/about-pdp/downtown-pittsburgh-business-improvement-district/",
+        "https://downtownpittsburgh.com/strategicvision/",
+        "https://downtownpittsburgh.com/wp-content/uploads/2017/01/2016-BID-Summary-for-Website.pdf"
+      ],
+      "production_next_action": "Obtain current BID boundary GIS and latest assessment formula/rate."
+    },
+    {
+      "rank": 22,
+      "city": "St. Paul",
+      "state": "MN",
+      "population_2025": 306684,
+      "census_rank": 69,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "Unlike Minneapolis, no currently operating St. Paul special service district with confirmed assessments was verified in this sweep. Minnesota authorizes SSDs statewide.",
+      "official_sources": [
+        "https://www.stpaul.gov/",
+        "https://www.house.mn.gov/hrd/pubs/cityssd.pdf"
+      ],
+      "production_next_action": "Search City assessment rolls and code for any active SSDs in downtown or commercial corridors."
+    },
+    {
+      "rank": 23,
+      "city": "Durham",
+      "state": "NC",
+      "population_2025": 305561,
+      "census_rank": 70,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Municipal Service District",
+      "summary": "Durham's Downtown Municipal Service District (also called a BID) has operated since 2012 under City authorization. Recent City action includes a multi-year MSD operations contract with Downtown Durham, Inc. for clean-and-safe and related services funded by district property taxes.",
+      "official_sources": [
+        "https://www.durhamnc.gov/DocumentCenter/View/65496/2026-MSD-BID-Operator-RFP-Final-021826?bidId=",
+        "https://www.durhamnc.gov/DocumentCenter/View/36996/FINAL-Downtown-Durham-MSD-Operations-RFP-23Feb21?bidId="
+      ],
+      "production_next_action": "Export MSD boundary GIS and attach current millage and operator contract term."
+    },
+    {
+      "rank": 24,
+      "city": "Jersey City",
+      "state": "NJ",
+      "population_2025": 302013,
+      "census_rank": 71,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Special Improvement District",
+      "summary": "Jersey City has multiple active Special Improvement Districts funded by commercial property assessments, including Historic Downtown, Journal Square, Central Avenue, Jackson Hill Main Street, Exchange Place, and McGinley Square, with West Side Avenue under formation.",
+      "official_sources": [
+        "https://jcdowntown.org/",
+        "https://jcheights.com/",
+        "https://www.downtownnj.com/spotlight-jcedc/",
+        "https://www.jerseycitynj.gov/residentresources/west_side_avenue_sid"
+      ],
+      "production_next_action": "Inventory all SIDs with current assessment status and obtain GIS boundaries."
+    },
+    {
+      "rank": 25,
+      "city": "Lincoln",
+      "state": "NE",
+      "population_2025": 301522,
+      "census_rank": 72,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating Lincoln BID with current assessments was confirmed in this sweep, though Nebraska cities including Omaha use BID special assessments.",
+      "official_sources": [
+        "https://www.lincoln.ne.gov/"
+      ],
+      "production_next_action": "Search City Clerk ordinances and Lancaster County special-assessment rolls for any BID levies."
+    },
+    {
+      "rank": 26,
+      "city": "North Las Vegas",
+      "state": "NV",
+      "population_2025": 296653,
+      "census_rank": 73,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "Business Improvement District (proposed)",
+      "summary": "North Las Vegas materials discuss creating a BID for downtown revitalization, but no currently operating assessment-funded district was verified. Consistent with statewide Nevada research that only Reno has a confirmed active municipal BID.",
+      "official_sources": [
+        "https://www.southernnevadastrong.org/wp-content/uploads/2025/02/Downtown-North-Las-Vegas-SNS-Opportunity-Site-5-year-Progress-Report-2020-8MB.pdf"
+      ],
+      "production_next_action": "Monitor formation ordinances; do not ingest until a levy is adopted."
+    },
+    {
+      "rank": 27,
+      "city": "Plano",
+      "state": "TX",
+      "population_2025": 293028,
+      "census_rank": 74,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Downtown Public Improvement District",
+      "summary": "Plano operates a Downtown Public Improvement District with City-approved multi-year service plans and assessments collected with property taxes for enhanced downtown engagement, maintenance, and related services.",
+      "official_sources": [
+        "https://www.plano.gov/downtown-plano-public-improvement-district",
+        "https://communityimpact.com/plano-north/government/plano-council-approves-2024-plan-for-downtown-public-improvement-district/"
+      ],
+      "production_next_action": "Obtain official Downtown PID boundary and current assessment roll/service plan."
+    },
+    {
+      "rank": 28,
+      "city": "Gilbert",
+      "state": "AZ",
+      "population_2025": 287285,
+      "census_rank": 75,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating Enhanced Municipal Services District or BID was located for Gilbert. Arizona EMSDs exist in Phoenix and Tucson but were not confirmed here.",
+      "official_sources": [
+        "https://www.gilbertaz.gov/"
+      ],
+      "production_next_action": "Check Town Code and Maricopa County special-district maps for any assessment districts."
+    },
+    {
+      "rank": 29,
+      "city": "Anchorage",
+      "state": "AK",
+      "population_2025": 287155,
+      "census_rank": 76,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Downtown Improvement District",
+      "summary": "Anchorage levies a Downtown Improvement District assessment collected with municipal property taxes. Official municipal finance pages document the DID assessment; Midtown BID feasibility work is separate and not counted as active.",
+      "official_sources": [
+        "https://www.muni.org/Departments/finance/treasury/PropTax/pages/downtownimprovementdistrictassessment.aspx"
+      ],
+      "production_next_action": "Obtain DID boundary and current assessment rate from Municipality of Anchorage."
+    },
+    {
+      "rank": 30,
+      "city": "Madison",
+      "state": "WI",
+      "population_2025": 286233,
+      "census_rank": 77,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Business Improvement District",
+      "summary": "Madison operates the Madison Central Business Improvement District with a City-appointed BID Board, active 2026 meeting records, and neighborhood business-association listings identifying the Central BID as an operating district under Wisconsin BID law.",
+      "official_sources": [
+        "https://www.cityofmadison.com/city-hall/committees/madison-central-business-improvement-district-bid-board",
+        "https://www.cityofmadison.com/dpced/economic-development/business-resources/neighborhood-business-associations",
+        "https://docs.legis.wisconsin.gov/document/statutes/66.1109"
+      ],
+      "production_next_action": "Export Central BID boundary and confirm current operating plan and assessment."
+    },
+    {
+      "rank": 31,
+      "city": "Chandler",
+      "state": "AZ",
+      "population_2025": 278748,
+      "census_rank": 79,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating EMSD/BID was located for Chandler in this sweep.",
+      "official_sources": [
+        "https://www.chandleraz.gov/"
+      ],
+      "production_next_action": "Search City special-district and assessment records."
+    },
+    {
+      "rank": 32,
+      "city": "St. Louis",
+      "state": "MO",
+      "population_2025": 278144,
+      "census_rank": 80,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Community Improvement District",
+      "summary": "The Downtown St. Louis Community Improvement District is an active assessment-funded CID providing clean, safe, and welcoming services downtown, including the Laclede's Landing subdistrict expansion under City ordinance.",
+      "official_sources": [
+        "https://www.stlcid.org/"
+      ],
+      "production_next_action": "Obtain CID boundary GIS and current assessment methodology; inventory other city CIDs if operating-service focused."
+    },
+    {
+      "rank": 33,
+      "city": "Chula Vista",
+      "state": "CA",
+      "population_2025": 275533,
+      "census_rank": 81,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating PBID/BID was located for Chula Vista in this sweep.",
+      "official_sources": [
+        "https://www.chulavistaca.gov/"
+      ],
+      "production_next_action": "Check City assessment-district files for any coastal or downtown PBID."
+    },
+    {
+      "rank": 34,
+      "city": "Fort Wayne",
+      "state": "IN",
+      "population_2025": 275203,
+      "census_rank": 82,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating BID or economic improvement district with current assessments was confirmed for Fort Wayne in this sweep.",
+      "official_sources": [
+        "https://www.cityoffortwayne.org/"
+      ],
+      "production_next_action": "Search City Code and economic-development records for any special-assessment commercial districts."
+    },
+    {
+      "rank": 35,
+      "city": "Buffalo",
+      "state": "NY",
+      "population_2025": 274613,
+      "census_rank": 83,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Business Improvement District",
+      "summary": "Buffalo Place administers a long-standing downtown Business Improvement District covering about 24 blocks, providing assessment-funded place-management services since 1982 under New York BID authority.",
+      "official_sources": [
+        "https://www.buffaloplace.com/about/",
+        "https://partnershipfordowntown.org/press/whats-a-business-improvement-district"
+      ],
+      "production_next_action": "Obtain official BID boundary and current assessment formula from City/Buffalo Place."
+    },
+    {
+      "rank": 36,
+      "city": "Lubbock",
+      "state": "TX",
+      "population_2025": 273071,
+      "census_rank": 84,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "Public Improvement District (general program)",
+      "summary": "Lubbock documents a general PID program for public improvements and maintenance, but this sweep did not verify a currently operating downtown BID-style assessment district with place-management services. Residential/capital PIDs alone are not counted as hits without commercial operating evidence.",
+      "official_sources": [
+        "https://www.mylubbock.us/227/Business-Development"
+      ],
+      "production_next_action": "Review City PID roster for any commercial operating-service districts with current assessments."
+    },
+    {
+      "rank": 37,
+      "city": "Laredo",
+      "state": "TX",
+      "population_2025": 269515,
+      "census_rank": 85,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Downtown Business Improvement District / Municipal Management District",
+      "summary": "The Downtown Laredo Business Improvement District (also styled as the Central Laredo Municipal Management District d/b/a Downtown BID) is an active assessment-funded district investing in cleaner streets, public spaces, and downtown revitalization, with 2025-2026 City Council and service-plan activity.",
+      "official_sources": [
+        "https://www.downtownlaredobid.org/",
+        "https://www.kgns.tv/2025/08/01/downtown-bid-discusses-current-state-downtown-laredo/"
+      ],
+      "production_next_action": "Obtain official boundary and current assessment service plan for ingestion."
+    },
+    {
+      "rank": 38,
+      "city": "Port St. Lucie",
+      "state": "FL",
+      "population_2025": 268062,
+      "census_rank": 86,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating BID or special assessment business district was located for Port St. Lucie in this sweep.",
+      "official_sources": [
+        "https://www.cityofpsl.com/"
+      ],
+      "production_next_action": "Check FloridaCommerce special-district list for any Port St. Lucie business-purpose districts."
+    },
+    {
+      "rank": 39,
+      "city": "St. Petersburg",
+      "state": "FL",
+      "population_2025": 264033,
+      "census_rank": 87,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "Downtown Improvement District (formation/paused)",
+      "summary": "The St. Petersburg Downtown Partnership has explored a Downtown Improvement District / special assessment area for clean-and-safe services, but plans were paused and no currently operating assessment levy was verified.",
+      "official_sources": [
+        "https://www.stpetedid.org/",
+        "https://stpetecatalyst.com/partnership-pauses-plans-for-downtown-improvement-district/"
+      ],
+      "production_next_action": "Monitor formation; ingest only after an adopted assessment district is operating."
+    },
+    {
+      "rank": 40,
+      "city": "Toledo",
+      "state": "OH",
+      "population_2025": 263423,
+      "census_rank": 88,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Special Improvement District / Downtown Toledo Improvement District",
+      "summary": "The Downtown Toledo Improvement District is a 501(c)(3) Special Improvement District supporting downtown vitality through assessment-funded services. Additional SID activity (including Uptown) is documented.",
+      "official_sources": [
+        "https://toledo.oh.gov/downtown-toledo-improvement-district",
+        "https://toledocitypaper.com/the-city/uptown-toledo-sid-plan-what-it-means-and-why-costs-will-rise/"
+      ],
+      "production_next_action": "Obtain DTID/SID boundaries and current assessment terms."
+    },
+    {
+      "rank": 41,
+      "city": "Glendale",
+      "state": "AZ",
+      "population_2025": 260572,
+      "census_rank": 89,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating EMSD/BID was located for Glendale, Arizona (distinct from Glendale, California, which is already mapped).",
+      "official_sources": [
+        "https://www.glendaleaz.com/"
+      ],
+      "production_next_action": "Search City special-district records and Maricopa County maps."
+    },
+    {
+      "rank": 42,
+      "city": "Winston-Salem",
+      "state": "NC",
+      "population_2025": 257271,
+      "census_rank": 90,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Business Improvement District / Municipal Service District",
+      "summary": "The Downtown Winston-Salem Business Improvement District was created in 2013 as a municipal service district. City pages document enhanced services funded from property owners who most directly benefit, with ongoing service contracting.",
+      "official_sources": [
+        "https://www.cityofws.org/1352/Business-Improvement-District",
+        "https://www.cityofws.org/3548/Business-Improvement-District"
+      ],
+      "production_next_action": "Export MSD boundary and current tax rate from City budget/GIS."
+    },
+    {
+      "rank": 43,
+      "city": "Irving",
+      "state": "TX",
+      "population_2025": 257076,
+      "census_rank": 91,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating downtown BID-style PID was confirmed for Irving in this sweep.",
+      "official_sources": [
+        "https://www.cityofirving.org/"
+      ],
+      "production_next_action": "Review City PID list for commercial operating districts."
+    },
+    {
+      "rank": 44,
+      "city": "Chesapeake",
+      "state": "VA",
+      "population_2025": 255332,
+      "census_rank": 92,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating BID or special service assessment district was located for Chesapeake in this sweep.",
+      "official_sources": [
+        "https://www.cityofchesapeake.net/"
+      ],
+      "production_next_action": "Search City Code for special assessment or service districts."
+    },
+    {
+      "rank": 45,
+      "city": "Garland",
+      "state": "TX",
+      "population_2025": 249625,
+      "census_rank": 93,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating downtown BID-style PID was confirmed for Garland in this sweep.",
+      "official_sources": [
+        "https://www.garlandtx.gov/"
+      ],
+      "production_next_action": "Review City PID roster for commercial operating districts."
+    },
+    {
+      "rank": 46,
+      "city": "Scottsdale",
+      "state": "AZ",
+      "population_2025": 243006,
+      "census_rank": 94,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating EMSD/BID was located for Scottsdale in this sweep.",
+      "official_sources": [
+        "https://www.scottsdaleaz.gov/"
+      ],
+      "production_next_action": "Search City special-district and assessment records."
+    },
+    {
+      "rank": 47,
+      "city": "Richmond",
+      "state": "VA",
+      "population_2025": 237257,
+      "census_rank": 96,
+      "active_hit": true,
+      "result": "active_hit",
+      "local_term": "Special Assessment Service District",
+      "summary": "Richmond uses Special Assessment Service Districts (Virginia's BID-like tool) for downtown enhanced services. Venture Richmond administers districts funded by special assessments for clean-and-safe and related public-space services; City GeoHub publishes SAD boundaries.",
+      "official_sources": [
+        "https://venturerichmond.com/our-services/service-district/",
+        "https://richmond-geo-hub-cor.hub.arcgis.com/maps/sad-special-assessment-districts/about",
+        "https://downtown.org/wp-content/uploads/2023/10/IDARFP23_VR_Clean-Safe.pdf"
+      ],
+      "production_next_action": "Production-ingested: 6 Special Assessment District polygons from City of Richmond Assessor GIS (General, Consumer Broad, Consumer Shockoe, and Riverfront districts)."
+    },
+    {
+      "rank": 48,
+      "city": "Frisco",
+      "state": "TX",
+      "population_2025": 236955,
+      "census_rank": 97,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating downtown BID-style PID was confirmed for Frisco; many North Texas PIDs are residential infrastructure districts outside atlas operating-BID scope.",
+      "official_sources": [
+        "https://www.friscotexas.gov/"
+      ],
+      "production_next_action": "Review PID inventory for any commercial operating-service districts."
+    },
+    {
+      "rank": 49,
+      "city": "Cape Coral",
+      "state": "FL",
+      "population_2025": 236264,
+      "census_rank": 98,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating BID was located for Cape Coral in this sweep.",
+      "official_sources": [
+        "https://www.capecoral.gov/"
+      ],
+      "production_next_action": "Check Florida special-district registry for any business-purpose districts."
+    },
+    {
+      "rank": 50,
+      "city": "McKinney",
+      "state": "TX",
+      "population_2025": 236001,
+      "census_rank": 99,
+      "active_hit": false,
+      "result": "miss",
+      "local_term": "None verified",
+      "summary": "No verified operating downtown BID-style PID was confirmed for McKinney; residential growth PIDs are common but outside operating BID scope without commercial place-management evidence.",
+      "official_sources": [
+        "https://www.mckinneytexas.org/"
+      ],
+      "production_next_action": "Review City PID roster for commercial operating districts."
+    }
+  ]
+}

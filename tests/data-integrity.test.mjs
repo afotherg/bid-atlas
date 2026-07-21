@@ -747,6 +747,38 @@ test("Raleigh publishes its two municipal service districts", () => {
   }
 });
 
+test("Minneapolis publishes its sixteen active special service districts", () => {
+  const minneapolis = collection.features.filter((feature) => feature.properties.city === "Minneapolis" && feature.properties.state === "MN");
+  assert.equal(minneapolis.length, 16);
+  const names = new Set(minneapolis.map((feature) => feature.properties.name));
+  for (const name of [
+    "Minneapolis Downtown Improvement District",
+    "Eat Street / Nicollet Avenue South Special Service District",
+    "Uptown",
+    "Dinkytown",
+    "Central Avenue",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of minneapolis) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.properties.sourceId, "minneapolis-special-service-districts");
+  }
+});
+
+test("Richmond publishes its six special assessment districts", () => {
+  const richmond = collection.features.filter((feature) => feature.properties.city === "Richmond" && feature.properties.state === "VA");
+  assert.equal(richmond.length, 6);
+  const names = new Set(richmond.map((feature) => feature.properties.name));
+  for (const name of [
+    "Richmond General Overlay Special Assessment District",
+    "Richmond Consumer Broad Street Special Assessment District",
+    "Richmond Consumer Shockoe Slip Special Assessment District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of richmond) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.properties.sourceId, "richmond-special-assessment-districts");
+  }
+});
+
 test("Hawaii publishes its five verified business improvement districts", () => {
   const hawaii = collection.features.filter((feature) => feature.properties.state === "HI");
   const names = new Set(hawaii.map((feature) => feature.properties.name));

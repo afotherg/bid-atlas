@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T16:03:37.573Z",
-  "records": 494,
+  "generatedAt": "2026-07-21T16:31:37.004Z",
+  "records": 516,
   "states": [
     "AZ",
     "CA",
@@ -16,6 +16,7 @@
     "MA",
     "MD",
     "MI",
+    "MN",
     "NC",
     "NV",
     "NY",
@@ -25,6 +26,7 @@
     "PA",
     "TN",
     "TX",
+    "VA",
     "WA",
     "WI"
   ],
@@ -74,6 +76,7 @@
     "Miami Beach, FL",
     "Miami, FL",
     "Milwaukee, WI",
+    "Minneapolis, MN",
     "Monrovia, CA",
     "Nampa, ID",
     "Napa, CA",
@@ -92,6 +95,7 @@
     "Raleigh, NC",
     "Redwood City, CA",
     "Reno, NV",
+    "Richmond, VA",
     "Riverside, CA",
     "Rome, GA",
     "Sacramento, CA",
@@ -853,15 +857,29 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T16:03:37.573Z"
+    },
+    {
+      "id": "minneapolis-special-service-districts",
+      "name": "Minneapolis Special Service Districts",
+      "status": "ok",
+      "records": 16,
+      "checkedAt": "2026-07-21T16:31:37.004Z"
+    },
+    {
+      "id": "richmond-special-assessment-districts",
+      "name": "Richmond Special Assessment Districts",
+      "status": "ok",
+      "records": 6,
+      "checkedAt": "2026-07-21T16:31:37.004Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 80,
-    "configuredSources": 93,
+    "verifiedJurisdictions": 82,
+    "configuredSources": 95,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 494,
+    "added": 22,
     "modified": 0,
     "removed": 0
   }

@@ -101,15 +101,33 @@
       ]
     },
     "overrides": {
-      "ARTS DISTRICT LOS ANGELES": { "name": "Arts District Los Angeles" },
-      "BYZANTINE LATINO QUARTER - PICO BOULEVARD": { "name": "BLQ-Pico Boulevard" },
-      "GATEWAY TO LOS ANGELES": { "name": "Gateway to Los Angeles" },
-      "GREATER LEIMERT PARK VILLAGE/CRENSHAW CORRIDOR": { "name": "Greater Leimert Park Village / Crenshaw Corridor" },
-      "HISTORIC CORE": { "name": "Historic Downtown" },
-      "LINCOLN HEIGHTS BUSINESS AND COMMUNITY BENEFIT": { "name": "Greater Lincoln Heights" },
-      "NORTH HOLLYWOOD TRANSIT": { "name": "North Hollywood" },
-      "SOUTH LOS ANGELES INDUSTRIAL TRACT (GOODYEAR)": { "name": "South Los Angeles Industrial Tract" },
-      "THE VILLAGE AT SHERMAN OAKS": { "name": "Sherman Oaks" }
+      "ARTS DISTRICT LOS ANGELES": {
+        "name": "Arts District Los Angeles"
+      },
+      "BYZANTINE LATINO QUARTER - PICO BOULEVARD": {
+        "name": "BLQ-Pico Boulevard"
+      },
+      "GATEWAY TO LOS ANGELES": {
+        "name": "Gateway to Los Angeles"
+      },
+      "GREATER LEIMERT PARK VILLAGE/CRENSHAW CORRIDOR": {
+        "name": "Greater Leimert Park Village / Crenshaw Corridor"
+      },
+      "HISTORIC CORE": {
+        "name": "Historic Downtown"
+      },
+      "LINCOLN HEIGHTS BUSINESS AND COMMUNITY BENEFIT": {
+        "name": "Greater Lincoln Heights"
+      },
+      "NORTH HOLLYWOOD TRANSIT": {
+        "name": "North Hollywood"
+      },
+      "SOUTH LOS ANGELES INDUSTRIAL TRACT (GOODYEAR)": {
+        "name": "South Los Angeles Industrial Tract"
+      },
+      "THE VILLAGE AT SHERMAN OAKS": {
+        "name": "Sherman Oaks"
+      }
     }
   },
   {
@@ -235,7 +253,11 @@
       "https://www.palmspringsca.gov/government/departments/finance-treasury/tourism-business-improvement-district",
       "https://www.palmspringsca.gov/government/city-clerk/boards-and-commissions/small-hotel-tourism-business-improvement-district"
     ],
-    "fields": { "name": ["name"] },
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
     "overrides": {
       "Palm Springs Small Hotel Tourism Business Improvement District": {
         "established": "2016",
@@ -1530,13 +1552,27 @@
       "https://www.cityoflewiston.org/DocumentCenter/View/2596/Insert-for-BID-Assessment-Notices-1"
     ],
     "fields": {
-      "name": ["name"],
-      "city": ["city"],
-      "website": ["website"],
-      "sourceUrl": ["sourceUrl"],
-      "established": ["established"],
-      "area": ["area"],
-      "status": ["status"]
+      "name": [
+        "name"
+      ],
+      "city": [
+        "city"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
     }
   },
   {
@@ -1590,7 +1626,9 @@
       "https://services3.arcgis.com/uknczv4rpevve42E/arcgis/rest/services/California_Cities_and_Identifiers_Blue_Version_view/FeatureServer/2"
     ],
     "fields": {
-      "name": ["name"]
+      "name": [
+        "name"
+      ]
     },
     "overrides": {
       "Downtown Burbank Property and Business Improvement District": {
@@ -1626,7 +1664,9 @@
       "https://www.glendaleca.gov/government/departments/finance/revenue/montrose-business-improvement-district"
     ],
     "fields": {
-      "name": ["name"]
+      "name": [
+        "name"
+      ]
     },
     "overrides": {
       "Greater Downtown Glendale Community Benefit District": {
@@ -1660,7 +1700,9 @@
       "https://www.cityofsouthgate.org/Business/Your-Business/Permits-Licenses/Business-Licenses/Parking-and-Business-Improvement-Area"
     ],
     "fields": {
-      "name": ["name"]
+      "name": [
+        "name"
+      ]
     },
     "overrides": {
       "Tweedy Mile Parking and Business Improvement Area": {
@@ -1683,8 +1725,12 @@
     "publisher": "California Department of Tax and Fee Administration",
     "cadence": "Annual",
     "fixedName": "Lynwood Parking and Business Improvement District",
-    "monitorUrls": ["https://lynwoodca.gov/AgendaCenter/ViewFile/Agenda/_10212025-366"],
-    "fields": {"name": []},
+    "monitorUrls": [
+      "https://lynwoodca.gov/AgendaCenter/ViewFile/Agenda/_10212025-366"
+    ],
+    "fields": {
+      "name": []
+    },
     "overrides": {
       "Lynwood Parking and Business Improvement District": {
         "website": "https://www.lynwoodca.gov/172/Economic-Development",
@@ -1705,9 +1751,24 @@
     "landingPage": "https://www.monroviaca.gov/your-government/community-development/neighborhood-business-services/business-license",
     "publisher": "City of Monrovia",
     "cadence": "Annual",
-    "monitorUrls": ["https://www.monroviaca.gov/your-government/community-development/neighborhood-business-services/business-license","https://www.monroviaca.gov/your-government/boards-and-commissions/monrovia-old-town-advisory-board"],
-    "fields": {"name":["name"]},
-    "overrides": {"Monrovia Old Town Business Improvement District":{"website":"https://www.monroviaoldtown.org/","established":"1968","area":"Generalized from the current official street-boundary description; south of Foothill Boulevard, north of Olive Avenue, east of Primrose Avenue, and west of Ivy Avenue","sourceUrl":"https://www.monroviaca.gov/doing-business-here/filming","reportUrl":"https://www.monroviaca.gov/home/showpublisheddocument/37516/638845604604130000"}}
+    "monitorUrls": [
+      "https://www.monroviaca.gov/your-government/community-development/neighborhood-business-services/business-license",
+      "https://www.monroviaca.gov/your-government/boards-and-commissions/monrovia-old-town-advisory-board"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Monrovia Old Town Business Improvement District": {
+        "website": "https://www.monroviaoldtown.org/",
+        "established": "1968",
+        "area": "Generalized from the current official street-boundary description; south of Foothill Boulevard, north of Olive Avenue, east of Primrose Avenue, and west of Ivy Avenue",
+        "sourceUrl": "https://www.monroviaca.gov/doing-business-here/filming",
+        "reportUrl": "https://www.monroviaca.gov/home/showpublisheddocument/37516/638845604604130000"
+      }
+    }
   },
   {
     "id": "downtown-downey-community-benefit-district",
@@ -1723,7 +1784,11 @@
       "https://www.downeyca.org/our-city/departments/community-development/downtown-community-benefit-district",
       "https://www.downtowndowney.org/about"
     ],
-    "fields": {"name": ["name"]},
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
     "overrides": {
       "Downtown Downey Community Benefit District": {
         "website": "https://www.downtowndowney.org/",
@@ -1749,7 +1814,11 @@
       "https://culver-city.legistar.com/LegislationDetail.aspx?GUID=9254F831-8991-45EB-9780-8A821438C90E&ID=7710709&Options=&Search=",
       "https://culver-city.legistar.com/LegislationDetail.aspx?GUID=4E837036-8F4A-4B5B-AE1C-F187A12512DA&ID=7710824&Options=&Search="
     ],
-    "fields": {"name": ["name"]},
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
     "overrides": {
       "Downtown Culver City Business Improvement District": {
         "website": "https://downtownculvercity.com/",
@@ -1777,9 +1846,25 @@
     "landingPage": "https://pomona.legistar.com/LegislationDetail.aspx?From=RSS&GUID=5F9F7394-F2D8-448E-9637-30B8D16C1B04&ID=7487993",
     "publisher": "City of Pomona",
     "cadence": "Annual",
-    "monitorUrls": ["https://pomona.legistar.com/LegislationDetail.aspx?From=RSS&GUID=5F9F7394-F2D8-448E-9637-30B8D16C1B04&ID=7487993","https://www.downtownpomona.org/"],
-    "fields": {"name":["name"]},
-    "overrides": {"Downtown Pomona Property and Business Improvement District":{"website":"https://www.downtownpomona.org/","established":"2004","expires":"2028","area":"Generalized from the official 2019 parcel map retained with the FY2025-26 levy; the core extends from First Street to Mission Boulevard between White Avenue and Eleanor Street, with eastern and northern extensions","sourceUrl":"https://pomona.legistar.com/View.ashx?GUID=4300AD45-E4A6-42B4-9041-7D8D3D949BFE&ID=14531522&M=F","reportUrl":"https://pomona.legistar.com/LegislationDetail.aspx?From=RSS&GUID=5F9F7394-F2D8-448E-9637-30B8D16C1B04&ID=7487993"}}
+    "monitorUrls": [
+      "https://pomona.legistar.com/LegislationDetail.aspx?From=RSS&GUID=5F9F7394-F2D8-448E-9637-30B8D16C1B04&ID=7487993",
+      "https://www.downtownpomona.org/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ]
+    },
+    "overrides": {
+      "Downtown Pomona Property and Business Improvement District": {
+        "website": "https://www.downtownpomona.org/",
+        "established": "2004",
+        "expires": "2028",
+        "area": "Generalized from the official 2019 parcel map retained with the FY2025-26 levy; the core extends from First Street to Mission Boulevard between White Avenue and Eleanor Street, with eastern and northern extensions",
+        "sourceUrl": "https://pomona.legistar.com/View.ashx?GUID=4300AD45-E4A6-42B4-9041-7D8D3D949BFE&ID=14531522&M=F",
+        "reportUrl": "https://pomona.legistar.com/LegislationDetail.aspx?From=RSS&GUID=5F9F7394-F2D8-448E-9637-30B8D16C1B04&ID=7487993"
+      }
+    }
   },
   {
     "id": "glendora-village-business-improvement-district",
@@ -1796,7 +1881,9 @@
       "https://glendoravillage.com/bid-meetings-and-agendas-1"
     ],
     "fields": {
-      "name": ["name"]
+      "name": [
+        "name"
+      ]
     },
     "overrides": {
       "Glendora Village Business Improvement District": {
@@ -1823,7 +1910,9 @@
       "https://pub-applevalley.escribemeetings.com/Meeting.aspx?Agenda=Agenda&Id=5933700c-3fb4-447b-829a-d0e22241b67b&Item=35&Tab=attachments&lang=English"
     ],
     "fields": {
-      "name": ["name"]
+      "name": [
+        "name"
+      ]
     },
     "overrides": {
       "Apple Valley Village Property and Business Improvement District": {
@@ -1851,7 +1940,9 @@
       "https://downtownontario.org/"
     ],
     "fields": {
-      "name": ["name"]
+      "name": [
+        "name"
+      ]
     },
     "overrides": {
       "Downtown Ontario Community Benefit District": {
@@ -2471,12 +2562,24 @@
     "publisher": "Downtown Indy, Inc. / City of Indianapolis",
     "cadence": "Annual; generalized boundary reviewed against ordinance",
     "fields": {
-      "name": ["name"],
-      "website": ["website"],
-      "sourceUrl": ["sourceUrl"],
-      "established": ["established"],
-      "area": ["area"],
-      "status": ["status"]
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
     }
   },
   {
@@ -2495,16 +2598,36 @@
       ]
     },
     "overrides": {
-      "Pioneer Square BIA": {"name": "Pioneer Square Business Improvement Area"},
-      "SODO BIA": {"name": "SODO Business Improvement Area"},
-      "Seattle Tourism BIA": {"name": "Seattle Tourism Improvement Area"},
-      "Chinatown/International District BIA": {"name": "Chinatown-International District Business Improvement Area"},
-      "West Seattle Junction BIA": {"name": "West Seattle Junction Business Improvement Area"},
-      "University District BIA": {"name": "University District Business Improvement Area"},
-      "Broadway BIA": {"name": "Broadway Business Improvement Area"},
-      "Columbia City BIA": {"name": "Columbia City Business Improvement Area"},
-      "Ballard BIA": {"name": "Ballard Business Improvement Area"},
-      "15th Avenue East BIA": {"name": "15th Avenue East Business Improvement Area"}
+      "Pioneer Square BIA": {
+        "name": "Pioneer Square Business Improvement Area"
+      },
+      "SODO BIA": {
+        "name": "SODO Business Improvement Area"
+      },
+      "Seattle Tourism BIA": {
+        "name": "Seattle Tourism Improvement Area"
+      },
+      "Chinatown/International District BIA": {
+        "name": "Chinatown-International District Business Improvement Area"
+      },
+      "West Seattle Junction BIA": {
+        "name": "West Seattle Junction Business Improvement Area"
+      },
+      "University District BIA": {
+        "name": "University District Business Improvement Area"
+      },
+      "Broadway BIA": {
+        "name": "Broadway Business Improvement Area"
+      },
+      "Columbia City BIA": {
+        "name": "Columbia City Business Improvement Area"
+      },
+      "Ballard BIA": {
+        "name": "Ballard Business Improvement Area"
+      },
+      "15th Avenue East BIA": {
+        "name": "15th Avenue East Business Improvement Area"
+      }
     }
   },
   {
@@ -2541,12 +2664,24 @@
       "https://www.okc.gov/files/assets/city/v/1/finance/documents/afrs/acfr-2024-final-web.pdf"
     ],
     "fields": {
-      "name": ["name"],
-      "website": ["website"],
-      "sourceUrl": ["sourceUrl"],
-      "established": ["established"],
-      "area": ["area"],
-      "status": ["status"]
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
     }
   },
   {
@@ -2564,12 +2699,24 @@
       "https://elpasotexas.granicus.com/boards/w/a2ff3b62c1919332/boards/48457"
     ],
     "fields": {
-      "name": ["name"],
-      "website": ["website"],
-      "sourceUrl": ["sourceUrl"],
-      "established": ["established"],
-      "area": ["area"],
-      "status": ["status"]
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
     }
   },
   {
@@ -2609,12 +2756,24 @@
     "publisher": "Newmarket Business Improvement District / Boston Planning and Development Agency",
     "cadence": "Annual; generalized boundary reviewed against official map",
     "fields": {
-      "name": ["name"],
-      "website": ["website"],
-      "sourceUrl": ["sourceUrl"],
-      "established": ["established"],
-      "area": ["area"],
-      "status": ["status"]
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
     }
   },
   {
@@ -2642,13 +2801,27 @@
     "publisher": "City of Detroit / district managers",
     "cadence": "Annual; generalized boundaries reviewed against adopted zone plans",
     "fields": {
-      "name": ["name"],
-      "website": ["website"],
-      "sourceUrl": ["sourceUrl"],
-      "established": ["established"],
-      "expires": ["expires"],
-      "area": ["area"],
-      "status": ["status"]
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
     }
   },
   {
@@ -2725,7 +2898,9 @@
       }
     },
     "fields": {
-      "name": ["DISTRICT_NAME"]
+      "name": [
+        "DISTRICT_NAME"
+      ]
     }
   },
   {
@@ -2831,6 +3006,77 @@
       "Hillsborough Street": {
         "name": "Hillsborough Street Municipal Service District",
         "website": "https://www.hillsboroughstreet.org/"
+      }
+    }
+  },
+  {
+    "id": "minneapolis-special-service-districts",
+    "name": "Minneapolis Special Service Districts",
+    "jurisdiction": "Minneapolis, MN",
+    "state": "MN",
+    "city": "Minneapolis",
+    "url": "https://services.arcgis.com/afSMGVsC7QlRK1kZ/arcgis/rest/services/Special_Service_Districts_Map/FeatureServer/1/query?where=SYMBOL_NAME%3D%27SPEC_SERV_DIST%27&outFields=BDRY_NAME%2CSYMBOL_NAME&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www2.minneapolismn.gov/resident-services/property-housing/property-values-taxes/special-assessments/special-assessment-types/",
+    "publisher": "City of Minneapolis",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "BDRY_NAME"
+      ]
+    },
+    "overrides": {
+      "Downtown Improvement District (DID)": {
+        "name": "Minneapolis Downtown Improvement District",
+        "website": "https://www.mplsdid.com/",
+        "area": "120+ block downtown special service district"
+      },
+      "Eat Street (Nicollet Avenue South)": {
+        "name": "Eat Street / Nicollet Avenue South Special Service District"
+      },
+      "54th & Lyndale": {
+        "name": "54th and Lyndale Special Service District"
+      },
+      "50th & France": {
+        "name": "50th and France Special Service District"
+      }
+    }
+  },
+  {
+    "id": "richmond-special-assessment-districts",
+    "name": "Richmond Special Assessment Districts",
+    "jurisdiction": "Richmond, VA",
+    "state": "VA",
+    "city": "Richmond",
+    "url": "https://services1.arcgis.com/k3vhq11XkBNeeOfM/arcgis/rest/services/SAD/FeatureServer/0/query?where=1%3D1&outFields=Name%2CSource&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://venturerichmond.com/our-services/service-district/",
+    "publisher": "City of Richmond / Office of the Assessor",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "Name"
+      ]
+    },
+    "overrides": {
+      "CONSUMER DISTRICT AREA #1 - Broad Street": {
+        "name": "Richmond Consumer Broad Street Special Assessment District",
+        "website": "https://venturerichmond.com/our-services/service-district/"
+      },
+      "CONSUMER DISTRICT AREA #2 - Shockoe Slip": {
+        "name": "Richmond Consumer Shockoe Slip Special Assessment District",
+        "website": "https://venturerichmond.com/our-services/service-district/"
+      },
+      "RIVERFRONT DEVELOPED CANAL DISTRICT": {
+        "name": "Richmond Riverfront Developed Canal Special Assessment District"
+      },
+      "RIVERFRONT OVERLAY DISTRICT": {
+        "name": "Richmond Riverfront Overlay Special Assessment District"
+      },
+      "RIVERFRONT PRE-DEVELOPMENT DISTRICT": {
+        "name": "Richmond Riverfront Pre-Development Special Assessment District"
+      },
+      "GENERAL OVERLAY DISTRICT": {
+        "name": "Richmond General Overlay Special Assessment District",
+        "website": "https://venturerichmond.com/our-services/service-district/"
       }
     }
   }
