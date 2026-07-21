@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:16:31.381Z",
-  "records": 584,
+  "generatedAt": "2026-07-21T20:17:18.145Z",
+  "records": 586,
   "states": [
     "AK",
     "AL",
@@ -160,6 +160,7 @@
     "Santa Clarita, CA",
     "Santa Cruz, CA",
     "Santa Monica, CA",
+    "Santa Rosa, CA",
     "Seattle, WA",
     "Sioux Falls, SD",
     "South Gate, CA",
@@ -1360,15 +1361,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:16:31.381Z"
+    },
+    {
+      "id": "santa-rosa-tourism-business-improvement-areas",
+      "name": "Santa Rosa Tourism Business Improvement Areas",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T20:17:18.145Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 135,
-    "configuredSources": 148,
+    "verifiedJurisdictions": 136,
+    "configuredSources": 149,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }
