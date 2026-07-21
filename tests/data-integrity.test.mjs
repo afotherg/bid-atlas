@@ -894,6 +894,29 @@ test("Austin publishes its three maintenance and operations public improvement d
   }
 });
 
+test("Indianapolis publishes its three active economic improvement districts", () => {
+  const sourceIds = new Set([
+    "indianapolis-economic-improvement-districts",
+    "indianapolis-downtown-economic-enhancement-district",
+  ]);
+  const districts = collection.features.filter((feature) => sourceIds.has(feature.properties.sourceId));
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 3);
+  for (const name of [
+    "Downtown Indianapolis Economic Enhancement District",
+    "Greater Virginia Avenue Corridor Economic Improvement District",
+    "Woodruff Place Economic Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Indianapolis");
+    assert.equal(district.properties.state, "IN");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -86.3 && longitude < -86, `${district.properties.name} is outside Indianapolis longitude`);
+    assert.ok(latitude > 39.6 && latitude < 39.9, `${district.properties.name} is outside Indianapolis latitude`);
+  }
+});
+
 test("Philadelphia publishes its fifteen mandatory business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "philadelphia-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

@@ -2431,5 +2431,52 @@
         "status"
       ]
     }
+  },
+  {
+    "id": "indianapolis-economic-improvement-districts",
+    "name": "Indianapolis Economic Improvement Districts",
+    "jurisdiction": "Indianapolis, IN",
+    "state": "IN",
+    "city": "Indianapolis",
+    "url": "https://gis.indy.gov/server/rest/services/DMDPortal/SpecialDistricts/MapServer/7/query?where=1%3D1&outFields=NAME&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://gis.indy.gov/server/rest/services/DMDPortal/SpecialDistricts/MapServer/7",
+    "publisher": "City of Indianapolis and Marion County",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "NAME"
+      ]
+    },
+    "overrides": {
+      "Woodruff Place EID": {
+        "name": "Woodruff Place Economic Improvement District",
+        "website": "https://woodruffplace.org/about/eid/",
+        "status": "Active"
+      },
+      "Greater Virginia Avenue Corridor EID": {
+        "name": "Greater Virginia Avenue Corridor Economic Improvement District",
+        "website": "https://www.gvac.info/",
+        "status": "Active"
+      }
+    }
+  },
+  {
+    "id": "indianapolis-downtown-economic-enhancement-district",
+    "name": "Downtown Indianapolis Economic Enhancement District",
+    "jurisdiction": "Indianapolis, IN",
+    "state": "IN",
+    "city": "Indianapolis",
+    "file": "data/sources/indianapolis-downtown-economic-enhancement-district.geojson",
+    "landingPage": "https://downtownindy.org/eed",
+    "publisher": "Downtown Indy, Inc. / City of Indianapolis",
+    "cadence": "Annual; generalized boundary reviewed against ordinance",
+    "fields": {
+      "name": ["name"],
+      "website": ["website"],
+      "sourceUrl": ["sourceUrl"],
+      "established": ["established"],
+      "area": ["area"],
+      "status": ["status"]
+    }
   }
 ]

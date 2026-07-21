@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Indianapolis Economic Enhancement District",
+        "website": "https://downtownindy.org/eed",
+        "sourceUrl": "https://downtownindy.org/eed",
+        "established": "2023; launched 2025",
+        "area": "Mile Square; generalized from the ordinance boundary along North, East, South, and West Streets",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-86.1733, 39.7757], [-86.1477, 39.7756], [-86.1477, 39.7600],
+          [-86.1732, 39.7600], [-86.1733, 39.7757]
+        ]]
+      }
+    }
+  ]
+}
