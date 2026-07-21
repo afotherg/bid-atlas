@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:34:43.571Z",
-  "records": 573,
+  "generatedAt": "2026-07-21T19:35:18.255Z",
+  "records": 574,
   "states": [
     "AK",
     "AR",
@@ -46,6 +46,7 @@
     "Apple Valley, CA",
     "Arlington, TX",
     "Atlanta, GA",
+    "Augusta, GA",
     "Austin, TX",
     "Baltimore, MD",
     "Baton Rouge, LA",
@@ -1277,11 +1278,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:34:43.571Z"
+    },
+    {
+      "id": "augusta-downtown-bid",
+      "name": "Downtown Augusta Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:35:18.255Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 125,
-    "configuredSources": 138,
+    "verifiedJurisdictions": 126,
+    "configuredSources": 139,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
