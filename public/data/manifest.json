@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:29:48.387Z",
-  "records": 601,
+  "generatedAt": "2026-07-21T20:30:36.112Z",
+  "records": 603,
   "states": [
     "AK",
     "AL",
@@ -142,6 +142,7 @@
     "Palm Springs, CA",
     "Palmdale, CA",
     "Pasadena, CA",
+    "Paterson, NJ",
     "Philadelphia, PA",
     "Phoenix, AZ",
     "Pittsburgh, PA",
@@ -1440,15 +1441,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:29:48.387Z"
+    },
+    {
+      "id": "paterson-special-improvement-districts",
+      "name": "Paterson Special Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T20:30:36.112Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 145,
-    "configuredSources": 158,
+    "verifiedJurisdictions": 146,
+    "configuredSources": 159,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }

@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 8,
-    "active_hits": 6,
+    "cities_researched": 9,
+    "active_hits": 7,
     "misses": 2,
-    "active_hit_rate_percent": 75.0,
+    "active_hit_rate_percent": 77.8,
     "result": "In progress."
   },
   "records": [
@@ -167,6 +167,23 @@
         "https://www.cityofpalmdaleca.gov/291/Finance"
       ],
       "production_next_action": "Production-ingested as a generalized selective-lodging benefit zone within Palmdale."
+    },
+    {
+      "rank": 9,
+      "census_rank": 165,
+      "city": "Paterson",
+      "state": "NJ",
+      "population_2025": 161793,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Special Improvement District",
+      "summary": "Paterson currently identifies the Downtown Paterson and Bunker Hill Special Improvement Districts as active assessment-funded place-management districts. Downtown provides clean, safe, marketing, and event services, while the Bunker Hill industrial district supports security, beautification, signage, and other supplemental amenities. Older code provisions for Sandy Hill and 21st Avenue were not treated as current without comparable operating evidence.",
+      "official_sources": [
+        "https://www.patersonnj.gov/category/subcategory.php?categoryid=17",
+        "https://ecode360.com/8549632",
+        "https://ecode360.com/8549600"
+      ],
+      "production_next_action": "Production-ingested as two generalized commercial and industrial service-district boundaries; monitor other codified SIDs for current budgets before adding them."
     }
   ]
 }
