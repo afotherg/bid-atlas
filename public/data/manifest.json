@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:09:14.548Z",
-  "records": 580,
+  "generatedAt": "2026-07-21T20:09:46.889Z",
+  "records": 581,
   "states": [
     "AK",
     "AL",
@@ -59,6 +59,7 @@
     "Burbank, CA",
     "Burlingame, CA",
     "Charlotte, NC",
+    "Chattanooga, TN",
     "Cincinnati, OH",
     "Cleveland, OH",
     "Colorado Springs, CO",
@@ -1327,11 +1328,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:09:14.548Z"
+    },
+    {
+      "id": "chattanooga-central-business-improvement-district",
+      "name": "Chattanooga Central Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:09:46.889Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 131,
-    "configuredSources": 144,
+    "verifiedJurisdictions": 132,
+    "configuredSources": 145,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
