@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Winston-Salem Business Improvement District",
+        "website": "https://www.cityofws.org/1352/Business-Improvement-District",
+        "sourceUrl": "https://www.cityofws.org/3548/Business-Improvement-District",
+        "status": "Active",
+        "area": "Generalized downtown Winston-Salem commercial core envelope for the municipal service district created in 2013 (Street-limit generalized envelope from official district description)",
+        "established": "2013"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -80.255,
+              36.09
+            ],
+            [
+              -80.235,
+              36.09
+            ],
+            [
+              -80.235,
+              36.105
+            ],
+            [
+              -80.255,
+              36.105
+            ],
+            [
+              -80.255,
+              36.09
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

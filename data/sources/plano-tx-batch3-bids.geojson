@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Plano Public Improvement District",
+        "website": "https://www.plano.gov/downtown-plano-public-improvement-district",
+        "sourceUrl": "https://www.plano.gov/downtown-plano-public-improvement-district",
+        "status": "Active",
+        "area": "Generalized Downtown Plano historic commercial core envelope around the 15th Street / Municipal Center area for the Downtown PID (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -96.71,
+              33.015
+            ],
+            [
+              -96.695,
+              33.015
+            ],
+            [
+              -96.695,
+              33.028
+            ],
+            [
+              -96.71,
+              33.028
+            ],
+            [
+              -96.71,
+              33.015
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

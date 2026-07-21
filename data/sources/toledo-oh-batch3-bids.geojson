@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Toledo Improvement District",
+        "website": "https://toledo.oh.gov/downtown-toledo-improvement-district",
+        "sourceUrl": "https://toledo.oh.gov/downtown-toledo-improvement-district",
+        "status": "Active",
+        "area": "Generalized downtown Toledo commercial core envelope for the Downtown Toledo Special Improvement District (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -83.545,
+              41.644
+            ],
+            [
+              -83.525,
+              41.644
+            ],
+            [
+              -83.525,
+              41.662
+            ],
+            [
+              -83.545,
+              41.662
+            ],
+            [
+              -83.545,
+              41.644
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

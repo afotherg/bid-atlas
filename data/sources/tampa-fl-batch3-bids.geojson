@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Tampa Special Services District",
+        "website": "https://www.tampasdowntown.com/",
+        "sourceUrl": "https://www.tampasdowntown.com/",
+        "status": "Active",
+        "area": "Generalized downtown Tampa envelope approximating the Special Services District described as roughly 1,085 acres from Park Avenue to Garrison Channel and Ybor Channel to North Boulevard (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -82.475,
+              27.935
+            ],
+            [
+              -82.445,
+              27.935
+            ],
+            [
+              -82.445,
+              27.965
+            ],
+            [
+              -82.475,
+              27.965
+            ],
+            [
+              -82.475,
+              27.935
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

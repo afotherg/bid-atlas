@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buffalo Place Business Improvement District",
+        "website": "https://www.buffaloplace.com/",
+        "sourceUrl": "https://www.buffaloplace.com/about/",
+        "status": "Active",
+        "area": "Generalized corridor from Buffalo Place description: Main, Pearl, and Washington Streets from Goodell Street to the Buffalo River (Street-limit generalized envelope from official district description)",
+        "established": "1982"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -78.8785,
+              42.877
+            ],
+            [
+              -78.8735,
+              42.877
+            ],
+            [
+              -78.87,
+              42.901
+            ],
+            [
+              -78.876,
+              42.901
+            ],
+            [
+              -78.8785,
+              42.877
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

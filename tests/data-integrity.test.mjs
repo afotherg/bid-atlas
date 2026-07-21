@@ -680,10 +680,14 @@ test("Nevada publishes the verified Downtown Reno BID", () => {
   assert.ok(latitude > 39 && latitude < 40);
 });
 
-test("Florida publishes five statewide-registry districts and Jacksonville's verified BID", () => {
+test("Florida publishes statewide-registry districts, Jacksonville, and Tampa", () => {
   const florida = collection.features.filter((feature) => feature.properties.state === "FL");
+  const registry = florida.filter((feature) => feature.properties.sourceId === "florida-verified-business-improvement-districts");
+  const tampa = florida.filter((feature) => feature.properties.sourceId === "tampa-fl-verified-districts");
   const names = new Set(florida.map((feature) => feature.properties.name));
-  assert.equal(florida.length, 6);
+  assert.equal(registry.length, 6);
+  assert.equal(tampa.length, 1);
+  assert.equal(florida.length, 7);
   for (const name of [
     "Coconut Grove Business Improvement District",
     "Wynwood Business Improvement District",
@@ -691,12 +695,15 @@ test("Florida publishes five statewide-registry districts and Jacksonville's ver
     "Washington Avenue Business Improvement District",
     "41st Street Business Improvement District",
     "Downtown Jacksonville Business Improvement District",
+    "Downtown Tampa Special Services District",
   ]) assert.ok(names.has(name), `missing ${name}`);
-  assert.deepEqual(new Set(florida.map((feature) => feature.properties.city)), new Set(["Miami", "Miami Beach", "Jacksonville"]));
+  assert.deepEqual(
+    new Set(florida.map((feature) => feature.properties.city)),
+    new Set(["Miami", "Miami Beach", "Jacksonville", "Tampa"]),
+  );
   assert.equal(florida.find((feature) => feature.properties.city === "Jacksonville")?.geometry.type, "MultiPolygon");
   for (const district of florida) {
     assert.equal(district.properties.status, "Active");
-    assert.equal(district.properties.sourceId, "florida-verified-business-improvement-districts");
   }
 });
 
@@ -776,6 +783,37 @@ test("Richmond publishes its six special assessment districts", () => {
   for (const district of richmond) {
     assert.equal(district.properties.status, "Active");
     assert.equal(district.properties.sourceId, "richmond-special-assessment-districts");
+  }
+});
+
+test("batch-3 large-city verified districts publish generalized active boundaries", () => {
+  const expected = {
+    "New Orleans": ["New Orleans Downtown Development District"],
+    Buffalo: ["Buffalo Place Business Improvement District"],
+    Pittsburgh: ["Downtown Pittsburgh Business Improvement District"],
+    Cleveland: [
+      "Downtown Cleveland Improvement District",
+      "Ohio City Improvement District",
+      "University Circle Special Improvement District",
+    ],
+    Cincinnati: [
+      "Downtown Cincinnati Improvement District",
+      "Over-the-Rhine South Special Improvement District",
+    ],
+    Durham: ["Downtown Durham Municipal Service District"],
+    Omaha: [
+      "Omaha Downtown / Old Market Business Improvement Districts",
+      "South Omaha Business Improvement District",
+    ],
+  };
+  for (const [city, names] of Object.entries(expected)) {
+    const features = collection.features.filter((feature) => feature.properties.city === city);
+    const published = new Set(features.map((feature) => feature.properties.name));
+    for (const name of names) assert.ok(published.has(name), `missing ${city}: ${name}`);
+    for (const feature of features) {
+      assert.equal(feature.properties.status, "Active");
+      assert.ok(feature.properties.sourceId?.includes("verified-districts") || feature.properties.sourceId?.includes("special"), feature.properties.sourceId);
+    }
   }
 });
 

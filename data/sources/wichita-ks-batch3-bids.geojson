@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Wichita Self-Supported Municipal Improvement District",
+        "website": "https://downtownwichita.org/",
+        "sourceUrl": "https://downtownwichita.org/about/overview",
+        "status": "Active",
+        "area": "Generalized downtown Wichita commercial core envelope for the Self-Supported Municipal Improvement District (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -97.35,
+              37.68
+            ],
+            [
+              -97.325,
+              37.68
+            ],
+            [
+              -97.325,
+              37.7
+            ],
+            [
+              -97.35,
+              37.7
+            ],
+            [
+              -97.35,
+              37.68
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madison Central Business Improvement District",
+        "website": "https://www.visitdowntownmadison.com/",
+        "sourceUrl": "https://www.cityofmadison.com/city-hall/committees/madison-central-business-improvement-district-bid-board",
+        "status": "Active",
+        "area": "Generalized isthmus downtown envelope around the Capitol Square / State Street commercial core for the Madison Central Business Improvement District (street-limit generalized envelope from district context)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.4005,
+              43.068
+            ],
+            [
+              -89.375,
+              43.068
+            ],
+            [
+              -89.375,
+              43.0825
+            ],
+            [
+              -89.4005,
+              43.0825
+            ],
+            [
+              -89.4005,
+              43.068
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

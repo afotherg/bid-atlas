@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Laredo Business Improvement District",
+        "website": "https://www.downtownlaredobid.org/",
+        "sourceUrl": "https://www.downtownlaredobid.org/",
+        "status": "Active",
+        "area": "Generalized historic downtown Laredo commercial core envelope for the Downtown BID / Central Laredo Municipal Management District (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -99.515,
+              27.5
+            ],
+            [
+              -99.495,
+              27.5
+            ],
+            [
+              -99.495,
+              27.515
+            ],
+            [
+              -99.515,
+              27.515
+            ],
+            [
+              -99.515,
+              27.5
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

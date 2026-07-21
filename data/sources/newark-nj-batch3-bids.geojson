@@ -1,0 +1,79 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Newark Downtown District Special Improvement District",
+        "website": "https://downtownnewark.com/about-ndd/",
+        "sourceUrl": "https://downtownnewark.com/about-ndd/",
+        "status": "Active",
+        "area": "Generalized central business / Four Corners downtown envelope for the Newark Downtown District SID (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.18,
+              40.73
+            ],
+            [
+              -74.16,
+              40.73
+            ],
+            [
+              -74.16,
+              40.745
+            ],
+            [
+              -74.18,
+              40.745
+            ],
+            [
+              -74.18,
+              40.73
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ironbound Special Improvement District",
+        "website": "https://goironbound.com/home",
+        "sourceUrl": "https://goironbound.com/home",
+        "status": "Active",
+        "area": "Generalized Ironbound neighbourhood commercial district envelope east of downtown Newark (OSM/Nominatim bounding envelope for 'Ironbound, Newark, New Jersey')"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.1806265,
+              40.7053505
+            ],
+            [
+              -74.1386265,
+              40.7053505
+            ],
+            [
+              -74.1386265,
+              40.747350499999996
+            ],
+            [
+              -74.1806265,
+              40.747350499999996
+            ],
+            [
+              -74.1806265,
+              40.7053505
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown St. Louis Community Improvement District",
+        "website": "https://www.stlcid.org/",
+        "sourceUrl": "https://www.stlcid.org/",
+        "status": "Active",
+        "area": "Generalized downtown St. Louis envelope including the CID core and Laclede Landing subdistrict area (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.205,
+              38.618
+            ],
+            [
+              -90.175,
+              38.618
+            ],
+            [
+              -90.175,
+              38.64
+            ],
+            [
+              -90.205,
+              38.64
+            ],
+            [
+              -90.205,
+              38.618
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Historic Downtown Jersey City Special Improvement District",
+        "website": "https://jcdowntown.org/",
+        "sourceUrl": "https://jcdowntown.org/about/",
+        "status": "Active",
+        "area": "Generalized Historic Downtown / Van Vorst\u2013Paulus Hook area envelope for the Historic Downtown SID (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.05,
+              40.71
+            ],
+            [
+              -74.03,
+              40.71
+            ],
+            [
+              -74.03,
+              40.725
+            ],
+            [
+              -74.05,
+              40.725
+            ],
+            [
+              -74.05,
+              40.71
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Journal Square Special Improvement District",
+        "website": "https://www.downtownnj.com/spotlight-jcedc/",
+        "sourceUrl": "https://www.downtownnj.com/spotlight-jcedc/",
+        "status": "Active",
+        "area": "Generalized Journal Square commercial node envelope for the Journal Square SID (Street-limit generalized envelope from official district description)",
+        "established": "1995"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.07,
+              40.725
+            ],
+            [
+              -74.055,
+              40.725
+            ],
+            [
+              -74.055,
+              40.74
+            ],
+            [
+              -74.07,
+              40.74
+            ],
+            [
+              -74.07,
+              40.725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Central Avenue Special Improvement District",
+        "website": "https://jcheights.com/",
+        "sourceUrl": "https://jcheights.com/faqs/",
+        "status": "Active",
+        "area": "Generalized Central Avenue Heights corridor envelope for the Central Avenue SID (Street-limit generalized envelope from official district description)",
+        "established": "1992"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -74.055,
+              40.745
+            ],
+            [
+              -74.04,
+              40.745
+            ],
+            [
+              -74.04,
+              40.76
+            ],
+            [
+              -74.055,
+              40.76
+            ],
+            [
+              -74.055,
+              40.745
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

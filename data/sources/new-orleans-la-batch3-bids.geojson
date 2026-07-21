@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "New Orleans Downtown Development District",
+        "website": "https://downtownnola.com/",
+        "sourceUrl": "https://downtownnola.com/who-we-are/",
+        "status": "Active",
+        "area": "Generalized envelope from the official DDD street limits: Iberville Street, Pontchartrain Expressway, Claiborne Avenue, and the Mississippi River (street-limit generalized envelope)",
+        "established": "1974"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.0845,
+              29.9375
+            ],
+            [
+              -90.055,
+              29.938
+            ],
+            [
+              -90.054,
+              29.9535
+            ],
+            [
+              -90.0785,
+              29.958
+            ],
+            [
+              -90.0845,
+              29.9375
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

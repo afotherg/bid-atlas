@@ -1,33 +1,39 @@
 {
-  "checkedAt": "2026-07-21T16:31:37.004Z",
+  "checkedAt": "2026-07-21T16:41:25.861Z",
   "summary": {
-    "added": 22,
+    "added": 28,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "mn-minneapolis-50th-and-france-special-service-district",
-    "mn-minneapolis-54th-and-lyndale-special-service-district",
-    "mn-minneapolis-bloomington-lake",
-    "mn-minneapolis-central-avenue",
-    "mn-minneapolis-chicago-avenue-south",
-    "mn-minneapolis-chicago-lake",
-    "mn-minneapolis-dinkytown",
-    "mn-minneapolis-east-lake",
-    "mn-minneapolis-eat-street-nicollet-avenue-south-special-service-district",
-    "mn-minneapolis-linden-hills",
-    "mn-minneapolis-lowry-hill",
-    "mn-minneapolis-lyndale-lake",
-    "mn-minneapolis-minneapolis-downtown-improvement-district",
-    "va-richmond-richmond-consumer-broad-street-special-assessment-district",
-    "va-richmond-richmond-consumer-shockoe-slip-special-assessment-district",
-    "va-richmond-richmond-general-overlay-special-assessment-district",
-    "va-richmond-richmond-riverfront-developed-canal-special-assessment-district",
-    "va-richmond-richmond-riverfront-overlay-special-assessment-district",
-    "va-richmond-richmond-riverfront-pre-development-special-assessment-district",
-    "mn-minneapolis-stadium-village",
-    "mn-minneapolis-uptown",
-    "mn-minneapolis-west-broadway"
+    "ak-anchorage-anchorage-downtown-improvement-district",
+    "tx-arlington-arlington-tourism-public-improvement-district",
+    "ny-buffalo-buffalo-place-business-improvement-district",
+    "nj-jersey-city-central-avenue-special-improvement-district",
+    "oh-cincinnati-downtown-cincinnati-improvement-district",
+    "oh-cleveland-downtown-cleveland-improvement-district",
+    "nc-durham-downtown-durham-municipal-service-district",
+    "nc-greensboro-downtown-greensboro-business-improvement-district",
+    "tx-laredo-downtown-laredo-business-improvement-district",
+    "ky-lexington-downtown-lexington-management-district",
+    "pa-pittsburgh-downtown-pittsburgh-business-improvement-district",
+    "tx-plano-downtown-plano-public-improvement-district",
+    "mo-st-louis-downtown-st-louis-community-improvement-district",
+    "fl-tampa-downtown-tampa-special-services-district",
+    "oh-toledo-downtown-toledo-improvement-district",
+    "ks-wichita-downtown-wichita-self-supported-municipal-improvement-district",
+    "nc-winston-salem-downtown-winston-salem-business-improvement-district",
+    "nj-jersey-city-historic-downtown-jersey-city-special-improvement-district",
+    "nj-newark-ironbound-special-improvement-district",
+    "nj-jersey-city-journal-square-special-improvement-district",
+    "wi-madison-madison-central-business-improvement-district",
+    "la-new-orleans-new-orleans-downtown-development-district",
+    "nj-newark-newark-downtown-district-special-improvement-district",
+    "oh-cleveland-ohio-city-improvement-district",
+    "ne-omaha-omaha-downtown-old-market-business-improvement-districts",
+    "oh-cincinnati-over-the-rhine-south-special-improvement-district",
+    "ne-omaha-south-omaha-business-improvement-district",
+    "oh-cleveland-university-circle-special-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -788,6 +794,195 @@
       "status": "ok",
       "records": 6,
       "checkedAt": "2026-07-21T16:31:37.004Z"
+    },
+    {
+      "id": "anchorage-ak-verified-districts",
+      "name": "Anchorage Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "9cc7c50d82d40053ad817323293c2c20fb163a8e9b0b5048aa7136c8dd14b1f9",
+      "legislationChanged": false
+    },
+    {
+      "id": "arlington-tx-verified-districts",
+      "name": "Arlington Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "d41dac6c124faa9a479fe477b7ec3bd23101afe242402b01962d239e28c77aba",
+      "legislationChanged": false
+    },
+    {
+      "id": "buffalo-ny-verified-districts",
+      "name": "Buffalo Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "21dd5baaf6ac67f235c7bc3cc7328d9274f7e19087399a906e067739143d38fe",
+      "legislationChanged": false
+    },
+    {
+      "id": "cincinnati-oh-verified-districts",
+      "name": "Cincinnati Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "e4980b9445e525a55ec662dfae69b50c553aa28b852fb2bf2d6f0d61d96f9b1c",
+      "legislationChanged": false
+    },
+    {
+      "id": "cleveland-oh-verified-districts",
+      "name": "Cleveland Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "cb5d936b39f63c1656cbc0cab20fd1088b47135a1ad944b98c39d2a6caf3e69f",
+      "legislationChanged": false
+    },
+    {
+      "id": "durham-nc-verified-districts",
+      "name": "Durham Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "0f9631a7d4cf5d4dfcec7fd0b360f137086a13ccb2242ce133dd0b26707f5179",
+      "legislationChanged": false
+    },
+    {
+      "id": "greensboro-nc-verified-districts",
+      "name": "Greensboro Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "c35e0c235931cc8af61e173e52c2040badb7b4564c9e677d1544f2db5ea46062",
+      "legislationChanged": false
+    },
+    {
+      "id": "jersey-city-nj-verified-districts",
+      "name": "Jersey City Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "ab9fd4f8fca3c2eff71802eb4119d060d69e1c2bad72a86cf384fcd389043cf9",
+      "legislationChanged": false
+    },
+    {
+      "id": "laredo-tx-verified-districts",
+      "name": "Laredo Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "8ba909c9dff1ae9fdbf3a4e9baa32469ff4315e4824bbebcc8265ab58ad68ac1",
+      "legislationChanged": false
+    },
+    {
+      "id": "lexington-ky-verified-districts",
+      "name": "Lexington Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "918848ec6e8150a70ccd7deeda1bdf7242777b52da56ea8b82ff5a0a8ee8022c",
+      "legislationChanged": false
+    },
+    {
+      "id": "madison-wi-verified-districts",
+      "name": "Madison Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "a71702e64e030c7bfcb30a7980110ce2d30908b84044a503f3daa000fb4292f8",
+      "legislationChanged": false
+    },
+    {
+      "id": "new-orleans-la-verified-districts",
+      "name": "New Orleans Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "88a74127d6665cfa9002edc1e84a5c42bc8bccc816a66bda4f1c98af6077dc05",
+      "legislationChanged": false
+    },
+    {
+      "id": "newark-nj-verified-districts",
+      "name": "Newark Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "f5a044be5dcbfd66c1b564c890504f6cba18b605f1afa069d303cb638bd90194",
+      "legislationChanged": false
+    },
+    {
+      "id": "omaha-ne-verified-districts",
+      "name": "Omaha Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "fc62b1a78bcbf2509b2f3f9b2152399519206db92680f1c970cf556b4ea69b30",
+      "legislationChanged": false
+    },
+    {
+      "id": "pittsburgh-pa-verified-districts",
+      "name": "Pittsburgh Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "d385519cdee962ff58ab9f50d7e7fa379a50d3bc365df347fae9b1c5bb71d8c1",
+      "legislationChanged": false
+    },
+    {
+      "id": "plano-tx-verified-districts",
+      "name": "Plano Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "2f3f7ee36391eba5a445b533b35d2467483659ee2f68f2c012cc61ec39e80069",
+      "legislationChanged": false
+    },
+    {
+      "id": "st-louis-mo-verified-districts",
+      "name": "St. Louis Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "0c657fb4c927c4c1c3b7b04bebb2a7eafb02dfdd0c6d871854cab8bbe8cc24f7",
+      "legislationChanged": false
+    },
+    {
+      "id": "tampa-fl-verified-districts",
+      "name": "Tampa Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "a984f947ca20a1ba8470122198e5dd423c1fce9c0b2e040d5f0a1ed75d6d94ed",
+      "legislationChanged": false
+    },
+    {
+      "id": "toledo-oh-verified-districts",
+      "name": "Toledo Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "5295dc587fd24910017e613577f2811f2dbcd203ea7c7e4e72f90aaa0d821662",
+      "legislationChanged": false
+    },
+    {
+      "id": "wichita-ks-verified-districts",
+      "name": "Wichita Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "792277614855e6b474383d0e2d21926ebb8112e427eb1e638e9aed20a824545e",
+      "legislationChanged": false
+    },
+    {
+      "id": "winston-salem-nc-verified-districts",
+      "name": "Winston-Salem Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T16:41:25.861Z",
+      "monitorHash": "7ac3c243fa4b84738ffc6144782b3d75a2674c727cf436d05aa51b0d64fdfc96",
+      "legislationChanged": false
     }
   ]
 }

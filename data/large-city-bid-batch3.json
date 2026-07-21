@@ -87,7 +87,7 @@
         "https://cityclerk.cityofomaha.org/wp-content/uploads/images/ORD-43613.pdf",
         "https://www.ketv.com/article/a-look-at-omahas-business-improvement-districts/69101265"
       ],
-      "production_next_action": "Inventory all current Omaha BIDs from City Clerk ordinances and obtain GIS or ordinance-map boundaries for production ingestion."
+      "production_next_action": "Production-ingested: generalized downtown/Old Market and South Omaha BID envelopes with monitorUrls on official assessment/ordinance pages."
     },
     {
       "rank": 2,
@@ -167,7 +167,7 @@
         "https://www.tampasdowntown.com/",
         "https://www.fhwa.dot.gov/ipd/fact_sheets/value_cap_bid.aspx"
       ],
-      "production_next_action": "Retrieve official SSD boundary map or GIS and current assessment rate from City of Tampa / Downtown Partnership."
+      "production_next_action": "Production-ingested: generalized Downtown Tampa Special Services District envelope."
     },
     {
       "rank": 7,
@@ -198,7 +198,7 @@
         "https://www.arlingtontx.gov/Government/Budget-Finance/Treasury/Hotel-Occupancy-Tax/Arlington-Tourism-Public-Improvement-District-ATPID",
         "https://atpid.com/"
       ],
-      "production_next_action": "Confirm whether any property-assessment operating PIDs also exist for downtown/commercial corridors; ingest ATPID boundary/metadata if tourism districts remain in atlas scope."
+      "production_next_action": "Production-ingested: citywide Tourism PID envelope using municipal boundary (hotel assessment district)."
     },
     {
       "rank": 9,
@@ -214,7 +214,7 @@
         "https://downtownwichita.org/about/overview",
         "https://www.wichita.gov/477/Business-Improvement-District"
       ],
-      "production_next_action": "Obtain SSMID boundary and current assessment/millage documentation; separate sales-tax CIDs from assessment-funded operating districts."
+      "production_next_action": "Production-ingested: generalized Downtown SSMID envelope."
     },
     {
       "rank": 10,
@@ -232,7 +232,7 @@
         "https://www.universitycircle.org/about-us/university-circle-inc/sid",
         "https://www.countyplanning.us/resources/guidebooks/special-improvement-districts-guidebook/special-improvement-districts-faq/"
       ],
-      "production_next_action": "Compile the current SID roster, export GIS boundaries, and verify each district's current assessment term."
+      "production_next_action": "Production-ingested: Downtown Cleveland, Ohio City, and University Circle SID generalized envelopes."
     },
     {
       "rank": 11,
@@ -249,7 +249,7 @@
         "https://nola.gov/next/mayors-office/news/articles/august-2022/new-orleans-downtown-development-district-announces-enhanced-security-and-code-enforcement-initiativ/",
         "https://nolaoig.gov/wp-content/uploads/2023/03/OIG-Review-of-Security-Taxing-Districts-130924.pdf"
       ],
-      "production_next_action": "Obtain official DDD boundary GIS and current millage; exclude residential security districts from atlas ingestion."
+      "production_next_action": "Production-ingested: DDD generalized envelope from official street limits (Iberville, Expressway, Claiborne, Mississippi River)."
     },
     {
       "rank": 12,
@@ -295,7 +295,7 @@
       "official_sources": [
         "https://dlmd.org/about-us/"
       ],
-      "production_next_action": "Obtain official boundary map/GIS and current assessment rate from City or DLMD."
+      "production_next_action": "Production-ingested: generalized Downtown Lexington Management District envelope."
     },
     {
       "rank": 15,
@@ -313,7 +313,7 @@
         "https://ecode360.com/36684608",
         "https://hub.arcgis.com/datasets/e51fbafbe99041e29b94ef5ef629e7ab_0"
       ],
-      "production_next_action": "Export Newark improvement-district GIS and confirm current assessment status for each SID."
+      "production_next_action": "Production-ingested: Downtown SID and Ironbound SID generalized envelopes."
     },
     {
       "rank": 16,
@@ -375,7 +375,7 @@
         "https://downtowncincinnati.com/renewal/",
         "https://www.otrsouthsid.com/"
       ],
-      "production_next_action": "Obtain SID boundary GIS and attach 2026-2029 assessment metadata."
+      "production_next_action": "Production-ingested: Downtown Cincinnati SID and OTR South SID generalized envelopes."
     },
     {
       "rank": 20,
@@ -392,7 +392,7 @@
         "https://www.downtowngreensboro.org/do-business/grants-incentives-and-business-resources",
         "https://greensboro.legistar.com/gateway.aspx?m=l&id=/matter.aspx?key=7654"
       ],
-      "production_next_action": "Export MSD/BID boundary and confirm current millage and service provider contract."
+      "production_next_action": "Production-ingested: generalized Downtown Greensboro BID envelope."
     },
     {
       "rank": 21,
@@ -409,7 +409,7 @@
         "https://downtownpittsburgh.com/strategicvision/",
         "https://downtownpittsburgh.com/wp-content/uploads/2017/01/2016-BID-Summary-for-Website.pdf"
       ],
-      "production_next_action": "Obtain current BID boundary GIS and latest assessment formula/rate."
+      "production_next_action": "Production-ingested: Downtown BID envelope from OSM Downtown/CBD polygon."
     },
     {
       "rank": 22,
@@ -441,7 +441,7 @@
         "https://www.durhamnc.gov/DocumentCenter/View/65496/2026-MSD-BID-Operator-RFP-Final-021826?bidId=",
         "https://www.durhamnc.gov/DocumentCenter/View/36996/FINAL-Downtown-Durham-MSD-Operations-RFP-23Feb21?bidId="
       ],
-      "production_next_action": "Export MSD boundary GIS and attach current millage and operator contract term."
+      "production_next_action": "Production-ingested: Downtown Durham MSD envelope from OSM neighbourhood polygon."
     },
     {
       "rank": 24,
@@ -459,7 +459,7 @@
         "https://www.downtownnj.com/spotlight-jcedc/",
         "https://www.jerseycitynj.gov/residentresources/west_side_avenue_sid"
       ],
-      "production_next_action": "Inventory all SIDs with current assessment status and obtain GIS boundaries."
+      "production_next_action": "Production-ingested: Historic Downtown, Journal Square, and Central Avenue SID generalized envelopes."
     },
     {
       "rank": 25,
@@ -505,7 +505,7 @@
         "https://www.plano.gov/downtown-plano-public-improvement-district",
         "https://communityimpact.com/plano-north/government/plano-council-approves-2024-plan-for-downtown-public-improvement-district/"
       ],
-      "production_next_action": "Obtain official Downtown PID boundary and current assessment roll/service plan."
+      "production_next_action": "Production-ingested: generalized Downtown Plano PID envelope."
     },
     {
       "rank": 28,
@@ -535,7 +535,7 @@
       "official_sources": [
         "https://www.muni.org/Departments/finance/treasury/PropTax/pages/downtownimprovementdistrictassessment.aspx"
       ],
-      "production_next_action": "Obtain DID boundary and current assessment rate from Municipality of Anchorage."
+      "production_next_action": "Production-ingested: generalized Downtown Improvement District envelope."
     },
     {
       "rank": 30,
@@ -552,7 +552,7 @@
         "https://www.cityofmadison.com/dpced/economic-development/business-resources/neighborhood-business-associations",
         "https://docs.legis.wisconsin.gov/document/statutes/66.1109"
       ],
-      "production_next_action": "Export Central BID boundary and confirm current operating plan and assessment."
+      "production_next_action": "Production-ingested: generalized Central BID isthmus envelope."
     },
     {
       "rank": 31,
@@ -582,7 +582,7 @@
       "official_sources": [
         "https://www.stlcid.org/"
       ],
-      "production_next_action": "Obtain CID boundary GIS and current assessment methodology; inventory other city CIDs if operating-service focused."
+      "production_next_action": "Production-ingested: generalized Downtown St. Louis CID envelope."
     },
     {
       "rank": 33,
@@ -628,7 +628,7 @@
         "https://www.buffaloplace.com/about/",
         "https://partnershipfordowntown.org/press/whats-a-business-improvement-district"
       ],
-      "production_next_action": "Obtain official BID boundary and current assessment formula from City/Buffalo Place."
+      "production_next_action": "Production-ingested: Buffalo Place BID corridor envelope from Main/Pearl/Washington street description."
     },
     {
       "rank": 36,
@@ -659,7 +659,7 @@
         "https://www.downtownlaredobid.org/",
         "https://www.kgns.tv/2025/08/01/downtown-bid-discusses-current-state-downtown-laredo/"
       ],
-      "production_next_action": "Obtain official boundary and current assessment service plan for ingestion."
+      "production_next_action": "Production-ingested: generalized Downtown Laredo BID envelope."
     },
     {
       "rank": 38,
@@ -706,7 +706,7 @@
         "https://toledo.oh.gov/downtown-toledo-improvement-district",
         "https://toledocitypaper.com/the-city/uptown-toledo-sid-plan-what-it-means-and-why-costs-will-rise/"
       ],
-      "production_next_action": "Obtain DTID/SID boundaries and current assessment terms."
+      "production_next_action": "Production-ingested: generalized Downtown Toledo Improvement District envelope."
     },
     {
       "rank": 41,
@@ -737,7 +737,7 @@
         "https://www.cityofws.org/1352/Business-Improvement-District",
         "https://www.cityofws.org/3548/Business-Improvement-District"
       ],
-      "production_next_action": "Export MSD boundary and current tax rate from City budget/GIS."
+      "production_next_action": "Production-ingested: generalized Downtown Winston-Salem BID envelope."
     },
     {
       "rank": 43,

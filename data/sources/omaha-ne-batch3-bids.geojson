@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Omaha Downtown / Old Market Business Improvement Districts",
+        "website": "https://www.ketv.com/article/a-look-at-omahas-business-improvement-districts/69101265",
+        "sourceUrl": "https://treasurer.douglascounty-ne.gov/special-assessments/",
+        "status": "Active",
+        "area": "Generalized downtown Omaha and Old Market commercial core envelope representing the cluster of central Omaha BIDs; South Omaha BID mapped separately (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.95,
+              41.25
+            ],
+            [
+              -95.92,
+              41.25
+            ],
+            [
+              -95.92,
+              41.27
+            ],
+            [
+              -95.95,
+              41.27
+            ],
+            [
+              -95.95,
+              41.25
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "South Omaha Business Improvement District",
+        "website": "https://peseklaw.com/en/south-omaha-business-improvement-district",
+        "sourceUrl": "https://cityclerk.cityofomaha.org/wp-content/uploads/images/ORD-43613.pdf",
+        "status": "Active",
+        "area": "Generalized South 24th Street commercial corridor envelope from L Street to Q Street for the South Omaha BID (Street-limit generalized envelope from official district description)",
+        "established": "2021"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.945,
+              41.2
+            ],
+            [
+              -95.935,
+              41.2
+            ],
+            [
+              -95.935,
+              41.22
+            ],
+            [
+              -95.945,
+              41.22
+            ],
+            [
+              -95.945,
+              41.2
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

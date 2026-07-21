@@ -3079,5 +3079,789 @@
         "website": "https://venturerichmond.com/our-services/service-district/"
       }
     }
+  },
+  {
+    "id": "anchorage-ak-verified-districts",
+    "name": "Anchorage Verified Business Improvement Districts",
+    "jurisdiction": "Anchorage, AK",
+    "state": "AK",
+    "city": "Anchorage",
+    "file": "data/sources/anchorage-ak-batch3-bids.geojson",
+    "landingPage": "https://www.muni.org/Departments/finance/treasury/PropTax/pages/downtownimprovementdistrictassessment.aspx",
+    "publisher": "Anchorage and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.muni.org/Departments/finance/treasury/PropTax/pages/downtownimprovementdistrictassessment.aspx"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "arlington-tx-verified-districts",
+    "name": "Arlington Verified Business Improvement Districts",
+    "jurisdiction": "Arlington, TX",
+    "state": "TX",
+    "city": "Arlington",
+    "file": "data/sources/arlington-tx-batch3-bids.geojson",
+    "landingPage": "https://www.arlingtontx.gov/Government/Budget-Finance/Treasury/Hotel-Occupancy-Tax/Arlington-Tourism-Public-Improvement-District-ATPID",
+    "publisher": "Arlington and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.arlingtontx.gov/Government/Budget-Finance/Treasury/Hotel-Occupancy-Tax/Arlington-Tourism-Public-Improvement-District-ATPID"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "buffalo-ny-verified-districts",
+    "name": "Buffalo Verified Business Improvement Districts",
+    "jurisdiction": "Buffalo, NY",
+    "state": "NY",
+    "city": "Buffalo",
+    "file": "data/sources/buffalo-ny-batch3-bids.geojson",
+    "landingPage": "https://www.buffaloplace.com/about/",
+    "publisher": "Buffalo and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.buffaloplace.com/about/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "cincinnati-oh-verified-districts",
+    "name": "Cincinnati Verified Business Improvement Districts",
+    "jurisdiction": "Cincinnati, OH",
+    "state": "OH",
+    "city": "Cincinnati",
+    "file": "data/sources/cincinnati-oh-batch3-bids.geojson",
+    "landingPage": "https://downtowncincinnati.com/renewal/",
+    "publisher": "Cincinnati and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://downtowncincinnati.com/renewal/",
+      "https://www.otrsouthsid.com/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "cleveland-oh-verified-districts",
+    "name": "Cleveland Verified Business Improvement Districts",
+    "jurisdiction": "Cleveland, OH",
+    "state": "OH",
+    "city": "Cleveland",
+    "file": "data/sources/cleveland-oh-batch3-bids.geojson",
+    "landingPage": "https://www.downtowncleveland.com/special-improvement-districts",
+    "publisher": "Cleveland and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.downtowncleveland.com/special-improvement-districts",
+      "https://www.ohiocity.org/ohio-city-improvement-district/",
+      "https://www.universitycircle.org/about-us/university-circle-inc/sid"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "durham-nc-verified-districts",
+    "name": "Durham Verified Business Improvement Districts",
+    "jurisdiction": "Durham, NC",
+    "state": "NC",
+    "city": "Durham",
+    "file": "data/sources/durham-nc-batch3-bids.geojson",
+    "landingPage": "https://www.durhamnc.gov/DocumentCenter/View/65496/2026-MSD-BID-Operator-RFP-Final-021826?bidId=",
+    "publisher": "Durham and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.durhamnc.gov/DocumentCenter/View/65496/2026-MSD-BID-Operator-RFP-Final-021826?bidId="
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "greensboro-nc-verified-districts",
+    "name": "Greensboro Verified Business Improvement Districts",
+    "jurisdiction": "Greensboro, NC",
+    "state": "NC",
+    "city": "Greensboro",
+    "file": "data/sources/greensboro-nc-batch3-bids.geojson",
+    "landingPage": "https://www.greensboro-nc.gov/Home/Components/News/News/19185/",
+    "publisher": "Greensboro and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.greensboro-nc.gov/Home/Components/News/News/19185/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "jersey-city-nj-verified-districts",
+    "name": "Jersey City Verified Business Improvement Districts",
+    "jurisdiction": "Jersey City, NJ",
+    "state": "NJ",
+    "city": "Jersey City",
+    "file": "data/sources/jersey-city-nj-batch3-bids.geojson",
+    "landingPage": "https://jcdowntown.org/about/",
+    "publisher": "Jersey City and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://jcdowntown.org/about/",
+      "https://jcheights.com/faqs/",
+      "https://www.downtownnj.com/spotlight-jcedc/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "laredo-tx-verified-districts",
+    "name": "Laredo Verified Business Improvement Districts",
+    "jurisdiction": "Laredo, TX",
+    "state": "TX",
+    "city": "Laredo",
+    "file": "data/sources/laredo-tx-batch3-bids.geojson",
+    "landingPage": "https://www.downtownlaredobid.org/",
+    "publisher": "Laredo and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.downtownlaredobid.org/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "lexington-ky-verified-districts",
+    "name": "Lexington Verified Business Improvement Districts",
+    "jurisdiction": "Lexington, KY",
+    "state": "KY",
+    "city": "Lexington",
+    "file": "data/sources/lexington-ky-batch3-bids.geojson",
+    "landingPage": "https://dlmd.org/about-us/",
+    "publisher": "Lexington and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://dlmd.org/about-us/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "madison-wi-verified-districts",
+    "name": "Madison Verified Business Improvement Districts",
+    "jurisdiction": "Madison, WI",
+    "state": "WI",
+    "city": "Madison",
+    "file": "data/sources/madison-wi-batch3-bids.geojson",
+    "landingPage": "https://www.cityofmadison.com/city-hall/committees/madison-central-business-improvement-district-bid-board",
+    "publisher": "Madison and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.cityofmadison.com/city-hall/committees/madison-central-business-improvement-district-bid-board"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "new-orleans-la-verified-districts",
+    "name": "New Orleans Verified Business Improvement Districts",
+    "jurisdiction": "New Orleans, LA",
+    "state": "LA",
+    "city": "New Orleans",
+    "file": "data/sources/new-orleans-la-batch3-bids.geojson",
+    "landingPage": "https://downtownnola.com/who-we-are/",
+    "publisher": "New Orleans and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://downtownnola.com/who-we-are/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "newark-nj-verified-districts",
+    "name": "Newark Verified Business Improvement Districts",
+    "jurisdiction": "Newark, NJ",
+    "state": "NJ",
+    "city": "Newark",
+    "file": "data/sources/newark-nj-batch3-bids.geojson",
+    "landingPage": "https://downtownnewark.com/about-ndd/",
+    "publisher": "Newark and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://downtownnewark.com/about-ndd/",
+      "https://goironbound.com/home"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "omaha-ne-verified-districts",
+    "name": "Omaha Verified Business Improvement Districts",
+    "jurisdiction": "Omaha, NE",
+    "state": "NE",
+    "city": "Omaha",
+    "file": "data/sources/omaha-ne-batch3-bids.geojson",
+    "landingPage": "https://cityclerk.cityofomaha.org/wp-content/uploads/images/ORD-43613.pdf",
+    "publisher": "Omaha and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://cityclerk.cityofomaha.org/wp-content/uploads/images/ORD-43613.pdf",
+      "https://treasurer.douglascounty-ne.gov/special-assessments/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "pittsburgh-pa-verified-districts",
+    "name": "Pittsburgh Verified Business Improvement Districts",
+    "jurisdiction": "Pittsburgh, PA",
+    "state": "PA",
+    "city": "Pittsburgh",
+    "file": "data/sources/pittsburgh-pa-batch3-bids.geojson",
+    "landingPage": "https://downtownpittsburgh.com/about-pdp/downtown-pittsburgh-business-improvement-district/",
+    "publisher": "Pittsburgh and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://downtownpittsburgh.com/about-pdp/downtown-pittsburgh-business-improvement-district/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "plano-tx-verified-districts",
+    "name": "Plano Verified Business Improvement Districts",
+    "jurisdiction": "Plano, TX",
+    "state": "TX",
+    "city": "Plano",
+    "file": "data/sources/plano-tx-batch3-bids.geojson",
+    "landingPage": "https://www.plano.gov/downtown-plano-public-improvement-district",
+    "publisher": "Plano and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.plano.gov/downtown-plano-public-improvement-district"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "st-louis-mo-verified-districts",
+    "name": "St. Louis Verified Business Improvement Districts",
+    "jurisdiction": "St. Louis, MO",
+    "state": "MO",
+    "city": "St. Louis",
+    "file": "data/sources/st-louis-mo-batch3-bids.geojson",
+    "landingPage": "https://www.stlcid.org/",
+    "publisher": "St. Louis and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.stlcid.org/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "tampa-fl-verified-districts",
+    "name": "Tampa Verified Business Improvement Districts",
+    "jurisdiction": "Tampa, FL",
+    "state": "FL",
+    "city": "Tampa",
+    "file": "data/sources/tampa-fl-batch3-bids.geojson",
+    "landingPage": "https://www.tampasdowntown.com/",
+    "publisher": "Tampa and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.tampasdowntown.com/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "toledo-oh-verified-districts",
+    "name": "Toledo Verified Business Improvement Districts",
+    "jurisdiction": "Toledo, OH",
+    "state": "OH",
+    "city": "Toledo",
+    "file": "data/sources/toledo-oh-batch3-bids.geojson",
+    "landingPage": "https://toledo.oh.gov/downtown-toledo-improvement-district",
+    "publisher": "Toledo and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://toledo.oh.gov/downtown-toledo-improvement-district"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "wichita-ks-verified-districts",
+    "name": "Wichita Verified Business Improvement Districts",
+    "jurisdiction": "Wichita, KS",
+    "state": "KS",
+    "city": "Wichita",
+    "file": "data/sources/wichita-ks-batch3-bids.geojson",
+    "landingPage": "https://downtownwichita.org/about/overview",
+    "publisher": "Wichita and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://downtownwichita.org/about/overview"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "winston-salem-nc-verified-districts",
+    "name": "Winston-Salem Verified Business Improvement Districts",
+    "jurisdiction": "Winston-Salem, NC",
+    "state": "NC",
+    "city": "Winston-Salem",
+    "file": "data/sources/winston-salem-nc-batch3-bids.geojson",
+    "landingPage": "https://www.cityofws.org/3548/Business-Improvement-District",
+    "publisher": "Winston-Salem and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.cityofws.org/3548/Business-Improvement-District"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
   }
 ]

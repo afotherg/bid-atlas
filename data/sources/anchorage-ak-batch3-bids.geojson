@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anchorage Downtown Improvement District",
+        "website": "https://www.muni.org/Departments/finance/treasury/PropTax/pages/downtownimprovementdistrictassessment.aspx",
+        "sourceUrl": "https://www.muni.org/Departments/finance/treasury/PropTax/pages/downtownimprovementdistrictassessment.aspx",
+        "status": "Active",
+        "area": "Generalized downtown Anchorage commercial core envelope used for the municipal Downtown Improvement District assessment (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -149.905,
+              61.212
+            ],
+            [
+              -149.875,
+              61.212
+            ],
+            [
+              -149.875,
+              61.225
+            ],
+            [
+              -149.905,
+              61.225
+            ],
+            [
+              -149.905,
+              61.212
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

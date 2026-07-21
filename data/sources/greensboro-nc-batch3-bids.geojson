@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Greensboro Business Improvement District",
+        "website": "https://www.downtowngreensboro.org/",
+        "sourceUrl": "https://www.greensboro-nc.gov/Home/Components/News/News/19185/",
+        "status": "Active",
+        "area": "Generalized downtown Greensboro commercial core envelope for the Downtown BID / municipal service district (Street-limit generalized envelope from official district description)"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -79.8,
+              36.065
+            ],
+            [
+              -79.78,
+              36.065
+            ],
+            [
+              -79.78,
+              36.08
+            ],
+            [
+              -79.8,
+              36.08
+            ],
+            [
+              -79.8,
+              36.065
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
