@@ -1,13 +1,12 @@
 {
-  "checkedAt": "2026-07-21T20:30:36.112Z",
+  "checkedAt": "2026-07-21T20:32:20.428Z",
   "summary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "nj-paterson-bunker-hill-special-improvement-district",
-    "nj-paterson-downtown-paterson-special-improvement-district"
+    "sc-charleston-king-street-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1268,6 +1267,13 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T20:30:36.112Z"
+    },
+    {
+      "id": "charleston-king-street-bid",
+      "name": "Charleston King Street Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:32:20.428Z"
     }
   ]
 }

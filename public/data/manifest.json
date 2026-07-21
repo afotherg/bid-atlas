@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:30:36.112Z",
-  "records": 603,
+  "generatedAt": "2026-07-21T20:32:20.428Z",
+  "records": 604,
   "states": [
     "AK",
     "AL",
@@ -35,6 +35,7 @@
     "OR",
     "PA",
     "RI",
+    "SC",
     "SD",
     "TN",
     "TX",
@@ -61,6 +62,7 @@
     "Buffalo, NY",
     "Burbank, CA",
     "Burlingame, CA",
+    "Charleston, SC",
     "Charlotte, NC",
     "Chattanooga, TN",
     "Cincinnati, OH",
@@ -1448,15 +1450,22 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T20:30:36.112Z"
+    },
+    {
+      "id": "charleston-king-street-bid",
+      "name": "Charleston King Street Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:32:20.428Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 146,
-    "configuredSources": 159,
+    "verifiedJurisdictions": 147,
+    "configuredSources": 160,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }

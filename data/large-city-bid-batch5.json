@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 11,
-    "active_hits": 7,
+    "cities_researched": 12,
+    "active_hits": 8,
     "misses": 4,
-    "active_hit_rate_percent": 63.6,
+    "active_hit_rate_percent": 66.7,
     "result": "In progress."
   },
   "records": [
@@ -218,6 +218,23 @@
         "https://alexandriava.gov/sites/default/files/2023-06/Alexandria%20Waterfront%20Commission%20BISD%20Endorsement%20May%202023.pdf"
       ],
       "production_next_action": "Monitor for City Council establishment, an approved district plan, and a first assessment; do not map the Old Town proposal."
+    },
+    {
+      "rank": 12,
+      "census_rank": 168,
+      "city": "Charleston",
+      "state": "SC",
+      "population_2025": 159423,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Business Improvement District / Municipal Improvement District",
+      "summary": "Charleston's King Street Business Improvement District is an active ten-year commercial assessment district created in 2022, with first assessment revenue realized in 2023. Eligible parcels fronting King Street from Broad Street to Line Street pay up to $0.0113 per dollar of assessed value for ambassadors, beautification, district management, marketing, and economic development administered by the Charleston Downtown Alliance.",
+      "official_sources": [
+        "https://www.charleston-sc.gov/2654/King-Street-Business-Improvement-Distric",
+        "https://www.charleston-sc.gov/3078/Central-Business-District-Resources",
+        "https://www.charleston-sc.gov/AgendaCenter/ViewFile/Minutes/_05262026-10933"
+      ],
+      "production_next_action": "Production-ingested as a generalized King Street corridor from Broad Street to Line Street."
     }
   ]
 }
