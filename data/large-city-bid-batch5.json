@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 14,
-    "active_hits": 10,
+    "cities_researched": 15,
+    "active_hits": 11,
     "misses": 4,
-    "active_hit_rate_percent": 71.4,
+    "active_hit_rate_percent": 73.3,
     "result": "In progress."
   },
   "records": [
@@ -269,6 +269,23 @@
         "https://appr.wycokck.org/Property-Detail/PropertyQuickRefID/R45918"
       ],
       "production_next_action": "Production-ingested as a generalized downtown service-district footprint; verify the next renewal term when adopted."
+    },
+    {
+      "rank": 15,
+      "census_rank": 171,
+      "city": "Hayward",
+      "state": "CA",
+      "population_2025": 157113,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Community Benefit District",
+      "summary": "The Downtown Hayward Community Benefit District is an active property-assessment district formed in July 2018 for a ten-year term and administered by the Downtown Hayward Improvement Association. Its supplemental services include sidewalk cleaning, trash and debris removal, landscaping, banners, events, public relations, safety, and business attraction; the City Council received its latest annual activity report in March 2026.",
+      "official_sources": [
+        "https://hayward.legistar.com/LegislationDetail.aspx?GUID=E30B2267-1094-41C2-B804-A8C4FFD5C474&ID=7949810&Options=&Search=",
+        "https://hayward.legistar.com/LegislationDetail.aspx?GUID=92E640FC-3210-49E0-B734-83C2A42798CF&ID=3547620&Options=&Search=",
+        "https://hayward.legistar.com/View.ashx?GUID=f9f741c8-288e-40e1-83d5-c8cb057aa7fc&ID=60612&M=AO&N=QWdlbmRhIFBhY2tldCAwNS8xNS8xOA%3D%3D"
+      ],
+      "production_next_action": "Production-ingested as a generalized downtown assessment footprint; monitor the 2028 renewal."
     }
   ]
 }

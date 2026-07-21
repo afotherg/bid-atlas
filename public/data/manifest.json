@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:34:11.227Z",
-  "records": 606,
+  "generatedAt": "2026-07-21T20:35:02.624Z",
+  "records": 607,
   "states": [
     "AK",
     "AL",
@@ -93,6 +93,7 @@
     "Grand Rapids, MI",
     "Greensboro, NC",
     "Hartford, CT",
+    "Hayward, CA",
     "Honolulu, HI",
     "Houston, TX",
     "Huntington Beach, CA",
@@ -1473,11 +1474,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:34:11.227Z"
+    },
+    {
+      "id": "downtown-hayward-community-benefit-district",
+      "name": "Downtown Hayward Community Benefit District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:35:02.624Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 149,
-    "configuredSources": 162,
+    "verifiedJurisdictions": 150,
+    "configuredSources": 163,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
