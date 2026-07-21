@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:35:18.255Z",
-  "records": 574,
+  "generatedAt": "2026-07-21T19:35:49.886Z",
+  "records": 575,
   "states": [
     "AK",
     "AR",
@@ -78,6 +78,7 @@
     "Garden Grove, CA",
     "Glendale, CA",
     "Glendora, CA",
+    "Grand Rapids, MI",
     "Greensboro, NC",
     "Hartford, CT",
     "Honolulu, HI",
@@ -1285,11 +1286,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:35:18.255Z"
+    },
+    {
+      "id": "grand-rapids-downtown-improvement-district",
+      "name": "Grand Rapids Downtown Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:35:49.886Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 126,
-    "configuredSources": 139,
+    "verifiedJurisdictions": 127,
+    "configuredSources": 140,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
