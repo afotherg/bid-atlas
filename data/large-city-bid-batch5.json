@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 10,
+    "cities_researched": 11,
     "active_hits": 7,
-    "misses": 3,
-    "active_hit_rate_percent": 70.0,
+    "misses": 4,
+    "active_hit_rate_percent": 63.6,
     "result": "In progress."
   },
   "records": [
@@ -201,6 +201,23 @@
         "https://www.coronaca.gov/departments/finance"
       ],
       "production_next_action": "Monitor downtown implementation for a PBID formation petition and management plan; do not map the specific plan or infrastructure assessment districts."
+    },
+    {
+      "rank": 11,
+      "census_rank": 167,
+      "city": "Alexandria",
+      "state": "VA",
+      "population_2025": 160662,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Proposed business improvement district (not formed)",
+      "summary": "No operating assessment-funded BID was verified in Alexandria. The City ended consideration of an Old Town BID in 2017, and its March 2026 FY2027 budget response still describes creating BIDs as a prospective effort costing an estimated $100,000 to $150,000 per typical district. A 2023 endorsement of an Old Town improvement-service concept did not establish an assessment district.",
+      "official_sources": [
+        "https://alexandriava.gov/sites/default/files/2026-03/047%20Business%20Improvement%20Districts.pdf",
+        "https://media.alexandriava.gov/archives/news/2017/09-13/99581/archive.html",
+        "https://alexandriava.gov/sites/default/files/2023-06/Alexandria%20Waterfront%20Commission%20BISD%20Endorsement%20May%202023.pdf"
+      ],
+      "production_next_action": "Monitor for City Council establishment, an approved district plan, and a first assessment; do not map the Old Town proposal."
     }
   ]
 }
