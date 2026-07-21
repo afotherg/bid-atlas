@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:33:18.112Z",
-  "records": 571,
+  "generatedAt": "2026-07-21T19:34:06.097Z",
+  "records": 572,
   "states": [
     "AK",
     "AR",
@@ -120,6 +120,7 @@
     "Omaha, NE",
     "Ontario / Rancho Cucamonga, CA",
     "Ontario, CA",
+    "Overland Park, KS",
     "Palm Springs, CA",
     "Pasadena, CA",
     "Philadelphia, PA",
@@ -1261,11 +1262,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:33:18.112Z"
+    },
+    {
+      "id": "overland-park-downtown-bid",
+      "name": "Overland Park Downtown Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:34:06.097Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 123,
-    "configuredSources": 136,
+    "verifiedJurisdictions": 124,
+    "configuredSources": 137,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
