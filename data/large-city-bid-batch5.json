@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "method": {
+    "population_source": "U.S. Census Bureau Vintage 2025 incorporated-place estimates",
+    "selection": "Next fifty largest incorporated U.S. cities above 100,000 population not already represented by BID Atlas or included in the first four large-city batches",
+    "prior_batches": [
+      "data/large-city-bid-pilot.json",
+      "data/large-city-bid-batch2.json",
+      "data/large-city-bid-batch3.json",
+      "data/large-city-bid-batch4.json"
+    ],
+    "ordered_cities": [
+      "Murfreesboro, TN", "Oceanside, CA", "Lancaster, CA", "Springfield, MO", "Denton, TX",
+      "Roseville, CA", "Killeen, TX", "Palmdale, CA", "Paterson, NJ", "Corona, CA",
+      "Alexandria, VA", "Charleston, SC", "Salinas, CA", "Kansas City, KS", "Hayward, CA",
+      "Hollywood, FL", "Lakewood, CO", "Sunnyvale, CA", "Springfield, MA", "Bellevue, WA",
+      "Naperville, IL", "Bridgeport, CT", "Joliet, IL", "Mesquite, TX", "McAllen, TX",
+      "Olathe, KS", "Savannah, GA", "Gainesville, FL", "Pasadena, TX", "Palm Bay, FL",
+      "Waco, TX", "Thornton, CO", "Midland, TX", "Rockford, IL", "Columbia, SC",
+      "Visalia, CA", "Escondido, CA", "Syracuse, NY", "Meridian, ID", "Miramar, FL",
+      "Elizabeth, NJ", "Victorville, CA", "Round Rock, TX", "Jackson, MS", "Stamford, CT",
+      "Lewisville, TX", "Coral Springs, FL", "New Haven, CT", "Fullerton, CA", "Torrance, CA"
+    ],
+    "active_hit_definition": "At least one currently operating assessment-funded BID or locally named legal equivalent supported by an official source",
+    "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
+  },
+  "batch_summary": {
+    "cities_researched": 1,
+    "active_hits": 0,
+    "misses": 1,
+    "active_hit_rate_percent": 0,
+    "result": "In progress."
+  },
+  "records": [
+    {
+      "rank": 1,
+      "census_rank": 156,
+      "city": "Murfreesboro",
+      "state": "TN",
+      "population_2025": 171178,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Proposed business improvement district (not formed)",
+      "summary": "No operating assessment-funded BID was verified in Murfreesboro. The City's comprehensive plan recommended establishing a downtown BID, but current FY2027 budget and ordinance materials do not show a formation ordinance, special levy, or district fund; the Central Business District remains a zoning and planning designation supported by direct City programs and Main Street activity.",
+      "official_sources": [
+        "https://www.murfreesborotn.gov/DocumentCenter/View/2386",
+        "https://www.murfreesborotn.gov/m/newsflash/Home/Detail/5522",
+        "https://www.murfreesborotn.gov/Archive.aspx?AMID=81"
+      ],
+      "production_next_action": "Monitor the comprehensive-plan recommendation for a formation ordinance and first assessment; do not map the zoning district."
+    }
+  ]
+}
