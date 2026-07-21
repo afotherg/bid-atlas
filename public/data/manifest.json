@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T01:07:27.599Z",
-  "records": 429,
+  "generatedAt": "2026-07-21T01:08:07.506Z",
+  "records": 433,
   "states": [
     "AZ",
     "CA",
@@ -18,6 +18,7 @@
     "NY",
     "OH",
     "PA",
+    "TN",
     "TX",
     "WA"
   ],
@@ -64,6 +65,7 @@
     "Monrovia, CA",
     "Nampa, ID",
     "Napa, CA",
+    "Nashville, TN",
     "New York, NY",
     "Oakland, CA",
     "Ontario / Rancho Cucamonga, CA",
@@ -734,15 +736,22 @@
       "status": "ok",
       "records": 12,
       "checkedAt": "2026-07-21T01:07:27.599Z"
+    },
+    {
+      "id": "nashville-business-improvement-districts",
+      "name": "Nashville Business Improvement Districts",
+      "status": "ok",
+      "records": 4,
+      "checkedAt": "2026-07-21T01:08:07.506Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 70,
-    "configuredSources": 79,
+    "verifiedJurisdictions": 71,
+    "configuredSources": 80,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 11,
+    "added": 4,
     "modified": 0,
     "removed": 0
   }

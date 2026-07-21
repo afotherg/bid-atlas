@@ -941,6 +941,26 @@ test("Seattle publishes its eleven established business improvement areas", () =
   }
 });
 
+test("Nashville publishes its four current business improvement districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "nashville-business-improvement-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 4);
+  for (const name of [
+    "Central Business Improvement District",
+    "Gulch Business Improvement District",
+    "Midtown Business Improvement District",
+    "South Nashville Business Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Nashville");
+    assert.equal(district.properties.state, "TN");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -87 && longitude < -86.6, `${district.properties.name} is outside Nashville longitude`);
+    assert.ok(latitude > 35.9 && latitude < 36.3, `${district.properties.name} is outside Nashville latitude`);
+  }
+});
+
 test("Philadelphia publishes its fifteen mandatory business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "philadelphia-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

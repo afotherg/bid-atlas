@@ -1,22 +1,15 @@
 {
-  "checkedAt": "2026-07-21T01:07:27.599Z",
+  "checkedAt": "2026-07-21T01:08:07.506Z",
   "summary": {
-    "added": 11,
+    "added": 4,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "wa-seattle-15th-avenue-east-business-improvement-area",
-    "wa-seattle-ballard-business-improvement-area",
-    "wa-seattle-broadway-business-improvement-area",
-    "wa-seattle-chinatown-international-district-business-improvement-area",
-    "wa-seattle-columbia-city-business-improvement-area",
-    "wa-seattle-metropolitan-improvement-district",
-    "wa-seattle-pioneer-square-business-improvement-area",
-    "wa-seattle-seattle-tourism-improvement-area",
-    "wa-seattle-sodo-business-improvement-area",
-    "wa-seattle-university-district-business-improvement-area",
-    "wa-seattle-west-seattle-junction-business-improvement-area"
+    "tn-nashville-central-business-improvement-district",
+    "tn-nashville-gulch-business-improvement-district",
+    "tn-nashville-midtown-business-improvement-district",
+    "tn-nashville-south-nashville-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -661,6 +654,13 @@
       "status": "ok",
       "records": 12,
       "checkedAt": "2026-07-21T01:07:27.599Z"
+    },
+    {
+      "id": "nashville-business-improvement-districts",
+      "name": "Nashville Business Improvement Districts",
+      "status": "ok",
+      "records": 4,
+      "checkedAt": "2026-07-21T01:08:07.506Z"
     }
   ]
 }

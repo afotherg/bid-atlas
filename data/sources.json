@@ -2506,5 +2506,24 @@
       "Ballard BIA": {"name": "Ballard Business Improvement Area"},
       "15th Avenue East BIA": {"name": "15th Avenue East Business Improvement Area"}
     }
+  },
+  {
+    "id": "nashville-business-improvement-districts",
+    "name": "Nashville Business Improvement Districts",
+    "jurisdiction": "Nashville, TN",
+    "state": "TN",
+    "city": "Nashville",
+    "url": "https://services2.arcgis.com/HdTo6HJqh92wn4D8/arcgis/rest/services/Business_Improvement_Districts_view/FeatureServer/0/query?where=1%3D1&outFields=Name%2COrdinance%2COrdinanceDate&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.nashville.gov/departments/planning/mapping-and-gis/map-and-data-sales",
+    "publisher": "Metropolitan Government of Nashville and Davidson County",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "Name"
+      ],
+      "established": [
+        "OrdinanceDate"
+      ]
+    }
   }
 ]
