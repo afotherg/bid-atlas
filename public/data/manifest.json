@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:37:58.083Z",
-  "records": 577,
+  "generatedAt": "2026-07-21T20:08:40.922Z",
+  "records": 579,
   "states": [
     "AK",
     "AL",
@@ -33,6 +33,7 @@
     "OK",
     "OR",
     "PA",
+    "RI",
     "SD",
     "TN",
     "TX",
@@ -135,6 +136,7 @@
     "Plano, TX",
     "Pomona, CA",
     "Portland, OR",
+    "Providence, RI",
     "Raleigh, NC",
     "Redwood City, CA",
     "Reno, NV",
@@ -1310,15 +1312,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:37:58.083Z"
+    },
+    {
+      "id": "providence-improvement-districts",
+      "name": "Providence Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T20:08:40.922Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 129,
-    "configuredSources": 142,
+    "verifiedJurisdictions": 130,
+    "configuredSources": 143,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }

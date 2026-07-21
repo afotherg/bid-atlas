@@ -1,12 +1,13 @@
 {
-  "checkedAt": "2026-07-21T19:37:58.083Z",
+  "checkedAt": "2026-07-21T20:08:40.922Z",
   "summary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-oxnard-oxnard-downtown-improvement-district"
+    "ri-providence-downtown-providence-improvement-district",
+    "ri-providence-thayer-street-district"
   ],
   "modified": [],
   "removed": [],
@@ -1148,6 +1149,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:37:58.083Z"
+    },
+    {
+      "id": "providence-improvement-districts",
+      "name": "Providence Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T20:08:40.922Z"
     }
   ]
 }
