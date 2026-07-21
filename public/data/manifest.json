@@ -1,15 +1,17 @@
 {
-  "generatedAt": "2026-07-21T19:17:36.607Z",
-  "records": 3,
+  "generatedAt": "2026-07-21T19:18:08.007Z",
+  "records": 4,
   "states": [
     "MA",
+    "NY",
     "SD",
     "UT"
   ],
   "cities": [
     "Salt Lake City, UT",
     "Sioux Falls, SD",
-    "Worcester, MA"
+    "Worcester, MA",
+    "Yonkers, NY"
   ],
   "sources": [
     {
@@ -921,11 +923,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:17:36.607Z"
+    },
+    {
+      "id": "yonkers-downtown-waterfront-bid",
+      "name": "Yonkers Downtown Waterfront Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:18:08.007Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 3,
-    "configuredSources": 130,
+    "verifiedJurisdictions": 4,
+    "configuredSources": 131,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
