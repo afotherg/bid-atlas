@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "method": {
+    "population_source": "U.S. Census Bureau Vintage 2025 incorporated-place estimates",
+    "selection": "Next fifty largest incorporated U.S. cities above 100,000 population not already represented by BID Atlas or included in the first three large-city batches",
+    "prior_batches": [
+      "data/large-city-bid-pilot.json",
+      "data/large-city-bid-batch2.json",
+      "data/large-city-bid-batch3.json"
+    ],
+    "ordered_cities": [
+      "Huntsville, AL", "Norfolk, VA", "Hialeah, FL", "Spokane, WA", "Santa Clarita, CA",
+      "Fremont, CA", "Baton Rouge, LA", "San Bernardino, CA", "Fontana, CA", "Modesto, CA",
+      "Salt Lake City, UT", "Moreno Valley, CA", "Worcester, MA", "Sioux Falls, SD", "Yonkers, NY",
+      "Des Moines, IA", "Grand Prairie, TX", "Fayetteville, NC", "Little Rock, AR", "Rochester, NY",
+      "Amarillo, TX", "Tallahassee, FL", "Overland Park, KS", "Knoxville, TN", "Augusta, GA",
+      "Grand Rapids, MI", "Peoria, AZ", "Mobile, AL", "Vancouver, WA", "Oxnard, CA",
+      "Birmingham, AL", "Providence, RI", "Montgomery, AL", "Chattanooga, TN", "Brownsville, TX",
+      "Tempe, AZ", "Akron, OH", "Clarksville, TN", "Fort Lauderdale, FL", "Elk Grove, CA",
+      "Cary, NC", "Newport News, VA", "Salem, OR", "Aurora, IL", "Santa Rosa, CA",
+      "Eugene, OR", "Pembroke Pines, FL", "Shreveport, LA", "Surprise, AZ", "Fort Collins, CO"
+    ],
+    "active_hit_definition": "At least one currently operating assessment-funded BID or locally named legal equivalent supported by an official source",
+    "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
+  },
+  "batch_summary": {
+    "cities_researched": 1,
+    "active_hits": 0,
+    "misses": 1,
+    "active_hit_rate_percent": 0,
+    "result": "In progress."
+  },
+  "records": [
+    {
+      "rank": 1,
+      "census_rank": 100,
+      "city": "Huntsville",
+      "state": "AL",
+      "population_2025": 233627,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Tax Increment Financing district (excluded)",
+      "summary": "No operating assessment-funded BID or legal equivalent was verified in Huntsville. The City created downtown TIF 9 in 2026, but its official explanation confirms that it captures future property-tax growth without increasing the tax rate and finances capital infrastructure rather than supplemental BID services. The City's current business and economic-development portals identify TIF, licensing, direct development, and entertainment districts but no business-improvement assessment district.",
+      "official_sources": [
+        "https://www.huntsvilleal.gov/government/finances-budget/tax-increment-financing-tif-districts/",
+        "https://www.huntsvilleal.gov/business/economic-development/",
+        "https://www.huntsvilleal.gov/business/"
+      ],
+      "production_next_action": "Monitor for a property-owner assessment district; do not map TIF 9 as a BID."
+    }
+  ]
+}
