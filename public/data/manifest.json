@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:32:20.428Z",
-  "records": 604,
+  "generatedAt": "2026-07-21T20:33:02.436Z",
+  "records": 605,
   "states": [
     "AK",
     "AL",
@@ -161,6 +161,7 @@
     "Rome, GA",
     "Roseville, CA",
     "Sacramento, CA",
+    "Salinas, CA",
     "Salt Lake City, UT",
     "San Antonio, TX",
     "San Diego, CA",
@@ -1457,11 +1458,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:32:20.428Z"
+    },
+    {
+      "id": "salinas-city-center-improvement-district",
+      "name": "Salinas City Center Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:33:02.436Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 147,
-    "configuredSources": 160,
+    "verifiedJurisdictions": 148,
+    "configuredSources": 161,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-21T20:32:20.428Z",
+  "checkedAt": "2026-07-21T20:33:02.436Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "sc-charleston-king-street-business-improvement-district"
+    "ca-salinas-salinas-city-center-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1274,6 +1274,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:32:20.428Z"
+    },
+    {
+      "id": "salinas-city-center-improvement-district",
+      "name": "Salinas City Center Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:33:02.436Z"
     }
   ]
 }

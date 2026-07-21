@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 12,
-    "active_hits": 8,
+    "cities_researched": 13,
+    "active_hits": 9,
     "misses": 4,
-    "active_hit_rate_percent": 66.7,
+    "active_hit_rate_percent": 69.2,
     "result": "In progress."
   },
   "records": [
@@ -235,6 +235,23 @@
         "https://www.charleston-sc.gov/AgendaCenter/ViewFile/Minutes/_05262026-10933"
       ],
       "production_next_action": "Production-ingested as a generalized King Street corridor from Broad Street to Line Street."
+    },
+    {
+      "rank": 13,
+      "census_rank": 169,
+      "city": "Salinas",
+      "state": "CA",
+      "population_2025": 159134,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Community Benefit District / private business improvement district",
+      "summary": "The Salinas City Center Improvement Association manages an active property-owner-funded downtown business improvement district. The City identifies its boundary as the railroad tracks on the north, Monterey Street on the east, San Luis Street on the south, and Capitol Street on the west; assessments fund landscaping, cleaning, safety, marketing, and related district services.",
+      "official_sources": [
+        "https://www.cityofsalinas.org/Business",
+        "https://salinas.legistar.com/View.ashx?GUID=77493153-4741-46A5-86E6-2A246F1B1230&ID=1192851&M=A",
+        "https://salinascitycenter.com/wp-content/uploads/2024/07/SCCIA-Combined-Annual-Report-2023.pdf"
+      ],
+      "production_next_action": "Production-ingested as the generalized official downtown boundary stated by the City."
     }
   ]
 }
