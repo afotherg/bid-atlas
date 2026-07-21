@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:09:46.889Z",
-  "records": 581,
+  "generatedAt": "2026-07-21T20:11:13.949Z",
+  "records": 582,
   "states": [
     "AK",
     "AL",
@@ -43,6 +43,7 @@
     "WI"
   ],
   "cities": [
+    "Akron, OH",
     "Anaheim, CA",
     "Anchorage, AK",
     "Apple Valley, CA",
@@ -1335,11 +1336,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:09:46.889Z"
+    },
+    {
+      "id": "akron-downtown-special-improvement-district",
+      "name": "Downtown Akron Special Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:11:13.949Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 132,
-    "configuredSources": 145,
+    "verifiedJurisdictions": 133,
+    "configuredSources": 146,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

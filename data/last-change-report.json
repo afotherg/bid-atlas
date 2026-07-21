@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-21T20:09:46.889Z",
+  "checkedAt": "2026-07-21T20:11:13.949Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "tn-chattanooga-chattanooga-central-business-improvement-district"
+    "oh-akron-downtown-akron-special-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1169,6 +1169,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:09:46.889Z"
+    },
+    {
+      "id": "akron-downtown-special-improvement-district",
+      "name": "Downtown Akron Special Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:11:13.949Z"
     }
   ]
 }
