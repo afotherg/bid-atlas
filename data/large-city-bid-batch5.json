@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 15,
+    "cities_researched": 16,
     "active_hits": 11,
-    "misses": 4,
-    "active_hit_rate_percent": 73.3,
+    "misses": 5,
+    "active_hit_rate_percent": 68.8,
     "result": "In progress."
   },
   "records": [
@@ -286,6 +286,23 @@
         "https://hayward.legistar.com/View.ashx?GUID=f9f741c8-288e-40e1-83d5-c8cb057aa7fc&ID=60612&M=AO&N=QWdlbmRhIFBhY2tldCAwNS8xNS8xOA%3D%3D"
       ],
       "production_next_action": "Production-ingested as a generalized downtown assessment footprint; monitor the 2028 renewal."
+    },
+    {
+      "rank": 16,
+      "census_rank": 172,
+      "city": "Hollywood",
+      "state": "FL",
+      "population_2025": 157019,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Community Redevelopment Agency districts / business associations (excluded)",
+      "summary": "No operating assessment-funded commercial BID was verified in Hollywood. Downtown and Hollywood Beach receive place-management and redevelopment services through two Community Redevelopment Agency districts funded by tax increment, while the City's business-association registry describes membership organizations rather than compulsory benefit-assessment districts. The City's other current non-ad valorem districts concern neighborhood safety or infrastructure and are excluded.",
+      "official_sources": [
+        "https://www.hollywoodfl.org/1714/CRA-Reports-Funding",
+        "https://www.hollywoodfl.org/799/Business-Associations",
+        "https://hollywoodfl.org/DocumentCenter/View/26632/HollywoodFL---FY-2026-Adopted-Budget-Book"
+      ],
+      "production_next_action": "Monitor for a commercial property-assessment ordinance or tourism-district plan; do not map CRA, voluntary association, or neighborhood-safety boundaries."
     }
   ]
 }
