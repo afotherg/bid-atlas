@@ -1,13 +1,15 @@
 {
-  "generatedAt": "2026-07-21T19:18:08.007Z",
-  "records": 4,
+  "generatedAt": "2026-07-21T19:19:02.830Z",
+  "records": 7,
   "states": [
+    "IA",
     "MA",
     "NY",
     "SD",
     "UT"
   ],
   "cities": [
+    "Des Moines, IA",
     "Salt Lake City, UT",
     "Sioux Falls, SD",
     "Worcester, MA",
@@ -930,15 +932,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:18:08.007Z"
+    },
+    {
+      "id": "des-moines-ssmids",
+      "name": "Des Moines Self-Supported Municipal Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-21T19:19:02.830Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 4,
-    "configuredSources": 131,
+    "verifiedJurisdictions": 5,
+    "configuredSources": 132,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 3,
     "modified": 0,
     "removed": 0
   }
