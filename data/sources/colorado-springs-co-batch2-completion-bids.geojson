@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Greater Downtown Colorado Springs Business Improvement District",
+        "website": "https://www.downtowncs.com/bid/",
+        "sourceUrl": "https://www.downtowncs.com/bid/",
+        "status": "Active",
+        "area": "Generalized 32-block Greater Downtown BID envelope (Tejon Street commercial core) funded by a 5-mill levy",
+        "established": "1994"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -104.835,
+              38.825
+            ],
+            [
+              -104.81,
+              38.825
+            ],
+            [
+              -104.81,
+              38.845
+            ],
+            [
+              -104.835,
+              38.845
+            ],
+            [
+              -104.835,
+              38.825
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

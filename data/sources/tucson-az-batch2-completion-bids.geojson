@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Tucson Enhanced Municipal Services Improvement District",
+        "website": "https://downtowntucson.org/",
+        "sourceUrl": "https://downtowntucson.org/about/who-we-are/business-improvement-district",
+        "status": "Active",
+        "area": "Generalized downtown Tucson BID envelope from official BID boundary map (Congress / Broadway / 4th / surrounding core streets)",
+        "established": "1998"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -110.98,
+              32.215
+            ],
+            [
+              -110.96,
+              32.215
+            ],
+            [
+              -110.96,
+              32.23
+            ],
+            [
+              -110.98,
+              32.23
+            ],
+            [
+              -110.98,
+              32.215
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

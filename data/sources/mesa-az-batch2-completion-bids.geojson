@@ -1,0 +1,42 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mesa Town Center Improvement District No. 228",
+        "website": "https://downtownmesa.com/",
+        "sourceUrl": "https://www.mesaaz.gov/Business-Development/Urban-Transformation/Downtown-Incentives",
+        "status": "Active",
+        "area": "Generalized Downtown Mesa / Town Center envelope for SID 228 assessment district funding clean-safe and promotion services"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -111.845,
+              33.405
+            ],
+            [
+              -111.825,
+              33.405
+            ],
+            [
+              -111.825,
+              33.425
+            ],
+            [
+              -111.845,
+              33.425
+            ],
+            [
+              -111.845,
+              33.405
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

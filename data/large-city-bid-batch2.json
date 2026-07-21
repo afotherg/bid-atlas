@@ -59,7 +59,7 @@
         "https://memphistn.gov/wp-content/uploads/2025/06/FY26-DMC-Budget-Presentation-Final.pdf",
         "https://www.shelbycountytrustee.com/245/Memphis-Tax-Rates"
       ],
-      "production_next_action": "Obtain the official CBID boundary map or GIS layer from the City/County or DMC, verify the current assessment rate in the adopted FY2026 levy, and ingest the district with assessment metadata."
+      "production_next_action": "Production-ingested: official Downtown Memphis Commission / CBID GIS polygon."
     },
     {
       "rank": 3,
@@ -103,13 +103,13 @@
       "result": "active_hit",
       "active_hit": true,
       "local_term": "Downtown Enhanced Municipal Services Improvement District / Business Improvement District",
-      "summary": "Tucson's Downtown Enhanced Municipal Services Improvement District, branded as the Downtown BID, was adopted in 1998 under A.R.S. § 48-575. Property assessments fund enhanced services delivered by the Downtown Tucson Partnership under City contract. Assessments use a land-and-building square-footage formula with annual inflation adjustments; Mayor and Council approved continuation of BID assessments for fiscal year 2027 in June 2026.",
+      "summary": "Tucson's Downtown Enhanced Municipal Services Improvement District, branded as the Downtown BID, was adopted in 1998 under A.R.S. \u00a7 48-575. Property assessments fund enhanced services delivered by the Downtown Tucson Partnership under City contract. Assessments use a land-and-building square-footage formula with annual inflation adjustments; Mayor and Council approved continuation of BID assessments for fiscal year 2027 in June 2026.",
       "official_sources": [
         "https://downtowntucson.org/about/who-we-are/business-improvement-district",
         "https://www.azleg.gov/ars/48/00575.htm",
         "https://biztucson.com/downtown-tucson-partnership-gets-approval-for-fy2027-business-improvement-district-assessments/"
       ],
-      "production_next_action": "Obtain the official BID boundary map or City GIS polygon, confirm the adopted FY2027 assessment formula and parcel count, and ingest the district with Phoenix EMSD-style metadata."
+      "production_next_action": "Production-ingested: generalized Downtown Tucson EMSD/BID envelope from official BID map context."
     },
     {
       "rank": 6,
@@ -145,7 +145,7 @@
         "https://www.brooksidekc.org/brookside-community-improvement-district",
         "https://kccrossroads.org/community-improvement-district/"
       ],
-      "production_next_action": "Download the official CID GIS layer, reconcile to the current fiscal roster, classify operating-service districts versus sales-tax or single-project CIDs, and ingest clearly assessment- or service-funded commercial districts first."
+      "production_next_action": "Production-ingested: generalized downtown CID cluster, Crossroads, and Brookside envelopes pending restoration of City Open Data CID geometry."
     },
     {
       "rank": 8,
@@ -162,7 +162,7 @@
         "https://apps.mesaaz.gov/meetingarchive/archivedocuments/Resolutions/RES%209691.10.pdf",
         "https://www.mesaaz.gov/Business-Development/Urban-Transformation/Downtown-Incentives"
       ],
-      "production_next_action": "Locate the current official boundary description or map for SID 228, confirm the adopted 2026-2027 assessment roll after the May 2026 hearing, and ingest the district as Mesa's downtown BID equivalent."
+      "production_next_action": "Production-ingested: generalized Town Center Improvement District No. 228 envelope."
     },
     {
       "rank": 9,
@@ -197,7 +197,7 @@
         "https://assessor.elpasoco.com/business-improvement-districts/",
         "https://coloradosprings.gov/document/bidcontactinformation-november2023.xlsx"
       ],
-      "production_next_action": "Obtain the Greater Downtown BID boundary and latest Council-approved operating plan, inventory other BIDs from the City contact list and County assessor maps, and prioritize operating-service districts over pure capital-infrastructure BIDs."
+      "production_next_action": "Production-ingested: generalized Greater Downtown BID envelope."
     }
   ]
 }

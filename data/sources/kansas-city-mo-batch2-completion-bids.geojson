@@ -1,0 +1,117 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Kansas City / Power & Light Community Improvement Districts",
+        "website": "https://www.kcmo.gov/city-hall/departments/city-planning-development/community-improvement-districts",
+        "sourceUrl": "https://www.kcmo.gov/city-hall/departments/city-planning-development/community-improvement-districts",
+        "status": "Active",
+        "area": "Generalized downtown Kansas City commercial core envelope representing the cluster of operating downtown CIDs pending full Open Data CID geometry restoration"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -94.595,
+              39.085
+            ],
+            [
+              -94.565,
+              39.085
+            ],
+            [
+              -94.565,
+              39.11
+            ],
+            [
+              -94.595,
+              39.11
+            ],
+            [
+              -94.595,
+              39.085
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crossroads Community Improvement District",
+        "website": "https://kccrossroads.org/community-improvement-district/",
+        "sourceUrl": "https://kccrossroads.org/community-improvement-district/",
+        "status": "Active",
+        "area": "Generalized envelope from official description: Truman Road (north), Kansas City Terminal Railway (south), Troost Avenue (east), Broadway Boulevard (west)",
+        "established": "2025"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -94.595,
+              39.075
+            ],
+            [
+              -94.565,
+              39.075
+            ],
+            [
+              -94.565,
+              39.09
+            ],
+            [
+              -94.595,
+              39.09
+            ],
+            [
+              -94.595,
+              39.075
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brookside Community Improvement District",
+        "website": "https://www.brooksidekc.org/brookside-community-improvement-district",
+        "sourceUrl": "https://www.brooksidekc.org/brookside-community-improvement-district",
+        "status": "Active",
+        "area": "Generalized Brookside commercial district envelope for the special-assessment CID"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -94.595,
+              39.005
+            ],
+            [
+              -94.58,
+              39.005
+            ],
+            [
+              -94.58,
+              39.02
+            ],
+            [
+              -94.595,
+              39.02
+            ],
+            [
+              -94.595,
+              39.005
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

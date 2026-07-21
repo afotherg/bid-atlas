@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tulsa Stadium Improvement District",
+        "website": "https://www.cityoftulsa.org/residents/arts-recreation/downtown-tulsa/tulsa-stadium-improvement-district/",
+        "sourceUrl": "https://www.cityoftulsa.org/residents/arts-recreation/downtown-tulsa/tulsa-stadium-improvement-district/",
+        "status": "Active",
+        "area": "Generalized downtown Tulsa envelope for the Stadium Improvement District, officially defined as properties within the Inner Dispersal Loop",
+        "expires": "2039"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -95.995,
+              36.14
+            ],
+            [
+              -95.975,
+              36.14
+            ],
+            [
+              -95.975,
+              36.16
+            ],
+            [
+              -95.995,
+              36.16
+            ],
+            [
+              -95.995,
+              36.14
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

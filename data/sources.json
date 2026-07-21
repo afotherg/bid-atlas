@@ -3863,5 +3863,213 @@
         "status"
       ]
     }
+  },
+  {
+    "id": "memphis-central-business-improvement-district",
+    "name": "Memphis Central Business Improvement District",
+    "jurisdiction": "Memphis, TN",
+    "state": "TN",
+    "city": "Memphis",
+    "url": "https://services2.arcgis.com/saWmpKJIUAjyyNVc/arcgis/rest/services/Downtown_Memphis_Commission_Boundaries/FeatureServer/0/query?where=1%3D1&outFields=Name&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://downtownmemphis.com/about/business-improvement-district",
+    "publisher": "Downtown Memphis Commission / City of Memphis",
+    "cadence": "As published",
+    "fixedName": "Memphis Central Business Improvement District",
+    "fields": {},
+    "overrides": {
+      "Memphis Central Business Improvement District": {
+        "website": "https://downtownmemphis.com/",
+        "sourceUrl": "https://www.arcgis.com/home/item.html?id=a5088e8d5b074cb2828b0b53ad51d7d1",
+        "established": "1997",
+        "area": "Official Downtown Memphis Commission / CBID boundary from City GIS"
+      }
+    }
+  },
+  {
+    "id": "colorado-springs-co-verified-districts",
+    "name": "Colorado Springs Verified Business Improvement Districts",
+    "jurisdiction": "Colorado Springs, CO",
+    "state": "CO",
+    "city": "Colorado Springs",
+    "file": "data/sources/colorado-springs-co-batch2-completion-bids.geojson",
+    "landingPage": "https://www.downtowncs.com/bid/",
+    "publisher": "Colorado Springs and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.downtowncs.com/bid/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "kansas-city-mo-verified-districts",
+    "name": "Kansas City Verified Business Improvement Districts",
+    "jurisdiction": "Kansas City, MO",
+    "state": "MO",
+    "city": "Kansas City",
+    "file": "data/sources/kansas-city-mo-batch2-completion-bids.geojson",
+    "landingPage": "https://kccrossroads.org/community-improvement-district/",
+    "publisher": "Kansas City and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://kccrossroads.org/community-improvement-district/",
+      "https://www.brooksidekc.org/brookside-community-improvement-district",
+      "https://www.kcmo.gov/city-hall/departments/city-planning-development/community-improvement-districts"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "mesa-az-verified-districts",
+    "name": "Mesa Verified Business Improvement Districts",
+    "jurisdiction": "Mesa, AZ",
+    "state": "AZ",
+    "city": "Mesa",
+    "file": "data/sources/mesa-az-batch2-completion-bids.geojson",
+    "landingPage": "https://www.mesaaz.gov/Business-Development/Urban-Transformation/Downtown-Incentives",
+    "publisher": "Mesa and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.mesaaz.gov/Business-Development/Urban-Transformation/Downtown-Incentives"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "tucson-az-verified-districts",
+    "name": "Tucson Verified Business Improvement Districts",
+    "jurisdiction": "Tucson, AZ",
+    "state": "AZ",
+    "city": "Tucson",
+    "file": "data/sources/tucson-az-batch2-completion-bids.geojson",
+    "landingPage": "https://downtowntucson.org/about/who-we-are/business-improvement-district",
+    "publisher": "Tucson and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://downtowntucson.org/about/who-we-are/business-improvement-district"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
+  },
+  {
+    "id": "tulsa-ok-verified-districts",
+    "name": "Tulsa Verified Business Improvement Districts",
+    "jurisdiction": "Tulsa, OK",
+    "state": "OK",
+    "city": "Tulsa",
+    "file": "data/sources/tulsa-ok-batch2-completion-bids.geojson",
+    "landingPage": "https://www.cityoftulsa.org/residents/arts-recreation/downtown-tulsa/tulsa-stadium-improvement-district/",
+    "publisher": "Tulsa and district operators",
+    "cadence": "Official pages monitored; generalized boundaries reviewed when records change",
+    "monitorUrls": [
+      "https://www.cityoftulsa.org/residents/arts-recreation/downtown-tulsa/tulsa-stadium-improvement-district/"
+    ],
+    "fields": {
+      "name": [
+        "name"
+      ],
+      "website": [
+        "website"
+      ],
+      "sourceUrl": [
+        "sourceUrl"
+      ],
+      "established": [
+        "established"
+      ],
+      "expires": [
+        "expires"
+      ],
+      "area": [
+        "area"
+      ],
+      "status": [
+        "status"
+      ]
+    }
   }
 ]

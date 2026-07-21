@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T16:41:25.861Z",
-  "records": 544,
+  "generatedAt": "2026-07-21T17:13:43.152Z",
+  "records": 552,
   "states": [
     "AK",
     "AZ",
@@ -53,6 +53,7 @@
     "Charlotte, NC",
     "Cincinnati, OH",
     "Cleveland, OH",
+    "Colorado Springs, CO",
     "Columbus, GA",
     "Columbus, OH",
     "Costa Mesa, CA",
@@ -79,6 +80,7 @@
     "Jacksonville, FL",
     "Jersey City, NJ",
     "Kailua-Kona, HI",
+    "Kansas City, MO",
     "Laguna Beach, CA",
     "Laredo, TX",
     "Lexington, KY",
@@ -89,7 +91,9 @@
     "Macon, GA",
     "Madison, WI",
     "Manhattan Beach, CA",
+    "Memphis, TN",
     "Merced, CA",
+    "Mesa, AZ",
     "Miami Beach, FL",
     "Miami, FL",
     "Milwaukee, WI",
@@ -135,6 +139,8 @@
     "Tacoma, WA",
     "Tampa, FL",
     "Toledo, OH",
+    "Tucson, AZ",
+    "Tulsa, OK",
     "Washington, DC",
     "West Hollywood, CA",
     "Whittier, CA",
@@ -1087,15 +1093,67 @@
       "checkedAt": "2026-07-21T16:41:25.861Z",
       "monitorHash": "7ac3c243fa4b84738ffc6144782b3d75a2674c727cf436d05aa51b0d64fdfc96",
       "legislationChanged": false
+    },
+    {
+      "id": "memphis-central-business-improvement-district",
+      "name": "Memphis Central Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T17:13:27.486Z"
+    },
+    {
+      "id": "colorado-springs-co-verified-districts",
+      "name": "Colorado Springs Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T17:13:27.486Z",
+      "monitorHash": "d07719a7e519983cd3a4da1c99f0b7406573af912633c14f2ae6dc826a357ead",
+      "legislationChanged": false
+    },
+    {
+      "id": "kansas-city-mo-verified-districts",
+      "name": "Kansas City Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-21T17:13:27.486Z",
+      "monitorHash": "c014f51eb7c9ceddf5d9fc34c8f26605536780dccc0e2154eb6a6fc67103533a",
+      "legislationChanged": false
+    },
+    {
+      "id": "mesa-az-verified-districts",
+      "name": "Mesa Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T17:13:43.152Z",
+      "monitorHash": "d231d85804a5656bf10780bd759a1552530a8da12bc8d0995c3569ef51229093",
+      "legislationChanged": false
+    },
+    {
+      "id": "tucson-az-verified-districts",
+      "name": "Tucson Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T17:13:27.486Z",
+      "monitorHash": "42c9ac9c6becd851b97bb926838e1da17fce869444748f9eb0ddd57c6ffa1048",
+      "legislationChanged": false
+    },
+    {
+      "id": "tulsa-ok-verified-districts",
+      "name": "Tulsa Verified Business Improvement Districts",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T17:13:27.486Z",
+      "monitorHash": "d43d02c232c04c44dbc950d2237f176bc1a4cffe8e9611bd376891ee032ae8ec",
+      "legislationChanged": false
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 103,
-    "configuredSources": 116,
+    "verifiedJurisdictions": 109,
+    "configuredSources": 122,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 28,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }
