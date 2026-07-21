@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:27:46.218Z",
-  "records": 600,
+  "generatedAt": "2026-07-21T20:29:48.387Z",
+  "records": 601,
   "states": [
     "AK",
     "AL",
@@ -140,6 +140,7 @@
     "Overland Park, KS",
     "Oxnard, CA",
     "Palm Springs, CA",
+    "Palmdale, CA",
     "Pasadena, CA",
     "Philadelphia, PA",
     "Phoenix, AZ",
@@ -1432,15 +1433,22 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T20:27:46.218Z"
+    },
+    {
+      "id": "palmdale-tourism-improvement-district",
+      "name": "Palmdale Tourism Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:29:48.387Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 144,
-    "configuredSources": 157,
+    "verifiedJurisdictions": 145,
+    "configuredSources": 158,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }
