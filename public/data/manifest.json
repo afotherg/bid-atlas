@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:08:40.922Z",
-  "records": 579,
+  "generatedAt": "2026-07-21T20:09:14.548Z",
+  "records": 580,
   "states": [
     "AK",
     "AL",
@@ -114,6 +114,7 @@
     "Mobile, AL",
     "Modesto, CA",
     "Monrovia, CA",
+    "Montgomery, AL",
     "Nampa, ID",
     "Napa, CA",
     "Nashville, TN",
@@ -1319,15 +1320,22 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T20:08:40.922Z"
+    },
+    {
+      "id": "montgomery-tourism-improvement-district",
+      "name": "Montgomery Tourism Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:09:14.548Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 130,
-    "configuredSources": 143,
+    "verifiedJurisdictions": 131,
+    "configuredSources": 144,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }

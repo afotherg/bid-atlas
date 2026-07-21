@@ -1,13 +1,12 @@
 {
-  "checkedAt": "2026-07-21T20:08:40.922Z",
+  "checkedAt": "2026-07-21T20:09:14.548Z",
   "summary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ri-providence-downtown-providence-improvement-district",
-    "ri-providence-thayer-street-district"
+    "al-montgomery-montgomery-tourism-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1156,6 +1155,13 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T20:08:40.922Z"
+    },
+    {
+      "id": "montgomery-tourism-improvement-district",
+      "name": "Montgomery Tourism Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:09:14.548Z"
     }
   ]
 }
