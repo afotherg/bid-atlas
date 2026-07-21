@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T01:06:12.824Z",
-  "records": 418,
+  "generatedAt": "2026-07-21T01:07:27.599Z",
+  "records": 429,
   "states": [
     "AZ",
     "CA",
@@ -85,6 +85,7 @@
     "San Mateo, CA",
     "Santa Cruz, CA",
     "Santa Monica, CA",
+    "Seattle, WA",
     "South Gate, CA",
     "Stockton, CA",
     "Tacoma, WA",
@@ -726,15 +727,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T01:06:12.824Z"
+    },
+    {
+      "id": "seattle-business-improvement-areas",
+      "name": "Seattle Business Improvement Areas",
+      "status": "ok",
+      "records": 12,
+      "checkedAt": "2026-07-21T01:07:27.599Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 69,
-    "configuredSources": 78,
+    "verifiedJurisdictions": 70,
+    "configuredSources": 79,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 3,
+    "added": 11,
     "modified": 0,
     "removed": 0
   }

@@ -917,6 +917,30 @@ test("Indianapolis publishes its three active economic improvement districts", (
   }
 });
 
+test("Seattle publishes its eleven established business improvement areas", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "seattle-business-improvement-areas");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 11);
+  for (const name of [
+    "15th Avenue East Business Improvement Area",
+    "Ballard Business Improvement Area",
+    "Chinatown-International District Business Improvement Area",
+    "Metropolitan Improvement District",
+    "Seattle Tourism Improvement Area",
+    "SODO Business Improvement Area",
+    "University District Business Improvement Area",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  assert.equal(districts.find((feature) => feature.properties.name === "Ballard Business Improvement Area")?.geometry.type, "MultiPolygon");
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Seattle");
+    assert.equal(district.properties.state, "WA");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -122.5 && longitude < -122.2, `${district.properties.name} is outside Seattle longitude`);
+    assert.ok(latitude > 47.4 && latitude < 47.8, `${district.properties.name} is outside Seattle latitude`);
+  }
+});
+
 test("Philadelphia publishes its fifteen mandatory business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "philadelphia-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

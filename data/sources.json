@@ -2478,5 +2478,33 @@
       "area": ["area"],
       "status": ["status"]
     }
+  },
+  {
+    "id": "seattle-business-improvement-areas",
+    "name": "Seattle Business Improvement Areas",
+    "jurisdiction": "Seattle, WA",
+    "state": "WA",
+    "city": "Seattle",
+    "url": "https://services.arcgis.com/ZOyb2t4B0UYuYNYH/arcgis/rest/services/OED_Business_Improvement_Areas/FeatureServer/0/query?where=1%3D1&outFields=NAME&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.seattle.gov/economic-development/business-districts/business-improvement-areas-",
+    "publisher": "City of Seattle Office of Economic Development",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "NAME"
+      ]
+    },
+    "overrides": {
+      "Pioneer Square BIA": {"name": "Pioneer Square Business Improvement Area"},
+      "SODO BIA": {"name": "SODO Business Improvement Area"},
+      "Seattle Tourism BIA": {"name": "Seattle Tourism Improvement Area"},
+      "Chinatown/International District BIA": {"name": "Chinatown-International District Business Improvement Area"},
+      "West Seattle Junction BIA": {"name": "West Seattle Junction Business Improvement Area"},
+      "University District BIA": {"name": "University District Business Improvement Area"},
+      "Broadway BIA": {"name": "Broadway Business Improvement Area"},
+      "Columbia City BIA": {"name": "Columbia City Business Improvement Area"},
+      "Ballard BIA": {"name": "Ballard Business Improvement Area"},
+      "15th Avenue East BIA": {"name": "15th Avenue East Business Improvement Area"}
+    }
   }
 ]
