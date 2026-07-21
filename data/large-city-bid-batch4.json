@@ -24,10 +24,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
   },
   "batch_summary": {
-    "cities_researched": 7,
+    "cities_researched": 8,
     "active_hits": 4,
-    "misses": 3,
-    "active_hit_rate_percent": 57.1,
+    "misses": 4,
+    "active_hit_rate_percent": 50,
     "result": "In progress."
   },
   "records": [
@@ -149,6 +149,13 @@
         "https://city.brla.gov/gis/metadata/ECONOMIC_DDD.html"
       ],
       "production_next_action": "Production-ingested with a generalized official GIS extent."
+    },
+    {
+      "rank": 8, "census_rank": 108, "city": "San Bernardino", "state": "CA", "population_2025": 222044,
+      "result": "miss", "active_hit": false, "local_term": "Proposed downtown PBID (not formed)",
+      "summary": "No active BID or PBID was verified. The City's current registry lists infrastructure and maintenance assessment districts, its FY2026-27 budget contains no business-improvement assessment fund, and the downtown PBID remains a stakeholder formation proposal rather than an operating levy.",
+      "official_sources": ["https://www.sanbernardino.gov/635/Assessment-Districts","https://www.sanbernardino.gov/DocumentCenter/View/11772/City-Managers-Proposed-FY-2026-27-Operating-Budget-and-CIP-2027-2031---English","https://ci.san-bernardino.ca.us/news/whats_new/city_planning_downtown_revitalization"],
+      "production_next_action": "Monitor the proposed downtown PBID for completed formation and a first levy."
     }
   ]
 }
