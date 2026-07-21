@@ -1,12 +1,14 @@
 {
-  "generatedAt": "2026-07-21T19:17:05.827Z",
-  "records": 2,
+  "generatedAt": "2026-07-21T19:17:36.607Z",
+  "records": 3,
   "states": [
     "MA",
+    "SD",
     "UT"
   ],
   "cities": [
     "Salt Lake City, UT",
+    "Sioux Falls, SD",
     "Worcester, MA"
   ],
   "sources": [
@@ -912,11 +914,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:17:05.827Z"
+    },
+    {
+      "id": "sioux-falls-downtown-business-improvement-district",
+      "name": "Downtown Sioux Falls Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:17:36.607Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 2,
-    "configuredSources": 129,
+    "verifiedJurisdictions": 3,
+    "configuredSources": 130,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
