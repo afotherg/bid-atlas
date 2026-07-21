@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:11:13.949Z",
-  "records": 582,
+  "generatedAt": "2026-07-21T20:13:07.353Z",
+  "records": 583,
   "states": [
     "AK",
     "AL",
@@ -77,6 +77,7 @@
     "Durham, NC",
     "El Paso, TX",
     "Fayetteville, NC",
+    "Fort Lauderdale, FL",
     "Fort Worth, TX",
     "Fresno, CA",
     "Garden Grove, CA",
@@ -1343,11 +1344,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:11:13.949Z"
+    },
+    {
+      "id": "fort-lauderdale-downtown-development-authority",
+      "name": "Fort Lauderdale Downtown Development Authority",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:13:07.353Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 133,
-    "configuredSources": 146,
+    "verifiedJurisdictions": 134,
+    "configuredSources": 147,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
