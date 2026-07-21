@@ -24,10 +24,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
   },
   "batch_summary": {
-    "cities_researched": 8,
+    "cities_researched": 9,
     "active_hits": 4,
-    "misses": 4,
-    "active_hit_rate_percent": 50,
+    "misses": 5,
+    "active_hit_rate_percent": 44.4,
     "result": "In progress."
   },
   "records": [
@@ -156,6 +156,13 @@
       "summary": "No active BID or PBID was verified. The City's current registry lists infrastructure and maintenance assessment districts, its FY2026-27 budget contains no business-improvement assessment fund, and the downtown PBID remains a stakeholder formation proposal rather than an operating levy.",
       "official_sources": ["https://www.sanbernardino.gov/635/Assessment-Districts","https://www.sanbernardino.gov/DocumentCenter/View/11772/City-Managers-Proposed-FY-2026-27-Operating-Budget-and-CIP-2027-2031---English","https://ci.san-bernardino.ca.us/news/whats_new/city_planning_downtown_revitalization"],
       "production_next_action": "Monitor the proposed downtown PBID for completed formation and a first levy."
+    },
+    {
+      "rank": 9, "census_rank": 109, "city": "Fontana", "state": "CA", "population_2025": 221223,
+      "result": "miss", "active_hit": false, "local_term": "Proposed downtown BID (not formed)",
+      "summary": "No operating assessment-funded BID was verified in Fontana. The adopted General Plan directs the City to pursue a future downtown BID and management district, but current official business and fiscal materials do not document a formation resolution, assessment levy, or active BID fund.",
+      "official_sources": ["https://fontanaca.gov/DocumentCenter/View/26752/Chapter-13---Economy-Education-adn-Workplace-Development","https://www.fontanaca.gov/31/Business"],
+      "production_next_action": "Monitor implementation of the General Plan's downtown BID policy."
     }
   ]
 }
