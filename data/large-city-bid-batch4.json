@@ -24,10 +24,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
   },
   "batch_summary": {
-    "cities_researched": 3,
-    "active_hits": 1,
+    "cities_researched": 4,
+    "active_hits": 2,
     "misses": 2,
-    "active_hit_rate_percent": 33.3,
+    "active_hit_rate_percent": 50,
     "result": "In progress."
   },
   "records": [
@@ -81,6 +81,24 @@
         "https://www.hialeahfl.gov/DocumentCenter/View/175/Ordinance-2018-019-PDF"
       ],
       "production_next_action": "Do not map zoning districts or capital-improvement assessment areas as BIDs; monitor for a Chapter 170 operating-services district."
+    },
+    {
+      "rank": 4,
+      "census_rank": 103,
+      "city": "Spokane",
+      "state": "WA",
+      "population_2025": 230783,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Parking and Business Improvement Area",
+      "summary": "Spokane operates two assessment-funded Parking and Business Improvement Areas: Downtown and East Sprague. City Council approved both 2026 assessment rolls in December 2025, and the City's current GIS publishes exact polygons for both districts. Assessments fund management, cleaning, security, beautification, marketing, and other supplemental services.",
+      "official_sources": [
+        "https://my.spokanecity.org/bcc/boards/downtown-business-improvement-district-board/",
+        "https://my.spokanecity.org/bcc/boards/east-sprague-business-improvement-district-board/default.aspx",
+        "https://services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/Business_Improvement_District/FeatureServer/0",
+        "https://my.spokanecity.org/citycouncil/meetings/2025/12/01/legislative-meeting/"
+      ],
+      "production_next_action": "Production-ingested from exact City GIS polygons."
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:09:23.061Z",
-  "records": 553,
+  "generatedAt": "2026-07-21T19:10:39.410Z",
+  "records": 555,
   "states": [
     "AK",
     "AZ",
@@ -135,6 +135,7 @@
     "Santa Monica, CA",
     "Seattle, WA",
     "South Gate, CA",
+    "Spokane, WA",
     "St. Louis, MO",
     "Stockton, CA",
     "Tacoma, WA",
@@ -1153,15 +1154,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:09:23.061Z"
+    },
+    {
+      "id": "spokane-business-improvement-districts",
+      "name": "Spokane Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T19:10:39.410Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 110,
-    "configuredSources": 123,
+    "verifiedJurisdictions": 111,
+    "configuredSources": 124,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }

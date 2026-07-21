@@ -4090,5 +4090,32 @@
       "area": ["area"],
       "status": ["status"]
     }
+  },
+  {
+    "id": "spokane-business-improvement-districts",
+    "name": "Spokane Business Improvement Districts",
+    "jurisdiction": "Spokane, WA",
+    "state": "WA",
+    "city": "Spokane",
+    "url": "https://services.arcgis.com/3PDwyTturHqnGCu0/arcgis/rest/services/Business_Improvement_District/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://my.spokanecity.org/bcc/boards/downtown-business-improvement-district-board/",
+    "publisher": "City of Spokane",
+    "cadence": "As published",
+    "overrides": {
+      "Downtown": {
+        "name": "Downtown Spokane Parking and Business Improvement Area",
+        "website": "https://downtownspokane.org/",
+        "sourceUrl": "https://my.spokanecity.org/bcc/boards/downtown-business-improvement-district-board/"
+      },
+      "East Sprague": {
+        "name": "East Sprague Parking and Business Improvement Area",
+        "website": "https://www.eastsprague.com/",
+        "sourceUrl": "https://my.spokanecity.org/bcc/boards/east-sprague-business-improvement-district-board/default.aspx",
+        "established": "2016"
+      }
+    },
+    "fields": {
+      "name": ["Name"]
+    }
   }
 ]

@@ -1207,6 +1207,22 @@ test("Norfolk publishes its renewed downtown improvement district", () => {
   assert.ok(latitude > 36.7 && latitude < 37);
 });
 
+test("Spokane publishes its two active parking and business improvement areas", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "spokane-business-improvement-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 2);
+  assert.ok(names.has("Downtown Spokane Parking and Business Improvement Area"));
+  assert.ok(names.has("East Sprague Parking and Business Improvement Area"));
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Spokane");
+    assert.equal(district.properties.state, "WA");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -117.6 && longitude < -117.2);
+    assert.ok(latitude > 47.5 && latitude < 47.8);
+  }
+});
+
 test("Philadelphia publishes its fifteen mandatory business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "philadelphia-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));
