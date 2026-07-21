@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:13:58.313Z",
-  "records": 557,
+  "generatedAt": "2026-07-21T19:14:51.846Z",
+  "records": 558,
   "states": [
     "AK",
     "AZ",
@@ -99,6 +99,7 @@
     "Miami, FL",
     "Milwaukee, WI",
     "Minneapolis, MN",
+    "Modesto, CA",
     "Monrovia, CA",
     "Nampa, ID",
     "Napa, CA",
@@ -1177,11 +1178,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:13:58.313Z"
+    },
+    {
+      "id": "modesto-downtown-improvement-district",
+      "name": "Modesto Downtown Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:14:51.846Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 113,
-    "configuredSources": 126,
+    "verifiedJurisdictions": 114,
+    "configuredSources": 127,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

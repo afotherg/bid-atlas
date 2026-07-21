@@ -24,10 +24,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
   },
   "batch_summary": {
-    "cities_researched": 9,
-    "active_hits": 4,
+    "cities_researched": 10,
+    "active_hits": 5,
     "misses": 5,
-    "active_hit_rate_percent": 44.4,
+    "active_hit_rate_percent": 50,
     "result": "In progress."
   },
   "records": [
@@ -163,6 +163,13 @@
       "summary": "No operating assessment-funded BID was verified in Fontana. The adopted General Plan directs the City to pursue a future downtown BID and management district, but current official business and fiscal materials do not document a formation resolution, assessment levy, or active BID fund.",
       "official_sources": ["https://fontanaca.gov/DocumentCenter/View/26752/Chapter-13---Economy-Education-adn-Workplace-Development","https://www.fontanaca.gov/31/Business"],
       "production_next_action": "Monitor implementation of the General Plan's downtown BID policy."
+    },
+    {
+      "rank": 10, "census_rank": 110, "city": "Modesto", "state": "CA", "population_2025": 219652,
+      "result": "active_hit", "active_hit": true, "local_term": "Downtown Improvement District",
+      "summary": "Modesto operates an assessment-funded Downtown Improvement District. The City's current business-license page requires downtown businesses to pay an additional DID tax based on gross receipts, with a $1,500 annual cap. The atlas uses a generalized central-downtown outline pending a public parcel-level district layer.",
+      "official_sources": ["https://www.modestogov.com/310/Fees-Taxes-and-Deadlines","https://www.modestogov.com/1249/Business-Incentives"],
+      "production_next_action": "Production-ingested with a generalized downtown boundary."
     }
   ]
 }

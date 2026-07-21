@@ -4142,5 +4142,10 @@
     "publisher": "City of Baton Rouge and Parish of East Baton Rouge",
     "cadence": "As needed; generalized from official GIS metadata",
     "fields": {"name":["name"],"website":["website"],"sourceUrl":["sourceUrl"],"established":["established"],"expires":["expires"],"area":["area"],"status":["status"]}
+  },
+  {
+    "id":"modesto-downtown-improvement-district","name":"Modesto Downtown Improvement District","jurisdiction":"Modesto, CA","state":"CA","city":"Modesto",
+    "file":"data/sources/modesto-downtown-improvement-district.geojson","landingPage":"https://www.modestogov.com/310/Fees-Taxes-and-Deadlines","publisher":"City of Modesto","cadence":"Annual business-license assessment; generalized boundary",
+    "fields":{"name":["name"],"website":["website"],"sourceUrl":["sourceUrl"],"area":["area"],"status":["status"]}
   }
 ]
