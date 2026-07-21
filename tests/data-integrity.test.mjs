@@ -700,13 +700,50 @@ test("Florida publishes five statewide-registry districts and Jacksonville's ver
   }
 });
 
-test("Georgia publishes its three verified city business improvement districts", () => {
+test("Georgia publishes classic verified BIDs and Atlanta community improvement districts", () => {
   const georgia = collection.features.filter((feature) => feature.properties.state === "GA");
-  assert.equal(georgia.length, 3);
-  assert.deepEqual(new Set(georgia.map((feature) => feature.properties.city)), new Set(["Rome", "Columbus", "Macon"]));
+  const classic = georgia.filter((feature) => feature.properties.sourceId === "georgia-verified-business-improvement-districts");
+  const atlanta = georgia.filter((feature) => feature.properties.sourceId === "atlanta-community-improvement-districts");
+  assert.equal(classic.length, 3);
+  assert.equal(atlanta.length, 8);
+  assert.equal(georgia.length, 11);
+  assert.deepEqual(new Set(classic.map((feature) => feature.properties.city)), new Set(["Rome", "Columbus", "Macon"]));
+  assert.deepEqual(new Set(atlanta.map((feature) => feature.properties.city)), new Set(["Atlanta"]));
+  const atlantaNames = new Set(atlanta.map((feature) => feature.properties.name));
+  for (const name of [
+    "Atlanta Downtown Improvement District",
+    "Midtown Improvement District",
+    "Buckhead Community Improvement District",
+    "Little Five Points Community Improvement District",
+  ]) assert.ok(atlantaNames.has(name), `missing ${name}`);
   for (const district of georgia) {
     assert.equal(district.properties.status, "Active");
-    assert.equal(district.properties.sourceId, "georgia-verified-business-improvement-districts");
+  }
+});
+
+test("Milwaukee publishes its thirty-three official business improvement districts", () => {
+  const milwaukee = collection.features.filter((feature) => feature.properties.city === "Milwaukee" && feature.properties.state === "WI");
+  assert.equal(milwaukee.length, 33);
+  const names = new Set(milwaukee.map((feature) => feature.properties.name));
+  for (const name of ["Milwaukee Downtown BID 21", "Historic Third Ward", "Deer District"]) {
+    assert.ok(names.has(name), `missing ${name}`);
+  }
+  for (const district of milwaukee) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.properties.sourceId, "milwaukee-business-improvement-districts");
+  }
+});
+
+test("Raleigh publishes its two municipal service districts", () => {
+  const raleigh = collection.features.filter((feature) => feature.properties.city === "Raleigh" && feature.properties.state === "NC");
+  assert.equal(raleigh.length, 2);
+  assert.deepEqual(
+    new Set(raleigh.map((feature) => feature.properties.name)),
+    new Set(["Downtown Raleigh Municipal Service District", "Hillsborough Street Municipal Service District"]),
+  );
+  for (const district of raleigh) {
+    assert.equal(district.properties.status, "Active");
+    assert.equal(district.properties.sourceId, "raleigh-municipal-service-districts");
   }
 });
 

@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "method": {
+    "population_source": "U.S. Census Bureau Vintage 2025 incorporated-place estimates",
+    "selection": "Next ten largest incorporated U.S. cities above 100,000 population not already substantively researched by BID Atlas after the first large-city pilot batch",
+    "prior_batch": "data/large-city-bid-pilot.json",
+    "ordered_cities": [
+      "Las Vegas, NV",
+      "Memphis, TN",
+      "Milwaukee, WI",
+      "Albuquerque, NM",
+      "Tucson, AZ",
+      "Atlanta, GA",
+      "Kansas City, MO",
+      "Mesa, AZ",
+      "Raleigh, NC",
+      "Colorado Springs, CO"
+    ],
+    "active_hit_definition": "At least one currently operating assessment-funded BID or locally named legal equivalent supported by an official source",
+    "notes": "Candidate discovery is recorded separately from production boundary verification and ingestion. Cities already covered by approved map sources, the first pilot batch, or prior state-audit jurisdiction work (including Chicago) were excluded from selection."
+  },
+  "batch_summary": {
+    "cities_researched": 10,
+    "active_hits": 8,
+    "misses": 2,
+    "active_hit_rate_percent": 80,
+    "result": "Eight of the ten cities have at least one currently operating assessment-funded BID or local legal equivalent. Las Vegas and Albuquerque are formation-stage only and are recorded as misses under the active-hit definition.",
+    "interpretation": "Population-ranked large-city research continues to produce high discovery yield. The two misses are large cities with active BID formation campaigns rather than confirmed absence of legal authority, so they remain high-priority monitoring targets.",
+    "limitations": "This is a deliberately targeted, non-random sample that excludes cities already researched by BID Atlas. Candidate discovery does not complete boundary verification or production ingestion. Sales-tax-only CIDs in Missouri and capital-infrastructure BIDs in Colorado require classification before atlas ingestion."
+  },
+  "records": [
+    {
+      "rank": 1,
+      "city": "Las Vegas",
+      "state": "NV",
+      "population_2025": 679817,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Business Improvement District (proposed); Special Improvement District",
+      "summary": "No currently operating assessment-funded BID was verified in the City of Las Vegas. The City's Arts District Plan and the Arts District BID campaign still describe a steering committee exploring formation rather than an adopted levy. FY2027 Fremont East and Alta assessment notices concern infrastructure and corridor maintenance special-improvement districts, which are outside the atlas operating-BID definition. The Nevada state audit independently records Reno as the only verified active municipal BID in the state.",
+      "official_sources": [
+        "https://www.lasvegasnevada.gov/Government/Initiatives/Arts-District-Plan",
+        "https://lvartsdistrictbid.com/",
+        "https://www.lasvegasnevada.gov/Government/Departments/Public-Works/City-Engineering"
+      ],
+      "production_next_action": "Monitor the Arts District BID petition and any City Council formation ordinance; do not ingest until an assessment-funded operating district is adopted."
+    },
+    {
+      "rank": 2,
+      "city": "Memphis",
+      "state": "TN",
+      "population_2025": 609647,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Central Business Improvement District",
+      "summary": "Memphis operates a Central Business Improvement District (CBID) funded by a special assessment on commercial property, long set at $0.65 per $100 of assessed value for properties over $25,000 appraised value. The Downtown Memphis Commission administers clean-and-safe, hospitality, maintenance, marketing, and development services under City and County board appointees and presents an annual CBID operating budget; the FY2026 budget package documents continued assessment-funded operations without relying on City or County general tax dollars.",
+      "official_sources": [
+        "https://downtownmemphis.com/about/business-improvement-district",
+        "https://memphistn.gov/wp-content/uploads/2025/06/FY26-DMC-Budget-Presentation-Final.pdf",
+        "https://www.shelbycountytrustee.com/245/Memphis-Tax-Rates"
+      ],
+      "production_next_action": "Obtain the official CBID boundary map or GIS layer from the City/County or DMC, verify the current assessment rate in the adopted FY2026 levy, and ingest the district with assessment metadata."
+    },
+    {
+      "rank": 3,
+      "city": "Milwaukee",
+      "state": "WI",
+      "population_2025": 562407,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Business Improvement District / Neighborhood Improvement District",
+      "summary": "The City of Milwaukee Department of City Development publishes an official BID and NID program with a citywide directory of more than 30 active districts. Documented examples include Milwaukee Downtown BID #21 (established 1998) and Historic Third Ward BID #2. Districts are assessment-funded operating districts that manage and promote commercial corridors under Wisconsin BID law and publish individual operating plans.",
+      "official_sources": [
+        "https://city.milwaukee.gov/DCD/BusinessToolbox/bids",
+        "https://city.milwaukee.gov/DCD/BusinessToolbox/bids/BIDandNIDDirectory",
+        "https://city.milwaukee.gov/DCD/BusinessToolbox/bids/MilwaukeeDowntown",
+        "https://city.milwaukee.gov/DCD/BusinessToolbox/bids/HistoricThirdWard"
+      ],
+      "production_next_action": "Production-ingested: 33 official Map Milwaukee BID polygons via special_districts MapServer layer 3. Next: evaluate Neighborhood Improvement District layer and BIDs outside Milwaukee."
+    },
+    {
+      "rank": 4,
+      "city": "Albuquerque",
+      "state": "NM",
+      "population_2025": 556588,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Business Improvement District (formation)",
+      "summary": "Albuquerque previously operated a Downtown Business Improvement District that was later dissolved after property-owner disagreement. As of 2025-2026, property owners and the Albuquerque Regional Economic Alliance are circulating a new Downtown BID petition, and the City is funding an Old Town BID creation process, but neither district has verified current assessment collections under this research. Code remnants and campaign sites document formation activity rather than an active levy.",
+      "official_sources": [
+        "https://www.downtownabqbid.com/",
+        "https://www.cabq.gov/economicdevelopment/news/old-town-moves-forward-with-business-improvement-district",
+        "https://www.krqe.com/news/albuquerque-metro/could-a-new-improvement-district-help-clean-up-downtown-albuquerque/",
+        "https://codelibrary.amlegal.com/codes/albuquerque/latest/albuquerque_nm/0-0-0-135199"
+      ],
+      "production_next_action": "Watch City Council formation ordinances and first assessment rolls for Downtown and Old Town; record active hits only after a current levy is adopted."
+    },
+    {
+      "rank": 5,
+      "city": "Tucson",
+      "state": "AZ",
+      "population_2025": 548371,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Downtown Enhanced Municipal Services Improvement District / Business Improvement District",
+      "summary": "Tucson's Downtown Enhanced Municipal Services Improvement District, branded as the Downtown BID, was adopted in 1998 under A.R.S. § 48-575. Property assessments fund enhanced services delivered by the Downtown Tucson Partnership under City contract. Assessments use a land-and-building square-footage formula with annual inflation adjustments; Mayor and Council approved continuation of BID assessments for fiscal year 2027 in June 2026.",
+      "official_sources": [
+        "https://downtowntucson.org/about/who-we-are/business-improvement-district",
+        "https://www.azleg.gov/ars/48/00575.htm",
+        "https://biztucson.com/downtown-tucson-partnership-gets-approval-for-fy2027-business-improvement-district-assessments/"
+      ],
+      "production_next_action": "Obtain the official BID boundary map or City GIS polygon, confirm the adopted FY2027 assessment formula and parcel count, and ingest the district with Phoenix EMSD-style metadata."
+    },
+    {
+      "rank": 6,
+      "city": "Atlanta",
+      "state": "GA",
+      "population_2025": 529110,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Community Improvement District / Business Improvement District",
+      "summary": "The City of Atlanta lists multiple approved Community Improvement Districts in which commercial property owners self-tax for supplemental services and capital projects. Confirmed active in-city CIDs include the Atlanta Downtown Improvement District (ADID, founded 1995/1996), Midtown Improvement District (5-mill special assessment on commercial property), Buckhead CID, Little Five Points CID, Aerotropolis Atlanta CID, and Fulton Industrial Boulevard CID. These are Georgia's primary BID-equivalent mechanism and are collected with property taxes.",
+      "official_sources": [
+        "https://www.atlantaga.gov/government/departments/city-planning/economic-development/community-improvement-districts",
+        "https://www.atlantadowntown.com/adid",
+        "https://www.midtownatl.com/midtown-alliance/midtown-improvement-district",
+        "https://www.buckheadcid.com/",
+        "https://gismaps.fultoncountyga.gov/arcgispub2/rest/services/PropertyMapViewer/PropertyMapViewer/MapServer/36"
+      ],
+      "production_next_action": "Production-ingested: 8 pure City of Atlanta CID polygons from Fulton County GIS (TAD/SSD intersection polygons excluded). Next: inventory metro CIDs outside Atlanta city limits and attach current millage metadata."
+    },
+    {
+      "rank": 7,
+      "city": "Kansas City",
+      "state": "MO",
+      "population_2025": 521220,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Community Improvement District",
+      "summary": "Kansas City authorizes Community Improvement Districts that may impose sales and use taxes, special assessments, or real property taxes for public improvements and supplemental services. A 2023 City fiscal report cited about 90 separate CIDs citywide, and Open Data KC publishes a Community Improvement District layer. Operating examples include Brookside and Crossroads CIDs with special assessments; many CIDs are sales-tax only or project-specific and will need classification before atlas ingestion.",
+      "official_sources": [
+        "https://www.kcmo.gov/city-hall/departments/city-planning-development/community-improvement-districts",
+        "https://data.kcmo.org/dataset/Community-Improvement-District/8hu9-s7df",
+        "https://www.kcmo.gov/home/showpublisheddocument/11906/638374757621130000",
+        "https://www.brooksidekc.org/brookside-community-improvement-district",
+        "https://kccrossroads.org/community-improvement-district/"
+      ],
+      "production_next_action": "Download the official CID GIS layer, reconcile to the current fiscal roster, classify operating-service districts versus sales-tax or single-project CIDs, and ingest clearly assessment- or service-funded commercial districts first."
+    },
+    {
+      "rank": 8,
+      "city": "Mesa",
+      "state": "AZ",
+      "population_2025": 513656,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Town Center Improvement District / Special Improvement District",
+      "summary": "Mesa Town Center Improvement District No. 228 levies annual property assessments that fund enhanced downtown promotion, marketing, and clean-and-safe services delivered in partnership with the Downtown Mesa Association. Mesa City Council approved the 2025 district assessments after a May 2025 public hearing, and 2026-2027 assessment protests document that the levy remains active as a compulsory special assessment for district services.",
+      "official_sources": [
+        "https://citizenportal.ai/articles/6233175/arizona/maricopa-county/mesa/arizona/maricopa-county/mesa/Mesa/Maricopa-County/Arizona/Mesa-council-approves-2025-assessments-for-Town-Center-Improvement-District-No-228",
+        "https://mesa.legistar.com/View.ashx?M=F&ID=15474125&GUID=D063DAEB-C683-44E0-82EE-7FFF0D1F0298",
+        "https://apps.mesaaz.gov/meetingarchive/archivedocuments/Resolutions/RES%209691.10.pdf",
+        "https://www.mesaaz.gov/Business-Development/Urban-Transformation/Downtown-Incentives"
+      ],
+      "production_next_action": "Locate the current official boundary description or map for SID 228, confirm the adopted 2026-2027 assessment roll after the May 2026 hearing, and ingest the district as Mesa's downtown BID equivalent."
+    },
+    {
+      "rank": 9,
+      "city": "Raleigh",
+      "state": "NC",
+      "population_2025": 506306,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Municipal Service District",
+      "summary": "Raleigh operates at least two Municipal Service Districts funded by additional property taxes under N.C.G.S. Chapter 160A, Article 23. The Downtown MSD funds enhanced cleaning, safety ambassadors, economic development, marketing, and engagement; City Council expanded its boundary effective July 1, 2024, with a projected rate near 6.8 cents per $100 of assessed value. The Hillsborough Street MSD is a second active district with a City-published rate of 13 cents per $100.",
+      "official_sources": [
+        "https://downtownraleigh.org/about/downtown-raleigh/msd",
+        "https://raleighnc.gov/doing-business/services/municipal-service-district-faq",
+        "https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/ByArticle/Chapter_160A/Article_23.html",
+        "https://www.arcgis.com/home/item.html?id=73ebf9a6cf2f4bb98a2f54dd01c1629e"
+      ],
+      "production_next_action": "Production-ingested: Downtown and Hillsborough Street MSDs from City of Raleigh FeatureServer. Next: attach current millage rates from the adopted City budget and monitor further MSD proposals."
+    },
+    {
+      "rank": 10,
+      "city": "Colorado Springs",
+      "state": "CO",
+      "population_2025": 494743,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Business Improvement District",
+      "summary": "Colorado Springs has a Greater Downtown Business Improvement District covering 32 blocks and financed by a 5-mill levy on real and personal property for clean, safe, marketing, landscaping, and related enhanced services. City policy requires annual Council approval of every BID operating plan and budget; the City and El Paso County Assessor also list numerous other commercial BIDs, many of which finance capital improvements in retail centers and must be classified separately from the operating downtown BID.",
+      "official_sources": [
+        "https://www.downtowncs.com/bid/",
+        "https://www.downtowncs.com/bid/bid-board/",
+        "https://coloradosprings.gov/planning-and-development/page/special-districts",
+        "https://assessor.elpasoco.com/business-improvement-districts/",
+        "https://coloradosprings.gov/document/bidcontactinformation-november2023.xlsx"
+      ],
+      "production_next_action": "Obtain the Greater Downtown BID boundary and latest Council-approved operating plan, inventory other BIDs from the City contact list and County assessor maps, and prioritize operating-service districts over pure capital-infrastructure BIDs."
+    }
+  ]
+}

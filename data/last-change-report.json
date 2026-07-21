@@ -1,14 +1,54 @@
 {
-  "checkedAt": "2026-07-21T01:30:00.229Z",
+  "checkedAt": "2026-07-21T15:42:19.811Z",
   "summary": {
-    "added": 3,
+    "added": 43,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "or-portland-central-eastside-together-enhanced-services-district",
-    "or-portland-downtown-portland-clean-safe-enhanced-services-district",
-    "or-portland-lloyd-enhanced-services-district"
+    "wi-milwaukee-30th-street-industrial-corridor",
+    "wi-milwaukee-735-north-water-street",
+    "wi-milwaukee-airport-gateway",
+    "ga-atlanta-airport-west-community-improvement-district",
+    "ga-atlanta-atlanta-downtown-improvement-district",
+    "wi-milwaukee-avenues-west",
+    "wi-milwaukee-brady-street-business-area",
+    "ga-atlanta-buckhead-community-improvement-district",
+    "wi-milwaukee-center-street-marketplace",
+    "wi-milwaukee-cesar-e-chavez-drive",
+    "wi-milwaukee-deer-district",
+    "wi-milwaukee-downer-avenue",
+    "nc-raleigh-downtown-raleigh-municipal-service-district",
+    "wi-milwaukee-east-north-avenue",
+    "wi-milwaukee-fond-du-lac-avenue",
+    "ga-atlanta-fulton-industrial-boulevard-community-improvement-district",
+    "wi-milwaukee-granville",
+    "wi-milwaukee-greater-mitchell-street",
+    "wi-milwaukee-havenwoods",
+    "nc-raleigh-hillsborough-street-municipal-service-district",
+    "wi-milwaukee-historic-king-drive",
+    "wi-milwaukee-historic-third-ward",
+    "wi-milwaukee-kinnickinnic-river",
+    "ga-atlanta-little-five-points-community-improvement-district",
+    "wi-milwaukee-menomonee-valley",
+    "ga-atlanta-midtown-improvement-district",
+    "wi-milwaukee-milwaukee-downtown-bid-21",
+    "wi-milwaukee-milwaukee-riverwalk",
+    "wi-milwaukee-north-avenue-marketplace",
+    "wi-milwaukee-oakland-avenue-university-square",
+    "wi-milwaukee-reed-street-yards",
+    "wi-milwaukee-riverworks",
+    "wi-milwaukee-schlitz-park",
+    "wi-milwaukee-south-13th-street-west-oklahoma-avenue",
+    "wi-milwaukee-south-27th-street",
+    "wi-milwaukee-the-harbor-district",
+    "wi-milwaukee-villard-avenue",
+    "wi-milwaukee-west-burleigh-street",
+    "ga-atlanta-west-end-community-improvement-district",
+    "wi-milwaukee-west-north-avenue",
+    "wi-milwaukee-west-north-avenue-gateway-district",
+    "wi-milwaukee-westown",
+    "ga-atlanta-westside-community-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -734,6 +774,27 @@
       "status": "ok",
       "records": 3,
       "checkedAt": "2026-07-21T01:30:00.229Z"
+    },
+    {
+      "id": "milwaukee-business-improvement-districts",
+      "name": "Milwaukee Business Improvement Districts",
+      "status": "ok",
+      "records": 33,
+      "checkedAt": "2026-07-21T15:42:19.811Z"
+    },
+    {
+      "id": "atlanta-community-improvement-districts",
+      "name": "Atlanta Community Improvement Districts",
+      "status": "ok",
+      "records": 8,
+      "checkedAt": "2026-07-21T15:42:19.811Z"
+    },
+    {
+      "id": "raleigh-municipal-service-districts",
+      "name": "Raleigh Municipal Service Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T15:42:19.811Z"
     }
   ]
 }

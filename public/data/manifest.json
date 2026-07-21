@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T01:30:00.229Z",
-  "records": 451,
+  "generatedAt": "2026-07-21T15:42:19.811Z",
+  "records": 494,
   "states": [
     "AZ",
     "CA",
@@ -25,11 +25,13 @@
     "PA",
     "TN",
     "TX",
-    "WA"
+    "WA",
+    "WI"
   ],
   "cities": [
     "Anaheim, CA",
     "Apple Valley, CA",
+    "Atlanta, GA",
     "Austin, TX",
     "Baltimore, MD",
     "Berkeley, CA",
@@ -71,6 +73,7 @@
     "Merced, CA",
     "Miami Beach, FL",
     "Miami, FL",
+    "Milwaukee, WI",
     "Monrovia, CA",
     "Nampa, ID",
     "Napa, CA",
@@ -86,6 +89,7 @@
     "Phoenix, AZ",
     "Pomona, CA",
     "Portland, OR",
+    "Raleigh, NC",
     "Redwood City, CA",
     "Reno, NV",
     "Riverside, CA",
@@ -828,15 +832,36 @@
       "status": "ok",
       "records": 3,
       "checkedAt": "2026-07-21T01:30:00.229Z"
+    },
+    {
+      "id": "milwaukee-business-improvement-districts",
+      "name": "Milwaukee Business Improvement Districts",
+      "status": "ok",
+      "records": 33,
+      "checkedAt": "2026-07-21T15:42:19.811Z"
+    },
+    {
+      "id": "atlanta-community-improvement-districts",
+      "name": "Atlanta Community Improvement Districts",
+      "status": "ok",
+      "records": 8,
+      "checkedAt": "2026-07-21T15:42:19.811Z"
+    },
+    {
+      "id": "raleigh-municipal-service-districts",
+      "name": "Raleigh Municipal Service Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T15:42:19.811Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 77,
-    "configuredSources": 90,
+    "verifiedJurisdictions": 80,
+    "configuredSources": 93,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 3,
+    "added": 43,
     "modified": 0,
     "removed": 0
   }

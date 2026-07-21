@@ -2727,5 +2727,111 @@
     "fields": {
       "name": ["DISTRICT_NAME"]
     }
+  },
+  {
+    "id": "milwaukee-business-improvement-districts",
+    "name": "Milwaukee Business Improvement Districts",
+    "jurisdiction": "Milwaukee, WI",
+    "state": "WI",
+    "city": "Milwaukee",
+    "url": "https://milwaukeemaps.milwaukee.gov/arcgis/rest/services/planning/special_districts/MapServer/3/query?where=1%3D1&outFields=BIDNAME%2CBID&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://city.milwaukee.gov/DCD/BusinessToolbox/bids",
+    "publisher": "City of Milwaukee",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "BIDNAME"
+      ]
+    },
+    "overrides": {
+      "Downtown Management District": {
+        "name": "Milwaukee Downtown BID 21",
+        "website": "https://www.milwaukeedowntown.com/",
+        "established": "1998"
+      },
+      "Historic Third Ward": {
+        "website": "https://www.historicthirdward.org/"
+      },
+      "Deer District": {
+        "website": "https://www.deerdistrict.com/"
+      }
+    }
+  },
+  {
+    "id": "atlanta-community-improvement-districts",
+    "name": "Atlanta Community Improvement Districts",
+    "jurisdiction": "Atlanta, GA",
+    "state": "GA",
+    "city": "Atlanta",
+    "url": "https://gismaps.fultoncountyga.gov/arcgispub2/rest/services/PropertyMapViewer/PropertyMapViewer/MapServer/36/query?where=Name+IN+%28%27City+of+Atlanta++Buckhead+CID%27%2C%27City+of+Atlanta++Downtown+CID%27%2C%27City+of+Atlanta++Fulton+Industrial+CID%27%2C%27City+of+Atlanta++Little+Five+Points+CID%27%2C%27City+of+Atlanta++Midtown+CID%27%2C%27City+of+Atlanta++West+End+CID%27%2C%27City+of+Atlanta++Westside+CID%27%2C%27City+of+Atlanta+Airport+west+CID%27%29&outFields=Name&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.atlantaga.gov/government/departments/city-planning/economic-development/community-improvement-districts",
+    "publisher": "Fulton County GIS / City of Atlanta",
+    "cadence": "As published",
+    "fields": {
+      "name": [
+        "Name"
+      ]
+    },
+    "overrides": {
+      "City of Atlanta  Buckhead CID": {
+        "name": "Buckhead Community Improvement District",
+        "website": "https://www.buckheadcid.com/"
+      },
+      "City of Atlanta  Downtown CID": {
+        "name": "Atlanta Downtown Improvement District",
+        "website": "https://www.atlantadowntown.com/adid",
+        "established": "1995"
+      },
+      "City of Atlanta  Fulton Industrial CID": {
+        "name": "Fulton Industrial Boulevard Community Improvement District",
+        "website": "https://boulevardcid.org/"
+      },
+      "City of Atlanta  Little Five Points CID": {
+        "name": "Little Five Points Community Improvement District",
+        "website": "https://l5pa.com/l5pcid"
+      },
+      "City of Atlanta  Midtown CID": {
+        "name": "Midtown Improvement District",
+        "website": "https://www.midtownatl.com/midtown-alliance/midtown-improvement-district",
+        "established": "2000"
+      },
+      "City of Atlanta  West End CID": {
+        "name": "West End Community Improvement District"
+      },
+      "City of Atlanta  Westside CID": {
+        "name": "Westside Community Improvement District"
+      },
+      "City of Atlanta Airport west CID": {
+        "name": "Airport West Community Improvement District",
+        "website": "http://aerocids.com/"
+      }
+    }
+  },
+  {
+    "id": "raleigh-municipal-service-districts",
+    "name": "Raleigh Municipal Service Districts",
+    "jurisdiction": "Raleigh, NC",
+    "state": "NC",
+    "city": "Raleigh",
+    "url": "https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Municipal_Service_Districts/FeatureServer/0/query?where=1%3D1&outFields=Name&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://raleighnc.gov/doing-business/services/municipal-service-district-faq",
+    "publisher": "City of Raleigh",
+    "cadence": "As published; City budget reviewed annually",
+    "fields": {
+      "name": [
+        "Name"
+      ]
+    },
+    "overrides": {
+      "Downtown": {
+        "name": "Downtown Raleigh Municipal Service District",
+        "website": "https://downtownraleigh.org/about/downtown-raleigh/msd",
+        "area": "Expanded boundary effective July 1, 2024"
+      },
+      "Hillsborough Street": {
+        "name": "Hillsborough Street Municipal Service District",
+        "website": "https://www.hillsboroughstreet.org/"
+      }
+    }
   }
 ]
