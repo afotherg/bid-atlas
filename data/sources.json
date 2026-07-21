@@ -2692,5 +2692,40 @@
       }
     },
     "fields": {}
+  },
+  {
+    "id": "portland-enhanced-services-districts",
+    "name": "Portland Enhanced Services Districts",
+    "jurisdiction": "Portland, OR",
+    "state": "OR",
+    "city": "Portland",
+    "url": "https://www.portlandmaps.com/arcgis/rest/services/Public/Boundaries/MapServer/9/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://www.portland.gov/esd/enhanced-services-districts-overview",
+    "publisher": "City of Portland",
+    "cadence": "As published",
+    "overrides": {
+      "Central Eastside Industrial District (CEID)": {
+        "name": "Central Eastside Together Enhanced Services District",
+        "website": "https://centraleastsidetogether.org/",
+        "sourceUrl": "https://www.portland.gov/esd/enhanced-services-districts-overview/central-eastside-industrial-district",
+        "established": "2019"
+      },
+      "Lloyd District (Lloyd)": {
+        "name": "Lloyd Enhanced Services District",
+        "website": "https://www.golloyd.org/lloyd-enhanced-service-district/",
+        "sourceUrl": "https://www.portland.gov/esd/enhanced-services-districts-overview/lloyd-esd",
+        "established": "2001"
+      },
+      "Clean & Safe District (CAS)": {
+        "name": "Downtown Portland Clean & Safe Enhanced Services District",
+        "website": "https://downtownportland.org/",
+        "sourceUrl": "https://www.portland.gov/esd/enhanced-services-districts-overview/clean-safe-district",
+        "established": "1994",
+        "expires": "2035"
+      }
+    },
+    "fields": {
+      "name": ["DISTRICT_NAME"]
+    }
   }
 ]

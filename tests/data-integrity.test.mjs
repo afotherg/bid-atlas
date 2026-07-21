@@ -1067,6 +1067,26 @@ test("Louisville publishes its downtown and lodging management districts", () =>
   }
 });
 
+test("Portland publishes its three operating enhanced services districts", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "portland-enhanced-services-districts");
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 3);
+  for (const name of [
+    "Central Eastside Together Enhanced Services District",
+    "Downtown Portland Clean & Safe Enhanced Services District",
+    "Lloyd Enhanced Services District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  assert.equal(districts.find((feature) => feature.properties.name === "Downtown Portland Clean & Safe Enhanced Services District")?.properties.expires, "2035");
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Portland");
+    assert.equal(district.properties.state, "OR");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -122.8 && longitude < -122.5, `${district.properties.name} is outside Portland longitude`);
+    assert.ok(latitude > 45.4 && latitude < 45.7, `${district.properties.name} is outside Portland latitude`);
+  }
+});
+
 test("Philadelphia publishes its fifteen mandatory business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "philadelphia-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

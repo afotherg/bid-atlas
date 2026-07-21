@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T01:28:47.912Z",
-  "records": 448,
+  "generatedAt": "2026-07-21T01:30:00.229Z",
+  "records": 451,
   "states": [
     "AZ",
     "CA",
@@ -21,6 +21,7 @@
     "NY",
     "OH",
     "OK",
+    "OR",
     "PA",
     "TN",
     "TX",
@@ -84,6 +85,7 @@
     "Philadelphia, PA",
     "Phoenix, AZ",
     "Pomona, CA",
+    "Portland, OR",
     "Redwood City, CA",
     "Reno, NV",
     "Riverside, CA",
@@ -819,15 +821,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T01:28:47.912Z"
+    },
+    {
+      "id": "portland-enhanced-services-districts",
+      "name": "Portland Enhanced Services Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-21T01:30:00.229Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 76,
-    "configuredSources": 89,
+    "verifiedJurisdictions": 77,
+    "configuredSources": 90,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 3,
     "modified": 0,
     "removed": 0
   }

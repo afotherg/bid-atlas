@@ -1,13 +1,14 @@
 {
-  "checkedAt": "2026-07-21T01:28:47.912Z",
+  "checkedAt": "2026-07-21T01:30:00.229Z",
   "summary": {
-    "added": 2,
+    "added": 3,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ky-louisville-greater-louisville-lodging-management-district",
-    "ky-louisville-louisville-downtown-management-district"
+    "or-portland-central-eastside-together-enhanced-services-district",
+    "or-portland-downtown-portland-clean-safe-enhanced-services-district",
+    "or-portland-lloyd-enhanced-services-district"
   ],
   "modified": [],
   "removed": [],
@@ -726,6 +727,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T01:28:47.912Z"
+    },
+    {
+      "id": "portland-enhanced-services-districts",
+      "name": "Portland Enhanced Services Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-21T01:30:00.229Z"
     }
   ]
 }
