@@ -24,10 +24,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
   },
   "batch_summary": {
-    "cities_researched": 6,
-    "active_hits": 3,
+    "cities_researched": 7,
+    "active_hits": 4,
     "misses": 3,
-    "active_hit_rate_percent": 50,
+    "active_hit_rate_percent": 57.1,
     "result": "In progress."
   },
   "records": [
@@ -132,6 +132,23 @@
         "https://www.fremont.gov/home/showdocument?id=20482&t=639138482060323640"
       ],
       "production_next_action": "Monitor City Center implementation for a formation resolution and levy."
+    },
+    {
+      "rank": 7,
+      "census_rank": 107,
+      "city": "Baton Rouge",
+      "state": "LA",
+      "population_2025": 222795,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Downtown Development District",
+      "summary": "Baton Rouge's Downtown Development District is an active special-tax district created in 1985. The City-Parish confirms its board oversees a 10-mill downtown property tax, and January 2026 Resolution 59158 canvassed voter approval of the tax renewal for 2027-2031. The atlas generalizes the one-feature official City GIS boundary documented as current on an as-needed basis.",
+      "official_sources": [
+        "https://city.brla.gov/dept/council/boarddetail.asp?board=26",
+        "https://www.brla.gov/AgendaCenter/ViewFile/Minutes/_01142026-2291",
+        "https://city.brla.gov/gis/metadata/ECONOMIC_DDD.html"
+      ],
+      "production_next_action": "Production-ingested with a generalized official GIS extent."
     }
   ]
 }

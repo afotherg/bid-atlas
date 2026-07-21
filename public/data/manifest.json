@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:13:11.433Z",
-  "records": 556,
+  "generatedAt": "2026-07-21T19:13:58.313Z",
+  "records": 557,
   "states": [
     "AK",
     "AZ",
@@ -44,6 +44,7 @@
     "Atlanta, GA",
     "Austin, TX",
     "Baltimore, MD",
+    "Baton Rouge, LA",
     "Berkeley, CA",
     "Boise, ID",
     "Boston, MA",
@@ -1169,11 +1170,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:13:11.433Z"
+    },
+    {
+      "id": "baton-rouge-downtown-development-district",
+      "name": "Baton Rouge Downtown Development District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:13:58.313Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 112,
-    "configuredSources": 125,
+    "verifiedJurisdictions": 113,
+    "configuredSources": 126,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

@@ -4132,5 +4132,15 @@
       "name": ["name"], "website": ["website"], "sourceUrl": ["sourceUrl"],
       "established": ["established"], "area": ["area"], "status": ["status"]
     }
+  },
+  {
+    "id": "baton-rouge-downtown-development-district",
+    "name": "Baton Rouge Downtown Development District",
+    "jurisdiction": "Baton Rouge, LA", "state": "LA", "city": "Baton Rouge",
+    "file": "data/sources/baton-rouge-downtown-development-district.geojson",
+    "landingPage": "https://city.brla.gov/dept/council/boarddetail.asp?board=26",
+    "publisher": "City of Baton Rouge and Parish of East Baton Rouge",
+    "cadence": "As needed; generalized from official GIS metadata",
+    "fields": {"name":["name"],"website":["website"],"sourceUrl":["sourceUrl"],"established":["established"],"expires":["expires"],"area":["area"],"status":["status"]}
   }
 ]
