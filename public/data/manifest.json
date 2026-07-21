@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:27:01.542Z",
-  "records": 598,
+  "generatedAt": "2026-07-21T20:27:46.218Z",
+  "records": 600,
   "states": [
     "AK",
     "AL",
@@ -155,6 +155,7 @@
     "Riverside, CA",
     "Rochester, NY",
     "Rome, GA",
+    "Roseville, CA",
     "Sacramento, CA",
     "Salt Lake City, UT",
     "San Antonio, TX",
@@ -1424,15 +1425,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T20:27:01.542Z"
+    },
+    {
+      "id": "roseville-improvement-districts",
+      "name": "Roseville Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T20:27:46.218Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 143,
-    "configuredSources": 156,
+    "verifiedJurisdictions": 144,
+    "configuredSources": 157,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }
