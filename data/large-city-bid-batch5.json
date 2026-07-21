@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 6,
+    "cities_researched": 7,
     "active_hits": 5,
-    "misses": 1,
-    "active_hit_rate_percent": 83.3,
+    "misses": 2,
+    "active_hit_rate_percent": 71.4,
     "result": "In progress."
   },
   "records": [
@@ -133,6 +133,23 @@
         "https://s3-us-west-1.amazonaws.com/placer-valley/craft/2024-PVT-Annual-Report_web.pdf?mtime=20250818145738"
       ],
       "production_next_action": "Production-ingested as generalized downtown and Roseville selective-lodging benefit zones."
+    },
+    {
+      "rank": 7,
+      "census_rank": 163,
+      "city": "Killeen",
+      "state": "TX",
+      "population_2025": 161883,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Tax Increment Reinvestment Zone / Main Street district (excluded)",
+      "summary": "No operating assessment-funded BID or commercial PID was verified in Killeen. Downtown revitalization is supported through Tax Increment Reinvestment Zone No. 2, City-funded grants, and the Texas Main Street program. The FY2026 adopted budget accounts for a TIRZ fund but does not identify a PID assessment or PID fund; tax-increment financing, historic overlays, and Main Street designations are outside the atlas definition.",
+      "official_sources": [
+        "https://www.killeentexas.gov/662/Tax-Increment-Reinvestment-Zone-TIRZ",
+        "https://www.killeentexas.gov/417/Budget",
+        "https://www.killeentexas.gov/227/Downtown-Killeen"
+      ],
+      "production_next_action": "Monitor for a PID formation petition or assessment ordinance; do not map the TIRZ, historic overlay, or Main Street district."
     }
   ]
 }
