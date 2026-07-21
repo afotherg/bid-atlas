@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El Paso Downtown Management District",
+        "website": "https://downtownelpaso.com/",
+        "sourceUrl": "https://downtownelpaso.com/dwntwn-about/",
+        "established": "1997; expanded 2020",
+        "area": "Generalized boundary from the current district-manager map and the City-approved 2020 Ballpark West expansion",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-106.5010, 31.7670], [-106.4925, 31.7655], [-106.4820, 31.7640],
+          [-106.4795, 31.7535], [-106.4840, 31.7500], [-106.4925, 31.7515],
+          [-106.4975, 31.7560], [-106.5010, 31.7670]
+        ]]
+      }
+    }
+  ]
+}

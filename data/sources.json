@@ -2548,5 +2548,28 @@
       "area": ["area"],
       "status": ["status"]
     }
+  },
+  {
+    "id": "el-paso-downtown-management-district",
+    "name": "El Paso Downtown Management District",
+    "jurisdiction": "El Paso, TX",
+    "state": "TX",
+    "city": "El Paso",
+    "file": "data/sources/el-paso-downtown-management-district.geojson",
+    "landingPage": "https://downtownelpaso.com/dwntwn-about/",
+    "publisher": "El Paso Downtown Management District",
+    "cadence": "Annual; generalized boundary reviewed against district and City maps",
+    "monitorUrls": [
+      "https://downtownelpaso.com/dwntwn-about/",
+      "https://elpasotexas.granicus.com/boards/w/a2ff3b62c1919332/boards/48457"
+    ],
+    "fields": {
+      "name": ["name"],
+      "website": ["website"],
+      "sourceUrl": ["sourceUrl"],
+      "established": ["established"],
+      "area": ["area"],
+      "status": ["status"]
+    }
   }
 ]

@@ -984,6 +984,20 @@ test("Oklahoma City publishes its six active business improvement districts", ()
   }
 });
 
+test("El Paso publishes its active downtown management district", () => {
+  const districts = collection.features.filter((feature) => feature.properties.sourceId === "el-paso-downtown-management-district");
+  assert.equal(districts.length, 1);
+  assert.equal(districts[0].properties.name, "El Paso Downtown Management District");
+  assert.equal(districts[0].properties.city, "El Paso");
+  assert.equal(districts[0].properties.state, "TX");
+  assert.equal(districts[0].properties.established, "1997; expanded 2020");
+  assert.equal(districts[0].properties.status, "Active");
+  assert.match(districts[0].properties.area, /Generalized boundary/);
+  const [longitude, latitude] = districts[0].properties.center;
+  assert.ok(longitude > -106.6 && longitude < -106.4, "El Paso DMD is outside El Paso longitude");
+  assert.ok(latitude > 31.6 && latitude < 31.9, "El Paso DMD is outside El Paso latitude");
+});
+
 test("Philadelphia publishes its fifteen mandatory business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "philadelphia-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

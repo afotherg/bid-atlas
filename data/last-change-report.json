@@ -1,17 +1,12 @@
 {
-  "checkedAt": "2026-07-21T01:10:39.066Z",
+  "checkedAt": "2026-07-21T01:14:53.946Z",
   "summary": {
-    "added": 6,
+    "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ok-oklahoma-city-capitol-hill-business-improvement-district",
-    "ok-oklahoma-city-downtown-oklahoma-city-business-improvement-district",
-    "ok-oklahoma-city-okc-adventure-district-business-improvement-district",
-    "ok-oklahoma-city-stockyards-city-business-improvement-district",
-    "ok-oklahoma-city-uptown-23rd-business-improvement-district",
-    "ok-oklahoma-city-western-avenue-business-improvement-district"
+    "tx-el-paso-el-paso-downtown-management-district"
   ],
   "modified": [],
   "removed": [],
@@ -671,6 +666,15 @@
       "records": 6,
       "checkedAt": "2026-07-21T01:10:39.066Z",
       "monitorHash": "c36398156a4f62ed94b88ad1d6c9352394e51b9b67fde9f2fbbb93b1d84aa497",
+      "legislationChanged": false
+    },
+    {
+      "id": "el-paso-downtown-management-district",
+      "name": "El Paso Downtown Management District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:14:53.946Z",
+      "monitorHash": "081b509bd2b40e1aa94da77f592b19ffac5e1868dda6a7e48d9bc94e38dd2100",
       "legislationChanged": false
     }
   ]
