@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T20:17:18.145Z",
-  "records": 586,
+  "generatedAt": "2026-07-21T20:17:51.852Z",
+  "records": 588,
   "states": [
     "AK",
     "AL",
@@ -78,6 +78,7 @@
     "Downey, CA",
     "Durham, NC",
     "El Paso, TX",
+    "Eugene, OR",
     "Fayetteville, NC",
     "Fort Lauderdale, FL",
     "Fort Worth, TX",
@@ -1368,11 +1369,18 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T20:17:18.145Z"
+    },
+    {
+      "id": "eugene-service-districts",
+      "name": "Eugene Service Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T20:17:51.852Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 136,
-    "configuredSources": 149,
+    "verifiedJurisdictions": 137,
+    "configuredSources": 150,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
