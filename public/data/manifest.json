@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T01:26:55.910Z",
-  "records": 446,
+  "generatedAt": "2026-07-21T01:28:47.912Z",
+  "records": 448,
   "states": [
     "AZ",
     "CA",
@@ -12,6 +12,7 @@
     "HI",
     "ID",
     "IN",
+    "KY",
     "MA",
     "MD",
     "MI",
@@ -62,6 +63,7 @@
     "Laguna Beach, CA",
     "Long Beach, CA",
     "Los Angeles, CA",
+    "Louisville, KY",
     "Lynwood, CA",
     "Macon, GA",
     "Manhattan Beach, CA",
@@ -803,11 +805,25 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T01:26:55.910Z"
+    },
+    {
+      "id": "louisville-downtown-management-district",
+      "name": "Louisville Downtown Management District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:28:47.912Z"
+    },
+    {
+      "id": "greater-louisville-lodging-management-district",
+      "name": "Greater Louisville Lodging Management District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:28:47.912Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 75,
-    "configuredSources": 87,
+    "verifiedJurisdictions": 76,
+    "configuredSources": 89,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

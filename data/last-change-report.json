@@ -1,13 +1,13 @@
 {
-  "checkedAt": "2026-07-21T01:26:55.910Z",
+  "checkedAt": "2026-07-21T01:28:47.912Z",
   "summary": {
     "added": 2,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "mi-detroit-rivertown-business-improvement-zone",
-    "mi-detroit-west-vernor-springwells-business-improvement-district"
+    "ky-louisville-greater-louisville-lodging-management-district",
+    "ky-louisville-louisville-downtown-management-district"
   ],
   "modified": [],
   "removed": [],
@@ -712,6 +712,20 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T01:26:55.910Z"
+    },
+    {
+      "id": "louisville-downtown-management-district",
+      "name": "Louisville Downtown Management District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:28:47.912Z"
+    },
+    {
+      "id": "greater-louisville-lodging-management-district",
+      "name": "Greater Louisville Lodging Management District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:28:47.912Z"
     }
   ]
 }

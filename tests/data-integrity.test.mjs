@@ -1046,6 +1046,27 @@ test("Detroit publishes its three active business improvement zones", () => {
   }
 });
 
+test("Louisville publishes its downtown and lodging management districts", () => {
+  const sourceIds = new Set([
+    "louisville-downtown-management-district",
+    "greater-louisville-lodging-management-district",
+  ]);
+  const districts = collection.features.filter((feature) => sourceIds.has(feature.properties.sourceId));
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 2);
+  assert.ok(names.has("Louisville Downtown Management District"));
+  assert.ok(names.has("Greater Louisville Lodging Management District"));
+  assert.match(districts.find((feature) => feature.properties.name === "Greater Louisville Lodging Management District")?.properties.area, /51 or more rooms/);
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Louisville");
+    assert.equal(district.properties.state, "KY");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -86 && longitude < -85.3, `${district.properties.name} is outside Louisville longitude`);
+    assert.ok(latitude > 37.8 && latitude < 38.5, `${district.properties.name} is outside Louisville latitude`);
+  }
+});
+
 test("Philadelphia publishes its fifteen mandatory business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "philadelphia-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

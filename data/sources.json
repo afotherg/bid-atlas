@@ -2650,5 +2650,47 @@
       "area": ["area"],
       "status": ["status"]
     }
+  },
+  {
+    "id": "louisville-downtown-management-district",
+    "name": "Louisville Downtown Management District",
+    "jurisdiction": "Louisville, KY",
+    "state": "KY",
+    "city": "Louisville",
+    "url": "https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataSociety/MapServer/8/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://louisvilledowntown.org/",
+    "publisher": "Louisville/Jefferson County Information Consortium",
+    "cadence": "As published",
+    "fixedName": "Louisville Downtown Management District",
+    "overrides": {
+      "Louisville Downtown Management District": {
+        "website": "https://louisvilledowntown.org/",
+        "sourceUrl": "https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataSociety/MapServer/8",
+        "established": "1991",
+        "area": "Official Louisville Downtown Management District boundary"
+      }
+    },
+    "fields": {}
+  },
+  {
+    "id": "greater-louisville-lodging-management-district",
+    "name": "Greater Louisville Lodging Management District",
+    "jurisdiction": "Louisville, KY",
+    "state": "KY",
+    "city": "Louisville",
+    "url": "https://gis.lojic.org/maps/rest/services/LojicSolutions/OpenDataPolitical/MapServer/11/query?where=FIPS%3D%2721111%27&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukymetro/0-0-0-71177",
+    "publisher": "Louisville/Jefferson County Information Consortium",
+    "cadence": "As published",
+    "fixedName": "Greater Louisville Lodging Management District",
+    "overrides": {
+      "Greater Louisville Lodging Management District": {
+        "website": "https://www.louisvillehotelpartnership.com/",
+        "sourceUrl": "https://codelibrary.amlegal.com/codes/louisvillemetro/latest/loukymetro/0-0-0-71177",
+        "established": "2022",
+        "area": "Louisville Metro lodging properties with 51 or more rooms"
+      }
+    },
+    "fields": {}
   }
 ]
