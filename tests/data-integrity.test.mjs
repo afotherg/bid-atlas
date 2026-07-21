@@ -680,14 +680,14 @@ test("Nevada publishes the verified Downtown Reno BID", () => {
   assert.ok(latitude > 39 && latitude < 40);
 });
 
-test("Florida publishes statewide-registry districts, Jacksonville, and Tampa", () => {
+test("Florida publishes statewide-registry districts and verified large-city districts", () => {
   const florida = collection.features.filter((feature) => feature.properties.state === "FL");
   const registry = florida.filter((feature) => feature.properties.sourceId === "florida-verified-business-improvement-districts");
   const tampa = florida.filter((feature) => feature.properties.sourceId === "tampa-fl-verified-districts");
   const names = new Set(florida.map((feature) => feature.properties.name));
   assert.equal(registry.length, 6);
   assert.equal(tampa.length, 1);
-  assert.equal(florida.length, 8);
+  assert.equal(florida.length, 9);
   for (const name of [
     "Coconut Grove Business Improvement District",
     "Wynwood Business Improvement District",
@@ -697,10 +697,11 @@ test("Florida publishes statewide-registry districts, Jacksonville, and Tampa", 
     "Downtown Jacksonville Business Improvement District",
     "Downtown Tampa Special Services District",
     "Tallahassee Downtown Improvement Authority",
+    "Fort Lauderdale Downtown Development Authority",
   ]) assert.ok(names.has(name), `missing ${name}`);
   assert.deepEqual(
     new Set(florida.map((feature) => feature.properties.city)),
-    new Set(["Miami", "Miami Beach", "Jacksonville", "Tampa", "Tallahassee"]),
+    new Set(["Miami", "Miami Beach", "Jacksonville", "Tampa", "Tallahassee", "Fort Lauderdale"]),
   );
   assert.equal(florida.find((feature) => feature.properties.city === "Jacksonville")?.geometry.type, "MultiPolygon");
   for (const district of florida) {
