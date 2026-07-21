@@ -1,12 +1,14 @@
 {
-  "checkedAt": "2026-07-21T19:31:34.110Z",
+  "checkedAt": "2026-07-21T19:32:24.741Z",
   "summary": {
-    "added": 1,
+    "added": 3,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ar-little-rock-metrocentre-business-improvement-district"
+    "ny-rochester-east-avenue-alexander-street-entertainment-district",
+    "ny-rochester-high-falls-business-improvement-district",
+    "ny-rochester-rochester-downtown-enhancement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1092,6 +1094,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:31:34.110Z"
+    },
+    {
+      "id": "rochester-special-service-districts",
+      "name": "Rochester Business and Special Service Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-21T19:32:24.741Z"
     }
   ]
 }

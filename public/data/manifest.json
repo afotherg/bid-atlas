@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T19:31:34.110Z",
-  "records": 567,
+  "generatedAt": "2026-07-21T19:32:24.741Z",
+  "records": 570,
   "states": [
     "AK",
     "AR",
@@ -133,6 +133,7 @@
     "Reno, NV",
     "Richmond, VA",
     "Riverside, CA",
+    "Rochester, NY",
     "Rome, GA",
     "Sacramento, CA",
     "Salt Lake City, UT",
@@ -1245,15 +1246,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:31:34.110Z"
+    },
+    {
+      "id": "rochester-special-service-districts",
+      "name": "Rochester Business and Special Service Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-21T19:32:24.741Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 121,
-    "configuredSources": 134,
+    "verifiedJurisdictions": 122,
+    "configuredSources": 135,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 3,
     "modified": 0,
     "removed": 0
   }
