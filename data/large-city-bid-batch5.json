@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 4,
-    "active_hits": 3,
+    "cities_researched": 5,
+    "active_hits": 4,
     "misses": 1,
-    "active_hit_rate_percent": 75,
+    "active_hit_rate_percent": 80,
     "result": "In progress."
   },
   "records": [
@@ -99,6 +99,23 @@
         "https://www.historiccstreet.org/about/cid-c-street/"
       ],
       "production_next_action": "Production-ingested as two generalized commercial service districts; exclude developer reimbursement CIDs."
+    },
+    {
+      "rank": 5,
+      "census_rank": 161,
+      "city": "Denton",
+      "state": "TX",
+      "population_2025": 169431,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Tourism Public Improvement District",
+      "summary": "Denton's Tourism Public Improvement District is an active ten-year lodging assessment district formed in August 2024. The City currently collects a 2% assessment from seventeen hotels to fund targeted sales, marketing, public relations, and incentives for convention and group business; the FY2026 budget appropriates $1.203 million. A separate Downtown PID remains in outreach and survey stages and is excluded.",
+      "official_sources": [
+        "https://www.cityofdenton.com/1067/Hotel-Occupancy-Tax-Program",
+        "https://www.cityofdenton.com/DocumentCenter/View/12085/FY-2025-26-Proposed-Budget",
+        "https://www.cityofdenton.com/FormCenter/Community-Services-21/Downtown-Public-Improvement-District-Sur-104"
+      ],
+      "production_next_action": "Production-ingested as a generalized selective-hotel benefit zone; monitor but do not map the proposed Downtown PID."
     }
   ]
 }

@@ -1,13 +1,12 @@
 {
-  "checkedAt": "2026-07-21T20:26:23.074Z",
+  "checkedAt": "2026-07-21T20:27:01.542Z",
   "summary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "mo-springfield-commercial-street-community-improvement-district",
-    "mo-springfield-downtown-springfield-community-improvement-district"
+    "tx-denton-denton-tourism-public-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1240,6 +1239,13 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-21T20:26:23.074Z"
+    },
+    {
+      "id": "denton-tourism-public-improvement-district",
+      "name": "Denton Tourism Public Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T20:27:01.542Z"
     }
   ]
 }
