@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 9,
+    "cities_researched": 10,
     "active_hits": 7,
-    "misses": 2,
-    "active_hit_rate_percent": 77.8,
+    "misses": 3,
+    "active_hit_rate_percent": 70.0,
     "result": "In progress."
   },
   "records": [
@@ -184,6 +184,23 @@
         "https://ecode360.com/8549600"
       ],
       "production_next_action": "Production-ingested as two generalized commercial and industrial service-district boundaries; monitor other codified SIDs for current budgets before adding them."
+    },
+    {
+      "rank": 10,
+      "census_rank": 166,
+      "city": "Corona",
+      "state": "CA",
+      "population_2025": 161734,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Downtown Revitalization District / infrastructure assessment districts (excluded)",
+      "summary": "No operating assessment-funded BID or tourism district was verified in Corona. The City's current economic-development materials describe a City-led Downtown Revitalization Plan and specific-plan district, while its finance registry lists infrastructure, maintenance, Mello-Roos, and public-services districts rather than a commercial place-management assessment. Those planning and capital-finance districts fall outside the atlas definition.",
+      "official_sources": [
+        "https://www.coronaca.gov/departments/economic-development/economic-strategic-planning-efforts",
+        "https://www.coronaca.gov/departments/finance/property-tax-information/assessment-and-mello-roos-districts",
+        "https://www.coronaca.gov/departments/finance"
+      ],
+      "production_next_action": "Monitor downtown implementation for a PBID formation petition and management plan; do not map the specific plan or infrastructure assessment districts."
     }
   ]
 }
