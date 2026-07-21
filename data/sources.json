@@ -2616,5 +2616,39 @@
       "area": ["area"],
       "status": ["status"]
     }
+  },
+  {
+    "id": "detroit-downtown-business-improvement-zone",
+    "name": "Downtown Detroit Business Improvement Zone",
+    "jurisdiction": "Detroit, MI",
+    "state": "MI",
+    "city": "Detroit",
+    "url": "https://services2.arcgis.com/qvkbeam7Wirps6zC/arcgis/rest/services/Downtown_Detroit_Partnership_(DDP)_BIZ_Boundary/FeatureServer/0/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson",
+    "landingPage": "https://downtowndetroit.org/business-improvement-zone/downtownbiz/",
+    "publisher": "City of Detroit",
+    "cadence": "As published",
+    "fixedName": "Downtown Detroit Business Improvement Zone",
+    "fixedWebsite": "https://downtowndetroit.org/business-improvement-zone/downtownbiz/",
+    "fields": {}
+  },
+  {
+    "id": "detroit-neighborhood-business-improvement-zones",
+    "name": "Detroit Neighborhood Business Improvement Zones",
+    "jurisdiction": "Detroit, MI",
+    "state": "MI",
+    "city": "Detroit",
+    "file": "data/sources/detroit-neighborhood-business-improvement-zones.geojson",
+    "landingPage": "https://downtowndetroit.org/business-improvement-zone/rivertownbiz/",
+    "publisher": "City of Detroit / district managers",
+    "cadence": "Annual; generalized boundaries reviewed against adopted zone plans",
+    "fields": {
+      "name": ["name"],
+      "website": ["website"],
+      "sourceUrl": ["sourceUrl"],
+      "established": ["established"],
+      "expires": ["expires"],
+      "area": ["area"],
+      "status": ["status"]
+    }
   }
 ]

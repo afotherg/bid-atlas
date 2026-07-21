@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-21T01:21:01.271Z",
-  "records": 443,
+  "generatedAt": "2026-07-21T01:26:55.910Z",
+  "records": 446,
   "states": [
     "AZ",
     "CA",
@@ -14,6 +14,7 @@
     "IN",
     "MA",
     "MD",
+    "MI",
     "NC",
     "NV",
     "NY",
@@ -42,6 +43,7 @@
     "Dallas, TX",
     "Dana Point, CA",
     "Denver, CO",
+    "Detroit, MI",
     "Downey, CA",
     "El Paso, TX",
     "Fort Worth, TX",
@@ -787,11 +789,25 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T01:21:01.271Z"
+    },
+    {
+      "id": "detroit-downtown-business-improvement-zone",
+      "name": "Downtown Detroit Business Improvement Zone",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T01:26:55.910Z"
+    },
+    {
+      "id": "detroit-neighborhood-business-improvement-zones",
+      "name": "Detroit Neighborhood Business Improvement Zones",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-21T01:26:55.910Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 74,
-    "configuredSources": 85,
+    "verifiedJurisdictions": 75,
+    "configuredSources": 87,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

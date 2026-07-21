@@ -1022,6 +1022,30 @@ test("Boston publishes its three active business improvement districts", () => {
   }
 });
 
+test("Detroit publishes its three active business improvement zones", () => {
+  const sourceIds = new Set([
+    "detroit-downtown-business-improvement-zone",
+    "detroit-neighborhood-business-improvement-zones",
+  ]);
+  const districts = collection.features.filter((feature) => sourceIds.has(feature.properties.sourceId));
+  const names = new Set(districts.map((feature) => feature.properties.name));
+  assert.equal(districts.length, 3);
+  for (const name of [
+    "Downtown Detroit Business Improvement Zone",
+    "Rivertown Business Improvement Zone",
+    "West Vernor & Springwells Business Improvement District",
+  ]) assert.ok(names.has(name), `missing ${name}`);
+  assert.equal(districts.find((feature) => feature.properties.name === "Rivertown Business Improvement Zone")?.properties.expires, "2035");
+  for (const district of districts) {
+    assert.equal(district.properties.city, "Detroit");
+    assert.equal(district.properties.state, "MI");
+    assert.equal(district.properties.status, "Active");
+    const [longitude, latitude] = district.properties.center;
+    assert.ok(longitude > -83.2 && longitude < -82.9, `${district.properties.name} is outside Detroit longitude`);
+    assert.ok(latitude > 42.2 && latitude < 42.5, `${district.properties.name} is outside Detroit latitude`);
+  }
+});
+
 test("Philadelphia publishes its fifteen mandatory business improvement districts", () => {
   const districts = collection.features.filter((feature) => feature.properties.sourceId === "philadelphia-business-improvement-districts");
   const names = new Set(districts.map((feature) => feature.properties.name));

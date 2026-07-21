@@ -1,0 +1,46 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "West Vernor & Springwells Business Improvement District",
+        "website": "https://www.southwestdetroit.com/",
+        "sourceUrl": "https://detroitmi.gov/news/detroit-housing-department-sdba-launch-grants-help-turn-vacant-2nd-floor-spaces-affordable-housing",
+        "established": "2007; expanded 2015",
+        "area": "Generalized corridor service area from current City records and the City-approved amended zone plan",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[-83.1380, 42.3064], [-83.1040, 42.3150], [-83.1044, 42.3180], [-83.1370, 42.3093], [-83.1380, 42.3064]]],
+          [[[-83.1210, 42.3010], [-83.1175, 42.3010], [-83.1265, 42.3095], [-83.1300, 42.3090], [-83.1210, 42.3010]]],
+          [[[-83.1132, 42.3308], [-83.1105, 42.3318], [-83.1073, 42.3276], [-83.1102, 42.3269], [-83.1132, 42.3308]]],
+          [[[-83.1050, 42.3160], [-83.0864, 42.3210], [-83.0871, 42.3237], [-83.1060, 42.3187], [-83.1050, 42.3160]]]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rivertown Business Improvement Zone",
+        "website": "https://downtowndetroit.org/business-improvement-zone/rivertownbiz/",
+        "sourceUrl": "https://downtowndetroit.org/wp-content/uploads/Zone-Plan-for-Rivertown-Business-Improvement-Zone.pdf",
+        "established": "2026",
+        "expires": "2035",
+        "area": "Generalized service area from the adopted zone plan and official City street-boundary description",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-83.0364, 42.3333], [-83.0260, 42.3374], [-83.0160, 42.3411],
+          [-83.0029, 42.3487], [-82.9977, 42.3495], [-82.9978, 42.3380],
+          [-83.0080, 42.3315], [-83.0200, 42.3260], [-83.0327, 42.3295],
+          [-83.0327, 42.3310], [-83.0364, 42.3333]
+        ]]
+      }
+    }
+  ]
+}
