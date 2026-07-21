@@ -24,10 +24,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Rancho Cucamonga was skipped because it is already represented within the Greater Ontario Tourism Marketing District benefit zone; Fort Collins was added as the replacement fiftieth city."
   },
   "batch_summary": {
-    "cities_researched": 11,
+    "cities_researched": 12,
     "active_hits": 6,
-    "misses": 5,
-    "active_hit_rate_percent": 54.5,
+    "misses": 6,
+    "active_hit_rate_percent": 50,
     "result": "In progress."
   },
   "records": [
@@ -171,6 +171,7 @@
       "official_sources": ["https://www.modestogov.com/310/Fees-Taxes-and-Deadlines","https://www.modestogov.com/1249/Business-Incentives"],
       "production_next_action": "Production-ingested with a generalized downtown boundary."
     },
-    {"rank":11,"census_rank":111,"city":"Salt Lake City","state":"UT","population_2025":218428,"result":"active_hit","active_hit":true,"local_term":"Central Business Improvement Area","summary":"Salt Lake City's Central Business Improvement Area is an active special assessment area established in 1991. The City's current registry documents its supplemental economic-promotion, sanitation, security, events, and related services and publishes CBIA-25 financial reports through May 2026.","official_sources":["https://www.slc.gov/ed/special-assessment-areas/"],"production_next_action":"Production-ingested with a generalized downtown core boundary."}
+    {"rank":11,"census_rank":111,"city":"Salt Lake City","state":"UT","population_2025":218428,"result":"active_hit","active_hit":true,"local_term":"Central Business Improvement Area","summary":"Salt Lake City's Central Business Improvement Area is an active special assessment area established in 1991. The City's current registry documents its supplemental economic-promotion, sanitation, security, events, and related services and publishes CBIA-25 financial reports through May 2026.","official_sources":["https://www.slc.gov/ed/special-assessment-areas/"],"production_next_action":"Production-ingested with a generalized downtown core boundary."},
+    {"rank":12,"census_rank":112,"city":"Moreno Valley","state":"CA","population_2025":214263,"result":"miss","active_hit":false,"local_term":"None verified","summary":"No operating assessment-funded BID or PBID was verified in Moreno Valley's current business, budget, or special-district materials. The City's named commercial corridors and Towngate district are planning or economic-development areas, while listed assessment districts fund infrastructure and maintenance rather than supplemental business services.","official_sources":["https://moval.gov/departments/financial-mgmt-svcs/budget.html","https://www.morenovalleybusiness.com/"],"production_next_action":"Monitor for a property-owner formation and levy; do not map planning or infrastructure districts."}
   ]
 }
