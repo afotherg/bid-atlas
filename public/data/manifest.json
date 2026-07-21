@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-07-21T19:20:20.582Z",
-  "records": 566,
+  "generatedAt": "2026-07-21T19:31:34.110Z",
+  "records": 567,
   "states": [
     "AK",
+    "AR",
     "AZ",
     "CA",
     "CO",
@@ -90,6 +91,7 @@
     "Laguna Beach, CA",
     "Laredo, TX",
     "Lexington, KY",
+    "Little Rock, AR",
     "Long Beach, CA",
     "Los Angeles, CA",
     "Louisville, KY",
@@ -1236,15 +1238,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-21T19:20:20.582Z"
+    },
+    {
+      "id": "little-rock-metrocentre-bid",
+      "name": "Little Rock Metrocentre Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-21T19:31:34.110Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 120,
-    "configuredSources": 133,
+    "verifiedJurisdictions": 121,
+    "configuredSources": 134,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 558,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }
