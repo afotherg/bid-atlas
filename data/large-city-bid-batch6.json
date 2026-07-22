@@ -20,10 +20,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped. Pasadena, California (Census rank 216) was skipped because its active districts are already represented."
   },
   "batch_summary": {
-    "cities_researched": 2,
+    "cities_researched": 3,
     "active_hits": 1,
-    "misses": 1,
-    "active_hit_rate_percent": 50.0,
+    "misses": 2,
+    "active_hit_rate_percent": 33.3,
     "result": "In progress."
   },
   "records": [
@@ -60,6 +60,23 @@
         "https://web.cedarrapids.org/government/downtown-ssmid-5458"
       ],
       "production_next_action": "Production-ingested as two generalized downtown benefit areas; replace with current parcel-derived SSMID boundaries when available."
+    },
+    {
+      "rank": 3,
+      "census_rank": 211,
+      "city": "West Valley City",
+      "state": "UT",
+      "population_2025": 137491,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Redevelopment and special assessment areas (place-management district not verified)",
+      "summary": "No operating assessment-funded commercial place-management or tourism district was verified in West Valley City. Current economic-development work is delivered through the City and redevelopment agency, while special assessment tools are used for infrastructure rather than supplemental cleaning, safety, marketing, events, or business support.",
+      "official_sources": [
+        "https://www.wvc-ut.gov/145/Economic-Development",
+        "https://www.wvc-ut.gov/135/Redevelopment-Agency",
+        "https://www.wvc-ut.gov/178/Finance-Budget"
+      ],
+      "production_next_action": "Monitor for a commercial-area management assessment or lodging marketing assessment; do not map redevelopment, taxing, or infrastructure assessment areas."
     }
   ]
 }
