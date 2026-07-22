@@ -1,12 +1,13 @@
 {
-  "checkedAt": "2026-07-22T03:40:35.114Z",
+  "checkedAt": "2026-07-22T03:42:56.554Z",
   "summary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ga-savannah-savannah-s-waterfront-community-improvement-district"
+    "tx-waco-waco-public-improvement-district-number-one",
+    "tx-waco-waco-tourism-public-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1351,6 +1352,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:40:35.114Z"
+    },
+    {
+      "id": "waco-improvement-districts",
+      "name": "Waco Public Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-22T03:42:56.554Z"
     }
   ]
 }

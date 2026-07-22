@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waco Public Improvement District Number One",
+        "sourceUrl": "https://www.waco-texas.com/files/sharedassets/public/departments/economic-development/documents/2018-service-assessment-plan.pdf",
+        "established": "2012",
+        "expires": "2027",
+        "area": "Generalized downtown Waco service area",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-97.155, 31.535], [-97.112, 31.535], [-97.112, 31.568],
+          [-97.155, 31.568], [-97.155, 31.535]
+        ]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waco Tourism Public Improvement District",
+        "sourceUrl": "https://www.waco-texas.com/Departments/City-Secretarys-Office/Public-Notices",
+        "assessment": "2% of taxable room revenue at hotels with 75 or more rooms",
+        "established": "2020",
+        "area": "Generalized citywide lodging benefit zone",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-97.270, 31.450], [-97.050, 31.450], [-97.050, 31.680],
+          [-97.270, 31.680], [-97.270, 31.450]
+        ]]
+      }
+    }
+  ]
+}

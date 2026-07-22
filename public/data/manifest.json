@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:40:35.114Z",
-  "records": 616,
+  "generatedAt": "2026-07-22T03:42:56.554Z",
+  "records": 618,
   "states": [
     "AK",
     "AL",
@@ -196,6 +196,7 @@
     "Toledo, OH",
     "Tucson, AZ",
     "Tulsa, OK",
+    "Waco, TX",
     "Washington, DC",
     "West Hollywood, CA",
     "Whittier, CA",
@@ -1545,15 +1546,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:40:35.114Z"
+    },
+    {
+      "id": "waco-improvement-districts",
+      "name": "Waco Public Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-22T03:42:56.554Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 158,
-    "configuredSources": 171,
+    "verifiedJurisdictions": 159,
+    "configuredSources": 172,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }
