@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:35:59.581Z",
-  "records": 612,
+  "generatedAt": "2026-07-22T03:36:52.266Z",
+  "records": 613,
   "states": [
     "AK",
     "AL",
@@ -132,6 +132,7 @@
     "Montgomery, AL",
     "Nampa, ID",
     "Napa, CA",
+    "Naperville, IL",
     "Nashville, TN",
     "New Orleans, LA",
     "New York, NY",
@@ -1513,11 +1514,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:35:59.581Z"
+    },
+    {
+      "id": "naperville-downtown-special-service-area-36",
+      "name": "Naperville Downtown Special Service Area No. 36",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:36:52.266Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 154,
-    "configuredSources": 167,
+    "verifiedJurisdictions": 155,
+    "configuredSources": 168,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

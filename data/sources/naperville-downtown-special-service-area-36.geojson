@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Naperville Downtown Special Service Area No. 36",
+        "website": "https://downtownnaperville.com/",
+        "sourceUrl": "https://naperville.legistar.com/LegislationDetail.aspx?From=RSS&FullText=1&GUID=A137311D-6751-4F72-82BB-6AD593B0E6B5&ID=7704256",
+        "established": "2025",
+        "expires": "2030",
+        "area": "Generalized Downtown Naperville service area",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-88.160, 41.765],
+          [-88.132, 41.765],
+          [-88.132, 41.781],
+          [-88.160, 41.781],
+          [-88.160, 41.765]
+        ]]
+      }
+    }
+  ]
+}
