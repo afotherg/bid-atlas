@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T04:01:18.594Z",
-  "records": 639,
+  "generatedAt": "2026-07-22T04:02:19.965Z",
+  "records": 641,
   "states": [
     "AK",
     "AL",
@@ -98,6 +98,7 @@
     "Glendora, CA",
     "Grand Rapids, MI",
     "Greensboro, NC",
+    "Hampton, VA",
     "Hartford, CT",
     "Hayward, CA",
     "Honolulu, HI",
@@ -1634,11 +1635,18 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-22T04:01:18.594Z"
+    },
+    {
+      "id": "hampton-business-improvement-districts",
+      "name": "Hampton Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-22T04:02:19.965Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 169,
-    "configuredSources": 182,
+    "verifiedJurisdictions": 170,
+    "configuredSources": 183,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
