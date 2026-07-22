@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 27,
+    "cities_researched": 28,
     "active_hits": 19,
-    "misses": 8,
-    "active_hit_rate_percent": 70.4,
+    "misses": 9,
+    "active_hit_rate_percent": 67.9,
     "result": "In progress."
   },
   "records": [
@@ -490,6 +490,23 @@
         "https://savannahswaterfront.com/cid/"
       ],
       "production_next_action": "Production-ingested as a generalized waterfront commercial-assessment footprint."
+    },
+    {
+      "rank": 28,
+      "census_rank": 184,
+      "city": "Gainesville",
+      "state": "FL",
+      "population_2025": 148671,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Proposed Business Improvement District / City-funded place management (not formed)",
+      "summary": "No operating assessment-funded BID was verified in Gainesville. The City commissioned a feasibility study, revenue model, and draft ordinance for a potential Downtown and Innovation District BID, but current 2026 materials still describe forming a place-management organization as an implementation goal. Existing ambassadors, cleaning, grants, events, and beautification are funded and managed through the Gainesville Community Reinvestment Area rather than a property or business assessment district.",
+      "official_sources": [
+        "https://www.gainesvillefl.gov/files/assets/public/v/1/gcra/documents/fy24-gcraannualreport.pdf",
+        "https://www.gainesvillefl.gov/Government-Pages/Government/Departments/Gainesville-Community-Reinvestment-Area/GCRA-Downtown",
+        "https://www.gainesvillefl.gov/files/assets/public/v/3/budget-amp-finance/documents/fy-2026-adopted-financial-and-operating-plan.pdf"
+      ],
+      "production_next_action": "Monitor for City Commission adoption of a BID ordinance, assessment roll, and independent management organization; do not map the GCRA or Sip & Stroll district."
     }
   ]
 }
