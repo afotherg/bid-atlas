@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Visalia Property and Business Improvement District",
+        "sourceUrl": "https://visalia.legistar.com/View.ashx?GUID=3ED33EF9-9E9F-4571-AAEF-19C45460C587&ID=1366573&M=PA",
+        "assessment": "Property benefit assessment",
+        "established": "1998",
+        "expires": "2029",
+        "area": "Generalized downtown Visalia property benefit area",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-119.3060, 36.3230], [-119.3060, 36.3375], [-119.2820, 36.3375], [-119.2820, 36.3230], [-119.3060, 36.3230]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Town-Center Business Improvement Area",
+        "sourceUrl": "https://visalia.legistar.com/View.ashx?GUID=0049FD25-87A2-4A62-9E84-8533CD761E03&ID=1366574&M=PA",
+        "assessment": "Surcharge on business tax",
+        "area": "Generalized downtown Visalia business benefit area",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-119.3020, 36.3260], [-119.3020, 36.3350], [-119.2860, 36.3350], [-119.2860, 36.3260], [-119.3020, 36.3260]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Visalia Tourism Marketing District",
+        "sourceUrl": "https://www.visalia.gov/285/Transient-Occupancy-Tax-TOT",
+        "assessment": "2% of gross short-term room rental revenue at lodging businesses with 20 or more rooms",
+        "expires": "2032",
+        "area": "Generalized City of Visalia lodging benefit zone",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-119.4200, 36.2700], [-119.4200, 36.3900], [-119.2100, 36.3900], [-119.2100, 36.2700], [-119.4200, 36.2700]]]}
+    }
+  ]
+}

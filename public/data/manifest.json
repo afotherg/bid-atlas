@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:47:36.018Z",
-  "records": 621,
+  "generatedAt": "2026-07-22T03:48:34.252Z",
+  "records": 624,
   "states": [
     "AK",
     "AL",
@@ -198,6 +198,7 @@
     "Toledo, OH",
     "Tucson, AZ",
     "Tulsa, OK",
+    "Visalia, CA",
     "Waco, TX",
     "Washington, DC",
     "West Hollywood, CA",
@@ -1569,15 +1570,22 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-22T03:47:36.018Z"
+    },
+    {
+      "id": "visalia-improvement-districts",
+      "name": "Visalia Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-22T03:48:34.252Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 161,
-    "configuredSources": 174,
+    "verifiedJurisdictions": 162,
+    "configuredSources": 175,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 3,
     "modified": 0,
     "removed": 0
   }

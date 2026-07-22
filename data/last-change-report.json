@@ -1,13 +1,14 @@
 {
-  "checkedAt": "2026-07-22T03:47:36.018Z",
+  "checkedAt": "2026-07-22T03:48:34.252Z",
   "summary": {
-    "added": 2,
+    "added": 3,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "sc-columbia-city-center-business-improvement-district",
-    "sc-columbia-vista-business-improvement-district"
+    "ca-visalia-downtown-visalia-property-and-business-improvement-district",
+    "ca-visalia-town-center-business-improvement-area",
+    "ca-visalia-visalia-tourism-marketing-district"
   ],
   "modified": [],
   "removed": [],
@@ -1373,6 +1374,13 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-22T03:47:36.018Z"
+    },
+    {
+      "id": "visalia-improvement-districts",
+      "name": "Visalia Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-22T03:48:34.252Z"
     }
   ]
 }
