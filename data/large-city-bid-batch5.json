@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 36,
+    "cities_researched": 37,
     "active_hits": 23,
-    "misses": 13,
-    "active_hit_rate_percent": 63.9,
+    "misses": 14,
+    "active_hit_rate_percent": 62.2,
     "result": "In progress."
   },
   "records": [
@@ -643,6 +643,23 @@
         "https://www.visalia.gov/285/Transient-Occupancy-Tax-TOT"
       ],
       "production_next_action": "Production-ingested as two generalized downtown benefit areas and a citywide lodging benefit zone; replace generalized geometry with current official GIS or parcel rolls when available."
+    },
+    {
+      "rank": 37,
+      "census_rank": 193,
+      "city": "Escondido",
+      "state": "CA",
+      "population_2025": 146030,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Proposed downtown Property and Business Improvement District (not formed)",
+      "summary": "No operating assessment-funded BID was verified in Escondido. The City's strategic work plan schedules creation of a downtown Property and Business Improvement District as an FY2026-27 objective, and current economic-development materials describe assessment-district options rather than an adopted formation resolution, assessment ballot, management plan, or levy. Existing Community Facilities Districts finance development infrastructure and municipal services and are excluded.",
+      "official_sources": [
+        "https://www.escondido.gov/DocumentCenter/View/9244/Priority-Work-Plan-PDF?bidId=",
+        "https://www.escondido.gov/Archive.aspx?ADID=115",
+        "https://escondido.gov/368/Community-Facilities-Districts"
+      ],
+      "production_next_action": "Monitor FY2026-27 Council actions for a PBID management plan, petition, ballot, formation resolution, and first assessment; do not map the planning area, business enhancement zone, or developer CFDs."
     }
   ]
 }
