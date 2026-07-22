@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 41,
+    "cities_researched": 42,
     "active_hits": 25,
-    "misses": 16,
-    "active_hit_rate_percent": 61.0,
+    "misses": 17,
+    "active_hit_rate_percent": 59.5,
     "result": "In progress."
   },
   "records": [
@@ -728,6 +728,23 @@
         "https://www.elizabethnj.org/DocumentCenter/View/10489/SID-Midtown-2026"
       ],
       "production_next_action": "Production-ingested as generalized Elizabeth Avenue, Midtown, and citywide lodging benefit zones; replace with official SID parcel boundaries and the current tourism assessment plan when available."
+    },
+    {
+      "rank": 42,
+      "census_rank": 198,
+      "city": "Victorville",
+      "state": "CA",
+      "population_2025": 141395,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Suggested Old Town Property and Business Improvement District (not formed)",
+      "summary": "No operating commercial or tourism BID was verified in Victorville. The Old Town implementation plan identifies a PBID as a possible future funding mechanism, but current revitalization programs use City capital projects, CDBG-funded facade loans, and a Community Revitalization Investment Authority rather than a property or business assessment for place management. The City's landscape, drainage, and maintenance assessment districts serve development and neighborhood infrastructure and are excluded.",
+      "official_sources": [
+        "https://www.victorvilleca.gov/home/showpublisheddocument/4969/637441547661100000",
+        "https://www.victorvilleca.gov/Government/City-Departments/Economic-Development/Old-Town/Old-Town-Business-Resources",
+        "https://www.victorvilleca.gov/government/city-departments/public-works/assessment-districts-lmad-dfad-mad"
+      ],
+      "production_next_action": "Monitor Old Town implementation for a PBID petition, management plan, ballot, and levy; do not map the CRIA, specific-plan area, or infrastructure maintenance districts."
     }
   ]
 }
