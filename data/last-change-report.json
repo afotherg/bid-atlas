@@ -1,13 +1,14 @@
 {
-  "checkedAt": "2026-07-22T03:49:51.574Z",
+  "checkedAt": "2026-07-22T03:51:34.480Z",
   "summary": {
-    "added": 2,
+    "added": 3,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ny-syracuse-crouse-marshall-special-assessment-district",
-    "ny-syracuse-downtown-syracuse-special-assessment-district"
+    "nj-elizabeth-elizabeth-avenue-special-improvement-district",
+    "nj-elizabeth-greater-elizabeth-tourism-improvement-district",
+    "nj-elizabeth-historic-midtown-elizabeth-special-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1387,6 +1388,13 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-22T03:49:51.574Z"
+    },
+    {
+      "id": "elizabeth-nj-improvement-districts",
+      "name": "Elizabeth New Jersey Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-22T03:51:34.480Z"
     }
   ]
 }

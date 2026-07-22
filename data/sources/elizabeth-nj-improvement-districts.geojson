@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elizabeth Avenue Special Improvement District",
+        "sourceUrl": "https://www.elizabethnj.org/DocumentCenter/View/10737/Elizabeth-Avenue-Special-Improvement-District-Budget-2027-SFY",
+        "assessment": "Commercial district assessment",
+        "area": "Generalized Elizabeth Avenue commercial corridor",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-74.2280, 40.6580], [-74.2250, 40.6640], [-74.1910, 40.6530], [-74.1940, 40.6470], [-74.2280, 40.6580]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Historic Midtown Elizabeth Special Improvement District",
+        "website": "https://www.hmesid.com/",
+        "sourceUrl": "https://www.elizabethnj.org/DocumentCenter/View/10489/SID-Midtown-2026",
+        "assessment": "Property assessment",
+        "area": "Generalized Midtown and Elizabeth Station benefit area",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-74.2240, 40.6550], [-74.2240, 40.6720], [-74.2040, 40.6720], [-74.2040, 40.6550], [-74.2240, 40.6550]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Greater Elizabeth Tourism Improvement District",
+        "sourceUrl": "https://www.elizabethnj.org/790/City-Council-Resolutions",
+        "assessment": "Hotel assessment fees",
+        "area": "Generalized City of Elizabeth lodging benefit zone",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-74.2650, 40.6300], [-74.2650, 40.7000], [-74.1550, 40.7000], [-74.1550, 40.6300], [-74.2650, 40.6300]]]}
+    }
+  ]
+}

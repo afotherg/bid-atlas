@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:49:51.574Z",
-  "records": 626,
+  "generatedAt": "2026-07-22T03:51:34.480Z",
+  "records": 629,
   "states": [
     "AK",
     "AL",
@@ -84,6 +84,7 @@
     "Downey, CA",
     "Durham, NC",
     "El Paso, TX",
+    "Elizabeth, NJ",
     "Eugene, OR",
     "Fayetteville, NC",
     "Fort Collins, CO",
@@ -1585,15 +1586,22 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-22T03:49:51.574Z"
+    },
+    {
+      "id": "elizabeth-nj-improvement-districts",
+      "name": "Elizabeth New Jersey Improvement Districts",
+      "status": "ok",
+      "records": 3,
+      "checkedAt": "2026-07-22T03:51:34.480Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 163,
-    "configuredSources": 176,
+    "verifiedJurisdictions": 164,
+    "configuredSources": 177,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 3,
     "modified": 0,
     "removed": 0
   }
