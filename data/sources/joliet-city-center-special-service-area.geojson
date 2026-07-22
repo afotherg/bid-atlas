@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joliet City Center Special Service Area",
+        "website": "https://jolietccp.com/ssa/",
+        "sourceUrl": "https://www.joliet.gov/business/economic-development/incentives/joliet-city-center-partnership",
+        "area": "Generalized Downtown Joliet service area",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-88.105, 41.516],
+          [-88.075, 41.516],
+          [-88.075, 41.536],
+          [-88.105, 41.536],
+          [-88.105, 41.516]
+        ]]
+      }
+    }
+  ]
+}

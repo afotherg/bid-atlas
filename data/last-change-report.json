@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-22T03:37:34.324Z",
+  "checkedAt": "2026-07-22T03:38:22.105Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ct-bridgeport-bridgeport-downtown-special-services-district"
+    "il-joliet-joliet-city-center-special-service-area"
   ],
   "modified": [],
   "removed": [],
@@ -1337,6 +1337,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:37:34.324Z"
+    },
+    {
+      "id": "joliet-city-center-special-service-area",
+      "name": "Joliet City Center Special Service Area",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:38:22.105Z"
     }
   ]
 }

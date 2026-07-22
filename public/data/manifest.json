@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:37:34.324Z",
-  "records": 614,
+  "generatedAt": "2026-07-22T03:38:22.105Z",
+  "records": 615,
   "states": [
     "AK",
     "AL",
@@ -103,6 +103,7 @@
     "Indianapolis, IN",
     "Jacksonville, FL",
     "Jersey City, NJ",
+    "Joliet, IL",
     "Kailua-Kona, HI",
     "Kansas City, KS",
     "Kansas City, MO",
@@ -1529,11 +1530,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:37:34.324Z"
+    },
+    {
+      "id": "joliet-city-center-special-service-area",
+      "name": "Joliet City Center Special Service Area",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:38:22.105Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 156,
-    "configuredSources": 169,
+    "verifiedJurisdictions": 157,
+    "configuredSources": 170,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
