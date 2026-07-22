@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 31,
+    "cities_researched": 32,
     "active_hits": 20,
-    "misses": 11,
-    "active_hit_rate_percent": 64.5,
+    "misses": 12,
+    "active_hit_rate_percent": 62.5,
     "result": "In progress."
   },
   "records": [
@@ -558,6 +558,23 @@
         "https://www.waco-texas.com/Departments/City-Secretarys-Office/Public-Notices"
       ],
       "production_next_action": "Production-ingested as generalized downtown and citywide lodging-assessment footprints; monitor PID1 renewal before its 2027 expiration."
+    },
+    {
+      "rank": 32,
+      "census_rank": 188,
+      "city": "Thornton",
+      "state": "CO",
+      "population_2025": 147766,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "RII-DII Business Improvement District (capital-finance district excluded)",
+      "summary": "Thornton's RII-DII Business Improvement District is legally active, and the City approved its 2026 operating plan and budget. The City's financial report describes the approximately 75-acre district at 148th Avenue and Washington Street as a separate entity organized to construct and finance public improvements. No assessment-funded cleaning, safety, marketing, events, business support, or ongoing place-management program was verified, so this developer infrastructure-finance district is excluded under the Atlas definition.",
+      "official_sources": [
+        "https://www.thorntonco.gov/government/mayor-council/upcoming-meetings/council-record-votes/2025",
+        "https://www.thorntonco.gov/media/file/annual-comprehensive-financial-report-2021",
+        "https://www.thorntonco.gov/media/file/annual-comprehensive-financial-report-2024"
+      ],
+      "production_next_action": "Do not map the RII-DII BID unless a future operating plan documents ongoing assessment-funded place-management services beyond public-improvement construction, financing, administration, and debt service."
     }
   ]
 }
