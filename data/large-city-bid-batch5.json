@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 42,
+    "cities_researched": 43,
     "active_hits": 25,
-    "misses": 17,
-    "active_hit_rate_percent": 59.5,
+    "misses": 18,
+    "active_hit_rate_percent": 58.1,
     "result": "In progress."
   },
   "records": [
@@ -745,6 +745,23 @@
         "https://www.victorvilleca.gov/government/city-departments/public-works/assessment-districts-lmad-dfad-mad"
       ],
       "production_next_action": "Monitor Old Town implementation for a PBID petition, management plan, ballot, and levy; do not map the CRIA, specific-plan area, or infrastructure maintenance districts."
+    },
+    {
+      "rank": 43,
+      "census_rank": 199,
+      "city": "Round Rock",
+      "state": "TX",
+      "population_2025": 141282,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Development public improvement districts (capital-finance districts excluded)",
+      "summary": "No operating assessment-funded place-management or tourism district was verified in Round Rock. The City's PIDs—including Behrens Ranch, Southeast, La Frontera, and the proposed financing for The District—reimburse developer-built water, wastewater, roads, drainage, utilities, or other public infrastructure. They do not fund ongoing cleaning, safety, marketing, events, business support, or an independent district-management organization.",
+      "official_sources": [
+        "https://roundrock.legistar.com/View.ashx?GUID=9400122d-4a3e-4014-a28c-319709e340bd&ID=45726&M=AO&N=NS8xMSBDb21wbGV0ZSBQYWNrZXQ%3D",
+        "https://www.roundrocktexas.gov/news/city-council-considers-agreement-200-million-mixed-use-development/",
+        "https://www.roundrocktexas.gov/wp-content/uploads/2014/12/pud_15_SpringRidge_1.pdf"
+      ],
+      "production_next_action": "Monitor for a downtown services PID or hotel-assessment tourism PID; do not map development reimbursement, infrastructure, utility, or residential PIDs."
     }
   ]
 }
