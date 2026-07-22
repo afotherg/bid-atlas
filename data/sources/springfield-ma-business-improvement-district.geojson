@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Springfield Business Improvement District",
+        "website": "https://springfielddowntown.com/",
+        "sourceUrl": "https://www.springfield-ma.gov/cos/gtk-innovation",
+        "established": "1998",
+        "area": "Generalized downtown Springfield service area",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-72.600, 42.092],
+          [-72.570, 42.092],
+          [-72.570, 42.111],
+          [-72.600, 42.111],
+          [-72.600, 42.092]
+        ]]
+      }
+    }
+  ]
+}

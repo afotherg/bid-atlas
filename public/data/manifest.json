@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:33:24.967Z",
-  "records": 610,
+  "generatedAt": "2026-07-22T03:35:05.764Z",
+  "records": 611,
   "states": [
     "AK",
     "AL",
@@ -180,6 +180,7 @@
     "Sioux Falls, SD",
     "South Gate, CA",
     "Spokane, WA",
+    "Springfield, MA",
     "Springfield, MO",
     "St. Louis, MO",
     "Stockton, CA",
@@ -1497,11 +1498,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:33:24.967Z"
+    },
+    {
+      "id": "springfield-ma-business-improvement-district",
+      "name": "Springfield Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:35:05.764Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 152,
-    "configuredSources": 165,
+    "verifiedJurisdictions": 153,
+    "configuredSources": 166,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
