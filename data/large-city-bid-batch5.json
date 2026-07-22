@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 29,
+    "cities_researched": 30,
     "active_hits": 19,
-    "misses": 10,
-    "active_hit_rate_percent": 65.5,
+    "misses": 11,
+    "active_hit_rate_percent": 63.3,
     "result": "In progress."
   },
   "records": [
@@ -524,6 +524,23 @@
         "https://www.pasadenatx.gov/DocumentCenter/View/3446/Fiscal-Year-2019-PDF"
       ],
       "production_next_action": "Monitor City Council agendas and Chapter 372 petitions for a commercial or hotel-assessment district; distinguish Pasadena, Texas from Pasadena, California's multiple BIDs."
+    },
+    {
+      "rank": 30,
+      "census_rank": 186,
+      "city": "Palm Bay",
+      "state": "FL",
+      "population_2025": 148092,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Former City of Palm Bay Business Improvement District (dissolved)",
+      "summary": "Palm Bay created a dependent Business Improvement District in 2018 for corridor planning and economic development, but it never obtained a funding mechanism and was dissolved by Ordinance 2021-80. City staff confirmed in a 2024 workshop that the BID had been disbanded. Current economic-development grants and the former Bayfront CRA are City-funded or tax-increment mechanisms, not an active assessment BID.",
+      "official_sources": [
+        "https://www.palmbayfl.gov/Home/Components/News/News/10909/17?arch=1&date=20150706115256&npage=58",
+        "https://palmbayfl.new.swagit.com/videos/313183",
+        "https://www.palmbayfl.gov/business/business-resources"
+      ],
+      "production_next_action": "Do not map the dissolved BID, former CRA, or residential CDDs; monitor for a newly funded commercial assessment district."
     }
   ]
 }
