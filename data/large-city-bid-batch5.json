@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 45,
+    "cities_researched": 46,
     "active_hits": 27,
-    "misses": 18,
-    "active_hit_rate_percent": 60.0,
+    "misses": 19,
+    "active_hit_rate_percent": 58.7,
     "result": "In progress."
   },
   "records": [
@@ -796,6 +796,23 @@
         "https://stamford-downtown.com/about-us/"
       ],
       "production_next_action": "Production-ingested as a generalized downtown special-services boundary; replace with an official assessment parcel map when available."
+    },
+    {
+      "rank": 46,
+      "census_rank": 202,
+      "city": "Lewisville",
+      "state": "TX",
+      "population_2025": 139006,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Development public improvement districts (capital-finance districts excluded)",
+      "summary": "No operating assessment-funded place-management or tourism district was verified in Lewisville. The active Lakeside Crossing and Castle Hills PIDs levy assessments for developer infrastructure, public improvements, and related debt, while Old Town marketing, events, facade work, and business support are City-funded or voluntary. No downtown services PID, hotel assessment, or independent assessment-funded management organization was identified.",
+      "official_sources": [
+        "https://cityoflewisville.legistar.com/LegislationDetail.aspx?From=RSS&GUID=C7EC3439-F46A-46EF-B75C-008BC92208F1&ID=7449396",
+        "https://www.cityoflewisville.com/city-hall/city-departments/financial-services/hotel-motel-occupancy-tax",
+        "https://cityoflewisville.legistar.com/View.ashx?GUID=36B9FA7E-DA44-447A-96F6-4797896D483F&ID=1289005&M=M"
+      ],
+      "production_next_action": "Monitor for an Old Town service assessment or tourism PID; do not map developer infrastructure PIDs, zoning districts, or City-funded destination programs."
     }
   ]
 }
