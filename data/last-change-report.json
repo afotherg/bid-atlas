@@ -1,13 +1,12 @@
 {
-  "checkedAt": "2026-07-22T03:53:28.047Z",
+  "checkedAt": "2026-07-22T03:54:07.070Z",
   "summary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ms-jackson-downtown-jackson-business-improvement-district",
-    "ms-jackson-fondren-business-improvement-district"
+    "ct-stamford-stamford-downtown-special-services-district"
   ],
   "modified": [],
   "removed": [],
@@ -1401,6 +1400,13 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-22T03:53:28.047Z"
+    },
+    {
+      "id": "stamford-downtown-special-services-district",
+      "name": "Stamford Downtown Special Services District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:54:07.070Z"
     }
   ]
 }

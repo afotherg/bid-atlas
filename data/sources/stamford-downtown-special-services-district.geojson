@@ -1,0 +1,15 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+    "type": "Feature",
+    "properties": {
+      "name": "Stamford Downtown Special Services District",
+      "website": "https://stamford-downtown.com/",
+      "sourceUrl": "https://www.stamfordct.gov/home/showpublisheddocument/52847/639159177064298481",
+      "established": "1992",
+      "area": "Generalized Stamford central business district",
+      "status": "Active"
+    },
+    "geometry": {"type": "Polygon", "coordinates": [[[-73.5520, 41.0440], [-73.5520, 41.0620], [-73.5300, 41.0620], [-73.5300, 41.0440], [-73.5520, 41.0440]]]}
+  }]
+}

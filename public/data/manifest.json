@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:53:28.047Z",
-  "records": 631,
+  "generatedAt": "2026-07-22T03:54:07.070Z",
+  "records": 632,
   "states": [
     "AK",
     "AL",
@@ -193,6 +193,7 @@
     "Springfield, MA",
     "Springfield, MO",
     "St. Louis, MO",
+    "Stamford, CT",
     "Stockton, CA",
     "Sunnyvale, CA",
     "Syracuse, NY",
@@ -1602,15 +1603,22 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-22T03:53:28.047Z"
+    },
+    {
+      "id": "stamford-downtown-special-services-district",
+      "name": "Stamford Downtown Special Services District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:54:07.070Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 165,
-    "configuredSources": 178,
+    "verifiedJurisdictions": 166,
+    "configuredSources": 179,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }
