@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 28,
+    "cities_researched": 29,
     "active_hits": 19,
-    "misses": 9,
-    "active_hit_rate_percent": 67.9,
+    "misses": 10,
+    "active_hit_rate_percent": 65.5,
     "result": "In progress."
   },
   "records": [
@@ -507,6 +507,23 @@
         "https://www.gainesvillefl.gov/files/assets/public/v/3/budget-amp-finance/documents/fy-2026-adopted-financial-and-operating-plan.pdf"
       ],
       "production_next_action": "Monitor for City Commission adoption of a BID ordinance, assessment roll, and independent management organization; do not map the GCRA or Sip & Stroll district."
+    },
+    {
+      "rank": 29,
+      "census_rank": 185,
+      "city": "Pasadena",
+      "state": "TX",
+      "population_2025": 148539,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "No verified commercial PID, management district, or tourism PID",
+      "summary": "No operating assessment-funded commercial, downtown, or tourism improvement district was verified in Pasadena, Texas. Current City financial, capital, economic-development, and planning materials show municipal programs, development zones, and citywide capital work but no Chapter 372 PID service plan, hotel assessment, commercial management-district levy, or BID organization.",
+      "official_sources": [
+        "https://www.pasadenatx.gov/DocumentCenter/View/9475/Fiscal-Years-2025---2029-Proposed-Capital-Improvement-Plan-CIP-PDF",
+        "https://www.pasadenatx.gov/DocumentCenter/View/4469/Healthy-Parks-Plan-2020---Computer-View",
+        "https://www.pasadenatx.gov/DocumentCenter/View/3446/Fiscal-Year-2019-PDF"
+      ],
+      "production_next_action": "Monitor City Council agendas and Chapter 372 petitions for a commercial or hotel-assessment district; distinguish Pasadena, Texas from Pasadena, California's multiple BIDs."
     }
   ]
 }
