@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Jackson Business Improvement District",
+        "website": "https://downtown-jackson.com/",
+        "sourceUrl": "https://downtown-jackson.com/about/overview/",
+        "assessment": "$0.10 per square foot of taxable buildings and unimproved property",
+        "area": "Generalized 65-block downtown ordinance boundary",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-90.1930, 32.2920], [-90.1930, 32.3100], [-90.1760, 32.3100], [-90.1760, 32.2920], [-90.1930, 32.2920]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fondren Business Improvement District",
+        "sourceUrl": "https://gis.cmpdd.org/server/rest/services/Hosted/Revitalize_MS/FeatureServer/45",
+        "assessment": "$0.08 per square foot of commercial property",
+        "area": "Generalized Fondren commercial district boundary",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-90.1840, 32.3200], [-90.1840, 32.3390], [-90.1630, 32.3390], [-90.1630, 32.3200], [-90.1840, 32.3200]]]}
+    }
+  ]
+}

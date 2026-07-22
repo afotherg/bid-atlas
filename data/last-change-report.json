@@ -1,14 +1,13 @@
 {
-  "checkedAt": "2026-07-22T03:51:34.480Z",
+  "checkedAt": "2026-07-22T03:53:28.047Z",
   "summary": {
-    "added": 3,
+    "added": 2,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "nj-elizabeth-elizabeth-avenue-special-improvement-district",
-    "nj-elizabeth-greater-elizabeth-tourism-improvement-district",
-    "nj-elizabeth-historic-midtown-elizabeth-special-improvement-district"
+    "ms-jackson-downtown-jackson-business-improvement-district",
+    "ms-jackson-fondren-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1395,6 +1394,13 @@
       "status": "ok",
       "records": 3,
       "checkedAt": "2026-07-22T03:51:34.480Z"
+    },
+    {
+      "id": "jackson-ms-business-improvement-districts",
+      "name": "Jackson Mississippi Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-22T03:53:28.047Z"
     }
   ]
 }

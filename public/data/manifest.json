@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:51:34.480Z",
-  "records": 629,
+  "generatedAt": "2026-07-22T03:53:28.047Z",
+  "records": 631,
   "states": [
     "AK",
     "AL",
@@ -25,6 +25,7 @@
     "MI",
     "MN",
     "MO",
+    "MS",
     "NC",
     "NE",
     "NJ",
@@ -103,6 +104,7 @@
     "Huntington Beach, CA",
     "Idaho Falls, ID",
     "Indianapolis, IN",
+    "Jackson, MS",
     "Jacksonville, FL",
     "Jersey City, NJ",
     "Joliet, IL",
@@ -1593,15 +1595,22 @@
       "status": "ok",
       "records": 3,
       "checkedAt": "2026-07-22T03:51:34.480Z"
+    },
+    {
+      "id": "jackson-ms-business-improvement-districts",
+      "name": "Jackson Mississippi Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-22T03:53:28.047Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 164,
-    "configuredSources": 177,
+    "verifiedJurisdictions": 165,
+    "configuredSources": 178,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 3,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }
