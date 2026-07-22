@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 46,
+    "cities_researched": 47,
     "active_hits": 27,
-    "misses": 19,
-    "active_hit_rate_percent": 58.7,
+    "misses": 20,
+    "active_hit_rate_percent": 57.4,
     "result": "In progress."
   },
   "records": [
@@ -813,6 +813,23 @@
         "https://cityoflewisville.legistar.com/View.ashx?GUID=36B9FA7E-DA44-447A-96F6-4797896D483F&ID=1289005&M=M"
       ],
       "production_next_action": "Monitor for an Old Town service assessment or tourism PID; do not map developer infrastructure PIDs, zoning districts, or City-funded destination programs."
+    },
+    {
+      "rank": 47,
+      "census_rank": 203,
+      "city": "Coral Springs",
+      "state": "FL",
+      "population_2025": 138783,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Community Redevelopment Area / utility improvement district (excluded)",
+      "summary": "No operating assessment-funded commercial or tourism BID was verified in Coral Springs. Downtown programs are administered by a tax-increment-funded Community Redevelopment Agency; the City explicitly states that CRA properties pay no additional property tax. The Coral Springs Improvement District provides water, wastewater, drainage, and utility infrastructure rather than commercial place management.",
+      "official_sources": [
+        "https://www.coralsprings.gov/Government/Departments/Community-Redevelopment-Agency",
+        "https://www.coralsprings.gov/Business/Economic-Development-Office/Economic-Development-Incentive-Program",
+        "https://www.csidfl.org/"
+      ],
+      "production_next_action": "Monitor for a downtown non-ad-valorem business assessment or lodging marketing district; do not map the CRA, zoning district, or water and drainage improvement district."
     }
   ]
 }
