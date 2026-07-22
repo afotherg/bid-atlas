@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 23,
+    "cities_researched": 24,
     "active_hits": 18,
-    "misses": 5,
-    "active_hit_rate_percent": 78.3,
+    "misses": 6,
+    "active_hit_rate_percent": 75.0,
     "result": "In progress."
   },
   "records": [
@@ -422,6 +422,23 @@
         "https://joliet.legistar.com/MeetingDetail.aspx?GUID=D4371E82-79A3-4415-AE0A-8055ECB972D5&ID=1387243&Options=info%7C&Search="
       ],
       "production_next_action": "Production-ingested as a generalized downtown special-service-area footprint; monitor the 2026 redesignation."
+    },
+    {
+      "rank": 24,
+      "census_rank": 180,
+      "city": "Mesquite",
+      "state": "TX",
+      "population_2025": 150693,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Public Improvement Districts (capital-development districts excluded)",
+      "summary": "No operating place-management BID equivalent was verified in Mesquite. The City has four active PIDs, but their current service and assessment plans finance developer-installed infrastructure and related bond debt for residential or master-planned development. Iron Horse includes commercial uses, but its assessment likewise repays authorized capital improvements rather than ongoing district marketing, cleaning, security, or place-management services.",
+      "official_sources": [
+        "https://www.cityofmesquite.com/2068/Development-Districts-and-Zones",
+        "https://www.cityofmesquite.com/3531/Iron-Horse-PID",
+        "https://www.cityofmesquite.com/3533/Solterra-PID"
+      ],
+      "production_next_action": "Monitor PID annual plans for a shift to ongoing enhanced services or formation of a downtown or tourism assessment district; do not map capital-debt PIDs."
     }
   ]
 }
