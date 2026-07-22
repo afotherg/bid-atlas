@@ -1,12 +1,13 @@
 {
-  "checkedAt": "2026-07-22T03:59:29.161Z",
+  "checkedAt": "2026-07-22T04:01:18.594Z",
   "summary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ca-torrance-torrance-tourism-business-improvement-district"
+    "ia-cedar-rapids-cedar-rapids-medical-ssmid-medquarter",
+    "ia-cedar-rapids-downtown-cedar-rapids-ssmid"
   ],
   "modified": [],
   "removed": [],
@@ -1421,6 +1422,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:59:29.161Z"
+    },
+    {
+      "id": "cedar-rapids-ssmids",
+      "name": "Cedar Rapids Self-Supported Municipal Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-22T04:01:18.594Z"
     }
   ]
 }

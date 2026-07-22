@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:59:29.161Z",
-  "records": 637,
+  "generatedAt": "2026-07-22T04:01:18.594Z",
+  "records": 639,
   "states": [
     "AK",
     "AL",
@@ -65,6 +65,7 @@
     "Buffalo, NY",
     "Burbank, CA",
     "Burlingame, CA",
+    "Cedar Rapids, IA",
     "Charleston, SC",
     "Charlotte, NC",
     "Chattanooga, TN",
@@ -1626,15 +1627,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:59:29.161Z"
+    },
+    {
+      "id": "cedar-rapids-ssmids",
+      "name": "Cedar Rapids Self-Supported Municipal Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-22T04:01:18.594Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 168,
-    "configuredSources": 181,
+    "verifiedJurisdictions": 169,
+    "configuredSources": 182,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }

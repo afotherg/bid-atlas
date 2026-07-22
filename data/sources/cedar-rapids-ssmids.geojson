@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Cedar Rapids SSMID",
+        "website": "https://downtowncr.org/",
+        "sourceUrl": "https://web.cedarrapids.org/government/downtown-ssmid-5458",
+        "area": "Generalized downtown benefit area",
+        "status": "Active"
+      },
+      "geometry": {"type":"Polygon","coordinates":[[[-91.681,41.970],[-91.660,41.970],[-91.660,41.986],[-91.681,41.986],[-91.681,41.970]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cedar Rapids Medical SSMID (MedQuarter)",
+        "website": "https://themedq.com/",
+        "sourceUrl": "https://www.cedar-rapids.org/MedQuarter%20Regional%20Medical%20District%20-%202024%20Master%20Development%20Plan%20Update.pdf",
+        "area": "Generalized 55-block medical district",
+        "status": "Active"
+      },
+      "geometry": {"type":"Polygon","coordinates":[[[-91.672,41.974],[-91.650,41.974],[-91.650,41.993],[-91.672,41.993],[-91.672,41.974]]]}
+    }
+  ]
+}
