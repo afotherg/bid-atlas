@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:38:22.105Z",
-  "records": 615,
+  "generatedAt": "2026-07-22T03:40:35.114Z",
+  "records": 616,
   "states": [
     "AK",
     "AL",
@@ -179,6 +179,7 @@
     "Santa Cruz, CA",
     "Santa Monica, CA",
     "Santa Rosa, CA",
+    "Savannah, GA",
     "Seattle, WA",
     "Shreveport, LA",
     "Sioux Falls, SD",
@@ -1537,11 +1538,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:38:22.105Z"
+    },
+    {
+      "id": "savannah-waterfront-community-improvement-district",
+      "name": "Savannah's Waterfront Community Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:40:35.114Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 157,
-    "configuredSources": 170,
+    "verifiedJurisdictions": 158,
+    "configuredSources": 171,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

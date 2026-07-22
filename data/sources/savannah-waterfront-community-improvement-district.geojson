@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Savannah's Waterfront Community Improvement District",
+        "website": "https://savannahswaterfront.com/cid/",
+        "sourceUrl": "https://agenda.savannahga.gov/content/files/swcid-cooperation-agreement-slg-2-1-24.pdf",
+        "established": "2023",
+        "area": "Generalized Savannah riverfront commercial district",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-81.105, 32.075],
+          [-81.075, 32.075],
+          [-81.075, 32.091],
+          [-81.105, 32.091],
+          [-81.105, 32.075]
+        ]]
+      }
+    }
+  ]
+}
