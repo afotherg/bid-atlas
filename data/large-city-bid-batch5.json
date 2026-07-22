@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 33,
+    "cities_researched": 34,
     "active_hits": 21,
-    "misses": 12,
-    "active_hit_rate_percent": 63.6,
+    "misses": 13,
+    "active_hit_rate_percent": 61.8,
     "result": "In progress."
   },
   "records": [
@@ -592,6 +592,23 @@
         "https://www.midlandtexas.gov/CivicAlerts.aspx?AID=1828"
       ],
       "production_next_action": "Production-ingested as a generalized downtown assessment-district boundary; seek and substitute a current service and assessment plan if the district publishes one."
+    },
+    {
+      "rank": 34,
+      "census_rank": 190,
+      "city": "Rockford",
+      "state": "IL",
+      "population_2025": 147384,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Proposed Special Service Areas / City-funded business district associations (not formed)",
+      "summary": "No operating commercial Special Service Area or assessment-funded BID was verified in Rockford. City corridor plans describe an SSA as a possible implementation mechanism, while current downtown and business-district programs rely on municipal investment, TIF, grants, and City seed funding for voluntary business district associations. Current City materials do not identify an adopted commercial SSA levy, assessment roll, or designated assessment-funded service provider.",
+      "official_sources": [
+        "https://rockfordil.gov/207/Downtown-Rockford",
+        "https://www.rockfordil.gov/764/Business-District-Association-Funding-Pr",
+        "https://rockfordil.gov/DocumentCenter/View/787/Section-7-Implementation-PDF"
+      ],
+      "production_next_action": "Monitor City Council ordinances for formation of a commercial SSA and a property-tax levy; do not map TIF districts, planning corridors, or voluntary associations receiving City grants."
     }
   ]
 }
