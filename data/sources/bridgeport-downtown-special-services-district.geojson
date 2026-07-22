@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bridgeport Downtown Special Services District",
+        "website": "https://infobridgeport.com/",
+        "sourceUrl": "https://library.municode.com/CT/Bridgeport/codes/Code_of_Ordinances?nodeId=TIT3REFI_CH3.36MUSPSEDI_3.36.010PUIN",
+        "area": "Generalized Downtown Bridgeport service area",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-73.198, 41.171],
+          [-73.177, 41.171],
+          [-73.177, 41.187],
+          [-73.198, 41.187],
+          [-73.198, 41.171]
+        ]]
+      }
+    }
+  ]
+}

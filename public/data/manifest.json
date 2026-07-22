@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:36:52.266Z",
-  "records": 613,
+  "generatedAt": "2026-07-22T03:37:34.324Z",
+  "records": 614,
   "states": [
     "AK",
     "AL",
@@ -60,6 +60,7 @@
     "Berkeley, CA",
     "Boise, ID",
     "Boston, MA",
+    "Bridgeport, CT",
     "Buffalo, NY",
     "Burbank, CA",
     "Burlingame, CA",
@@ -1521,11 +1522,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:36:52.266Z"
+    },
+    {
+      "id": "bridgeport-downtown-special-services-district",
+      "name": "Bridgeport Downtown Special Services District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:37:34.324Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 155,
-    "configuredSources": 168,
+    "verifiedJurisdictions": 156,
+    "configuredSources": 169,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
