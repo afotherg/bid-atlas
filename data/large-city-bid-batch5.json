@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 24,
+    "cities_researched": 25,
     "active_hits": 18,
-    "misses": 6,
-    "active_hit_rate_percent": 75.0,
+    "misses": 7,
+    "active_hit_rate_percent": 72.0,
     "result": "In progress."
   },
   "records": [
@@ -439,6 +439,23 @@
         "https://www.cityofmesquite.com/3533/Solterra-PID"
       ],
       "production_next_action": "Monitor PID annual plans for a shift to ongoing enhanced services or formation of a downtown or tourism assessment district; do not map capital-debt PIDs."
+    },
+    {
+      "rank": 25,
+      "census_rank": 181,
+      "city": "McAllen",
+      "state": "TX",
+      "population_2025": 150640,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Proposed downtown BID / Tres Lagos Public Improvement District (excluded)",
+      "summary": "No operating commercial place-management BID was verified in McAllen. The City's downtown plan recommended creating a business improvement district, but current planning and redevelopment materials do not show that it was formed. The active Tres Lagos PID finances maintenance and services for a master-planned residential development and is not a downtown, tourism, or commercial district-management BID.",
+      "official_sources": [
+        "https://www.mcallen.net/docs/default-source/planning-files/foresightmcallen.pdf",
+        "https://www.mcallen.net/docs/default-source/advisory-boards/planning/packets/march-3-2026-packet-.pdf?sfvrsn=2",
+        "https://www.mcallen.net/docs/default-source/finance/cafr/fiscal-year-2016.pdf?sfvrsn=2"
+      ],
+      "production_next_action": "Monitor the 2026 downtown redevelopment process for a formation petition, ordinance, assessment plan, or tourism PID; do not map Tres Lagos."
     }
   ]
 }
