@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 38,
+    "cities_researched": 39,
     "active_hits": 24,
-    "misses": 14,
-    "active_hit_rate_percent": 63.2,
+    "misses": 15,
+    "active_hit_rate_percent": 61.5,
     "result": "In progress."
   },
   "records": [
@@ -677,6 +677,23 @@
         "https://www.syr.gov/files/content/public/v/21/departments/budget/city-budget/2024-2025-budget_1.pdf"
       ],
       "production_next_action": "Production-ingested as generalized downtown and Crouse-Marshall assessment boundaries; replace with parcel-derived boundaries from the City's current property lists when practical."
+    },
+    {
+      "rank": 39,
+      "census_rank": 195,
+      "city": "Meridian",
+      "state": "ID",
+      "population_2025": 142988,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Proposed downtown Business Improvement District / Urban Renewal District (excluded)",
+      "summary": "No operating assessment-funded BID was verified in Meridian. In June 2026 the City and downtown businesses were still exploring a BID and had not completed the property-owner petition or City Council formation process. The existing Downtown Urban Renewal District uses tax-increment financing for redevelopment and sunsets in 2026; it is not a BID assessment or independent place-management levy.",
+      "official_sources": [
+        "https://cms.meridiancity.org/community-development/planning/long-range-planning/specific-and-subarea-plans/destination-downtown/",
+        "https://meridiandevelopmentcorp.com/districts/downtown-district/",
+        "https://meridiancity.org/community-development/planning/general-information-faq/downtown-meridian/"
+      ],
+      "production_next_action": "Monitor Council agendas for a signed BID petition, establishing ordinance, assessment formula, and service plan; do not map the Downtown Urban Renewal District or Destination Downtown planning area."
     }
   ]
 }
