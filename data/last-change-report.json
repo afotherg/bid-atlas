@@ -1,12 +1,12 @@
 {
-  "checkedAt": "2026-07-22T03:35:05.764Z",
+  "checkedAt": "2026-07-22T03:35:59.581Z",
   "summary": {
     "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ma-springfield-springfield-business-improvement-district"
+    "wa-bellevue-bellevue-redmond-tourism-promotion-area"
   ],
   "modified": [],
   "removed": [],
@@ -1316,6 +1316,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:35:05.764Z"
+    },
+    {
+      "id": "bellevue-redmond-tourism-promotion-area",
+      "name": "Bellevue-Redmond Tourism Promotion Area",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:35:59.581Z"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:35:05.764Z",
-  "records": 611,
+  "generatedAt": "2026-07-22T03:35:59.581Z",
+  "records": 612,
   "states": [
     "AK",
     "AL",
@@ -56,6 +56,7 @@
     "Austin, TX",
     "Baltimore, MD",
     "Baton Rouge, LA",
+    "Bellevue, WA",
     "Berkeley, CA",
     "Boise, ID",
     "Boston, MA",
@@ -1505,11 +1506,18 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:35:05.764Z"
+    },
+    {
+      "id": "bellevue-redmond-tourism-promotion-area",
+      "name": "Bellevue-Redmond Tourism Promotion Area",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:35:59.581Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 153,
-    "configuredSources": 166,
+    "verifiedJurisdictions": 154,
+    "configuredSources": 167,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {

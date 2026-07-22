@@ -1,0 +1,22 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bellevue-Redmond Tourism Promotion Area",
+        "sourceUrl": "https://bellevuewa.gov/city-government/departments/city-clerks-office/boards-and-commissions/bellevue-redmond-tourism-promotion-area-advisory-board",
+        "established": "2023",
+        "area": "Generalized Bellevue and Redmond lodging benefit zones",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [[[-122.215, 47.550], [-122.100, 47.550], [-122.100, 47.660], [-122.215, 47.660], [-122.215, 47.550]]],
+          [[[-122.165, 47.630], [-122.055, 47.630], [-122.055, 47.710], [-122.165, 47.710], [-122.165, 47.630]]]
+        ]
+      }
+    }
+  ]
+}
