@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 39,
+    "cities_researched": 40,
     "active_hits": 24,
-    "misses": 15,
-    "active_hit_rate_percent": 61.5,
+    "misses": 16,
+    "active_hit_rate_percent": 60.0,
     "result": "In progress."
   },
   "records": [
@@ -694,6 +694,23 @@
         "https://meridiancity.org/community-development/planning/general-information-faq/downtown-meridian/"
       ],
       "production_next_action": "Monitor Council agendas for a signed BID petition, establishing ordinance, assessment formula, and service plan; do not map the Downtown Urban Renewal District or Destination Downtown planning area."
+    },
+    {
+      "rank": 40,
+      "census_rank": 196,
+      "city": "Miramar",
+      "state": "FL",
+      "population_2025": 142570,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "No verified commercial or tourism assessment district",
+      "summary": "No operating assessment-funded commercial, downtown, or tourism improvement district was verified in Miramar. The City's similarly abbreviated BID program means Business Industry Development and supports procurement access for local and minority-owned firms; it is not a geographic assessment district. Current City financial, business-tax, planning, and economic-development materials do not identify a BID levy or independent place-management organization.",
+      "official_sources": [
+        "https://www.investmiramar.org/SupportPrograms/BID-Business-Industry-Development",
+        "https://www.miramarfl.gov/Departments/Financial-Services/Business-Tax-Occupational-Licenses",
+        "https://www.miramarfl.gov/files/assets/public/v/1/financeprocurement/documents/financial-services/acf-reports/annual-comprehensive-financial-report-for-2020.pdf"
+      ],
+      "production_next_action": "Monitor City Commission agendas for a geographic non-ad-valorem commercial assessment or hotel marketing district; do not confuse the Business Industry Development procurement program with a business improvement district."
     }
   ]
 }
