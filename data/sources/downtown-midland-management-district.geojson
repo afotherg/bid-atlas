@@ -1,0 +1,30 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Midland Management District",
+        "sourceUrl": "https://www.midlandtxedc.com/media/userfiles/subsite_15/files/industry/downtown/dmmd-service-improvement-plan-2010-2019.pdf",
+        "established": "2003",
+        "area": "Generalized downtown Midland legal boundary",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-102.0850, 31.9970],
+          [-102.0850, 32.0055],
+          [-102.0730, 32.0055],
+          [-102.0730, 32.0020],
+          [-102.0680, 32.0020],
+          [-102.0680, 31.9970],
+          [-102.0730, 31.9970],
+          [-102.0760, 31.9925],
+          [-102.0810, 31.9960],
+          [-102.0850, 31.9970]
+        ]]
+      }
+    }
+  ]
+}

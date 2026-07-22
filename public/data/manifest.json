@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:42:56.554Z",
-  "records": 618,
+  "generatedAt": "2026-07-22T03:45:24.794Z",
+  "records": 619,
   "states": [
     "AK",
     "AL",
@@ -126,6 +126,7 @@
     "Mesa, AZ",
     "Miami Beach, FL",
     "Miami, FL",
+    "Midland, TX",
     "Milwaukee, WI",
     "Minneapolis, MN",
     "Mobile, AL",
@@ -1553,15 +1554,22 @@
       "status": "ok",
       "records": 2,
       "checkedAt": "2026-07-22T03:42:56.554Z"
+    },
+    {
+      "id": "downtown-midland-management-district",
+      "name": "Downtown Midland Management District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:45:24.794Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 159,
-    "configuredSources": 172,
+    "verifiedJurisdictions": 160,
+    "configuredSources": 173,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 2,
+    "added": 1,
     "modified": 0,
     "removed": 0
   }
