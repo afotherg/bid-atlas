@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "City Center Business Improvement District",
+        "sourceUrl": "https://citycouncil.columbiasc.gov/wp-content/uploads/2021/01/Ordinance_2021_031_Establishing_City_Center_BID.pdf",
+        "assessment": "0.001844 per dollar of fair market value; supplemental Main Street frontage assessment",
+        "established": "2021",
+        "expires": "2031",
+        "area": "Generalized ordinance boundary: Assembly Street, Elmwood Avenue, Marion Street, and Gervais Street",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-81.0410, 33.9990], [-81.0410, 34.0130], [-81.0290, 34.0130], [-81.0290, 33.9990], [-81.0410, 33.9990]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vista Business Improvement District",
+        "sourceUrl": "https://citycouncil.columbiasc.gov/download/ordinance-no-2026-023/",
+        "assessment": "0.001844 per dollar of taxable value; supplemental Gervais and Lady Street frontage assessment",
+        "established": "2026",
+        "expires": "2036",
+        "area": "Generalized ordinance boundary west of Assembly Street to the Congaree River",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[-81.0410, 34.0065], [-81.0410, 33.9990], [-81.0440, 33.9965], [-81.0440, 33.9930], [-81.0505, 33.9930], [-81.0520, 34.0030], [-81.0460, 34.0065], [-81.0410, 34.0065]]]
+      }
+    }
+  ]
+}

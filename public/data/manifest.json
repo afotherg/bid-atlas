@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:45:24.794Z",
-  "records": 619,
+  "generatedAt": "2026-07-22T03:47:36.018Z",
+  "records": 621,
   "states": [
     "AK",
     "AL",
@@ -70,6 +70,7 @@
     "Cincinnati, OH",
     "Cleveland, OH",
     "Colorado Springs, CO",
+    "Columbia, SC",
     "Columbus, GA",
     "Columbus, OH",
     "Costa Mesa, CA",
@@ -1561,15 +1562,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:45:24.794Z"
+    },
+    {
+      "id": "columbia-sc-business-improvement-districts",
+      "name": "Columbia South Carolina Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-22T03:47:36.018Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 160,
-    "configuredSources": 173,
+    "verifiedJurisdictions": 161,
+    "configuredSources": 174,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   }

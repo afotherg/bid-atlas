@@ -1,12 +1,13 @@
 {
-  "checkedAt": "2026-07-22T03:45:24.794Z",
+  "checkedAt": "2026-07-22T03:47:36.018Z",
   "summary": {
-    "added": 1,
+    "added": 2,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "tx-midland-downtown-midland-management-district"
+    "sc-columbia-city-center-business-improvement-district",
+    "sc-columbia-vista-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1365,6 +1366,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:45:24.794Z"
+    },
+    {
+      "id": "columbia-sc-business-improvement-districts",
+      "name": "Columbia South Carolina Business Improvement Districts",
+      "status": "ok",
+      "records": 2,
+      "checkedAt": "2026-07-22T03:47:36.018Z"
     }
   ]
 }
