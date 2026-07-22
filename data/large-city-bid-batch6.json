@@ -20,10 +20,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped. Pasadena, California (Census rank 216) was skipped because its active districts are already represented."
   },
   "batch_summary": {
-    "cities_researched": 4,
+    "cities_researched": 5,
     "active_hits": 2,
-    "misses": 2,
-    "active_hit_rate_percent": 50.0,
+    "misses": 3,
+    "active_hit_rate_percent": 40.0,
     "result": "In progress."
   },
   "records": [
@@ -94,6 +94,23 @@
         "https://www.hampton.gov/4240/FY25-City-Council-Approved-Budget"
       ],
       "production_next_action": "Production-ingested as two generalized commercial benefit areas; replace with current tax-parcel boundaries when available."
+    },
+    {
+      "rank": 5,
+      "census_rank": 213,
+      "city": "Warren",
+      "state": "MI",
+      "population_2025": 137138,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Downtown Development Authority / proposed BID tool (excluded)",
+      "summary": "No operating special-assessment-funded BID or principal shopping district was verified in Warren. The active Downtown Development Authority uses a tax-increment-finance plan, and the Van Dyke corridor study recommends a BID as a possible future management framework rather than documenting formation or an assessment levy.",
+      "official_sources": [
+        "https://www.cityofwarren.org/boards-and-commissions/downtown-development-authority-dda/",
+        "https://www.cityofwarren.org/wp-content/uploads/2019/04/appendix-j-1.pdf",
+        "https://www.cityofwarren.org/departments/planning-department/"
+      ],
+      "production_next_action": "Monitor the Van Dyke corridor recommendation for a formation ordinance and first special assessment; do not map the DDA/TIF district."
     }
   ]
 }
