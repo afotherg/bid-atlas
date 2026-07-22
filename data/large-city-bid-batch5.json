@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 48,
+    "cities_researched": 49,
     "active_hits": 28,
-    "misses": 20,
-    "active_hit_rate_percent": 58.3,
+    "misses": 21,
+    "active_hit_rate_percent": 57.1,
     "result": "In progress."
   },
   "records": [
@@ -847,6 +847,23 @@
         "https://www.chapelwest.com/"
       ],
       "production_next_action": "Production-ingested as four generalized special-services benefit areas; replace each with current parcel-derived assessment boundaries when available."
+    },
+    {
+      "rank": 49,
+      "census_rank": 207,
+      "city": "Fullerton",
+      "state": "CA",
+      "population_2025": 138675,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Proposed business improvement district (not formed)",
+      "summary": "No operating assessment-funded BID was verified in Fullerton. The Downtown Game Plan proposed creating a BID or similar tool, and the City's recent fiscal-sustainability presentation explains BID formation as a possible revenue mechanism, but neither source documents an adopted formation resolution, assessment levy, management plan, or operating district. Downtown programs remain City- or association-supported rather than tied to a compulsory benefit assessment.",
+      "official_sources": [
+        "https://www.cityoffullerton.com/home/showpublisheddocument/100/637421389723800000",
+        "https://fullerton.legistar.com/View.ashx?GUID=E16AAF12-E06A-4DD5-8449-DA20A92139CA&ID=1243111&M=A",
+        "https://www.cityoffullerton.com/government/departments/community-and-economic-development/economic-development"
+      ],
+      "production_next_action": "Monitor for a City Council resolution of intention, management district plan, and first assessment levy; do not map the downtown planning area or voluntary business association."
     }
   ]
 }
