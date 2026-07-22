@@ -1,0 +1,28 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Downtown Syracuse Special Assessment District",
+        "website": "https://www.downtownsyracuse.com/",
+        "sourceUrl": "https://www.syr.gov/Departments/Assessment/Special-Business-Districts",
+        "established": "1975",
+        "area": "Generalized downtown area bounded by I-690, I-81, Adams Street, and Onondaga Creek",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-76.1620, 43.0370], [-76.1620, 43.0540], [-76.1430, 43.0540], [-76.1430, 43.0370], [-76.1620, 43.0370]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Crouse-Marshall Special Assessment District",
+        "sourceUrl": "https://www.syr.gov/Departments/Assessment/Special-Business-Districts",
+        "established": "2001",
+        "area": "Generalized Crouse Avenue and Marshall Street business area",
+        "status": "Active"
+      },
+      "geometry": {"type": "Polygon", "coordinates": [[[-76.1405, 43.0355], [-76.1405, 43.0445], [-76.1310, 43.0445], [-76.1310, 43.0355], [-76.1405, 43.0355]]]}
+    }
+  ]
+}
