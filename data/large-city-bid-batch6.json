@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "method": {
+    "population_source": "U.S. Census Bureau Vintage 2025 incorporated-place estimates",
+    "selection": "Next sixteen largest incorporated U.S. cities above 100,000 population not already represented by BID Atlas or included in the first five large-city batches",
+    "prior_batches": [
+      "data/large-city-bid-pilot.json",
+      "data/large-city-bid-batch2.json",
+      "data/large-city-bid-batch3.json",
+      "data/large-city-bid-batch4.json",
+      "data/large-city-bid-batch5.json"
+    ],
+    "ordered_cities": [
+      "Orange, CA", "Cedar Rapids, IA", "West Valley City, UT", "Hampton, VA",
+      "Warren, MI", "Dayton, OH", "Fargo, ND", "Kent, WA",
+      "Carrollton, TX", "Sterling Heights, MI", "Santa Clara, CA", "Abilene, TX",
+      "Norman, OK", "Columbia, MO", "Pearland, TX", "Clovis, CA"
+    ],
+    "active_hit_definition": "At least one currently operating assessment-funded BID or locally named legal equivalent supported by an official source",
+    "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped. Pasadena, California (Census rank 216) was skipped because its active districts are already represented."
+  },
+  "batch_summary": {
+    "cities_researched": 1,
+    "active_hits": 0,
+    "misses": 1,
+    "active_hit_rate_percent": 0.0,
+    "result": "In progress."
+  },
+  "records": [
+    {
+      "rank": 1,
+      "census_rank": 209,
+      "city": "Orange",
+      "state": "CA",
+      "population_2025": 138365,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Proposed downtown business improvement district (not formed)",
+      "summary": "No operating assessment-funded BID or tourism district was verified in Orange. City planning records proposed a self-funded downtown BID in the late 1990s, but current downtown cleaning, parking, economic-development, and event programs are procured or funded directly by the City and no formation resolution, management district plan, assessment levy, or active district operator was identified.",
+      "official_sources": [
+        "https://citydocs.cityoforange.org/WebLink/edoc/244054046/04-29-1997%20Council%20Minutes%20Adj%20Regular.pdf?dbid=0&repo=CityofOrange",
+        "https://www.cityoforange.org/business/economic-development",
+        "https://www.cityoforange.org/business/current-bids-proposals/-sortn-RFPNumber/-sortd-desc"
+      ],
+      "production_next_action": "Monitor for a current downtown or lodging assessment formation proceeding; do not map the historic district, downtown planning area, or City-funded service area."
+    }
+  ]
+}
