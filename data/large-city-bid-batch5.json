@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 47,
-    "active_hits": 27,
+    "cities_researched": 48,
+    "active_hits": 28,
     "misses": 20,
-    "active_hit_rate_percent": 57.4,
+    "active_hit_rate_percent": 58.3,
     "result": "In progress."
   },
   "records": [
@@ -830,6 +830,23 @@
         "https://www.csidfl.org/"
       ],
       "production_next_action": "Monitor for a downtown non-ad-valorem business assessment or lodging marketing district; do not map the CRA, zoning district, or water and drainage improvement district."
+    },
+    {
+      "rank": 48,
+      "census_rank": 204,
+      "city": "New Haven",
+      "state": "CT",
+      "population_2025": 138774,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Special Services District",
+      "summary": "New Haven has four active property-tax-supported Special Services Districts: Town Green, Chapel West, Grand Avenue, and Whalley Avenue. The Board of Alders imposed FY2025-26 municipal levies for all four districts. Their programs provide supplemental clean-and-safe work, marketing, events, placemaking, business support, economic development, landscaping, and corridor improvements.",
+      "official_sources": [
+        "https://newhaven-ct.legistar.com/MeetingDetail.aspx?GUID=6EF779B5-F971-496E-B628-CB0333C4087E&ID=1309175&Search=",
+        "https://www.downtownnewhaven.com/where-we-are",
+        "https://www.chapelwest.com/"
+      ],
+      "production_next_action": "Production-ingested as four generalized special-services benefit areas; replace each with current parcel-derived assessment boundaries when available."
     }
   ]
 }

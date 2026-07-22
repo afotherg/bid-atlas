@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-07-22T03:54:07.070Z",
-  "records": 632,
+  "generatedAt": "2026-07-22T03:55:49.561Z",
+  "records": 636,
   "states": [
     "AK",
     "AL",
@@ -141,6 +141,7 @@
     "Napa, CA",
     "Naperville, IL",
     "Nashville, TN",
+    "New Haven, CT",
     "New Orleans, LA",
     "New York, NY",
     "Newark, NJ",
@@ -1610,15 +1611,22 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:54:07.070Z"
+    },
+    {
+      "id": "new-haven-special-services-districts",
+      "name": "New Haven Special Services Districts",
+      "status": "ok",
+      "records": 4,
+      "checkedAt": "2026-07-22T03:55:49.561Z"
     }
   ],
   "coverage": {
-    "verifiedJurisdictions": 166,
-    "configuredSources": 179,
+    "verifiedJurisdictions": 167,
+    "configuredSources": 180,
     "nationalRegistryAvailable": false
   },
   "changeSummary": {
-    "added": 1,
+    "added": 4,
     "modified": 0,
     "removed": 0
   }

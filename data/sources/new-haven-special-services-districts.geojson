@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name":"Town Green Special Services District","website":"https://www.downtownnewhaven.com/","sourceUrl":"https://www.downtownnewhaven.com/where-we-are","established":"1996","area":"Generalized 27-block downtown benefit area","status":"Active"},
+      "geometry": {"type":"Polygon","coordinates":[[[-72.9360,41.2990],[-72.9360,41.3150],[-72.9180,41.3150],[-72.9180,41.2990],[-72.9360,41.2990]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Chapel West Special Services District","website":"https://www.chapelwest.com/","sourceUrl":"https://newhaven-ct.legistar.com/LegislationDetail.aspx?GUID=A9958AD6-A364-42FB-81CF-21CFB07D589C&ID=7264873&Options=&Search=","established":"1986","area":"Generalized Chapel Street and adjoining corridor benefit area","status":"Active"},
+      "geometry": {"type":"Polygon","coordinates":[[[-72.9580,41.2980],[-72.9580,41.3130],[-72.9300,41.3130],[-72.9300,41.2980],[-72.9580,41.2980]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Grand Avenue Special Services District","sourceUrl":"https://library.municode.com/CT/New_Haven/codes/code_of_ordinances?nodeId=TITIIICOGEOR_CH37GRAVSPSEDI_S37-15COSE","established":"2009","area":"Generalized Grand Avenue commercial corridor","status":"Active"},
+      "geometry": {"type":"Polygon","coordinates":[[[-72.9280,41.3000],[-72.9280,41.3160],[-72.8880,41.3160],[-72.8880,41.3000],[-72.9280,41.3000]]]}
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Whalley Avenue Special Services District","sourceUrl":"https://newhaven-ct.legistar.com/MeetingDetail.aspx?GUID=6EF779B5-F971-496E-B628-CB0333C4087E&ID=1309175&Search=","area":"Generalized Whalley Avenue commercial corridor","status":"Active"},
+      "geometry": {"type":"Polygon","coordinates":[[[-72.9620,41.3090],[-72.9620,41.3260],[-72.9290,41.3260],[-72.9290,41.3090],[-72.9620,41.3090]]]}
+    }
+  ]
+}

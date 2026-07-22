@@ -1,12 +1,15 @@
 {
-  "checkedAt": "2026-07-22T03:54:07.070Z",
+  "checkedAt": "2026-07-22T03:55:49.561Z",
   "summary": {
-    "added": 1,
+    "added": 4,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ct-stamford-stamford-downtown-special-services-district"
+    "ct-new-haven-chapel-west-special-services-district",
+    "ct-new-haven-grand-avenue-special-services-district",
+    "ct-new-haven-town-green-special-services-district",
+    "ct-new-haven-whalley-avenue-special-services-district"
   ],
   "modified": [],
   "removed": [],
@@ -1407,6 +1410,13 @@
       "status": "ok",
       "records": 1,
       "checkedAt": "2026-07-22T03:54:07.070Z"
+    },
+    {
+      "id": "new-haven-special-services-districts",
+      "name": "New Haven Special Services Districts",
+      "status": "ok",
+      "records": 4,
+      "checkedAt": "2026-07-22T03:55:49.561Z"
     }
   ]
 }
