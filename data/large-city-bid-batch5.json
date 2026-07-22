@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 17,
-    "active_hits": 12,
+    "cities_researched": 18,
+    "active_hits": 13,
     "misses": 5,
-    "active_hit_rate_percent": 70.6,
+    "active_hit_rate_percent": 72.2,
     "result": "In progress."
   },
   "records": [
@@ -320,6 +320,23 @@
         "https://www.lakewoodco.gov/Local-Government/Departments/Sustainability-and-Community-Development/Comprehensive-Planning-Main/West-Colfax-Avenue-West-Rail-Line"
       ],
       "production_next_action": "Production-ingested as two generalized commercial corridor assessment boundaries."
+    },
+    {
+      "rank": 18,
+      "census_rank": 174,
+      "city": "Sunnyvale",
+      "state": "CA",
+      "population_2025": 156577,
+      "result": "active_hit",
+      "active_hit": true,
+      "local_term": "Business Improvement District",
+      "summary": "The Downtown Sunnyvale Business Improvement District is an active business-based assessment district administered by the Sunnyvale Downtown Association. The City renewed the BID for FY2026/27 with roughly 271 businesses across three benefit zones and a projected $35,000 in assessment collections supporting marketing, events, visitor attraction, beautification, signage, and district administration.",
+      "official_sources": [
+        "https://sunnyvaleca.legistar.com/View.ashx?GUID=CDA40248-274C-44D6-9E5C-323FA1D81413&ID=15296663&M=F",
+        "https://ecode360.com/42711031",
+        "https://www.sunnyvale.ca.gov/business-and-development/projects-in-sunnyvale/development-projects/downtown-development"
+      ],
+      "production_next_action": "Production-ingested as a generalized three-zone downtown business-assessment footprint."
     }
   ]
 }
