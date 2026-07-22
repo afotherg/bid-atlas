@@ -25,10 +25,10 @@
     "notes": "Candidate discovery and production boundary ingestion are performed together where an active district is verified. TIF-only, CRA-only, entertainment, residential, and capital-infrastructure districts are excluded. Cities already represented by a mapped district were skipped."
   },
   "batch_summary": {
-    "cities_researched": 25,
+    "cities_researched": 26,
     "active_hits": 18,
-    "misses": 7,
-    "active_hit_rate_percent": 72.0,
+    "misses": 8,
+    "active_hit_rate_percent": 69.2,
     "result": "In progress."
   },
   "records": [
@@ -456,6 +456,23 @@
         "https://www.mcallen.net/docs/default-source/finance/cafr/fiscal-year-2016.pdf?sfvrsn=2"
       ],
       "production_next_action": "Monitor the 2026 downtown redevelopment process for a formation petition, ordinance, assessment plan, or tourism PID; do not map Tres Lagos."
+    },
+    {
+      "rank": 26,
+      "census_rank": 182,
+      "city": "Olathe",
+      "state": "KS",
+      "population_2025": 150025,
+      "result": "miss",
+      "active_hit": false,
+      "local_term": "Community Improvement Districts / proposed downtown BID (excluded)",
+      "summary": "No operating assessment-funded place-management BID was verified in Olathe. Older downtown design guidance proposed a BID for maintenance and organization, but the City's current downtown program relies on municipal grants, tax rebates, planning, and events. Olathe's active Community Improvement District mechanism reimburses eligible commercial development project costs through special sales taxes or assessments rather than funding an independent clean, safe, marketing, or district-management organization.",
+      "official_sources": [
+        "https://www.olatheks.gov/residents/community-resources/downtown-olathe",
+        "https://www.olatheks.gov/government/economic-development/economic-incentive-programs/community-improvement-districts",
+        "https://olatheks.legistar.com/LegislationDetail.aspx?GUID=69BADBF1-780B-460C-83A8-77B5C725E8A1&ID=7641339&Options=&Search="
+      ],
+      "production_next_action": "Monitor downtown implementation and CID plans for an ongoing place-management assessment; do not map project-reimbursement CIDs or the downtown zoning district."
     }
   ]
 }
