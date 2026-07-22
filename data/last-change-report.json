@@ -1,15 +1,12 @@
 {
-  "checkedAt": "2026-07-22T03:55:49.561Z",
+  "checkedAt": "2026-07-22T03:59:29.161Z",
   "summary": {
-    "added": 4,
+    "added": 1,
     "modified": 0,
     "removed": 0
   },
   "added": [
-    "ct-new-haven-chapel-west-special-services-district",
-    "ct-new-haven-grand-avenue-special-services-district",
-    "ct-new-haven-town-green-special-services-district",
-    "ct-new-haven-whalley-avenue-special-services-district"
+    "ca-torrance-torrance-tourism-business-improvement-district"
   ],
   "modified": [],
   "removed": [],
@@ -1417,6 +1414,13 @@
       "status": "ok",
       "records": 4,
       "checkedAt": "2026-07-22T03:55:49.561Z"
+    },
+    {
+      "id": "torrance-tourism-business-improvement-district",
+      "name": "Torrance Tourism Business Improvement District",
+      "status": "ok",
+      "records": 1,
+      "checkedAt": "2026-07-22T03:59:29.161Z"
     }
   ]
 }

@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Torrance Tourism Business Improvement District",
+        "website": "https://discovertorrance.com/",
+        "sourceUrl": "https://www.torranceca.gov/home/showpublisheddocument/16827/636353618089700000",
+        "assessment": "1% of taxable room revenue for lodging businesses with more than 50 rooms",
+        "established": "2009",
+        "area": "Generalized selective-lodging benefit zone within Torrance",
+        "status": "Active"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-118.405, 33.795],
+          [-118.285, 33.795],
+          [-118.285, 33.890],
+          [-118.405, 33.890],
+          [-118.405, 33.795]
+        ]]
+      }
+    }
+  ]
+}
