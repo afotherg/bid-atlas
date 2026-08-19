@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-08-18T13:57:02.548Z",
+  "discoveredAt": "2026-08-19T13:57:16.268Z",
   "reviewRequired": true,
   "candidates": [
     {
@@ -25,6 +25,20 @@
       "landingPage": "https://data.hartford.gov/datasets/hartfordgis::business-improvement-district",
       "format": "ArcGIS GeoServices REST API",
       "url": "https://utility.arcgis.com/usrsvcs/servers/6a56d47e99be48fe960dc65a6765bc71/rest/services/OpenData_Housing_Development/MapServer/1"
+    },
+    {
+      "dataset": "Business Improvement District (BID) Trends Report (FY24)",
+      "publisher": "data.cityofnewyork.us",
+      "modified": "2025-09-30",
+      "landingPage": "https://data.cityofnewyork.us/d/hzd8-k2vv",
+      "url": "https://data.cityofnewyork.us/api/v3/views/hzd8-k2vv/query.json?accessType=DOWNLOAD"
+    },
+    {
+      "dataset": "Business Improvement District (BID) Trends Report (FY24)",
+      "publisher": "data.cityofnewyork.us",
+      "modified": "2025-09-30",
+      "landingPage": "https://data.cityofnewyork.us/d/hzd8-k2vv",
+      "url": "https://data.cityofnewyork.us/api/v3/views/hzd8-k2vv/export.csv?accessType=DOWNLOAD"
     },
     {
       "dataset": "Business Improvement Districts",
