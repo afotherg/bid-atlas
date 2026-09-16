@@ -1,5 +1,5 @@
 {
-  "discoveredAt": "2026-09-15T17:40:27.416Z",
+  "discoveredAt": "2026-09-16T17:37:45.101Z",
   "reviewRequired": true,
   "candidates": [
     {
@@ -43,7 +43,7 @@
     {
       "dataset": "Business Improvement Districts",
       "publisher": "City of Washington, DC",
-      "modified": "2026-03-27T00:00:00.000Z",
+      "modified": "2026-09-11T00:00:00.000Z",
       "landingPage": "https://opendata.dc.gov/datasets/DCGIS::business-improvement-districts",
       "format": "ArcGIS GeoServices REST API",
       "url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Betterment_Areas_WebMercator/MapServer/15"
@@ -51,7 +51,7 @@
     {
       "dataset": "Business Improvement Districts",
       "publisher": "City of Washington, DC",
-      "modified": "2026-03-27T00:00:00.000Z",
+      "modified": "2026-09-11T00:00:00.000Z",
       "landingPage": "https://opendata.dc.gov/datasets/DCGIS::business-improvement-districts",
       "format": "CSV",
       "url": "https://opendata.dc.gov/api/download/v1/items/20ec5862d8f14bcbb9bf14f79c311406/csv?layers=15"
@@ -59,7 +59,7 @@
     {
       "dataset": "Business Improvement Districts",
       "publisher": "City of Washington, DC",
-      "modified": "2026-03-27T00:00:00.000Z",
+      "modified": "2026-09-11T00:00:00.000Z",
       "landingPage": "https://opendata.dc.gov/datasets/DCGIS::business-improvement-districts",
       "format": "GeoJSON",
       "url": "https://opendata.dc.gov/api/download/v1/items/20ec5862d8f14bcbb9bf14f79c311406/geojson?layers=15"
