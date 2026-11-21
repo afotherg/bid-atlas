@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-20T21:05:49.950Z",
+  "checkedAt": "2026-11-21T20:06:14.039Z",
   "summary": {
     "added": 0,
     "modified": 0,
@@ -14,28 +14,28 @@
       "name": "New York City Business Improvement Districts",
       "status": "ok",
       "records": 76,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "sf-community-benefit-districts",
       "name": "San Francisco Community Benefit Districts",
       "status": "ok",
       "records": 16,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "san-diego-bids",
       "name": "San Diego Business Improvement Districts",
       "status": "ok",
       "records": 18,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "los-angeles-bids",
       "name": "Los Angeles Business Improvement Districts",
       "status": "error",
       "records": 38,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "No usable geographic features returned",
       "retainedPrevious": true
     },
@@ -44,44 +44,44 @@
       "name": "Stockton Downtown and Miracle Mile Improvement Districts",
       "status": "review",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "795a51f4f7dc0884dd6919d9eb775a97577568bda20f40f7af28e53851b90c76",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "521d537e3cf0253a1458df3e9bec68f64cbee74f25269a33d860b46b1fa65396",
       "legislationChanged": true
     },
     {
       "id": "stockton-tourism-business-improvement-district",
       "name": "Stockton Tourism Business Improvement District",
-      "status": "error",
+      "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "error": "fetch failed",
-      "retainedPrevious": true
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "661c0f5759f12f59b21a2a2e5ebfc0cc3b48212e2d74c6a0b0e46a061ec06da3",
+      "legislationChanged": false
     },
     {
       "id": "riverside-business-improvement-districts",
       "name": "Riverside Business Improvement Districts",
       "status": "review",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "92df3b8437aca3e1b6ab982c4b2de9f46216005aeae871e69bb4d49c3da8894d",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "f157682e74798af63022dbca75a72f2ee6eb6b99d3c96085702e9f793d7964f0",
       "legislationChanged": true
     },
     {
       "id": "palm-springs-small-hotel-tourism-business-improvement-district",
       "name": "Palm Springs Small Hotel Tourism Business Improvement District",
-      "status": "ok",
+      "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "a6706558630bfce4ec60f7281a155bfb8dcf480d28a79c430965bc23ba02f386",
-      "legislationChanged": false
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "ca27818b33c64fb046311b08e52a0dd1e1badec8da687c0442ecbe1f242edca1",
+      "legislationChanged": true
     },
     {
       "id": "downtown-merced-property-based-improvement-district",
       "name": "Downtown Merced Property-Based Improvement District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "d58039738f384bceb9da3470bc61f629082a4fd528b12fd7bdbdba4807271c51",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "6de71fe39c995dec0692dd18ffaf3df2bcdbd59aeec93125c19bf0f77e89edb5",
       "legislationChanged": true
     },
     {
@@ -89,8 +89,8 @@
       "name": "Downtown Napa Property and Business Improvement District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "dbb72c7f9c16e73e904001ccfc6c7caa1d172fee26a4542ee46227d0d91c3302",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "e0445fab78df8dc14c6413a0ee4822c0a961f0793c6ca7b83de140c83e47e922",
       "legislationChanged": true
     },
     {
@@ -98,8 +98,8 @@
       "name": "Downtown Fresno Property and Business Improvement District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "181b78d8365b8c898450accf6488114d0ac3061904b217dd16b7b04d1a237b0c",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "7569d22a3bbdfb7fb2fbb619cbae1427c8abee49a806d2d4b67b4020a6073998",
       "legislationChanged": true
     },
     {
@@ -107,7 +107,7 @@
       "name": "Santa Monica Property-Based Assessment Districts",
       "status": "error",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "Monitor HTTP 503: https://publicdocs.smgov.net/WebLink/edoc/3527960/SR%2007-25-2023%2011A.pdf?dbid=0&repo=SMGOV",
       "retainedPrevious": true
     },
@@ -116,67 +116,67 @@
       "name": "Santa Monica Business Improvement Districts",
       "status": "ok",
       "records": 5,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "oakland-business-improvement-districts",
       "name": "Oakland Business Improvement Districts",
       "status": "ok",
       "records": 10,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "san-jose-business-improvement-districts",
       "name": "San Jose Business and Community Benefit Districts",
       "status": "ok",
       "records": 13,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "san-jose-downtown-property-based-improvement-district",
       "name": "San Jose Downtown Property-Based Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "long-beach-merchant-business-improvement-districts",
       "name": "Long Beach Merchant Business Improvement Districts",
       "status": "ok",
       "records": 5,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "long-beach-property-business-improvement-districts",
       "name": "Long Beach Property Business Improvement Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "anaheim-tourism-improvement-district",
       "name": "Anaheim Tourism Improvement District",
       "status": "error",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "Monitor HTTP 403: https://www.anaheim.net/DocumentCenter/View/68170/First-Amended-and-Restated-ATID-Management-Plan",
       "retainedPrevious": true
     },
     {
       "id": "garden-grove-tourism-improvement-district",
       "name": "Garden Grove Tourism Improvement District",
-      "status": "ok",
+      "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "759b18b77312d0689a4b697604fa7d1afb1d83d108869b076336dd1839b2fc42",
-      "legislationChanged": false
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "6cafd4de186feed66d11cc801fd38898aa51c073d036a619bc13cab900facd40",
+      "legislationChanged": true
     },
     {
       "id": "costa-mesa-tourism-promotion-business-improvement-area",
       "name": "Costa Mesa Tourism and Promotion Business Improvement Area",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "7051cc1ac36a79c1edfe7e263e5c1219b5b335789dc2691dba24ddf4b427b3c3",
       "legislationChanged": false
     },
@@ -185,8 +185,8 @@
       "name": "Dana Point Tourism Business Improvement District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "dad16f3abc0b9fb8ce98f51928f59992541ad6b78594f450006bd07573e07dd8",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "253a09852912d3ff5b7108098958c530b53e5f5ca935b71720e0d5950183a70f",
       "legislationChanged": true
     },
     {
@@ -194,8 +194,8 @@
       "name": "Huntington Beach Downtown Business Improvement District",
       "status": "review",
       "records": 9,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "d7453731246325e4c73665f9cbea6cf1d5d14816eeb99ff79e5c685e34b16aa9",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "7a78c8e6b7e936fb0e22e6781137ff587ab0d457eee359782cd4ef8868e12eac",
       "legislationChanged": true
     },
     {
@@ -203,26 +203,26 @@
       "name": "Huntington Beach Tourism Business Improvement District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "f99d08e81eaec2c00ad6864afdecf6d3eb5de9b585b234f662ef8a6276182747",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "65dd047bc4f0845f82f22f623c155bdcae0fe31e8356603dd0d6455d683af06e",
       "legislationChanged": true
     },
     {
       "id": "laguna-beach-tourism-marketing-district",
       "name": "Laguna Beach Tourism Marketing District",
-      "status": "ok",
+      "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "c273701273fa29832a36365b5e8c3a2c3852639e394508af86c14aab7d155487",
-      "legislationChanged": false
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "2b19e6ab86a8fcbfb2f37f6913ec979c7a031f54ce9798e4792d143d688f3bf2",
+      "legislationChanged": true
     },
     {
       "id": "manhattan-beach-business-improvement-districts",
       "name": "Manhattan Beach Business Improvement Districts",
       "status": "review",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "10e9bca746bcbb15571e1a9ccbbf5cc7b117497c5c5db26e6ce3936ca9c826fe",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "41aab094500823e39036ae773f85f2f807f04f7ab605c2582f3bc9170f52c935",
       "legislationChanged": true
     },
     {
@@ -230,7 +230,7 @@
       "name": "Burlingame Business Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "d8941b46248b971319d5fd2d8f141beef1c34c2f89c9c4024145518b34c14b79",
       "legislationChanged": false
     },
@@ -239,7 +239,7 @@
       "name": "Downtown San Mateo Business Improvement Area",
       "status": "error",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "Monitor HTTP 404: https://www.cityofsanmateo.org/DocumentCenter/View/2695/ORDINANCE-NO-2008-07?bidId=",
       "retainedPrevious": true
     },
@@ -248,8 +248,8 @@
       "name": "Downtown Redwood City Community Benefit Improvement District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "0c5c22cfe17fc3f46359ec4cccf14d22f74a48a0aeec0e6dbaf6abbfc432e304",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "19e9515060ccd9ce3ca432d239e1b88d384f665fe7cbeee9717e451c29f3a3d6",
       "legislationChanged": true
     },
     {
@@ -257,7 +257,7 @@
       "name": "Downtown Santa Cruz Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "eb2287bce4301dec3348a7d608244c962ae95232edddc8d1a60b9fb3186c9cb1",
       "legislationChanged": false
     },
@@ -266,7 +266,7 @@
       "name": "Midtown Santa Cruz Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "3c48081a97daf6369f332356f551a5f26abec937b87e0eebb8a742876a35da2c",
       "legislationChanged": false
     },
@@ -275,128 +275,130 @@
       "name": "Pasadena Property-Based Improvement Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "pasadena-tourism-business-improvement-district",
       "name": "Pasadena Tourism Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "sacramento-property-business-improvement-districts",
       "name": "Sacramento Property and Business Improvement Districts",
       "status": "ok",
       "records": 26,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "sacramento-business-improvement-districts-areas",
       "name": "Sacramento Business Improvement Districts and Areas",
       "status": "ok",
       "records": 13,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "berkeley-downtown-north-shattuck-business-improvement-districts",
       "name": "Berkeley Downtown and North Shattuck Business Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "berkeley-elmwood-business-improvement-district",
       "name": "Elmwood Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "berkeley-solano-avenue-business-improvement-district",
       "name": "Solano Avenue Business Improvement District",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "berkeley-telegraph-property-based-business-improvement-district",
       "name": "Telegraph Property-Based Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "berkeley-tourism-business-improvement-district",
       "name": "Berkeley Tourism Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "west-hollywood-business-improvement-districts",
       "name": "West Hollywood Business Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "west-hollywood-tourism-improvement-district",
       "name": "West Hollywood Tourism Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "denver-business-improvement-districts",
       "name": "Denver Business Improvement Districts",
       "status": "ok",
       "records": 12,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "downtown-reno-bid",
       "name": "Downtown Reno Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "dc-business-improvement-districts",
       "name": "Washington, DC Business Improvement Districts",
       "status": "ok",
       "records": 13,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "hartford-business-improvement-district",
       "name": "Hartford Business Improvement District",
       "status": "ok",
       "records": 60,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "baltimore-community-benefit-districts",
       "name": "Baltimore Community Benefits Districts",
       "status": "error",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "fetch failed",
       "retainedPrevious": true
     },
     {
       "id": "baltimore-downtown-management-district",
       "name": "Baltimore Downtown Management District",
-      "status": "ok",
+      "status": "error",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "error": "Unexpected token '<', \"\r\n\r\n<!DOCTYPE \"... is not valid JSON",
+      "retainedPrevious": true
     },
     {
       "id": "baltimore-legislated-districts",
       "name": "Baltimore Legislated Special Benefits Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "fa97c6ca423596f6a1b7538bca6e249ba6ce7122e041756aac98230f52e47242",
       "legislationChanged": false
     },
@@ -405,7 +407,7 @@
       "name": "Florida Verified Business Improvement Districts",
       "status": "ok",
       "records": 6,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "a845207052b00e4c1ce69312685a0c9ca7726331b71a505d94899a3fbf0ab702",
       "legislationChanged": false
     },
@@ -414,7 +416,7 @@
       "name": "Georgia Verified Business Improvement Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "06b2142bae85363f91b4315cccfe5fc7fd85bc79a6979fc05334d56553a6fa25",
       "legislationChanged": false
     },
@@ -423,7 +425,7 @@
       "name": "Hawaii Verified Business Improvement Districts",
       "status": "ok",
       "records": 5,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "04d168a80a7f0637f979b9d37155699d3af9f9d4235e41d5bd56a6190c2b55f4",
       "legislationChanged": false
     },
@@ -432,7 +434,7 @@
       "name": "Idaho Verified Business Improvement Districts",
       "status": "error",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "Monitor HTTP 403: https://www.cityofnampa.us/1253/Business-Improvement-District",
       "retainedPrevious": true
     },
@@ -441,8 +443,8 @@
       "name": "Whittier Uptown Improvement Districts",
       "status": "review",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "402460f49a3772b26415d9003ab12bea2245a690b8fbdebafec59d90a9d23af6",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "6a3d6cbb724d7cbce79eeffd0ddfd64853049c5a6336423185208ffc500d74cb",
       "legislationChanged": true
     },
     {
@@ -450,7 +452,7 @@
       "name": "Burbank Business Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "a3b9813f1528055bbb38c4729415e01a6bd70f2b0e6311bbbfa23735099770fb",
       "legislationChanged": false
     },
@@ -459,8 +461,8 @@
       "name": "Glendale Business Improvement Districts",
       "status": "review",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "e9db79d620646961b502447cd8fcc5f69e86eedb7299cd1ad7b7d60a9f2ff06c",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "14c255b9a248880ac7f8032819994da0ff8712eef1f66517c83d6fa3c49bb95c",
       "legislationChanged": true
     },
     {
@@ -468,8 +470,8 @@
       "name": "South Gate Parking and Business Improvement Area",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "39860b16794ef4d47cc9da992eaa6a6f4c7bbda6092db17a814e45dacecbd6fa",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "7d7371f777145550a9a5ec879110bd3353bbc8b5e82ebb34d7605f28aaae00c4",
       "legislationChanged": true
     },
     {
@@ -477,26 +479,26 @@
       "name": "Lynwood Parking and Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "3674c90aa0128acd7dd9893e37e9c843f7ade6d0a23200757516c1be4d38a27a",
       "legislationChanged": false
     },
     {
       "id": "monrovia-old-town-business-improvement-district",
       "name": "Monrovia Old Town Business Improvement District",
-      "status": "ok",
+      "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "d468927dfdd468018dad826b28ce5e278b33e105232c00be1a80ea5b3dd91b4c",
-      "legislationChanged": false
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "55e74468414de8e7a2bd4bebd35c059dfbfcf5cfc5f3d9b138c4506663e7a5d3",
+      "legislationChanged": true
     },
     {
       "id": "downtown-downey-community-benefit-district",
       "name": "Downtown Downey Community Benefit District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "c355dd032334d38f4a66da9ec5c1af846d07a19a4382ca2a2c2f500e594df0e4",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "abedc4cbda305997c8488f510e227f3eaaec6f880db07253771659885dbd5b42",
       "legislationChanged": true
     },
     {
@@ -504,8 +506,8 @@
       "name": "Culver City Business Improvement Districts",
       "status": "review",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "78d609113abfb0405c01ed5f1390f2997644da955a52af70f8760415ea68f921",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "7aa6974be79a76fb59f94568b8e391a1b8c9ab806435f91d3738c5b3517cb91c",
       "legislationChanged": true
     },
     {
@@ -513,8 +515,8 @@
       "name": "Downtown Pomona Property and Business Improvement District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "a2b0c0731fc440fc08218572fc72da71b457e535d730e48e57c369b6ad9a13c4",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "ed6075af7465b251fa9239aaf6a8b23d6b0f8737fbbd32b9525462f6aa5f8df1",
       "legislationChanged": true
     },
     {
@@ -522,7 +524,7 @@
       "name": "Glendora Village Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "9859f80d935c136f5337fe53b924effcc2050b88e13d55f5fabc3353f1698d2a",
       "legislationChanged": false
     },
@@ -531,8 +533,8 @@
       "name": "Apple Valley Village Property and Business Improvement District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "95ed4797284464570456d1db442ceab919456a994d90998cf0453435bc1b41dc",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "91229c087523fa17b4f7a0c8f2e5b9f26f9c8d15611add5e9f3245ad4f4cfa35",
       "legislationChanged": true
     },
     {
@@ -540,8 +542,8 @@
       "name": "Downtown Ontario Community Benefit District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "23ba54af5ca70f261503ffa88aba0b0a4e510fed8b04bed2fbdf815fa5541cbd",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "bb97d8f0ae57bdc7ed4b1518bfb28dc1d1bcc9d2f499c4a5c7a097ac82e4823a",
       "legislationChanged": true
     },
     {
@@ -549,8 +551,8 @@
       "name": "Greater Ontario Tourism Marketing District",
       "status": "review",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "7a8ff95c5bd4f612d4d903f4e4964f1c50a8a19d0e0eaddce9d431adec11586b",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "7a33f904156961371ebc9ad89df36cf9ac185ee5cec7561af42748e2aaf93a3a",
       "legislationChanged": true
     },
     {
@@ -558,8 +560,8 @@
       "name": "Washington Automated Business Improvement District Candidates",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "d007e812345c5697da0a9b64451477df43372b04a8040fa1ecb9428e38870637",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "8c7726f21c42e2345d125b14a2a99ca94e23eb3227939a1e599a8c56e4147f7c",
       "legislationChanged": true
     },
     {
@@ -567,7 +569,7 @@
       "name": "Columbus Verified Special Improvement Districts",
       "status": "error",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "Monitor HTTP 404: https://www.columbus.gov/files/sharedassets/city/v/1/city-council/documents/city-bulletins/2025/bulletin20250607.pdf",
       "retainedPrevious": true
     },
@@ -576,28 +578,28 @@
       "name": "Dallas Public Improvement Districts",
       "status": "ok",
       "records": 16,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "fort-worth-public-improvement-districts",
       "name": "Fort Worth Public Improvement Districts",
       "status": "ok",
       "records": 13,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "charlotte-municipal-service-districts",
       "name": "Charlotte Municipal Service Districts",
       "status": "ok",
       "records": 9,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "phoenix-downtown-enhanced-municipal-services-district",
       "name": "Phoenix Downtown Enhanced Municipal Services District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "7a02051ea346c0ede687b298e276154d939596e8c361d19c95ccd3eced5f71e1",
       "legislationChanged": false
     },
@@ -606,7 +608,7 @@
       "name": "San Antonio Downtown Public Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "2261f0995441fa05a15e8294e808fb55b7c9b6c5444768b904f1be9a202283ea",
       "legislationChanged": false
     },
@@ -615,14 +617,14 @@
       "name": "Philadelphia Business Improvement Districts",
       "status": "ok",
       "records": 15,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "houston-management-improvement-districts",
       "name": "Houston Management and Improvement Districts",
       "status": "error",
       "records": 45,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "HTTP 404",
       "retainedPrevious": true
     },
@@ -631,8 +633,8 @@
       "name": "Austin Maintenance and Operations Public Improvement Districts",
       "status": "review",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "edc440df3f72ffabcc957d581900989b7720bea83ee81bd37978b01c1f3f5dd4",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "8107949b7e90297d00d4501f5a38249817bd7aa9079322764fba1cc5ba679c0d",
       "legislationChanged": true
     },
     {
@@ -640,36 +642,36 @@
       "name": "Indianapolis Economic Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "indianapolis-downtown-economic-enhancement-district",
       "name": "Downtown Indianapolis Economic Enhancement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "seattle-business-improvement-areas",
       "name": "Seattle Business Improvement Areas",
       "status": "ok",
       "records": 12,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "nashville-business-improvement-districts",
       "name": "Nashville Business Improvement Districts",
       "status": "ok",
       "records": 4,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "oklahoma-city-business-improvement-districts",
       "name": "Oklahoma City Business Improvement Districts",
       "status": "review",
       "records": 6,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "119482f63e278289937b59020e754cc7d42720abdbab62a16bd65bdd83132e46",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "e6f79a27bd1cf077e5bfc52ac32bc9e6129276a4011d87c25cea5952bcb1e421",
       "legislationChanged": true
     },
     {
@@ -677,8 +679,8 @@
       "name": "El Paso Downtown Management District",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "17a74cd2935b52f9153f6cccfabe6c5e1922c7567bebd42d92a34068514c236e",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "dca1374d6b565cfc706cabdeee49457b3308d74ef8f2b919c272a71ceb259264",
       "legislationChanged": true
     },
     {
@@ -686,102 +688,98 @@
       "name": "Downtown Boston Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "boston-greenway-business-improvement-district",
       "name": "Greenway Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "boston-newmarket-business-improvement-district",
       "name": "Newmarket Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "detroit-downtown-business-improvement-zone",
       "name": "Downtown Detroit Business Improvement Zone",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "detroit-neighborhood-business-improvement-zones",
       "name": "Detroit Neighborhood Business Improvement Zones",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "louisville-downtown-management-district",
       "name": "Louisville Downtown Management District",
-      "status": "error",
+      "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "error": "fetch failed",
-      "retainedPrevious": true
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "greater-louisville-lodging-management-district",
       "name": "Greater Louisville Lodging Management District",
-      "status": "error",
+      "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "error": "fetch failed",
-      "retainedPrevious": true
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "portland-enhanced-services-districts",
       "name": "Portland Enhanced Services Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "milwaukee-business-improvement-districts",
       "name": "Milwaukee Business Improvement Districts",
       "status": "ok",
       "records": 33,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "atlanta-community-improvement-districts",
       "name": "Atlanta Community Improvement Districts",
       "status": "ok",
       "records": 8,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "raleigh-municipal-service-districts",
       "name": "Raleigh Municipal Service Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "minneapolis-special-service-districts",
       "name": "Minneapolis Special Service Districts",
       "status": "ok",
       "records": 16,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "richmond-special-assessment-districts",
       "name": "Richmond Special Assessment Districts",
       "status": "ok",
       "records": 6,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "anchorage-ak-verified-districts",
       "name": "Anchorage Verified Business Improvement Districts",
       "status": "error",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "Monitor HTTP 404: https://www.muni.org/Departments/finance/treasury/PropTax/pages/downtownimprovementdistrictassessment.aspx",
       "retainedPrevious": true
     },
@@ -790,8 +788,8 @@
       "name": "Arlington Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "cbbf2b98c04998ac05d7cb9b808ea907970aab11994a3e7f3d61c2de42acb3d1",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "9b84c59c475a89b6989484debc48cfe7d63bc1c68209d9f2503297bfa731323d",
       "legislationChanged": true
     },
     {
@@ -799,7 +797,7 @@
       "name": "Buffalo Verified Business Improvement Districts",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "727a5b31caa32af3629d831a47ee20d421102b08e029ba0faaef228f82278a88",
       "legislationChanged": false
     },
@@ -808,8 +806,8 @@
       "name": "Cincinnati Verified Business Improvement Districts",
       "status": "review",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "637148945d7f5bc2fb43b3b3fc941e480712dca985c1b7ff66a60325858a9b2b",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "377ebdcb04669b88db4fc54ca4bbca40b3cc5c92c1de2cd05510bd53fd42373e",
       "legislationChanged": true
     },
     {
@@ -817,8 +815,8 @@
       "name": "Cleveland Verified Business Improvement Districts",
       "status": "review",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "f742df5ef64cf41030443925c21189b71d7745e6706c3fede846fc382a00e267",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "df2d256af2f7307527234035c3dfdb1861615c1312b987502220d972a720f78e",
       "legislationChanged": true
     },
     {
@@ -826,7 +824,7 @@
       "name": "Durham Verified Business Improvement Districts",
       "status": "error",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "Monitor HTTP 403: https://www.durhamnc.gov/DocumentCenter/View/65496/2026-MSD-BID-Operator-RFP-Final-021826?bidId=",
       "retainedPrevious": true
     },
@@ -835,8 +833,8 @@
       "name": "Greensboro Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "05efccfdf942970e7308d86374c272ac168e0d25ba46b453f9420f561115363f",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "7cf6f76ae1491a027092b79d8ca2ade041bba11de6c7f69fc8a5d894cc8b7434",
       "legislationChanged": true
     },
     {
@@ -844,8 +842,8 @@
       "name": "Jersey City Verified Business Improvement Districts",
       "status": "review",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "cbc9ab6157df5ed04a2526f82ffa5d8cb61b3ccce0196d0ebc1128d439b2e9d8",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "daf0245872e59cccead0b170d8514cb69841adeb05444cf21b579bf69724de0f",
       "legislationChanged": true
     },
     {
@@ -853,8 +851,8 @@
       "name": "Laredo Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "679170913ecba2e2f5a46ebcb8946eff9ed2b011b915f78b771bf16ea4603fb9",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "91739ed49412b9c9f080c89a4e2fb8883f7fc5a2b7981a3d04019e8bf3630f59",
       "legislationChanged": true
     },
     {
@@ -862,8 +860,8 @@
       "name": "Lexington Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "eaac832838eaad519003c7e639a158ef4e239e0842b579301ba98fa108cbfb59",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "accbf3c9a046ec174b3ac2a2a31e136c80353560d3174da6089704801248f3b5",
       "legislationChanged": true
     },
     {
@@ -871,8 +869,8 @@
       "name": "Madison Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "88c9ef7373ee0a05f7459294c370b0ab8083bb0f8d8f144860649aef8409707a",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "2f09d130ca0ea70ec6b5c38201841601aec0292a8df3c1a52f37e946399634c6",
       "legislationChanged": true
     },
     {
@@ -880,8 +878,8 @@
       "name": "New Orleans Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "c5f829af1d7c2f7a75da6a15e21188106c127882ef885a65c539205daec4194c",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "44ff90eeb763583beb2caf28017b68a7013cf2636e2926abba5890de1f95519b",
       "legislationChanged": true
     },
     {
@@ -889,8 +887,8 @@
       "name": "Newark Verified Business Improvement Districts",
       "status": "review",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "35a0e73ff5015e5b87220eabdb73bfaf44b10f47c347b01616d1c60baebddbe8",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "3ba2b60f9d5a99d83c118e5dd054241aa37dc5b2687829f8dce7ef42807be5bf",
       "legislationChanged": true
     },
     {
@@ -898,8 +896,8 @@
       "name": "Omaha Verified Business Improvement Districts",
       "status": "review",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "9f4d73d4617b3a5a4d65d1249e6b6b2aaba84866ff9e7bc53ec0ea2e3df50af5",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "35797b404c6f2d42b34f40799797f08167e99d18af5a4c2fed55da3c4bcdd608",
       "legislationChanged": true
     },
     {
@@ -907,8 +905,8 @@
       "name": "Pittsburgh Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "402ade06f5e13aee1a11b797e20c4f3e1b48e1aaa32aed9ebd122574b3916d19",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "ca2f63bcd9169e34625c21ae931b701638b41963788647a3525d4b9631e58a51",
       "legislationChanged": true
     },
     {
@@ -916,8 +914,8 @@
       "name": "Plano Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "b605f141f640ac93f053c81078c233987fc3d71ba8baebcfdc18e7b28c6bc56f",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "8d3458d383f827cf53c7fdee8830e6927287f04e096214252ade542f7b419b37",
       "legislationChanged": true
     },
     {
@@ -925,8 +923,8 @@
       "name": "St. Louis Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "654e2f81dfb2f242ac942d330026226e0a23bb1dc78b38b2fce883d1fe88ffdc",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "3cd55791a09e03cf7ed1cc81ba75c5f6279f3be661fef1273400aed919dfad0c",
       "legislationChanged": true
     },
     {
@@ -934,8 +932,8 @@
       "name": "Tampa Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "52ca8d3ea74495117e0cc3445841fe449df1612067d80199ccf3ec739a83be31",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "12a127060b2a56022ca350c1d2ccfc0e473c7926c6b34deae5d0cf186050e5e7",
       "legislationChanged": true
     },
     {
@@ -943,7 +941,7 @@
       "name": "Toledo Verified Business Improvement Districts",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "75db3fb11c8ccbfc3eade4e4033c1eeb5f2bc9b08bd25617624200f4cdceb409",
       "legislationChanged": false
     },
@@ -952,7 +950,7 @@
       "name": "Wichita Verified Business Improvement Districts",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "88ebaddb960a672f590e84d04310580ff6c1d570971c4546ee4f70df1e6a7739",
       "legislationChanged": false
     },
@@ -961,7 +959,7 @@
       "name": "Winston-Salem Verified Business Improvement Districts",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "1f41f82daa40956af1282f2a6e2e13f2c29af563db9d1a12d167bbe26feb6670",
       "legislationChanged": false
     },
@@ -970,14 +968,14 @@
       "name": "Memphis Central Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "colorado-springs-co-verified-districts",
       "name": "Colorado Springs Verified Business Improvement Districts",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "646f837ae657044e5437e4f4101ed3a46260a54b4b2403554717e762a8251195",
       "legislationChanged": false
     },
@@ -986,7 +984,7 @@
       "name": "Kansas City Verified Business Improvement Districts",
       "status": "error",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "error": "Monitor HTTP 403: https://kccrossroads.org/community-improvement-district/",
       "retainedPrevious": true
     },
@@ -995,8 +993,8 @@
       "name": "Mesa Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "102cad3993a40a6bfd6625574e9af7d763991046b263fc9ec7e01a7d33fa07a6",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "3496449f8be2a95cb7f5b4a865c98e14a45d6f165d4caceab75e5401aa0b66d9",
       "legislationChanged": true
     },
     {
@@ -1004,445 +1002,445 @@
       "name": "Tucson Verified Business Improvement Districts",
       "status": "review",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
-      "monitorHash": "fd7ad00fe912ee3721174510efe4ac46d1a033e9d26f5ce7b6999f02656d8d29",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
+      "monitorHash": "f3f7e9b1c9f78e006eb49e9c9ab7f106f4dd812e1c65b2ad39623829ab1f5379",
       "legislationChanged": true
     },
     {
       "id": "tulsa-ok-verified-districts",
       "name": "Tulsa Verified Business Improvement Districts",
-      "status": "review",
+      "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z",
+      "checkedAt": "2026-11-21T20:06:14.039Z",
       "monitorHash": "00fb8a840f2f20f96d8ff8264e97364f4d49e6abba5ade074786af898530627c",
-      "legislationChanged": true
+      "legislationChanged": false
     },
     {
       "id": "norfolk-downtown-improvement-district",
       "name": "Norfolk Downtown Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "spokane-business-improvement-districts",
       "name": "Spokane Business Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "santa-clarita-tourism-marketing-district",
       "name": "Santa Clarita Tourism Marketing District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "baton-rouge-downtown-development-district",
       "name": "Baton Rouge Downtown Development District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "modesto-downtown-improvement-district",
       "name": "Modesto Downtown Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "salt-lake-city-central-business-improvement-area",
       "name": "Salt Lake City Central Business Improvement Area",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "worcester-downtown-business-improvement-district",
       "name": "Downtown Worcester Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "sioux-falls-downtown-business-improvement-district",
       "name": "Downtown Sioux Falls Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "yonkers-downtown-waterfront-bid",
       "name": "Yonkers Downtown Waterfront Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "des-moines-ssmids",
       "name": "Des Moines Self-Supported Municipal Improvement Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "fayetteville-downtown-municipal-service-district",
       "name": "Fayetteville Downtown Municipal Service District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "little-rock-metrocentre-bid",
       "name": "Little Rock Metrocentre Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "rochester-special-service-districts",
       "name": "Rochester Business and Special Service Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "tallahassee-downtown-improvement-authority",
       "name": "Tallahassee Downtown Improvement Authority",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "overland-park-downtown-bid",
       "name": "Overland Park Downtown Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "knoxville-central-business-improvement-district",
       "name": "Knoxville Central Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "augusta-downtown-bid",
       "name": "Downtown Augusta Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "grand-rapids-downtown-improvement-district",
       "name": "Grand Rapids Downtown Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "mobile-downtown-bid",
       "name": "Downtown Mobile Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "oxnard-downtown-improvement-district",
       "name": "Oxnard Downtown Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "providence-improvement-districts",
       "name": "Providence Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "montgomery-tourism-improvement-district",
       "name": "Montgomery Tourism Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "chattanooga-central-business-improvement-district",
       "name": "Chattanooga Central Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "akron-downtown-special-improvement-district",
       "name": "Downtown Akron Special Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "fort-lauderdale-downtown-development-authority",
       "name": "Fort Lauderdale Downtown Development Authority",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "aurora-il-downtown-special-service-area",
       "name": "Aurora Downtown Special Service Area One",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "santa-rosa-tourism-business-improvement-areas",
       "name": "Santa Rosa Tourism Business Improvement Areas",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "eugene-service-districts",
       "name": "Eugene Service Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "shreveport-downtown-development-district",
       "name": "Shreveport Downtown Development District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "fort-collins-downtown-taxing-districts",
       "name": "Fort Collins Downtown Taxing Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "oceanside-improvement-districts",
       "name": "Oceanside Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "lancaster-ca-improvement-districts",
       "name": "Lancaster California Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "springfield-mo-place-management-cids",
       "name": "Springfield Missouri Place-Management Community Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "denton-tourism-public-improvement-district",
       "name": "Denton Tourism Public Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "roseville-improvement-districts",
       "name": "Roseville Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "palmdale-tourism-improvement-district",
       "name": "Palmdale Tourism Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "paterson-special-improvement-districts",
       "name": "Paterson Special Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "charleston-king-street-bid",
       "name": "Charleston King Street Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "salinas-city-center-improvement-district",
       "name": "Salinas City Center Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "kansas-city-ks-downtown-ssmid",
       "name": "Downtown Kansas City Kansas Self-Supported Municipal Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "downtown-hayward-community-benefit-district",
       "name": "Downtown Hayward Community Benefit District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "lakewood-co-business-improvement-districts",
       "name": "Lakewood Colorado Business Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "downtown-sunnyvale-business-improvement-district",
       "name": "Downtown Sunnyvale Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "springfield-ma-business-improvement-district",
       "name": "Springfield Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "bellevue-redmond-tourism-promotion-area",
       "name": "Bellevue-Redmond Tourism Promotion Area",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "naperville-downtown-special-service-area-36",
       "name": "Naperville Downtown Special Service Area No. 36",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "bridgeport-downtown-special-services-district",
       "name": "Bridgeport Downtown Special Services District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "joliet-city-center-special-service-area",
       "name": "Joliet City Center Special Service Area",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "savannah-waterfront-community-improvement-district",
       "name": "Savannah's Waterfront Community Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "waco-improvement-districts",
       "name": "Waco Public Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "downtown-midland-management-district",
       "name": "Downtown Midland Management District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "columbia-sc-business-improvement-districts",
       "name": "Columbia South Carolina Business Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "visalia-improvement-districts",
       "name": "Visalia Improvement Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "syracuse-special-assessment-districts",
       "name": "Syracuse Special Assessment Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "elizabeth-nj-improvement-districts",
       "name": "Elizabeth New Jersey Improvement Districts",
       "status": "ok",
       "records": 3,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "jackson-ms-business-improvement-districts",
       "name": "Jackson Mississippi Business Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "stamford-downtown-special-services-district",
       "name": "Stamford Downtown Special Services District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "new-haven-special-services-districts",
       "name": "New Haven Special Services Districts",
       "status": "ok",
       "records": 4,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "torrance-tourism-business-improvement-district",
       "name": "Torrance Tourism Business Improvement District",
       "status": "ok",
       "records": 1,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "cedar-rapids-ssmids",
       "name": "Cedar Rapids Self-Supported Municipal Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     },
     {
       "id": "hampton-business-improvement-districts",
       "name": "Hampton Business Improvement Districts",
       "status": "ok",
       "records": 2,
-      "checkedAt": "2026-11-20T21:05:49.950Z"
+      "checkedAt": "2026-11-21T20:06:14.039Z"
     }
   ]
 }
